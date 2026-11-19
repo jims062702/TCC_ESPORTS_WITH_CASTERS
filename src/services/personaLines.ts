@@ -10,6 +10,12 @@ import type { CasterId } from './casters';
 // ─────────────────────────────────────────────────────────────────────────────
 
 export type LineGroup =
+  | 'DRAFTBAN'
+  | 'DRAFTPICK'
+  | 'DRAFTTALK'
+  | 'DRAFTSTART'
+  | 'GAMESTART'
+  | 'BREAK'
   | 'INTRO'
   | 'DRAFT'
   | 'KILL'
@@ -27,13 +33,24 @@ export type LineGroup =
   | 'BANTER';
 
 /** Groups where a third "closing" line from the lead caster adds to the moment. */
-export const MAJOR_GROUPS = new Set<LineGroup>(['BIGKILL', 'STEAL', 'REPLAY', 'VICTORY', 'CHAMPION', 'DRAFT', 'INTRO']);
+export const MAJOR_GROUPS = new Set<LineGroup>(['BIGKILL', 'STEAL', 'REPLAY', 'VICTORY', 'CHAMPION', 'DRAFT', 'INTRO', 'DRAFTSTART', 'GAMESTART']);
 
 export function groupForKey(key: string): LineGroup {
+  if (key.startsWith('DRAFT_BAN')) return 'DRAFTBAN';
+  if (key.startsWith('DRAFT_PICK')) return 'DRAFTPICK';
+  if (key.startsWith('DRAFT_TALK')) return 'DRAFTTALK';
+  if (key === 'POSTGAME_TALK_CHAMPION') return 'CHAMPION';
+  if (key === 'POSTGAME_TALK_SERIES') return 'VICTORY';
+  if (key === 'POSTGAME_TALK') return 'RESULT';
+  if (key === 'BREAK_TALK') return 'BREAK';
+  if (key.startsWith('BANTER_')) return 'BANTER';
+  if (key.startsWith('DRAFT_START')) return 'DRAFTSTART';
+  if (key.startsWith('GAME_START')) return 'GAMESTART';
+  if (key.startsWith('BREAK_START')) return 'BREAK';
   if (key.startsWith('GAME_INTRO')) return 'INTRO';
   if (key === 'DRAFT_COMPLETE') return 'DRAFT';
-  if (key === 'FIRST_BLOOD' || key === 'DOUBLE_KILL' || key === 'TRIPLE_KILL') return 'KILL';
-  if (key === 'MANIAC' || key === 'SAVAGE') return 'BIGKILL';
+  if (key === 'KILL' || key.startsWith('FIRST_BLOOD') || key.startsWith('DOUBLE_KILL') || key.startsWith('TRIPLE_KILL')) return 'KILL';
+  if (key.startsWith('MANIAC') || key.startsWith('SAVAGE')) return 'BIGKILL';
   if (key.endsWith('_STEAL')) return 'STEAL';
   if (key === 'TURTLE' || key === 'LORD' || key === 'BUFF') return 'OBJECTIVE';
   if (key === 'OBJECTIVE_CONTEST') return 'CONTEST';
@@ -312,6 +329,211 @@ export const PERSONA_LINES: Record<CasterId, Partial<Record<LineGroup, string[]>
   },
 };
 
+// ── Phase announcements: drafting-phase welcome, game start, going to break ──
+// Spoken right after the lead caster's call. When the lead greeted this caster
+// by name, PERSONA_ACK adds "Salamat, partner …!" in front of the line.
+const PHASE_LINES: Record<CasterId, Partial<Record<LineGroup, string[]>>> = {
+  marco: {
+    DRAFTSTART: [
+      'Sa draft na ito, abangan natin kung sino ang uunahin sa ban — doon makikita ang respeto sa kalaban.',
+      'Para sa akin, flexibility ang susi — ang team na may maraming opsyon, siya ang may kontrol.',
+      'Abangan natin ang mga hero na pang-objective control — malaki ang epekto niyan sa mid game.',
+      'Simple lang ang tanong: sino ang mas handa sa draft na ito?',
+      'Tingnan natin kung sino ang mag-iisip ng tempo, at kung sino ang mag-iisip ng late game.',
+    ],
+    GAMESTART: [
+      'Ngayon, execution na — tingnan natin kung paano isasalin ng dalawang team ang draft sa laro.',
+      'Abangan natin ang unang rotation — doon makikita kung sino ang may mas malinaw na plano.',
+      'Sa unang ilang minuto, vision at jungle control ang babantayan ko.',
+      'Pasensya at disiplina — yan ang kailangan ng dalawang team sa early game.',
+    ],
+    BREAK: [
+      'Magandang pagkakataon ito para mag-adjust ang dalawang team.',
+      'Sa ganitong break, pinag-uusapan ng mga team ang maliliit na pagkakamali — abangan natin ang epekto niyan pagbalik.',
+      'Pagbalik natin, bantayan ang rotation at vision — doon madalas makikita ang adjustment.',
+    ],
+  },
+  ken: {
+    DRAFTSTART: [
+      'Hindi na ako makapaghintay — tara, simulan na ang draft!',
+      'Init na init na ang desk, mga ka-TCC! Draft na!',
+      'Ito na! Sino kaya ang unang ilo-lock?',
+      'Ramdam ko na — pang-gyera ang draft na ito!',
+    ],
+    GAMESTART: [
+      'ITO NA, ITO NA! Simula na ang gyera sa Land of Dawn!',
+      'Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}!',
+      "LET'S GO! Init na init na!",
+      'Simula na! Sino kaya ang unang makakakuha ng first blood?',
+    ],
+    BREAK: [
+      'Konting tiis lang, mga ka-TCC — babalik ang aksyon!',
+      'Pahinga muna, pero ramdam ko na — mas iinit pa pagbalik natin!',
+      'Huwag kayong aalis, ha! Pagbalik natin, gyera ulit!',
+    ],
+  },
+  lyka: {
+    DRAFTSTART: [
+      'Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat.',
+      'Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft.',
+      'Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero.',
+    ],
+    GAMESTART: [
+      '{seriesScore} ang serye — at magsisimula na ang bagong bilangan.',
+      'Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills!',
+      'Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team.',
+    ],
+    BREAK: [
+      'Habang break, tandaan: {seriesScore} ang serye.',
+      'Pagbalik natin, bantayan ang numbers — doon makikita kung sino ang nag-adjust.',
+      'Kailangan ng {winsNeeded} panalo para makuha ang serye — tandaan niyo yan habang naghihintay.',
+    ],
+  },
+  trixie: {
+    DRAFTSTART: [
+      'Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na!',
+      'Kinakabahan na ako sa draft na ito, totoo lang!',
+      'Sana may last-pick na surprise hero — para mas masaya!',
+    ],
+    GAMESTART: [
+      'Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch!',
+      'Ingat sa face-check, mga lods — maaga pa pero delikado na!',
+      'Kinakabahan na ako agad — sana walang mahuli sa jungle!',
+    ],
+    BREAK: [
+      'Kuha muna kayo ng tubig, mga lods — kinakabahan pa rin ako!',
+      'Break muna — pero huwag kayong aalis, baka ma-miss niyo ang clutch play pagbalik!',
+    ],
+  },
+  rafa: {
+    DRAFTSTART: [
+      'Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}?',
+      'Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban.',
+      'Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano.',
+      'Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon.',
+    ],
+    GAMESTART: [
+      'Ngayon natin malalaman kung gagana ang game plan ng bawat team.',
+      'Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic.',
+      'Draft, tapos na. Ngayon, execution na ang labanan.',
+    ],
+    BREAK: [
+      'Sa break, dito pumapasok ang coaching — abangan ang mga adjustment.',
+      'Kung ako ang coach, ito na ang oras para ayusin ang plano.',
+    ],
+  },
+  jun: {
+    DRAFTSTART: [
+      'Bawat draft, may kuwento — at ang kuwento ng Game {gameNumber}, magsisimula ngayon.',
+      'Mga kaibigan, dito nagsisimula ang lahat — sa tahimik pero matinding labanan ng draft.',
+      'Sa {stage} na ito, bawat desisyon ay isusulat sa kasaysayan ng {tournament}.',
+    ],
+    GAMESTART: [
+      'Mga kaibigan, simula na ang panibagong kabanata ng seryeng ito.',
+      'Bawat game, may sariling kuwento — at ang kuwento ng Game {gameNumber}, nagsisimula na.',
+      'Ito ang esports na gusto natin — dalawang team, isang pangarap.',
+    ],
+    BREAK: [
+      'Mga kaibigan, magpahinga muna tayo sandali — marami pang kuwentong isusulat dito.',
+      'Salamat sa pagsama sa amin — babalik kami agad.',
+    ],
+  },
+  bea: {
+    DRAFTSTART: [
+      'Abangan natin kung sino ang kukuha ng malakas na jungler — malaking bagay yan sa Turtle at Lord.',
+      'Para sa akin, ang draft na may magandang objective control ang mananaig ngayong game.',
+      'Tingnan natin kung sino ang mag-iisip ng early Turtle sa draft na ito.',
+    ],
+    GAMESTART: [
+      'Abangan natin ang unang Turtle — malaking bagay ang maagang objective.',
+      'Bantay-sarado ang jungle sa simula — sino kaya ang unang makaka-invade?',
+      'Unang buff, unang Turtle — doon magsisimula ang labanan sa mapa.',
+    ],
+    BREAK: [
+      'Habang break, isipin niyo: aling team ang mas maganda ang kontrol sa mga objective?',
+      'Pagbalik natin, bantayan ang Turtle at Lord — doon madalas nagbabago ang laro.',
+    ],
+  },
+  mika: {
+    DRAFTSTART: [
+      'I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito!',
+      'Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft!',
+      'Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC!',
+    ],
+    GAMESTART: [
+      'Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}!',
+      'I-comment niyo na kung sino ang mananalo sa Game {gameNumber}!',
+      'Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC!',
+    ],
+    BREAK: [
+      'Habang naghihintay, i-follow niyo muna ang TCC Esports, mga ka-TCC!',
+      'Panoorin muna natin ang mga highlight habang naghihintay!',
+      'I-comment niyo kung sino ang MVP niyo so far!',
+    ],
+  },
+};
+for (const [id, groups] of Object.entries(PHASE_LINES)) Object.assign(PERSONA_LINES[id as CasterId], groups);
+
+// ── Draft play-by-play reactions (after a ban / pick call, or during draft talk) ──
+const DRAFT_LINES: Record<CasterId, Partial<Record<LineGroup, string[]>>> = {
+  marco: {
+    DRAFTBAN: ['Disiplinadong ban — inaalis nila ang pinakamalaking banta.', 'Ganyan ang paghahanda: alam nila kung ano ang kinatatakutan nila.'],
+    DRAFTPICK: ['Tingnan natin kung paano gagamitin ng {team} ang {hero} sa rotation.', 'Maganda ang timing ng pick na yan sa draft.'],
+    DRAFTTALK: ['Sa draft, binabasa ng bawat team ang isa\'t isa — parang chess.', 'Pansinin niyo kung sino ang nagbibigay ng priority sa jungle at roam.'],
+  },
+  ken: {
+    DRAFTBAN: ['Ban na! Wala nang atrasan!', 'Ayan! Tinanggal agad!'],
+    DRAFTPICK: ['LOCKED IN! {hero}!', 'ITO NA! {hero} para kay {player}!', 'Pang-gyera ang pick na yan!'],
+    DRAFTTALK: ['Init na init na ang draft, mga ka-TCC!', 'Ramdam ko na ang laban kahit draft pa lang!'],
+  },
+  lyka: {
+    DRAFTBAN: ['Isa na namang ban — paunti nang paunti ang opsyon.'],
+    DRAFTPICK: ['{player} sa {hero} — abangan natin ang numero niya ngayong game.'],
+    DRAFTTALK: ['Para sa record: {seriesScore} ang serye ngayon.', 'Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat.'],
+  },
+  trixie: {
+    DRAFTBAN: ['Ay, sayang! Gusto ko pa naman makita ang {hero}!', 'Ban agad? Takot sila diyan, mga lods!'],
+    DRAFTPICK: ['Ay, gusto ko yan! Clutch hero ang {hero}!', 'Naku, delikado ang {hero} kapag maganda ang timing!'],
+    DRAFTTALK: ['Kinakabahan ako sa susunod na pick, totoo lang!', 'Abangan natin kung may surprise pick!'],
+  },
+  rafa: {
+    DRAFTBAN: ['Kung ako ang coach, ganyan din ang ban ko.', 'Ban pa lang, kita mo na ang paghahanda ng {team}.'],
+    DRAFTPICK: ['Kung ako ang coach, masaya ako sa pick na yan.', 'Malinaw ang win condition — at ang {hero} ang isa sa mga susi.'],
+    DRAFTTALK: ['Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup?', 'Draft pa lang, kalahati na ng laban — tandaan niyo yan.'],
+  },
+  jun: {
+    DRAFTBAN: ['Isang ban na may kuwento — respeto sa kalaban yan.'],
+    DRAFTPICK: ['Mga kaibigan, abangan natin kung anong kuwento ang isusulat ni {player} gamit ang {hero}.'],
+    DRAFTTALK: ['Bawat draft, may kuwento — at isinusulat pa lang natin ang kabanatang ito.'],
+  },
+  bea: {
+    DRAFTBAN: ['Pansinin niyo kung ilang jungle hero na ang natatanggal.'],
+    DRAFTPICK: ['Abangan natin kung paano makakatulong ang {hero} sa kontrol ng Turtle at Lord.'],
+    DRAFTTALK: ['Ang tanong ko: sino ang mas malakas sa early objectives sa draft na ito?'],
+  },
+  mika: {
+    DRAFTBAN: ['Sino dito ang nalungkot na banned ang {hero}? Comment na!'],
+    DRAFTPICK: ['Fans ng {hero}, ingay naman diyan!', 'I-comment niyo kung gusto niyo ang pick na yan!'],
+    DRAFTTALK: ['Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC!'],
+  },
+};
+for (const [id, groups] of Object.entries(DRAFT_LINES)) Object.assign(PERSONA_LINES[id as CasterId], groups);
+
+/**
+ * How each caster answers when the other caster just spoke to them by name.
+ * greet — after "Welcome sa drafting phase natin, partner …!"; agree — otherwise.
+ */
+export const PERSONA_ACK: Record<CasterId, { greet: string[]; agree: string[] }> = {
+  marco: { greet: ['Salamat, {partner}.', 'Salamat, partner {partner}.', 'Maraming salamat, {partner}.'], agree: ['Tama, {partner}.', 'Sige, {partner}.'] },
+  ken: { greet: ['Salamat, partner {partner}!', 'Yes, partner {partner}!', 'Ayos, salamat {partner}!'], agree: ['Tama ka, {partner}!', 'Sige, {partner}!'] },
+  lyka: { greet: ['Salamat, {partner}!', 'Hi, partner {partner}!', 'Thank you, {partner}!'], agree: ['Tama, {partner}!', 'Sige, {partner}!'] },
+  trixie: { greet: ['Hi, {partner}!', 'Salamat, partner {partner}!', 'Uy, salamat {partner}!'], agree: ['Tama, {partner}!', 'Sige, {partner}!'] },
+  rafa: { greet: ['Salamat, {partner}.', 'Salamat, partner {partner}.', 'Maraming salamat, {partner}.'], agree: ['Tama, {partner}.', 'Sige, {partner}.'] },
+  jun: { greet: ['Salamat, {partner}.', 'Maraming salamat, partner {partner}.', 'Salamat, kaibigan kong {partner}.'], agree: ['Tama ka, {partner}.', 'Sige, {partner}.'] },
+  bea: { greet: ['Salamat, {partner}!', 'Hi, partner {partner}!', 'Thank you, {partner}!'], agree: ['Tama, {partner}!', 'Sige, {partner}!'] },
+  mika: { greet: ['Salamat, partner {partner}!', 'Hello, {partner}!', 'Thank you, partner {partner}!'], agree: ['Tama, {partner}!', 'Sige, {partner}!'] },
+};
+
 export const personaLineCount = () =>
   Object.values(PERSONA_LINES).reduce((n, groups) => n + Object.values(groups).reduce((m, arr) => m + (arr?.length ?? 0), 0), 0);
 
@@ -334,6 +556,12 @@ export const personaLineCount = () =>
 export type Mood = 'hype' | 'celebrate' | 'calm';
 
 export const GROUP_MOOD: Record<LineGroup, Mood> = {
+  DRAFTBAN: 'calm',
+  DRAFTPICK: 'celebrate',
+  DRAFTTALK: 'calm',
+  DRAFTSTART: 'calm',
+  GAMESTART: 'celebrate',
+  BREAK: 'calm',
   INTRO: 'celebrate',
   DRAFT: 'calm',
   KILL: 'hype',
@@ -459,6 +687,54 @@ export const PERSONA_VOICE: Record<CasterId, PersonaVoice> = {
 
 /** Role-neutral core statements every caster can say (combined with their own voice). */
 export const SHARED_CORES: Record<LineGroup, string[]> = {
+  DRAFTBAN: [
+    'Malinaw ang mensahe ng ban na yan.',
+    'Respeto sa {hero} yan.',
+    'Ayaw nilang makaharap ang {hero} ngayong game.',
+    'Matalinong ban, sa totoo lang.',
+    'Isa-isang nababawasan ang mga opsyon ng {enemy}.',
+  ],
+  DRAFTPICK: [
+    'Magandang pick yan para sa {team}.',
+    'Abangan natin ang {hero} sa kamay ni {player}.',
+    'Ayan na ang {hero}!',
+    'Unti-unting nabubuo ang lineup ng {team}.',
+    'Malakas na {heroClass} ang {hero} sa ganitong draft.',
+  ],
+  DRAFTTALK: [
+    'Mainit ang draft ngayong Game {gameNumber}.',
+    'Bawat pick at ban, may dahilan.',
+    'Abangan natin ang susunod na desisyon.',
+    'Paunti nang paunti ang mga hero na natitira.',
+    '{seriesScore} ang serye — kaya mahalaga ang draft na ito.',
+  ],
+  DRAFTSTART: [
+    'Simula na ang drafting phase ng Game {gameNumber}.',
+    'Abangan natin ang mga ban at pick ng dalawang team.',
+    'Dito makikita ang game plan ng {teamA} at {teamB}.',
+    '{blueTeam} sa blue side, {redTeam} sa red side.',
+    'Draft pa lang, mahalaga na ang bawat desisyon.',
+    'Sino kaya ang unang magpapakita ng diskarte?',
+    'Game {gameNumber} ng {format} — {seriesScore} ang serye.',
+  ],
+  GAMESTART: [
+    'Simula na ang Game {gameNumber}.',
+    'Kumpleto na ang draft — laban na!',
+    '{blueTeam} sa blue side, {redTeam} sa red side.',
+    'Abangan natin ang unang engagement.',
+    'Bagong laro, bagong pagkakataon.',
+    '{seriesScore} ang serye.',
+    'Good luck sa parehong team.',
+  ],
+  BREAK: [
+    'Sulit ang paghihintay, pangako yan.',
+    'Babalik kami agad, mga ka-TCC.',
+    'Panoorin muna natin ang mga highlight habang naghihintay.',
+    'Kuha muna kayo ng tubig at meryenda.',
+    'Babalik kami pagkalipas ng {breakMins} minuto.',
+    'Huwag kayong aalis — babalik kami agad.',
+    'Salamat sa patuloy na panonood, mga ka-TCC.',
+  ],
   INTRO: [
     'Game {gameNumber} na ng {format}, at {seriesScore} ang serye.',
     'Simula na ang Game {gameNumber} — {teamA} laban sa {teamB}.',
@@ -608,11 +884,16 @@ const clash = (part: string, core: string) =>
 
 export const coresFor = (caster: CasterId, group: LineGroup) => [...(PERSONA_LINES[caster]?.[group] ?? []), ...SHARED_CORES[group]];
 
+/** Sign-off closers that only make sense at the end of a game or the show — never while welcoming. */
+const SIGN_OFF = /salamat sa (panonood|laban)|respeto sa parehong team/i;
+const WELCOME_GROUPS = new Set<LineGroup>(['DRAFTSTART', 'GAMESTART', 'DRAFTPICK', 'DRAFTBAN', 'DRAFTTALK']);
+
 function partsFor(caster: CasterId, group: LineGroup, core: string) {
   const voice = PERSONA_VOICE[caster];
   const mood = GROUP_MOOD[group];
-  const openers = opensWithShout(core) ? [''] : ['', ...voice.openers[mood].filter((o) => !clash(o, core))];
-  const closers = ['', ...voice.closers[mood].filter((c) => !clash(c, core))];
+  // Break lines are complete sign-posts ("Mag-break muna tayo…") — an extra interjection in front only muddles them.
+  const openers = opensWithShout(core) || group === 'BREAK' ? [''] : ['', ...voice.openers[mood].filter((o) => !clash(o, core))];
+  const closers = ['', ...voice.closers[mood].filter((c) => !clash(c, core) && !(WELCOME_GROUPS.has(group) && SIGN_OFF.test(c)))];
   return { openers, closers };
 }
 
@@ -665,6 +946,7 @@ export function composeLine(
   fill: (template: string) => string | null,
   recentlyUsed: Set<string>,
   avoidTexts: Set<string>,
+  opts: { noOpener?: boolean } = {},
 ): { id: string; text: string } | null {
   const cores = coresFor(caster, group)
     .map((t) => ({ t, id: `C|${caster}|${t}`, text: fill(t) }))
@@ -675,7 +957,7 @@ export function composeLine(
   const core = pool[Math.floor(Math.random() * pool.length)];
   const { openers, closers } = partsFor(caster, group, core.t);
   const pick = (arr: string[], chance: number) => (arr.length > 1 && Math.random() < chance ? arr[1 + Math.floor(Math.random() * (arr.length - 1))] : '');
-  const opener = pick(openers, 0.5);
+  const opener = opts.noOpener ? '' : pick(openers, 0.5);
   let closer = pick(closers, 0.3);
   if (joinParts(opener, core.text, closer).split(/\s+/).length > MAX_WORDS) closer = '';
   return { id: core.id, text: joinParts(opener, core.text, closer) };

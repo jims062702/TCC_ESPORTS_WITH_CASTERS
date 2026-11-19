@@ -1,4 +1,4 @@
-import type { BracketKind, Match, MatchLink, SeriesFormat, Slot, SlotSource, Tournament } from '@/types';
+import type { BracketKind, GameRecord, Match, MatchLink, SeriesFormat, Slot, SlotSource, Tournament } from '@/types';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Bracket engine (pure functions — no Firestore). Generates single / double
@@ -31,6 +31,7 @@ function roundLabelSingle(round: number, totalRounds: number): string {
 
 export function roundTitle(bracket: BracketKind, round: number, totalRounds: number, type: Tournament['type']): string {
   if (bracket === 'GF') return 'Grand Final';
+  if (bracket === 'SEED') return 'Seeding Round';
   if (type === 'single') return roundLabelSingle(round, totalRounds);
   if (bracket === 'UB') return round === totalRounds ? 'Upper Final' : round === totalRounds - 1 && totalRounds > 2 ? 'Upper Semifinals' : `Upper Round ${round}`;
   return round === totalRounds ? 'Lower Final' : `Lower Round ${round}`;
@@ -262,6 +263,112 @@ export function revertSeriesResult(matches: Match[], id: string): Match[] {
   m.scoreB = 0;
   m.updatedAt = Date.now();
   return [...changed].map((cid) => byId.get(cid)!);
+}
+
+// ── Seeding round: every team plays ONE game (Bo1) before the bracket ──────
+
+/**
+ * Random draw: teams are paired for one Bo1 seeding game each. With an odd
+ * number of teams, one team gets a seeding bye (counts as a win).
+ */
+export function generateSeedingRound(t: Tournament, teamIds: string[], rand: () => number = Math.random): Match[] {
+  if (teamIds.length < 2) throw new Error('At least 2 teams are required.');
+  const order = [...teamIds];
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  const matches: Match[] = [];
+  for (let i = 0; i < order.length; i += 2) {
+    const idx = i / 2;
+    const m = blankMatch(t, 'SEED', 1, idx, 'BO1', `Seeding · M${idx + 1}`);
+    m.order = idx;
+    m.teamAId = order[i];
+    m.teamBId = order[i + 1] ?? null;
+    if (!m.teamBId) {
+      // Seeding bye
+      m.deadB = true;
+      m.status = 'completed';
+      m.winnerId = m.teamAId;
+      m.scoreA = 1;
+    } else {
+      m.status = 'ready';
+    }
+    matches.push(m);
+  }
+  return matches;
+}
+
+/**
+ * Bracket seeds from the seeding round: winners first, then losers. Ties are
+ * broken by kill difference in their seeding game, then by the quicker win
+ * (or the longer loss). Seeding byes rank last among the winners.
+ */
+export function seedsFromSeeding(seedMatches: Match[], games: GameRecord[]): string[] {
+  type Row = { teamId: string; won: boolean; bye: boolean; killDiff: number; duration: number };
+  const rows: Row[] = [];
+  for (const m of seedMatches.filter((x) => x.bracket === 'SEED')) {
+    const g = games.find((x) => x.matchId === m.id);
+    for (const [teamId, other] of [[m.teamAId, m.teamBId], [m.teamBId, m.teamAId]] as const) {
+      if (!teamId) continue;
+      let killDiff = 0;
+      if (g) {
+        const mine = g.blueTeamId === teamId ? g.blue : g.red;
+        const theirs = g.blueTeamId === teamId ? g.red : g.blue;
+        killDiff = (mine?.kills ?? 0) - (theirs?.kills ?? 0);
+      }
+      rows.push({ teamId, won: m.winnerId === teamId, bye: !other, killDiff, duration: g?.durationSec ?? 0 });
+    }
+  }
+  const winners = rows.filter((r) => r.won).sort((a, b) => Number(a.bye) - Number(b.bye) || b.killDiff - a.killDiff || a.duration - b.duration);
+  const losers = rows.filter((r) => !r.won).sort((a, b) => b.killDiff - a.killDiff || b.duration - a.duration);
+  return [...winners, ...losers].map((r) => r.teamId);
+}
+
+/** First-round bracket match is still open (its draft hasn't started). */
+const notStarted = (m: Match) => m.status === 'ready' || m.status === 'pending';
+
+/** Seeding winners (teams that actually won their seeding game — byes excluded), in seed order. */
+export function seedingWinners(matches: Match[], seedOrderIds: string[]): string[] {
+  const won = new Set(matches.filter((m) => m.bracket === 'SEED' && m.status === 'completed' && m.teamAId && m.teamBId && m.winnerId).map((m) => m.winnerId!));
+  return seedOrderIds.filter((id) => won.has(id));
+}
+
+/** Teams a seeding winner may still pick: first-round teams (not itself) whose match hasn't started and that aren't locked by an earlier pick. */
+export function pickableOpponents(matches: Match[], winnerId: string, locked: Set<string>): string[] {
+  const r1 = matches.filter((m) => m.bracket === 'UB' && m.round === 1 && m.status !== 'void');
+  const own = r1.find((m) => m.teamAId === winnerId || m.teamBId === winnerId);
+  if (!own || !notStarted(own)) return [];
+  return r1
+    .filter(notStarted)
+    .flatMap((m) => [m.teamAId, m.teamBId])
+    .filter((id): id is string => Boolean(id) && id !== winnerId && !locked.has(id!));
+}
+
+/**
+ * A seeding winner picks its first-round opponent: the picked team moves into
+ * the winner's match, and the winner's previous opponent takes the picked
+ * team's old spot (a swap). Only allowed while both matches haven't started.
+ */
+export function pickOpponent(matches: Match[], winnerId: string, pickedId: string): Match[] {
+  if (winnerId === pickedId) throw new Error('A team cannot pick itself.');
+  const r1 = matches.filter((m) => m.bracket === 'UB' && m.round === 1 && m.status !== 'void').map((m) => ({ ...m }));
+  const mw = r1.find((m) => m.teamAId === winnerId || m.teamBId === winnerId);
+  const mp = r1.find((m) => m.teamAId === pickedId || m.teamBId === pickedId);
+  if (!mw || !mp) throw new Error('Both teams must be in the first round of the bracket.');
+  if (!notStarted(mw) || !notStarted(mp)) throw new Error('That match has already started its draft — the opponent can no longer change.');
+  if (mw.id === mp.id) return [];
+  const oppKey = mw.teamAId === winnerId ? 'teamBId' : 'teamAId';
+  const pickedKey = mp.teamAId === pickedId ? 'teamAId' : 'teamBId';
+  const previousOpponent = mw[oppKey];
+  mw[oppKey] = pickedId;
+  mp[pickedKey] = previousOpponent;
+  const now = Date.now();
+  for (const m of [mw, mp]) {
+    m.status = m.teamAId && m.teamBId ? 'ready' : 'pending';
+    m.updatedAt = now;
+  }
+  return [mw, mp];
 }
 
 /** Group matches into columns for rendering. */

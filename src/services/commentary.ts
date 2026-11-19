@@ -1,10 +1,10 @@
 import { addDoc, collection, doc, getDoc, runTransaction, setDoc, updateDoc, type Unsubscribe } from 'firebase/firestore';
-import type { CaptionLine, CaptionState, CommentaryLog, GameEvent, LiveState, ScriptEntry, ScriptLibrary } from '@/types';
+import type { BoothState, CaptionLine, CaptionState, CommentaryLog, GameEvent, LiveState, ScriptEntry, ScriptLibrary } from '@/types';
 import { COL, LIVE_DOC, db, subscribeCollection, subscribeDoc, whereEq } from './firebase';
 import { CASTER_BY_ID, isCasterId, resolvePairVoices, speak, stopSpeaking, waitUntilQuiet } from './casters';
 import { playClip, stopClip, synthesizeExchange, ttsUsageToday, unlockAudio } from './tts';
 import { buildFacts, summarizeEvent } from './facts';
-import { SCRIPT_KEYS, SCRIPT_PLACEHOLDERS, builtinExamples, templateLines, unknownPlaceholders } from './templates';
+import { REPLAY_LEAD, SCRIPT_KEYS, SCRIPT_PLACEHOLDERS, builtinExamples, templateLines, unknownPlaceholders } from './templates';
 import { GeminiError, buildCommentaryPrompt, requestCommentary, requestLibrary } from './gemini';
 import { normalizeLive } from './live';
 import { EVENT_DEFS, STORAGE_KEYS } from '@/lib/constants';
@@ -13,8 +13,19 @@ import { safeLocalGet, safeLocalSet, sleep, uid } from '@/lib/utils';
 /** Pause between speakers so each caster finishes before the next one starts. */
 const HANDOFF_MS = 450;
 
+/** "Instant response": how long a live AI line / realistic voice may take before the instant library line / voice is used. */
+const AI_FAST_MS = 1600;
+const TTS_FAST_MS = 2200;
+
 // ─────────────────────────────────────────────────────────────────────────────
-// Commentary engine — runs inside the Caster Booth page (one per broadcast).
+// Commentary engine — ONE global engine for the whole admin app (boothEngine
+// below). Started in the Caster Booth, it keeps running while you move to the
+// Live Controller or any other admin page in the same tab.
+//
+//  • every click in the Live Controller takes over as soon as the current
+//    line is finished (the rest of that exchange is dropped)
+//  • between clicks the casters keep talking about the game (draft talk,
+//    in-game banter, post-game recap, break chat) — one voice at a time
 //
 //  admin trigger ─► events/{id} (pending) ─► claim (transaction, no duplicates)
 //    ─► queue (priority: replays & results first, minor events dropped on overflow)
@@ -40,8 +51,14 @@ export interface EngineSettings {
   aiBanter: boolean;
   cooldownSec: number;
   dailyCap: number;
+  /** Keep the casters talking between events (draft talk, banter, recap). */
   idleBanter: boolean;
+  /** Legacy (pre-continuous) silence before banter — unused. */
   idleSec: number;
+  /** Seconds of silence before the casters keep talking about the game. */
+  talkGapSec: number;
+  /** Never make the desk wait: fall back to the library line / instant voice when AI or realistic voice is slow. */
+  instant: boolean;
   volume: number;
   rate: number;
   maxQueue: number;
@@ -56,6 +73,8 @@ export const DEFAULT_ENGINE_SETTINGS: EngineSettings = {
   dailyCap: 200,
   idleBanter: true,
   idleSec: 55,
+  talkGapSec: 3,
+  instant: true,
   volume: 1,
   rate: 1,
   maxQueue: 4,
@@ -130,12 +149,16 @@ export interface EngineStatus {
   voiceNote: string | null;
 }
 
-interface Callbacks {
-  onLog: (entry: EngineLogEntry) => void;
-  onStatus: (status: EngineStatus) => void;
-}
+type StatusListener = (status: EngineStatus) => void;
+type LogListener = (log: EngineLogEntry[]) => void;
 
-const PRIORITY = new Set(['INSTANT_REPLAY', 'SERIES_VICTORY', 'GAME_RESULT', 'GAME_INTRO']);
+const PRIORITY = new Set(['INSTANT_REPLAY', 'SERIES_VICTORY', 'GAME_RESULT', 'GAME_INTRO', 'DRAFT_START', 'GAME_START', 'BREAK_START']);
+/**
+ * Automatic phase announcements (draft welcome, game start, break) always use
+ * the hand-written library: the greetings must name the partner exactly, and
+ * they cost no AI quota.
+ */
+const PHASE_EVENTS = new Set<GameEvent['type']>(['DRAFT_START', 'GAME_START', 'BREAK_START', 'DRAFT_BAN', 'DRAFT_PICK', 'DRAFT_TALK']);
 
 export class CommentaryEngine {
   readonly engineId = uid('booth_');
@@ -151,6 +174,8 @@ export class CommentaryEngine {
   private yieldRequested = false;
   private pair: string[] = [];
   private geminiVoices: Record<string, string> = {};
+  /** On-air names from Settings → Casters (used for "partner {name}"). */
+  private casterNames: Record<string, string> = {};
   private ttsBackoffUntil = 0;
   private ttsNote: string | null = null;
   private busy = false;
@@ -166,8 +191,32 @@ export class CommentaryEngine {
   private usedScripts: string[] = [];
   private unsubs: Unsubscribe[] = [];
   private timers: number[] = [];
+  /** Bumped whenever the current exchange is cut off by a new click. */
+  private epoch = 0;
+  /** Another booth (other tab/computer) is running → claim events with a transaction. */
+  private otherBooth = false;
+  /** Consecutive filler exchanges without a click (the gap grows so talk never feels spammy). */
+  private fillerStreak = 0;
+  private lastTalkStep = -1;
+  private logs: EngineLogEntry[] = [];
+  private statusListeners = new Set<StatusListener>();
+  private logListeners = new Set<LogListener>();
 
-  constructor(private cb: Callbacks) {}
+  /** Booth UI / admin layout subscribe here; returns an unsubscribe function. */
+  subscribe(onStatus: StatusListener, onLog?: LogListener) {
+    this.statusListeners.add(onStatus);
+    if (onLog) this.logListeners.add(onLog);
+    onStatus(this.status());
+    onLog?.(this.logs);
+    return () => {
+      this.statusListeners.delete(onStatus);
+      if (onLog) this.logListeners.delete(onLog);
+    };
+  }
+
+  get settingsNow() {
+    return this.settings;
+  }
 
   get libraryCount() {
     return this.library.length;
@@ -181,6 +230,10 @@ export class CommentaryEngine {
 
   setGeminiVoices(map: Record<string, string>) {
     this.geminiVoices = map;
+  }
+
+  setCasterNames(map: Record<string, string>) {
+    this.casterNames = map;
   }
 
   setVoices(voices: SpeechSynthesisVoice[], map: Record<string, string | null>) {
@@ -209,17 +262,30 @@ export class CommentaryEngine {
       subscribeDoc<ScriptLibrary>(COL.scripts, SCRIPT_DOC, (d) => {
         this.library = d?.entries ?? [];
       }),
+      subscribeDoc<BoothState>(COL.live, LIVE_DOC.booth, (d) => {
+        // Another tab pressed Start (or Stop for us): only one booth talks at a time.
+        if (d?.stopRequested === this.engineId && this.running) return this.stop('takeover');
+        this.otherBooth = Boolean(d && d.engineId && d.engineId !== this.engineId && d.online && Date.now() - d.lastBeat < 40_000);
+      }),
     );
+    // Taking over: ask any booth running in another tab/window to stop, so voices never double up.
+    void getDoc(doc(db, COL.live, LIVE_DOC.booth))
+      .then((snap) => {
+        const d = snap.data() as BoothState | undefined;
+        if (d?.engineId && d.engineId !== this.engineId && d.online && Date.now() - d.lastBeat < 40_000) return requestBoothStop(d.engineId);
+      })
+      .catch(() => {});
     this.beat();
     this.timers.push(
       window.setInterval(() => this.beat(), 15_000),
-      window.setInterval(() => this.idleCheck(), 5_000),
+      window.setInterval(() => this.idleCheck(), 1_000),
       window.setInterval(() => this.emit(), 1_000),
     );
     this.emit();
   }
 
-  stop() {
+  /** `takeover`: another tab started casting — leave the booth status to it. */
+  stop(reason?: 'takeover') {
     if (!this.running) return;
     this.running = false;
     this.unsubs.forEach((u) => u());
@@ -227,10 +293,11 @@ export class CommentaryEngine {
     this.timers.forEach((t) => clearInterval(t));
     this.timers = [];
     this.queue = [];
-    stopSpeaking(); // operator pressed Stop — the only time speech is cut
+    this.epoch++;
+    stopSpeaking();
     stopClip();
     this.speaking = null;
-    void setDoc(doc(db, COL.live, LIVE_DOC.booth), { online: false, lastBeat: Date.now(), engineId: this.engineId }, { merge: true }).catch(() => {});
+    if (reason !== 'takeover') void setDoc(doc(db, COL.live, LIVE_DOC.booth), { online: false, lastBeat: Date.now(), engineId: this.engineId }, { merge: true }).catch(() => {});
     void this.writeCaption(null);
     this.emit();
   }
@@ -261,6 +328,11 @@ export class CommentaryEngine {
 
   /** Transactionally claim an event so two open booths never voice the same line. */
   private async claim(id: string): Promise<boolean> {
+    // Only booth on air (the usual case): claim without waiting for a server round-trip.
+    if (!this.otherBooth) {
+      void updateDoc(doc(db, COL.events, id), { status: 'claimed', claimedBy: this.engineId }).catch(() => {});
+      return true;
+    }
     try {
       return await runTransaction(db, async (tx) => {
         const ref = doc(db, COL.events, id);
@@ -275,12 +347,51 @@ export class CommentaryEngine {
     }
   }
 
+  /** Hand-off pause that ends at once if a new click takes over. */
+  private async pauseOrCut(ms: number, epoch: number) {
+    const end = Date.now() + ms;
+    while (Date.now() < end && epoch === this.epoch) await sleep(20);
+  }
+
+  /** Wait for silence (or a new click). */
+  private async quietOrCut(epoch: number) {
+    const started = Date.now();
+    const synth = typeof window !== 'undefined' && 'speechSynthesis' in window ? window.speechSynthesis : null;
+    while (synth && (synth.speaking || synth.pending) && epoch === this.epoch && Date.now() - started < 20_000) await sleep(20);
+  }
+
+  /**
+   * A new click takes over: the caster finishes the line they are saying (never
+   * cut mid-sentence), the rest of that exchange is dropped, and the new call
+   * (e.g. "Turtle slain by …") comes right after.
+   */
+  private interrupt() {
+    this.epoch++;
+    this.yieldRequested = false;
+  }
+
   private enqueue(ev: GameEvent) {
+    const fromController = !this.localIds.has(ev.id);
+    if (fromController) {
+      this.fillerStreak = 0;
+      // Queued filler talk is dropped — the click is what matters now.
+      this.queue = this.queue.filter((e) => !this.localIds.has(e.id));
+      // Replace what the casters are saying: filler is cut at once; a previous
+      // click's call is cut once it has actually started talking (events from
+      // the same click — e.g. last pick + draft complete — still play in order).
+      const cur = this.current;
+      // Events written by the same click (created within ~1 s) play in order; a later click takes over.
+      const sameClick = cur && !this.localIds.has(cur.id) && Math.abs(ev.createdAt - cur.createdAt) < 1200;
+      if (cur && !sameClick) this.interrupt();
+    }
     if (PRIORITY.has(ev.type)) {
-      // Replays/results jump the queue. Minor chatter in progress is never cut
-      // mid-sentence: the current caster finishes their line, then the desk
-      // moves on to the bigger moment.
-      this.queue.unshift(ev);
+      // Replays/results/phase calls jump ahead of minor chatter (but keep their
+      // own order: a result is voiced before the "going to break" that follows
+      // it). Minor chatter in progress is never cut mid-sentence: the current
+      // caster finishes their line, then the desk moves on to the bigger moment.
+      const firstMinor = this.queue.findIndex((e) => !PRIORITY.has(e.type));
+      if (firstMinor === -1) this.queue.push(ev);
+      else this.queue.splice(firstMinor, 0, ev);
       if (this.current && EVENT_DEFS[this.current.type].tier === 'minor') this.yieldRequested = true;
     } else {
       this.queue.push(ev);
@@ -321,9 +432,18 @@ export class CommentaryEngine {
   // ── the core: facts → AI or template → captions + speech ─────────────────
   private async handle(ev: GameEvent) {
     const live = this.live;
+    const epoch = this.epoch;
     if (!live || (ev.matchId && live.matchId && ev.matchId !== live.matchId)) {
       void this.markEvent(ev.id, 'skipped');
       this.log(ev, 'skipped', [], 0, 'Event is not for the live match');
+      return;
+    }
+    // Draft calls only make sense while the draft is on screen and fresh.
+    const staleDraftCall = (ev.type === 'DRAFT_BAN' || ev.type === 'DRAFT_PICK') && (live.phase !== 'draft' || Date.now() - ev.createdAt > 45_000);
+    const staleTalk = ev.type === 'DRAFT_TALK' && (live.phase !== 'draft' || Number(ev.data?.step ?? -1) !== live.draft.step);
+    if (staleDraftCall || staleTalk) {
+      void this.markEvent(ev.id, 'skipped');
+      if (staleDraftCall) this.log(ev, 'skipped', [], 0, 'Draft moved on');
       return;
     }
     let pair: string[] = live.casters.filter(isCasterId).slice(0, 2);
@@ -339,11 +459,18 @@ export class CommentaryEngine {
       this.lastAiAt = Date.now();
       this.bumpUsage();
       try {
-        const res = await requestCommentary(buildCommentaryPrompt(ev.type, facts, pair, this.recent.map((r) => r.text)));
-        lines = res.lines.map((l) => ({ casterId: l.caster, text: l.text }));
-        source = 'ai';
-        latency = res.latencyMs;
-        this.lastError = null;
+        const request = requestCommentary(buildCommentaryPrompt(ev.type, facts, pair, this.recent.map((r) => r.text)));
+        // Instant response: if the AI is slow, the library line goes out now.
+        const res = this.settings.instant ? await Promise.race([request, sleep(AI_FAST_MS).then(() => null)]) : await request;
+        if (res) {
+          lines = res.lines.map((l) => ({ casterId: l.caster, text: l.text }));
+          source = 'ai';
+          latency = res.latencyMs;
+          this.lastError = null;
+        } else {
+          request.catch(() => {});
+          note = 'AI was slow — used the instant library line';
+        }
       } catch (e) {
         const err = e as GeminiError;
         note = `AI fallback: ${err.message}`;
@@ -353,23 +480,28 @@ export class CommentaryEngine {
     }
     if (!lines.length) {
       // Pre-shoutcast library (built-in + pre-generated), avoiding recent repeats.
-      const pick = templateLines(ev, facts, pair, this.library, new Set(this.usedScripts));
+      const pick = templateLines(ev, facts, pair, this.library, new Set(this.usedScripts), this.casterNames);
       lines = pick.lines;
       this.usedScripts = [...this.usedScripts, ...pick.ids].slice(-160);
     }
     lines = lines
       .map((l, i) => ({ casterId: pair.includes(l.casterId) ? l.casterId : pair[i % 2], text: l.text.trim() }))
       .filter((l) => l.text);
+    // Every replay opens with "Tingnan muna natin ang instant replay" — even live AI lines.
+    if (ev.type === 'INSTANT_REPLAY' && lines.length && !REPLAY_LEAD.test(lines[0].text)) {
+      lines[0] = { ...lines[0], text: `Tingnan muna natin ang instant replay! ${lines[0].text}` };
+    }
 
     void this.markEvent(ev.id, 'done');
-    if (!lines.length) return;
+    if (!lines.length || epoch !== this.epoch) return;
     this.log(ev, source, lines, latency, note);
     void this.archive(ev, pair, lines, source, latency);
 
     // One voice at a time: wait for complete silence, leave a short handoff
     // gap, then the next caster speaks. Nobody talks over anybody.
     this.pair = pair;
-    await waitUntilQuiet();
+    await this.quietOrCut(epoch);
+    if (epoch !== this.epoch) return;
     if (await this.speakRealistic(lines, ev.type, source, EVENT_DEFS[ev.type].tier === 'minor')) {
       this.lastSpokeAt = Date.now();
       window.setTimeout(() => {
@@ -378,10 +510,11 @@ export class CommentaryEngine {
       return;
     }
     for (const [i, line] of lines.entries()) {
-      if (!this.running) break;
+      if (!this.running || epoch !== this.epoch) break;
       if (i > 0 && this.yieldRequested && EVENT_DEFS[ev.type].tier === 'minor') break;
-      await waitUntilQuiet();
-      if (i > 0) await sleep(HANDOFF_MS);
+      await this.quietOrCut(epoch);
+      if (i > 0) await this.pauseOrCut(HANDOFF_MS, epoch);
+      if (epoch !== this.epoch) break;
       await this.say(line, source);
     }
     this.lastSpokeAt = Date.now();
@@ -394,6 +527,7 @@ export class CommentaryEngine {
     const s = this.settings;
     const now = Date.now();
     if (!s.aiEnabled || now < this.backoffUntil) return false;
+    if (PHASE_EVENTS.has(ev.type)) return false;
     if (this.usageToday() >= s.dailyCap) return false;
     const sinceAi = now - this.lastAiAt;
     if (ev.type === 'IDLE_BANTER') return s.aiBanter && sinceAi >= s.cooldownSec * 3000;
@@ -423,10 +557,17 @@ export class CommentaryEngine {
   ): Promise<boolean> {
     const s = this.settings;
     if (s.voiceEngine !== 'gemini' || Date.now() < this.ttsBackoffUntil || ttsUsageToday() >= s.ttsDailyCap) return false;
+    const epoch = this.epoch;
     try {
-      const clip = await synthesizeExchange(lines, type, this.geminiVoices);
-      // Operator pressed Stop while the clip was being generated: stay silent.
-      if (!this.running && !isTest) return true;
+      const pending = synthesizeExchange(lines, type, this.geminiVoices);
+      const clip = s.instant && !isTest ? await Promise.race([pending, sleep(TTS_FAST_MS).then(() => null)]) : await pending;
+      if (!clip) {
+        pending.catch(() => {});
+        this.ttsNote = 'Realistic voice was slow — used the instant voice so the casters respond right away.';
+        return false;
+      }
+      // Stopped, or a new click took over while the clip was being generated: stay silent.
+      if ((!this.running && !isTest) || epoch !== this.epoch) return true;
       this.ttsNote = null;
       await playClip(
         clip,
@@ -440,8 +581,8 @@ export class CommentaryEngine {
           void this.writeCaption(caption);
           this.emit();
         },
-        // End the clip at a speaker hand-off (never mid-sentence) if a bigger moment is waiting.
-        (i) => i > 0 && yieldable && this.yieldRequested,
+        // End the clip at a speaker hand-off (never mid-sentence) when a click or bigger moment is waiting.
+        (i) => i > 0 && ((yieldable && this.yieldRequested) || epoch !== this.epoch),
       );
       this.speaking = null;
       this.emit();
@@ -478,26 +619,41 @@ export class CommentaryEngine {
     this.emit();
   }
 
+  /**
+   * Keep the desk talking between clicks, about whatever is on screen:
+   * draft speculation & storytelling, in-game banter (players, matchups, gold,
+   * objectives), post-game recap, and an occasional word during the break.
+   */
   private idleCheck() {
     const s = this.settings;
     const live = this.live;
-    if (!s.idleBanter || !live || live.phase !== 'ingame' || this.busy || this.queue.length) return;
-    if (Date.now() - this.lastSpokeAt < s.idleSec * 1000) return;
+    if (!s.idleBanter || !live?.matchId || this.busy || this.queue.length || live.phase === 'idle') return;
+    const base = Math.max(1, s.talkGapSec ?? 3);
+    const gapSec = live.phase === 'break' ? 45 : live.phase === 'postgame' ? base + 5 : base;
+    // After a long run of filler without clicks the gap widens a little (never silent for long).
+    const fatigue = Math.min(3, Math.floor(this.fillerStreak / 8));
+    if (Date.now() - this.lastSpokeAt < (gapSec + fatigue * 4) * 1000) return;
+    const draftDone = live.draft.step >= 20;
+    // One speculation per draft step (then plain draft talk), so they don't loop on the same pick.
+    if (live.phase === 'draft' && !draftDone && this.lastTalkStep === live.draft.step && this.fillerStreak > 2 && Math.random() < 0.5) return;
+    const type: GameEvent['type'] = live.phase === 'draft' ? 'DRAFT_TALK' : 'IDLE_BANTER';
+    if (live.phase === 'draft') this.lastTalkStep = live.draft.step;
     const id = uid('idle_');
     this.localIds.add(id);
     this.lastSpokeAt = Date.now();
+    this.fillerStreak++;
     this.enqueue({
       id,
       matchId: live.matchId ?? '',
       gameNumber: live.gameNumber,
-      type: 'IDLE_BANTER',
+      type,
       side: null,
       playerId: null,
       playerIgn: null,
       hero: null,
       spell: null,
       note: '',
-      data: {},
+      data: { mode: live.phase, step: live.draft.step },
       status: 'claimed',
       claimedBy: this.engineId,
       createdAt: Date.now(),
@@ -560,11 +716,17 @@ export class CommentaryEngine {
   }
 
   private log(ev: GameEvent, source: EngineLogEntry['source'], lines: EngineLogEntry['lines'], latencyMs: number, note?: string) {
-    this.cb.onLog({ id: uid('log_'), at: Date.now(), eventType: ev.type, summary: summarizeEvent(ev, this.live), source, lines, latencyMs, note });
+    this.logs = [{ id: uid('log_'), at: Date.now(), eventType: ev.type, summary: summarizeEvent(ev, this.live), source, lines, latencyMs, note }, ...this.logs].slice(0, 40);
+    this.logListeners.forEach((l) => l(this.logs));
   }
 
   private emit() {
-    this.cb.onStatus({
+    const st = this.status();
+    this.statusListeners.forEach((l) => l(st));
+  }
+
+  status(): EngineStatus {
+    return {
       running: this.running,
       busy: this.busy,
       speaking: this.speaking,
@@ -574,6 +736,15 @@ export class CommentaryEngine {
       lastError: this.lastError,
       ttsCallsToday: ttsUsageToday(),
       voiceNote: this.ttsNote,
-    });
+    };
   }
 }
+
+/** Ask the casting engine running in another tab/window (by id) to stop. */
+export const requestBoothStop = (engineId: string) =>
+  setDoc(doc(db, COL.live, LIVE_DOC.booth), { stopRequested: engineId }, { merge: true });
+
+/** The one casting engine for the whole admin app (survives page changes in the same tab). */
+export const boothEngine = new CommentaryEngine();
+// Dev hot-reload creates a fresh engine — stop the old one so it can't keep talking unseen.
+if (import.meta.hot) import.meta.hot.dispose(() => boothEngine.stop());

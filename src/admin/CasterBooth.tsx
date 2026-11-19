@@ -1,12 +1,12 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpen, Bot, Mic2, Power, Shuffle, Sparkles, Trash2, Volume2, Wand2 } from 'lucide-react';
+import { BookOpen, Bot, Lock, Mic2, Power, Sparkles, Trash2, Volume2, Wand2 } from 'lucide-react';
 import type { ScriptLibrary } from '@/types';
 import { useDocData, useLive, useSettings } from '@/hooks/useFirestore';
 import { COL } from '@/services/firebase';
 import {
-  CommentaryEngine,
   DEFAULT_ENGINE_SETTINGS,
+  boothEngine,
   SCRIPT_DOC,
   aiUsageToday,
   clearLibrary,
@@ -17,7 +17,6 @@ import {
 } from '@/services/commentary';
 import { CASTERS, CASTER_BY_ID, autoAssignVoices, loadVoices, speechSupported, type CasterId } from '@/services/casters';
 import { GEMINI_VOICES, TTS_PROFILE, loadGeminiVoices, saveGeminiVoices, ttsUsageToday } from '@/services/tts';
-import { rerollCasters } from '@/services/live';
 import { SCRIPT_KEYS, builtinCount, eventPairCount } from '@/services/templates';
 import { LineLibrary } from './LineLibrary';
 import { STORAGE_KEYS } from '@/lib/constants';
@@ -44,17 +43,9 @@ export default function CasterBooth() {
   const [log, setLog] = useState<EngineLogEntry[]>([]);
   const [perKey, setPerKey] = useState(6);
   const [genProgress, setGenProgress] = useState<{ done: number; total: number } | null>(null);
-  const engineRef = useRef<CommentaryEngine | null>(null);
-
-  // One engine per booth page; always stopped on unmount (no orphan listeners or speech).
-  if (!engineRef.current) {
-    engineRef.current = new CommentaryEngine({
-      onLog: (e) => setLog((xs) => [e, ...xs].slice(0, 40)),
-      onStatus: setStatus,
-    });
-  }
-  const engine = engineRef.current;
-  useEffect(() => () => engine.stop(), [engine]);
+  // One global engine: it keeps casting when you leave this page (Live Controller, Settings…) in the same tab.
+  const engine = boothEngine;
+  useEffect(() => engine.subscribe(setStatus, setLog), [engine]);
 
   useEffect(() => {
     let cancelled = false;
@@ -79,7 +70,7 @@ export default function CasterBooth() {
   }, [engine, settings]);
 
   useEffect(() => {
-    engine.setVoices(voices, voiceMap);
+    if (voices.length) engine.setVoices(voices, voiceMap);
     safeLocalSet(STORAGE_KEYS.boothVoices, voiceMap);
   }, [engine, voices, voiceMap]);
 
@@ -91,6 +82,10 @@ export default function CasterBooth() {
 
   const running = status?.running ?? false;
   const profiles = settingsDoc.data.casterProfiles;
+  // "Welcome sa drafting phase natin, partner <name>!" uses the names set in Settings → Casters.
+  useEffect(() => {
+    engine.setCasterNames(Object.fromEntries(Object.entries(profiles).map(([id, p]) => [id, p.displayName ?? ''])));
+  }, [engine, profiles]);
   const seated = live.data.casters;
   const aiEntries = library.data?.entries?.length ?? 0;
   const isEdge = /Edg\//.test(navigator.userAgent);
@@ -145,9 +140,9 @@ export default function CasterBooth() {
           title="On the desk"
           subtitle={running ? 'Listening for controller events…' : 'Press Start (a click is required before the browser allows speech).'}
           actions={
-            <Button size="sm" variant="secondary" disabled={!live.data.matchId} icon={<Shuffle className="h-4 w-4" />} onClick={() => toast.run(() => rerollCasters(live.data))}>
-              Random pair
-            </Button>
+            <Badge tone="muted">
+              <Lock className="mr-1 inline h-3 w-3" /> Pair locked by the system for this game
+            </Badge>
           }
         >
           <div className="grid gap-3 sm:grid-cols-2">
@@ -289,9 +284,14 @@ export default function CasterBooth() {
                 <Input type="number" min={1} max={10} value={settings.maxQueue} onChange={(e) => set('maxQueue', Math.max(1, Number(e.target.value)))} />
               </Field>
             </div>
+            <Switch
+              checked={settings.instant}
+              onChange={(v) => set('instant', v)}
+              label={<span><strong>Instant response</strong> — a click cuts in at once; if live AI or the realistic voice is slow, the library line / instant voice is used</span>}
+            />
             <div className="grid grid-cols-[auto_1fr] items-center gap-3">
-              <Switch checked={settings.idleBanter} onChange={(v) => set('idleBanter', v)} label="Desk banter when quiet" />
-              <Input type="number" min={20} max={300} value={settings.idleSec} onChange={(e) => set('idleSec', Math.max(20, Number(e.target.value)))} title="Seconds of silence before banter" />
+              <Switch checked={settings.idleBanter} onChange={(v) => set('idleBanter', v)} label="Keep talking between clicks (draft talk, banter, recap)" />
+              <Input type="number" min={1} max={30} value={settings.talkGapSec ?? 3} onChange={(e) => set('talkGapSec', Math.min(30, Math.max(1, Number(e.target.value) || 3)))} title="Seconds of silence before they keep talking" />
             </div>
             <Switch checked={settings.aiBanter} disabled={!settings.aiEnabled || settings.aiOnlyPriority} onChange={(v) => set('aiBanter', v)} label="Use AI for banter (uses more quota)" />
             <div className="grid grid-cols-2 gap-3">

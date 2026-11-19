@@ -8,6 +8,12 @@ import { Button, Card, Input, Select } from '@/components/ui';
 import { cn, shuffle } from '@/lib/utils';
 
 const GROUP_LABEL: Record<LineGroup, string> = {
+  DRAFTBAN: 'Draft bans',
+  DRAFTPICK: 'Draft picks',
+  DRAFTTALK: 'Draft talk (speculation & story)',
+  DRAFTSTART: 'Drafting phase welcome',
+  GAMESTART: 'Game start',
+  BREAK: 'Going to break',
   INTRO: 'Game intro',
   DRAFT: 'Draft',
   KILL: 'Kills (FB / 2K / 3K)',

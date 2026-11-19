@@ -2,11 +2,12 @@ import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowDown, ArrowUp, GitBranch, Plus, Radio, RotateCcw, Save, Shuffle, Trash2, Trophy, X } from 'lucide-react';
 import type { Match, SeriesFormat, Tournament, TournamentStatus, TournamentType } from '@/types';
-import { useIndex, useMatches, usePlayers, useTeams, useTournaments, useLive } from '@/hooks/useFirestore';
-import { createTournament, deleteTournament, generateTournamentBracket, reportSeries, revertSeries, updateMatch, updateTournament } from '@/services/db';
-import { goLive } from '@/services/live';
+import { useGames, useIndex, useMatches, usePlayers, useTeams, useTournaments, useLive } from '@/hooks/useFirestore';
+import { createTournament, deleteTournament, generateTournamentBracket, pickSeedingOpponent, reportSeries, revertSeries, startSeedingRound, updateMatch, updateTournament } from '@/services/db';
+import { pickableOpponents, seedingWinners, seedsFromSeeding } from '@/services/bracket';
+import { goLive, refreshFinalsMvp } from '@/services/live';
 import { FORMAT_LABEL, SERIES_FORMATS, winsNeeded } from '@/lib/constants';
-import { BracketView } from '@/components/Bracket';
+import { BracketView, PrintBracketButton } from '@/components/Bracket';
 import { TeamLogo } from '@/components/Brand';
 import { Badge, Button, Card, EmptyState, Field, Input, Modal, Select } from '@/components/ui';
 import { useToast } from '@/components/Toast';
@@ -182,6 +183,29 @@ function TournamentEditor({ t }: { t: Tournament }) {
 
   const playable = useMemo(() => matches.data.filter((m) => m.teamAId && m.teamBId && m.status !== 'completed' && m.status !== 'void'), [matches.data]);
 
+  // ── Seeding round: every team plays one game; the results seed the bracket ──
+  const games = useGames(t.id);
+  const seedMatches = useMemo(() => matches.data.filter((m) => m.bracket === 'SEED').sort((a, b) => a.index - b.index), [matches.data]);
+  const seedingDone = seedMatches.length > 0 && seedMatches.every((m) => m.status === 'completed');
+  const seedingOrder = useMemo(() => (seedingDone ? seedsFromSeeding(seedMatches, games.data) : []), [seedingDone, seedMatches, games.data]);
+
+  const startSeeding = async () => {
+    if (seeds.length < 2) return toast.error('Add at least 2 teams');
+    if ((t.bracketGenerated || matches.data.length) && !confirm('Starting a seeding round erases the current bracket, matches and game stats for this tournament. Continue?')) return;
+    setBusy(true);
+    const count = await toast.run(() => startSeedingRound({ ...t, ...draft, id: t.id, createdAt: t.createdAt }, seeds));
+    setBusy(false);
+    if (count) toast.success(`Seeding round drawn — ${count} games. Put them on air from the Live Controller.`);
+  };
+
+  const bracketFromSeeding = async () => {
+    if (!seedingDone) return;
+    setBusy(true);
+    const count = await toast.run(() => generateTournamentBracket({ ...t, ...draft, id: t.id, createdAt: t.createdAt }, seedingOrder, { keepSeeding: true }));
+    setBusy(false);
+    if (count) toast.success(`Bracket generated from the seeding results — ${count} matches`);
+  };
+
   return (
     <div className="space-y-6">
       <div className="grid gap-6 xl:grid-cols-2">
@@ -270,15 +294,75 @@ function TournamentEditor({ t }: { t: Tournament }) {
               </ul>
             </div>
           </div>
-          <Button className="mt-4 w-full" loading={busy} onClick={generate} icon={<GitBranch className="h-4 w-4" />}>
-            {t.bracketGenerated ? 'Regenerate bracket' : 'Generate bracket'} ({draft.type === 'double' ? 'double' : 'single'} elimination)
-          </Button>
+          <div className="mt-4 grid gap-2 sm:grid-cols-2">
+            <Button loading={busy} onClick={startSeeding} variant="secondary" icon={<Shuffle className="h-4 w-4" />} title="Every team plays one Bo1 game first; the results decide the bracket seeds">
+              Seeding round first (1 game each)
+            </Button>
+            <Button loading={busy} onClick={generate} icon={<GitBranch className="h-4 w-4" />}>
+              {t.bracketGenerated ? 'Regenerate bracket' : 'Generate bracket'} ({draft.type === 'double' ? 'double' : 'single'} elimination)
+            </Button>
+          </div>
+          <p className="mt-2 text-xs text-muted">
+            <strong>Seeding round</strong>: teams are drawn into one-game matches (Bo1). When every team has played, the bracket is built from the results — winners get the top seeds.
+          </p>
         </Card>
       </div>
 
-      <Card title="Bracket" subtitle="Click a match to schedule it, edit its format, report a result or put it on air.">
+      {seedMatches.length > 0 && !t.bracketGenerated && (
+        <Card
+          title="Seeding round"
+          subtitle={seedingDone ? 'All seeding games are done — the bracket seeds below come from the results.' : `${seedMatches.filter((m) => m.status === 'completed').length} of ${seedMatches.length} seeding games played. Put them on air from the Live Controller, or click a game below to report its result.`}
+          actions={
+            <Button size="sm" loading={busy} disabled={!seedingDone} icon={<GitBranch className="h-4 w-4" />} onClick={bracketFromSeeding}>
+              Generate bracket from seeding
+            </Button>
+          }
+        >
+          <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-4">
+            {seedMatches.map((m) => (
+              <button key={m.id} onClick={() => setOpen(m)} className="rounded-xl border border-line px-3 py-2 text-left text-sm transition hover:border-brand/60">
+                <p className="font-cond text-[11px] font-semibold uppercase tracking-wider text-muted">
+                  {m.label} · {m.status === 'completed' ? 'done' : m.status === 'live' ? 'live' : 'to play'}
+                </p>
+                {[m.teamAId, m.teamBId].map((id, i) => (
+                  <p key={i} className={cn('truncate', m.winnerId && m.winnerId === id ? 'font-bold text-brand' : m.winnerId ? 'text-muted' : '')}>
+                    {id ? teamIndex[id]?.name ?? id : 'Seeding bye'}
+                  </p>
+                ))}
+              </button>
+            ))}
+          </div>
+          {seedingDone && (
+            <ol className="mt-4 grid gap-1 text-sm sm:grid-cols-2 xl:grid-cols-4">
+              {seedingOrder.map((id, i) => (
+                <li key={id} className="flex items-center gap-2 rounded-lg bg-surface2 px-2 py-1">
+                  <span className="w-6 font-display text-lg text-brand">{i + 1}</span>
+                  <TeamLogo url={teamIndex[id]?.logoUrl} name={teamIndex[id]?.name} size={20} />
+                  <span className="truncate">{teamIndex[id]?.name ?? id}</span>
+                </li>
+              ))}
+            </ol>
+          )}
+        </Card>
+      )}
+
+      {t.bracketGenerated && seedMatches.length > 0 && <OpponentPicks t={t} matches={matches.data} teamIndex={teamIndex} />}
+
+      <Card title="Bracket" subtitle="Click a match to schedule it, edit its format, report a result or put it on air." actions={
+          <>
+            {(() => {
+              const final = matches.data.find((m) => m.isFinal && m.status === 'completed');
+              return final ? (
+                <Button size="sm" variant="ghost" icon={<Trophy className="h-4 w-4" />} onClick={() => toast.run(() => refreshFinalsMvp(t.id, final.id), 'Finals MVP updated')}>
+                  Refresh Finals MVP
+                </Button>
+              ) : null;
+            })()}
+            <PrintBracketButton />
+          </>
+        }>
         {matches.data.length ? (
-          <BracketView matches={matches.data} teams={teamIndex} type={t.type} onSelect={setOpen} />
+          <BracketView matches={matches.data} teams={teamIndex} type={t.type} onSelect={setOpen} finalsMvp={t.finalsMvp} title={t.name} />
         ) : (
           <p className="text-sm text-muted">No bracket yet.</p>
         )}
@@ -430,5 +514,78 @@ function MatchEditor({ match, onClose, teams, onGoLive }: { match: Match | null;
         )}
       </div>
     </Modal>
+  );
+}
+
+/**
+ * Seeding winners choose their first-round opponent (any team except
+ * themselves — winners or losers). The bracket swaps automatically; once a
+ * match's draft starts, it can't change any more.
+ */
+function OpponentPicks({ t, matches, teamIndex }: { t: Tournament; matches: Match[]; teamIndex: Record<string, { name: string; logoUrl: string } | undefined> }) {
+  const toast = useToast();
+  const [choice, setChoice] = useState<Record<string, string>>({});
+  const [busy, setBusy] = useState<string | null>(null);
+  const picks = t.opponentPicks ?? {};
+  const locked = new Set([...Object.keys(picks), ...Object.values(picks)]);
+  const winners = seedingWinners(matches, t.teamIds);
+  const r1 = matches.filter((m) => m.bracket === 'UB' && m.round === 1 && m.status !== 'void');
+  const opponentOf = (id: string) => {
+    const m = r1.find((x) => x.teamAId === id || x.teamBId === id);
+    return m ? (m.teamAId === id ? m.teamBId : m.teamAId) : null;
+  };
+  const started = (id: string) => {
+    const m = r1.find((x) => x.teamAId === id || x.teamBId === id);
+    return Boolean(m && m.status !== 'ready' && m.status !== 'pending');
+  };
+  if (!winners.length) return null;
+  const name = (id: string | null) => (id ? teamIndex[id]?.name ?? id : 'BYE');
+  return (
+    <Card title="Seeding winners pick their opponent" subtitle="Only teams that won their seeding game choose. Pick any team except yourself (seeding winners or losers) — the bracket swaps automatically. Once a match's draft starts, it can't change.">
+      <ul className="divide-y divide-line">
+        {winners.map((w) => {
+          const options = pickableOpponents(matches, w, locked);
+          return (
+            <li key={w} className="flex flex-wrap items-center gap-3 py-2.5">
+              <TeamLogo url={teamIndex[w]?.logoUrl} name={name(w)} size={28} />
+              <span className="min-w-[140px] font-semibold">{name(w)}</span>
+              <span className="text-xs text-muted">now vs {name(opponentOf(w))}</span>
+              <span className="ml-auto flex items-center gap-2">
+                {picks[w] ? (
+                  <Badge tone="success">Picked {name(picks[w])}</Badge>
+                ) : started(w) ? (
+                  <Badge tone="muted">Locked — draft started</Badge>
+                ) : locked.has(w) ? (
+                  <Badge tone="muted">Picked by another team</Badge>
+                ) : (
+                  <>
+                    <Select className="h-8 w-48 py-0 text-xs" value={choice[w] ?? ''} onChange={(e) => setChoice((c) => ({ ...c, [w]: e.target.value }))}>
+                      <option value="">Choose opponent…</option>
+                      {options.map((id) => (
+                        <option key={id} value={id}>
+                          {name(id)}
+                        </option>
+                      ))}
+                    </Select>
+                    <Button
+                      size="sm"
+                      loading={busy === w}
+                      disabled={!choice[w]}
+                      onClick={async () => {
+                        setBusy(w);
+                        await toast.run(() => pickSeedingOpponent(t, w, choice[w]), `${name(w)} will face ${name(choice[w])}`);
+                        setBusy(null);
+                      }}
+                    >
+                      Confirm
+                    </Button>
+                  </>
+                )}
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+    </Card>
   );
 }

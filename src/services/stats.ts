@@ -1,4 +1,4 @@
-import type { GameRecord, Match, Tournament } from '@/types';
+import type { GameRecord, Match, Tournament, FinalsMvp, GamePlayerStat } from '@/types';
 import { kdaRatio } from '@/lib/utils';
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -40,7 +40,8 @@ export function computeStandings(t: Tournament | null, matches: Match[]): Standi
     loser.seriesL++;
     winner.form.push('W');
     loser.form.push('L');
-    const eliminating = t.type === 'single' || m.bracket === 'LB' || m.bracket === 'GF' || !m.loserTo;
+    // A seeding-round loss never eliminates — it only sets the bracket seed.
+    const eliminating = m.bracket !== 'SEED' && (t.type === 'single' || m.bracket === 'LB' || m.bracket === 'GF' || !m.loserTo);
     if (eliminating) loser.status = 'eliminated';
   }
 
@@ -60,6 +61,67 @@ export function computeStandings(t: Tournament | null, matches: Match[]): Standi
     );
 }
 
+/**
+ * Performance rating for one game (used for the post-match MVP):
+ * KDA ratio, kills/assists, teamfight participation (TP%), Lord/Turtle secures, and the win.
+ */
+export function playerRating(p: GamePlayerStat, won: boolean): number {
+  const kda = kdaRatio(p.k, p.d, p.a);
+  const tp = p.tp ?? 50;
+  return Math.round((kda * 1.5 + p.k * 0.35 + p.a * 0.2 - p.d * 0.25 + tp / 20 + (p.lords ?? 0) * 1.2 + (p.turtles ?? 0) * 0.6 + (won ? 2 : 0)) * 10) / 10;
+}
+
+/** Post-match MVP: best rating on the winning team (the stored pick when stats were saved). */
+export function gameMvp(g: GameRecord): string | null {
+  if (g.mvpPlayerId) return g.mvpPlayerId;
+  const winners = (g.players ?? []).filter((p) => p.teamId === g.winnerTeamId);
+  const best = winners.map((p) => ({ p, r: playerRating(p, true) })).sort((a, b) => b.r - a.r)[0];
+  return best?.p.playerId ?? null;
+}
+
+/**
+ * Finals MVP from the Grand Final games: most post-match MVPs; ties go to the
+ * best total rating. Returns KDA, average TP% and Lord/Turtle secures too.
+ */
+export function computeFinalsMvp(gfGames: GameRecord[]): FinalsMvp | null {
+  if (!gfGames.length) return null;
+  const rows = new Map<string, { playerId: string; ign: string; teamId: string; mvps: number; games: number; rating: number; k: number; d: number; a: number; tp: number[]; lords: number; turtles: number }>();
+  for (const g of gfGames) {
+    const mvp = gameMvp(g);
+    for (const p of g.players ?? []) {
+      if (!p.playerId) continue;
+      const r = rows.get(p.playerId) ?? { playerId: p.playerId, ign: p.ign, teamId: p.teamId, mvps: 0, games: 0, rating: 0, k: 0, d: 0, a: 0, tp: [], lords: 0, turtles: 0 };
+      r.games++;
+      r.rating += playerRating(p, p.teamId === g.winnerTeamId);
+      r.k += p.k;
+      r.d += p.d;
+      r.a += p.a;
+      if (typeof p.tp === 'number') r.tp.push(p.tp);
+      r.lords += p.lords ?? 0;
+      r.turtles += p.turtles ?? 0;
+      if (mvp === p.playerId) r.mvps++;
+      rows.set(p.playerId, r);
+    }
+  }
+  // The Finals MVP comes from the series winner (team with the most game wins).
+  const wins: Record<string, number> = {};
+  for (const g of gfGames) wins[g.winnerTeamId] = (wins[g.winnerTeamId] ?? 0) + 1;
+  const champion = Object.entries(wins).sort((a, b) => b[1] - a[1])[0]?.[0];
+  const best = [...rows.values()].filter((r) => !champion || r.teamId === champion).sort((a, b) => b.mvps - a.mvps || b.rating - a.rating)[0];
+  if (!best) return null;
+  return {
+    playerId: best.playerId,
+    ign: best.ign,
+    teamId: best.teamId,
+    gameMvps: best.mvps,
+    games: best.games,
+    kda: Math.round(kdaRatio(best.k, best.d, best.a) * 100) / 100,
+    tp: best.tp.length ? Math.round(best.tp.reduce((s, x) => s + x, 0) / best.tp.length) : null,
+    lords: best.lords,
+    turtles: best.turtles,
+  };
+}
+
 export interface PlayerAggregate {
   playerId: string;
   ign: string;
@@ -77,12 +139,17 @@ export interface PlayerAggregate {
   savage: number;
   lords: number;
   turtles: number;
+  /** Average teamfight participation % (games where it was entered), -1 = none yet. */
+  tp: number;
+  /** Post-match MVPs. */
+  mvps: number;
   topHero: string | null;
 }
 
 export function computeLeaderboard(games: GameRecord[]): PlayerAggregate[] {
-  const map = new Map<string, PlayerAggregate & { heroes: Record<string, number> }>();
+  const map = new Map<string, PlayerAggregate & { heroes: Record<string, number>; tpSum: number; tpN: number }>();
   for (const g of games) {
+    const mvp = gameMvp(g);
     for (const p of g.players ?? []) {
       if (!p.playerId) continue;
       let row = map.get(p.playerId);
@@ -104,8 +171,12 @@ export function computeLeaderboard(games: GameRecord[]): PlayerAggregate[] {
           savage: 0,
           lords: 0,
           turtles: 0,
+          tp: -1,
+          mvps: 0,
           topHero: null,
           heroes: {},
+          tpSum: 0,
+          tpN: 0,
         };
         map.set(p.playerId, row);
       }
@@ -121,11 +192,17 @@ export function computeLeaderboard(games: GameRecord[]): PlayerAggregate[] {
       row.savage += p.savage;
       row.lords += p.lords;
       row.turtles += p.turtles;
+      if (typeof p.tp === 'number') {
+        row.tpSum += p.tp;
+        row.tpN++;
+      }
+      if (mvp === p.playerId) row.mvps++;
       if (p.hero) row.heroes[p.hero] = (row.heroes[p.hero] ?? 0) + 1;
     }
   }
-  return [...map.values()].map(({ heroes, ...r }) => ({
+  return [...map.values()].map(({ heroes, tpSum, tpN, ...r }) => ({
     ...r,
+    tp: tpN ? Math.round(tpSum / tpN) : -1,
     kda: kdaRatio(r.k, r.d, r.a),
     topHero: Object.entries(heroes).sort((x, y) => y[1] - x[1])[0]?.[0] ?? null,
   }));
@@ -133,7 +210,7 @@ export function computeLeaderboard(games: GameRecord[]): PlayerAggregate[] {
 
 export type LeaderboardKey = keyof Pick<
   PlayerAggregate,
-  'kda' | 'k' | 'd' | 'a' | 'gp' | 'fb' | 'dk' | 'tk' | 'maniac' | 'savage' | 'lords' | 'turtles' | 'wins'
+  'kda' | 'k' | 'd' | 'a' | 'gp' | 'fb' | 'dk' | 'tk' | 'maniac' | 'savage' | 'lords' | 'turtles' | 'wins' | 'tp' | 'mvps'
 >;
 
 export function rankBy(rows: PlayerAggregate[], key: LeaderboardKey, dir: 'desc' | 'asc' = 'desc'): PlayerAggregate[] {

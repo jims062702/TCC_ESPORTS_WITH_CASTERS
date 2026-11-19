@@ -70,10 +70,10 @@ function BuiltinBackground({ kind }: { kind: string }) {
   const right = 'absolute inset-y-0 right-0 hidden w-1/2 flex-col items-center justify-center px-10 text-center lg:flex';
   if (kind === 'tagline') {
     return (
-      <div className="absolute inset-0 bg-gradient-to-br from-crimson-950 via-crimson-800 to-crimson-950">
-        <div className="grid-bg absolute inset-0 opacity-15" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#f8e4e1] via-[#f1d3cf] to-[#ece4e1] dark:from-crimson-950 dark:via-crimson-800 dark:to-crimson-950">
+        <div className="grid-bg absolute inset-0 opacity-30 dark:opacity-15" />
         <div className={right}>
-          <Logo size={180} className="h-[22vh] w-auto drop-shadow-[0_0_30px_rgba(0,0,0,0.6)]" />
+          <Logo size={180} className="h-[22vh] w-auto drop-shadow-[0_14px_28px_rgba(80,20,20,0.22)] dark:drop-shadow-[0_0_30px_rgba(0,0,0,0.6)]" />
           <p className="neon mt-6 font-display text-7xl uppercase leading-[0.9] tracking-[0.18em] xl:text-8xl">
             Let the
             <br />
@@ -85,24 +85,27 @@ function BuiltinBackground({ kind }: { kind: string }) {
   }
   if (kind === 'mlbb') {
     return (
-      <div className="absolute inset-0 bg-ink-950">
-        <div className="absolute right-[30%] top-[10%] h-[50vh] w-[50vh] rounded-full bg-teal-glow/15 blur-[100px]" />
-        <div className="absolute -bottom-20 right-0 h-[60vh] w-[60vh] rounded-full bg-crimson-600/30 blur-[110px]" />
+      <div className="absolute inset-0 bg-[#ebe5e2] dark:bg-ink-950">
+        <div className="absolute right-[30%] top-[10%] h-[50vh] w-[50vh] rounded-full bg-teal-deep/10 blur-[100px] dark:bg-teal-glow/15" />
+        <div className="absolute -bottom-20 right-0 h-[60vh] w-[60vh] rounded-full bg-crimson-600/15 blur-[110px] dark:bg-crimson-600/30" />
         <div className={right}>
-          <p className="font-cond text-lg font-semibold uppercase tracking-[0.35em] text-teal-glow">Mobile Legends: Bang Bang</p>
-          <p className="mt-3 font-display text-8xl uppercase leading-[0.85] text-white">
+          <p className="font-cond text-lg font-semibold uppercase tracking-[0.35em] text-teal-deep dark:text-teal-glow">Mobile Legends: Bang Bang</p>
+          <p className="mt-3 font-display text-8xl uppercase leading-[0.85] text-ink-900 dark:text-white">
             TCC Esports
             <br />
-            <span className="text-crimson-500">Tournament</span>
+            <span className="text-crimson-700 dark:text-crimson-500">Tournament</span>
           </p>
-          <p className="mt-5 font-cond text-lg uppercase tracking-[0.25em] text-white/70">Live brackets · Standings · Leaderboards</p>
+          <p className="mt-5 font-cond text-lg uppercase tracking-[0.25em] text-ink-600 dark:text-white/70">Live brackets · Standings · Leaderboards</p>
         </div>
       </div>
     );
   }
   return (
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_50%,#841917_0%,#1d1b20_42%,#0d0b0e_78%)]">
-      <Logo size={640} glow className="absolute bottom-[6%] right-1/2 h-[42%] w-auto translate-x-1/2 opacity-40 lg:bottom-auto lg:right-[8%] lg:top-1/2 lg:h-[64%] lg:-translate-y-1/2 lg:translate-x-0 lg:opacity-100" />
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_50%,#f4d4d0_0%,#efe6e3_42%,#f0ece9_78%)] dark:bg-[radial-gradient(circle_at_72%_50%,#841917_0%,#1d1b20_42%,#0d0b0e_78%)]">
+      <Logo
+        size={640}
+        className="absolute bottom-[6%] right-1/2 h-[42%] w-auto translate-x-1/2 opacity-25 drop-shadow-[0_24px_48px_rgba(80,20,20,0.25)] dark:opacity-40 dark:drop-shadow-[0_0_28px_rgba(248,49,47,0.45)] lg:bottom-auto lg:right-[6%] lg:top-1/2 lg:h-[56%] lg:-translate-y-1/2 lg:translate-x-0 lg:opacity-100 dark:lg:opacity-100"
+      />
     </div>
   );
 }
@@ -139,7 +142,7 @@ export function CarouselBackground({ slides, state }: { slides: HeroSlide[]; sta
       </AnimatePresence>
 
       {/* Fade toward the left (text side); the right side shows the image fully */}
-      <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-bg from-25% via-bg/70 via-50% to-transparent to-80% lg:block" />
+      <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-bg from-25% via-bg/60 via-45% to-transparent to-65% lg:block" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-bg/85 via-bg/65 to-bg/20 lg:hidden" />
       {/* Soft edges under the navbar and into the next section */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-bg/70 to-transparent" />

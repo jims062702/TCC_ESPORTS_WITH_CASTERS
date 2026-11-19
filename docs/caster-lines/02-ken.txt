@@ -1,5 +1,2173 @@
 Direk Ken — Hype Play-by-Play (male)
-6,768 unique lines
+8,869 unique lines
+
+══════ Draft bans — 378 lines ══════
+Ban na! Wala nang atrasan!
+Ban na! Wala nang atrasan! Abangan niyo yan!
+Ban na! Wala nang atrasan! Ramdam ko, may gulo na!
+Ban na! Wala nang atrasan! Konting tiis lang!
+Ban na! Wala nang atrasan! Hindi pa tapos ito!
+Ban na! Wala nang atrasan! Handa na ako!
+Okay, okay! Ban na! Wala nang atrasan!
+Okay, okay! Ban na! Wala nang atrasan! Abangan niyo yan!
+Okay, okay! Ban na! Wala nang atrasan! Ramdam ko, may gulo na!
+Okay, okay! Ban na! Wala nang atrasan! Konting tiis lang!
+Okay, okay! Ban na! Wala nang atrasan! Hindi pa tapos ito!
+Okay, okay! Ban na! Wala nang atrasan! Handa na ako!
+Abangan niyo! Ban na! Wala nang atrasan!
+Abangan niyo! Ban na! Wala nang atrasan! Abangan niyo yan!
+Abangan niyo! Ban na! Wala nang atrasan! Ramdam ko, may gulo na!
+Abangan niyo! Ban na! Wala nang atrasan! Konting tiis lang!
+Abangan niyo! Ban na! Wala nang atrasan! Hindi pa tapos ito!
+Abangan niyo! Ban na! Wala nang atrasan! Handa na ako!
+Teka lang! Ban na! Wala nang atrasan!
+Teka lang! Ban na! Wala nang atrasan! Abangan niyo yan!
+Teka lang! Ban na! Wala nang atrasan! Ramdam ko, may gulo na!
+Teka lang! Ban na! Wala nang atrasan! Konting tiis lang!
+Teka lang! Ban na! Wala nang atrasan! Hindi pa tapos ito!
+Teka lang! Ban na! Wala nang atrasan! Handa na ako!
+Ayos! Ban na! Wala nang atrasan!
+Ayos! Ban na! Wala nang atrasan! Abangan niyo yan!
+Ayos! Ban na! Wala nang atrasan! Ramdam ko, may gulo na!
+Ayos! Ban na! Wala nang atrasan! Konting tiis lang!
+Ayos! Ban na! Wala nang atrasan! Hindi pa tapos ito!
+Ayos! Ban na! Wala nang atrasan! Handa na ako!
+Ramdam ko na! Ban na! Wala nang atrasan!
+Ramdam ko na! Ban na! Wala nang atrasan! Abangan niyo yan!
+Ramdam ko na! Ban na! Wala nang atrasan! Ramdam ko, may gulo na!
+Ramdam ko na! Ban na! Wala nang atrasan! Konting tiis lang!
+Ramdam ko na! Ban na! Wala nang atrasan! Hindi pa tapos ito!
+Ramdam ko na! Ban na! Wala nang atrasan! Handa na ako!
+Hoy, hoy! Ban na! Wala nang atrasan!
+Hoy, hoy! Ban na! Wala nang atrasan! Abangan niyo yan!
+Hoy, hoy! Ban na! Wala nang atrasan! Ramdam ko, may gulo na!
+Hoy, hoy! Ban na! Wala nang atrasan! Konting tiis lang!
+Hoy, hoy! Ban na! Wala nang atrasan! Hindi pa tapos ito!
+Hoy, hoy! Ban na! Wala nang atrasan! Handa na ako!
+Ito na! Ban na! Wala nang atrasan!
+Ito na! Ban na! Wala nang atrasan! Abangan niyo yan!
+Ito na! Ban na! Wala nang atrasan! Ramdam ko, may gulo na!
+Ito na! Ban na! Wala nang atrasan! Konting tiis lang!
+Ito na! Ban na! Wala nang atrasan! Hindi pa tapos ito!
+Ito na! Ban na! Wala nang atrasan! Handa na ako!
+Uy! Ban na! Wala nang atrasan!
+Uy! Ban na! Wala nang atrasan! Abangan niyo yan!
+Uy! Ban na! Wala nang atrasan! Ramdam ko, may gulo na!
+Uy! Ban na! Wala nang atrasan! Konting tiis lang!
+Uy! Ban na! Wala nang atrasan! Hindi pa tapos ito!
+Uy! Ban na! Wala nang atrasan! Handa na ako!
+Ayan! Tinanggal agad!
+Ayan! Tinanggal agad! Abangan niyo yan!
+Ayan! Tinanggal agad! Ramdam ko, may gulo na!
+Ayan! Tinanggal agad! Konting tiis lang!
+Ayan! Tinanggal agad! Hindi pa tapos ito!
+Ayan! Tinanggal agad! Handa na ako!
+Okay, okay! Ayan! Tinanggal agad!
+Okay, okay! Ayan! Tinanggal agad! Abangan niyo yan!
+Okay, okay! Ayan! Tinanggal agad! Ramdam ko, may gulo na!
+Okay, okay! Ayan! Tinanggal agad! Konting tiis lang!
+Okay, okay! Ayan! Tinanggal agad! Hindi pa tapos ito!
+Okay, okay! Ayan! Tinanggal agad! Handa na ako!
+Abangan niyo! Ayan! Tinanggal agad!
+Abangan niyo! Ayan! Tinanggal agad! Abangan niyo yan!
+Abangan niyo! Ayan! Tinanggal agad! Ramdam ko, may gulo na!
+Abangan niyo! Ayan! Tinanggal agad! Konting tiis lang!
+Abangan niyo! Ayan! Tinanggal agad! Hindi pa tapos ito!
+Abangan niyo! Ayan! Tinanggal agad! Handa na ako!
+Teka lang! Ayan! Tinanggal agad!
+Teka lang! Ayan! Tinanggal agad! Abangan niyo yan!
+Teka lang! Ayan! Tinanggal agad! Ramdam ko, may gulo na!
+Teka lang! Ayan! Tinanggal agad! Konting tiis lang!
+Teka lang! Ayan! Tinanggal agad! Hindi pa tapos ito!
+Teka lang! Ayan! Tinanggal agad! Handa na ako!
+Ayos! Ayan! Tinanggal agad!
+Ayos! Ayan! Tinanggal agad! Abangan niyo yan!
+Ayos! Ayan! Tinanggal agad! Ramdam ko, may gulo na!
+Ayos! Ayan! Tinanggal agad! Konting tiis lang!
+Ayos! Ayan! Tinanggal agad! Hindi pa tapos ito!
+Ayos! Ayan! Tinanggal agad! Handa na ako!
+Ramdam ko na! Ayan! Tinanggal agad!
+Ramdam ko na! Ayan! Tinanggal agad! Abangan niyo yan!
+Ramdam ko na! Ayan! Tinanggal agad! Ramdam ko, may gulo na!
+Ramdam ko na! Ayan! Tinanggal agad! Konting tiis lang!
+Ramdam ko na! Ayan! Tinanggal agad! Hindi pa tapos ito!
+Ramdam ko na! Ayan! Tinanggal agad! Handa na ako!
+Hoy, hoy! Ayan! Tinanggal agad!
+Hoy, hoy! Ayan! Tinanggal agad! Abangan niyo yan!
+Hoy, hoy! Ayan! Tinanggal agad! Ramdam ko, may gulo na!
+Hoy, hoy! Ayan! Tinanggal agad! Konting tiis lang!
+Hoy, hoy! Ayan! Tinanggal agad! Hindi pa tapos ito!
+Hoy, hoy! Ayan! Tinanggal agad! Handa na ako!
+Ito na! Ayan! Tinanggal agad!
+Ito na! Ayan! Tinanggal agad! Abangan niyo yan!
+Ito na! Ayan! Tinanggal agad! Ramdam ko, may gulo na!
+Ito na! Ayan! Tinanggal agad! Konting tiis lang!
+Ito na! Ayan! Tinanggal agad! Hindi pa tapos ito!
+Ito na! Ayan! Tinanggal agad! Handa na ako!
+Uy! Ayan! Tinanggal agad!
+Uy! Ayan! Tinanggal agad! Abangan niyo yan!
+Uy! Ayan! Tinanggal agad! Ramdam ko, may gulo na!
+Uy! Ayan! Tinanggal agad! Konting tiis lang!
+Uy! Ayan! Tinanggal agad! Hindi pa tapos ito!
+Uy! Ayan! Tinanggal agad! Handa na ako!
+Malinaw ang mensahe ng ban na yan.
+Malinaw ang mensahe ng ban na yan. Abangan niyo yan!
+Malinaw ang mensahe ng ban na yan. Ramdam ko, may gulo na!
+Malinaw ang mensahe ng ban na yan. Konting tiis lang!
+Malinaw ang mensahe ng ban na yan. Hindi pa tapos ito!
+Malinaw ang mensahe ng ban na yan. Handa na ako!
+Okay, okay! Malinaw ang mensahe ng ban na yan.
+Okay, okay! Malinaw ang mensahe ng ban na yan. Abangan niyo yan!
+Okay, okay! Malinaw ang mensahe ng ban na yan. Ramdam ko, may gulo na!
+Okay, okay! Malinaw ang mensahe ng ban na yan. Konting tiis lang!
+Okay, okay! Malinaw ang mensahe ng ban na yan. Hindi pa tapos ito!
+Okay, okay! Malinaw ang mensahe ng ban na yan. Handa na ako!
+Abangan niyo! Malinaw ang mensahe ng ban na yan.
+Abangan niyo! Malinaw ang mensahe ng ban na yan. Abangan niyo yan!
+Abangan niyo! Malinaw ang mensahe ng ban na yan. Ramdam ko, may gulo na!
+Abangan niyo! Malinaw ang mensahe ng ban na yan. Konting tiis lang!
+Abangan niyo! Malinaw ang mensahe ng ban na yan. Hindi pa tapos ito!
+Abangan niyo! Malinaw ang mensahe ng ban na yan. Handa na ako!
+Teka lang! Malinaw ang mensahe ng ban na yan.
+Teka lang! Malinaw ang mensahe ng ban na yan. Abangan niyo yan!
+Teka lang! Malinaw ang mensahe ng ban na yan. Ramdam ko, may gulo na!
+Teka lang! Malinaw ang mensahe ng ban na yan. Konting tiis lang!
+Teka lang! Malinaw ang mensahe ng ban na yan. Hindi pa tapos ito!
+Teka lang! Malinaw ang mensahe ng ban na yan. Handa na ako!
+Ayos! Malinaw ang mensahe ng ban na yan.
+Ayos! Malinaw ang mensahe ng ban na yan. Abangan niyo yan!
+Ayos! Malinaw ang mensahe ng ban na yan. Ramdam ko, may gulo na!
+Ayos! Malinaw ang mensahe ng ban na yan. Konting tiis lang!
+Ayos! Malinaw ang mensahe ng ban na yan. Hindi pa tapos ito!
+Ayos! Malinaw ang mensahe ng ban na yan. Handa na ako!
+Ramdam ko na! Malinaw ang mensahe ng ban na yan.
+Ramdam ko na! Malinaw ang mensahe ng ban na yan. Abangan niyo yan!
+Ramdam ko na! Malinaw ang mensahe ng ban na yan. Ramdam ko, may gulo na!
+Ramdam ko na! Malinaw ang mensahe ng ban na yan. Konting tiis lang!
+Ramdam ko na! Malinaw ang mensahe ng ban na yan. Hindi pa tapos ito!
+Ramdam ko na! Malinaw ang mensahe ng ban na yan. Handa na ako!
+Hoy, hoy! Malinaw ang mensahe ng ban na yan.
+Hoy, hoy! Malinaw ang mensahe ng ban na yan. Abangan niyo yan!
+Hoy, hoy! Malinaw ang mensahe ng ban na yan. Ramdam ko, may gulo na!
+Hoy, hoy! Malinaw ang mensahe ng ban na yan. Konting tiis lang!
+Hoy, hoy! Malinaw ang mensahe ng ban na yan. Hindi pa tapos ito!
+Hoy, hoy! Malinaw ang mensahe ng ban na yan. Handa na ako!
+Ito na! Malinaw ang mensahe ng ban na yan.
+Ito na! Malinaw ang mensahe ng ban na yan. Abangan niyo yan!
+Ito na! Malinaw ang mensahe ng ban na yan. Ramdam ko, may gulo na!
+Ito na! Malinaw ang mensahe ng ban na yan. Konting tiis lang!
+Ito na! Malinaw ang mensahe ng ban na yan. Hindi pa tapos ito!
+Ito na! Malinaw ang mensahe ng ban na yan. Handa na ako!
+Uy! Malinaw ang mensahe ng ban na yan.
+Uy! Malinaw ang mensahe ng ban na yan. Abangan niyo yan!
+Uy! Malinaw ang mensahe ng ban na yan. Ramdam ko, may gulo na!
+Uy! Malinaw ang mensahe ng ban na yan. Konting tiis lang!
+Uy! Malinaw ang mensahe ng ban na yan. Hindi pa tapos ito!
+Uy! Malinaw ang mensahe ng ban na yan. Handa na ako!
+Respeto sa {hero} yan.
+Respeto sa {hero} yan. Abangan niyo yan!
+Respeto sa {hero} yan. Ramdam ko, may gulo na!
+Respeto sa {hero} yan. Konting tiis lang!
+Respeto sa {hero} yan. Hindi pa tapos ito!
+Respeto sa {hero} yan. Handa na ako!
+Okay, okay! Respeto sa {hero} yan.
+Okay, okay! Respeto sa {hero} yan. Abangan niyo yan!
+Okay, okay! Respeto sa {hero} yan. Ramdam ko, may gulo na!
+Okay, okay! Respeto sa {hero} yan. Konting tiis lang!
+Okay, okay! Respeto sa {hero} yan. Hindi pa tapos ito!
+Okay, okay! Respeto sa {hero} yan. Handa na ako!
+Abangan niyo! Respeto sa {hero} yan.
+Abangan niyo! Respeto sa {hero} yan. Abangan niyo yan!
+Abangan niyo! Respeto sa {hero} yan. Ramdam ko, may gulo na!
+Abangan niyo! Respeto sa {hero} yan. Konting tiis lang!
+Abangan niyo! Respeto sa {hero} yan. Hindi pa tapos ito!
+Abangan niyo! Respeto sa {hero} yan. Handa na ako!
+Teka lang! Respeto sa {hero} yan.
+Teka lang! Respeto sa {hero} yan. Abangan niyo yan!
+Teka lang! Respeto sa {hero} yan. Ramdam ko, may gulo na!
+Teka lang! Respeto sa {hero} yan. Konting tiis lang!
+Teka lang! Respeto sa {hero} yan. Hindi pa tapos ito!
+Teka lang! Respeto sa {hero} yan. Handa na ako!
+Ayos! Respeto sa {hero} yan.
+Ayos! Respeto sa {hero} yan. Abangan niyo yan!
+Ayos! Respeto sa {hero} yan. Ramdam ko, may gulo na!
+Ayos! Respeto sa {hero} yan. Konting tiis lang!
+Ayos! Respeto sa {hero} yan. Hindi pa tapos ito!
+Ayos! Respeto sa {hero} yan. Handa na ako!
+Ramdam ko na! Respeto sa {hero} yan.
+Ramdam ko na! Respeto sa {hero} yan. Abangan niyo yan!
+Ramdam ko na! Respeto sa {hero} yan. Ramdam ko, may gulo na!
+Ramdam ko na! Respeto sa {hero} yan. Konting tiis lang!
+Ramdam ko na! Respeto sa {hero} yan. Hindi pa tapos ito!
+Ramdam ko na! Respeto sa {hero} yan. Handa na ako!
+Hoy, hoy! Respeto sa {hero} yan.
+Hoy, hoy! Respeto sa {hero} yan. Abangan niyo yan!
+Hoy, hoy! Respeto sa {hero} yan. Ramdam ko, may gulo na!
+Hoy, hoy! Respeto sa {hero} yan. Konting tiis lang!
+Hoy, hoy! Respeto sa {hero} yan. Hindi pa tapos ito!
+Hoy, hoy! Respeto sa {hero} yan. Handa na ako!
+Ito na! Respeto sa {hero} yan.
+Ito na! Respeto sa {hero} yan. Abangan niyo yan!
+Ito na! Respeto sa {hero} yan. Ramdam ko, may gulo na!
+Ito na! Respeto sa {hero} yan. Konting tiis lang!
+Ito na! Respeto sa {hero} yan. Hindi pa tapos ito!
+Ito na! Respeto sa {hero} yan. Handa na ako!
+Uy! Respeto sa {hero} yan.
+Uy! Respeto sa {hero} yan. Abangan niyo yan!
+Uy! Respeto sa {hero} yan. Ramdam ko, may gulo na!
+Uy! Respeto sa {hero} yan. Konting tiis lang!
+Uy! Respeto sa {hero} yan. Hindi pa tapos ito!
+Uy! Respeto sa {hero} yan. Handa na ako!
+Ayaw nilang makaharap ang {hero} ngayong game.
+Ayaw nilang makaharap ang {hero} ngayong game. Abangan niyo yan!
+Ayaw nilang makaharap ang {hero} ngayong game. Ramdam ko, may gulo na!
+Ayaw nilang makaharap ang {hero} ngayong game. Konting tiis lang!
+Ayaw nilang makaharap ang {hero} ngayong game. Hindi pa tapos ito!
+Ayaw nilang makaharap ang {hero} ngayong game. Handa na ako!
+Okay, okay! Ayaw nilang makaharap ang {hero} ngayong game.
+Okay, okay! Ayaw nilang makaharap ang {hero} ngayong game. Abangan niyo yan!
+Okay, okay! Ayaw nilang makaharap ang {hero} ngayong game. Ramdam ko, may gulo na!
+Okay, okay! Ayaw nilang makaharap ang {hero} ngayong game. Konting tiis lang!
+Okay, okay! Ayaw nilang makaharap ang {hero} ngayong game. Hindi pa tapos ito!
+Okay, okay! Ayaw nilang makaharap ang {hero} ngayong game. Handa na ako!
+Abangan niyo! Ayaw nilang makaharap ang {hero} ngayong game.
+Abangan niyo! Ayaw nilang makaharap ang {hero} ngayong game. Abangan niyo yan!
+Abangan niyo! Ayaw nilang makaharap ang {hero} ngayong game. Ramdam ko, may gulo na!
+Abangan niyo! Ayaw nilang makaharap ang {hero} ngayong game. Konting tiis lang!
+Abangan niyo! Ayaw nilang makaharap ang {hero} ngayong game. Hindi pa tapos ito!
+Abangan niyo! Ayaw nilang makaharap ang {hero} ngayong game. Handa na ako!
+Teka lang! Ayaw nilang makaharap ang {hero} ngayong game.
+Teka lang! Ayaw nilang makaharap ang {hero} ngayong game. Abangan niyo yan!
+Teka lang! Ayaw nilang makaharap ang {hero} ngayong game. Ramdam ko, may gulo na!
+Teka lang! Ayaw nilang makaharap ang {hero} ngayong game. Konting tiis lang!
+Teka lang! Ayaw nilang makaharap ang {hero} ngayong game. Hindi pa tapos ito!
+Teka lang! Ayaw nilang makaharap ang {hero} ngayong game. Handa na ako!
+Ayos! Ayaw nilang makaharap ang {hero} ngayong game.
+Ayos! Ayaw nilang makaharap ang {hero} ngayong game. Abangan niyo yan!
+Ayos! Ayaw nilang makaharap ang {hero} ngayong game. Ramdam ko, may gulo na!
+Ayos! Ayaw nilang makaharap ang {hero} ngayong game. Konting tiis lang!
+Ayos! Ayaw nilang makaharap ang {hero} ngayong game. Hindi pa tapos ito!
+Ayos! Ayaw nilang makaharap ang {hero} ngayong game. Handa na ako!
+Ramdam ko na! Ayaw nilang makaharap ang {hero} ngayong game.
+Ramdam ko na! Ayaw nilang makaharap ang {hero} ngayong game. Abangan niyo yan!
+Ramdam ko na! Ayaw nilang makaharap ang {hero} ngayong game. Ramdam ko, may gulo na!
+Ramdam ko na! Ayaw nilang makaharap ang {hero} ngayong game. Konting tiis lang!
+Ramdam ko na! Ayaw nilang makaharap ang {hero} ngayong game. Hindi pa tapos ito!
+Ramdam ko na! Ayaw nilang makaharap ang {hero} ngayong game. Handa na ako!
+Hoy, hoy! Ayaw nilang makaharap ang {hero} ngayong game.
+Hoy, hoy! Ayaw nilang makaharap ang {hero} ngayong game. Abangan niyo yan!
+Hoy, hoy! Ayaw nilang makaharap ang {hero} ngayong game. Ramdam ko, may gulo na!
+Hoy, hoy! Ayaw nilang makaharap ang {hero} ngayong game. Konting tiis lang!
+Hoy, hoy! Ayaw nilang makaharap ang {hero} ngayong game. Hindi pa tapos ito!
+Hoy, hoy! Ayaw nilang makaharap ang {hero} ngayong game. Handa na ako!
+Ito na! Ayaw nilang makaharap ang {hero} ngayong game.
+Ito na! Ayaw nilang makaharap ang {hero} ngayong game. Abangan niyo yan!
+Ito na! Ayaw nilang makaharap ang {hero} ngayong game. Ramdam ko, may gulo na!
+Ito na! Ayaw nilang makaharap ang {hero} ngayong game. Konting tiis lang!
+Ito na! Ayaw nilang makaharap ang {hero} ngayong game. Hindi pa tapos ito!
+Ito na! Ayaw nilang makaharap ang {hero} ngayong game. Handa na ako!
+Uy! Ayaw nilang makaharap ang {hero} ngayong game.
+Uy! Ayaw nilang makaharap ang {hero} ngayong game. Abangan niyo yan!
+Uy! Ayaw nilang makaharap ang {hero} ngayong game. Ramdam ko, may gulo na!
+Uy! Ayaw nilang makaharap ang {hero} ngayong game. Konting tiis lang!
+Uy! Ayaw nilang makaharap ang {hero} ngayong game. Hindi pa tapos ito!
+Uy! Ayaw nilang makaharap ang {hero} ngayong game. Handa na ako!
+Matalinong ban, sa totoo lang.
+Matalinong ban, sa totoo lang. Abangan niyo yan!
+Matalinong ban, sa totoo lang. Ramdam ko, may gulo na!
+Matalinong ban, sa totoo lang. Konting tiis lang!
+Matalinong ban, sa totoo lang. Hindi pa tapos ito!
+Matalinong ban, sa totoo lang. Handa na ako!
+Okay, okay! Matalinong ban, sa totoo lang.
+Okay, okay! Matalinong ban, sa totoo lang. Abangan niyo yan!
+Okay, okay! Matalinong ban, sa totoo lang. Ramdam ko, may gulo na!
+Okay, okay! Matalinong ban, sa totoo lang. Konting tiis lang!
+Okay, okay! Matalinong ban, sa totoo lang. Hindi pa tapos ito!
+Okay, okay! Matalinong ban, sa totoo lang. Handa na ako!
+Abangan niyo! Matalinong ban, sa totoo lang.
+Abangan niyo! Matalinong ban, sa totoo lang. Abangan niyo yan!
+Abangan niyo! Matalinong ban, sa totoo lang. Ramdam ko, may gulo na!
+Abangan niyo! Matalinong ban, sa totoo lang. Konting tiis lang!
+Abangan niyo! Matalinong ban, sa totoo lang. Hindi pa tapos ito!
+Abangan niyo! Matalinong ban, sa totoo lang. Handa na ako!
+Teka lang! Matalinong ban, sa totoo lang.
+Teka lang! Matalinong ban, sa totoo lang. Abangan niyo yan!
+Teka lang! Matalinong ban, sa totoo lang. Ramdam ko, may gulo na!
+Teka lang! Matalinong ban, sa totoo lang. Konting tiis lang!
+Teka lang! Matalinong ban, sa totoo lang. Hindi pa tapos ito!
+Teka lang! Matalinong ban, sa totoo lang. Handa na ako!
+Ayos! Matalinong ban, sa totoo lang.
+Ayos! Matalinong ban, sa totoo lang. Abangan niyo yan!
+Ayos! Matalinong ban, sa totoo lang. Ramdam ko, may gulo na!
+Ayos! Matalinong ban, sa totoo lang. Konting tiis lang!
+Ayos! Matalinong ban, sa totoo lang. Hindi pa tapos ito!
+Ayos! Matalinong ban, sa totoo lang. Handa na ako!
+Ramdam ko na! Matalinong ban, sa totoo lang.
+Ramdam ko na! Matalinong ban, sa totoo lang. Abangan niyo yan!
+Ramdam ko na! Matalinong ban, sa totoo lang. Ramdam ko, may gulo na!
+Ramdam ko na! Matalinong ban, sa totoo lang. Konting tiis lang!
+Ramdam ko na! Matalinong ban, sa totoo lang. Hindi pa tapos ito!
+Ramdam ko na! Matalinong ban, sa totoo lang. Handa na ako!
+Hoy, hoy! Matalinong ban, sa totoo lang.
+Hoy, hoy! Matalinong ban, sa totoo lang. Abangan niyo yan!
+Hoy, hoy! Matalinong ban, sa totoo lang. Ramdam ko, may gulo na!
+Hoy, hoy! Matalinong ban, sa totoo lang. Konting tiis lang!
+Hoy, hoy! Matalinong ban, sa totoo lang. Hindi pa tapos ito!
+Hoy, hoy! Matalinong ban, sa totoo lang. Handa na ako!
+Ito na! Matalinong ban, sa totoo lang.
+Ito na! Matalinong ban, sa totoo lang. Abangan niyo yan!
+Ito na! Matalinong ban, sa totoo lang. Ramdam ko, may gulo na!
+Ito na! Matalinong ban, sa totoo lang. Konting tiis lang!
+Ito na! Matalinong ban, sa totoo lang. Hindi pa tapos ito!
+Ito na! Matalinong ban, sa totoo lang. Handa na ako!
+Uy! Matalinong ban, sa totoo lang.
+Uy! Matalinong ban, sa totoo lang. Abangan niyo yan!
+Uy! Matalinong ban, sa totoo lang. Ramdam ko, may gulo na!
+Uy! Matalinong ban, sa totoo lang. Konting tiis lang!
+Uy! Matalinong ban, sa totoo lang. Hindi pa tapos ito!
+Uy! Matalinong ban, sa totoo lang. Handa na ako!
+Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Abangan niyo yan!
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Ramdam ko, may gulo na!
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Konting tiis lang!
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Hindi pa tapos ito!
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Handa na ako!
+Okay, okay! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Okay, okay! Isa-isang nababawasan ang mga opsyon ng {enemy}. Abangan niyo yan!
+Okay, okay! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ramdam ko, may gulo na!
+Okay, okay! Isa-isang nababawasan ang mga opsyon ng {enemy}. Konting tiis lang!
+Okay, okay! Isa-isang nababawasan ang mga opsyon ng {enemy}. Hindi pa tapos ito!
+Okay, okay! Isa-isang nababawasan ang mga opsyon ng {enemy}. Handa na ako!
+Abangan niyo! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Abangan niyo! Isa-isang nababawasan ang mga opsyon ng {enemy}. Abangan niyo yan!
+Abangan niyo! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ramdam ko, may gulo na!
+Abangan niyo! Isa-isang nababawasan ang mga opsyon ng {enemy}. Konting tiis lang!
+Abangan niyo! Isa-isang nababawasan ang mga opsyon ng {enemy}. Hindi pa tapos ito!
+Abangan niyo! Isa-isang nababawasan ang mga opsyon ng {enemy}. Handa na ako!
+Teka lang! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Teka lang! Isa-isang nababawasan ang mga opsyon ng {enemy}. Abangan niyo yan!
+Teka lang! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ramdam ko, may gulo na!
+Teka lang! Isa-isang nababawasan ang mga opsyon ng {enemy}. Konting tiis lang!
+Teka lang! Isa-isang nababawasan ang mga opsyon ng {enemy}. Hindi pa tapos ito!
+Teka lang! Isa-isang nababawasan ang mga opsyon ng {enemy}. Handa na ako!
+Ayos! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Ayos! Isa-isang nababawasan ang mga opsyon ng {enemy}. Abangan niyo yan!
+Ayos! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ramdam ko, may gulo na!
+Ayos! Isa-isang nababawasan ang mga opsyon ng {enemy}. Konting tiis lang!
+Ayos! Isa-isang nababawasan ang mga opsyon ng {enemy}. Hindi pa tapos ito!
+Ayos! Isa-isang nababawasan ang mga opsyon ng {enemy}. Handa na ako!
+Ramdam ko na! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Ramdam ko na! Isa-isang nababawasan ang mga opsyon ng {enemy}. Abangan niyo yan!
+Ramdam ko na! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ramdam ko, may gulo na!
+Ramdam ko na! Isa-isang nababawasan ang mga opsyon ng {enemy}. Konting tiis lang!
+Ramdam ko na! Isa-isang nababawasan ang mga opsyon ng {enemy}. Hindi pa tapos ito!
+Ramdam ko na! Isa-isang nababawasan ang mga opsyon ng {enemy}. Handa na ako!
+Hoy, hoy! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Hoy, hoy! Isa-isang nababawasan ang mga opsyon ng {enemy}. Abangan niyo yan!
+Hoy, hoy! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ramdam ko, may gulo na!
+Hoy, hoy! Isa-isang nababawasan ang mga opsyon ng {enemy}. Konting tiis lang!
+Hoy, hoy! Isa-isang nababawasan ang mga opsyon ng {enemy}. Hindi pa tapos ito!
+Hoy, hoy! Isa-isang nababawasan ang mga opsyon ng {enemy}. Handa na ako!
+Ito na! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Ito na! Isa-isang nababawasan ang mga opsyon ng {enemy}. Abangan niyo yan!
+Ito na! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ramdam ko, may gulo na!
+Ito na! Isa-isang nababawasan ang mga opsyon ng {enemy}. Konting tiis lang!
+Ito na! Isa-isang nababawasan ang mga opsyon ng {enemy}. Hindi pa tapos ito!
+Ito na! Isa-isang nababawasan ang mga opsyon ng {enemy}. Handa na ako!
+Uy! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Uy! Isa-isang nababawasan ang mga opsyon ng {enemy}. Abangan niyo yan!
+Uy! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ramdam ko, may gulo na!
+Uy! Isa-isang nababawasan ang mga opsyon ng {enemy}. Konting tiis lang!
+Uy! Isa-isang nababawasan ang mga opsyon ng {enemy}. Hindi pa tapos ito!
+Uy! Isa-isang nababawasan ang mga opsyon ng {enemy}. Handa na ako!
+
+══════ Draft picks — 329 lines ══════
+LOCKED IN! {hero}!
+LOCKED IN! {hero}! GRABE TALAGA!
+LOCKED IN! {hero}! Init na init!
+LOCKED IN! {hero}! Ito ang gusto natin!
+LOCKED IN! {hero}! Ramdam niyo ba yan?!
+LOCKED IN! {hero}! LET'S GO!
+ITO NA! {hero} para kay {player}!
+ITO NA! {hero} para kay {player}! GRABE TALAGA!
+ITO NA! {hero} para kay {player}! Init na init!
+ITO NA! {hero} para kay {player}! Ramdam niyo ba yan?!
+ITO NA! {hero} para kay {player}! LET'S GO!
+Pang-gyera ang pick na yan!
+Pang-gyera ang pick na yan! GRABE TALAGA!
+Pang-gyera ang pick na yan! Init na init!
+Pang-gyera ang pick na yan! Ito ang gusto natin!
+Pang-gyera ang pick na yan! Ramdam niyo ba yan?!
+Pang-gyera ang pick na yan! LET'S GO!
+ITO NA, ITO NA! Pang-gyera ang pick na yan!
+ITO NA, ITO NA! Pang-gyera ang pick na yan! GRABE TALAGA!
+ITO NA, ITO NA! Pang-gyera ang pick na yan! Init na init!
+ITO NA, ITO NA! Pang-gyera ang pick na yan! Ito ang gusto natin!
+ITO NA, ITO NA! Pang-gyera ang pick na yan! Ramdam niyo ba yan?!
+ITO NA, ITO NA! Pang-gyera ang pick na yan! LET'S GO!
+GRABE! Pang-gyera ang pick na yan!
+GRABE! Pang-gyera ang pick na yan! GRABE TALAGA!
+GRABE! Pang-gyera ang pick na yan! Init na init!
+GRABE! Pang-gyera ang pick na yan! Ito ang gusto natin!
+GRABE! Pang-gyera ang pick na yan! Ramdam niyo ba yan?!
+GRABE! Pang-gyera ang pick na yan! LET'S GO!
+LET'S GO! Pang-gyera ang pick na yan!
+LET'S GO! Pang-gyera ang pick na yan! GRABE TALAGA!
+LET'S GO! Pang-gyera ang pick na yan! Init na init!
+LET'S GO! Pang-gyera ang pick na yan! Ito ang gusto natin!
+LET'S GO! Pang-gyera ang pick na yan! Ramdam niyo ba yan?!
+LET'S GO! Pang-gyera ang pick na yan! LET'S GO!
+WOOO! Pang-gyera ang pick na yan!
+WOOO! Pang-gyera ang pick na yan! GRABE TALAGA!
+WOOO! Pang-gyera ang pick na yan! Init na init!
+WOOO! Pang-gyera ang pick na yan! Ito ang gusto natin!
+WOOO! Pang-gyera ang pick na yan! Ramdam niyo ba yan?!
+WOOO! Pang-gyera ang pick na yan! LET'S GO!
+AYAN NA! Pang-gyera ang pick na yan!
+AYAN NA! Pang-gyera ang pick na yan! GRABE TALAGA!
+AYAN NA! Pang-gyera ang pick na yan! Init na init!
+AYAN NA! Pang-gyera ang pick na yan! Ito ang gusto natin!
+AYAN NA! Pang-gyera ang pick na yan! Ramdam niyo ba yan?!
+AYAN NA! Pang-gyera ang pick na yan! LET'S GO!
+INGAY, MGA KA-TCC! Pang-gyera ang pick na yan!
+INGAY, MGA KA-TCC! Pang-gyera ang pick na yan! GRABE TALAGA!
+INGAY, MGA KA-TCC! Pang-gyera ang pick na yan! Init na init!
+INGAY, MGA KA-TCC! Pang-gyera ang pick na yan! Ito ang gusto natin!
+INGAY, MGA KA-TCC! Pang-gyera ang pick na yan! Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! Pang-gyera ang pick na yan! LET'S GO!
+ANG GANDA! Pang-gyera ang pick na yan!
+ANG GANDA! Pang-gyera ang pick na yan! GRABE TALAGA!
+ANG GANDA! Pang-gyera ang pick na yan! Init na init!
+ANG GANDA! Pang-gyera ang pick na yan! Ito ang gusto natin!
+ANG GANDA! Pang-gyera ang pick na yan! Ramdam niyo ba yan?!
+ANG GANDA! Pang-gyera ang pick na yan! LET'S GO!
+SIGAW NAMAN DIYAN! Pang-gyera ang pick na yan!
+SIGAW NAMAN DIYAN! Pang-gyera ang pick na yan! GRABE TALAGA!
+SIGAW NAMAN DIYAN! Pang-gyera ang pick na yan! Init na init!
+SIGAW NAMAN DIYAN! Pang-gyera ang pick na yan! Ito ang gusto natin!
+SIGAW NAMAN DIYAN! Pang-gyera ang pick na yan! Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! Pang-gyera ang pick na yan! LET'S GO!
+Magandang pick yan para sa {team}.
+Magandang pick yan para sa {team}. GRABE TALAGA!
+Magandang pick yan para sa {team}. Init na init!
+Magandang pick yan para sa {team}. Ito ang gusto natin!
+Magandang pick yan para sa {team}. Ramdam niyo ba yan?!
+Magandang pick yan para sa {team}. LET'S GO!
+ITO NA, ITO NA! Magandang pick yan para sa {team}.
+ITO NA, ITO NA! Magandang pick yan para sa {team}. GRABE TALAGA!
+ITO NA, ITO NA! Magandang pick yan para sa {team}. Init na init!
+ITO NA, ITO NA! Magandang pick yan para sa {team}. Ito ang gusto natin!
+ITO NA, ITO NA! Magandang pick yan para sa {team}. Ramdam niyo ba yan?!
+ITO NA, ITO NA! Magandang pick yan para sa {team}. LET'S GO!
+GRABE! Magandang pick yan para sa {team}.
+GRABE! Magandang pick yan para sa {team}. GRABE TALAGA!
+GRABE! Magandang pick yan para sa {team}. Init na init!
+GRABE! Magandang pick yan para sa {team}. Ito ang gusto natin!
+GRABE! Magandang pick yan para sa {team}. Ramdam niyo ba yan?!
+GRABE! Magandang pick yan para sa {team}. LET'S GO!
+LET'S GO! Magandang pick yan para sa {team}.
+LET'S GO! Magandang pick yan para sa {team}. GRABE TALAGA!
+LET'S GO! Magandang pick yan para sa {team}. Init na init!
+LET'S GO! Magandang pick yan para sa {team}. Ito ang gusto natin!
+LET'S GO! Magandang pick yan para sa {team}. Ramdam niyo ba yan?!
+LET'S GO! Magandang pick yan para sa {team}. LET'S GO!
+WOOO! Magandang pick yan para sa {team}.
+WOOO! Magandang pick yan para sa {team}. GRABE TALAGA!
+WOOO! Magandang pick yan para sa {team}. Init na init!
+WOOO! Magandang pick yan para sa {team}. Ito ang gusto natin!
+WOOO! Magandang pick yan para sa {team}. Ramdam niyo ba yan?!
+WOOO! Magandang pick yan para sa {team}. LET'S GO!
+AYAN NA! Magandang pick yan para sa {team}.
+AYAN NA! Magandang pick yan para sa {team}. GRABE TALAGA!
+AYAN NA! Magandang pick yan para sa {team}. Init na init!
+AYAN NA! Magandang pick yan para sa {team}. Ito ang gusto natin!
+AYAN NA! Magandang pick yan para sa {team}. Ramdam niyo ba yan?!
+AYAN NA! Magandang pick yan para sa {team}. LET'S GO!
+INGAY, MGA KA-TCC! Magandang pick yan para sa {team}.
+INGAY, MGA KA-TCC! Magandang pick yan para sa {team}. GRABE TALAGA!
+INGAY, MGA KA-TCC! Magandang pick yan para sa {team}. Init na init!
+INGAY, MGA KA-TCC! Magandang pick yan para sa {team}. Ito ang gusto natin!
+INGAY, MGA KA-TCC! Magandang pick yan para sa {team}. Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! Magandang pick yan para sa {team}. LET'S GO!
+ANG GANDA! Magandang pick yan para sa {team}.
+ANG GANDA! Magandang pick yan para sa {team}. GRABE TALAGA!
+ANG GANDA! Magandang pick yan para sa {team}. Init na init!
+ANG GANDA! Magandang pick yan para sa {team}. Ito ang gusto natin!
+ANG GANDA! Magandang pick yan para sa {team}. Ramdam niyo ba yan?!
+ANG GANDA! Magandang pick yan para sa {team}. LET'S GO!
+SIGAW NAMAN DIYAN! Magandang pick yan para sa {team}.
+SIGAW NAMAN DIYAN! Magandang pick yan para sa {team}. GRABE TALAGA!
+SIGAW NAMAN DIYAN! Magandang pick yan para sa {team}. Init na init!
+SIGAW NAMAN DIYAN! Magandang pick yan para sa {team}. Ito ang gusto natin!
+SIGAW NAMAN DIYAN! Magandang pick yan para sa {team}. Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! Magandang pick yan para sa {team}. LET'S GO!
+Abangan natin ang {hero} sa kamay ni {player}.
+Abangan natin ang {hero} sa kamay ni {player}. GRABE TALAGA!
+Abangan natin ang {hero} sa kamay ni {player}. Init na init!
+Abangan natin ang {hero} sa kamay ni {player}. Ito ang gusto natin!
+Abangan natin ang {hero} sa kamay ni {player}. Ramdam niyo ba yan?!
+Abangan natin ang {hero} sa kamay ni {player}. LET'S GO!
+ITO NA, ITO NA! Abangan natin ang {hero} sa kamay ni {player}.
+ITO NA, ITO NA! Abangan natin ang {hero} sa kamay ni {player}. GRABE TALAGA!
+ITO NA, ITO NA! Abangan natin ang {hero} sa kamay ni {player}. Init na init!
+ITO NA, ITO NA! Abangan natin ang {hero} sa kamay ni {player}. Ito ang gusto natin!
+ITO NA, ITO NA! Abangan natin ang {hero} sa kamay ni {player}. Ramdam niyo ba yan?!
+ITO NA, ITO NA! Abangan natin ang {hero} sa kamay ni {player}. LET'S GO!
+GRABE! Abangan natin ang {hero} sa kamay ni {player}.
+GRABE! Abangan natin ang {hero} sa kamay ni {player}. GRABE TALAGA!
+GRABE! Abangan natin ang {hero} sa kamay ni {player}. Init na init!
+GRABE! Abangan natin ang {hero} sa kamay ni {player}. Ito ang gusto natin!
+GRABE! Abangan natin ang {hero} sa kamay ni {player}. Ramdam niyo ba yan?!
+GRABE! Abangan natin ang {hero} sa kamay ni {player}. LET'S GO!
+LET'S GO! Abangan natin ang {hero} sa kamay ni {player}.
+LET'S GO! Abangan natin ang {hero} sa kamay ni {player}. GRABE TALAGA!
+LET'S GO! Abangan natin ang {hero} sa kamay ni {player}. Init na init!
+LET'S GO! Abangan natin ang {hero} sa kamay ni {player}. Ito ang gusto natin!
+LET'S GO! Abangan natin ang {hero} sa kamay ni {player}. Ramdam niyo ba yan?!
+LET'S GO! Abangan natin ang {hero} sa kamay ni {player}. LET'S GO!
+WOOO! Abangan natin ang {hero} sa kamay ni {player}.
+WOOO! Abangan natin ang {hero} sa kamay ni {player}. GRABE TALAGA!
+WOOO! Abangan natin ang {hero} sa kamay ni {player}. Init na init!
+WOOO! Abangan natin ang {hero} sa kamay ni {player}. Ito ang gusto natin!
+WOOO! Abangan natin ang {hero} sa kamay ni {player}. Ramdam niyo ba yan?!
+WOOO! Abangan natin ang {hero} sa kamay ni {player}. LET'S GO!
+AYAN NA! Abangan natin ang {hero} sa kamay ni {player}.
+AYAN NA! Abangan natin ang {hero} sa kamay ni {player}. GRABE TALAGA!
+AYAN NA! Abangan natin ang {hero} sa kamay ni {player}. Init na init!
+AYAN NA! Abangan natin ang {hero} sa kamay ni {player}. Ito ang gusto natin!
+AYAN NA! Abangan natin ang {hero} sa kamay ni {player}. Ramdam niyo ba yan?!
+AYAN NA! Abangan natin ang {hero} sa kamay ni {player}. LET'S GO!
+INGAY, MGA KA-TCC! Abangan natin ang {hero} sa kamay ni {player}.
+INGAY, MGA KA-TCC! Abangan natin ang {hero} sa kamay ni {player}. GRABE TALAGA!
+INGAY, MGA KA-TCC! Abangan natin ang {hero} sa kamay ni {player}. Init na init!
+INGAY, MGA KA-TCC! Abangan natin ang {hero} sa kamay ni {player}. Ito ang gusto natin!
+INGAY, MGA KA-TCC! Abangan natin ang {hero} sa kamay ni {player}. Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! Abangan natin ang {hero} sa kamay ni {player}. LET'S GO!
+ANG GANDA! Abangan natin ang {hero} sa kamay ni {player}.
+ANG GANDA! Abangan natin ang {hero} sa kamay ni {player}. GRABE TALAGA!
+ANG GANDA! Abangan natin ang {hero} sa kamay ni {player}. Init na init!
+ANG GANDA! Abangan natin ang {hero} sa kamay ni {player}. Ito ang gusto natin!
+ANG GANDA! Abangan natin ang {hero} sa kamay ni {player}. Ramdam niyo ba yan?!
+ANG GANDA! Abangan natin ang {hero} sa kamay ni {player}. LET'S GO!
+SIGAW NAMAN DIYAN! Abangan natin ang {hero} sa kamay ni {player}.
+SIGAW NAMAN DIYAN! Abangan natin ang {hero} sa kamay ni {player}. GRABE TALAGA!
+SIGAW NAMAN DIYAN! Abangan natin ang {hero} sa kamay ni {player}. Init na init!
+SIGAW NAMAN DIYAN! Abangan natin ang {hero} sa kamay ni {player}. Ito ang gusto natin!
+SIGAW NAMAN DIYAN! Abangan natin ang {hero} sa kamay ni {player}. Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! Abangan natin ang {hero} sa kamay ni {player}. LET'S GO!
+Ayan na ang {hero}!
+Ayan na ang {hero}! GRABE TALAGA!
+Ayan na ang {hero}! Init na init!
+Ayan na ang {hero}! Ito ang gusto natin!
+Ayan na ang {hero}! Ramdam niyo ba yan?!
+Ayan na ang {hero}! LET'S GO!
+ITO NA, ITO NA! Ayan na ang {hero}!
+ITO NA, ITO NA! Ayan na ang {hero}! GRABE TALAGA!
+ITO NA, ITO NA! Ayan na ang {hero}! Init na init!
+ITO NA, ITO NA! Ayan na ang {hero}! Ito ang gusto natin!
+ITO NA, ITO NA! Ayan na ang {hero}! Ramdam niyo ba yan?!
+ITO NA, ITO NA! Ayan na ang {hero}! LET'S GO!
+GRABE! Ayan na ang {hero}!
+GRABE! Ayan na ang {hero}! GRABE TALAGA!
+GRABE! Ayan na ang {hero}! Init na init!
+GRABE! Ayan na ang {hero}! Ito ang gusto natin!
+GRABE! Ayan na ang {hero}! Ramdam niyo ba yan?!
+GRABE! Ayan na ang {hero}! LET'S GO!
+LET'S GO! Ayan na ang {hero}!
+LET'S GO! Ayan na ang {hero}! GRABE TALAGA!
+LET'S GO! Ayan na ang {hero}! Init na init!
+LET'S GO! Ayan na ang {hero}! Ito ang gusto natin!
+LET'S GO! Ayan na ang {hero}! Ramdam niyo ba yan?!
+LET'S GO! Ayan na ang {hero}! LET'S GO!
+WOOO! Ayan na ang {hero}!
+WOOO! Ayan na ang {hero}! GRABE TALAGA!
+WOOO! Ayan na ang {hero}! Init na init!
+WOOO! Ayan na ang {hero}! Ito ang gusto natin!
+WOOO! Ayan na ang {hero}! Ramdam niyo ba yan?!
+WOOO! Ayan na ang {hero}! LET'S GO!
+INGAY, MGA KA-TCC! Ayan na ang {hero}!
+INGAY, MGA KA-TCC! Ayan na ang {hero}! GRABE TALAGA!
+INGAY, MGA KA-TCC! Ayan na ang {hero}! Init na init!
+INGAY, MGA KA-TCC! Ayan na ang {hero}! Ito ang gusto natin!
+INGAY, MGA KA-TCC! Ayan na ang {hero}! Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! Ayan na ang {hero}! LET'S GO!
+ANG GANDA! Ayan na ang {hero}!
+ANG GANDA! Ayan na ang {hero}! GRABE TALAGA!
+ANG GANDA! Ayan na ang {hero}! Init na init!
+ANG GANDA! Ayan na ang {hero}! Ito ang gusto natin!
+ANG GANDA! Ayan na ang {hero}! Ramdam niyo ba yan?!
+ANG GANDA! Ayan na ang {hero}! LET'S GO!
+SIGAW NAMAN DIYAN! Ayan na ang {hero}!
+SIGAW NAMAN DIYAN! Ayan na ang {hero}! GRABE TALAGA!
+SIGAW NAMAN DIYAN! Ayan na ang {hero}! Init na init!
+SIGAW NAMAN DIYAN! Ayan na ang {hero}! Ito ang gusto natin!
+SIGAW NAMAN DIYAN! Ayan na ang {hero}! Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! Ayan na ang {hero}! LET'S GO!
+Unti-unting nabubuo ang lineup ng {team}.
+Unti-unting nabubuo ang lineup ng {team}. GRABE TALAGA!
+Unti-unting nabubuo ang lineup ng {team}. Init na init!
+Unti-unting nabubuo ang lineup ng {team}. Ito ang gusto natin!
+Unti-unting nabubuo ang lineup ng {team}. Ramdam niyo ba yan?!
+Unti-unting nabubuo ang lineup ng {team}. LET'S GO!
+ITO NA, ITO NA! Unti-unting nabubuo ang lineup ng {team}.
+ITO NA, ITO NA! Unti-unting nabubuo ang lineup ng {team}. GRABE TALAGA!
+ITO NA, ITO NA! Unti-unting nabubuo ang lineup ng {team}. Init na init!
+ITO NA, ITO NA! Unti-unting nabubuo ang lineup ng {team}. Ito ang gusto natin!
+ITO NA, ITO NA! Unti-unting nabubuo ang lineup ng {team}. Ramdam niyo ba yan?!
+ITO NA, ITO NA! Unti-unting nabubuo ang lineup ng {team}. LET'S GO!
+GRABE! Unti-unting nabubuo ang lineup ng {team}.
+GRABE! Unti-unting nabubuo ang lineup ng {team}. GRABE TALAGA!
+GRABE! Unti-unting nabubuo ang lineup ng {team}. Init na init!
+GRABE! Unti-unting nabubuo ang lineup ng {team}. Ito ang gusto natin!
+GRABE! Unti-unting nabubuo ang lineup ng {team}. Ramdam niyo ba yan?!
+GRABE! Unti-unting nabubuo ang lineup ng {team}. LET'S GO!
+LET'S GO! Unti-unting nabubuo ang lineup ng {team}.
+LET'S GO! Unti-unting nabubuo ang lineup ng {team}. GRABE TALAGA!
+LET'S GO! Unti-unting nabubuo ang lineup ng {team}. Init na init!
+LET'S GO! Unti-unting nabubuo ang lineup ng {team}. Ito ang gusto natin!
+LET'S GO! Unti-unting nabubuo ang lineup ng {team}. Ramdam niyo ba yan?!
+LET'S GO! Unti-unting nabubuo ang lineup ng {team}. LET'S GO!
+WOOO! Unti-unting nabubuo ang lineup ng {team}.
+WOOO! Unti-unting nabubuo ang lineup ng {team}. GRABE TALAGA!
+WOOO! Unti-unting nabubuo ang lineup ng {team}. Init na init!
+WOOO! Unti-unting nabubuo ang lineup ng {team}. Ito ang gusto natin!
+WOOO! Unti-unting nabubuo ang lineup ng {team}. Ramdam niyo ba yan?!
+WOOO! Unti-unting nabubuo ang lineup ng {team}. LET'S GO!
+AYAN NA! Unti-unting nabubuo ang lineup ng {team}.
+AYAN NA! Unti-unting nabubuo ang lineup ng {team}. GRABE TALAGA!
+AYAN NA! Unti-unting nabubuo ang lineup ng {team}. Init na init!
+AYAN NA! Unti-unting nabubuo ang lineup ng {team}. Ito ang gusto natin!
+AYAN NA! Unti-unting nabubuo ang lineup ng {team}. Ramdam niyo ba yan?!
+AYAN NA! Unti-unting nabubuo ang lineup ng {team}. LET'S GO!
+INGAY, MGA KA-TCC! Unti-unting nabubuo ang lineup ng {team}.
+INGAY, MGA KA-TCC! Unti-unting nabubuo ang lineup ng {team}. GRABE TALAGA!
+INGAY, MGA KA-TCC! Unti-unting nabubuo ang lineup ng {team}. Init na init!
+INGAY, MGA KA-TCC! Unti-unting nabubuo ang lineup ng {team}. Ito ang gusto natin!
+INGAY, MGA KA-TCC! Unti-unting nabubuo ang lineup ng {team}. Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! Unti-unting nabubuo ang lineup ng {team}. LET'S GO!
+ANG GANDA! Unti-unting nabubuo ang lineup ng {team}.
+ANG GANDA! Unti-unting nabubuo ang lineup ng {team}. GRABE TALAGA!
+ANG GANDA! Unti-unting nabubuo ang lineup ng {team}. Init na init!
+ANG GANDA! Unti-unting nabubuo ang lineup ng {team}. Ito ang gusto natin!
+ANG GANDA! Unti-unting nabubuo ang lineup ng {team}. Ramdam niyo ba yan?!
+ANG GANDA! Unti-unting nabubuo ang lineup ng {team}. LET'S GO!
+SIGAW NAMAN DIYAN! Unti-unting nabubuo ang lineup ng {team}.
+SIGAW NAMAN DIYAN! Unti-unting nabubuo ang lineup ng {team}. GRABE TALAGA!
+SIGAW NAMAN DIYAN! Unti-unting nabubuo ang lineup ng {team}. Init na init!
+SIGAW NAMAN DIYAN! Unti-unting nabubuo ang lineup ng {team}. Ito ang gusto natin!
+SIGAW NAMAN DIYAN! Unti-unting nabubuo ang lineup ng {team}. Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! Unti-unting nabubuo ang lineup ng {team}. LET'S GO!
+Malakas na {heroClass} ang {hero} sa ganitong draft.
+Malakas na {heroClass} ang {hero} sa ganitong draft. GRABE TALAGA!
+Malakas na {heroClass} ang {hero} sa ganitong draft. Init na init!
+Malakas na {heroClass} ang {hero} sa ganitong draft. Ito ang gusto natin!
+Malakas na {heroClass} ang {hero} sa ganitong draft. Ramdam niyo ba yan?!
+Malakas na {heroClass} ang {hero} sa ganitong draft. LET'S GO!
+ITO NA, ITO NA! Malakas na {heroClass} ang {hero} sa ganitong draft.
+ITO NA, ITO NA! Malakas na {heroClass} ang {hero} sa ganitong draft. GRABE TALAGA!
+ITO NA, ITO NA! Malakas na {heroClass} ang {hero} sa ganitong draft. Init na init!
+ITO NA, ITO NA! Malakas na {heroClass} ang {hero} sa ganitong draft. Ito ang gusto natin!
+ITO NA, ITO NA! Malakas na {heroClass} ang {hero} sa ganitong draft. Ramdam niyo ba yan?!
+ITO NA, ITO NA! Malakas na {heroClass} ang {hero} sa ganitong draft. LET'S GO!
+GRABE! Malakas na {heroClass} ang {hero} sa ganitong draft.
+GRABE! Malakas na {heroClass} ang {hero} sa ganitong draft. GRABE TALAGA!
+GRABE! Malakas na {heroClass} ang {hero} sa ganitong draft. Init na init!
+GRABE! Malakas na {heroClass} ang {hero} sa ganitong draft. Ito ang gusto natin!
+GRABE! Malakas na {heroClass} ang {hero} sa ganitong draft. Ramdam niyo ba yan?!
+GRABE! Malakas na {heroClass} ang {hero} sa ganitong draft. LET'S GO!
+LET'S GO! Malakas na {heroClass} ang {hero} sa ganitong draft.
+LET'S GO! Malakas na {heroClass} ang {hero} sa ganitong draft. GRABE TALAGA!
+LET'S GO! Malakas na {heroClass} ang {hero} sa ganitong draft. Init na init!
+LET'S GO! Malakas na {heroClass} ang {hero} sa ganitong draft. Ito ang gusto natin!
+LET'S GO! Malakas na {heroClass} ang {hero} sa ganitong draft. Ramdam niyo ba yan?!
+LET'S GO! Malakas na {heroClass} ang {hero} sa ganitong draft. LET'S GO!
+WOOO! Malakas na {heroClass} ang {hero} sa ganitong draft.
+WOOO! Malakas na {heroClass} ang {hero} sa ganitong draft. GRABE TALAGA!
+WOOO! Malakas na {heroClass} ang {hero} sa ganitong draft. Init na init!
+WOOO! Malakas na {heroClass} ang {hero} sa ganitong draft. Ito ang gusto natin!
+WOOO! Malakas na {heroClass} ang {hero} sa ganitong draft. Ramdam niyo ba yan?!
+WOOO! Malakas na {heroClass} ang {hero} sa ganitong draft. LET'S GO!
+AYAN NA! Malakas na {heroClass} ang {hero} sa ganitong draft.
+AYAN NA! Malakas na {heroClass} ang {hero} sa ganitong draft. GRABE TALAGA!
+AYAN NA! Malakas na {heroClass} ang {hero} sa ganitong draft. Init na init!
+AYAN NA! Malakas na {heroClass} ang {hero} sa ganitong draft. Ito ang gusto natin!
+AYAN NA! Malakas na {heroClass} ang {hero} sa ganitong draft. Ramdam niyo ba yan?!
+AYAN NA! Malakas na {heroClass} ang {hero} sa ganitong draft. LET'S GO!
+INGAY, MGA KA-TCC! Malakas na {heroClass} ang {hero} sa ganitong draft.
+INGAY, MGA KA-TCC! Malakas na {heroClass} ang {hero} sa ganitong draft. GRABE TALAGA!
+INGAY, MGA KA-TCC! Malakas na {heroClass} ang {hero} sa ganitong draft. Init na init!
+INGAY, MGA KA-TCC! Malakas na {heroClass} ang {hero} sa ganitong draft. Ito ang gusto natin!
+INGAY, MGA KA-TCC! Malakas na {heroClass} ang {hero} sa ganitong draft. Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! Malakas na {heroClass} ang {hero} sa ganitong draft. LET'S GO!
+ANG GANDA! Malakas na {heroClass} ang {hero} sa ganitong draft.
+ANG GANDA! Malakas na {heroClass} ang {hero} sa ganitong draft. GRABE TALAGA!
+ANG GANDA! Malakas na {heroClass} ang {hero} sa ganitong draft. Init na init!
+ANG GANDA! Malakas na {heroClass} ang {hero} sa ganitong draft. Ito ang gusto natin!
+ANG GANDA! Malakas na {heroClass} ang {hero} sa ganitong draft. Ramdam niyo ba yan?!
+ANG GANDA! Malakas na {heroClass} ang {hero} sa ganitong draft. LET'S GO!
+SIGAW NAMAN DIYAN! Malakas na {heroClass} ang {hero} sa ganitong draft.
+SIGAW NAMAN DIYAN! Malakas na {heroClass} ang {hero} sa ganitong draft. GRABE TALAGA!
+SIGAW NAMAN DIYAN! Malakas na {heroClass} ang {hero} sa ganitong draft. Init na init!
+SIGAW NAMAN DIYAN! Malakas na {heroClass} ang {hero} sa ganitong draft. Ito ang gusto natin!
+SIGAW NAMAN DIYAN! Malakas na {heroClass} ang {hero} sa ganitong draft. Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! Malakas na {heroClass} ang {hero} sa ganitong draft. LET'S GO!
+
+══════ Draft talk (speculation & story) — 350 lines ══════
+Init na init na ang draft, mga ka-TCC!
+Init na init na ang draft, mga ka-TCC! Abangan niyo yan!
+Init na init na ang draft, mga ka-TCC! Ramdam ko, may gulo na!
+Init na init na ang draft, mga ka-TCC! Konting tiis lang!
+Init na init na ang draft, mga ka-TCC! Hindi pa tapos ito!
+Init na init na ang draft, mga ka-TCC! Handa na ako!
+Okay, okay! Init na init na ang draft, mga ka-TCC!
+Okay, okay! Init na init na ang draft, mga ka-TCC! Abangan niyo yan!
+Okay, okay! Init na init na ang draft, mga ka-TCC! Ramdam ko, may gulo na!
+Okay, okay! Init na init na ang draft, mga ka-TCC! Konting tiis lang!
+Okay, okay! Init na init na ang draft, mga ka-TCC! Hindi pa tapos ito!
+Okay, okay! Init na init na ang draft, mga ka-TCC! Handa na ako!
+Abangan niyo! Init na init na ang draft, mga ka-TCC!
+Abangan niyo! Init na init na ang draft, mga ka-TCC! Abangan niyo yan!
+Abangan niyo! Init na init na ang draft, mga ka-TCC! Ramdam ko, may gulo na!
+Abangan niyo! Init na init na ang draft, mga ka-TCC! Konting tiis lang!
+Abangan niyo! Init na init na ang draft, mga ka-TCC! Hindi pa tapos ito!
+Abangan niyo! Init na init na ang draft, mga ka-TCC! Handa na ako!
+Teka lang! Init na init na ang draft, mga ka-TCC!
+Teka lang! Init na init na ang draft, mga ka-TCC! Abangan niyo yan!
+Teka lang! Init na init na ang draft, mga ka-TCC! Ramdam ko, may gulo na!
+Teka lang! Init na init na ang draft, mga ka-TCC! Konting tiis lang!
+Teka lang! Init na init na ang draft, mga ka-TCC! Hindi pa tapos ito!
+Teka lang! Init na init na ang draft, mga ka-TCC! Handa na ako!
+Ayos! Init na init na ang draft, mga ka-TCC!
+Ayos! Init na init na ang draft, mga ka-TCC! Abangan niyo yan!
+Ayos! Init na init na ang draft, mga ka-TCC! Ramdam ko, may gulo na!
+Ayos! Init na init na ang draft, mga ka-TCC! Konting tiis lang!
+Ayos! Init na init na ang draft, mga ka-TCC! Hindi pa tapos ito!
+Ayos! Init na init na ang draft, mga ka-TCC! Handa na ako!
+Ramdam ko na! Init na init na ang draft, mga ka-TCC!
+Ramdam ko na! Init na init na ang draft, mga ka-TCC! Abangan niyo yan!
+Ramdam ko na! Init na init na ang draft, mga ka-TCC! Ramdam ko, may gulo na!
+Ramdam ko na! Init na init na ang draft, mga ka-TCC! Konting tiis lang!
+Ramdam ko na! Init na init na ang draft, mga ka-TCC! Hindi pa tapos ito!
+Ramdam ko na! Init na init na ang draft, mga ka-TCC! Handa na ako!
+Hoy, hoy! Init na init na ang draft, mga ka-TCC!
+Hoy, hoy! Init na init na ang draft, mga ka-TCC! Abangan niyo yan!
+Hoy, hoy! Init na init na ang draft, mga ka-TCC! Ramdam ko, may gulo na!
+Hoy, hoy! Init na init na ang draft, mga ka-TCC! Konting tiis lang!
+Hoy, hoy! Init na init na ang draft, mga ka-TCC! Hindi pa tapos ito!
+Hoy, hoy! Init na init na ang draft, mga ka-TCC! Handa na ako!
+Ito na! Init na init na ang draft, mga ka-TCC!
+Ito na! Init na init na ang draft, mga ka-TCC! Abangan niyo yan!
+Ito na! Init na init na ang draft, mga ka-TCC! Ramdam ko, may gulo na!
+Ito na! Init na init na ang draft, mga ka-TCC! Konting tiis lang!
+Ito na! Init na init na ang draft, mga ka-TCC! Hindi pa tapos ito!
+Ito na! Init na init na ang draft, mga ka-TCC! Handa na ako!
+Uy! Init na init na ang draft, mga ka-TCC!
+Uy! Init na init na ang draft, mga ka-TCC! Abangan niyo yan!
+Uy! Init na init na ang draft, mga ka-TCC! Ramdam ko, may gulo na!
+Uy! Init na init na ang draft, mga ka-TCC! Konting tiis lang!
+Uy! Init na init na ang draft, mga ka-TCC! Hindi pa tapos ito!
+Uy! Init na init na ang draft, mga ka-TCC! Handa na ako!
+Ramdam ko na ang laban kahit draft pa lang!
+Ramdam ko na ang laban kahit draft pa lang! Abangan niyo yan!
+Ramdam ko na ang laban kahit draft pa lang! Konting tiis lang!
+Ramdam ko na ang laban kahit draft pa lang! Hindi pa tapos ito!
+Ramdam ko na ang laban kahit draft pa lang! Handa na ako!
+Okay, okay! Ramdam ko na ang laban kahit draft pa lang!
+Okay, okay! Ramdam ko na ang laban kahit draft pa lang! Abangan niyo yan!
+Okay, okay! Ramdam ko na ang laban kahit draft pa lang! Konting tiis lang!
+Okay, okay! Ramdam ko na ang laban kahit draft pa lang! Hindi pa tapos ito!
+Okay, okay! Ramdam ko na ang laban kahit draft pa lang! Handa na ako!
+Abangan niyo! Ramdam ko na ang laban kahit draft pa lang!
+Abangan niyo! Ramdam ko na ang laban kahit draft pa lang! Abangan niyo yan!
+Abangan niyo! Ramdam ko na ang laban kahit draft pa lang! Konting tiis lang!
+Abangan niyo! Ramdam ko na ang laban kahit draft pa lang! Hindi pa tapos ito!
+Abangan niyo! Ramdam ko na ang laban kahit draft pa lang! Handa na ako!
+Teka lang! Ramdam ko na ang laban kahit draft pa lang!
+Teka lang! Ramdam ko na ang laban kahit draft pa lang! Abangan niyo yan!
+Teka lang! Ramdam ko na ang laban kahit draft pa lang! Konting tiis lang!
+Teka lang! Ramdam ko na ang laban kahit draft pa lang! Hindi pa tapos ito!
+Teka lang! Ramdam ko na ang laban kahit draft pa lang! Handa na ako!
+Ayos! Ramdam ko na ang laban kahit draft pa lang!
+Ayos! Ramdam ko na ang laban kahit draft pa lang! Abangan niyo yan!
+Ayos! Ramdam ko na ang laban kahit draft pa lang! Konting tiis lang!
+Ayos! Ramdam ko na ang laban kahit draft pa lang! Hindi pa tapos ito!
+Ayos! Ramdam ko na ang laban kahit draft pa lang! Handa na ako!
+Hoy, hoy! Ramdam ko na ang laban kahit draft pa lang!
+Hoy, hoy! Ramdam ko na ang laban kahit draft pa lang! Abangan niyo yan!
+Hoy, hoy! Ramdam ko na ang laban kahit draft pa lang! Konting tiis lang!
+Hoy, hoy! Ramdam ko na ang laban kahit draft pa lang! Hindi pa tapos ito!
+Hoy, hoy! Ramdam ko na ang laban kahit draft pa lang! Handa na ako!
+Ito na! Ramdam ko na ang laban kahit draft pa lang!
+Ito na! Ramdam ko na ang laban kahit draft pa lang! Abangan niyo yan!
+Ito na! Ramdam ko na ang laban kahit draft pa lang! Konting tiis lang!
+Ito na! Ramdam ko na ang laban kahit draft pa lang! Hindi pa tapos ito!
+Ito na! Ramdam ko na ang laban kahit draft pa lang! Handa na ako!
+Uy! Ramdam ko na ang laban kahit draft pa lang!
+Uy! Ramdam ko na ang laban kahit draft pa lang! Abangan niyo yan!
+Uy! Ramdam ko na ang laban kahit draft pa lang! Konting tiis lang!
+Uy! Ramdam ko na ang laban kahit draft pa lang! Hindi pa tapos ito!
+Uy! Ramdam ko na ang laban kahit draft pa lang! Handa na ako!
+Mainit ang draft ngayong Game {gameNumber}.
+Mainit ang draft ngayong Game {gameNumber}. Abangan niyo yan!
+Mainit ang draft ngayong Game {gameNumber}. Ramdam ko, may gulo na!
+Mainit ang draft ngayong Game {gameNumber}. Konting tiis lang!
+Mainit ang draft ngayong Game {gameNumber}. Hindi pa tapos ito!
+Mainit ang draft ngayong Game {gameNumber}. Handa na ako!
+Okay, okay! Mainit ang draft ngayong Game {gameNumber}.
+Okay, okay! Mainit ang draft ngayong Game {gameNumber}. Abangan niyo yan!
+Okay, okay! Mainit ang draft ngayong Game {gameNumber}. Ramdam ko, may gulo na!
+Okay, okay! Mainit ang draft ngayong Game {gameNumber}. Konting tiis lang!
+Okay, okay! Mainit ang draft ngayong Game {gameNumber}. Hindi pa tapos ito!
+Okay, okay! Mainit ang draft ngayong Game {gameNumber}. Handa na ako!
+Abangan niyo! Mainit ang draft ngayong Game {gameNumber}.
+Abangan niyo! Mainit ang draft ngayong Game {gameNumber}. Abangan niyo yan!
+Abangan niyo! Mainit ang draft ngayong Game {gameNumber}. Ramdam ko, may gulo na!
+Abangan niyo! Mainit ang draft ngayong Game {gameNumber}. Konting tiis lang!
+Abangan niyo! Mainit ang draft ngayong Game {gameNumber}. Hindi pa tapos ito!
+Abangan niyo! Mainit ang draft ngayong Game {gameNumber}. Handa na ako!
+Teka lang! Mainit ang draft ngayong Game {gameNumber}.
+Teka lang! Mainit ang draft ngayong Game {gameNumber}. Abangan niyo yan!
+Teka lang! Mainit ang draft ngayong Game {gameNumber}. Ramdam ko, may gulo na!
+Teka lang! Mainit ang draft ngayong Game {gameNumber}. Konting tiis lang!
+Teka lang! Mainit ang draft ngayong Game {gameNumber}. Hindi pa tapos ito!
+Teka lang! Mainit ang draft ngayong Game {gameNumber}. Handa na ako!
+Ayos! Mainit ang draft ngayong Game {gameNumber}.
+Ayos! Mainit ang draft ngayong Game {gameNumber}. Abangan niyo yan!
+Ayos! Mainit ang draft ngayong Game {gameNumber}. Ramdam ko, may gulo na!
+Ayos! Mainit ang draft ngayong Game {gameNumber}. Konting tiis lang!
+Ayos! Mainit ang draft ngayong Game {gameNumber}. Hindi pa tapos ito!
+Ayos! Mainit ang draft ngayong Game {gameNumber}. Handa na ako!
+Ramdam ko na! Mainit ang draft ngayong Game {gameNumber}.
+Ramdam ko na! Mainit ang draft ngayong Game {gameNumber}. Abangan niyo yan!
+Ramdam ko na! Mainit ang draft ngayong Game {gameNumber}. Ramdam ko, may gulo na!
+Ramdam ko na! Mainit ang draft ngayong Game {gameNumber}. Konting tiis lang!
+Ramdam ko na! Mainit ang draft ngayong Game {gameNumber}. Hindi pa tapos ito!
+Ramdam ko na! Mainit ang draft ngayong Game {gameNumber}. Handa na ako!
+Hoy, hoy! Mainit ang draft ngayong Game {gameNumber}.
+Hoy, hoy! Mainit ang draft ngayong Game {gameNumber}. Abangan niyo yan!
+Hoy, hoy! Mainit ang draft ngayong Game {gameNumber}. Ramdam ko, may gulo na!
+Hoy, hoy! Mainit ang draft ngayong Game {gameNumber}. Konting tiis lang!
+Hoy, hoy! Mainit ang draft ngayong Game {gameNumber}. Hindi pa tapos ito!
+Hoy, hoy! Mainit ang draft ngayong Game {gameNumber}. Handa na ako!
+Ito na! Mainit ang draft ngayong Game {gameNumber}.
+Ito na! Mainit ang draft ngayong Game {gameNumber}. Abangan niyo yan!
+Ito na! Mainit ang draft ngayong Game {gameNumber}. Ramdam ko, may gulo na!
+Ito na! Mainit ang draft ngayong Game {gameNumber}. Konting tiis lang!
+Ito na! Mainit ang draft ngayong Game {gameNumber}. Hindi pa tapos ito!
+Ito na! Mainit ang draft ngayong Game {gameNumber}. Handa na ako!
+Uy! Mainit ang draft ngayong Game {gameNumber}.
+Uy! Mainit ang draft ngayong Game {gameNumber}. Abangan niyo yan!
+Uy! Mainit ang draft ngayong Game {gameNumber}. Ramdam ko, may gulo na!
+Uy! Mainit ang draft ngayong Game {gameNumber}. Konting tiis lang!
+Uy! Mainit ang draft ngayong Game {gameNumber}. Hindi pa tapos ito!
+Uy! Mainit ang draft ngayong Game {gameNumber}. Handa na ako!
+Bawat pick at ban, may dahilan.
+Bawat pick at ban, may dahilan. Abangan niyo yan!
+Bawat pick at ban, may dahilan. Ramdam ko, may gulo na!
+Bawat pick at ban, may dahilan. Konting tiis lang!
+Bawat pick at ban, may dahilan. Hindi pa tapos ito!
+Bawat pick at ban, may dahilan. Handa na ako!
+Okay, okay! Bawat pick at ban, may dahilan.
+Okay, okay! Bawat pick at ban, may dahilan. Abangan niyo yan!
+Okay, okay! Bawat pick at ban, may dahilan. Ramdam ko, may gulo na!
+Okay, okay! Bawat pick at ban, may dahilan. Konting tiis lang!
+Okay, okay! Bawat pick at ban, may dahilan. Hindi pa tapos ito!
+Okay, okay! Bawat pick at ban, may dahilan. Handa na ako!
+Abangan niyo! Bawat pick at ban, may dahilan.
+Abangan niyo! Bawat pick at ban, may dahilan. Abangan niyo yan!
+Abangan niyo! Bawat pick at ban, may dahilan. Ramdam ko, may gulo na!
+Abangan niyo! Bawat pick at ban, may dahilan. Konting tiis lang!
+Abangan niyo! Bawat pick at ban, may dahilan. Hindi pa tapos ito!
+Abangan niyo! Bawat pick at ban, may dahilan. Handa na ako!
+Teka lang! Bawat pick at ban, may dahilan.
+Teka lang! Bawat pick at ban, may dahilan. Abangan niyo yan!
+Teka lang! Bawat pick at ban, may dahilan. Ramdam ko, may gulo na!
+Teka lang! Bawat pick at ban, may dahilan. Konting tiis lang!
+Teka lang! Bawat pick at ban, may dahilan. Hindi pa tapos ito!
+Teka lang! Bawat pick at ban, may dahilan. Handa na ako!
+Ayos! Bawat pick at ban, may dahilan.
+Ayos! Bawat pick at ban, may dahilan. Abangan niyo yan!
+Ayos! Bawat pick at ban, may dahilan. Ramdam ko, may gulo na!
+Ayos! Bawat pick at ban, may dahilan. Konting tiis lang!
+Ayos! Bawat pick at ban, may dahilan. Hindi pa tapos ito!
+Ayos! Bawat pick at ban, may dahilan. Handa na ako!
+Ramdam ko na! Bawat pick at ban, may dahilan.
+Ramdam ko na! Bawat pick at ban, may dahilan. Abangan niyo yan!
+Ramdam ko na! Bawat pick at ban, may dahilan. Ramdam ko, may gulo na!
+Ramdam ko na! Bawat pick at ban, may dahilan. Konting tiis lang!
+Ramdam ko na! Bawat pick at ban, may dahilan. Hindi pa tapos ito!
+Ramdam ko na! Bawat pick at ban, may dahilan. Handa na ako!
+Hoy, hoy! Bawat pick at ban, may dahilan.
+Hoy, hoy! Bawat pick at ban, may dahilan. Abangan niyo yan!
+Hoy, hoy! Bawat pick at ban, may dahilan. Ramdam ko, may gulo na!
+Hoy, hoy! Bawat pick at ban, may dahilan. Konting tiis lang!
+Hoy, hoy! Bawat pick at ban, may dahilan. Hindi pa tapos ito!
+Hoy, hoy! Bawat pick at ban, may dahilan. Handa na ako!
+Ito na! Bawat pick at ban, may dahilan.
+Ito na! Bawat pick at ban, may dahilan. Abangan niyo yan!
+Ito na! Bawat pick at ban, may dahilan. Ramdam ko, may gulo na!
+Ito na! Bawat pick at ban, may dahilan. Konting tiis lang!
+Ito na! Bawat pick at ban, may dahilan. Hindi pa tapos ito!
+Ito na! Bawat pick at ban, may dahilan. Handa na ako!
+Uy! Bawat pick at ban, may dahilan.
+Uy! Bawat pick at ban, may dahilan. Abangan niyo yan!
+Uy! Bawat pick at ban, may dahilan. Ramdam ko, may gulo na!
+Uy! Bawat pick at ban, may dahilan. Konting tiis lang!
+Uy! Bawat pick at ban, may dahilan. Hindi pa tapos ito!
+Uy! Bawat pick at ban, may dahilan. Handa na ako!
+Abangan natin ang susunod na desisyon.
+Abangan natin ang susunod na desisyon. Ramdam ko, may gulo na!
+Abangan natin ang susunod na desisyon. Konting tiis lang!
+Abangan natin ang susunod na desisyon. Hindi pa tapos ito!
+Abangan natin ang susunod na desisyon. Handa na ako!
+Okay, okay! Abangan natin ang susunod na desisyon.
+Okay, okay! Abangan natin ang susunod na desisyon. Ramdam ko, may gulo na!
+Okay, okay! Abangan natin ang susunod na desisyon. Konting tiis lang!
+Okay, okay! Abangan natin ang susunod na desisyon. Hindi pa tapos ito!
+Okay, okay! Abangan natin ang susunod na desisyon. Handa na ako!
+Teka lang! Abangan natin ang susunod na desisyon.
+Teka lang! Abangan natin ang susunod na desisyon. Ramdam ko, may gulo na!
+Teka lang! Abangan natin ang susunod na desisyon. Konting tiis lang!
+Teka lang! Abangan natin ang susunod na desisyon. Hindi pa tapos ito!
+Teka lang! Abangan natin ang susunod na desisyon. Handa na ako!
+Ayos! Abangan natin ang susunod na desisyon.
+Ayos! Abangan natin ang susunod na desisyon. Ramdam ko, may gulo na!
+Ayos! Abangan natin ang susunod na desisyon. Konting tiis lang!
+Ayos! Abangan natin ang susunod na desisyon. Hindi pa tapos ito!
+Ayos! Abangan natin ang susunod na desisyon. Handa na ako!
+Ramdam ko na! Abangan natin ang susunod na desisyon.
+Ramdam ko na! Abangan natin ang susunod na desisyon. Ramdam ko, may gulo na!
+Ramdam ko na! Abangan natin ang susunod na desisyon. Konting tiis lang!
+Ramdam ko na! Abangan natin ang susunod na desisyon. Hindi pa tapos ito!
+Ramdam ko na! Abangan natin ang susunod na desisyon. Handa na ako!
+Hoy, hoy! Abangan natin ang susunod na desisyon.
+Hoy, hoy! Abangan natin ang susunod na desisyon. Ramdam ko, may gulo na!
+Hoy, hoy! Abangan natin ang susunod na desisyon. Konting tiis lang!
+Hoy, hoy! Abangan natin ang susunod na desisyon. Hindi pa tapos ito!
+Hoy, hoy! Abangan natin ang susunod na desisyon. Handa na ako!
+Ito na! Abangan natin ang susunod na desisyon.
+Ito na! Abangan natin ang susunod na desisyon. Ramdam ko, may gulo na!
+Ito na! Abangan natin ang susunod na desisyon. Konting tiis lang!
+Ito na! Abangan natin ang susunod na desisyon. Hindi pa tapos ito!
+Ito na! Abangan natin ang susunod na desisyon. Handa na ako!
+Uy! Abangan natin ang susunod na desisyon.
+Uy! Abangan natin ang susunod na desisyon. Ramdam ko, may gulo na!
+Uy! Abangan natin ang susunod na desisyon. Konting tiis lang!
+Uy! Abangan natin ang susunod na desisyon. Hindi pa tapos ito!
+Uy! Abangan natin ang susunod na desisyon. Handa na ako!
+Paunti nang paunti ang mga hero na natitira.
+Paunti nang paunti ang mga hero na natitira. Abangan niyo yan!
+Paunti nang paunti ang mga hero na natitira. Ramdam ko, may gulo na!
+Paunti nang paunti ang mga hero na natitira. Konting tiis lang!
+Paunti nang paunti ang mga hero na natitira. Hindi pa tapos ito!
+Paunti nang paunti ang mga hero na natitira. Handa na ako!
+Okay, okay! Paunti nang paunti ang mga hero na natitira.
+Okay, okay! Paunti nang paunti ang mga hero na natitira. Abangan niyo yan!
+Okay, okay! Paunti nang paunti ang mga hero na natitira. Ramdam ko, may gulo na!
+Okay, okay! Paunti nang paunti ang mga hero na natitira. Konting tiis lang!
+Okay, okay! Paunti nang paunti ang mga hero na natitira. Hindi pa tapos ito!
+Okay, okay! Paunti nang paunti ang mga hero na natitira. Handa na ako!
+Abangan niyo! Paunti nang paunti ang mga hero na natitira.
+Abangan niyo! Paunti nang paunti ang mga hero na natitira. Abangan niyo yan!
+Abangan niyo! Paunti nang paunti ang mga hero na natitira. Ramdam ko, may gulo na!
+Abangan niyo! Paunti nang paunti ang mga hero na natitira. Konting tiis lang!
+Abangan niyo! Paunti nang paunti ang mga hero na natitira. Hindi pa tapos ito!
+Abangan niyo! Paunti nang paunti ang mga hero na natitira. Handa na ako!
+Teka lang! Paunti nang paunti ang mga hero na natitira.
+Teka lang! Paunti nang paunti ang mga hero na natitira. Abangan niyo yan!
+Teka lang! Paunti nang paunti ang mga hero na natitira. Ramdam ko, may gulo na!
+Teka lang! Paunti nang paunti ang mga hero na natitira. Konting tiis lang!
+Teka lang! Paunti nang paunti ang mga hero na natitira. Hindi pa tapos ito!
+Teka lang! Paunti nang paunti ang mga hero na natitira. Handa na ako!
+Ayos! Paunti nang paunti ang mga hero na natitira.
+Ayos! Paunti nang paunti ang mga hero na natitira. Abangan niyo yan!
+Ayos! Paunti nang paunti ang mga hero na natitira. Ramdam ko, may gulo na!
+Ayos! Paunti nang paunti ang mga hero na natitira. Konting tiis lang!
+Ayos! Paunti nang paunti ang mga hero na natitira. Hindi pa tapos ito!
+Ayos! Paunti nang paunti ang mga hero na natitira. Handa na ako!
+Ramdam ko na! Paunti nang paunti ang mga hero na natitira.
+Ramdam ko na! Paunti nang paunti ang mga hero na natitira. Abangan niyo yan!
+Ramdam ko na! Paunti nang paunti ang mga hero na natitira. Ramdam ko, may gulo na!
+Ramdam ko na! Paunti nang paunti ang mga hero na natitira. Konting tiis lang!
+Ramdam ko na! Paunti nang paunti ang mga hero na natitira. Hindi pa tapos ito!
+Ramdam ko na! Paunti nang paunti ang mga hero na natitira. Handa na ako!
+Hoy, hoy! Paunti nang paunti ang mga hero na natitira.
+Hoy, hoy! Paunti nang paunti ang mga hero na natitira. Abangan niyo yan!
+Hoy, hoy! Paunti nang paunti ang mga hero na natitira. Ramdam ko, may gulo na!
+Hoy, hoy! Paunti nang paunti ang mga hero na natitira. Konting tiis lang!
+Hoy, hoy! Paunti nang paunti ang mga hero na natitira. Hindi pa tapos ito!
+Hoy, hoy! Paunti nang paunti ang mga hero na natitira. Handa na ako!
+Ito na! Paunti nang paunti ang mga hero na natitira.
+Ito na! Paunti nang paunti ang mga hero na natitira. Abangan niyo yan!
+Ito na! Paunti nang paunti ang mga hero na natitira. Ramdam ko, may gulo na!
+Ito na! Paunti nang paunti ang mga hero na natitira. Konting tiis lang!
+Ito na! Paunti nang paunti ang mga hero na natitira. Hindi pa tapos ito!
+Ito na! Paunti nang paunti ang mga hero na natitira. Handa na ako!
+Uy! Paunti nang paunti ang mga hero na natitira.
+Uy! Paunti nang paunti ang mga hero na natitira. Abangan niyo yan!
+Uy! Paunti nang paunti ang mga hero na natitira. Ramdam ko, may gulo na!
+Uy! Paunti nang paunti ang mga hero na natitira. Konting tiis lang!
+Uy! Paunti nang paunti ang mga hero na natitira. Hindi pa tapos ito!
+Uy! Paunti nang paunti ang mga hero na natitira. Handa na ako!
+{seriesScore} ang serye — kaya mahalaga ang draft na ito.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Abangan niyo yan!
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Ramdam ko, may gulo na!
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Konting tiis lang!
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Hindi pa tapos ito!
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Handa na ako!
+Okay, okay! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Okay, okay! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Abangan niyo yan!
+Okay, okay! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ramdam ko, may gulo na!
+Okay, okay! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Konting tiis lang!
+Okay, okay! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Hindi pa tapos ito!
+Okay, okay! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Handa na ako!
+Abangan niyo! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Abangan niyo! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Abangan niyo yan!
+Abangan niyo! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ramdam ko, may gulo na!
+Abangan niyo! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Konting tiis lang!
+Abangan niyo! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Hindi pa tapos ito!
+Abangan niyo! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Handa na ako!
+Teka lang! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Teka lang! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Abangan niyo yan!
+Teka lang! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ramdam ko, may gulo na!
+Teka lang! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Konting tiis lang!
+Teka lang! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Hindi pa tapos ito!
+Teka lang! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Handa na ako!
+Ayos! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Ayos! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Abangan niyo yan!
+Ayos! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ramdam ko, may gulo na!
+Ayos! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Konting tiis lang!
+Ayos! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Hindi pa tapos ito!
+Ayos! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Handa na ako!
+Ramdam ko na! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Ramdam ko na! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Abangan niyo yan!
+Ramdam ko na! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ramdam ko, may gulo na!
+Ramdam ko na! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Konting tiis lang!
+Ramdam ko na! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Hindi pa tapos ito!
+Ramdam ko na! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Handa na ako!
+Hoy, hoy! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Hoy, hoy! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Abangan niyo yan!
+Hoy, hoy! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ramdam ko, may gulo na!
+Hoy, hoy! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Konting tiis lang!
+Hoy, hoy! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Hindi pa tapos ito!
+Hoy, hoy! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Handa na ako!
+Ito na! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Ito na! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Abangan niyo yan!
+Ito na! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ramdam ko, may gulo na!
+Ito na! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Konting tiis lang!
+Ito na! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Hindi pa tapos ito!
+Ito na! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Handa na ako!
+Uy! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Uy! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Abangan niyo yan!
+Uy! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ramdam ko, may gulo na!
+Uy! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Konting tiis lang!
+Uy! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Hindi pa tapos ito!
+Uy! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Handa na ako!
+
+══════ Drafting phase welcome ("Welcome sa drafting phase natin, partner …") — 551 lines ══════
+Hindi na ako makapaghintay — tara, simulan na ang draft!
+Hindi na ako makapaghintay — tara, simulan na ang draft! Abangan niyo yan!
+Hindi na ako makapaghintay — tara, simulan na ang draft! Ramdam ko, may gulo na!
+Hindi na ako makapaghintay — tara, simulan na ang draft! Konting tiis lang!
+Hindi na ako makapaghintay — tara, simulan na ang draft! Handa na ako!
+Okay, okay! Hindi na ako makapaghintay — tara, simulan na ang draft!
+Okay, okay! Hindi na ako makapaghintay — tara, simulan na ang draft! Abangan niyo yan!
+Okay, okay! Hindi na ako makapaghintay — tara, simulan na ang draft! Ramdam ko, may gulo na!
+Okay, okay! Hindi na ako makapaghintay — tara, simulan na ang draft! Konting tiis lang!
+Okay, okay! Hindi na ako makapaghintay — tara, simulan na ang draft! Handa na ako!
+Abangan niyo! Hindi na ako makapaghintay — tara, simulan na ang draft!
+Abangan niyo! Hindi na ako makapaghintay — tara, simulan na ang draft! Abangan niyo yan!
+Abangan niyo! Hindi na ako makapaghintay — tara, simulan na ang draft! Ramdam ko, may gulo na!
+Abangan niyo! Hindi na ako makapaghintay — tara, simulan na ang draft! Konting tiis lang!
+Abangan niyo! Hindi na ako makapaghintay — tara, simulan na ang draft! Handa na ako!
+Teka lang! Hindi na ako makapaghintay — tara, simulan na ang draft!
+Teka lang! Hindi na ako makapaghintay — tara, simulan na ang draft! Abangan niyo yan!
+Teka lang! Hindi na ako makapaghintay — tara, simulan na ang draft! Ramdam ko, may gulo na!
+Teka lang! Hindi na ako makapaghintay — tara, simulan na ang draft! Konting tiis lang!
+Teka lang! Hindi na ako makapaghintay — tara, simulan na ang draft! Handa na ako!
+Ayos! Hindi na ako makapaghintay — tara, simulan na ang draft!
+Ayos! Hindi na ako makapaghintay — tara, simulan na ang draft! Abangan niyo yan!
+Ayos! Hindi na ako makapaghintay — tara, simulan na ang draft! Ramdam ko, may gulo na!
+Ayos! Hindi na ako makapaghintay — tara, simulan na ang draft! Konting tiis lang!
+Ayos! Hindi na ako makapaghintay — tara, simulan na ang draft! Handa na ako!
+Ramdam ko na! Hindi na ako makapaghintay — tara, simulan na ang draft!
+Ramdam ko na! Hindi na ako makapaghintay — tara, simulan na ang draft! Abangan niyo yan!
+Ramdam ko na! Hindi na ako makapaghintay — tara, simulan na ang draft! Ramdam ko, may gulo na!
+Ramdam ko na! Hindi na ako makapaghintay — tara, simulan na ang draft! Konting tiis lang!
+Ramdam ko na! Hindi na ako makapaghintay — tara, simulan na ang draft! Handa na ako!
+Hoy, hoy! Hindi na ako makapaghintay — tara, simulan na ang draft!
+Hoy, hoy! Hindi na ako makapaghintay — tara, simulan na ang draft! Abangan niyo yan!
+Hoy, hoy! Hindi na ako makapaghintay — tara, simulan na ang draft! Ramdam ko, may gulo na!
+Hoy, hoy! Hindi na ako makapaghintay — tara, simulan na ang draft! Konting tiis lang!
+Hoy, hoy! Hindi na ako makapaghintay — tara, simulan na ang draft! Handa na ako!
+Ito na! Hindi na ako makapaghintay — tara, simulan na ang draft!
+Ito na! Hindi na ako makapaghintay — tara, simulan na ang draft! Abangan niyo yan!
+Ito na! Hindi na ako makapaghintay — tara, simulan na ang draft! Ramdam ko, may gulo na!
+Ito na! Hindi na ako makapaghintay — tara, simulan na ang draft! Konting tiis lang!
+Ito na! Hindi na ako makapaghintay — tara, simulan na ang draft! Handa na ako!
+Uy! Hindi na ako makapaghintay — tara, simulan na ang draft!
+Uy! Hindi na ako makapaghintay — tara, simulan na ang draft! Abangan niyo yan!
+Uy! Hindi na ako makapaghintay — tara, simulan na ang draft! Ramdam ko, may gulo na!
+Uy! Hindi na ako makapaghintay — tara, simulan na ang draft! Konting tiis lang!
+Uy! Hindi na ako makapaghintay — tara, simulan na ang draft! Handa na ako!
+Init na init na ang desk, mga ka-TCC! Draft na!
+Init na init na ang desk, mga ka-TCC! Draft na! Abangan niyo yan!
+Init na init na ang desk, mga ka-TCC! Draft na! Ramdam ko, may gulo na!
+Init na init na ang desk, mga ka-TCC! Draft na! Konting tiis lang!
+Init na init na ang desk, mga ka-TCC! Draft na! Hindi pa tapos ito!
+Init na init na ang desk, mga ka-TCC! Draft na! Handa na ako!
+Okay, okay! Init na init na ang desk, mga ka-TCC! Draft na!
+Okay, okay! Init na init na ang desk, mga ka-TCC! Draft na! Abangan niyo yan!
+Okay, okay! Init na init na ang desk, mga ka-TCC! Draft na! Ramdam ko, may gulo na!
+Okay, okay! Init na init na ang desk, mga ka-TCC! Draft na! Konting tiis lang!
+Okay, okay! Init na init na ang desk, mga ka-TCC! Draft na! Hindi pa tapos ito!
+Okay, okay! Init na init na ang desk, mga ka-TCC! Draft na! Handa na ako!
+Abangan niyo! Init na init na ang desk, mga ka-TCC! Draft na!
+Abangan niyo! Init na init na ang desk, mga ka-TCC! Draft na! Abangan niyo yan!
+Abangan niyo! Init na init na ang desk, mga ka-TCC! Draft na! Ramdam ko, may gulo na!
+Abangan niyo! Init na init na ang desk, mga ka-TCC! Draft na! Konting tiis lang!
+Abangan niyo! Init na init na ang desk, mga ka-TCC! Draft na! Hindi pa tapos ito!
+Abangan niyo! Init na init na ang desk, mga ka-TCC! Draft na! Handa na ako!
+Teka lang! Init na init na ang desk, mga ka-TCC! Draft na!
+Teka lang! Init na init na ang desk, mga ka-TCC! Draft na! Abangan niyo yan!
+Teka lang! Init na init na ang desk, mga ka-TCC! Draft na! Ramdam ko, may gulo na!
+Teka lang! Init na init na ang desk, mga ka-TCC! Draft na! Konting tiis lang!
+Teka lang! Init na init na ang desk, mga ka-TCC! Draft na! Hindi pa tapos ito!
+Teka lang! Init na init na ang desk, mga ka-TCC! Draft na! Handa na ako!
+Ayos! Init na init na ang desk, mga ka-TCC! Draft na!
+Ayos! Init na init na ang desk, mga ka-TCC! Draft na! Abangan niyo yan!
+Ayos! Init na init na ang desk, mga ka-TCC! Draft na! Ramdam ko, may gulo na!
+Ayos! Init na init na ang desk, mga ka-TCC! Draft na! Konting tiis lang!
+Ayos! Init na init na ang desk, mga ka-TCC! Draft na! Hindi pa tapos ito!
+Ayos! Init na init na ang desk, mga ka-TCC! Draft na! Handa na ako!
+Ramdam ko na! Init na init na ang desk, mga ka-TCC! Draft na!
+Ramdam ko na! Init na init na ang desk, mga ka-TCC! Draft na! Abangan niyo yan!
+Ramdam ko na! Init na init na ang desk, mga ka-TCC! Draft na! Ramdam ko, may gulo na!
+Ramdam ko na! Init na init na ang desk, mga ka-TCC! Draft na! Konting tiis lang!
+Ramdam ko na! Init na init na ang desk, mga ka-TCC! Draft na! Hindi pa tapos ito!
+Ramdam ko na! Init na init na ang desk, mga ka-TCC! Draft na! Handa na ako!
+Hoy, hoy! Init na init na ang desk, mga ka-TCC! Draft na!
+Hoy, hoy! Init na init na ang desk, mga ka-TCC! Draft na! Abangan niyo yan!
+Hoy, hoy! Init na init na ang desk, mga ka-TCC! Draft na! Ramdam ko, may gulo na!
+Hoy, hoy! Init na init na ang desk, mga ka-TCC! Draft na! Konting tiis lang!
+Hoy, hoy! Init na init na ang desk, mga ka-TCC! Draft na! Hindi pa tapos ito!
+Hoy, hoy! Init na init na ang desk, mga ka-TCC! Draft na! Handa na ako!
+Ito na! Init na init na ang desk, mga ka-TCC! Draft na!
+Ito na! Init na init na ang desk, mga ka-TCC! Draft na! Abangan niyo yan!
+Ito na! Init na init na ang desk, mga ka-TCC! Draft na! Ramdam ko, may gulo na!
+Ito na! Init na init na ang desk, mga ka-TCC! Draft na! Konting tiis lang!
+Ito na! Init na init na ang desk, mga ka-TCC! Draft na! Hindi pa tapos ito!
+Ito na! Init na init na ang desk, mga ka-TCC! Draft na! Handa na ako!
+Uy! Init na init na ang desk, mga ka-TCC! Draft na!
+Uy! Init na init na ang desk, mga ka-TCC! Draft na! Abangan niyo yan!
+Uy! Init na init na ang desk, mga ka-TCC! Draft na! Ramdam ko, may gulo na!
+Uy! Init na init na ang desk, mga ka-TCC! Draft na! Konting tiis lang!
+Uy! Init na init na ang desk, mga ka-TCC! Draft na! Hindi pa tapos ito!
+Uy! Init na init na ang desk, mga ka-TCC! Draft na! Handa na ako!
+Ito na! Sino kaya ang unang ilo-lock?
+Ito na! Sino kaya ang unang ilo-lock? Abangan niyo yan!
+Ito na! Sino kaya ang unang ilo-lock? Ramdam ko, may gulo na!
+Ito na! Sino kaya ang unang ilo-lock? Konting tiis lang!
+Ito na! Sino kaya ang unang ilo-lock? Hindi pa tapos ito!
+Ito na! Sino kaya ang unang ilo-lock? Handa na ako!
+Okay, okay! Ito na! Sino kaya ang unang ilo-lock?
+Okay, okay! Ito na! Sino kaya ang unang ilo-lock? Abangan niyo yan!
+Okay, okay! Ito na! Sino kaya ang unang ilo-lock? Ramdam ko, may gulo na!
+Okay, okay! Ito na! Sino kaya ang unang ilo-lock? Konting tiis lang!
+Okay, okay! Ito na! Sino kaya ang unang ilo-lock? Hindi pa tapos ito!
+Okay, okay! Ito na! Sino kaya ang unang ilo-lock? Handa na ako!
+Abangan niyo! Ito na! Sino kaya ang unang ilo-lock?
+Abangan niyo! Ito na! Sino kaya ang unang ilo-lock? Abangan niyo yan!
+Abangan niyo! Ito na! Sino kaya ang unang ilo-lock? Ramdam ko, may gulo na!
+Abangan niyo! Ito na! Sino kaya ang unang ilo-lock? Konting tiis lang!
+Abangan niyo! Ito na! Sino kaya ang unang ilo-lock? Hindi pa tapos ito!
+Abangan niyo! Ito na! Sino kaya ang unang ilo-lock? Handa na ako!
+Teka lang! Ito na! Sino kaya ang unang ilo-lock?
+Teka lang! Ito na! Sino kaya ang unang ilo-lock? Abangan niyo yan!
+Teka lang! Ito na! Sino kaya ang unang ilo-lock? Ramdam ko, may gulo na!
+Teka lang! Ito na! Sino kaya ang unang ilo-lock? Konting tiis lang!
+Teka lang! Ito na! Sino kaya ang unang ilo-lock? Hindi pa tapos ito!
+Teka lang! Ito na! Sino kaya ang unang ilo-lock? Handa na ako!
+Ayos! Ito na! Sino kaya ang unang ilo-lock?
+Ayos! Ito na! Sino kaya ang unang ilo-lock? Abangan niyo yan!
+Ayos! Ito na! Sino kaya ang unang ilo-lock? Ramdam ko, may gulo na!
+Ayos! Ito na! Sino kaya ang unang ilo-lock? Konting tiis lang!
+Ayos! Ito na! Sino kaya ang unang ilo-lock? Hindi pa tapos ito!
+Ayos! Ito na! Sino kaya ang unang ilo-lock? Handa na ako!
+Ramdam ko na! Ito na! Sino kaya ang unang ilo-lock?
+Ramdam ko na! Ito na! Sino kaya ang unang ilo-lock? Abangan niyo yan!
+Ramdam ko na! Ito na! Sino kaya ang unang ilo-lock? Ramdam ko, may gulo na!
+Ramdam ko na! Ito na! Sino kaya ang unang ilo-lock? Konting tiis lang!
+Ramdam ko na! Ito na! Sino kaya ang unang ilo-lock? Hindi pa tapos ito!
+Ramdam ko na! Ito na! Sino kaya ang unang ilo-lock? Handa na ako!
+Hoy, hoy! Ito na! Sino kaya ang unang ilo-lock?
+Hoy, hoy! Ito na! Sino kaya ang unang ilo-lock? Abangan niyo yan!
+Hoy, hoy! Ito na! Sino kaya ang unang ilo-lock? Ramdam ko, may gulo na!
+Hoy, hoy! Ito na! Sino kaya ang unang ilo-lock? Konting tiis lang!
+Hoy, hoy! Ito na! Sino kaya ang unang ilo-lock? Hindi pa tapos ito!
+Hoy, hoy! Ito na! Sino kaya ang unang ilo-lock? Handa na ako!
+Uy! Ito na! Sino kaya ang unang ilo-lock?
+Uy! Ito na! Sino kaya ang unang ilo-lock? Abangan niyo yan!
+Uy! Ito na! Sino kaya ang unang ilo-lock? Ramdam ko, may gulo na!
+Uy! Ito na! Sino kaya ang unang ilo-lock? Konting tiis lang!
+Uy! Ito na! Sino kaya ang unang ilo-lock? Hindi pa tapos ito!
+Uy! Ito na! Sino kaya ang unang ilo-lock? Handa na ako!
+Ramdam ko na — pang-gyera ang draft na ito!
+Ramdam ko na — pang-gyera ang draft na ito! Abangan niyo yan!
+Ramdam ko na — pang-gyera ang draft na ito! Konting tiis lang!
+Ramdam ko na — pang-gyera ang draft na ito! Hindi pa tapos ito!
+Ramdam ko na — pang-gyera ang draft na ito! Handa na ako!
+Okay, okay! Ramdam ko na — pang-gyera ang draft na ito!
+Okay, okay! Ramdam ko na — pang-gyera ang draft na ito! Abangan niyo yan!
+Okay, okay! Ramdam ko na — pang-gyera ang draft na ito! Konting tiis lang!
+Okay, okay! Ramdam ko na — pang-gyera ang draft na ito! Hindi pa tapos ito!
+Okay, okay! Ramdam ko na — pang-gyera ang draft na ito! Handa na ako!
+Abangan niyo! Ramdam ko na — pang-gyera ang draft na ito!
+Abangan niyo! Ramdam ko na — pang-gyera ang draft na ito! Abangan niyo yan!
+Abangan niyo! Ramdam ko na — pang-gyera ang draft na ito! Konting tiis lang!
+Abangan niyo! Ramdam ko na — pang-gyera ang draft na ito! Hindi pa tapos ito!
+Abangan niyo! Ramdam ko na — pang-gyera ang draft na ito! Handa na ako!
+Teka lang! Ramdam ko na — pang-gyera ang draft na ito!
+Teka lang! Ramdam ko na — pang-gyera ang draft na ito! Abangan niyo yan!
+Teka lang! Ramdam ko na — pang-gyera ang draft na ito! Konting tiis lang!
+Teka lang! Ramdam ko na — pang-gyera ang draft na ito! Hindi pa tapos ito!
+Teka lang! Ramdam ko na — pang-gyera ang draft na ito! Handa na ako!
+Ayos! Ramdam ko na — pang-gyera ang draft na ito!
+Ayos! Ramdam ko na — pang-gyera ang draft na ito! Abangan niyo yan!
+Ayos! Ramdam ko na — pang-gyera ang draft na ito! Konting tiis lang!
+Ayos! Ramdam ko na — pang-gyera ang draft na ito! Hindi pa tapos ito!
+Ayos! Ramdam ko na — pang-gyera ang draft na ito! Handa na ako!
+Hoy, hoy! Ramdam ko na — pang-gyera ang draft na ito!
+Hoy, hoy! Ramdam ko na — pang-gyera ang draft na ito! Abangan niyo yan!
+Hoy, hoy! Ramdam ko na — pang-gyera ang draft na ito! Konting tiis lang!
+Hoy, hoy! Ramdam ko na — pang-gyera ang draft na ito! Hindi pa tapos ito!
+Hoy, hoy! Ramdam ko na — pang-gyera ang draft na ito! Handa na ako!
+Ito na! Ramdam ko na — pang-gyera ang draft na ito!
+Ito na! Ramdam ko na — pang-gyera ang draft na ito! Abangan niyo yan!
+Ito na! Ramdam ko na — pang-gyera ang draft na ito! Konting tiis lang!
+Ito na! Ramdam ko na — pang-gyera ang draft na ito! Hindi pa tapos ito!
+Ito na! Ramdam ko na — pang-gyera ang draft na ito! Handa na ako!
+Uy! Ramdam ko na — pang-gyera ang draft na ito!
+Uy! Ramdam ko na — pang-gyera ang draft na ito! Abangan niyo yan!
+Uy! Ramdam ko na — pang-gyera ang draft na ito! Konting tiis lang!
+Uy! Ramdam ko na — pang-gyera ang draft na ito! Hindi pa tapos ito!
+Uy! Ramdam ko na — pang-gyera ang draft na ito! Handa na ako!
+Simula na ang drafting phase ng Game {gameNumber}.
+Simula na ang drafting phase ng Game {gameNumber}. Abangan niyo yan!
+Simula na ang drafting phase ng Game {gameNumber}. Ramdam ko, may gulo na!
+Simula na ang drafting phase ng Game {gameNumber}. Konting tiis lang!
+Simula na ang drafting phase ng Game {gameNumber}. Hindi pa tapos ito!
+Simula na ang drafting phase ng Game {gameNumber}. Handa na ako!
+Okay, okay! Simula na ang drafting phase ng Game {gameNumber}.
+Okay, okay! Simula na ang drafting phase ng Game {gameNumber}. Abangan niyo yan!
+Okay, okay! Simula na ang drafting phase ng Game {gameNumber}. Ramdam ko, may gulo na!
+Okay, okay! Simula na ang drafting phase ng Game {gameNumber}. Konting tiis lang!
+Okay, okay! Simula na ang drafting phase ng Game {gameNumber}. Hindi pa tapos ito!
+Okay, okay! Simula na ang drafting phase ng Game {gameNumber}. Handa na ako!
+Abangan niyo! Simula na ang drafting phase ng Game {gameNumber}.
+Abangan niyo! Simula na ang drafting phase ng Game {gameNumber}. Abangan niyo yan!
+Abangan niyo! Simula na ang drafting phase ng Game {gameNumber}. Ramdam ko, may gulo na!
+Abangan niyo! Simula na ang drafting phase ng Game {gameNumber}. Konting tiis lang!
+Abangan niyo! Simula na ang drafting phase ng Game {gameNumber}. Hindi pa tapos ito!
+Abangan niyo! Simula na ang drafting phase ng Game {gameNumber}. Handa na ako!
+Teka lang! Simula na ang drafting phase ng Game {gameNumber}.
+Teka lang! Simula na ang drafting phase ng Game {gameNumber}. Abangan niyo yan!
+Teka lang! Simula na ang drafting phase ng Game {gameNumber}. Ramdam ko, may gulo na!
+Teka lang! Simula na ang drafting phase ng Game {gameNumber}. Konting tiis lang!
+Teka lang! Simula na ang drafting phase ng Game {gameNumber}. Hindi pa tapos ito!
+Teka lang! Simula na ang drafting phase ng Game {gameNumber}. Handa na ako!
+Ayos! Simula na ang drafting phase ng Game {gameNumber}.
+Ayos! Simula na ang drafting phase ng Game {gameNumber}. Abangan niyo yan!
+Ayos! Simula na ang drafting phase ng Game {gameNumber}. Ramdam ko, may gulo na!
+Ayos! Simula na ang drafting phase ng Game {gameNumber}. Konting tiis lang!
+Ayos! Simula na ang drafting phase ng Game {gameNumber}. Hindi pa tapos ito!
+Ayos! Simula na ang drafting phase ng Game {gameNumber}. Handa na ako!
+Ramdam ko na! Simula na ang drafting phase ng Game {gameNumber}.
+Ramdam ko na! Simula na ang drafting phase ng Game {gameNumber}. Abangan niyo yan!
+Ramdam ko na! Simula na ang drafting phase ng Game {gameNumber}. Ramdam ko, may gulo na!
+Ramdam ko na! Simula na ang drafting phase ng Game {gameNumber}. Konting tiis lang!
+Ramdam ko na! Simula na ang drafting phase ng Game {gameNumber}. Hindi pa tapos ito!
+Ramdam ko na! Simula na ang drafting phase ng Game {gameNumber}. Handa na ako!
+Hoy, hoy! Simula na ang drafting phase ng Game {gameNumber}.
+Hoy, hoy! Simula na ang drafting phase ng Game {gameNumber}. Abangan niyo yan!
+Hoy, hoy! Simula na ang drafting phase ng Game {gameNumber}. Ramdam ko, may gulo na!
+Hoy, hoy! Simula na ang drafting phase ng Game {gameNumber}. Konting tiis lang!
+Hoy, hoy! Simula na ang drafting phase ng Game {gameNumber}. Hindi pa tapos ito!
+Hoy, hoy! Simula na ang drafting phase ng Game {gameNumber}. Handa na ako!
+Ito na! Simula na ang drafting phase ng Game {gameNumber}.
+Ito na! Simula na ang drafting phase ng Game {gameNumber}. Abangan niyo yan!
+Ito na! Simula na ang drafting phase ng Game {gameNumber}. Ramdam ko, may gulo na!
+Ito na! Simula na ang drafting phase ng Game {gameNumber}. Konting tiis lang!
+Ito na! Simula na ang drafting phase ng Game {gameNumber}. Hindi pa tapos ito!
+Ito na! Simula na ang drafting phase ng Game {gameNumber}. Handa na ako!
+Uy! Simula na ang drafting phase ng Game {gameNumber}.
+Uy! Simula na ang drafting phase ng Game {gameNumber}. Abangan niyo yan!
+Uy! Simula na ang drafting phase ng Game {gameNumber}. Ramdam ko, may gulo na!
+Uy! Simula na ang drafting phase ng Game {gameNumber}. Konting tiis lang!
+Uy! Simula na ang drafting phase ng Game {gameNumber}. Hindi pa tapos ito!
+Uy! Simula na ang drafting phase ng Game {gameNumber}. Handa na ako!
+Abangan natin ang mga ban at pick ng dalawang team.
+Abangan natin ang mga ban at pick ng dalawang team. Ramdam ko, may gulo na!
+Abangan natin ang mga ban at pick ng dalawang team. Konting tiis lang!
+Abangan natin ang mga ban at pick ng dalawang team. Hindi pa tapos ito!
+Abangan natin ang mga ban at pick ng dalawang team. Handa na ako!
+Okay, okay! Abangan natin ang mga ban at pick ng dalawang team.
+Okay, okay! Abangan natin ang mga ban at pick ng dalawang team. Ramdam ko, may gulo na!
+Okay, okay! Abangan natin ang mga ban at pick ng dalawang team. Konting tiis lang!
+Okay, okay! Abangan natin ang mga ban at pick ng dalawang team. Hindi pa tapos ito!
+Okay, okay! Abangan natin ang mga ban at pick ng dalawang team. Handa na ako!
+Teka lang! Abangan natin ang mga ban at pick ng dalawang team.
+Teka lang! Abangan natin ang mga ban at pick ng dalawang team. Ramdam ko, may gulo na!
+Teka lang! Abangan natin ang mga ban at pick ng dalawang team. Konting tiis lang!
+Teka lang! Abangan natin ang mga ban at pick ng dalawang team. Hindi pa tapos ito!
+Teka lang! Abangan natin ang mga ban at pick ng dalawang team. Handa na ako!
+Ayos! Abangan natin ang mga ban at pick ng dalawang team.
+Ayos! Abangan natin ang mga ban at pick ng dalawang team. Ramdam ko, may gulo na!
+Ayos! Abangan natin ang mga ban at pick ng dalawang team. Konting tiis lang!
+Ayos! Abangan natin ang mga ban at pick ng dalawang team. Hindi pa tapos ito!
+Ayos! Abangan natin ang mga ban at pick ng dalawang team. Handa na ako!
+Ramdam ko na! Abangan natin ang mga ban at pick ng dalawang team.
+Ramdam ko na! Abangan natin ang mga ban at pick ng dalawang team. Ramdam ko, may gulo na!
+Ramdam ko na! Abangan natin ang mga ban at pick ng dalawang team. Konting tiis lang!
+Ramdam ko na! Abangan natin ang mga ban at pick ng dalawang team. Hindi pa tapos ito!
+Ramdam ko na! Abangan natin ang mga ban at pick ng dalawang team. Handa na ako!
+Hoy, hoy! Abangan natin ang mga ban at pick ng dalawang team.
+Hoy, hoy! Abangan natin ang mga ban at pick ng dalawang team. Ramdam ko, may gulo na!
+Hoy, hoy! Abangan natin ang mga ban at pick ng dalawang team. Konting tiis lang!
+Hoy, hoy! Abangan natin ang mga ban at pick ng dalawang team. Hindi pa tapos ito!
+Hoy, hoy! Abangan natin ang mga ban at pick ng dalawang team. Handa na ako!
+Ito na! Abangan natin ang mga ban at pick ng dalawang team.
+Ito na! Abangan natin ang mga ban at pick ng dalawang team. Ramdam ko, may gulo na!
+Ito na! Abangan natin ang mga ban at pick ng dalawang team. Konting tiis lang!
+Ito na! Abangan natin ang mga ban at pick ng dalawang team. Hindi pa tapos ito!
+Ito na! Abangan natin ang mga ban at pick ng dalawang team. Handa na ako!
+Uy! Abangan natin ang mga ban at pick ng dalawang team.
+Uy! Abangan natin ang mga ban at pick ng dalawang team. Ramdam ko, may gulo na!
+Uy! Abangan natin ang mga ban at pick ng dalawang team. Konting tiis lang!
+Uy! Abangan natin ang mga ban at pick ng dalawang team. Hindi pa tapos ito!
+Uy! Abangan natin ang mga ban at pick ng dalawang team. Handa na ako!
+Dito makikita ang game plan ng {teamA} at {teamB}.
+Dito makikita ang game plan ng {teamA} at {teamB}. Abangan niyo yan!
+Dito makikita ang game plan ng {teamA} at {teamB}. Ramdam ko, may gulo na!
+Dito makikita ang game plan ng {teamA} at {teamB}. Konting tiis lang!
+Dito makikita ang game plan ng {teamA} at {teamB}. Hindi pa tapos ito!
+Dito makikita ang game plan ng {teamA} at {teamB}. Handa na ako!
+Okay, okay! Dito makikita ang game plan ng {teamA} at {teamB}.
+Okay, okay! Dito makikita ang game plan ng {teamA} at {teamB}. Abangan niyo yan!
+Okay, okay! Dito makikita ang game plan ng {teamA} at {teamB}. Ramdam ko, may gulo na!
+Okay, okay! Dito makikita ang game plan ng {teamA} at {teamB}. Konting tiis lang!
+Okay, okay! Dito makikita ang game plan ng {teamA} at {teamB}. Hindi pa tapos ito!
+Okay, okay! Dito makikita ang game plan ng {teamA} at {teamB}. Handa na ako!
+Abangan niyo! Dito makikita ang game plan ng {teamA} at {teamB}.
+Abangan niyo! Dito makikita ang game plan ng {teamA} at {teamB}. Abangan niyo yan!
+Abangan niyo! Dito makikita ang game plan ng {teamA} at {teamB}. Ramdam ko, may gulo na!
+Abangan niyo! Dito makikita ang game plan ng {teamA} at {teamB}. Konting tiis lang!
+Abangan niyo! Dito makikita ang game plan ng {teamA} at {teamB}. Hindi pa tapos ito!
+Abangan niyo! Dito makikita ang game plan ng {teamA} at {teamB}. Handa na ako!
+Teka lang! Dito makikita ang game plan ng {teamA} at {teamB}.
+Teka lang! Dito makikita ang game plan ng {teamA} at {teamB}. Abangan niyo yan!
+Teka lang! Dito makikita ang game plan ng {teamA} at {teamB}. Ramdam ko, may gulo na!
+Teka lang! Dito makikita ang game plan ng {teamA} at {teamB}. Konting tiis lang!
+Teka lang! Dito makikita ang game plan ng {teamA} at {teamB}. Hindi pa tapos ito!
+Teka lang! Dito makikita ang game plan ng {teamA} at {teamB}. Handa na ako!
+Ayos! Dito makikita ang game plan ng {teamA} at {teamB}.
+Ayos! Dito makikita ang game plan ng {teamA} at {teamB}. Abangan niyo yan!
+Ayos! Dito makikita ang game plan ng {teamA} at {teamB}. Ramdam ko, may gulo na!
+Ayos! Dito makikita ang game plan ng {teamA} at {teamB}. Konting tiis lang!
+Ayos! Dito makikita ang game plan ng {teamA} at {teamB}. Hindi pa tapos ito!
+Ayos! Dito makikita ang game plan ng {teamA} at {teamB}. Handa na ako!
+Ramdam ko na! Dito makikita ang game plan ng {teamA} at {teamB}.
+Ramdam ko na! Dito makikita ang game plan ng {teamA} at {teamB}. Abangan niyo yan!
+Ramdam ko na! Dito makikita ang game plan ng {teamA} at {teamB}. Ramdam ko, may gulo na!
+Ramdam ko na! Dito makikita ang game plan ng {teamA} at {teamB}. Konting tiis lang!
+Ramdam ko na! Dito makikita ang game plan ng {teamA} at {teamB}. Hindi pa tapos ito!
+Ramdam ko na! Dito makikita ang game plan ng {teamA} at {teamB}. Handa na ako!
+Hoy, hoy! Dito makikita ang game plan ng {teamA} at {teamB}.
+Hoy, hoy! Dito makikita ang game plan ng {teamA} at {teamB}. Abangan niyo yan!
+Hoy, hoy! Dito makikita ang game plan ng {teamA} at {teamB}. Ramdam ko, may gulo na!
+Hoy, hoy! Dito makikita ang game plan ng {teamA} at {teamB}. Konting tiis lang!
+Hoy, hoy! Dito makikita ang game plan ng {teamA} at {teamB}. Hindi pa tapos ito!
+Hoy, hoy! Dito makikita ang game plan ng {teamA} at {teamB}. Handa na ako!
+Ito na! Dito makikita ang game plan ng {teamA} at {teamB}.
+Ito na! Dito makikita ang game plan ng {teamA} at {teamB}. Abangan niyo yan!
+Ito na! Dito makikita ang game plan ng {teamA} at {teamB}. Ramdam ko, may gulo na!
+Ito na! Dito makikita ang game plan ng {teamA} at {teamB}. Konting tiis lang!
+Ito na! Dito makikita ang game plan ng {teamA} at {teamB}. Hindi pa tapos ito!
+Ito na! Dito makikita ang game plan ng {teamA} at {teamB}. Handa na ako!
+Uy! Dito makikita ang game plan ng {teamA} at {teamB}.
+Uy! Dito makikita ang game plan ng {teamA} at {teamB}. Abangan niyo yan!
+Uy! Dito makikita ang game plan ng {teamA} at {teamB}. Ramdam ko, may gulo na!
+Uy! Dito makikita ang game plan ng {teamA} at {teamB}. Konting tiis lang!
+Uy! Dito makikita ang game plan ng {teamA} at {teamB}. Hindi pa tapos ito!
+Uy! Dito makikita ang game plan ng {teamA} at {teamB}. Handa na ako!
+{blueTeam} sa blue side, {redTeam} sa red side.
+{blueTeam} sa blue side, {redTeam} sa red side. Abangan niyo yan!
+{blueTeam} sa blue side, {redTeam} sa red side. Ramdam ko, may gulo na!
+{blueTeam} sa blue side, {redTeam} sa red side. Konting tiis lang!
+{blueTeam} sa blue side, {redTeam} sa red side. Hindi pa tapos ito!
+{blueTeam} sa blue side, {redTeam} sa red side. Handa na ako!
+Okay, okay! {blueTeam} sa blue side, {redTeam} sa red side.
+Okay, okay! {blueTeam} sa blue side, {redTeam} sa red side. Abangan niyo yan!
+Okay, okay! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam ko, may gulo na!
+Okay, okay! {blueTeam} sa blue side, {redTeam} sa red side. Konting tiis lang!
+Okay, okay! {blueTeam} sa blue side, {redTeam} sa red side. Hindi pa tapos ito!
+Okay, okay! {blueTeam} sa blue side, {redTeam} sa red side. Handa na ako!
+Abangan niyo! {blueTeam} sa blue side, {redTeam} sa red side.
+Abangan niyo! {blueTeam} sa blue side, {redTeam} sa red side. Abangan niyo yan!
+Abangan niyo! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam ko, may gulo na!
+Abangan niyo! {blueTeam} sa blue side, {redTeam} sa red side. Konting tiis lang!
+Abangan niyo! {blueTeam} sa blue side, {redTeam} sa red side. Hindi pa tapos ito!
+Abangan niyo! {blueTeam} sa blue side, {redTeam} sa red side. Handa na ako!
+Teka lang! {blueTeam} sa blue side, {redTeam} sa red side.
+Teka lang! {blueTeam} sa blue side, {redTeam} sa red side. Abangan niyo yan!
+Teka lang! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam ko, may gulo na!
+Teka lang! {blueTeam} sa blue side, {redTeam} sa red side. Konting tiis lang!
+Teka lang! {blueTeam} sa blue side, {redTeam} sa red side. Hindi pa tapos ito!
+Teka lang! {blueTeam} sa blue side, {redTeam} sa red side. Handa na ako!
+Ayos! {blueTeam} sa blue side, {redTeam} sa red side.
+Ayos! {blueTeam} sa blue side, {redTeam} sa red side. Abangan niyo yan!
+Ayos! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam ko, may gulo na!
+Ayos! {blueTeam} sa blue side, {redTeam} sa red side. Konting tiis lang!
+Ayos! {blueTeam} sa blue side, {redTeam} sa red side. Hindi pa tapos ito!
+Ayos! {blueTeam} sa blue side, {redTeam} sa red side. Handa na ako!
+Ramdam ko na! {blueTeam} sa blue side, {redTeam} sa red side.
+Ramdam ko na! {blueTeam} sa blue side, {redTeam} sa red side. Abangan niyo yan!
+Ramdam ko na! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam ko, may gulo na!
+Ramdam ko na! {blueTeam} sa blue side, {redTeam} sa red side. Konting tiis lang!
+Ramdam ko na! {blueTeam} sa blue side, {redTeam} sa red side. Hindi pa tapos ito!
+Ramdam ko na! {blueTeam} sa blue side, {redTeam} sa red side. Handa na ako!
+Hoy, hoy! {blueTeam} sa blue side, {redTeam} sa red side.
+Hoy, hoy! {blueTeam} sa blue side, {redTeam} sa red side. Abangan niyo yan!
+Hoy, hoy! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam ko, may gulo na!
+Hoy, hoy! {blueTeam} sa blue side, {redTeam} sa red side. Konting tiis lang!
+Hoy, hoy! {blueTeam} sa blue side, {redTeam} sa red side. Hindi pa tapos ito!
+Hoy, hoy! {blueTeam} sa blue side, {redTeam} sa red side. Handa na ako!
+Ito na! {blueTeam} sa blue side, {redTeam} sa red side.
+Ito na! {blueTeam} sa blue side, {redTeam} sa red side. Abangan niyo yan!
+Ito na! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam ko, may gulo na!
+Ito na! {blueTeam} sa blue side, {redTeam} sa red side. Konting tiis lang!
+Ito na! {blueTeam} sa blue side, {redTeam} sa red side. Hindi pa tapos ito!
+Ito na! {blueTeam} sa blue side, {redTeam} sa red side. Handa na ako!
+Uy! {blueTeam} sa blue side, {redTeam} sa red side.
+Uy! {blueTeam} sa blue side, {redTeam} sa red side. Abangan niyo yan!
+Uy! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam ko, may gulo na!
+Uy! {blueTeam} sa blue side, {redTeam} sa red side. Konting tiis lang!
+Uy! {blueTeam} sa blue side, {redTeam} sa red side. Hindi pa tapos ito!
+Uy! {blueTeam} sa blue side, {redTeam} sa red side. Handa na ako!
+Draft pa lang, mahalaga na ang bawat desisyon.
+Draft pa lang, mahalaga na ang bawat desisyon. Abangan niyo yan!
+Draft pa lang, mahalaga na ang bawat desisyon. Ramdam ko, may gulo na!
+Draft pa lang, mahalaga na ang bawat desisyon. Konting tiis lang!
+Draft pa lang, mahalaga na ang bawat desisyon. Hindi pa tapos ito!
+Draft pa lang, mahalaga na ang bawat desisyon. Handa na ako!
+Okay, okay! Draft pa lang, mahalaga na ang bawat desisyon.
+Okay, okay! Draft pa lang, mahalaga na ang bawat desisyon. Abangan niyo yan!
+Okay, okay! Draft pa lang, mahalaga na ang bawat desisyon. Ramdam ko, may gulo na!
+Okay, okay! Draft pa lang, mahalaga na ang bawat desisyon. Konting tiis lang!
+Okay, okay! Draft pa lang, mahalaga na ang bawat desisyon. Hindi pa tapos ito!
+Okay, okay! Draft pa lang, mahalaga na ang bawat desisyon. Handa na ako!
+Abangan niyo! Draft pa lang, mahalaga na ang bawat desisyon.
+Abangan niyo! Draft pa lang, mahalaga na ang bawat desisyon. Abangan niyo yan!
+Abangan niyo! Draft pa lang, mahalaga na ang bawat desisyon. Ramdam ko, may gulo na!
+Abangan niyo! Draft pa lang, mahalaga na ang bawat desisyon. Konting tiis lang!
+Abangan niyo! Draft pa lang, mahalaga na ang bawat desisyon. Hindi pa tapos ito!
+Abangan niyo! Draft pa lang, mahalaga na ang bawat desisyon. Handa na ako!
+Teka lang! Draft pa lang, mahalaga na ang bawat desisyon.
+Teka lang! Draft pa lang, mahalaga na ang bawat desisyon. Abangan niyo yan!
+Teka lang! Draft pa lang, mahalaga na ang bawat desisyon. Ramdam ko, may gulo na!
+Teka lang! Draft pa lang, mahalaga na ang bawat desisyon. Konting tiis lang!
+Teka lang! Draft pa lang, mahalaga na ang bawat desisyon. Hindi pa tapos ito!
+Teka lang! Draft pa lang, mahalaga na ang bawat desisyon. Handa na ako!
+Ayos! Draft pa lang, mahalaga na ang bawat desisyon.
+Ayos! Draft pa lang, mahalaga na ang bawat desisyon. Abangan niyo yan!
+Ayos! Draft pa lang, mahalaga na ang bawat desisyon. Ramdam ko, may gulo na!
+Ayos! Draft pa lang, mahalaga na ang bawat desisyon. Konting tiis lang!
+Ayos! Draft pa lang, mahalaga na ang bawat desisyon. Hindi pa tapos ito!
+Ayos! Draft pa lang, mahalaga na ang bawat desisyon. Handa na ako!
+Ramdam ko na! Draft pa lang, mahalaga na ang bawat desisyon.
+Ramdam ko na! Draft pa lang, mahalaga na ang bawat desisyon. Abangan niyo yan!
+Ramdam ko na! Draft pa lang, mahalaga na ang bawat desisyon. Ramdam ko, may gulo na!
+Ramdam ko na! Draft pa lang, mahalaga na ang bawat desisyon. Konting tiis lang!
+Ramdam ko na! Draft pa lang, mahalaga na ang bawat desisyon. Hindi pa tapos ito!
+Ramdam ko na! Draft pa lang, mahalaga na ang bawat desisyon. Handa na ako!
+Hoy, hoy! Draft pa lang, mahalaga na ang bawat desisyon.
+Hoy, hoy! Draft pa lang, mahalaga na ang bawat desisyon. Abangan niyo yan!
+Hoy, hoy! Draft pa lang, mahalaga na ang bawat desisyon. Ramdam ko, may gulo na!
+Hoy, hoy! Draft pa lang, mahalaga na ang bawat desisyon. Konting tiis lang!
+Hoy, hoy! Draft pa lang, mahalaga na ang bawat desisyon. Hindi pa tapos ito!
+Hoy, hoy! Draft pa lang, mahalaga na ang bawat desisyon. Handa na ako!
+Ito na! Draft pa lang, mahalaga na ang bawat desisyon.
+Ito na! Draft pa lang, mahalaga na ang bawat desisyon. Abangan niyo yan!
+Ito na! Draft pa lang, mahalaga na ang bawat desisyon. Ramdam ko, may gulo na!
+Ito na! Draft pa lang, mahalaga na ang bawat desisyon. Konting tiis lang!
+Ito na! Draft pa lang, mahalaga na ang bawat desisyon. Hindi pa tapos ito!
+Ito na! Draft pa lang, mahalaga na ang bawat desisyon. Handa na ako!
+Uy! Draft pa lang, mahalaga na ang bawat desisyon.
+Uy! Draft pa lang, mahalaga na ang bawat desisyon. Abangan niyo yan!
+Uy! Draft pa lang, mahalaga na ang bawat desisyon. Ramdam ko, may gulo na!
+Uy! Draft pa lang, mahalaga na ang bawat desisyon. Konting tiis lang!
+Uy! Draft pa lang, mahalaga na ang bawat desisyon. Hindi pa tapos ito!
+Uy! Draft pa lang, mahalaga na ang bawat desisyon. Handa na ako!
+Sino kaya ang unang magpapakita ng diskarte?
+Sino kaya ang unang magpapakita ng diskarte? Abangan niyo yan!
+Sino kaya ang unang magpapakita ng diskarte? Ramdam ko, may gulo na!
+Sino kaya ang unang magpapakita ng diskarte? Konting tiis lang!
+Sino kaya ang unang magpapakita ng diskarte? Hindi pa tapos ito!
+Sino kaya ang unang magpapakita ng diskarte? Handa na ako!
+Okay, okay! Sino kaya ang unang magpapakita ng diskarte?
+Okay, okay! Sino kaya ang unang magpapakita ng diskarte? Abangan niyo yan!
+Okay, okay! Sino kaya ang unang magpapakita ng diskarte? Ramdam ko, may gulo na!
+Okay, okay! Sino kaya ang unang magpapakita ng diskarte? Konting tiis lang!
+Okay, okay! Sino kaya ang unang magpapakita ng diskarte? Hindi pa tapos ito!
+Okay, okay! Sino kaya ang unang magpapakita ng diskarte? Handa na ako!
+Abangan niyo! Sino kaya ang unang magpapakita ng diskarte?
+Abangan niyo! Sino kaya ang unang magpapakita ng diskarte? Abangan niyo yan!
+Abangan niyo! Sino kaya ang unang magpapakita ng diskarte? Ramdam ko, may gulo na!
+Abangan niyo! Sino kaya ang unang magpapakita ng diskarte? Konting tiis lang!
+Abangan niyo! Sino kaya ang unang magpapakita ng diskarte? Hindi pa tapos ito!
+Abangan niyo! Sino kaya ang unang magpapakita ng diskarte? Handa na ako!
+Teka lang! Sino kaya ang unang magpapakita ng diskarte?
+Teka lang! Sino kaya ang unang magpapakita ng diskarte? Abangan niyo yan!
+Teka lang! Sino kaya ang unang magpapakita ng diskarte? Ramdam ko, may gulo na!
+Teka lang! Sino kaya ang unang magpapakita ng diskarte? Konting tiis lang!
+Teka lang! Sino kaya ang unang magpapakita ng diskarte? Hindi pa tapos ito!
+Teka lang! Sino kaya ang unang magpapakita ng diskarte? Handa na ako!
+Ayos! Sino kaya ang unang magpapakita ng diskarte?
+Ayos! Sino kaya ang unang magpapakita ng diskarte? Abangan niyo yan!
+Ayos! Sino kaya ang unang magpapakita ng diskarte? Ramdam ko, may gulo na!
+Ayos! Sino kaya ang unang magpapakita ng diskarte? Konting tiis lang!
+Ayos! Sino kaya ang unang magpapakita ng diskarte? Hindi pa tapos ito!
+Ayos! Sino kaya ang unang magpapakita ng diskarte? Handa na ako!
+Ramdam ko na! Sino kaya ang unang magpapakita ng diskarte?
+Ramdam ko na! Sino kaya ang unang magpapakita ng diskarte? Abangan niyo yan!
+Ramdam ko na! Sino kaya ang unang magpapakita ng diskarte? Ramdam ko, may gulo na!
+Ramdam ko na! Sino kaya ang unang magpapakita ng diskarte? Konting tiis lang!
+Ramdam ko na! Sino kaya ang unang magpapakita ng diskarte? Hindi pa tapos ito!
+Ramdam ko na! Sino kaya ang unang magpapakita ng diskarte? Handa na ako!
+Hoy, hoy! Sino kaya ang unang magpapakita ng diskarte?
+Hoy, hoy! Sino kaya ang unang magpapakita ng diskarte? Abangan niyo yan!
+Hoy, hoy! Sino kaya ang unang magpapakita ng diskarte? Ramdam ko, may gulo na!
+Hoy, hoy! Sino kaya ang unang magpapakita ng diskarte? Konting tiis lang!
+Hoy, hoy! Sino kaya ang unang magpapakita ng diskarte? Hindi pa tapos ito!
+Hoy, hoy! Sino kaya ang unang magpapakita ng diskarte? Handa na ako!
+Ito na! Sino kaya ang unang magpapakita ng diskarte?
+Ito na! Sino kaya ang unang magpapakita ng diskarte? Abangan niyo yan!
+Ito na! Sino kaya ang unang magpapakita ng diskarte? Ramdam ko, may gulo na!
+Ito na! Sino kaya ang unang magpapakita ng diskarte? Konting tiis lang!
+Ito na! Sino kaya ang unang magpapakita ng diskarte? Hindi pa tapos ito!
+Ito na! Sino kaya ang unang magpapakita ng diskarte? Handa na ako!
+Uy! Sino kaya ang unang magpapakita ng diskarte?
+Uy! Sino kaya ang unang magpapakita ng diskarte? Abangan niyo yan!
+Uy! Sino kaya ang unang magpapakita ng diskarte? Ramdam ko, may gulo na!
+Uy! Sino kaya ang unang magpapakita ng diskarte? Konting tiis lang!
+Uy! Sino kaya ang unang magpapakita ng diskarte? Hindi pa tapos ito!
+Uy! Sino kaya ang unang magpapakita ng diskarte? Handa na ako!
+Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Abangan niyo yan!
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Ramdam ko, may gulo na!
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Konting tiis lang!
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Hindi pa tapos ito!
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Handa na ako!
+Okay, okay! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Okay, okay! Game {gameNumber} ng {format} — {seriesScore} ang serye. Abangan niyo yan!
+Okay, okay! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ramdam ko, may gulo na!
+Okay, okay! Game {gameNumber} ng {format} — {seriesScore} ang serye. Konting tiis lang!
+Okay, okay! Game {gameNumber} ng {format} — {seriesScore} ang serye. Hindi pa tapos ito!
+Okay, okay! Game {gameNumber} ng {format} — {seriesScore} ang serye. Handa na ako!
+Abangan niyo! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Abangan niyo! Game {gameNumber} ng {format} — {seriesScore} ang serye. Abangan niyo yan!
+Abangan niyo! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ramdam ko, may gulo na!
+Abangan niyo! Game {gameNumber} ng {format} — {seriesScore} ang serye. Konting tiis lang!
+Abangan niyo! Game {gameNumber} ng {format} — {seriesScore} ang serye. Hindi pa tapos ito!
+Abangan niyo! Game {gameNumber} ng {format} — {seriesScore} ang serye. Handa na ako!
+Teka lang! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Teka lang! Game {gameNumber} ng {format} — {seriesScore} ang serye. Abangan niyo yan!
+Teka lang! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ramdam ko, may gulo na!
+Teka lang! Game {gameNumber} ng {format} — {seriesScore} ang serye. Konting tiis lang!
+Teka lang! Game {gameNumber} ng {format} — {seriesScore} ang serye. Hindi pa tapos ito!
+Teka lang! Game {gameNumber} ng {format} — {seriesScore} ang serye. Handa na ako!
+Ayos! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Ayos! Game {gameNumber} ng {format} — {seriesScore} ang serye. Abangan niyo yan!
+Ayos! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ramdam ko, may gulo na!
+Ayos! Game {gameNumber} ng {format} — {seriesScore} ang serye. Konting tiis lang!
+Ayos! Game {gameNumber} ng {format} — {seriesScore} ang serye. Hindi pa tapos ito!
+Ayos! Game {gameNumber} ng {format} — {seriesScore} ang serye. Handa na ako!
+Ramdam ko na! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Ramdam ko na! Game {gameNumber} ng {format} — {seriesScore} ang serye. Abangan niyo yan!
+Ramdam ko na! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ramdam ko, may gulo na!
+Ramdam ko na! Game {gameNumber} ng {format} — {seriesScore} ang serye. Konting tiis lang!
+Ramdam ko na! Game {gameNumber} ng {format} — {seriesScore} ang serye. Hindi pa tapos ito!
+Ramdam ko na! Game {gameNumber} ng {format} — {seriesScore} ang serye. Handa na ako!
+Hoy, hoy! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Hoy, hoy! Game {gameNumber} ng {format} — {seriesScore} ang serye. Abangan niyo yan!
+Hoy, hoy! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ramdam ko, may gulo na!
+Hoy, hoy! Game {gameNumber} ng {format} — {seriesScore} ang serye. Konting tiis lang!
+Hoy, hoy! Game {gameNumber} ng {format} — {seriesScore} ang serye. Hindi pa tapos ito!
+Hoy, hoy! Game {gameNumber} ng {format} — {seriesScore} ang serye. Handa na ako!
+Ito na! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Ito na! Game {gameNumber} ng {format} — {seriesScore} ang serye. Abangan niyo yan!
+Ito na! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ramdam ko, may gulo na!
+Ito na! Game {gameNumber} ng {format} — {seriesScore} ang serye. Konting tiis lang!
+Ito na! Game {gameNumber} ng {format} — {seriesScore} ang serye. Hindi pa tapos ito!
+Ito na! Game {gameNumber} ng {format} — {seriesScore} ang serye. Handa na ako!
+Uy! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Uy! Game {gameNumber} ng {format} — {seriesScore} ang serye. Abangan niyo yan!
+Uy! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ramdam ko, may gulo na!
+Uy! Game {gameNumber} ng {format} — {seriesScore} ang serye. Konting tiis lang!
+Uy! Game {gameNumber} ng {format} — {seriesScore} ang serye. Hindi pa tapos ito!
+Uy! Game {gameNumber} ng {format} — {seriesScore} ang serye. Handa na ako!
+
+══════ Game start ("Welcome sa Game …") — 489 lines ══════
+ITO NA, ITO NA! Simula na ang gyera sa Land of Dawn!
+ITO NA, ITO NA! Simula na ang gyera sa Land of Dawn! GRABE TALAGA!
+ITO NA, ITO NA! Simula na ang gyera sa Land of Dawn! Init na init!
+ITO NA, ITO NA! Simula na ang gyera sa Land of Dawn! Ramdam niyo ba yan?!
+ITO NA, ITO NA! Simula na ang gyera sa Land of Dawn! LET'S GO!
+Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}!
+Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! GRABE TALAGA!
+Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Init na init!
+Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ito ang gusto natin!
+Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ramdam niyo ba yan?!
+Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! LET'S GO!
+ITO NA, ITO NA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}!
+ITO NA, ITO NA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! GRABE TALAGA!
+ITO NA, ITO NA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Init na init!
+ITO NA, ITO NA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ito ang gusto natin!
+ITO NA, ITO NA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ramdam niyo ba yan?!
+ITO NA, ITO NA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! LET'S GO!
+GRABE! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}!
+GRABE! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! GRABE TALAGA!
+GRABE! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Init na init!
+GRABE! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ito ang gusto natin!
+GRABE! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ramdam niyo ba yan?!
+GRABE! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! LET'S GO!
+LET'S GO! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}!
+LET'S GO! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! GRABE TALAGA!
+LET'S GO! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Init na init!
+LET'S GO! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ito ang gusto natin!
+LET'S GO! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ramdam niyo ba yan?!
+LET'S GO! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! LET'S GO!
+WOOO! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}!
+WOOO! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! GRABE TALAGA!
+WOOO! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Init na init!
+WOOO! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ito ang gusto natin!
+WOOO! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ramdam niyo ba yan?!
+WOOO! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! LET'S GO!
+AYAN NA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}!
+AYAN NA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! GRABE TALAGA!
+AYAN NA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Init na init!
+AYAN NA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ito ang gusto natin!
+AYAN NA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ramdam niyo ba yan?!
+AYAN NA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! LET'S GO!
+ANG GANDA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}!
+ANG GANDA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! GRABE TALAGA!
+ANG GANDA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Init na init!
+ANG GANDA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ito ang gusto natin!
+ANG GANDA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ramdam niyo ba yan?!
+ANG GANDA! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! LET'S GO!
+SIGAW NAMAN DIYAN! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}!
+SIGAW NAMAN DIYAN! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! GRABE TALAGA!
+SIGAW NAMAN DIYAN! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Init na init!
+SIGAW NAMAN DIYAN! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ito ang gusto natin!
+SIGAW NAMAN DIYAN! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! Handa na ba kayo, mga ka-TCC?! Dahil handa na ang {teamA} at {teamB}! LET'S GO!
+LET'S GO! Init na init na!
+LET'S GO! Init na init na! GRABE TALAGA!
+LET'S GO! Init na init na! Ito ang gusto natin!
+LET'S GO! Init na init na! Ramdam niyo ba yan?!
+Simula na! Sino kaya ang unang makakakuha ng first blood?
+Simula na! Sino kaya ang unang makakakuha ng first blood? GRABE TALAGA!
+Simula na! Sino kaya ang unang makakakuha ng first blood? Init na init!
+Simula na! Sino kaya ang unang makakakuha ng first blood? Ito ang gusto natin!
+Simula na! Sino kaya ang unang makakakuha ng first blood? Ramdam niyo ba yan?!
+Simula na! Sino kaya ang unang makakakuha ng first blood? LET'S GO!
+ITO NA, ITO NA! Simula na! Sino kaya ang unang makakakuha ng first blood?
+ITO NA, ITO NA! Simula na! Sino kaya ang unang makakakuha ng first blood? GRABE TALAGA!
+ITO NA, ITO NA! Simula na! Sino kaya ang unang makakakuha ng first blood? Init na init!
+ITO NA, ITO NA! Simula na! Sino kaya ang unang makakakuha ng first blood? Ito ang gusto natin!
+ITO NA, ITO NA! Simula na! Sino kaya ang unang makakakuha ng first blood? Ramdam niyo ba yan?!
+ITO NA, ITO NA! Simula na! Sino kaya ang unang makakakuha ng first blood? LET'S GO!
+GRABE! Simula na! Sino kaya ang unang makakakuha ng first blood?
+GRABE! Simula na! Sino kaya ang unang makakakuha ng first blood? GRABE TALAGA!
+GRABE! Simula na! Sino kaya ang unang makakakuha ng first blood? Init na init!
+GRABE! Simula na! Sino kaya ang unang makakakuha ng first blood? Ito ang gusto natin!
+GRABE! Simula na! Sino kaya ang unang makakakuha ng first blood? Ramdam niyo ba yan?!
+GRABE! Simula na! Sino kaya ang unang makakakuha ng first blood? LET'S GO!
+LET'S GO! Simula na! Sino kaya ang unang makakakuha ng first blood?
+LET'S GO! Simula na! Sino kaya ang unang makakakuha ng first blood? GRABE TALAGA!
+LET'S GO! Simula na! Sino kaya ang unang makakakuha ng first blood? Init na init!
+LET'S GO! Simula na! Sino kaya ang unang makakakuha ng first blood? Ito ang gusto natin!
+LET'S GO! Simula na! Sino kaya ang unang makakakuha ng first blood? Ramdam niyo ba yan?!
+LET'S GO! Simula na! Sino kaya ang unang makakakuha ng first blood? LET'S GO!
+WOOO! Simula na! Sino kaya ang unang makakakuha ng first blood?
+WOOO! Simula na! Sino kaya ang unang makakakuha ng first blood? GRABE TALAGA!
+WOOO! Simula na! Sino kaya ang unang makakakuha ng first blood? Init na init!
+WOOO! Simula na! Sino kaya ang unang makakakuha ng first blood? Ito ang gusto natin!
+WOOO! Simula na! Sino kaya ang unang makakakuha ng first blood? Ramdam niyo ba yan?!
+WOOO! Simula na! Sino kaya ang unang makakakuha ng first blood? LET'S GO!
+AYAN NA! Simula na! Sino kaya ang unang makakakuha ng first blood?
+AYAN NA! Simula na! Sino kaya ang unang makakakuha ng first blood? GRABE TALAGA!
+AYAN NA! Simula na! Sino kaya ang unang makakakuha ng first blood? Init na init!
+AYAN NA! Simula na! Sino kaya ang unang makakakuha ng first blood? Ito ang gusto natin!
+AYAN NA! Simula na! Sino kaya ang unang makakakuha ng first blood? Ramdam niyo ba yan?!
+AYAN NA! Simula na! Sino kaya ang unang makakakuha ng first blood? LET'S GO!
+INGAY, MGA KA-TCC! Simula na! Sino kaya ang unang makakakuha ng first blood?
+INGAY, MGA KA-TCC! Simula na! Sino kaya ang unang makakakuha ng first blood? GRABE TALAGA!
+INGAY, MGA KA-TCC! Simula na! Sino kaya ang unang makakakuha ng first blood? Init na init!
+INGAY, MGA KA-TCC! Simula na! Sino kaya ang unang makakakuha ng first blood? Ito ang gusto natin!
+INGAY, MGA KA-TCC! Simula na! Sino kaya ang unang makakakuha ng first blood? Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! Simula na! Sino kaya ang unang makakakuha ng first blood? LET'S GO!
+ANG GANDA! Simula na! Sino kaya ang unang makakakuha ng first blood?
+ANG GANDA! Simula na! Sino kaya ang unang makakakuha ng first blood? GRABE TALAGA!
+ANG GANDA! Simula na! Sino kaya ang unang makakakuha ng first blood? Init na init!
+ANG GANDA! Simula na! Sino kaya ang unang makakakuha ng first blood? Ito ang gusto natin!
+ANG GANDA! Simula na! Sino kaya ang unang makakakuha ng first blood? Ramdam niyo ba yan?!
+ANG GANDA! Simula na! Sino kaya ang unang makakakuha ng first blood? LET'S GO!
+SIGAW NAMAN DIYAN! Simula na! Sino kaya ang unang makakakuha ng first blood?
+SIGAW NAMAN DIYAN! Simula na! Sino kaya ang unang makakakuha ng first blood? GRABE TALAGA!
+SIGAW NAMAN DIYAN! Simula na! Sino kaya ang unang makakakuha ng first blood? Init na init!
+SIGAW NAMAN DIYAN! Simula na! Sino kaya ang unang makakakuha ng first blood? Ito ang gusto natin!
+SIGAW NAMAN DIYAN! Simula na! Sino kaya ang unang makakakuha ng first blood? Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! Simula na! Sino kaya ang unang makakakuha ng first blood? LET'S GO!
+Simula na ang Game {gameNumber}.
+Simula na ang Game {gameNumber}. GRABE TALAGA!
+Simula na ang Game {gameNumber}. Init na init!
+Simula na ang Game {gameNumber}. Ito ang gusto natin!
+Simula na ang Game {gameNumber}. Ramdam niyo ba yan?!
+Simula na ang Game {gameNumber}. LET'S GO!
+ITO NA, ITO NA! Simula na ang Game {gameNumber}.
+ITO NA, ITO NA! Simula na ang Game {gameNumber}. GRABE TALAGA!
+ITO NA, ITO NA! Simula na ang Game {gameNumber}. Init na init!
+ITO NA, ITO NA! Simula na ang Game {gameNumber}. Ito ang gusto natin!
+ITO NA, ITO NA! Simula na ang Game {gameNumber}. Ramdam niyo ba yan?!
+ITO NA, ITO NA! Simula na ang Game {gameNumber}. LET'S GO!
+GRABE! Simula na ang Game {gameNumber}.
+GRABE! Simula na ang Game {gameNumber}. GRABE TALAGA!
+GRABE! Simula na ang Game {gameNumber}. Init na init!
+GRABE! Simula na ang Game {gameNumber}. Ito ang gusto natin!
+GRABE! Simula na ang Game {gameNumber}. Ramdam niyo ba yan?!
+GRABE! Simula na ang Game {gameNumber}. LET'S GO!
+LET'S GO! Simula na ang Game {gameNumber}.
+LET'S GO! Simula na ang Game {gameNumber}. GRABE TALAGA!
+LET'S GO! Simula na ang Game {gameNumber}. Init na init!
+LET'S GO! Simula na ang Game {gameNumber}. Ito ang gusto natin!
+LET'S GO! Simula na ang Game {gameNumber}. Ramdam niyo ba yan?!
+LET'S GO! Simula na ang Game {gameNumber}. LET'S GO!
+WOOO! Simula na ang Game {gameNumber}.
+WOOO! Simula na ang Game {gameNumber}. GRABE TALAGA!
+WOOO! Simula na ang Game {gameNumber}. Init na init!
+WOOO! Simula na ang Game {gameNumber}. Ito ang gusto natin!
+WOOO! Simula na ang Game {gameNumber}. Ramdam niyo ba yan?!
+WOOO! Simula na ang Game {gameNumber}. LET'S GO!
+AYAN NA! Simula na ang Game {gameNumber}.
+AYAN NA! Simula na ang Game {gameNumber}. GRABE TALAGA!
+AYAN NA! Simula na ang Game {gameNumber}. Init na init!
+AYAN NA! Simula na ang Game {gameNumber}. Ito ang gusto natin!
+AYAN NA! Simula na ang Game {gameNumber}. Ramdam niyo ba yan?!
+AYAN NA! Simula na ang Game {gameNumber}. LET'S GO!
+INGAY, MGA KA-TCC! Simula na ang Game {gameNumber}.
+INGAY, MGA KA-TCC! Simula na ang Game {gameNumber}. GRABE TALAGA!
+INGAY, MGA KA-TCC! Simula na ang Game {gameNumber}. Init na init!
+INGAY, MGA KA-TCC! Simula na ang Game {gameNumber}. Ito ang gusto natin!
+INGAY, MGA KA-TCC! Simula na ang Game {gameNumber}. Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! Simula na ang Game {gameNumber}. LET'S GO!
+ANG GANDA! Simula na ang Game {gameNumber}.
+ANG GANDA! Simula na ang Game {gameNumber}. GRABE TALAGA!
+ANG GANDA! Simula na ang Game {gameNumber}. Init na init!
+ANG GANDA! Simula na ang Game {gameNumber}. Ito ang gusto natin!
+ANG GANDA! Simula na ang Game {gameNumber}. Ramdam niyo ba yan?!
+ANG GANDA! Simula na ang Game {gameNumber}. LET'S GO!
+SIGAW NAMAN DIYAN! Simula na ang Game {gameNumber}.
+SIGAW NAMAN DIYAN! Simula na ang Game {gameNumber}. GRABE TALAGA!
+SIGAW NAMAN DIYAN! Simula na ang Game {gameNumber}. Init na init!
+SIGAW NAMAN DIYAN! Simula na ang Game {gameNumber}. Ito ang gusto natin!
+SIGAW NAMAN DIYAN! Simula na ang Game {gameNumber}. Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! Simula na ang Game {gameNumber}. LET'S GO!
+Kumpleto na ang draft — laban na!
+Kumpleto na ang draft — laban na! GRABE TALAGA!
+Kumpleto na ang draft — laban na! Init na init!
+Kumpleto na ang draft — laban na! Ito ang gusto natin!
+Kumpleto na ang draft — laban na! Ramdam niyo ba yan?!
+Kumpleto na ang draft — laban na! LET'S GO!
+ITO NA, ITO NA! Kumpleto na ang draft — laban na!
+ITO NA, ITO NA! Kumpleto na ang draft — laban na! GRABE TALAGA!
+ITO NA, ITO NA! Kumpleto na ang draft — laban na! Init na init!
+ITO NA, ITO NA! Kumpleto na ang draft — laban na! Ito ang gusto natin!
+ITO NA, ITO NA! Kumpleto na ang draft — laban na! Ramdam niyo ba yan?!
+ITO NA, ITO NA! Kumpleto na ang draft — laban na! LET'S GO!
+GRABE! Kumpleto na ang draft — laban na!
+GRABE! Kumpleto na ang draft — laban na! GRABE TALAGA!
+GRABE! Kumpleto na ang draft — laban na! Init na init!
+GRABE! Kumpleto na ang draft — laban na! Ito ang gusto natin!
+GRABE! Kumpleto na ang draft — laban na! Ramdam niyo ba yan?!
+GRABE! Kumpleto na ang draft — laban na! LET'S GO!
+LET'S GO! Kumpleto na ang draft — laban na!
+LET'S GO! Kumpleto na ang draft — laban na! GRABE TALAGA!
+LET'S GO! Kumpleto na ang draft — laban na! Init na init!
+LET'S GO! Kumpleto na ang draft — laban na! Ito ang gusto natin!
+LET'S GO! Kumpleto na ang draft — laban na! Ramdam niyo ba yan?!
+LET'S GO! Kumpleto na ang draft — laban na! LET'S GO!
+WOOO! Kumpleto na ang draft — laban na!
+WOOO! Kumpleto na ang draft — laban na! GRABE TALAGA!
+WOOO! Kumpleto na ang draft — laban na! Init na init!
+WOOO! Kumpleto na ang draft — laban na! Ito ang gusto natin!
+WOOO! Kumpleto na ang draft — laban na! Ramdam niyo ba yan?!
+WOOO! Kumpleto na ang draft — laban na! LET'S GO!
+AYAN NA! Kumpleto na ang draft — laban na!
+AYAN NA! Kumpleto na ang draft — laban na! GRABE TALAGA!
+AYAN NA! Kumpleto na ang draft — laban na! Init na init!
+AYAN NA! Kumpleto na ang draft — laban na! Ito ang gusto natin!
+AYAN NA! Kumpleto na ang draft — laban na! Ramdam niyo ba yan?!
+AYAN NA! Kumpleto na ang draft — laban na! LET'S GO!
+INGAY, MGA KA-TCC! Kumpleto na ang draft — laban na!
+INGAY, MGA KA-TCC! Kumpleto na ang draft — laban na! GRABE TALAGA!
+INGAY, MGA KA-TCC! Kumpleto na ang draft — laban na! Init na init!
+INGAY, MGA KA-TCC! Kumpleto na ang draft — laban na! Ito ang gusto natin!
+INGAY, MGA KA-TCC! Kumpleto na ang draft — laban na! Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! Kumpleto na ang draft — laban na! LET'S GO!
+ANG GANDA! Kumpleto na ang draft — laban na!
+ANG GANDA! Kumpleto na ang draft — laban na! GRABE TALAGA!
+ANG GANDA! Kumpleto na ang draft — laban na! Init na init!
+ANG GANDA! Kumpleto na ang draft — laban na! Ito ang gusto natin!
+ANG GANDA! Kumpleto na ang draft — laban na! Ramdam niyo ba yan?!
+ANG GANDA! Kumpleto na ang draft — laban na! LET'S GO!
+SIGAW NAMAN DIYAN! Kumpleto na ang draft — laban na!
+SIGAW NAMAN DIYAN! Kumpleto na ang draft — laban na! GRABE TALAGA!
+SIGAW NAMAN DIYAN! Kumpleto na ang draft — laban na! Init na init!
+SIGAW NAMAN DIYAN! Kumpleto na ang draft — laban na! Ito ang gusto natin!
+SIGAW NAMAN DIYAN! Kumpleto na ang draft — laban na! Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! Kumpleto na ang draft — laban na! LET'S GO!
+{blueTeam} sa blue side, {redTeam} sa red side.
+{blueTeam} sa blue side, {redTeam} sa red side. GRABE TALAGA!
+{blueTeam} sa blue side, {redTeam} sa red side. Init na init!
+{blueTeam} sa blue side, {redTeam} sa red side. Ito ang gusto natin!
+{blueTeam} sa blue side, {redTeam} sa red side. Ramdam niyo ba yan?!
+{blueTeam} sa blue side, {redTeam} sa red side. LET'S GO!
+ITO NA, ITO NA! {blueTeam} sa blue side, {redTeam} sa red side.
+ITO NA, ITO NA! {blueTeam} sa blue side, {redTeam} sa red side. GRABE TALAGA!
+ITO NA, ITO NA! {blueTeam} sa blue side, {redTeam} sa red side. Init na init!
+ITO NA, ITO NA! {blueTeam} sa blue side, {redTeam} sa red side. Ito ang gusto natin!
+ITO NA, ITO NA! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam niyo ba yan?!
+ITO NA, ITO NA! {blueTeam} sa blue side, {redTeam} sa red side. LET'S GO!
+GRABE! {blueTeam} sa blue side, {redTeam} sa red side.
+GRABE! {blueTeam} sa blue side, {redTeam} sa red side. GRABE TALAGA!
+GRABE! {blueTeam} sa blue side, {redTeam} sa red side. Init na init!
+GRABE! {blueTeam} sa blue side, {redTeam} sa red side. Ito ang gusto natin!
+GRABE! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam niyo ba yan?!
+GRABE! {blueTeam} sa blue side, {redTeam} sa red side. LET'S GO!
+LET'S GO! {blueTeam} sa blue side, {redTeam} sa red side.
+LET'S GO! {blueTeam} sa blue side, {redTeam} sa red side. GRABE TALAGA!
+LET'S GO! {blueTeam} sa blue side, {redTeam} sa red side. Init na init!
+LET'S GO! {blueTeam} sa blue side, {redTeam} sa red side. Ito ang gusto natin!
+LET'S GO! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam niyo ba yan?!
+LET'S GO! {blueTeam} sa blue side, {redTeam} sa red side. LET'S GO!
+WOOO! {blueTeam} sa blue side, {redTeam} sa red side.
+WOOO! {blueTeam} sa blue side, {redTeam} sa red side. GRABE TALAGA!
+WOOO! {blueTeam} sa blue side, {redTeam} sa red side. Init na init!
+WOOO! {blueTeam} sa blue side, {redTeam} sa red side. Ito ang gusto natin!
+WOOO! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam niyo ba yan?!
+WOOO! {blueTeam} sa blue side, {redTeam} sa red side. LET'S GO!
+AYAN NA! {blueTeam} sa blue side, {redTeam} sa red side.
+AYAN NA! {blueTeam} sa blue side, {redTeam} sa red side. GRABE TALAGA!
+AYAN NA! {blueTeam} sa blue side, {redTeam} sa red side. Init na init!
+AYAN NA! {blueTeam} sa blue side, {redTeam} sa red side. Ito ang gusto natin!
+AYAN NA! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam niyo ba yan?!
+AYAN NA! {blueTeam} sa blue side, {redTeam} sa red side. LET'S GO!
+INGAY, MGA KA-TCC! {blueTeam} sa blue side, {redTeam} sa red side.
+INGAY, MGA KA-TCC! {blueTeam} sa blue side, {redTeam} sa red side. GRABE TALAGA!
+INGAY, MGA KA-TCC! {blueTeam} sa blue side, {redTeam} sa red side. Init na init!
+INGAY, MGA KA-TCC! {blueTeam} sa blue side, {redTeam} sa red side. Ito ang gusto natin!
+INGAY, MGA KA-TCC! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! {blueTeam} sa blue side, {redTeam} sa red side. LET'S GO!
+ANG GANDA! {blueTeam} sa blue side, {redTeam} sa red side.
+ANG GANDA! {blueTeam} sa blue side, {redTeam} sa red side. GRABE TALAGA!
+ANG GANDA! {blueTeam} sa blue side, {redTeam} sa red side. Init na init!
+ANG GANDA! {blueTeam} sa blue side, {redTeam} sa red side. Ito ang gusto natin!
+ANG GANDA! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam niyo ba yan?!
+ANG GANDA! {blueTeam} sa blue side, {redTeam} sa red side. LET'S GO!
+SIGAW NAMAN DIYAN! {blueTeam} sa blue side, {redTeam} sa red side.
+SIGAW NAMAN DIYAN! {blueTeam} sa blue side, {redTeam} sa red side. GRABE TALAGA!
+SIGAW NAMAN DIYAN! {blueTeam} sa blue side, {redTeam} sa red side. Init na init!
+SIGAW NAMAN DIYAN! {blueTeam} sa blue side, {redTeam} sa red side. Ito ang gusto natin!
+SIGAW NAMAN DIYAN! {blueTeam} sa blue side, {redTeam} sa red side. Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! {blueTeam} sa blue side, {redTeam} sa red side. LET'S GO!
+Abangan natin ang unang engagement.
+Abangan natin ang unang engagement. GRABE TALAGA!
+Abangan natin ang unang engagement. Init na init!
+Abangan natin ang unang engagement. Ito ang gusto natin!
+Abangan natin ang unang engagement. Ramdam niyo ba yan?!
+Abangan natin ang unang engagement. LET'S GO!
+ITO NA, ITO NA! Abangan natin ang unang engagement.
+ITO NA, ITO NA! Abangan natin ang unang engagement. GRABE TALAGA!
+ITO NA, ITO NA! Abangan natin ang unang engagement. Init na init!
+ITO NA, ITO NA! Abangan natin ang unang engagement. Ito ang gusto natin!
+ITO NA, ITO NA! Abangan natin ang unang engagement. Ramdam niyo ba yan?!
+ITO NA, ITO NA! Abangan natin ang unang engagement. LET'S GO!
+GRABE! Abangan natin ang unang engagement.
+GRABE! Abangan natin ang unang engagement. GRABE TALAGA!
+GRABE! Abangan natin ang unang engagement. Init na init!
+GRABE! Abangan natin ang unang engagement. Ito ang gusto natin!
+GRABE! Abangan natin ang unang engagement. Ramdam niyo ba yan?!
+GRABE! Abangan natin ang unang engagement. LET'S GO!
+LET'S GO! Abangan natin ang unang engagement.
+LET'S GO! Abangan natin ang unang engagement. GRABE TALAGA!
+LET'S GO! Abangan natin ang unang engagement. Init na init!
+LET'S GO! Abangan natin ang unang engagement. Ito ang gusto natin!
+LET'S GO! Abangan natin ang unang engagement. Ramdam niyo ba yan?!
+LET'S GO! Abangan natin ang unang engagement. LET'S GO!
+WOOO! Abangan natin ang unang engagement.
+WOOO! Abangan natin ang unang engagement. GRABE TALAGA!
+WOOO! Abangan natin ang unang engagement. Init na init!
+WOOO! Abangan natin ang unang engagement. Ito ang gusto natin!
+WOOO! Abangan natin ang unang engagement. Ramdam niyo ba yan?!
+WOOO! Abangan natin ang unang engagement. LET'S GO!
+AYAN NA! Abangan natin ang unang engagement.
+AYAN NA! Abangan natin ang unang engagement. GRABE TALAGA!
+AYAN NA! Abangan natin ang unang engagement. Init na init!
+AYAN NA! Abangan natin ang unang engagement. Ito ang gusto natin!
+AYAN NA! Abangan natin ang unang engagement. Ramdam niyo ba yan?!
+AYAN NA! Abangan natin ang unang engagement. LET'S GO!
+INGAY, MGA KA-TCC! Abangan natin ang unang engagement.
+INGAY, MGA KA-TCC! Abangan natin ang unang engagement. GRABE TALAGA!
+INGAY, MGA KA-TCC! Abangan natin ang unang engagement. Init na init!
+INGAY, MGA KA-TCC! Abangan natin ang unang engagement. Ito ang gusto natin!
+INGAY, MGA KA-TCC! Abangan natin ang unang engagement. Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! Abangan natin ang unang engagement. LET'S GO!
+ANG GANDA! Abangan natin ang unang engagement.
+ANG GANDA! Abangan natin ang unang engagement. GRABE TALAGA!
+ANG GANDA! Abangan natin ang unang engagement. Init na init!
+ANG GANDA! Abangan natin ang unang engagement. Ito ang gusto natin!
+ANG GANDA! Abangan natin ang unang engagement. Ramdam niyo ba yan?!
+ANG GANDA! Abangan natin ang unang engagement. LET'S GO!
+SIGAW NAMAN DIYAN! Abangan natin ang unang engagement.
+SIGAW NAMAN DIYAN! Abangan natin ang unang engagement. GRABE TALAGA!
+SIGAW NAMAN DIYAN! Abangan natin ang unang engagement. Init na init!
+SIGAW NAMAN DIYAN! Abangan natin ang unang engagement. Ito ang gusto natin!
+SIGAW NAMAN DIYAN! Abangan natin ang unang engagement. Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! Abangan natin ang unang engagement. LET'S GO!
+Bagong laro, bagong pagkakataon.
+Bagong laro, bagong pagkakataon. GRABE TALAGA!
+Bagong laro, bagong pagkakataon. Init na init!
+Bagong laro, bagong pagkakataon. Ito ang gusto natin!
+Bagong laro, bagong pagkakataon. Ramdam niyo ba yan?!
+Bagong laro, bagong pagkakataon. LET'S GO!
+ITO NA, ITO NA! Bagong laro, bagong pagkakataon.
+ITO NA, ITO NA! Bagong laro, bagong pagkakataon. GRABE TALAGA!
+ITO NA, ITO NA! Bagong laro, bagong pagkakataon. Init na init!
+ITO NA, ITO NA! Bagong laro, bagong pagkakataon. Ito ang gusto natin!
+ITO NA, ITO NA! Bagong laro, bagong pagkakataon. Ramdam niyo ba yan?!
+ITO NA, ITO NA! Bagong laro, bagong pagkakataon. LET'S GO!
+GRABE! Bagong laro, bagong pagkakataon.
+GRABE! Bagong laro, bagong pagkakataon. GRABE TALAGA!
+GRABE! Bagong laro, bagong pagkakataon. Init na init!
+GRABE! Bagong laro, bagong pagkakataon. Ito ang gusto natin!
+GRABE! Bagong laro, bagong pagkakataon. Ramdam niyo ba yan?!
+GRABE! Bagong laro, bagong pagkakataon. LET'S GO!
+LET'S GO! Bagong laro, bagong pagkakataon.
+LET'S GO! Bagong laro, bagong pagkakataon. GRABE TALAGA!
+LET'S GO! Bagong laro, bagong pagkakataon. Init na init!
+LET'S GO! Bagong laro, bagong pagkakataon. Ito ang gusto natin!
+LET'S GO! Bagong laro, bagong pagkakataon. Ramdam niyo ba yan?!
+LET'S GO! Bagong laro, bagong pagkakataon. LET'S GO!
+WOOO! Bagong laro, bagong pagkakataon.
+WOOO! Bagong laro, bagong pagkakataon. GRABE TALAGA!
+WOOO! Bagong laro, bagong pagkakataon. Init na init!
+WOOO! Bagong laro, bagong pagkakataon. Ito ang gusto natin!
+WOOO! Bagong laro, bagong pagkakataon. Ramdam niyo ba yan?!
+WOOO! Bagong laro, bagong pagkakataon. LET'S GO!
+AYAN NA! Bagong laro, bagong pagkakataon.
+AYAN NA! Bagong laro, bagong pagkakataon. GRABE TALAGA!
+AYAN NA! Bagong laro, bagong pagkakataon. Init na init!
+AYAN NA! Bagong laro, bagong pagkakataon. Ito ang gusto natin!
+AYAN NA! Bagong laro, bagong pagkakataon. Ramdam niyo ba yan?!
+AYAN NA! Bagong laro, bagong pagkakataon. LET'S GO!
+INGAY, MGA KA-TCC! Bagong laro, bagong pagkakataon.
+INGAY, MGA KA-TCC! Bagong laro, bagong pagkakataon. GRABE TALAGA!
+INGAY, MGA KA-TCC! Bagong laro, bagong pagkakataon. Init na init!
+INGAY, MGA KA-TCC! Bagong laro, bagong pagkakataon. Ito ang gusto natin!
+INGAY, MGA KA-TCC! Bagong laro, bagong pagkakataon. Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! Bagong laro, bagong pagkakataon. LET'S GO!
+ANG GANDA! Bagong laro, bagong pagkakataon.
+ANG GANDA! Bagong laro, bagong pagkakataon. GRABE TALAGA!
+ANG GANDA! Bagong laro, bagong pagkakataon. Init na init!
+ANG GANDA! Bagong laro, bagong pagkakataon. Ito ang gusto natin!
+ANG GANDA! Bagong laro, bagong pagkakataon. Ramdam niyo ba yan?!
+ANG GANDA! Bagong laro, bagong pagkakataon. LET'S GO!
+SIGAW NAMAN DIYAN! Bagong laro, bagong pagkakataon.
+SIGAW NAMAN DIYAN! Bagong laro, bagong pagkakataon. GRABE TALAGA!
+SIGAW NAMAN DIYAN! Bagong laro, bagong pagkakataon. Init na init!
+SIGAW NAMAN DIYAN! Bagong laro, bagong pagkakataon. Ito ang gusto natin!
+SIGAW NAMAN DIYAN! Bagong laro, bagong pagkakataon. Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! Bagong laro, bagong pagkakataon. LET'S GO!
+{seriesScore} ang serye.
+{seriesScore} ang serye. GRABE TALAGA!
+{seriesScore} ang serye. Init na init!
+{seriesScore} ang serye. Ito ang gusto natin!
+{seriesScore} ang serye. Ramdam niyo ba yan?!
+{seriesScore} ang serye. LET'S GO!
+ITO NA, ITO NA! {seriesScore} ang serye.
+ITO NA, ITO NA! {seriesScore} ang serye. GRABE TALAGA!
+ITO NA, ITO NA! {seriesScore} ang serye. Init na init!
+ITO NA, ITO NA! {seriesScore} ang serye. Ito ang gusto natin!
+ITO NA, ITO NA! {seriesScore} ang serye. Ramdam niyo ba yan?!
+ITO NA, ITO NA! {seriesScore} ang serye. LET'S GO!
+GRABE! {seriesScore} ang serye.
+GRABE! {seriesScore} ang serye. GRABE TALAGA!
+GRABE! {seriesScore} ang serye. Init na init!
+GRABE! {seriesScore} ang serye. Ito ang gusto natin!
+GRABE! {seriesScore} ang serye. Ramdam niyo ba yan?!
+GRABE! {seriesScore} ang serye. LET'S GO!
+LET'S GO! {seriesScore} ang serye.
+LET'S GO! {seriesScore} ang serye. GRABE TALAGA!
+LET'S GO! {seriesScore} ang serye. Init na init!
+LET'S GO! {seriesScore} ang serye. Ito ang gusto natin!
+LET'S GO! {seriesScore} ang serye. Ramdam niyo ba yan?!
+LET'S GO! {seriesScore} ang serye. LET'S GO!
+WOOO! {seriesScore} ang serye.
+WOOO! {seriesScore} ang serye. GRABE TALAGA!
+WOOO! {seriesScore} ang serye. Init na init!
+WOOO! {seriesScore} ang serye. Ito ang gusto natin!
+WOOO! {seriesScore} ang serye. Ramdam niyo ba yan?!
+WOOO! {seriesScore} ang serye. LET'S GO!
+AYAN NA! {seriesScore} ang serye.
+AYAN NA! {seriesScore} ang serye. GRABE TALAGA!
+AYAN NA! {seriesScore} ang serye. Init na init!
+AYAN NA! {seriesScore} ang serye. Ito ang gusto natin!
+AYAN NA! {seriesScore} ang serye. Ramdam niyo ba yan?!
+AYAN NA! {seriesScore} ang serye. LET'S GO!
+INGAY, MGA KA-TCC! {seriesScore} ang serye.
+INGAY, MGA KA-TCC! {seriesScore} ang serye. GRABE TALAGA!
+INGAY, MGA KA-TCC! {seriesScore} ang serye. Init na init!
+INGAY, MGA KA-TCC! {seriesScore} ang serye. Ito ang gusto natin!
+INGAY, MGA KA-TCC! {seriesScore} ang serye. Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! {seriesScore} ang serye. LET'S GO!
+ANG GANDA! {seriesScore} ang serye.
+ANG GANDA! {seriesScore} ang serye. GRABE TALAGA!
+ANG GANDA! {seriesScore} ang serye. Init na init!
+ANG GANDA! {seriesScore} ang serye. Ito ang gusto natin!
+ANG GANDA! {seriesScore} ang serye. Ramdam niyo ba yan?!
+ANG GANDA! {seriesScore} ang serye. LET'S GO!
+SIGAW NAMAN DIYAN! {seriesScore} ang serye.
+SIGAW NAMAN DIYAN! {seriesScore} ang serye. GRABE TALAGA!
+SIGAW NAMAN DIYAN! {seriesScore} ang serye. Init na init!
+SIGAW NAMAN DIYAN! {seriesScore} ang serye. Ito ang gusto natin!
+SIGAW NAMAN DIYAN! {seriesScore} ang serye. Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! {seriesScore} ang serye. LET'S GO!
+Good luck sa parehong team.
+Good luck sa parehong team. GRABE TALAGA!
+Good luck sa parehong team. Init na init!
+Good luck sa parehong team. Ito ang gusto natin!
+Good luck sa parehong team. Ramdam niyo ba yan?!
+Good luck sa parehong team. LET'S GO!
+ITO NA, ITO NA! Good luck sa parehong team.
+ITO NA, ITO NA! Good luck sa parehong team. GRABE TALAGA!
+ITO NA, ITO NA! Good luck sa parehong team. Init na init!
+ITO NA, ITO NA! Good luck sa parehong team. Ito ang gusto natin!
+ITO NA, ITO NA! Good luck sa parehong team. Ramdam niyo ba yan?!
+ITO NA, ITO NA! Good luck sa parehong team. LET'S GO!
+GRABE! Good luck sa parehong team.
+GRABE! Good luck sa parehong team. GRABE TALAGA!
+GRABE! Good luck sa parehong team. Init na init!
+GRABE! Good luck sa parehong team. Ito ang gusto natin!
+GRABE! Good luck sa parehong team. Ramdam niyo ba yan?!
+GRABE! Good luck sa parehong team. LET'S GO!
+LET'S GO! Good luck sa parehong team.
+LET'S GO! Good luck sa parehong team. GRABE TALAGA!
+LET'S GO! Good luck sa parehong team. Init na init!
+LET'S GO! Good luck sa parehong team. Ito ang gusto natin!
+LET'S GO! Good luck sa parehong team. Ramdam niyo ba yan?!
+LET'S GO! Good luck sa parehong team. LET'S GO!
+WOOO! Good luck sa parehong team.
+WOOO! Good luck sa parehong team. GRABE TALAGA!
+WOOO! Good luck sa parehong team. Init na init!
+WOOO! Good luck sa parehong team. Ito ang gusto natin!
+WOOO! Good luck sa parehong team. Ramdam niyo ba yan?!
+WOOO! Good luck sa parehong team. LET'S GO!
+AYAN NA! Good luck sa parehong team.
+AYAN NA! Good luck sa parehong team. GRABE TALAGA!
+AYAN NA! Good luck sa parehong team. Init na init!
+AYAN NA! Good luck sa parehong team. Ito ang gusto natin!
+AYAN NA! Good luck sa parehong team. Ramdam niyo ba yan?!
+AYAN NA! Good luck sa parehong team. LET'S GO!
+INGAY, MGA KA-TCC! Good luck sa parehong team.
+INGAY, MGA KA-TCC! Good luck sa parehong team. GRABE TALAGA!
+INGAY, MGA KA-TCC! Good luck sa parehong team. Init na init!
+INGAY, MGA KA-TCC! Good luck sa parehong team. Ito ang gusto natin!
+INGAY, MGA KA-TCC! Good luck sa parehong team. Ramdam niyo ba yan?!
+INGAY, MGA KA-TCC! Good luck sa parehong team. LET'S GO!
+ANG GANDA! Good luck sa parehong team.
+ANG GANDA! Good luck sa parehong team. GRABE TALAGA!
+ANG GANDA! Good luck sa parehong team. Init na init!
+ANG GANDA! Good luck sa parehong team. Ito ang gusto natin!
+ANG GANDA! Good luck sa parehong team. Ramdam niyo ba yan?!
+ANG GANDA! Good luck sa parehong team. LET'S GO!
+SIGAW NAMAN DIYAN! Good luck sa parehong team.
+SIGAW NAMAN DIYAN! Good luck sa parehong team. GRABE TALAGA!
+SIGAW NAMAN DIYAN! Good luck sa parehong team. Init na init!
+SIGAW NAMAN DIYAN! Good luck sa parehong team. Ito ang gusto natin!
+SIGAW NAMAN DIYAN! Good luck sa parehong team. Ramdam niyo ba yan?!
+SIGAW NAMAN DIYAN! Good luck sa parehong team. LET'S GO!
+
+══════ Going to break — 59 lines ══════
+Konting tiis lang, mga ka-TCC — babalik ang aksyon!
+Konting tiis lang, mga ka-TCC — babalik ang aksyon! Abangan niyo yan!
+Konting tiis lang, mga ka-TCC — babalik ang aksyon! Ramdam ko, may gulo na!
+Konting tiis lang, mga ka-TCC — babalik ang aksyon! Hindi pa tapos ito!
+Konting tiis lang, mga ka-TCC — babalik ang aksyon! Handa na ako!
+Pahinga muna, pero ramdam ko na — mas iinit pa pagbalik natin!
+Pahinga muna, pero ramdam ko na — mas iinit pa pagbalik natin! Abangan niyo yan!
+Pahinga muna, pero ramdam ko na — mas iinit pa pagbalik natin! Ramdam ko, may gulo na!
+Pahinga muna, pero ramdam ko na — mas iinit pa pagbalik natin! Konting tiis lang!
+Pahinga muna, pero ramdam ko na — mas iinit pa pagbalik natin! Hindi pa tapos ito!
+Pahinga muna, pero ramdam ko na — mas iinit pa pagbalik natin! Handa na ako!
+Huwag kayong aalis, ha! Pagbalik natin, gyera ulit!
+Huwag kayong aalis, ha! Pagbalik natin, gyera ulit! Abangan niyo yan!
+Huwag kayong aalis, ha! Pagbalik natin, gyera ulit! Ramdam ko, may gulo na!
+Huwag kayong aalis, ha! Pagbalik natin, gyera ulit! Konting tiis lang!
+Huwag kayong aalis, ha! Pagbalik natin, gyera ulit! Hindi pa tapos ito!
+Huwag kayong aalis, ha! Pagbalik natin, gyera ulit! Handa na ako!
+Sulit ang paghihintay, pangako yan.
+Sulit ang paghihintay, pangako yan. Abangan niyo yan!
+Sulit ang paghihintay, pangako yan. Ramdam ko, may gulo na!
+Sulit ang paghihintay, pangako yan. Konting tiis lang!
+Sulit ang paghihintay, pangako yan. Hindi pa tapos ito!
+Sulit ang paghihintay, pangako yan. Handa na ako!
+Babalik kami agad, mga ka-TCC.
+Babalik kami agad, mga ka-TCC. Abangan niyo yan!
+Babalik kami agad, mga ka-TCC. Ramdam ko, may gulo na!
+Babalik kami agad, mga ka-TCC. Konting tiis lang!
+Babalik kami agad, mga ka-TCC. Hindi pa tapos ito!
+Babalik kami agad, mga ka-TCC. Handa na ako!
+Panoorin muna natin ang mga highlight habang naghihintay.
+Panoorin muna natin ang mga highlight habang naghihintay. Abangan niyo yan!
+Panoorin muna natin ang mga highlight habang naghihintay. Ramdam ko, may gulo na!
+Panoorin muna natin ang mga highlight habang naghihintay. Konting tiis lang!
+Panoorin muna natin ang mga highlight habang naghihintay. Hindi pa tapos ito!
+Panoorin muna natin ang mga highlight habang naghihintay. Handa na ako!
+Kuha muna kayo ng tubig at meryenda.
+Kuha muna kayo ng tubig at meryenda. Abangan niyo yan!
+Kuha muna kayo ng tubig at meryenda. Ramdam ko, may gulo na!
+Kuha muna kayo ng tubig at meryenda. Konting tiis lang!
+Kuha muna kayo ng tubig at meryenda. Hindi pa tapos ito!
+Kuha muna kayo ng tubig at meryenda. Handa na ako!
+Babalik kami pagkalipas ng {breakMins} minuto.
+Babalik kami pagkalipas ng {breakMins} minuto. Abangan niyo yan!
+Babalik kami pagkalipas ng {breakMins} minuto. Ramdam ko, may gulo na!
+Babalik kami pagkalipas ng {breakMins} minuto. Konting tiis lang!
+Babalik kami pagkalipas ng {breakMins} minuto. Hindi pa tapos ito!
+Babalik kami pagkalipas ng {breakMins} minuto. Handa na ako!
+Huwag kayong aalis — babalik kami agad.
+Huwag kayong aalis — babalik kami agad. Abangan niyo yan!
+Huwag kayong aalis — babalik kami agad. Ramdam ko, may gulo na!
+Huwag kayong aalis — babalik kami agad. Konting tiis lang!
+Huwag kayong aalis — babalik kami agad. Hindi pa tapos ito!
+Huwag kayong aalis — babalik kami agad. Handa na ako!
+Salamat sa patuloy na panonood, mga ka-TCC.
+Salamat sa patuloy na panonood, mga ka-TCC. Abangan niyo yan!
+Salamat sa patuloy na panonood, mga ka-TCC. Ramdam ko, may gulo na!
+Salamat sa patuloy na panonood, mga ka-TCC. Konting tiis lang!
+Salamat sa patuloy na panonood, mga ka-TCC. Hindi pa tapos ito!
+Salamat sa patuloy na panonood, mga ka-TCC. Handa na ako!
 
 ══════ Game intro — 522 lines ══════
 ITO NA! Let the game begin, mga ka-TCC!

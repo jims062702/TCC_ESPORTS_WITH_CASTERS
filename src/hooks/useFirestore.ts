@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { registerExtraHeroes } from '@/lib/heroData';
 import { orderBy, type QueryConstraint } from 'firebase/firestore';
 import type {
   BoothState,
@@ -120,12 +121,17 @@ export const useHeroPortraits = () => {
 
 export const useSettings = () => {
   const s = useDocData<SiteSettings>(COL.settings, SETTINGS_DOC);
-  const data = useMemo<SiteSettings>(
-    () => ({ ...DEFAULT_SETTINGS, updatedAt: 0, ...(s.data ?? {}), casterProfiles: { ...(s.data?.casterProfiles ?? {}) } }),
-    [s.data],
-  );
+  const data = useMemo<SiteSettings>(() => {
+    const merged = { ...DEFAULT_SETTINGS, updatedAt: 0, ...(s.data ?? {}), casterProfiles: { ...(s.data?.casterProfiles ?? {}) } };
+    // New heroes typed in Settings → Heroes become known to the draft, casters and hero search.
+    registerExtraHeroes(merged.extraHeroes ?? []);
+    return merged;
+  }, [s.data]);
   return { ...s, data };
 };
+
+/** Uploaded battle spell icons (Settings → Battle spell icons). */
+export const useSpellIcons = () => useSettings().data.spellIcons ?? {};
 
 export const useLive = () => {
   const s = useDocData<LiveState>(COL.live, LIVE_DOC.current);

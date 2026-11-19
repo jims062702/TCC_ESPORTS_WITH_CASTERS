@@ -27,7 +27,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     const isOverlay = document.documentElement.classList.contains('overlay-mode');
     document.documentElement.classList.toggle('dark', isOverlay || theme === 'dark');
     const meta = document.querySelector('meta[name="theme-color"]');
-    meta?.setAttribute('content', theme === 'dark' ? '#0d0b0e' : '#f7f4f3');
+    meta?.setAttribute('content', theme === 'dark' ? '#0d0b0e' : '#f0ece9');
   }, [theme]);
 
   const setTheme = useCallback((t: Theme) => {

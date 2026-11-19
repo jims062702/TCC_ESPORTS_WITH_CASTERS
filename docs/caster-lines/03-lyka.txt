@@ -1,5 +1,2159 @@
 Ate Lyka — Tempo & Stat Expert (female)
-7,178 unique lines
+9,262 unique lines
+
+══════ Draft bans — 324 lines ══════
+Isa na namang ban — paunti nang paunti ang opsyon.
+Isa na namang ban — paunti nang paunti ang opsyon. Numbers don't lie.
+Isa na namang ban — paunti nang paunti ang opsyon. Tandaan ang numero.
+Isa na namang ban — paunti nang paunti ang opsyon. Tempo is king.
+Isa na namang ban — paunti nang paunti ang opsyon. Bantayan natin ang scoreboard.
+Isa na namang ban — paunti nang paunti ang opsyon. Data ang nagsasalita.
+Numbers check. Isa na namang ban — paunti nang paunti ang opsyon.
+Numbers check. Isa na namang ban — paunti nang paunti ang opsyon. Numbers don't lie.
+Numbers check. Isa na namang ban — paunti nang paunti ang opsyon. Tandaan ang numero.
+Numbers check. Isa na namang ban — paunti nang paunti ang opsyon. Tempo is king.
+Numbers check. Isa na namang ban — paunti nang paunti ang opsyon. Bantayan natin ang scoreboard.
+Numbers check. Isa na namang ban — paunti nang paunti ang opsyon. Data ang nagsasalita.
+Quick stat lang. Isa na namang ban — paunti nang paunti ang opsyon.
+Quick stat lang. Isa na namang ban — paunti nang paunti ang opsyon. Numbers don't lie.
+Quick stat lang. Isa na namang ban — paunti nang paunti ang opsyon. Tandaan ang numero.
+Quick stat lang. Isa na namang ban — paunti nang paunti ang opsyon. Tempo is king.
+Quick stat lang. Isa na namang ban — paunti nang paunti ang opsyon. Bantayan natin ang scoreboard.
+Quick stat lang. Isa na namang ban — paunti nang paunti ang opsyon. Data ang nagsasalita.
+Tingnan natin ang stats. Isa na namang ban — paunti nang paunti ang opsyon.
+Tingnan natin ang stats. Isa na namang ban — paunti nang paunti ang opsyon. Numbers don't lie.
+Tingnan natin ang stats. Isa na namang ban — paunti nang paunti ang opsyon. Tandaan ang numero.
+Tingnan natin ang stats. Isa na namang ban — paunti nang paunti ang opsyon. Tempo is king.
+Tingnan natin ang stats. Isa na namang ban — paunti nang paunti ang opsyon. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Isa na namang ban — paunti nang paunti ang opsyon. Data ang nagsasalita.
+Ito ang numero. Isa na namang ban — paunti nang paunti ang opsyon.
+Ito ang numero. Isa na namang ban — paunti nang paunti ang opsyon. Numbers don't lie.
+Ito ang numero. Isa na namang ban — paunti nang paunti ang opsyon. Tandaan ang numero.
+Ito ang numero. Isa na namang ban — paunti nang paunti ang opsyon. Tempo is king.
+Ito ang numero. Isa na namang ban — paunti nang paunti ang opsyon. Bantayan natin ang scoreboard.
+Ito ang numero. Isa na namang ban — paunti nang paunti ang opsyon. Data ang nagsasalita.
+Data muna tayo. Isa na namang ban — paunti nang paunti ang opsyon.
+Data muna tayo. Isa na namang ban — paunti nang paunti ang opsyon. Numbers don't lie.
+Data muna tayo. Isa na namang ban — paunti nang paunti ang opsyon. Tandaan ang numero.
+Data muna tayo. Isa na namang ban — paunti nang paunti ang opsyon. Tempo is king.
+Data muna tayo. Isa na namang ban — paunti nang paunti ang opsyon. Bantayan natin ang scoreboard.
+Data muna tayo. Isa na namang ban — paunti nang paunti ang opsyon. Data ang nagsasalita.
+Tempo check. Isa na namang ban — paunti nang paunti ang opsyon.
+Tempo check. Isa na namang ban — paunti nang paunti ang opsyon. Numbers don't lie.
+Tempo check. Isa na namang ban — paunti nang paunti ang opsyon. Tandaan ang numero.
+Tempo check. Isa na namang ban — paunti nang paunti ang opsyon. Tempo is king.
+Tempo check. Isa na namang ban — paunti nang paunti ang opsyon. Bantayan natin ang scoreboard.
+Tempo check. Isa na namang ban — paunti nang paunti ang opsyon. Data ang nagsasalita.
+Okay, scoreboard. Isa na namang ban — paunti nang paunti ang opsyon.
+Okay, scoreboard. Isa na namang ban — paunti nang paunti ang opsyon. Numbers don't lie.
+Okay, scoreboard. Isa na namang ban — paunti nang paunti ang opsyon. Tandaan ang numero.
+Okay, scoreboard. Isa na namang ban — paunti nang paunti ang opsyon. Tempo is king.
+Okay, scoreboard. Isa na namang ban — paunti nang paunti ang opsyon. Bantayan natin ang scoreboard.
+Okay, scoreboard. Isa na namang ban — paunti nang paunti ang opsyon. Data ang nagsasalita.
+Sa record. Isa na namang ban — paunti nang paunti ang opsyon.
+Sa record. Isa na namang ban — paunti nang paunti ang opsyon. Numbers don't lie.
+Sa record. Isa na namang ban — paunti nang paunti ang opsyon. Tandaan ang numero.
+Sa record. Isa na namang ban — paunti nang paunti ang opsyon. Tempo is king.
+Sa record. Isa na namang ban — paunti nang paunti ang opsyon. Bantayan natin ang scoreboard.
+Sa record. Isa na namang ban — paunti nang paunti ang opsyon. Data ang nagsasalita.
+Malinaw ang mensahe ng ban na yan.
+Malinaw ang mensahe ng ban na yan. Numbers don't lie.
+Malinaw ang mensahe ng ban na yan. Tandaan ang numero.
+Malinaw ang mensahe ng ban na yan. Tempo is king.
+Malinaw ang mensahe ng ban na yan. Bantayan natin ang scoreboard.
+Malinaw ang mensahe ng ban na yan. Data ang nagsasalita.
+Numbers check. Malinaw ang mensahe ng ban na yan.
+Numbers check. Malinaw ang mensahe ng ban na yan. Numbers don't lie.
+Numbers check. Malinaw ang mensahe ng ban na yan. Tandaan ang numero.
+Numbers check. Malinaw ang mensahe ng ban na yan. Tempo is king.
+Numbers check. Malinaw ang mensahe ng ban na yan. Bantayan natin ang scoreboard.
+Numbers check. Malinaw ang mensahe ng ban na yan. Data ang nagsasalita.
+Quick stat lang. Malinaw ang mensahe ng ban na yan.
+Quick stat lang. Malinaw ang mensahe ng ban na yan. Numbers don't lie.
+Quick stat lang. Malinaw ang mensahe ng ban na yan. Tandaan ang numero.
+Quick stat lang. Malinaw ang mensahe ng ban na yan. Tempo is king.
+Quick stat lang. Malinaw ang mensahe ng ban na yan. Bantayan natin ang scoreboard.
+Quick stat lang. Malinaw ang mensahe ng ban na yan. Data ang nagsasalita.
+Tingnan natin ang stats. Malinaw ang mensahe ng ban na yan.
+Tingnan natin ang stats. Malinaw ang mensahe ng ban na yan. Numbers don't lie.
+Tingnan natin ang stats. Malinaw ang mensahe ng ban na yan. Tandaan ang numero.
+Tingnan natin ang stats. Malinaw ang mensahe ng ban na yan. Tempo is king.
+Tingnan natin ang stats. Malinaw ang mensahe ng ban na yan. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Malinaw ang mensahe ng ban na yan. Data ang nagsasalita.
+Ito ang numero. Malinaw ang mensahe ng ban na yan.
+Ito ang numero. Malinaw ang mensahe ng ban na yan. Numbers don't lie.
+Ito ang numero. Malinaw ang mensahe ng ban na yan. Tandaan ang numero.
+Ito ang numero. Malinaw ang mensahe ng ban na yan. Tempo is king.
+Ito ang numero. Malinaw ang mensahe ng ban na yan. Bantayan natin ang scoreboard.
+Ito ang numero. Malinaw ang mensahe ng ban na yan. Data ang nagsasalita.
+Data muna tayo. Malinaw ang mensahe ng ban na yan.
+Data muna tayo. Malinaw ang mensahe ng ban na yan. Numbers don't lie.
+Data muna tayo. Malinaw ang mensahe ng ban na yan. Tandaan ang numero.
+Data muna tayo. Malinaw ang mensahe ng ban na yan. Tempo is king.
+Data muna tayo. Malinaw ang mensahe ng ban na yan. Bantayan natin ang scoreboard.
+Data muna tayo. Malinaw ang mensahe ng ban na yan. Data ang nagsasalita.
+Tempo check. Malinaw ang mensahe ng ban na yan.
+Tempo check. Malinaw ang mensahe ng ban na yan. Numbers don't lie.
+Tempo check. Malinaw ang mensahe ng ban na yan. Tandaan ang numero.
+Tempo check. Malinaw ang mensahe ng ban na yan. Tempo is king.
+Tempo check. Malinaw ang mensahe ng ban na yan. Bantayan natin ang scoreboard.
+Tempo check. Malinaw ang mensahe ng ban na yan. Data ang nagsasalita.
+Okay, scoreboard. Malinaw ang mensahe ng ban na yan.
+Okay, scoreboard. Malinaw ang mensahe ng ban na yan. Numbers don't lie.
+Okay, scoreboard. Malinaw ang mensahe ng ban na yan. Tandaan ang numero.
+Okay, scoreboard. Malinaw ang mensahe ng ban na yan. Tempo is king.
+Okay, scoreboard. Malinaw ang mensahe ng ban na yan. Bantayan natin ang scoreboard.
+Okay, scoreboard. Malinaw ang mensahe ng ban na yan. Data ang nagsasalita.
+Sa record. Malinaw ang mensahe ng ban na yan.
+Sa record. Malinaw ang mensahe ng ban na yan. Numbers don't lie.
+Sa record. Malinaw ang mensahe ng ban na yan. Tandaan ang numero.
+Sa record. Malinaw ang mensahe ng ban na yan. Tempo is king.
+Sa record. Malinaw ang mensahe ng ban na yan. Bantayan natin ang scoreboard.
+Sa record. Malinaw ang mensahe ng ban na yan. Data ang nagsasalita.
+Respeto sa {hero} yan.
+Respeto sa {hero} yan. Numbers don't lie.
+Respeto sa {hero} yan. Tandaan ang numero.
+Respeto sa {hero} yan. Tempo is king.
+Respeto sa {hero} yan. Bantayan natin ang scoreboard.
+Respeto sa {hero} yan. Data ang nagsasalita.
+Numbers check. Respeto sa {hero} yan.
+Numbers check. Respeto sa {hero} yan. Numbers don't lie.
+Numbers check. Respeto sa {hero} yan. Tandaan ang numero.
+Numbers check. Respeto sa {hero} yan. Tempo is king.
+Numbers check. Respeto sa {hero} yan. Bantayan natin ang scoreboard.
+Numbers check. Respeto sa {hero} yan. Data ang nagsasalita.
+Quick stat lang. Respeto sa {hero} yan.
+Quick stat lang. Respeto sa {hero} yan. Numbers don't lie.
+Quick stat lang. Respeto sa {hero} yan. Tandaan ang numero.
+Quick stat lang. Respeto sa {hero} yan. Tempo is king.
+Quick stat lang. Respeto sa {hero} yan. Bantayan natin ang scoreboard.
+Quick stat lang. Respeto sa {hero} yan. Data ang nagsasalita.
+Tingnan natin ang stats. Respeto sa {hero} yan.
+Tingnan natin ang stats. Respeto sa {hero} yan. Numbers don't lie.
+Tingnan natin ang stats. Respeto sa {hero} yan. Tandaan ang numero.
+Tingnan natin ang stats. Respeto sa {hero} yan. Tempo is king.
+Tingnan natin ang stats. Respeto sa {hero} yan. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Respeto sa {hero} yan. Data ang nagsasalita.
+Ito ang numero. Respeto sa {hero} yan.
+Ito ang numero. Respeto sa {hero} yan. Numbers don't lie.
+Ito ang numero. Respeto sa {hero} yan. Tandaan ang numero.
+Ito ang numero. Respeto sa {hero} yan. Tempo is king.
+Ito ang numero. Respeto sa {hero} yan. Bantayan natin ang scoreboard.
+Ito ang numero. Respeto sa {hero} yan. Data ang nagsasalita.
+Data muna tayo. Respeto sa {hero} yan.
+Data muna tayo. Respeto sa {hero} yan. Numbers don't lie.
+Data muna tayo. Respeto sa {hero} yan. Tandaan ang numero.
+Data muna tayo. Respeto sa {hero} yan. Tempo is king.
+Data muna tayo. Respeto sa {hero} yan. Bantayan natin ang scoreboard.
+Data muna tayo. Respeto sa {hero} yan. Data ang nagsasalita.
+Tempo check. Respeto sa {hero} yan.
+Tempo check. Respeto sa {hero} yan. Numbers don't lie.
+Tempo check. Respeto sa {hero} yan. Tandaan ang numero.
+Tempo check. Respeto sa {hero} yan. Tempo is king.
+Tempo check. Respeto sa {hero} yan. Bantayan natin ang scoreboard.
+Tempo check. Respeto sa {hero} yan. Data ang nagsasalita.
+Okay, scoreboard. Respeto sa {hero} yan.
+Okay, scoreboard. Respeto sa {hero} yan. Numbers don't lie.
+Okay, scoreboard. Respeto sa {hero} yan. Tandaan ang numero.
+Okay, scoreboard. Respeto sa {hero} yan. Tempo is king.
+Okay, scoreboard. Respeto sa {hero} yan. Bantayan natin ang scoreboard.
+Okay, scoreboard. Respeto sa {hero} yan. Data ang nagsasalita.
+Sa record. Respeto sa {hero} yan.
+Sa record. Respeto sa {hero} yan. Numbers don't lie.
+Sa record. Respeto sa {hero} yan. Tandaan ang numero.
+Sa record. Respeto sa {hero} yan. Tempo is king.
+Sa record. Respeto sa {hero} yan. Bantayan natin ang scoreboard.
+Sa record. Respeto sa {hero} yan. Data ang nagsasalita.
+Ayaw nilang makaharap ang {hero} ngayong game.
+Ayaw nilang makaharap ang {hero} ngayong game. Numbers don't lie.
+Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang numero.
+Ayaw nilang makaharap ang {hero} ngayong game. Tempo is king.
+Ayaw nilang makaharap ang {hero} ngayong game. Bantayan natin ang scoreboard.
+Ayaw nilang makaharap ang {hero} ngayong game. Data ang nagsasalita.
+Numbers check. Ayaw nilang makaharap ang {hero} ngayong game.
+Numbers check. Ayaw nilang makaharap ang {hero} ngayong game. Numbers don't lie.
+Numbers check. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang numero.
+Numbers check. Ayaw nilang makaharap ang {hero} ngayong game. Tempo is king.
+Numbers check. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan natin ang scoreboard.
+Numbers check. Ayaw nilang makaharap ang {hero} ngayong game. Data ang nagsasalita.
+Quick stat lang. Ayaw nilang makaharap ang {hero} ngayong game.
+Quick stat lang. Ayaw nilang makaharap ang {hero} ngayong game. Numbers don't lie.
+Quick stat lang. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang numero.
+Quick stat lang. Ayaw nilang makaharap ang {hero} ngayong game. Tempo is king.
+Quick stat lang. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan natin ang scoreboard.
+Quick stat lang. Ayaw nilang makaharap ang {hero} ngayong game. Data ang nagsasalita.
+Tingnan natin ang stats. Ayaw nilang makaharap ang {hero} ngayong game.
+Tingnan natin ang stats. Ayaw nilang makaharap ang {hero} ngayong game. Numbers don't lie.
+Tingnan natin ang stats. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang numero.
+Tingnan natin ang stats. Ayaw nilang makaharap ang {hero} ngayong game. Tempo is king.
+Tingnan natin ang stats. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Ayaw nilang makaharap ang {hero} ngayong game. Data ang nagsasalita.
+Ito ang numero. Ayaw nilang makaharap ang {hero} ngayong game.
+Ito ang numero. Ayaw nilang makaharap ang {hero} ngayong game. Numbers don't lie.
+Ito ang numero. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang numero.
+Ito ang numero. Ayaw nilang makaharap ang {hero} ngayong game. Tempo is king.
+Ito ang numero. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan natin ang scoreboard.
+Ito ang numero. Ayaw nilang makaharap ang {hero} ngayong game. Data ang nagsasalita.
+Data muna tayo. Ayaw nilang makaharap ang {hero} ngayong game.
+Data muna tayo. Ayaw nilang makaharap ang {hero} ngayong game. Numbers don't lie.
+Data muna tayo. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang numero.
+Data muna tayo. Ayaw nilang makaharap ang {hero} ngayong game. Tempo is king.
+Data muna tayo. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan natin ang scoreboard.
+Data muna tayo. Ayaw nilang makaharap ang {hero} ngayong game. Data ang nagsasalita.
+Tempo check. Ayaw nilang makaharap ang {hero} ngayong game.
+Tempo check. Ayaw nilang makaharap ang {hero} ngayong game. Numbers don't lie.
+Tempo check. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang numero.
+Tempo check. Ayaw nilang makaharap ang {hero} ngayong game. Tempo is king.
+Tempo check. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan natin ang scoreboard.
+Tempo check. Ayaw nilang makaharap ang {hero} ngayong game. Data ang nagsasalita.
+Okay, scoreboard. Ayaw nilang makaharap ang {hero} ngayong game.
+Okay, scoreboard. Ayaw nilang makaharap ang {hero} ngayong game. Numbers don't lie.
+Okay, scoreboard. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang numero.
+Okay, scoreboard. Ayaw nilang makaharap ang {hero} ngayong game. Tempo is king.
+Okay, scoreboard. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan natin ang scoreboard.
+Okay, scoreboard. Ayaw nilang makaharap ang {hero} ngayong game. Data ang nagsasalita.
+Sa record. Ayaw nilang makaharap ang {hero} ngayong game.
+Sa record. Ayaw nilang makaharap ang {hero} ngayong game. Numbers don't lie.
+Sa record. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang numero.
+Sa record. Ayaw nilang makaharap ang {hero} ngayong game. Tempo is king.
+Sa record. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan natin ang scoreboard.
+Sa record. Ayaw nilang makaharap ang {hero} ngayong game. Data ang nagsasalita.
+Matalinong ban, sa totoo lang.
+Matalinong ban, sa totoo lang. Numbers don't lie.
+Matalinong ban, sa totoo lang. Tandaan ang numero.
+Matalinong ban, sa totoo lang. Tempo is king.
+Matalinong ban, sa totoo lang. Bantayan natin ang scoreboard.
+Matalinong ban, sa totoo lang. Data ang nagsasalita.
+Numbers check. Matalinong ban, sa totoo lang.
+Numbers check. Matalinong ban, sa totoo lang. Numbers don't lie.
+Numbers check. Matalinong ban, sa totoo lang. Tandaan ang numero.
+Numbers check. Matalinong ban, sa totoo lang. Tempo is king.
+Numbers check. Matalinong ban, sa totoo lang. Bantayan natin ang scoreboard.
+Numbers check. Matalinong ban, sa totoo lang. Data ang nagsasalita.
+Quick stat lang. Matalinong ban, sa totoo lang.
+Quick stat lang. Matalinong ban, sa totoo lang. Numbers don't lie.
+Quick stat lang. Matalinong ban, sa totoo lang. Tandaan ang numero.
+Quick stat lang. Matalinong ban, sa totoo lang. Tempo is king.
+Quick stat lang. Matalinong ban, sa totoo lang. Bantayan natin ang scoreboard.
+Quick stat lang. Matalinong ban, sa totoo lang. Data ang nagsasalita.
+Tingnan natin ang stats. Matalinong ban, sa totoo lang.
+Tingnan natin ang stats. Matalinong ban, sa totoo lang. Numbers don't lie.
+Tingnan natin ang stats. Matalinong ban, sa totoo lang. Tandaan ang numero.
+Tingnan natin ang stats. Matalinong ban, sa totoo lang. Tempo is king.
+Tingnan natin ang stats. Matalinong ban, sa totoo lang. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Matalinong ban, sa totoo lang. Data ang nagsasalita.
+Ito ang numero. Matalinong ban, sa totoo lang.
+Ito ang numero. Matalinong ban, sa totoo lang. Numbers don't lie.
+Ito ang numero. Matalinong ban, sa totoo lang. Tandaan ang numero.
+Ito ang numero. Matalinong ban, sa totoo lang. Tempo is king.
+Ito ang numero. Matalinong ban, sa totoo lang. Bantayan natin ang scoreboard.
+Ito ang numero. Matalinong ban, sa totoo lang. Data ang nagsasalita.
+Data muna tayo. Matalinong ban, sa totoo lang.
+Data muna tayo. Matalinong ban, sa totoo lang. Numbers don't lie.
+Data muna tayo. Matalinong ban, sa totoo lang. Tandaan ang numero.
+Data muna tayo. Matalinong ban, sa totoo lang. Tempo is king.
+Data muna tayo. Matalinong ban, sa totoo lang. Bantayan natin ang scoreboard.
+Data muna tayo. Matalinong ban, sa totoo lang. Data ang nagsasalita.
+Tempo check. Matalinong ban, sa totoo lang.
+Tempo check. Matalinong ban, sa totoo lang. Numbers don't lie.
+Tempo check. Matalinong ban, sa totoo lang. Tandaan ang numero.
+Tempo check. Matalinong ban, sa totoo lang. Tempo is king.
+Tempo check. Matalinong ban, sa totoo lang. Bantayan natin ang scoreboard.
+Tempo check. Matalinong ban, sa totoo lang. Data ang nagsasalita.
+Okay, scoreboard. Matalinong ban, sa totoo lang.
+Okay, scoreboard. Matalinong ban, sa totoo lang. Numbers don't lie.
+Okay, scoreboard. Matalinong ban, sa totoo lang. Tandaan ang numero.
+Okay, scoreboard. Matalinong ban, sa totoo lang. Tempo is king.
+Okay, scoreboard. Matalinong ban, sa totoo lang. Bantayan natin ang scoreboard.
+Okay, scoreboard. Matalinong ban, sa totoo lang. Data ang nagsasalita.
+Sa record. Matalinong ban, sa totoo lang.
+Sa record. Matalinong ban, sa totoo lang. Numbers don't lie.
+Sa record. Matalinong ban, sa totoo lang. Tandaan ang numero.
+Sa record. Matalinong ban, sa totoo lang. Tempo is king.
+Sa record. Matalinong ban, sa totoo lang. Bantayan natin ang scoreboard.
+Sa record. Matalinong ban, sa totoo lang. Data ang nagsasalita.
+Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Numbers don't lie.
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang numero.
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Tempo is king.
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan natin ang scoreboard.
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Data ang nagsasalita.
+Numbers check. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Numbers check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Numbers don't lie.
+Numbers check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang numero.
+Numbers check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tempo is king.
+Numbers check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan natin ang scoreboard.
+Numbers check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Data ang nagsasalita.
+Quick stat lang. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Quick stat lang. Isa-isang nababawasan ang mga opsyon ng {enemy}. Numbers don't lie.
+Quick stat lang. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang numero.
+Quick stat lang. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tempo is king.
+Quick stat lang. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan natin ang scoreboard.
+Quick stat lang. Isa-isang nababawasan ang mga opsyon ng {enemy}. Data ang nagsasalita.
+Tingnan natin ang stats. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Tingnan natin ang stats. Isa-isang nababawasan ang mga opsyon ng {enemy}. Numbers don't lie.
+Tingnan natin ang stats. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang numero.
+Tingnan natin ang stats. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tempo is king.
+Tingnan natin ang stats. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Isa-isang nababawasan ang mga opsyon ng {enemy}. Data ang nagsasalita.
+Ito ang numero. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Ito ang numero. Isa-isang nababawasan ang mga opsyon ng {enemy}. Numbers don't lie.
+Ito ang numero. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang numero.
+Ito ang numero. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tempo is king.
+Ito ang numero. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan natin ang scoreboard.
+Ito ang numero. Isa-isang nababawasan ang mga opsyon ng {enemy}. Data ang nagsasalita.
+Data muna tayo. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Data muna tayo. Isa-isang nababawasan ang mga opsyon ng {enemy}. Numbers don't lie.
+Data muna tayo. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang numero.
+Data muna tayo. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tempo is king.
+Data muna tayo. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan natin ang scoreboard.
+Data muna tayo. Isa-isang nababawasan ang mga opsyon ng {enemy}. Data ang nagsasalita.
+Tempo check. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Tempo check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Numbers don't lie.
+Tempo check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang numero.
+Tempo check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tempo is king.
+Tempo check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan natin ang scoreboard.
+Tempo check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Data ang nagsasalita.
+Okay, scoreboard. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Okay, scoreboard. Isa-isang nababawasan ang mga opsyon ng {enemy}. Numbers don't lie.
+Okay, scoreboard. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang numero.
+Okay, scoreboard. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tempo is king.
+Okay, scoreboard. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan natin ang scoreboard.
+Okay, scoreboard. Isa-isang nababawasan ang mga opsyon ng {enemy}. Data ang nagsasalita.
+Sa record. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Sa record. Isa-isang nababawasan ang mga opsyon ng {enemy}. Numbers don't lie.
+Sa record. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang numero.
+Sa record. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tempo is king.
+Sa record. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan natin ang scoreboard.
+Sa record. Isa-isang nababawasan ang mga opsyon ng {enemy}. Data ang nagsasalita.
+
+══════ Draft picks — 318 lines ══════
+{player} sa {hero} — abangan natin ang numero niya ngayong game.
+{player} sa {hero} — abangan natin ang numero niya ngayong game. Numbers don't lie.
+{player} sa {hero} — abangan natin ang numero niya ngayong game. Tandaan ang numero.
+{player} sa {hero} — abangan natin ang numero niya ngayong game. Kitang-kita sa stats.
+{player} sa {hero} — abangan natin ang numero niya ngayong game. Data ang nagsasalita.
+{player} sa {hero} — abangan natin ang numero niya ngayong game. Ganyan ang numbers.
+Okay, scoreboard! {player} sa {hero} — abangan natin ang numero niya ngayong game.
+Okay, scoreboard! {player} sa {hero} — abangan natin ang numero niya ngayong game. Numbers don't lie.
+Okay, scoreboard! {player} sa {hero} — abangan natin ang numero niya ngayong game. Tandaan ang numero.
+Okay, scoreboard! {player} sa {hero} — abangan natin ang numero niya ngayong game. Kitang-kita sa stats.
+Okay, scoreboard! {player} sa {hero} — abangan natin ang numero niya ngayong game. Data ang nagsasalita.
+Okay, scoreboard! {player} sa {hero} — abangan natin ang numero niya ngayong game. Ganyan ang numbers.
+Ayan na! {player} sa {hero} — abangan natin ang numero niya ngayong game.
+Ayan na! {player} sa {hero} — abangan natin ang numero niya ngayong game. Numbers don't lie.
+Ayan na! {player} sa {hero} — abangan natin ang numero niya ngayong game. Tandaan ang numero.
+Ayan na! {player} sa {hero} — abangan natin ang numero niya ngayong game. Kitang-kita sa stats.
+Ayan na! {player} sa {hero} — abangan natin ang numero niya ngayong game. Data ang nagsasalita.
+Ayan na! {player} sa {hero} — abangan natin ang numero niya ngayong game. Ganyan ang numbers.
+Wow! {player} sa {hero} — abangan natin ang numero niya ngayong game.
+Wow! {player} sa {hero} — abangan natin ang numero niya ngayong game. Numbers don't lie.
+Wow! {player} sa {hero} — abangan natin ang numero niya ngayong game. Tandaan ang numero.
+Wow! {player} sa {hero} — abangan natin ang numero niya ngayong game. Kitang-kita sa stats.
+Wow! {player} sa {hero} — abangan natin ang numero niya ngayong game. Data ang nagsasalita.
+Wow! {player} sa {hero} — abangan natin ang numero niya ngayong game. Ganyan ang numbers.
+Check! {player} sa {hero} — abangan natin ang numero niya ngayong game.
+Check! {player} sa {hero} — abangan natin ang numero niya ngayong game. Numbers don't lie.
+Check! {player} sa {hero} — abangan natin ang numero niya ngayong game. Tandaan ang numero.
+Check! {player} sa {hero} — abangan natin ang numero niya ngayong game. Kitang-kita sa stats.
+Check! {player} sa {hero} — abangan natin ang numero niya ngayong game. Data ang nagsasalita.
+Check! {player} sa {hero} — abangan natin ang numero niya ngayong game. Ganyan ang numbers.
+Para sa record. {player} sa {hero} — abangan natin ang numero niya ngayong game.
+Para sa record. {player} sa {hero} — abangan natin ang numero niya ngayong game. Numbers don't lie.
+Para sa record. {player} sa {hero} — abangan natin ang numero niya ngayong game. Tandaan ang numero.
+Para sa record. {player} sa {hero} — abangan natin ang numero niya ngayong game. Kitang-kita sa stats.
+Para sa record. {player} sa {hero} — abangan natin ang numero niya ngayong game. Data ang nagsasalita.
+Para sa record. {player} sa {hero} — abangan natin ang numero niya ngayong game. Ganyan ang numbers.
+Uy! {player} sa {hero} — abangan natin ang numero niya ngayong game.
+Uy! {player} sa {hero} — abangan natin ang numero niya ngayong game. Numbers don't lie.
+Uy! {player} sa {hero} — abangan natin ang numero niya ngayong game. Tandaan ang numero.
+Uy! {player} sa {hero} — abangan natin ang numero niya ngayong game. Kitang-kita sa stats.
+Uy! {player} sa {hero} — abangan natin ang numero niya ngayong game. Data ang nagsasalita.
+Uy! {player} sa {hero} — abangan natin ang numero niya ngayong game. Ganyan ang numbers.
+Numbers time! {player} sa {hero} — abangan natin ang numero niya ngayong game.
+Numbers time! {player} sa {hero} — abangan natin ang numero niya ngayong game. Numbers don't lie.
+Numbers time! {player} sa {hero} — abangan natin ang numero niya ngayong game. Tandaan ang numero.
+Numbers time! {player} sa {hero} — abangan natin ang numero niya ngayong game. Kitang-kita sa stats.
+Numbers time! {player} sa {hero} — abangan natin ang numero niya ngayong game. Data ang nagsasalita.
+Numbers time! {player} sa {hero} — abangan natin ang numero niya ngayong game. Ganyan ang numbers.
+Ito na! {player} sa {hero} — abangan natin ang numero niya ngayong game.
+Ito na! {player} sa {hero} — abangan natin ang numero niya ngayong game. Numbers don't lie.
+Ito na! {player} sa {hero} — abangan natin ang numero niya ngayong game. Tandaan ang numero.
+Ito na! {player} sa {hero} — abangan natin ang numero niya ngayong game. Kitang-kita sa stats.
+Ito na! {player} sa {hero} — abangan natin ang numero niya ngayong game. Data ang nagsasalita.
+Ito na! {player} sa {hero} — abangan natin ang numero niya ngayong game. Ganyan ang numbers.
+Magandang pick yan para sa {team}.
+Magandang pick yan para sa {team}. Numbers don't lie.
+Magandang pick yan para sa {team}. Tandaan ang numero.
+Magandang pick yan para sa {team}. Kitang-kita sa stats.
+Magandang pick yan para sa {team}. Data ang nagsasalita.
+Magandang pick yan para sa {team}. Ganyan ang numbers.
+Okay, scoreboard! Magandang pick yan para sa {team}.
+Okay, scoreboard! Magandang pick yan para sa {team}. Numbers don't lie.
+Okay, scoreboard! Magandang pick yan para sa {team}. Tandaan ang numero.
+Okay, scoreboard! Magandang pick yan para sa {team}. Kitang-kita sa stats.
+Okay, scoreboard! Magandang pick yan para sa {team}. Data ang nagsasalita.
+Okay, scoreboard! Magandang pick yan para sa {team}. Ganyan ang numbers.
+Ayan na! Magandang pick yan para sa {team}.
+Ayan na! Magandang pick yan para sa {team}. Numbers don't lie.
+Ayan na! Magandang pick yan para sa {team}. Tandaan ang numero.
+Ayan na! Magandang pick yan para sa {team}. Kitang-kita sa stats.
+Ayan na! Magandang pick yan para sa {team}. Data ang nagsasalita.
+Ayan na! Magandang pick yan para sa {team}. Ganyan ang numbers.
+Wow! Magandang pick yan para sa {team}.
+Wow! Magandang pick yan para sa {team}. Numbers don't lie.
+Wow! Magandang pick yan para sa {team}. Tandaan ang numero.
+Wow! Magandang pick yan para sa {team}. Kitang-kita sa stats.
+Wow! Magandang pick yan para sa {team}. Data ang nagsasalita.
+Wow! Magandang pick yan para sa {team}. Ganyan ang numbers.
+Check! Magandang pick yan para sa {team}.
+Check! Magandang pick yan para sa {team}. Numbers don't lie.
+Check! Magandang pick yan para sa {team}. Tandaan ang numero.
+Check! Magandang pick yan para sa {team}. Kitang-kita sa stats.
+Check! Magandang pick yan para sa {team}. Data ang nagsasalita.
+Check! Magandang pick yan para sa {team}. Ganyan ang numbers.
+Para sa record. Magandang pick yan para sa {team}.
+Para sa record. Magandang pick yan para sa {team}. Numbers don't lie.
+Para sa record. Magandang pick yan para sa {team}. Tandaan ang numero.
+Para sa record. Magandang pick yan para sa {team}. Kitang-kita sa stats.
+Para sa record. Magandang pick yan para sa {team}. Data ang nagsasalita.
+Para sa record. Magandang pick yan para sa {team}. Ganyan ang numbers.
+Uy! Magandang pick yan para sa {team}.
+Uy! Magandang pick yan para sa {team}. Numbers don't lie.
+Uy! Magandang pick yan para sa {team}. Tandaan ang numero.
+Uy! Magandang pick yan para sa {team}. Kitang-kita sa stats.
+Uy! Magandang pick yan para sa {team}. Data ang nagsasalita.
+Uy! Magandang pick yan para sa {team}. Ganyan ang numbers.
+Numbers time! Magandang pick yan para sa {team}.
+Numbers time! Magandang pick yan para sa {team}. Numbers don't lie.
+Numbers time! Magandang pick yan para sa {team}. Tandaan ang numero.
+Numbers time! Magandang pick yan para sa {team}. Kitang-kita sa stats.
+Numbers time! Magandang pick yan para sa {team}. Data ang nagsasalita.
+Numbers time! Magandang pick yan para sa {team}. Ganyan ang numbers.
+Ito na! Magandang pick yan para sa {team}.
+Ito na! Magandang pick yan para sa {team}. Numbers don't lie.
+Ito na! Magandang pick yan para sa {team}. Tandaan ang numero.
+Ito na! Magandang pick yan para sa {team}. Kitang-kita sa stats.
+Ito na! Magandang pick yan para sa {team}. Data ang nagsasalita.
+Ito na! Magandang pick yan para sa {team}. Ganyan ang numbers.
+Abangan natin ang {hero} sa kamay ni {player}.
+Abangan natin ang {hero} sa kamay ni {player}. Numbers don't lie.
+Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang numero.
+Abangan natin ang {hero} sa kamay ni {player}. Kitang-kita sa stats.
+Abangan natin ang {hero} sa kamay ni {player}. Data ang nagsasalita.
+Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang numbers.
+Okay, scoreboard! Abangan natin ang {hero} sa kamay ni {player}.
+Okay, scoreboard! Abangan natin ang {hero} sa kamay ni {player}. Numbers don't lie.
+Okay, scoreboard! Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang numero.
+Okay, scoreboard! Abangan natin ang {hero} sa kamay ni {player}. Kitang-kita sa stats.
+Okay, scoreboard! Abangan natin ang {hero} sa kamay ni {player}. Data ang nagsasalita.
+Okay, scoreboard! Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang numbers.
+Ayan na! Abangan natin ang {hero} sa kamay ni {player}.
+Ayan na! Abangan natin ang {hero} sa kamay ni {player}. Numbers don't lie.
+Ayan na! Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang numero.
+Ayan na! Abangan natin ang {hero} sa kamay ni {player}. Kitang-kita sa stats.
+Ayan na! Abangan natin ang {hero} sa kamay ni {player}. Data ang nagsasalita.
+Ayan na! Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang numbers.
+Wow! Abangan natin ang {hero} sa kamay ni {player}.
+Wow! Abangan natin ang {hero} sa kamay ni {player}. Numbers don't lie.
+Wow! Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang numero.
+Wow! Abangan natin ang {hero} sa kamay ni {player}. Kitang-kita sa stats.
+Wow! Abangan natin ang {hero} sa kamay ni {player}. Data ang nagsasalita.
+Wow! Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang numbers.
+Check! Abangan natin ang {hero} sa kamay ni {player}.
+Check! Abangan natin ang {hero} sa kamay ni {player}. Numbers don't lie.
+Check! Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang numero.
+Check! Abangan natin ang {hero} sa kamay ni {player}. Kitang-kita sa stats.
+Check! Abangan natin ang {hero} sa kamay ni {player}. Data ang nagsasalita.
+Check! Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang numbers.
+Para sa record. Abangan natin ang {hero} sa kamay ni {player}.
+Para sa record. Abangan natin ang {hero} sa kamay ni {player}. Numbers don't lie.
+Para sa record. Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang numero.
+Para sa record. Abangan natin ang {hero} sa kamay ni {player}. Kitang-kita sa stats.
+Para sa record. Abangan natin ang {hero} sa kamay ni {player}. Data ang nagsasalita.
+Para sa record. Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang numbers.
+Uy! Abangan natin ang {hero} sa kamay ni {player}.
+Uy! Abangan natin ang {hero} sa kamay ni {player}. Numbers don't lie.
+Uy! Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang numero.
+Uy! Abangan natin ang {hero} sa kamay ni {player}. Kitang-kita sa stats.
+Uy! Abangan natin ang {hero} sa kamay ni {player}. Data ang nagsasalita.
+Uy! Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang numbers.
+Numbers time! Abangan natin ang {hero} sa kamay ni {player}.
+Numbers time! Abangan natin ang {hero} sa kamay ni {player}. Numbers don't lie.
+Numbers time! Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang numero.
+Numbers time! Abangan natin ang {hero} sa kamay ni {player}. Kitang-kita sa stats.
+Numbers time! Abangan natin ang {hero} sa kamay ni {player}. Data ang nagsasalita.
+Numbers time! Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang numbers.
+Ito na! Abangan natin ang {hero} sa kamay ni {player}.
+Ito na! Abangan natin ang {hero} sa kamay ni {player}. Numbers don't lie.
+Ito na! Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang numero.
+Ito na! Abangan natin ang {hero} sa kamay ni {player}. Kitang-kita sa stats.
+Ito na! Abangan natin ang {hero} sa kamay ni {player}. Data ang nagsasalita.
+Ito na! Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang numbers.
+Ayan na ang {hero}!
+Ayan na ang {hero}! Numbers don't lie.
+Ayan na ang {hero}! Tandaan ang numero.
+Ayan na ang {hero}! Kitang-kita sa stats.
+Ayan na ang {hero}! Data ang nagsasalita.
+Ayan na ang {hero}! Ganyan ang numbers.
+Okay, scoreboard! Ayan na ang {hero}!
+Okay, scoreboard! Ayan na ang {hero}! Numbers don't lie.
+Okay, scoreboard! Ayan na ang {hero}! Tandaan ang numero.
+Okay, scoreboard! Ayan na ang {hero}! Kitang-kita sa stats.
+Okay, scoreboard! Ayan na ang {hero}! Data ang nagsasalita.
+Okay, scoreboard! Ayan na ang {hero}! Ganyan ang numbers.
+Wow! Ayan na ang {hero}!
+Wow! Ayan na ang {hero}! Numbers don't lie.
+Wow! Ayan na ang {hero}! Tandaan ang numero.
+Wow! Ayan na ang {hero}! Kitang-kita sa stats.
+Wow! Ayan na ang {hero}! Data ang nagsasalita.
+Wow! Ayan na ang {hero}! Ganyan ang numbers.
+Check! Ayan na ang {hero}!
+Check! Ayan na ang {hero}! Numbers don't lie.
+Check! Ayan na ang {hero}! Tandaan ang numero.
+Check! Ayan na ang {hero}! Kitang-kita sa stats.
+Check! Ayan na ang {hero}! Data ang nagsasalita.
+Check! Ayan na ang {hero}! Ganyan ang numbers.
+Para sa record. Ayan na ang {hero}!
+Para sa record. Ayan na ang {hero}! Numbers don't lie.
+Para sa record. Ayan na ang {hero}! Tandaan ang numero.
+Para sa record. Ayan na ang {hero}! Kitang-kita sa stats.
+Para sa record. Ayan na ang {hero}! Data ang nagsasalita.
+Para sa record. Ayan na ang {hero}! Ganyan ang numbers.
+Uy! Ayan na ang {hero}!
+Uy! Ayan na ang {hero}! Numbers don't lie.
+Uy! Ayan na ang {hero}! Tandaan ang numero.
+Uy! Ayan na ang {hero}! Kitang-kita sa stats.
+Uy! Ayan na ang {hero}! Data ang nagsasalita.
+Uy! Ayan na ang {hero}! Ganyan ang numbers.
+Numbers time! Ayan na ang {hero}!
+Numbers time! Ayan na ang {hero}! Numbers don't lie.
+Numbers time! Ayan na ang {hero}! Tandaan ang numero.
+Numbers time! Ayan na ang {hero}! Kitang-kita sa stats.
+Numbers time! Ayan na ang {hero}! Data ang nagsasalita.
+Numbers time! Ayan na ang {hero}! Ganyan ang numbers.
+Ito na! Ayan na ang {hero}!
+Ito na! Ayan na ang {hero}! Numbers don't lie.
+Ito na! Ayan na ang {hero}! Tandaan ang numero.
+Ito na! Ayan na ang {hero}! Kitang-kita sa stats.
+Ito na! Ayan na ang {hero}! Data ang nagsasalita.
+Ito na! Ayan na ang {hero}! Ganyan ang numbers.
+Unti-unting nabubuo ang lineup ng {team}.
+Unti-unting nabubuo ang lineup ng {team}. Numbers don't lie.
+Unti-unting nabubuo ang lineup ng {team}. Tandaan ang numero.
+Unti-unting nabubuo ang lineup ng {team}. Kitang-kita sa stats.
+Unti-unting nabubuo ang lineup ng {team}. Data ang nagsasalita.
+Unti-unting nabubuo ang lineup ng {team}. Ganyan ang numbers.
+Okay, scoreboard! Unti-unting nabubuo ang lineup ng {team}.
+Okay, scoreboard! Unti-unting nabubuo ang lineup ng {team}. Numbers don't lie.
+Okay, scoreboard! Unti-unting nabubuo ang lineup ng {team}. Tandaan ang numero.
+Okay, scoreboard! Unti-unting nabubuo ang lineup ng {team}. Kitang-kita sa stats.
+Okay, scoreboard! Unti-unting nabubuo ang lineup ng {team}. Data ang nagsasalita.
+Okay, scoreboard! Unti-unting nabubuo ang lineup ng {team}. Ganyan ang numbers.
+Ayan na! Unti-unting nabubuo ang lineup ng {team}.
+Ayan na! Unti-unting nabubuo ang lineup ng {team}. Numbers don't lie.
+Ayan na! Unti-unting nabubuo ang lineup ng {team}. Tandaan ang numero.
+Ayan na! Unti-unting nabubuo ang lineup ng {team}. Kitang-kita sa stats.
+Ayan na! Unti-unting nabubuo ang lineup ng {team}. Data ang nagsasalita.
+Ayan na! Unti-unting nabubuo ang lineup ng {team}. Ganyan ang numbers.
+Wow! Unti-unting nabubuo ang lineup ng {team}.
+Wow! Unti-unting nabubuo ang lineup ng {team}. Numbers don't lie.
+Wow! Unti-unting nabubuo ang lineup ng {team}. Tandaan ang numero.
+Wow! Unti-unting nabubuo ang lineup ng {team}. Kitang-kita sa stats.
+Wow! Unti-unting nabubuo ang lineup ng {team}. Data ang nagsasalita.
+Wow! Unti-unting nabubuo ang lineup ng {team}. Ganyan ang numbers.
+Check! Unti-unting nabubuo ang lineup ng {team}.
+Check! Unti-unting nabubuo ang lineup ng {team}. Numbers don't lie.
+Check! Unti-unting nabubuo ang lineup ng {team}. Tandaan ang numero.
+Check! Unti-unting nabubuo ang lineup ng {team}. Kitang-kita sa stats.
+Check! Unti-unting nabubuo ang lineup ng {team}. Data ang nagsasalita.
+Check! Unti-unting nabubuo ang lineup ng {team}. Ganyan ang numbers.
+Para sa record. Unti-unting nabubuo ang lineup ng {team}.
+Para sa record. Unti-unting nabubuo ang lineup ng {team}. Numbers don't lie.
+Para sa record. Unti-unting nabubuo ang lineup ng {team}. Tandaan ang numero.
+Para sa record. Unti-unting nabubuo ang lineup ng {team}. Kitang-kita sa stats.
+Para sa record. Unti-unting nabubuo ang lineup ng {team}. Data ang nagsasalita.
+Para sa record. Unti-unting nabubuo ang lineup ng {team}. Ganyan ang numbers.
+Uy! Unti-unting nabubuo ang lineup ng {team}.
+Uy! Unti-unting nabubuo ang lineup ng {team}. Numbers don't lie.
+Uy! Unti-unting nabubuo ang lineup ng {team}. Tandaan ang numero.
+Uy! Unti-unting nabubuo ang lineup ng {team}. Kitang-kita sa stats.
+Uy! Unti-unting nabubuo ang lineup ng {team}. Data ang nagsasalita.
+Uy! Unti-unting nabubuo ang lineup ng {team}. Ganyan ang numbers.
+Numbers time! Unti-unting nabubuo ang lineup ng {team}.
+Numbers time! Unti-unting nabubuo ang lineup ng {team}. Numbers don't lie.
+Numbers time! Unti-unting nabubuo ang lineup ng {team}. Tandaan ang numero.
+Numbers time! Unti-unting nabubuo ang lineup ng {team}. Kitang-kita sa stats.
+Numbers time! Unti-unting nabubuo ang lineup ng {team}. Data ang nagsasalita.
+Numbers time! Unti-unting nabubuo ang lineup ng {team}. Ganyan ang numbers.
+Ito na! Unti-unting nabubuo ang lineup ng {team}.
+Ito na! Unti-unting nabubuo ang lineup ng {team}. Numbers don't lie.
+Ito na! Unti-unting nabubuo ang lineup ng {team}. Tandaan ang numero.
+Ito na! Unti-unting nabubuo ang lineup ng {team}. Kitang-kita sa stats.
+Ito na! Unti-unting nabubuo ang lineup ng {team}. Data ang nagsasalita.
+Ito na! Unti-unting nabubuo ang lineup ng {team}. Ganyan ang numbers.
+Malakas na {heroClass} ang {hero} sa ganitong draft.
+Malakas na {heroClass} ang {hero} sa ganitong draft. Numbers don't lie.
+Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang numero.
+Malakas na {heroClass} ang {hero} sa ganitong draft. Kitang-kita sa stats.
+Malakas na {heroClass} ang {hero} sa ganitong draft. Data ang nagsasalita.
+Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang numbers.
+Okay, scoreboard! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Okay, scoreboard! Malakas na {heroClass} ang {hero} sa ganitong draft. Numbers don't lie.
+Okay, scoreboard! Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang numero.
+Okay, scoreboard! Malakas na {heroClass} ang {hero} sa ganitong draft. Kitang-kita sa stats.
+Okay, scoreboard! Malakas na {heroClass} ang {hero} sa ganitong draft. Data ang nagsasalita.
+Okay, scoreboard! Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang numbers.
+Ayan na! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Ayan na! Malakas na {heroClass} ang {hero} sa ganitong draft. Numbers don't lie.
+Ayan na! Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang numero.
+Ayan na! Malakas na {heroClass} ang {hero} sa ganitong draft. Kitang-kita sa stats.
+Ayan na! Malakas na {heroClass} ang {hero} sa ganitong draft. Data ang nagsasalita.
+Ayan na! Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang numbers.
+Wow! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Wow! Malakas na {heroClass} ang {hero} sa ganitong draft. Numbers don't lie.
+Wow! Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang numero.
+Wow! Malakas na {heroClass} ang {hero} sa ganitong draft. Kitang-kita sa stats.
+Wow! Malakas na {heroClass} ang {hero} sa ganitong draft. Data ang nagsasalita.
+Wow! Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang numbers.
+Check! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Check! Malakas na {heroClass} ang {hero} sa ganitong draft. Numbers don't lie.
+Check! Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang numero.
+Check! Malakas na {heroClass} ang {hero} sa ganitong draft. Kitang-kita sa stats.
+Check! Malakas na {heroClass} ang {hero} sa ganitong draft. Data ang nagsasalita.
+Check! Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang numbers.
+Para sa record. Malakas na {heroClass} ang {hero} sa ganitong draft.
+Para sa record. Malakas na {heroClass} ang {hero} sa ganitong draft. Numbers don't lie.
+Para sa record. Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang numero.
+Para sa record. Malakas na {heroClass} ang {hero} sa ganitong draft. Kitang-kita sa stats.
+Para sa record. Malakas na {heroClass} ang {hero} sa ganitong draft. Data ang nagsasalita.
+Para sa record. Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang numbers.
+Uy! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Uy! Malakas na {heroClass} ang {hero} sa ganitong draft. Numbers don't lie.
+Uy! Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang numero.
+Uy! Malakas na {heroClass} ang {hero} sa ganitong draft. Kitang-kita sa stats.
+Uy! Malakas na {heroClass} ang {hero} sa ganitong draft. Data ang nagsasalita.
+Uy! Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang numbers.
+Numbers time! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Numbers time! Malakas na {heroClass} ang {hero} sa ganitong draft. Numbers don't lie.
+Numbers time! Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang numero.
+Numbers time! Malakas na {heroClass} ang {hero} sa ganitong draft. Kitang-kita sa stats.
+Numbers time! Malakas na {heroClass} ang {hero} sa ganitong draft. Data ang nagsasalita.
+Numbers time! Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang numbers.
+Ito na! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Ito na! Malakas na {heroClass} ang {hero} sa ganitong draft. Numbers don't lie.
+Ito na! Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang numero.
+Ito na! Malakas na {heroClass} ang {hero} sa ganitong draft. Kitang-kita sa stats.
+Ito na! Malakas na {heroClass} ang {hero} sa ganitong draft. Data ang nagsasalita.
+Ito na! Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang numbers.
+
+══════ Draft talk (speculation & story) — 372 lines ══════
+Para sa record: {seriesScore} ang serye ngayon.
+Para sa record: {seriesScore} ang serye ngayon. Numbers don't lie.
+Para sa record: {seriesScore} ang serye ngayon. Tandaan ang numero.
+Para sa record: {seriesScore} ang serye ngayon. Tempo is king.
+Para sa record: {seriesScore} ang serye ngayon. Bantayan natin ang scoreboard.
+Para sa record: {seriesScore} ang serye ngayon. Data ang nagsasalita.
+Numbers check. Para sa record: {seriesScore} ang serye ngayon.
+Numbers check. Para sa record: {seriesScore} ang serye ngayon. Numbers don't lie.
+Numbers check. Para sa record: {seriesScore} ang serye ngayon. Tandaan ang numero.
+Numbers check. Para sa record: {seriesScore} ang serye ngayon. Tempo is king.
+Numbers check. Para sa record: {seriesScore} ang serye ngayon. Bantayan natin ang scoreboard.
+Numbers check. Para sa record: {seriesScore} ang serye ngayon. Data ang nagsasalita.
+Quick stat lang. Para sa record: {seriesScore} ang serye ngayon.
+Quick stat lang. Para sa record: {seriesScore} ang serye ngayon. Numbers don't lie.
+Quick stat lang. Para sa record: {seriesScore} ang serye ngayon. Tandaan ang numero.
+Quick stat lang. Para sa record: {seriesScore} ang serye ngayon. Tempo is king.
+Quick stat lang. Para sa record: {seriesScore} ang serye ngayon. Bantayan natin ang scoreboard.
+Quick stat lang. Para sa record: {seriesScore} ang serye ngayon. Data ang nagsasalita.
+Tingnan natin ang stats. Para sa record: {seriesScore} ang serye ngayon.
+Tingnan natin ang stats. Para sa record: {seriesScore} ang serye ngayon. Numbers don't lie.
+Tingnan natin ang stats. Para sa record: {seriesScore} ang serye ngayon. Tandaan ang numero.
+Tingnan natin ang stats. Para sa record: {seriesScore} ang serye ngayon. Tempo is king.
+Tingnan natin ang stats. Para sa record: {seriesScore} ang serye ngayon. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Para sa record: {seriesScore} ang serye ngayon. Data ang nagsasalita.
+Ito ang numero. Para sa record: {seriesScore} ang serye ngayon.
+Ito ang numero. Para sa record: {seriesScore} ang serye ngayon. Numbers don't lie.
+Ito ang numero. Para sa record: {seriesScore} ang serye ngayon. Tandaan ang numero.
+Ito ang numero. Para sa record: {seriesScore} ang serye ngayon. Tempo is king.
+Ito ang numero. Para sa record: {seriesScore} ang serye ngayon. Bantayan natin ang scoreboard.
+Ito ang numero. Para sa record: {seriesScore} ang serye ngayon. Data ang nagsasalita.
+Data muna tayo. Para sa record: {seriesScore} ang serye ngayon.
+Data muna tayo. Para sa record: {seriesScore} ang serye ngayon. Numbers don't lie.
+Data muna tayo. Para sa record: {seriesScore} ang serye ngayon. Tandaan ang numero.
+Data muna tayo. Para sa record: {seriesScore} ang serye ngayon. Tempo is king.
+Data muna tayo. Para sa record: {seriesScore} ang serye ngayon. Bantayan natin ang scoreboard.
+Data muna tayo. Para sa record: {seriesScore} ang serye ngayon. Data ang nagsasalita.
+Tempo check. Para sa record: {seriesScore} ang serye ngayon.
+Tempo check. Para sa record: {seriesScore} ang serye ngayon. Numbers don't lie.
+Tempo check. Para sa record: {seriesScore} ang serye ngayon. Tandaan ang numero.
+Tempo check. Para sa record: {seriesScore} ang serye ngayon. Tempo is king.
+Tempo check. Para sa record: {seriesScore} ang serye ngayon. Bantayan natin ang scoreboard.
+Tempo check. Para sa record: {seriesScore} ang serye ngayon. Data ang nagsasalita.
+Okay, scoreboard. Para sa record: {seriesScore} ang serye ngayon.
+Okay, scoreboard. Para sa record: {seriesScore} ang serye ngayon. Numbers don't lie.
+Okay, scoreboard. Para sa record: {seriesScore} ang serye ngayon. Tandaan ang numero.
+Okay, scoreboard. Para sa record: {seriesScore} ang serye ngayon. Tempo is king.
+Okay, scoreboard. Para sa record: {seriesScore} ang serye ngayon. Bantayan natin ang scoreboard.
+Okay, scoreboard. Para sa record: {seriesScore} ang serye ngayon. Data ang nagsasalita.
+Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat.
+Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Numbers don't lie.
+Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tandaan ang numero.
+Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tempo is king.
+Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Bantayan natin ang scoreboard.
+Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Data ang nagsasalita.
+Numbers check. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat.
+Numbers check. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Numbers don't lie.
+Numbers check. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tandaan ang numero.
+Numbers check. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tempo is king.
+Numbers check. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Bantayan natin ang scoreboard.
+Numbers check. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Data ang nagsasalita.
+Quick stat lang. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat.
+Quick stat lang. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Numbers don't lie.
+Quick stat lang. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tandaan ang numero.
+Quick stat lang. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tempo is king.
+Quick stat lang. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Bantayan natin ang scoreboard.
+Quick stat lang. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Data ang nagsasalita.
+Tingnan natin ang stats. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat.
+Tingnan natin ang stats. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Numbers don't lie.
+Tingnan natin ang stats. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tandaan ang numero.
+Tingnan natin ang stats. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tempo is king.
+Tingnan natin ang stats. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Data ang nagsasalita.
+Ito ang numero. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat.
+Ito ang numero. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Numbers don't lie.
+Ito ang numero. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tandaan ang numero.
+Ito ang numero. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tempo is king.
+Ito ang numero. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Bantayan natin ang scoreboard.
+Ito ang numero. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Data ang nagsasalita.
+Data muna tayo. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat.
+Data muna tayo. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Numbers don't lie.
+Data muna tayo. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tandaan ang numero.
+Data muna tayo. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tempo is king.
+Data muna tayo. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Bantayan natin ang scoreboard.
+Data muna tayo. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Data ang nagsasalita.
+Tempo check. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat.
+Tempo check. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Numbers don't lie.
+Tempo check. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tandaan ang numero.
+Tempo check. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tempo is king.
+Tempo check. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Bantayan natin ang scoreboard.
+Tempo check. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Data ang nagsasalita.
+Okay, scoreboard. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat.
+Okay, scoreboard. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Numbers don't lie.
+Okay, scoreboard. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tandaan ang numero.
+Okay, scoreboard. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tempo is king.
+Okay, scoreboard. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Bantayan natin ang scoreboard.
+Okay, scoreboard. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Data ang nagsasalita.
+Sa record. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat.
+Sa record. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Numbers don't lie.
+Sa record. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tandaan ang numero.
+Sa record. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Tempo is king.
+Sa record. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Bantayan natin ang scoreboard.
+Sa record. Kailangan ng {winsNeeded} panalo — kaya bawat draft, may bigat. Data ang nagsasalita.
+Mainit ang draft ngayong Game {gameNumber}.
+Mainit ang draft ngayong Game {gameNumber}. Numbers don't lie.
+Mainit ang draft ngayong Game {gameNumber}. Tandaan ang numero.
+Mainit ang draft ngayong Game {gameNumber}. Tempo is king.
+Mainit ang draft ngayong Game {gameNumber}. Bantayan natin ang scoreboard.
+Mainit ang draft ngayong Game {gameNumber}. Data ang nagsasalita.
+Numbers check. Mainit ang draft ngayong Game {gameNumber}.
+Numbers check. Mainit ang draft ngayong Game {gameNumber}. Numbers don't lie.
+Numbers check. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang numero.
+Numbers check. Mainit ang draft ngayong Game {gameNumber}. Tempo is king.
+Numbers check. Mainit ang draft ngayong Game {gameNumber}. Bantayan natin ang scoreboard.
+Numbers check. Mainit ang draft ngayong Game {gameNumber}. Data ang nagsasalita.
+Quick stat lang. Mainit ang draft ngayong Game {gameNumber}.
+Quick stat lang. Mainit ang draft ngayong Game {gameNumber}. Numbers don't lie.
+Quick stat lang. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang numero.
+Quick stat lang. Mainit ang draft ngayong Game {gameNumber}. Tempo is king.
+Quick stat lang. Mainit ang draft ngayong Game {gameNumber}. Bantayan natin ang scoreboard.
+Quick stat lang. Mainit ang draft ngayong Game {gameNumber}. Data ang nagsasalita.
+Tingnan natin ang stats. Mainit ang draft ngayong Game {gameNumber}.
+Tingnan natin ang stats. Mainit ang draft ngayong Game {gameNumber}. Numbers don't lie.
+Tingnan natin ang stats. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang numero.
+Tingnan natin ang stats. Mainit ang draft ngayong Game {gameNumber}. Tempo is king.
+Tingnan natin ang stats. Mainit ang draft ngayong Game {gameNumber}. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Mainit ang draft ngayong Game {gameNumber}. Data ang nagsasalita.
+Ito ang numero. Mainit ang draft ngayong Game {gameNumber}.
+Ito ang numero. Mainit ang draft ngayong Game {gameNumber}. Numbers don't lie.
+Ito ang numero. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang numero.
+Ito ang numero. Mainit ang draft ngayong Game {gameNumber}. Tempo is king.
+Ito ang numero. Mainit ang draft ngayong Game {gameNumber}. Bantayan natin ang scoreboard.
+Ito ang numero. Mainit ang draft ngayong Game {gameNumber}. Data ang nagsasalita.
+Data muna tayo. Mainit ang draft ngayong Game {gameNumber}.
+Data muna tayo. Mainit ang draft ngayong Game {gameNumber}. Numbers don't lie.
+Data muna tayo. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang numero.
+Data muna tayo. Mainit ang draft ngayong Game {gameNumber}. Tempo is king.
+Data muna tayo. Mainit ang draft ngayong Game {gameNumber}. Bantayan natin ang scoreboard.
+Data muna tayo. Mainit ang draft ngayong Game {gameNumber}. Data ang nagsasalita.
+Tempo check. Mainit ang draft ngayong Game {gameNumber}.
+Tempo check. Mainit ang draft ngayong Game {gameNumber}. Numbers don't lie.
+Tempo check. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang numero.
+Tempo check. Mainit ang draft ngayong Game {gameNumber}. Tempo is king.
+Tempo check. Mainit ang draft ngayong Game {gameNumber}. Bantayan natin ang scoreboard.
+Tempo check. Mainit ang draft ngayong Game {gameNumber}. Data ang nagsasalita.
+Okay, scoreboard. Mainit ang draft ngayong Game {gameNumber}.
+Okay, scoreboard. Mainit ang draft ngayong Game {gameNumber}. Numbers don't lie.
+Okay, scoreboard. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang numero.
+Okay, scoreboard. Mainit ang draft ngayong Game {gameNumber}. Tempo is king.
+Okay, scoreboard. Mainit ang draft ngayong Game {gameNumber}. Bantayan natin ang scoreboard.
+Okay, scoreboard. Mainit ang draft ngayong Game {gameNumber}. Data ang nagsasalita.
+Sa record. Mainit ang draft ngayong Game {gameNumber}.
+Sa record. Mainit ang draft ngayong Game {gameNumber}. Numbers don't lie.
+Sa record. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang numero.
+Sa record. Mainit ang draft ngayong Game {gameNumber}. Tempo is king.
+Sa record. Mainit ang draft ngayong Game {gameNumber}. Bantayan natin ang scoreboard.
+Sa record. Mainit ang draft ngayong Game {gameNumber}. Data ang nagsasalita.
+Bawat pick at ban, may dahilan.
+Bawat pick at ban, may dahilan. Numbers don't lie.
+Bawat pick at ban, may dahilan. Tandaan ang numero.
+Bawat pick at ban, may dahilan. Tempo is king.
+Bawat pick at ban, may dahilan. Bantayan natin ang scoreboard.
+Bawat pick at ban, may dahilan. Data ang nagsasalita.
+Numbers check. Bawat pick at ban, may dahilan.
+Numbers check. Bawat pick at ban, may dahilan. Numbers don't lie.
+Numbers check. Bawat pick at ban, may dahilan. Tandaan ang numero.
+Numbers check. Bawat pick at ban, may dahilan. Tempo is king.
+Numbers check. Bawat pick at ban, may dahilan. Bantayan natin ang scoreboard.
+Numbers check. Bawat pick at ban, may dahilan. Data ang nagsasalita.
+Quick stat lang. Bawat pick at ban, may dahilan.
+Quick stat lang. Bawat pick at ban, may dahilan. Numbers don't lie.
+Quick stat lang. Bawat pick at ban, may dahilan. Tandaan ang numero.
+Quick stat lang. Bawat pick at ban, may dahilan. Tempo is king.
+Quick stat lang. Bawat pick at ban, may dahilan. Bantayan natin ang scoreboard.
+Quick stat lang. Bawat pick at ban, may dahilan. Data ang nagsasalita.
+Tingnan natin ang stats. Bawat pick at ban, may dahilan.
+Tingnan natin ang stats. Bawat pick at ban, may dahilan. Numbers don't lie.
+Tingnan natin ang stats. Bawat pick at ban, may dahilan. Tandaan ang numero.
+Tingnan natin ang stats. Bawat pick at ban, may dahilan. Tempo is king.
+Tingnan natin ang stats. Bawat pick at ban, may dahilan. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Bawat pick at ban, may dahilan. Data ang nagsasalita.
+Ito ang numero. Bawat pick at ban, may dahilan.
+Ito ang numero. Bawat pick at ban, may dahilan. Numbers don't lie.
+Ito ang numero. Bawat pick at ban, may dahilan. Tandaan ang numero.
+Ito ang numero. Bawat pick at ban, may dahilan. Tempo is king.
+Ito ang numero. Bawat pick at ban, may dahilan. Bantayan natin ang scoreboard.
+Ito ang numero. Bawat pick at ban, may dahilan. Data ang nagsasalita.
+Data muna tayo. Bawat pick at ban, may dahilan.
+Data muna tayo. Bawat pick at ban, may dahilan. Numbers don't lie.
+Data muna tayo. Bawat pick at ban, may dahilan. Tandaan ang numero.
+Data muna tayo. Bawat pick at ban, may dahilan. Tempo is king.
+Data muna tayo. Bawat pick at ban, may dahilan. Bantayan natin ang scoreboard.
+Data muna tayo. Bawat pick at ban, may dahilan. Data ang nagsasalita.
+Tempo check. Bawat pick at ban, may dahilan.
+Tempo check. Bawat pick at ban, may dahilan. Numbers don't lie.
+Tempo check. Bawat pick at ban, may dahilan. Tandaan ang numero.
+Tempo check. Bawat pick at ban, may dahilan. Tempo is king.
+Tempo check. Bawat pick at ban, may dahilan. Bantayan natin ang scoreboard.
+Tempo check. Bawat pick at ban, may dahilan. Data ang nagsasalita.
+Okay, scoreboard. Bawat pick at ban, may dahilan.
+Okay, scoreboard. Bawat pick at ban, may dahilan. Numbers don't lie.
+Okay, scoreboard. Bawat pick at ban, may dahilan. Tandaan ang numero.
+Okay, scoreboard. Bawat pick at ban, may dahilan. Tempo is king.
+Okay, scoreboard. Bawat pick at ban, may dahilan. Bantayan natin ang scoreboard.
+Okay, scoreboard. Bawat pick at ban, may dahilan. Data ang nagsasalita.
+Sa record. Bawat pick at ban, may dahilan.
+Sa record. Bawat pick at ban, may dahilan. Numbers don't lie.
+Sa record. Bawat pick at ban, may dahilan. Tandaan ang numero.
+Sa record. Bawat pick at ban, may dahilan. Tempo is king.
+Sa record. Bawat pick at ban, may dahilan. Bantayan natin ang scoreboard.
+Sa record. Bawat pick at ban, may dahilan. Data ang nagsasalita.
+Abangan natin ang susunod na desisyon.
+Abangan natin ang susunod na desisyon. Numbers don't lie.
+Abangan natin ang susunod na desisyon. Tandaan ang numero.
+Abangan natin ang susunod na desisyon. Tempo is king.
+Abangan natin ang susunod na desisyon. Bantayan natin ang scoreboard.
+Abangan natin ang susunod na desisyon. Data ang nagsasalita.
+Numbers check. Abangan natin ang susunod na desisyon.
+Numbers check. Abangan natin ang susunod na desisyon. Numbers don't lie.
+Numbers check. Abangan natin ang susunod na desisyon. Tandaan ang numero.
+Numbers check. Abangan natin ang susunod na desisyon. Tempo is king.
+Numbers check. Abangan natin ang susunod na desisyon. Bantayan natin ang scoreboard.
+Numbers check. Abangan natin ang susunod na desisyon. Data ang nagsasalita.
+Quick stat lang. Abangan natin ang susunod na desisyon.
+Quick stat lang. Abangan natin ang susunod na desisyon. Numbers don't lie.
+Quick stat lang. Abangan natin ang susunod na desisyon. Tandaan ang numero.
+Quick stat lang. Abangan natin ang susunod na desisyon. Tempo is king.
+Quick stat lang. Abangan natin ang susunod na desisyon. Bantayan natin ang scoreboard.
+Quick stat lang. Abangan natin ang susunod na desisyon. Data ang nagsasalita.
+Tingnan natin ang stats. Abangan natin ang susunod na desisyon.
+Tingnan natin ang stats. Abangan natin ang susunod na desisyon. Numbers don't lie.
+Tingnan natin ang stats. Abangan natin ang susunod na desisyon. Tandaan ang numero.
+Tingnan natin ang stats. Abangan natin ang susunod na desisyon. Tempo is king.
+Tingnan natin ang stats. Abangan natin ang susunod na desisyon. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Abangan natin ang susunod na desisyon. Data ang nagsasalita.
+Ito ang numero. Abangan natin ang susunod na desisyon.
+Ito ang numero. Abangan natin ang susunod na desisyon. Numbers don't lie.
+Ito ang numero. Abangan natin ang susunod na desisyon. Tandaan ang numero.
+Ito ang numero. Abangan natin ang susunod na desisyon. Tempo is king.
+Ito ang numero. Abangan natin ang susunod na desisyon. Bantayan natin ang scoreboard.
+Ito ang numero. Abangan natin ang susunod na desisyon. Data ang nagsasalita.
+Data muna tayo. Abangan natin ang susunod na desisyon.
+Data muna tayo. Abangan natin ang susunod na desisyon. Numbers don't lie.
+Data muna tayo. Abangan natin ang susunod na desisyon. Tandaan ang numero.
+Data muna tayo. Abangan natin ang susunod na desisyon. Tempo is king.
+Data muna tayo. Abangan natin ang susunod na desisyon. Bantayan natin ang scoreboard.
+Data muna tayo. Abangan natin ang susunod na desisyon. Data ang nagsasalita.
+Tempo check. Abangan natin ang susunod na desisyon.
+Tempo check. Abangan natin ang susunod na desisyon. Numbers don't lie.
+Tempo check. Abangan natin ang susunod na desisyon. Tandaan ang numero.
+Tempo check. Abangan natin ang susunod na desisyon. Tempo is king.
+Tempo check. Abangan natin ang susunod na desisyon. Bantayan natin ang scoreboard.
+Tempo check. Abangan natin ang susunod na desisyon. Data ang nagsasalita.
+Okay, scoreboard. Abangan natin ang susunod na desisyon.
+Okay, scoreboard. Abangan natin ang susunod na desisyon. Numbers don't lie.
+Okay, scoreboard. Abangan natin ang susunod na desisyon. Tandaan ang numero.
+Okay, scoreboard. Abangan natin ang susunod na desisyon. Tempo is king.
+Okay, scoreboard. Abangan natin ang susunod na desisyon. Bantayan natin ang scoreboard.
+Okay, scoreboard. Abangan natin ang susunod na desisyon. Data ang nagsasalita.
+Sa record. Abangan natin ang susunod na desisyon.
+Sa record. Abangan natin ang susunod na desisyon. Numbers don't lie.
+Sa record. Abangan natin ang susunod na desisyon. Tandaan ang numero.
+Sa record. Abangan natin ang susunod na desisyon. Tempo is king.
+Sa record. Abangan natin ang susunod na desisyon. Bantayan natin ang scoreboard.
+Sa record. Abangan natin ang susunod na desisyon. Data ang nagsasalita.
+Paunti nang paunti ang mga hero na natitira.
+Paunti nang paunti ang mga hero na natitira. Numbers don't lie.
+Paunti nang paunti ang mga hero na natitira. Tandaan ang numero.
+Paunti nang paunti ang mga hero na natitira. Tempo is king.
+Paunti nang paunti ang mga hero na natitira. Bantayan natin ang scoreboard.
+Paunti nang paunti ang mga hero na natitira. Data ang nagsasalita.
+Numbers check. Paunti nang paunti ang mga hero na natitira.
+Numbers check. Paunti nang paunti ang mga hero na natitira. Numbers don't lie.
+Numbers check. Paunti nang paunti ang mga hero na natitira. Tandaan ang numero.
+Numbers check. Paunti nang paunti ang mga hero na natitira. Tempo is king.
+Numbers check. Paunti nang paunti ang mga hero na natitira. Bantayan natin ang scoreboard.
+Numbers check. Paunti nang paunti ang mga hero na natitira. Data ang nagsasalita.
+Quick stat lang. Paunti nang paunti ang mga hero na natitira.
+Quick stat lang. Paunti nang paunti ang mga hero na natitira. Numbers don't lie.
+Quick stat lang. Paunti nang paunti ang mga hero na natitira. Tandaan ang numero.
+Quick stat lang. Paunti nang paunti ang mga hero na natitira. Tempo is king.
+Quick stat lang. Paunti nang paunti ang mga hero na natitira. Bantayan natin ang scoreboard.
+Quick stat lang. Paunti nang paunti ang mga hero na natitira. Data ang nagsasalita.
+Tingnan natin ang stats. Paunti nang paunti ang mga hero na natitira.
+Tingnan natin ang stats. Paunti nang paunti ang mga hero na natitira. Numbers don't lie.
+Tingnan natin ang stats. Paunti nang paunti ang mga hero na natitira. Tandaan ang numero.
+Tingnan natin ang stats. Paunti nang paunti ang mga hero na natitira. Tempo is king.
+Tingnan natin ang stats. Paunti nang paunti ang mga hero na natitira. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Paunti nang paunti ang mga hero na natitira. Data ang nagsasalita.
+Ito ang numero. Paunti nang paunti ang mga hero na natitira.
+Ito ang numero. Paunti nang paunti ang mga hero na natitira. Numbers don't lie.
+Ito ang numero. Paunti nang paunti ang mga hero na natitira. Tandaan ang numero.
+Ito ang numero. Paunti nang paunti ang mga hero na natitira. Tempo is king.
+Ito ang numero. Paunti nang paunti ang mga hero na natitira. Bantayan natin ang scoreboard.
+Ito ang numero. Paunti nang paunti ang mga hero na natitira. Data ang nagsasalita.
+Data muna tayo. Paunti nang paunti ang mga hero na natitira.
+Data muna tayo. Paunti nang paunti ang mga hero na natitira. Numbers don't lie.
+Data muna tayo. Paunti nang paunti ang mga hero na natitira. Tandaan ang numero.
+Data muna tayo. Paunti nang paunti ang mga hero na natitira. Tempo is king.
+Data muna tayo. Paunti nang paunti ang mga hero na natitira. Bantayan natin ang scoreboard.
+Data muna tayo. Paunti nang paunti ang mga hero na natitira. Data ang nagsasalita.
+Tempo check. Paunti nang paunti ang mga hero na natitira.
+Tempo check. Paunti nang paunti ang mga hero na natitira. Numbers don't lie.
+Tempo check. Paunti nang paunti ang mga hero na natitira. Tandaan ang numero.
+Tempo check. Paunti nang paunti ang mga hero na natitira. Tempo is king.
+Tempo check. Paunti nang paunti ang mga hero na natitira. Bantayan natin ang scoreboard.
+Tempo check. Paunti nang paunti ang mga hero na natitira. Data ang nagsasalita.
+Okay, scoreboard. Paunti nang paunti ang mga hero na natitira.
+Okay, scoreboard. Paunti nang paunti ang mga hero na natitira. Numbers don't lie.
+Okay, scoreboard. Paunti nang paunti ang mga hero na natitira. Tandaan ang numero.
+Okay, scoreboard. Paunti nang paunti ang mga hero na natitira. Tempo is king.
+Okay, scoreboard. Paunti nang paunti ang mga hero na natitira. Bantayan natin ang scoreboard.
+Okay, scoreboard. Paunti nang paunti ang mga hero na natitira. Data ang nagsasalita.
+Sa record. Paunti nang paunti ang mga hero na natitira.
+Sa record. Paunti nang paunti ang mga hero na natitira. Numbers don't lie.
+Sa record. Paunti nang paunti ang mga hero na natitira. Tandaan ang numero.
+Sa record. Paunti nang paunti ang mga hero na natitira. Tempo is king.
+Sa record. Paunti nang paunti ang mga hero na natitira. Bantayan natin ang scoreboard.
+Sa record. Paunti nang paunti ang mga hero na natitira. Data ang nagsasalita.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Numbers don't lie.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang numero.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Tempo is king.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan natin ang scoreboard.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Data ang nagsasalita.
+Numbers check. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Numbers check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Numbers don't lie.
+Numbers check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang numero.
+Numbers check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tempo is king.
+Numbers check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan natin ang scoreboard.
+Numbers check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Data ang nagsasalita.
+Quick stat lang. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Quick stat lang. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Numbers don't lie.
+Quick stat lang. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang numero.
+Quick stat lang. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tempo is king.
+Quick stat lang. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan natin ang scoreboard.
+Quick stat lang. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Data ang nagsasalita.
+Tingnan natin ang stats. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Tingnan natin ang stats. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Numbers don't lie.
+Tingnan natin ang stats. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang numero.
+Tingnan natin ang stats. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tempo is king.
+Tingnan natin ang stats. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Data ang nagsasalita.
+Ito ang numero. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Ito ang numero. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Numbers don't lie.
+Ito ang numero. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang numero.
+Ito ang numero. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tempo is king.
+Ito ang numero. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan natin ang scoreboard.
+Ito ang numero. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Data ang nagsasalita.
+Data muna tayo. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Data muna tayo. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Numbers don't lie.
+Data muna tayo. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang numero.
+Data muna tayo. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tempo is king.
+Data muna tayo. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan natin ang scoreboard.
+Data muna tayo. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Data ang nagsasalita.
+Tempo check. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Tempo check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Numbers don't lie.
+Tempo check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang numero.
+Tempo check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tempo is king.
+Tempo check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan natin ang scoreboard.
+Tempo check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Data ang nagsasalita.
+Okay, scoreboard. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Okay, scoreboard. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Numbers don't lie.
+Okay, scoreboard. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang numero.
+Okay, scoreboard. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tempo is king.
+Okay, scoreboard. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan natin ang scoreboard.
+Okay, scoreboard. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Data ang nagsasalita.
+Sa record. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Sa record. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Numbers don't lie.
+Sa record. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang numero.
+Sa record. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tempo is king.
+Sa record. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan natin ang scoreboard.
+Sa record. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Data ang nagsasalita.
+
+══════ Drafting phase welcome ("Welcome sa drafting phase natin, partner …") — 528 lines ══════
+Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat.
+Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Numbers don't lie.
+Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tandaan ang numero.
+Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tempo is king.
+Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Bantayan natin ang scoreboard.
+Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Data ang nagsasalita.
+Numbers check. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat.
+Numbers check. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Numbers don't lie.
+Numbers check. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tandaan ang numero.
+Numbers check. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tempo is king.
+Numbers check. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Bantayan natin ang scoreboard.
+Numbers check. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Data ang nagsasalita.
+Quick stat lang. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat.
+Quick stat lang. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Numbers don't lie.
+Quick stat lang. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tandaan ang numero.
+Quick stat lang. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tempo is king.
+Quick stat lang. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Bantayan natin ang scoreboard.
+Quick stat lang. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Data ang nagsasalita.
+Tingnan natin ang stats. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat.
+Tingnan natin ang stats. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Numbers don't lie.
+Tingnan natin ang stats. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tandaan ang numero.
+Tingnan natin ang stats. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tempo is king.
+Tingnan natin ang stats. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Data ang nagsasalita.
+Ito ang numero. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat.
+Ito ang numero. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Numbers don't lie.
+Ito ang numero. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tandaan ang numero.
+Ito ang numero. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tempo is king.
+Ito ang numero. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Bantayan natin ang scoreboard.
+Ito ang numero. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Data ang nagsasalita.
+Data muna tayo. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat.
+Data muna tayo. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Numbers don't lie.
+Data muna tayo. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tandaan ang numero.
+Data muna tayo. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tempo is king.
+Data muna tayo. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Bantayan natin ang scoreboard.
+Data muna tayo. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Data ang nagsasalita.
+Tempo check. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat.
+Tempo check. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Numbers don't lie.
+Tempo check. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tandaan ang numero.
+Tempo check. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tempo is king.
+Tempo check. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Bantayan natin ang scoreboard.
+Tempo check. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Data ang nagsasalita.
+Okay, scoreboard. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat.
+Okay, scoreboard. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Numbers don't lie.
+Okay, scoreboard. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tandaan ang numero.
+Okay, scoreboard. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tempo is king.
+Okay, scoreboard. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Bantayan natin ang scoreboard.
+Okay, scoreboard. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Data ang nagsasalita.
+Sa record. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat.
+Sa record. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Numbers don't lie.
+Sa record. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tandaan ang numero.
+Sa record. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Tempo is king.
+Sa record. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Bantayan natin ang scoreboard.
+Sa record. Game {gameNumber} na, at {seriesScore} ang serye — kaya bawat pick, may bigat. Data ang nagsasalita.
+Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft.
+Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Numbers don't lie.
+Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tandaan ang numero.
+Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tempo is king.
+Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Bantayan natin ang scoreboard.
+Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Data ang nagsasalita.
+Numbers check. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft.
+Numbers check. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Numbers don't lie.
+Numbers check. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tandaan ang numero.
+Numbers check. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tempo is king.
+Numbers check. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Bantayan natin ang scoreboard.
+Numbers check. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Data ang nagsasalita.
+Quick stat lang. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft.
+Quick stat lang. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Numbers don't lie.
+Quick stat lang. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tandaan ang numero.
+Quick stat lang. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tempo is king.
+Quick stat lang. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Bantayan natin ang scoreboard.
+Quick stat lang. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Data ang nagsasalita.
+Tingnan natin ang stats. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft.
+Tingnan natin ang stats. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Numbers don't lie.
+Tingnan natin ang stats. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tandaan ang numero.
+Tingnan natin ang stats. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tempo is king.
+Tingnan natin ang stats. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Data ang nagsasalita.
+Ito ang numero. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft.
+Ito ang numero. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Numbers don't lie.
+Ito ang numero. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tandaan ang numero.
+Ito ang numero. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tempo is king.
+Ito ang numero. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Bantayan natin ang scoreboard.
+Ito ang numero. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Data ang nagsasalita.
+Data muna tayo. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft.
+Data muna tayo. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Numbers don't lie.
+Data muna tayo. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tandaan ang numero.
+Data muna tayo. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tempo is king.
+Data muna tayo. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Bantayan natin ang scoreboard.
+Data muna tayo. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Data ang nagsasalita.
+Tempo check. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft.
+Tempo check. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Numbers don't lie.
+Tempo check. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tandaan ang numero.
+Tempo check. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tempo is king.
+Tempo check. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Bantayan natin ang scoreboard.
+Tempo check. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Data ang nagsasalita.
+Okay, scoreboard. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft.
+Okay, scoreboard. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Numbers don't lie.
+Okay, scoreboard. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tandaan ang numero.
+Okay, scoreboard. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tempo is king.
+Okay, scoreboard. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Bantayan natin ang scoreboard.
+Okay, scoreboard. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Data ang nagsasalita.
+Sa record. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft.
+Sa record. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Numbers don't lie.
+Sa record. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tandaan ang numero.
+Sa record. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Tempo is king.
+Sa record. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Bantayan natin ang scoreboard.
+Sa record. Kailangan ng {winsNeeded} panalo para umabante — abangan natin kung paano ito makikita sa draft. Data ang nagsasalita.
+Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero.
+Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Numbers don't lie.
+Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tandaan ang numero.
+Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tempo is king.
+Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Bantayan natin ang scoreboard.
+Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Data ang nagsasalita.
+Numbers check. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero.
+Numbers check. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Numbers don't lie.
+Numbers check. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tandaan ang numero.
+Numbers check. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tempo is king.
+Numbers check. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Bantayan natin ang scoreboard.
+Numbers check. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Data ang nagsasalita.
+Quick stat lang. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero.
+Quick stat lang. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Numbers don't lie.
+Quick stat lang. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tandaan ang numero.
+Quick stat lang. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tempo is king.
+Quick stat lang. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Bantayan natin ang scoreboard.
+Quick stat lang. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Data ang nagsasalita.
+Tingnan natin ang stats. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero.
+Tingnan natin ang stats. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Numbers don't lie.
+Tingnan natin ang stats. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tandaan ang numero.
+Tingnan natin ang stats. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tempo is king.
+Tingnan natin ang stats. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Data ang nagsasalita.
+Data muna tayo. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero.
+Data muna tayo. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Numbers don't lie.
+Data muna tayo. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tandaan ang numero.
+Data muna tayo. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tempo is king.
+Data muna tayo. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Bantayan natin ang scoreboard.
+Data muna tayo. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Data ang nagsasalita.
+Tempo check. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero.
+Tempo check. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Numbers don't lie.
+Tempo check. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tandaan ang numero.
+Tempo check. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tempo is king.
+Tempo check. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Bantayan natin ang scoreboard.
+Tempo check. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Data ang nagsasalita.
+Okay, scoreboard. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero.
+Okay, scoreboard. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Numbers don't lie.
+Okay, scoreboard. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tandaan ang numero.
+Okay, scoreboard. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Tempo is king.
+Okay, scoreboard. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Bantayan natin ang scoreboard.
+Okay, scoreboard. Para sa record: {seriesScore}. Tingnan natin kung paano babaguhin ng draft na ito ang numero. Data ang nagsasalita.
+Simula na ang drafting phase ng Game {gameNumber}.
+Simula na ang drafting phase ng Game {gameNumber}. Numbers don't lie.
+Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang numero.
+Simula na ang drafting phase ng Game {gameNumber}. Tempo is king.
+Simula na ang drafting phase ng Game {gameNumber}. Bantayan natin ang scoreboard.
+Simula na ang drafting phase ng Game {gameNumber}. Data ang nagsasalita.
+Numbers check. Simula na ang drafting phase ng Game {gameNumber}.
+Numbers check. Simula na ang drafting phase ng Game {gameNumber}. Numbers don't lie.
+Numbers check. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang numero.
+Numbers check. Simula na ang drafting phase ng Game {gameNumber}. Tempo is king.
+Numbers check. Simula na ang drafting phase ng Game {gameNumber}. Bantayan natin ang scoreboard.
+Numbers check. Simula na ang drafting phase ng Game {gameNumber}. Data ang nagsasalita.
+Quick stat lang. Simula na ang drafting phase ng Game {gameNumber}.
+Quick stat lang. Simula na ang drafting phase ng Game {gameNumber}. Numbers don't lie.
+Quick stat lang. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang numero.
+Quick stat lang. Simula na ang drafting phase ng Game {gameNumber}. Tempo is king.
+Quick stat lang. Simula na ang drafting phase ng Game {gameNumber}. Bantayan natin ang scoreboard.
+Quick stat lang. Simula na ang drafting phase ng Game {gameNumber}. Data ang nagsasalita.
+Tingnan natin ang stats. Simula na ang drafting phase ng Game {gameNumber}.
+Tingnan natin ang stats. Simula na ang drafting phase ng Game {gameNumber}. Numbers don't lie.
+Tingnan natin ang stats. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang numero.
+Tingnan natin ang stats. Simula na ang drafting phase ng Game {gameNumber}. Tempo is king.
+Tingnan natin ang stats. Simula na ang drafting phase ng Game {gameNumber}. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Simula na ang drafting phase ng Game {gameNumber}. Data ang nagsasalita.
+Ito ang numero. Simula na ang drafting phase ng Game {gameNumber}.
+Ito ang numero. Simula na ang drafting phase ng Game {gameNumber}. Numbers don't lie.
+Ito ang numero. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang numero.
+Ito ang numero. Simula na ang drafting phase ng Game {gameNumber}. Tempo is king.
+Ito ang numero. Simula na ang drafting phase ng Game {gameNumber}. Bantayan natin ang scoreboard.
+Ito ang numero. Simula na ang drafting phase ng Game {gameNumber}. Data ang nagsasalita.
+Data muna tayo. Simula na ang drafting phase ng Game {gameNumber}.
+Data muna tayo. Simula na ang drafting phase ng Game {gameNumber}. Numbers don't lie.
+Data muna tayo. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang numero.
+Data muna tayo. Simula na ang drafting phase ng Game {gameNumber}. Tempo is king.
+Data muna tayo. Simula na ang drafting phase ng Game {gameNumber}. Bantayan natin ang scoreboard.
+Data muna tayo. Simula na ang drafting phase ng Game {gameNumber}. Data ang nagsasalita.
+Tempo check. Simula na ang drafting phase ng Game {gameNumber}.
+Tempo check. Simula na ang drafting phase ng Game {gameNumber}. Numbers don't lie.
+Tempo check. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang numero.
+Tempo check. Simula na ang drafting phase ng Game {gameNumber}. Tempo is king.
+Tempo check. Simula na ang drafting phase ng Game {gameNumber}. Bantayan natin ang scoreboard.
+Tempo check. Simula na ang drafting phase ng Game {gameNumber}. Data ang nagsasalita.
+Okay, scoreboard. Simula na ang drafting phase ng Game {gameNumber}.
+Okay, scoreboard. Simula na ang drafting phase ng Game {gameNumber}. Numbers don't lie.
+Okay, scoreboard. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang numero.
+Okay, scoreboard. Simula na ang drafting phase ng Game {gameNumber}. Tempo is king.
+Okay, scoreboard. Simula na ang drafting phase ng Game {gameNumber}. Bantayan natin ang scoreboard.
+Okay, scoreboard. Simula na ang drafting phase ng Game {gameNumber}. Data ang nagsasalita.
+Sa record. Simula na ang drafting phase ng Game {gameNumber}.
+Sa record. Simula na ang drafting phase ng Game {gameNumber}. Numbers don't lie.
+Sa record. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang numero.
+Sa record. Simula na ang drafting phase ng Game {gameNumber}. Tempo is king.
+Sa record. Simula na ang drafting phase ng Game {gameNumber}. Bantayan natin ang scoreboard.
+Sa record. Simula na ang drafting phase ng Game {gameNumber}. Data ang nagsasalita.
+Abangan natin ang mga ban at pick ng dalawang team.
+Abangan natin ang mga ban at pick ng dalawang team. Numbers don't lie.
+Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang numero.
+Abangan natin ang mga ban at pick ng dalawang team. Tempo is king.
+Abangan natin ang mga ban at pick ng dalawang team. Bantayan natin ang scoreboard.
+Abangan natin ang mga ban at pick ng dalawang team. Data ang nagsasalita.
+Numbers check. Abangan natin ang mga ban at pick ng dalawang team.
+Numbers check. Abangan natin ang mga ban at pick ng dalawang team. Numbers don't lie.
+Numbers check. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang numero.
+Numbers check. Abangan natin ang mga ban at pick ng dalawang team. Tempo is king.
+Numbers check. Abangan natin ang mga ban at pick ng dalawang team. Bantayan natin ang scoreboard.
+Numbers check. Abangan natin ang mga ban at pick ng dalawang team. Data ang nagsasalita.
+Quick stat lang. Abangan natin ang mga ban at pick ng dalawang team.
+Quick stat lang. Abangan natin ang mga ban at pick ng dalawang team. Numbers don't lie.
+Quick stat lang. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang numero.
+Quick stat lang. Abangan natin ang mga ban at pick ng dalawang team. Tempo is king.
+Quick stat lang. Abangan natin ang mga ban at pick ng dalawang team. Bantayan natin ang scoreboard.
+Quick stat lang. Abangan natin ang mga ban at pick ng dalawang team. Data ang nagsasalita.
+Tingnan natin ang stats. Abangan natin ang mga ban at pick ng dalawang team.
+Tingnan natin ang stats. Abangan natin ang mga ban at pick ng dalawang team. Numbers don't lie.
+Tingnan natin ang stats. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang numero.
+Tingnan natin ang stats. Abangan natin ang mga ban at pick ng dalawang team. Tempo is king.
+Tingnan natin ang stats. Abangan natin ang mga ban at pick ng dalawang team. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Abangan natin ang mga ban at pick ng dalawang team. Data ang nagsasalita.
+Ito ang numero. Abangan natin ang mga ban at pick ng dalawang team.
+Ito ang numero. Abangan natin ang mga ban at pick ng dalawang team. Numbers don't lie.
+Ito ang numero. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang numero.
+Ito ang numero. Abangan natin ang mga ban at pick ng dalawang team. Tempo is king.
+Ito ang numero. Abangan natin ang mga ban at pick ng dalawang team. Bantayan natin ang scoreboard.
+Ito ang numero. Abangan natin ang mga ban at pick ng dalawang team. Data ang nagsasalita.
+Data muna tayo. Abangan natin ang mga ban at pick ng dalawang team.
+Data muna tayo. Abangan natin ang mga ban at pick ng dalawang team. Numbers don't lie.
+Data muna tayo. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang numero.
+Data muna tayo. Abangan natin ang mga ban at pick ng dalawang team. Tempo is king.
+Data muna tayo. Abangan natin ang mga ban at pick ng dalawang team. Bantayan natin ang scoreboard.
+Data muna tayo. Abangan natin ang mga ban at pick ng dalawang team. Data ang nagsasalita.
+Tempo check. Abangan natin ang mga ban at pick ng dalawang team.
+Tempo check. Abangan natin ang mga ban at pick ng dalawang team. Numbers don't lie.
+Tempo check. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang numero.
+Tempo check. Abangan natin ang mga ban at pick ng dalawang team. Tempo is king.
+Tempo check. Abangan natin ang mga ban at pick ng dalawang team. Bantayan natin ang scoreboard.
+Tempo check. Abangan natin ang mga ban at pick ng dalawang team. Data ang nagsasalita.
+Okay, scoreboard. Abangan natin ang mga ban at pick ng dalawang team.
+Okay, scoreboard. Abangan natin ang mga ban at pick ng dalawang team. Numbers don't lie.
+Okay, scoreboard. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang numero.
+Okay, scoreboard. Abangan natin ang mga ban at pick ng dalawang team. Tempo is king.
+Okay, scoreboard. Abangan natin ang mga ban at pick ng dalawang team. Bantayan natin ang scoreboard.
+Okay, scoreboard. Abangan natin ang mga ban at pick ng dalawang team. Data ang nagsasalita.
+Sa record. Abangan natin ang mga ban at pick ng dalawang team.
+Sa record. Abangan natin ang mga ban at pick ng dalawang team. Numbers don't lie.
+Sa record. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang numero.
+Sa record. Abangan natin ang mga ban at pick ng dalawang team. Tempo is king.
+Sa record. Abangan natin ang mga ban at pick ng dalawang team. Bantayan natin ang scoreboard.
+Sa record. Abangan natin ang mga ban at pick ng dalawang team. Data ang nagsasalita.
+Dito makikita ang game plan ng {teamA} at {teamB}.
+Dito makikita ang game plan ng {teamA} at {teamB}. Numbers don't lie.
+Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang numero.
+Dito makikita ang game plan ng {teamA} at {teamB}. Tempo is king.
+Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan natin ang scoreboard.
+Dito makikita ang game plan ng {teamA} at {teamB}. Data ang nagsasalita.
+Numbers check. Dito makikita ang game plan ng {teamA} at {teamB}.
+Numbers check. Dito makikita ang game plan ng {teamA} at {teamB}. Numbers don't lie.
+Numbers check. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang numero.
+Numbers check. Dito makikita ang game plan ng {teamA} at {teamB}. Tempo is king.
+Numbers check. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan natin ang scoreboard.
+Numbers check. Dito makikita ang game plan ng {teamA} at {teamB}. Data ang nagsasalita.
+Quick stat lang. Dito makikita ang game plan ng {teamA} at {teamB}.
+Quick stat lang. Dito makikita ang game plan ng {teamA} at {teamB}. Numbers don't lie.
+Quick stat lang. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang numero.
+Quick stat lang. Dito makikita ang game plan ng {teamA} at {teamB}. Tempo is king.
+Quick stat lang. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan natin ang scoreboard.
+Quick stat lang. Dito makikita ang game plan ng {teamA} at {teamB}. Data ang nagsasalita.
+Tingnan natin ang stats. Dito makikita ang game plan ng {teamA} at {teamB}.
+Tingnan natin ang stats. Dito makikita ang game plan ng {teamA} at {teamB}. Numbers don't lie.
+Tingnan natin ang stats. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang numero.
+Tingnan natin ang stats. Dito makikita ang game plan ng {teamA} at {teamB}. Tempo is king.
+Tingnan natin ang stats. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Dito makikita ang game plan ng {teamA} at {teamB}. Data ang nagsasalita.
+Ito ang numero. Dito makikita ang game plan ng {teamA} at {teamB}.
+Ito ang numero. Dito makikita ang game plan ng {teamA} at {teamB}. Numbers don't lie.
+Ito ang numero. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang numero.
+Ito ang numero. Dito makikita ang game plan ng {teamA} at {teamB}. Tempo is king.
+Ito ang numero. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan natin ang scoreboard.
+Ito ang numero. Dito makikita ang game plan ng {teamA} at {teamB}. Data ang nagsasalita.
+Data muna tayo. Dito makikita ang game plan ng {teamA} at {teamB}.
+Data muna tayo. Dito makikita ang game plan ng {teamA} at {teamB}. Numbers don't lie.
+Data muna tayo. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang numero.
+Data muna tayo. Dito makikita ang game plan ng {teamA} at {teamB}. Tempo is king.
+Data muna tayo. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan natin ang scoreboard.
+Data muna tayo. Dito makikita ang game plan ng {teamA} at {teamB}. Data ang nagsasalita.
+Tempo check. Dito makikita ang game plan ng {teamA} at {teamB}.
+Tempo check. Dito makikita ang game plan ng {teamA} at {teamB}. Numbers don't lie.
+Tempo check. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang numero.
+Tempo check. Dito makikita ang game plan ng {teamA} at {teamB}. Tempo is king.
+Tempo check. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan natin ang scoreboard.
+Tempo check. Dito makikita ang game plan ng {teamA} at {teamB}. Data ang nagsasalita.
+Okay, scoreboard. Dito makikita ang game plan ng {teamA} at {teamB}.
+Okay, scoreboard. Dito makikita ang game plan ng {teamA} at {teamB}. Numbers don't lie.
+Okay, scoreboard. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang numero.
+Okay, scoreboard. Dito makikita ang game plan ng {teamA} at {teamB}. Tempo is king.
+Okay, scoreboard. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan natin ang scoreboard.
+Okay, scoreboard. Dito makikita ang game plan ng {teamA} at {teamB}. Data ang nagsasalita.
+Sa record. Dito makikita ang game plan ng {teamA} at {teamB}.
+Sa record. Dito makikita ang game plan ng {teamA} at {teamB}. Numbers don't lie.
+Sa record. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang numero.
+Sa record. Dito makikita ang game plan ng {teamA} at {teamB}. Tempo is king.
+Sa record. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan natin ang scoreboard.
+Sa record. Dito makikita ang game plan ng {teamA} at {teamB}. Data ang nagsasalita.
+{blueTeam} sa blue side, {redTeam} sa red side.
+{blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+{blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+{blueTeam} sa blue side, {redTeam} sa red side. Tempo is king.
+{blueTeam} sa blue side, {redTeam} sa red side. Bantayan natin ang scoreboard.
+{blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Numbers check. {blueTeam} sa blue side, {redTeam} sa red side.
+Numbers check. {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Numbers check. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Numbers check. {blueTeam} sa blue side, {redTeam} sa red side. Tempo is king.
+Numbers check. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan natin ang scoreboard.
+Numbers check. {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Quick stat lang. {blueTeam} sa blue side, {redTeam} sa red side.
+Quick stat lang. {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Quick stat lang. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Quick stat lang. {blueTeam} sa blue side, {redTeam} sa red side. Tempo is king.
+Quick stat lang. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan natin ang scoreboard.
+Quick stat lang. {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Tingnan natin ang stats. {blueTeam} sa blue side, {redTeam} sa red side.
+Tingnan natin ang stats. {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Tingnan natin ang stats. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Tingnan natin ang stats. {blueTeam} sa blue side, {redTeam} sa red side. Tempo is king.
+Tingnan natin ang stats. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Ito ang numero. {blueTeam} sa blue side, {redTeam} sa red side.
+Ito ang numero. {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Ito ang numero. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Ito ang numero. {blueTeam} sa blue side, {redTeam} sa red side. Tempo is king.
+Ito ang numero. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan natin ang scoreboard.
+Ito ang numero. {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Data muna tayo. {blueTeam} sa blue side, {redTeam} sa red side.
+Data muna tayo. {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Data muna tayo. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Data muna tayo. {blueTeam} sa blue side, {redTeam} sa red side. Tempo is king.
+Data muna tayo. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan natin ang scoreboard.
+Data muna tayo. {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Tempo check. {blueTeam} sa blue side, {redTeam} sa red side.
+Tempo check. {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Tempo check. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Tempo check. {blueTeam} sa blue side, {redTeam} sa red side. Tempo is king.
+Tempo check. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan natin ang scoreboard.
+Tempo check. {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Okay, scoreboard. {blueTeam} sa blue side, {redTeam} sa red side.
+Okay, scoreboard. {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Okay, scoreboard. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Okay, scoreboard. {blueTeam} sa blue side, {redTeam} sa red side. Tempo is king.
+Okay, scoreboard. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan natin ang scoreboard.
+Okay, scoreboard. {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Sa record. {blueTeam} sa blue side, {redTeam} sa red side.
+Sa record. {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Sa record. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Sa record. {blueTeam} sa blue side, {redTeam} sa red side. Tempo is king.
+Sa record. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan natin ang scoreboard.
+Sa record. {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Draft pa lang, mahalaga na ang bawat desisyon.
+Draft pa lang, mahalaga na ang bawat desisyon. Numbers don't lie.
+Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang numero.
+Draft pa lang, mahalaga na ang bawat desisyon. Tempo is king.
+Draft pa lang, mahalaga na ang bawat desisyon. Bantayan natin ang scoreboard.
+Draft pa lang, mahalaga na ang bawat desisyon. Data ang nagsasalita.
+Numbers check. Draft pa lang, mahalaga na ang bawat desisyon.
+Numbers check. Draft pa lang, mahalaga na ang bawat desisyon. Numbers don't lie.
+Numbers check. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang numero.
+Numbers check. Draft pa lang, mahalaga na ang bawat desisyon. Tempo is king.
+Numbers check. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan natin ang scoreboard.
+Numbers check. Draft pa lang, mahalaga na ang bawat desisyon. Data ang nagsasalita.
+Quick stat lang. Draft pa lang, mahalaga na ang bawat desisyon.
+Quick stat lang. Draft pa lang, mahalaga na ang bawat desisyon. Numbers don't lie.
+Quick stat lang. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang numero.
+Quick stat lang. Draft pa lang, mahalaga na ang bawat desisyon. Tempo is king.
+Quick stat lang. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan natin ang scoreboard.
+Quick stat lang. Draft pa lang, mahalaga na ang bawat desisyon. Data ang nagsasalita.
+Tingnan natin ang stats. Draft pa lang, mahalaga na ang bawat desisyon.
+Tingnan natin ang stats. Draft pa lang, mahalaga na ang bawat desisyon. Numbers don't lie.
+Tingnan natin ang stats. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang numero.
+Tingnan natin ang stats. Draft pa lang, mahalaga na ang bawat desisyon. Tempo is king.
+Tingnan natin ang stats. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Draft pa lang, mahalaga na ang bawat desisyon. Data ang nagsasalita.
+Ito ang numero. Draft pa lang, mahalaga na ang bawat desisyon.
+Ito ang numero. Draft pa lang, mahalaga na ang bawat desisyon. Numbers don't lie.
+Ito ang numero. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang numero.
+Ito ang numero. Draft pa lang, mahalaga na ang bawat desisyon. Tempo is king.
+Ito ang numero. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan natin ang scoreboard.
+Ito ang numero. Draft pa lang, mahalaga na ang bawat desisyon. Data ang nagsasalita.
+Data muna tayo. Draft pa lang, mahalaga na ang bawat desisyon.
+Data muna tayo. Draft pa lang, mahalaga na ang bawat desisyon. Numbers don't lie.
+Data muna tayo. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang numero.
+Data muna tayo. Draft pa lang, mahalaga na ang bawat desisyon. Tempo is king.
+Data muna tayo. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan natin ang scoreboard.
+Data muna tayo. Draft pa lang, mahalaga na ang bawat desisyon. Data ang nagsasalita.
+Tempo check. Draft pa lang, mahalaga na ang bawat desisyon.
+Tempo check. Draft pa lang, mahalaga na ang bawat desisyon. Numbers don't lie.
+Tempo check. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang numero.
+Tempo check. Draft pa lang, mahalaga na ang bawat desisyon. Tempo is king.
+Tempo check. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan natin ang scoreboard.
+Tempo check. Draft pa lang, mahalaga na ang bawat desisyon. Data ang nagsasalita.
+Okay, scoreboard. Draft pa lang, mahalaga na ang bawat desisyon.
+Okay, scoreboard. Draft pa lang, mahalaga na ang bawat desisyon. Numbers don't lie.
+Okay, scoreboard. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang numero.
+Okay, scoreboard. Draft pa lang, mahalaga na ang bawat desisyon. Tempo is king.
+Okay, scoreboard. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan natin ang scoreboard.
+Okay, scoreboard. Draft pa lang, mahalaga na ang bawat desisyon. Data ang nagsasalita.
+Sa record. Draft pa lang, mahalaga na ang bawat desisyon.
+Sa record. Draft pa lang, mahalaga na ang bawat desisyon. Numbers don't lie.
+Sa record. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang numero.
+Sa record. Draft pa lang, mahalaga na ang bawat desisyon. Tempo is king.
+Sa record. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan natin ang scoreboard.
+Sa record. Draft pa lang, mahalaga na ang bawat desisyon. Data ang nagsasalita.
+Sino kaya ang unang magpapakita ng diskarte?
+Sino kaya ang unang magpapakita ng diskarte? Numbers don't lie.
+Sino kaya ang unang magpapakita ng diskarte? Tandaan ang numero.
+Sino kaya ang unang magpapakita ng diskarte? Tempo is king.
+Sino kaya ang unang magpapakita ng diskarte? Bantayan natin ang scoreboard.
+Sino kaya ang unang magpapakita ng diskarte? Data ang nagsasalita.
+Numbers check. Sino kaya ang unang magpapakita ng diskarte?
+Numbers check. Sino kaya ang unang magpapakita ng diskarte? Numbers don't lie.
+Numbers check. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang numero.
+Numbers check. Sino kaya ang unang magpapakita ng diskarte? Tempo is king.
+Numbers check. Sino kaya ang unang magpapakita ng diskarte? Bantayan natin ang scoreboard.
+Numbers check. Sino kaya ang unang magpapakita ng diskarte? Data ang nagsasalita.
+Quick stat lang. Sino kaya ang unang magpapakita ng diskarte?
+Quick stat lang. Sino kaya ang unang magpapakita ng diskarte? Numbers don't lie.
+Quick stat lang. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang numero.
+Quick stat lang. Sino kaya ang unang magpapakita ng diskarte? Tempo is king.
+Quick stat lang. Sino kaya ang unang magpapakita ng diskarte? Bantayan natin ang scoreboard.
+Quick stat lang. Sino kaya ang unang magpapakita ng diskarte? Data ang nagsasalita.
+Tingnan natin ang stats. Sino kaya ang unang magpapakita ng diskarte?
+Tingnan natin ang stats. Sino kaya ang unang magpapakita ng diskarte? Numbers don't lie.
+Tingnan natin ang stats. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang numero.
+Tingnan natin ang stats. Sino kaya ang unang magpapakita ng diskarte? Tempo is king.
+Tingnan natin ang stats. Sino kaya ang unang magpapakita ng diskarte? Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Sino kaya ang unang magpapakita ng diskarte? Data ang nagsasalita.
+Ito ang numero. Sino kaya ang unang magpapakita ng diskarte?
+Ito ang numero. Sino kaya ang unang magpapakita ng diskarte? Numbers don't lie.
+Ito ang numero. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang numero.
+Ito ang numero. Sino kaya ang unang magpapakita ng diskarte? Tempo is king.
+Ito ang numero. Sino kaya ang unang magpapakita ng diskarte? Bantayan natin ang scoreboard.
+Ito ang numero. Sino kaya ang unang magpapakita ng diskarte? Data ang nagsasalita.
+Data muna tayo. Sino kaya ang unang magpapakita ng diskarte?
+Data muna tayo. Sino kaya ang unang magpapakita ng diskarte? Numbers don't lie.
+Data muna tayo. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang numero.
+Data muna tayo. Sino kaya ang unang magpapakita ng diskarte? Tempo is king.
+Data muna tayo. Sino kaya ang unang magpapakita ng diskarte? Bantayan natin ang scoreboard.
+Data muna tayo. Sino kaya ang unang magpapakita ng diskarte? Data ang nagsasalita.
+Tempo check. Sino kaya ang unang magpapakita ng diskarte?
+Tempo check. Sino kaya ang unang magpapakita ng diskarte? Numbers don't lie.
+Tempo check. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang numero.
+Tempo check. Sino kaya ang unang magpapakita ng diskarte? Tempo is king.
+Tempo check. Sino kaya ang unang magpapakita ng diskarte? Bantayan natin ang scoreboard.
+Tempo check. Sino kaya ang unang magpapakita ng diskarte? Data ang nagsasalita.
+Okay, scoreboard. Sino kaya ang unang magpapakita ng diskarte?
+Okay, scoreboard. Sino kaya ang unang magpapakita ng diskarte? Numbers don't lie.
+Okay, scoreboard. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang numero.
+Okay, scoreboard. Sino kaya ang unang magpapakita ng diskarte? Tempo is king.
+Okay, scoreboard. Sino kaya ang unang magpapakita ng diskarte? Bantayan natin ang scoreboard.
+Okay, scoreboard. Sino kaya ang unang magpapakita ng diskarte? Data ang nagsasalita.
+Sa record. Sino kaya ang unang magpapakita ng diskarte?
+Sa record. Sino kaya ang unang magpapakita ng diskarte? Numbers don't lie.
+Sa record. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang numero.
+Sa record. Sino kaya ang unang magpapakita ng diskarte? Tempo is king.
+Sa record. Sino kaya ang unang magpapakita ng diskarte? Bantayan natin ang scoreboard.
+Sa record. Sino kaya ang unang magpapakita ng diskarte? Data ang nagsasalita.
+Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Numbers don't lie.
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang numero.
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Tempo is king.
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan natin ang scoreboard.
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Data ang nagsasalita.
+Numbers check. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Numbers check. Game {gameNumber} ng {format} — {seriesScore} ang serye. Numbers don't lie.
+Numbers check. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang numero.
+Numbers check. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tempo is king.
+Numbers check. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan natin ang scoreboard.
+Numbers check. Game {gameNumber} ng {format} — {seriesScore} ang serye. Data ang nagsasalita.
+Quick stat lang. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Quick stat lang. Game {gameNumber} ng {format} — {seriesScore} ang serye. Numbers don't lie.
+Quick stat lang. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang numero.
+Quick stat lang. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tempo is king.
+Quick stat lang. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan natin ang scoreboard.
+Quick stat lang. Game {gameNumber} ng {format} — {seriesScore} ang serye. Data ang nagsasalita.
+Tingnan natin ang stats. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Tingnan natin ang stats. Game {gameNumber} ng {format} — {seriesScore} ang serye. Numbers don't lie.
+Tingnan natin ang stats. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang numero.
+Tingnan natin ang stats. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tempo is king.
+Tingnan natin ang stats. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan natin ang scoreboard.
+Tingnan natin ang stats. Game {gameNumber} ng {format} — {seriesScore} ang serye. Data ang nagsasalita.
+Ito ang numero. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Ito ang numero. Game {gameNumber} ng {format} — {seriesScore} ang serye. Numbers don't lie.
+Ito ang numero. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang numero.
+Ito ang numero. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tempo is king.
+Ito ang numero. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan natin ang scoreboard.
+Ito ang numero. Game {gameNumber} ng {format} — {seriesScore} ang serye. Data ang nagsasalita.
+Data muna tayo. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Data muna tayo. Game {gameNumber} ng {format} — {seriesScore} ang serye. Numbers don't lie.
+Data muna tayo. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang numero.
+Data muna tayo. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tempo is king.
+Data muna tayo. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan natin ang scoreboard.
+Data muna tayo. Game {gameNumber} ng {format} — {seriesScore} ang serye. Data ang nagsasalita.
+Tempo check. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Tempo check. Game {gameNumber} ng {format} — {seriesScore} ang serye. Numbers don't lie.
+Tempo check. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang numero.
+Tempo check. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tempo is king.
+Tempo check. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan natin ang scoreboard.
+Tempo check. Game {gameNumber} ng {format} — {seriesScore} ang serye. Data ang nagsasalita.
+Okay, scoreboard. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Okay, scoreboard. Game {gameNumber} ng {format} — {seriesScore} ang serye. Numbers don't lie.
+Okay, scoreboard. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang numero.
+Okay, scoreboard. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tempo is king.
+Okay, scoreboard. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan natin ang scoreboard.
+Okay, scoreboard. Game {gameNumber} ng {format} — {seriesScore} ang serye. Data ang nagsasalita.
+Sa record. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Sa record. Game {gameNumber} ng {format} — {seriesScore} ang serye. Numbers don't lie.
+Sa record. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang numero.
+Sa record. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tempo is king.
+Sa record. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan natin ang scoreboard.
+Sa record. Game {gameNumber} ng {format} — {seriesScore} ang serye. Data ang nagsasalita.
+
+══════ Game start ("Welcome sa Game …") — 540 lines ══════
+{seriesScore} ang serye — at magsisimula na ang bagong bilangan.
+{seriesScore} ang serye — at magsisimula na ang bagong bilangan. Numbers don't lie.
+{seriesScore} ang serye — at magsisimula na ang bagong bilangan. Tandaan ang numero.
+{seriesScore} ang serye — at magsisimula na ang bagong bilangan. Kitang-kita sa stats.
+{seriesScore} ang serye — at magsisimula na ang bagong bilangan. Data ang nagsasalita.
+{seriesScore} ang serye — at magsisimula na ang bagong bilangan. Ganyan ang numbers.
+Okay, scoreboard! {seriesScore} ang serye — at magsisimula na ang bagong bilangan.
+Okay, scoreboard! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Numbers don't lie.
+Okay, scoreboard! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Tandaan ang numero.
+Okay, scoreboard! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Kitang-kita sa stats.
+Okay, scoreboard! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Data ang nagsasalita.
+Okay, scoreboard! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Ganyan ang numbers.
+Ayan na! {seriesScore} ang serye — at magsisimula na ang bagong bilangan.
+Ayan na! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Numbers don't lie.
+Ayan na! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Tandaan ang numero.
+Ayan na! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Kitang-kita sa stats.
+Ayan na! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Data ang nagsasalita.
+Ayan na! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Ganyan ang numbers.
+Wow! {seriesScore} ang serye — at magsisimula na ang bagong bilangan.
+Wow! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Numbers don't lie.
+Wow! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Tandaan ang numero.
+Wow! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Kitang-kita sa stats.
+Wow! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Data ang nagsasalita.
+Wow! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Ganyan ang numbers.
+Check! {seriesScore} ang serye — at magsisimula na ang bagong bilangan.
+Check! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Numbers don't lie.
+Check! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Tandaan ang numero.
+Check! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Kitang-kita sa stats.
+Check! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Data ang nagsasalita.
+Check! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Ganyan ang numbers.
+Para sa record. {seriesScore} ang serye — at magsisimula na ang bagong bilangan.
+Para sa record. {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Numbers don't lie.
+Para sa record. {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Tandaan ang numero.
+Para sa record. {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Kitang-kita sa stats.
+Para sa record. {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Data ang nagsasalita.
+Para sa record. {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Ganyan ang numbers.
+Uy! {seriesScore} ang serye — at magsisimula na ang bagong bilangan.
+Uy! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Numbers don't lie.
+Uy! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Tandaan ang numero.
+Uy! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Kitang-kita sa stats.
+Uy! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Data ang nagsasalita.
+Uy! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Ganyan ang numbers.
+Numbers time! {seriesScore} ang serye — at magsisimula na ang bagong bilangan.
+Numbers time! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Numbers don't lie.
+Numbers time! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Tandaan ang numero.
+Numbers time! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Kitang-kita sa stats.
+Numbers time! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Data ang nagsasalita.
+Numbers time! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Ganyan ang numbers.
+Ito na! {seriesScore} ang serye — at magsisimula na ang bagong bilangan.
+Ito na! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Numbers don't lie.
+Ito na! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Tandaan ang numero.
+Ito na! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Kitang-kita sa stats.
+Ito na! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Data ang nagsasalita.
+Ito na! {seriesScore} ang serye — at magsisimula na ang bagong bilangan. Ganyan ang numbers.
+Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills!
+Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Numbers don't lie.
+Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Tandaan ang numero.
+Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Kitang-kita sa stats.
+Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Data ang nagsasalita.
+Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Ganyan ang numbers.
+Okay, scoreboard! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills!
+Okay, scoreboard! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Numbers don't lie.
+Okay, scoreboard! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Tandaan ang numero.
+Okay, scoreboard! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Kitang-kita sa stats.
+Okay, scoreboard! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Data ang nagsasalita.
+Okay, scoreboard! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Ganyan ang numbers.
+Ayan na! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills!
+Ayan na! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Numbers don't lie.
+Ayan na! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Tandaan ang numero.
+Ayan na! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Kitang-kita sa stats.
+Ayan na! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Data ang nagsasalita.
+Ayan na! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Ganyan ang numbers.
+Wow! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills!
+Wow! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Numbers don't lie.
+Wow! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Tandaan ang numero.
+Wow! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Kitang-kita sa stats.
+Wow! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Data ang nagsasalita.
+Wow! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Ganyan ang numbers.
+Check! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills!
+Check! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Numbers don't lie.
+Check! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Tandaan ang numero.
+Check! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Kitang-kita sa stats.
+Check! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Data ang nagsasalita.
+Check! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Ganyan ang numbers.
+Para sa record. Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills!
+Para sa record. Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Numbers don't lie.
+Para sa record. Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Tandaan ang numero.
+Para sa record. Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Kitang-kita sa stats.
+Para sa record. Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Data ang nagsasalita.
+Para sa record. Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Ganyan ang numbers.
+Uy! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills!
+Uy! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Numbers don't lie.
+Uy! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Tandaan ang numero.
+Uy! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Kitang-kita sa stats.
+Uy! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Data ang nagsasalita.
+Uy! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Ganyan ang numbers.
+Numbers time! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills!
+Numbers time! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Numbers don't lie.
+Numbers time! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Tandaan ang numero.
+Numbers time! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Kitang-kita sa stats.
+Numbers time! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Data ang nagsasalita.
+Numbers time! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Ganyan ang numbers.
+Ito na! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills!
+Ito na! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Numbers don't lie.
+Ito na! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Tandaan ang numero.
+Ito na! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Kitang-kita sa stats.
+Ito na! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Data ang nagsasalita.
+Ito na! Kailangan ng {winsNeeded} panalo para makuha ang serye. Abangan natin ang unang kills! Ganyan ang numbers.
+Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team.
+Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Numbers don't lie.
+Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Tandaan ang numero.
+Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Kitang-kita sa stats.
+Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Data ang nagsasalita.
+Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Ganyan ang numbers.
+Okay, scoreboard! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team.
+Okay, scoreboard! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Numbers don't lie.
+Okay, scoreboard! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Tandaan ang numero.
+Okay, scoreboard! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Kitang-kita sa stats.
+Okay, scoreboard! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Data ang nagsasalita.
+Okay, scoreboard! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Ganyan ang numbers.
+Ayan na! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team.
+Ayan na! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Numbers don't lie.
+Ayan na! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Tandaan ang numero.
+Ayan na! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Kitang-kita sa stats.
+Ayan na! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Data ang nagsasalita.
+Ayan na! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Ganyan ang numbers.
+Wow! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team.
+Wow! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Numbers don't lie.
+Wow! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Tandaan ang numero.
+Wow! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Kitang-kita sa stats.
+Wow! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Data ang nagsasalita.
+Wow! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Ganyan ang numbers.
+Check! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team.
+Check! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Numbers don't lie.
+Check! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Tandaan ang numero.
+Check! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Kitang-kita sa stats.
+Check! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Data ang nagsasalita.
+Check! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Ganyan ang numbers.
+Para sa record. Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team.
+Para sa record. Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Numbers don't lie.
+Para sa record. Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Tandaan ang numero.
+Para sa record. Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Kitang-kita sa stats.
+Para sa record. Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Data ang nagsasalita.
+Para sa record. Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Ganyan ang numbers.
+Uy! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team.
+Uy! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Numbers don't lie.
+Uy! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Tandaan ang numero.
+Uy! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Kitang-kita sa stats.
+Uy! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Data ang nagsasalita.
+Uy! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Ganyan ang numbers.
+Numbers time! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team.
+Numbers time! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Numbers don't lie.
+Numbers time! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Tandaan ang numero.
+Numbers time! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Kitang-kita sa stats.
+Numbers time! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Data ang nagsasalita.
+Numbers time! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Ganyan ang numbers.
+Ito na! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team.
+Ito na! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Numbers don't lie.
+Ito na! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Tandaan ang numero.
+Ito na! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Kitang-kita sa stats.
+Ito na! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Data ang nagsasalita.
+Ito na! Zero-zero ang kills, pantay ang gold — malinis na simula para sa dalawang team. Ganyan ang numbers.
+Simula na ang Game {gameNumber}.
+Simula na ang Game {gameNumber}. Numbers don't lie.
+Simula na ang Game {gameNumber}. Tandaan ang numero.
+Simula na ang Game {gameNumber}. Kitang-kita sa stats.
+Simula na ang Game {gameNumber}. Data ang nagsasalita.
+Simula na ang Game {gameNumber}. Ganyan ang numbers.
+Okay, scoreboard! Simula na ang Game {gameNumber}.
+Okay, scoreboard! Simula na ang Game {gameNumber}. Numbers don't lie.
+Okay, scoreboard! Simula na ang Game {gameNumber}. Tandaan ang numero.
+Okay, scoreboard! Simula na ang Game {gameNumber}. Kitang-kita sa stats.
+Okay, scoreboard! Simula na ang Game {gameNumber}. Data ang nagsasalita.
+Okay, scoreboard! Simula na ang Game {gameNumber}. Ganyan ang numbers.
+Ayan na! Simula na ang Game {gameNumber}.
+Ayan na! Simula na ang Game {gameNumber}. Numbers don't lie.
+Ayan na! Simula na ang Game {gameNumber}. Tandaan ang numero.
+Ayan na! Simula na ang Game {gameNumber}. Kitang-kita sa stats.
+Ayan na! Simula na ang Game {gameNumber}. Data ang nagsasalita.
+Ayan na! Simula na ang Game {gameNumber}. Ganyan ang numbers.
+Wow! Simula na ang Game {gameNumber}.
+Wow! Simula na ang Game {gameNumber}. Numbers don't lie.
+Wow! Simula na ang Game {gameNumber}. Tandaan ang numero.
+Wow! Simula na ang Game {gameNumber}. Kitang-kita sa stats.
+Wow! Simula na ang Game {gameNumber}. Data ang nagsasalita.
+Wow! Simula na ang Game {gameNumber}. Ganyan ang numbers.
+Check! Simula na ang Game {gameNumber}.
+Check! Simula na ang Game {gameNumber}. Numbers don't lie.
+Check! Simula na ang Game {gameNumber}. Tandaan ang numero.
+Check! Simula na ang Game {gameNumber}. Kitang-kita sa stats.
+Check! Simula na ang Game {gameNumber}. Data ang nagsasalita.
+Check! Simula na ang Game {gameNumber}. Ganyan ang numbers.
+Para sa record. Simula na ang Game {gameNumber}.
+Para sa record. Simula na ang Game {gameNumber}. Numbers don't lie.
+Para sa record. Simula na ang Game {gameNumber}. Tandaan ang numero.
+Para sa record. Simula na ang Game {gameNumber}. Kitang-kita sa stats.
+Para sa record. Simula na ang Game {gameNumber}. Data ang nagsasalita.
+Para sa record. Simula na ang Game {gameNumber}. Ganyan ang numbers.
+Uy! Simula na ang Game {gameNumber}.
+Uy! Simula na ang Game {gameNumber}. Numbers don't lie.
+Uy! Simula na ang Game {gameNumber}. Tandaan ang numero.
+Uy! Simula na ang Game {gameNumber}. Kitang-kita sa stats.
+Uy! Simula na ang Game {gameNumber}. Data ang nagsasalita.
+Uy! Simula na ang Game {gameNumber}. Ganyan ang numbers.
+Numbers time! Simula na ang Game {gameNumber}.
+Numbers time! Simula na ang Game {gameNumber}. Numbers don't lie.
+Numbers time! Simula na ang Game {gameNumber}. Tandaan ang numero.
+Numbers time! Simula na ang Game {gameNumber}. Kitang-kita sa stats.
+Numbers time! Simula na ang Game {gameNumber}. Data ang nagsasalita.
+Numbers time! Simula na ang Game {gameNumber}. Ganyan ang numbers.
+Ito na! Simula na ang Game {gameNumber}.
+Ito na! Simula na ang Game {gameNumber}. Numbers don't lie.
+Ito na! Simula na ang Game {gameNumber}. Tandaan ang numero.
+Ito na! Simula na ang Game {gameNumber}. Kitang-kita sa stats.
+Ito na! Simula na ang Game {gameNumber}. Data ang nagsasalita.
+Ito na! Simula na ang Game {gameNumber}. Ganyan ang numbers.
+Kumpleto na ang draft — laban na!
+Kumpleto na ang draft — laban na! Numbers don't lie.
+Kumpleto na ang draft — laban na! Tandaan ang numero.
+Kumpleto na ang draft — laban na! Kitang-kita sa stats.
+Kumpleto na ang draft — laban na! Data ang nagsasalita.
+Kumpleto na ang draft — laban na! Ganyan ang numbers.
+Okay, scoreboard! Kumpleto na ang draft — laban na!
+Okay, scoreboard! Kumpleto na ang draft — laban na! Numbers don't lie.
+Okay, scoreboard! Kumpleto na ang draft — laban na! Tandaan ang numero.
+Okay, scoreboard! Kumpleto na ang draft — laban na! Kitang-kita sa stats.
+Okay, scoreboard! Kumpleto na ang draft — laban na! Data ang nagsasalita.
+Okay, scoreboard! Kumpleto na ang draft — laban na! Ganyan ang numbers.
+Ayan na! Kumpleto na ang draft — laban na!
+Ayan na! Kumpleto na ang draft — laban na! Numbers don't lie.
+Ayan na! Kumpleto na ang draft — laban na! Tandaan ang numero.
+Ayan na! Kumpleto na ang draft — laban na! Kitang-kita sa stats.
+Ayan na! Kumpleto na ang draft — laban na! Data ang nagsasalita.
+Ayan na! Kumpleto na ang draft — laban na! Ganyan ang numbers.
+Wow! Kumpleto na ang draft — laban na!
+Wow! Kumpleto na ang draft — laban na! Numbers don't lie.
+Wow! Kumpleto na ang draft — laban na! Tandaan ang numero.
+Wow! Kumpleto na ang draft — laban na! Kitang-kita sa stats.
+Wow! Kumpleto na ang draft — laban na! Data ang nagsasalita.
+Wow! Kumpleto na ang draft — laban na! Ganyan ang numbers.
+Check! Kumpleto na ang draft — laban na!
+Check! Kumpleto na ang draft — laban na! Numbers don't lie.
+Check! Kumpleto na ang draft — laban na! Tandaan ang numero.
+Check! Kumpleto na ang draft — laban na! Kitang-kita sa stats.
+Check! Kumpleto na ang draft — laban na! Data ang nagsasalita.
+Check! Kumpleto na ang draft — laban na! Ganyan ang numbers.
+Para sa record. Kumpleto na ang draft — laban na!
+Para sa record. Kumpleto na ang draft — laban na! Numbers don't lie.
+Para sa record. Kumpleto na ang draft — laban na! Tandaan ang numero.
+Para sa record. Kumpleto na ang draft — laban na! Kitang-kita sa stats.
+Para sa record. Kumpleto na ang draft — laban na! Data ang nagsasalita.
+Para sa record. Kumpleto na ang draft — laban na! Ganyan ang numbers.
+Uy! Kumpleto na ang draft — laban na!
+Uy! Kumpleto na ang draft — laban na! Numbers don't lie.
+Uy! Kumpleto na ang draft — laban na! Tandaan ang numero.
+Uy! Kumpleto na ang draft — laban na! Kitang-kita sa stats.
+Uy! Kumpleto na ang draft — laban na! Data ang nagsasalita.
+Uy! Kumpleto na ang draft — laban na! Ganyan ang numbers.
+Numbers time! Kumpleto na ang draft — laban na!
+Numbers time! Kumpleto na ang draft — laban na! Numbers don't lie.
+Numbers time! Kumpleto na ang draft — laban na! Tandaan ang numero.
+Numbers time! Kumpleto na ang draft — laban na! Kitang-kita sa stats.
+Numbers time! Kumpleto na ang draft — laban na! Data ang nagsasalita.
+Numbers time! Kumpleto na ang draft — laban na! Ganyan ang numbers.
+Ito na! Kumpleto na ang draft — laban na!
+Ito na! Kumpleto na ang draft — laban na! Numbers don't lie.
+Ito na! Kumpleto na ang draft — laban na! Tandaan ang numero.
+Ito na! Kumpleto na ang draft — laban na! Kitang-kita sa stats.
+Ito na! Kumpleto na ang draft — laban na! Data ang nagsasalita.
+Ito na! Kumpleto na ang draft — laban na! Ganyan ang numbers.
+{blueTeam} sa blue side, {redTeam} sa red side.
+{blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+{blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+{blueTeam} sa blue side, {redTeam} sa red side. Kitang-kita sa stats.
+{blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+{blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang numbers.
+Okay, scoreboard! {blueTeam} sa blue side, {redTeam} sa red side.
+Okay, scoreboard! {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Okay, scoreboard! {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Okay, scoreboard! {blueTeam} sa blue side, {redTeam} sa red side. Kitang-kita sa stats.
+Okay, scoreboard! {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Okay, scoreboard! {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang numbers.
+Ayan na! {blueTeam} sa blue side, {redTeam} sa red side.
+Ayan na! {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Ayan na! {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Ayan na! {blueTeam} sa blue side, {redTeam} sa red side. Kitang-kita sa stats.
+Ayan na! {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Ayan na! {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang numbers.
+Wow! {blueTeam} sa blue side, {redTeam} sa red side.
+Wow! {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Wow! {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Wow! {blueTeam} sa blue side, {redTeam} sa red side. Kitang-kita sa stats.
+Wow! {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Wow! {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang numbers.
+Check! {blueTeam} sa blue side, {redTeam} sa red side.
+Check! {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Check! {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Check! {blueTeam} sa blue side, {redTeam} sa red side. Kitang-kita sa stats.
+Check! {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Check! {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang numbers.
+Para sa record. {blueTeam} sa blue side, {redTeam} sa red side.
+Para sa record. {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Para sa record. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Para sa record. {blueTeam} sa blue side, {redTeam} sa red side. Kitang-kita sa stats.
+Para sa record. {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Para sa record. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang numbers.
+Uy! {blueTeam} sa blue side, {redTeam} sa red side.
+Uy! {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Uy! {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Uy! {blueTeam} sa blue side, {redTeam} sa red side. Kitang-kita sa stats.
+Uy! {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Uy! {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang numbers.
+Numbers time! {blueTeam} sa blue side, {redTeam} sa red side.
+Numbers time! {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Numbers time! {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Numbers time! {blueTeam} sa blue side, {redTeam} sa red side. Kitang-kita sa stats.
+Numbers time! {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Numbers time! {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang numbers.
+Ito na! {blueTeam} sa blue side, {redTeam} sa red side.
+Ito na! {blueTeam} sa blue side, {redTeam} sa red side. Numbers don't lie.
+Ito na! {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang numero.
+Ito na! {blueTeam} sa blue side, {redTeam} sa red side. Kitang-kita sa stats.
+Ito na! {blueTeam} sa blue side, {redTeam} sa red side. Data ang nagsasalita.
+Ito na! {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang numbers.
+Abangan natin ang unang engagement.
+Abangan natin ang unang engagement. Numbers don't lie.
+Abangan natin ang unang engagement. Tandaan ang numero.
+Abangan natin ang unang engagement. Kitang-kita sa stats.
+Abangan natin ang unang engagement. Data ang nagsasalita.
+Abangan natin ang unang engagement. Ganyan ang numbers.
+Okay, scoreboard! Abangan natin ang unang engagement.
+Okay, scoreboard! Abangan natin ang unang engagement. Numbers don't lie.
+Okay, scoreboard! Abangan natin ang unang engagement. Tandaan ang numero.
+Okay, scoreboard! Abangan natin ang unang engagement. Kitang-kita sa stats.
+Okay, scoreboard! Abangan natin ang unang engagement. Data ang nagsasalita.
+Okay, scoreboard! Abangan natin ang unang engagement. Ganyan ang numbers.
+Ayan na! Abangan natin ang unang engagement.
+Ayan na! Abangan natin ang unang engagement. Numbers don't lie.
+Ayan na! Abangan natin ang unang engagement. Tandaan ang numero.
+Ayan na! Abangan natin ang unang engagement. Kitang-kita sa stats.
+Ayan na! Abangan natin ang unang engagement. Data ang nagsasalita.
+Ayan na! Abangan natin ang unang engagement. Ganyan ang numbers.
+Wow! Abangan natin ang unang engagement.
+Wow! Abangan natin ang unang engagement. Numbers don't lie.
+Wow! Abangan natin ang unang engagement. Tandaan ang numero.
+Wow! Abangan natin ang unang engagement. Kitang-kita sa stats.
+Wow! Abangan natin ang unang engagement. Data ang nagsasalita.
+Wow! Abangan natin ang unang engagement. Ganyan ang numbers.
+Check! Abangan natin ang unang engagement.
+Check! Abangan natin ang unang engagement. Numbers don't lie.
+Check! Abangan natin ang unang engagement. Tandaan ang numero.
+Check! Abangan natin ang unang engagement. Kitang-kita sa stats.
+Check! Abangan natin ang unang engagement. Data ang nagsasalita.
+Check! Abangan natin ang unang engagement. Ganyan ang numbers.
+Para sa record. Abangan natin ang unang engagement.
+Para sa record. Abangan natin ang unang engagement. Numbers don't lie.
+Para sa record. Abangan natin ang unang engagement. Tandaan ang numero.
+Para sa record. Abangan natin ang unang engagement. Kitang-kita sa stats.
+Para sa record. Abangan natin ang unang engagement. Data ang nagsasalita.
+Para sa record. Abangan natin ang unang engagement. Ganyan ang numbers.
+Uy! Abangan natin ang unang engagement.
+Uy! Abangan natin ang unang engagement. Numbers don't lie.
+Uy! Abangan natin ang unang engagement. Tandaan ang numero.
+Uy! Abangan natin ang unang engagement. Kitang-kita sa stats.
+Uy! Abangan natin ang unang engagement. Data ang nagsasalita.
+Uy! Abangan natin ang unang engagement. Ganyan ang numbers.
+Numbers time! Abangan natin ang unang engagement.
+Numbers time! Abangan natin ang unang engagement. Numbers don't lie.
+Numbers time! Abangan natin ang unang engagement. Tandaan ang numero.
+Numbers time! Abangan natin ang unang engagement. Kitang-kita sa stats.
+Numbers time! Abangan natin ang unang engagement. Data ang nagsasalita.
+Numbers time! Abangan natin ang unang engagement. Ganyan ang numbers.
+Ito na! Abangan natin ang unang engagement.
+Ito na! Abangan natin ang unang engagement. Numbers don't lie.
+Ito na! Abangan natin ang unang engagement. Tandaan ang numero.
+Ito na! Abangan natin ang unang engagement. Kitang-kita sa stats.
+Ito na! Abangan natin ang unang engagement. Data ang nagsasalita.
+Ito na! Abangan natin ang unang engagement. Ganyan ang numbers.
+Bagong laro, bagong pagkakataon.
+Bagong laro, bagong pagkakataon. Numbers don't lie.
+Bagong laro, bagong pagkakataon. Tandaan ang numero.
+Bagong laro, bagong pagkakataon. Kitang-kita sa stats.
+Bagong laro, bagong pagkakataon. Data ang nagsasalita.
+Bagong laro, bagong pagkakataon. Ganyan ang numbers.
+Okay, scoreboard! Bagong laro, bagong pagkakataon.
+Okay, scoreboard! Bagong laro, bagong pagkakataon. Numbers don't lie.
+Okay, scoreboard! Bagong laro, bagong pagkakataon. Tandaan ang numero.
+Okay, scoreboard! Bagong laro, bagong pagkakataon. Kitang-kita sa stats.
+Okay, scoreboard! Bagong laro, bagong pagkakataon. Data ang nagsasalita.
+Okay, scoreboard! Bagong laro, bagong pagkakataon. Ganyan ang numbers.
+Ayan na! Bagong laro, bagong pagkakataon.
+Ayan na! Bagong laro, bagong pagkakataon. Numbers don't lie.
+Ayan na! Bagong laro, bagong pagkakataon. Tandaan ang numero.
+Ayan na! Bagong laro, bagong pagkakataon. Kitang-kita sa stats.
+Ayan na! Bagong laro, bagong pagkakataon. Data ang nagsasalita.
+Ayan na! Bagong laro, bagong pagkakataon. Ganyan ang numbers.
+Wow! Bagong laro, bagong pagkakataon.
+Wow! Bagong laro, bagong pagkakataon. Numbers don't lie.
+Wow! Bagong laro, bagong pagkakataon. Tandaan ang numero.
+Wow! Bagong laro, bagong pagkakataon. Kitang-kita sa stats.
+Wow! Bagong laro, bagong pagkakataon. Data ang nagsasalita.
+Wow! Bagong laro, bagong pagkakataon. Ganyan ang numbers.
+Check! Bagong laro, bagong pagkakataon.
+Check! Bagong laro, bagong pagkakataon. Numbers don't lie.
+Check! Bagong laro, bagong pagkakataon. Tandaan ang numero.
+Check! Bagong laro, bagong pagkakataon. Kitang-kita sa stats.
+Check! Bagong laro, bagong pagkakataon. Data ang nagsasalita.
+Check! Bagong laro, bagong pagkakataon. Ganyan ang numbers.
+Para sa record. Bagong laro, bagong pagkakataon.
+Para sa record. Bagong laro, bagong pagkakataon. Numbers don't lie.
+Para sa record. Bagong laro, bagong pagkakataon. Tandaan ang numero.
+Para sa record. Bagong laro, bagong pagkakataon. Kitang-kita sa stats.
+Para sa record. Bagong laro, bagong pagkakataon. Data ang nagsasalita.
+Para sa record. Bagong laro, bagong pagkakataon. Ganyan ang numbers.
+Uy! Bagong laro, bagong pagkakataon.
+Uy! Bagong laro, bagong pagkakataon. Numbers don't lie.
+Uy! Bagong laro, bagong pagkakataon. Tandaan ang numero.
+Uy! Bagong laro, bagong pagkakataon. Kitang-kita sa stats.
+Uy! Bagong laro, bagong pagkakataon. Data ang nagsasalita.
+Uy! Bagong laro, bagong pagkakataon. Ganyan ang numbers.
+Numbers time! Bagong laro, bagong pagkakataon.
+Numbers time! Bagong laro, bagong pagkakataon. Numbers don't lie.
+Numbers time! Bagong laro, bagong pagkakataon. Tandaan ang numero.
+Numbers time! Bagong laro, bagong pagkakataon. Kitang-kita sa stats.
+Numbers time! Bagong laro, bagong pagkakataon. Data ang nagsasalita.
+Numbers time! Bagong laro, bagong pagkakataon. Ganyan ang numbers.
+Ito na! Bagong laro, bagong pagkakataon.
+Ito na! Bagong laro, bagong pagkakataon. Numbers don't lie.
+Ito na! Bagong laro, bagong pagkakataon. Tandaan ang numero.
+Ito na! Bagong laro, bagong pagkakataon. Kitang-kita sa stats.
+Ito na! Bagong laro, bagong pagkakataon. Data ang nagsasalita.
+Ito na! Bagong laro, bagong pagkakataon. Ganyan ang numbers.
+{seriesScore} ang serye.
+{seriesScore} ang serye. Numbers don't lie.
+{seriesScore} ang serye. Tandaan ang numero.
+{seriesScore} ang serye. Kitang-kita sa stats.
+{seriesScore} ang serye. Data ang nagsasalita.
+{seriesScore} ang serye. Ganyan ang numbers.
+Okay, scoreboard! {seriesScore} ang serye.
+Okay, scoreboard! {seriesScore} ang serye. Numbers don't lie.
+Okay, scoreboard! {seriesScore} ang serye. Tandaan ang numero.
+Okay, scoreboard! {seriesScore} ang serye. Kitang-kita sa stats.
+Okay, scoreboard! {seriesScore} ang serye. Data ang nagsasalita.
+Okay, scoreboard! {seriesScore} ang serye. Ganyan ang numbers.
+Ayan na! {seriesScore} ang serye.
+Ayan na! {seriesScore} ang serye. Numbers don't lie.
+Ayan na! {seriesScore} ang serye. Tandaan ang numero.
+Ayan na! {seriesScore} ang serye. Kitang-kita sa stats.
+Ayan na! {seriesScore} ang serye. Data ang nagsasalita.
+Ayan na! {seriesScore} ang serye. Ganyan ang numbers.
+Wow! {seriesScore} ang serye.
+Wow! {seriesScore} ang serye. Numbers don't lie.
+Wow! {seriesScore} ang serye. Tandaan ang numero.
+Wow! {seriesScore} ang serye. Kitang-kita sa stats.
+Wow! {seriesScore} ang serye. Data ang nagsasalita.
+Wow! {seriesScore} ang serye. Ganyan ang numbers.
+Check! {seriesScore} ang serye.
+Check! {seriesScore} ang serye. Numbers don't lie.
+Check! {seriesScore} ang serye. Tandaan ang numero.
+Check! {seriesScore} ang serye. Kitang-kita sa stats.
+Check! {seriesScore} ang serye. Data ang nagsasalita.
+Check! {seriesScore} ang serye. Ganyan ang numbers.
+Para sa record. {seriesScore} ang serye.
+Para sa record. {seriesScore} ang serye. Numbers don't lie.
+Para sa record. {seriesScore} ang serye. Tandaan ang numero.
+Para sa record. {seriesScore} ang serye. Kitang-kita sa stats.
+Para sa record. {seriesScore} ang serye. Data ang nagsasalita.
+Para sa record. {seriesScore} ang serye. Ganyan ang numbers.
+Uy! {seriesScore} ang serye.
+Uy! {seriesScore} ang serye. Numbers don't lie.
+Uy! {seriesScore} ang serye. Tandaan ang numero.
+Uy! {seriesScore} ang serye. Kitang-kita sa stats.
+Uy! {seriesScore} ang serye. Data ang nagsasalita.
+Uy! {seriesScore} ang serye. Ganyan ang numbers.
+Numbers time! {seriesScore} ang serye.
+Numbers time! {seriesScore} ang serye. Numbers don't lie.
+Numbers time! {seriesScore} ang serye. Tandaan ang numero.
+Numbers time! {seriesScore} ang serye. Kitang-kita sa stats.
+Numbers time! {seriesScore} ang serye. Data ang nagsasalita.
+Numbers time! {seriesScore} ang serye. Ganyan ang numbers.
+Ito na! {seriesScore} ang serye.
+Ito na! {seriesScore} ang serye. Numbers don't lie.
+Ito na! {seriesScore} ang serye. Tandaan ang numero.
+Ito na! {seriesScore} ang serye. Kitang-kita sa stats.
+Ito na! {seriesScore} ang serye. Data ang nagsasalita.
+Ito na! {seriesScore} ang serye. Ganyan ang numbers.
+Good luck sa parehong team.
+Good luck sa parehong team. Numbers don't lie.
+Good luck sa parehong team. Tandaan ang numero.
+Good luck sa parehong team. Kitang-kita sa stats.
+Good luck sa parehong team. Data ang nagsasalita.
+Good luck sa parehong team. Ganyan ang numbers.
+Okay, scoreboard! Good luck sa parehong team.
+Okay, scoreboard! Good luck sa parehong team. Numbers don't lie.
+Okay, scoreboard! Good luck sa parehong team. Tandaan ang numero.
+Okay, scoreboard! Good luck sa parehong team. Kitang-kita sa stats.
+Okay, scoreboard! Good luck sa parehong team. Data ang nagsasalita.
+Okay, scoreboard! Good luck sa parehong team. Ganyan ang numbers.
+Ayan na! Good luck sa parehong team.
+Ayan na! Good luck sa parehong team. Numbers don't lie.
+Ayan na! Good luck sa parehong team. Tandaan ang numero.
+Ayan na! Good luck sa parehong team. Kitang-kita sa stats.
+Ayan na! Good luck sa parehong team. Data ang nagsasalita.
+Ayan na! Good luck sa parehong team. Ganyan ang numbers.
+Wow! Good luck sa parehong team.
+Wow! Good luck sa parehong team. Numbers don't lie.
+Wow! Good luck sa parehong team. Tandaan ang numero.
+Wow! Good luck sa parehong team. Kitang-kita sa stats.
+Wow! Good luck sa parehong team. Data ang nagsasalita.
+Wow! Good luck sa parehong team. Ganyan ang numbers.
+Check! Good luck sa parehong team.
+Check! Good luck sa parehong team. Numbers don't lie.
+Check! Good luck sa parehong team. Tandaan ang numero.
+Check! Good luck sa parehong team. Kitang-kita sa stats.
+Check! Good luck sa parehong team. Data ang nagsasalita.
+Check! Good luck sa parehong team. Ganyan ang numbers.
+Para sa record. Good luck sa parehong team.
+Para sa record. Good luck sa parehong team. Numbers don't lie.
+Para sa record. Good luck sa parehong team. Tandaan ang numero.
+Para sa record. Good luck sa parehong team. Kitang-kita sa stats.
+Para sa record. Good luck sa parehong team. Data ang nagsasalita.
+Para sa record. Good luck sa parehong team. Ganyan ang numbers.
+Uy! Good luck sa parehong team.
+Uy! Good luck sa parehong team. Numbers don't lie.
+Uy! Good luck sa parehong team. Tandaan ang numero.
+Uy! Good luck sa parehong team. Kitang-kita sa stats.
+Uy! Good luck sa parehong team. Data ang nagsasalita.
+Uy! Good luck sa parehong team. Ganyan ang numbers.
+Numbers time! Good luck sa parehong team.
+Numbers time! Good luck sa parehong team. Numbers don't lie.
+Numbers time! Good luck sa parehong team. Tandaan ang numero.
+Numbers time! Good luck sa parehong team. Kitang-kita sa stats.
+Numbers time! Good luck sa parehong team. Data ang nagsasalita.
+Numbers time! Good luck sa parehong team. Ganyan ang numbers.
+Ito na! Good luck sa parehong team.
+Ito na! Good luck sa parehong team. Numbers don't lie.
+Ito na! Good luck sa parehong team. Tandaan ang numero.
+Ito na! Good luck sa parehong team. Kitang-kita sa stats.
+Ito na! Good luck sa parehong team. Data ang nagsasalita.
+Ito na! Good luck sa parehong team. Ganyan ang numbers.
+
+══════ Going to break — 60 lines ══════
+Habang break, tandaan: {seriesScore} ang serye.
+Habang break, tandaan: {seriesScore} ang serye. Numbers don't lie.
+Habang break, tandaan: {seriesScore} ang serye. Tandaan ang numero.
+Habang break, tandaan: {seriesScore} ang serye. Tempo is king.
+Habang break, tandaan: {seriesScore} ang serye. Bantayan natin ang scoreboard.
+Habang break, tandaan: {seriesScore} ang serye. Data ang nagsasalita.
+Pagbalik natin, bantayan ang numbers — doon makikita kung sino ang nag-adjust.
+Pagbalik natin, bantayan ang numbers — doon makikita kung sino ang nag-adjust. Numbers don't lie.
+Pagbalik natin, bantayan ang numbers — doon makikita kung sino ang nag-adjust. Tandaan ang numero.
+Pagbalik natin, bantayan ang numbers — doon makikita kung sino ang nag-adjust. Tempo is king.
+Pagbalik natin, bantayan ang numbers — doon makikita kung sino ang nag-adjust. Bantayan natin ang scoreboard.
+Pagbalik natin, bantayan ang numbers — doon makikita kung sino ang nag-adjust. Data ang nagsasalita.
+Kailangan ng {winsNeeded} panalo para makuha ang serye — tandaan niyo yan habang naghihintay.
+Kailangan ng {winsNeeded} panalo para makuha ang serye — tandaan niyo yan habang naghihintay. Numbers don't lie.
+Kailangan ng {winsNeeded} panalo para makuha ang serye — tandaan niyo yan habang naghihintay. Tandaan ang numero.
+Kailangan ng {winsNeeded} panalo para makuha ang serye — tandaan niyo yan habang naghihintay. Tempo is king.
+Kailangan ng {winsNeeded} panalo para makuha ang serye — tandaan niyo yan habang naghihintay. Bantayan natin ang scoreboard.
+Kailangan ng {winsNeeded} panalo para makuha ang serye — tandaan niyo yan habang naghihintay. Data ang nagsasalita.
+Sulit ang paghihintay, pangako yan.
+Sulit ang paghihintay, pangako yan. Numbers don't lie.
+Sulit ang paghihintay, pangako yan. Tandaan ang numero.
+Sulit ang paghihintay, pangako yan. Tempo is king.
+Sulit ang paghihintay, pangako yan. Bantayan natin ang scoreboard.
+Sulit ang paghihintay, pangako yan. Data ang nagsasalita.
+Babalik kami agad, mga ka-TCC.
+Babalik kami agad, mga ka-TCC. Numbers don't lie.
+Babalik kami agad, mga ka-TCC. Tandaan ang numero.
+Babalik kami agad, mga ka-TCC. Tempo is king.
+Babalik kami agad, mga ka-TCC. Bantayan natin ang scoreboard.
+Babalik kami agad, mga ka-TCC. Data ang nagsasalita.
+Panoorin muna natin ang mga highlight habang naghihintay.
+Panoorin muna natin ang mga highlight habang naghihintay. Numbers don't lie.
+Panoorin muna natin ang mga highlight habang naghihintay. Tandaan ang numero.
+Panoorin muna natin ang mga highlight habang naghihintay. Tempo is king.
+Panoorin muna natin ang mga highlight habang naghihintay. Bantayan natin ang scoreboard.
+Panoorin muna natin ang mga highlight habang naghihintay. Data ang nagsasalita.
+Kuha muna kayo ng tubig at meryenda.
+Kuha muna kayo ng tubig at meryenda. Numbers don't lie.
+Kuha muna kayo ng tubig at meryenda. Tandaan ang numero.
+Kuha muna kayo ng tubig at meryenda. Tempo is king.
+Kuha muna kayo ng tubig at meryenda. Bantayan natin ang scoreboard.
+Kuha muna kayo ng tubig at meryenda. Data ang nagsasalita.
+Babalik kami pagkalipas ng {breakMins} minuto.
+Babalik kami pagkalipas ng {breakMins} minuto. Numbers don't lie.
+Babalik kami pagkalipas ng {breakMins} minuto. Tandaan ang numero.
+Babalik kami pagkalipas ng {breakMins} minuto. Tempo is king.
+Babalik kami pagkalipas ng {breakMins} minuto. Bantayan natin ang scoreboard.
+Babalik kami pagkalipas ng {breakMins} minuto. Data ang nagsasalita.
+Huwag kayong aalis — babalik kami agad.
+Huwag kayong aalis — babalik kami agad. Numbers don't lie.
+Huwag kayong aalis — babalik kami agad. Tandaan ang numero.
+Huwag kayong aalis — babalik kami agad. Tempo is king.
+Huwag kayong aalis — babalik kami agad. Bantayan natin ang scoreboard.
+Huwag kayong aalis — babalik kami agad. Data ang nagsasalita.
+Salamat sa patuloy na panonood, mga ka-TCC.
+Salamat sa patuloy na panonood, mga ka-TCC. Numbers don't lie.
+Salamat sa patuloy na panonood, mga ka-TCC. Tandaan ang numero.
+Salamat sa patuloy na panonood, mga ka-TCC. Tempo is king.
+Salamat sa patuloy na panonood, mga ka-TCC. Bantayan natin ang scoreboard.
+Salamat sa patuloy na panonood, mga ka-TCC. Data ang nagsasalita.
 
 ══════ Game intro — 528 lines ══════
 Series check: {seriesScore}. Kailangan ng {winsNeeded} panalo para umabante.

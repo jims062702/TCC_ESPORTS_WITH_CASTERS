@@ -11,9 +11,9 @@ import {
   writeBatch,
   type DocumentReference,
 } from 'firebase/firestore';
-import type { Highlight, HeroPortrait, Match, Player, SiteSettings, Team, Tournament } from '@/types';
+import type { Highlight, HeroPortrait, Match, Player, SiteSettings, Team, Tournament, GameRecord } from '@/types';
 import { COL, SETTINGS_DOC, db } from './firebase';
-import { applySeriesResult, generateBracket, revertSeriesResult } from './bracket';
+import { applySeriesResult, generateBracket, revertSeriesResult, generateSeedingRound, pickOpponent } from './bracket';
 import { DEFAULT_SPELL_BY_ROLE, heroSlug } from '@/lib/constants';
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -72,8 +72,40 @@ export async function deleteTournament(id: string) {
 }
 
 /** (Re)generate the bracket: removes old matches & games of this tournament first. */
-export async function generateTournamentBracket(t: Tournament, seededTeamIds: string[]) {
+/**
+ * Generate the bracket. With `keepSeeding`, the finished seeding round (and its
+ * game stats) is kept and the bracket is built from its results.
+ */
+export async function generateTournamentBracket(t: Tournament, seededTeamIds: string[], opts: { keepSeeding?: boolean } = {}) {
   const matches = generateBracket(t, seededTeamIds);
+  const [oldMatches, oldGames] = await Promise.all([
+    getDocs(query(collection(db, COL.matches), where('tournamentId', '==', t.id))),
+    getDocs(query(collection(db, COL.games), where('tournamentId', '==', t.id))),
+  ]);
+  const keep = new Set(opts.keepSeeding ? oldMatches.docs.filter((d) => (d.data() as Match).bracket === 'SEED').map((d) => d.id) : []);
+  await commitInChunks([
+    ...oldMatches.docs.filter((d) => !keep.has(d.id)).map((d) => (b: ReturnType<typeof writeBatch>) => b.delete(d.ref)),
+    ...oldGames.docs.filter((d) => !keep.has((d.data() as GameRecord).matchId)).map((d) => (b: ReturnType<typeof writeBatch>) => b.delete(d.ref)),
+  ]);
+  await commitInChunks([
+    ...matches.map((m) => (b: ReturnType<typeof writeBatch>) => b.set(doc(db, COL.matches, m.id), strip(m))),
+    (b) =>
+      b.update(doc(db, COL.tournaments, t.id), {
+        teamIds: seededTeamIds,
+        bracketGenerated: true,
+        seeding: false,
+        opponentPicks: {},
+        status: 'ongoing',
+        championTeamId: null,
+        finalsMvp: null,
+      }),
+  ]);
+  return matches.length;
+}
+
+/** Start a seeding round: every team plays one Bo1 game; the results seed the bracket. Clears old matches. */
+export async function startSeedingRound(t: Tournament, teamIds: string[]) {
+  const seedMatches = generateSeedingRound(t, teamIds);
   const [oldMatches, oldGames] = await Promise.all([
     getDocs(query(collection(db, COL.matches), where('tournamentId', '==', t.id))),
     getDocs(query(collection(db, COL.games), where('tournamentId', '==', t.id))),
@@ -83,16 +115,10 @@ export async function generateTournamentBracket(t: Tournament, seededTeamIds: st
     ...oldGames.docs.map((d) => (b: ReturnType<typeof writeBatch>) => b.delete(d.ref)),
   ]);
   await commitInChunks([
-    ...matches.map((m) => (b: ReturnType<typeof writeBatch>) => b.set(doc(db, COL.matches, m.id), strip(m))),
-    (b) =>
-      b.update(doc(db, COL.tournaments, t.id), {
-        teamIds: seededTeamIds,
-        bracketGenerated: true,
-        status: 'ongoing',
-        championTeamId: null,
-      }),
+    ...seedMatches.map((m) => (b: ReturnType<typeof writeBatch>) => b.set(doc(db, COL.matches, m.id), strip(m))),
+    (b) => b.update(doc(db, COL.tournaments, t.id), { teamIds, seeding: true, bracketGenerated: false, opponentPicks: {}, status: 'ongoing', championTeamId: null, finalsMvp: null }),
   ]);
-  return matches.length;
+  return seedMatches.length;
 }
 
 export const updateMatch = (id: string, patch: Partial<Match>) =>
@@ -101,6 +127,24 @@ export const updateMatch = (id: string, patch: Partial<Match>) =>
 async function loadMatches(tournamentId: string): Promise<Match[]> {
   const snap = await getDocs(query(collection(db, COL.matches), where('tournamentId', '==', tournamentId)));
   return snap.docs.map((d) => ({ id: d.id, ...d.data() }) as Match);
+}
+
+/**
+ * A seeding winner picks its first-round opponent (any team except itself).
+ * The bracket swaps the teams; both teams are then locked for later picks.
+ */
+export async function pickSeedingOpponent(t: Tournament, winnerId: string, pickedId: string) {
+  const picks = t.opponentPicks ?? {};
+  if (picks[winnerId]) throw new Error('This team has already picked its opponent.');
+  const locked = new Set([...Object.keys(picks), ...Object.values(picks)]);
+  if (locked.has(pickedId)) throw new Error('That team is already locked in by another pick.');
+  const matches = await loadMatches(t.id);
+  const changed = pickOpponent(matches, winnerId, pickedId);
+  await commitInChunks([
+    ...changed.map((m) => (b: ReturnType<typeof writeBatch>) => b.set(doc(db, COL.matches, m.id), strip(m))),
+    (b) => b.update(doc(db, COL.tournaments, t.id), { opponentPicks: { ...picks, [winnerId]: pickedId } }),
+  ]);
+  return changed.length;
 }
 
 /** Manually report a finished series (when it wasn't run through the live controller). */
@@ -143,6 +187,7 @@ export const deleteHeroPortrait = (name: string) => deleteDoc(doc(db, COL.heroes
 
 export const DEFAULT_SETTINGS: Omit<SiteSettings, 'updatedAt'> = {
   featuredTournamentId: null,
+  featuredTitle: '',
   heroSlides: [],
   streamUrl: '',
   facebookUrl: '',

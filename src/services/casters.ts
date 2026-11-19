@@ -42,7 +42,7 @@ export const CASTERS: CasterPersona[] = [
       'Calm big-brother analyst. After the hype dies down he slows the pace and explains WHY a play worked: "Tingnan niyo...", "Dito makikita natin...", "Kaya importante yung vision...", "Ito yung tinatawag nating disiplina." Talks rotations, wave clear, vision, power spikes and setups. Never shouts, never guesses facts.',
     catchphrases: ['Tingnan niyo yung rotation dito.', 'Ito yung tinatawag nating disiplina.', 'Vision muna bago objective.'],
     color: '#3ef0d8',
-    leadsOn: ['IDLE_BANTER', 'OBJECTIVE_CONTEST', 'DRAFT_COMPLETE', 'GAME_INTRO'],
+    leadsOn: ['IDLE_BANTER', 'OBJECTIVE_CONTEST', 'DRAFT_COMPLETE', 'GAME_INTRO', 'DRAFT_START', 'DRAFT_TALK'],
     voice: { preferred: ['James', 'Angelo', 'Guy', 'Andrew', 'Christopher', 'Brian', 'David', 'Mark', 'Daniel'], pitch: 0.92, rate: 1.0 },
   },
   {
@@ -55,7 +55,7 @@ export const CASTERS: CasterPersona[] = [
       'Explosive play-by-play caster who builds a crescendo during fights: short bursts, stretched words and big calls — "GRABEEE!", "PATAY!", "ANG LAKAS!", "WALA NANG TAKAS!", "ITO NA, ITO NA!", "HINDI PA TAPOS!", "LINIS!". Paints the action like a movie director calling the shot, but every name and number stays exact.',
     catchphrases: ['GRABE! Ano ba yan!', 'ITO NA, ITO NA!', 'Pang-highlight reel yan!'],
     color: '#f8312f',
-    leadsOn: ['SAVAGE', 'MANIAC', 'TRIPLE_KILL', 'LORD', 'INSTANT_REPLAY', 'TURTLE', 'FIRST_BLOOD', 'SERIES_VICTORY'],
+    leadsOn: ['SAVAGE', 'MANIAC', 'TRIPLE_KILL', 'LORD', 'INSTANT_REPLAY', 'GAME_START', 'DRAFT_PICK', 'TURTLE', 'FIRST_BLOOD', 'SERIES_VICTORY'],
     voice: { preferred: ['Angelo', 'James', 'Eric', 'Roger', 'Steffan', 'Guy', 'Mark', 'David', 'Alex'], pitch: 1.08, rate: 1.12 },
   },
   {
@@ -94,7 +94,7 @@ export const CASTERS: CasterPersona[] = [
       'Former-coach energy. Reads the draft like a chessboard: "Kung ako ang coach...", "Malinaw ang win condition nila", "Ito ang dahilan kung bakit nila pinili yan." Talks adjustments between games and whether the game plan is working — only about heroes actually listed in the facts.',
     catchphrases: ['Kung ako ang coach, masaya ako dito.', 'Malinaw ang win condition.', 'Draft pa lang, kalahati na ng laban.'],
     color: '#fbbf24',
-    leadsOn: ['DRAFT_COMPLETE', 'GAME_INTRO', 'GAME_RESULT'],
+    leadsOn: ['DRAFT_BAN', 'DRAFT_START', 'DRAFT_COMPLETE', 'DRAFT_TALK', 'GAME_INTRO', 'GAME_RESULT'],
     voice: { preferred: ['Angelo', 'James', 'Andrew', 'Brian', 'Christopher', 'Guy'], pitch: 0.96, rate: 1.0 },
   },
   {
@@ -107,7 +107,7 @@ export const CASTERS: CasterPersona[] = [
       'Warm veteran color commentator who tells the story of the series: "Ito ang klase ng serye na pag-uusapan natin...", "Bilog ang bola", "Isusulat ito sa kasaysayan". Builds stakes and emotion, respects both teams, and never invents history that is not in the facts.',
     catchphrases: ['Bilog ang bola, mga ka-TCC.', 'Isusulat ito sa kasaysayan.', 'Ito ang esports na gusto natin.'],
     color: '#fb923c',
-    leadsOn: ['SERIES_VICTORY', 'GAME_RESULT', 'GAME_INTRO', 'IDLE_BANTER'],
+    leadsOn: ['SERIES_VICTORY', 'GAME_RESULT', 'GAME_INTRO', 'BREAK_START', 'IDLE_BANTER'],
     voice: { preferred: ['James', 'Angelo', 'Guy', 'Roger', 'David', 'Christopher'], pitch: 0.84, rate: 0.95 },
   },
   {
@@ -133,7 +133,7 @@ export const CASTERS: CasterPersona[] = [
       'Bright, welcoming show host. Opens games and celebrates results: "Magandang gabi, mga ka-TCC!", "Ingay naman diyan!", "I-comment niyo na kung sino ang manok niyo!". Hypes the crowd and both teams, congratulates winners warmly, keeps every score exact.',
     catchphrases: ['Ingay naman diyan, mga ka-TCC!', 'Comment na kung sino ang manok niyo!', 'Palakpakan natin sila!'],
     color: '#c084fc',
-    leadsOn: ['GAME_INTRO', 'SERIES_VICTORY', 'GAME_RESULT'],
+    leadsOn: ['DRAFT_START', 'GAME_START', 'BREAK_START', 'GAME_INTRO', 'SERIES_VICTORY', 'GAME_RESULT'],
     voice: { preferred: ['Rosa', 'Blessica', 'Jenny', 'Aria', 'Michelle', 'Emma'], pitch: 1.12, rate: 1.08 },
   },
 ];

@@ -10,18 +10,22 @@ import { Logo, TeamLogo } from '@/components/Brand';
 import { SeriesPips } from '@/components/game';
 import { formatDuration } from '@/lib/utils';
 import { CasterStrip, Glass, OverlayStage, SIDE_COLOR, flag, useQuery } from './OverlayKit';
+import { useBreakMusic } from './useBroadcastSound';
 
 /**
  * OBS Browser Source: /overlay/break — full-screen break scene.
  * Loops the highlight playlist (<video autoplay muted loop>) with the series
  * score, next game info and an optional countdown. ?sound=1 plays clip audio.
+ * Plays the generated 5-minute break track (loops) during breaks — ?music=0 turns it off, ?vol=0.5.
  */
 export default function BreakOverlay() {
-  const { live } = useOverlayLive();
+  const { live, demo } = useOverlayLive();
   const highlights = useHighlights();
   const now = useNow(1000);
   const q = useQuery();
   const sound = flag(q, 'sound', false);
+  const vol = Math.min(1, Math.max(0, Number(q.get('vol') ?? 0.8) || 0));
+  useBreakMusic(flag(q, 'music', !demo) && vol > 0 && Boolean(live.matchId || flag(q, 'always', false)) && (live.phase === 'break' || flag(q, 'always', false)), vol);
   const playlist = useMemo(() => highlights.data.filter((h) => h.inPlaylist), [highlights.data]);
   const [index, setIndex] = useState(0);
   const clip = playlist.length ? playlist[index % playlist.length] : null;

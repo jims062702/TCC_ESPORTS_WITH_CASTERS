@@ -11,7 +11,7 @@ import { cn } from '@/lib/utils';
 export const OVERLAYS = [
   { path: '/overlay/draft', name: 'Drafting overlay', desc: 'Bans, picks, timer, series score (transparent)' },
   { path: '/overlay/hud', name: 'In-game HUD', desc: 'Kills, objectives, gold, spells, KDA, casters + captions' },
-  { path: '/overlay/replay', name: 'Instant replay frame', desc: 'INSTANT REPLAY watermark + hype narration captions' },
+  { path: '/overlay/replay', name: 'Instant replay frame', desc: 'INSTANT REPLAY frame + small LIVE game window on the right + narration captions' },
   { path: '/overlay/break', name: 'Break loop', desc: 'Auto-playing highlight playlist for breaks (full screen)' },
   { path: '/overlay/casters', name: 'Caster lower-third', desc: 'Active caster pair + live subtitles only' },
 ];
@@ -96,6 +96,13 @@ export default function Dashboard() {
               </div>
             ))}
           </div>
+          <div className="mt-4 rounded-xl border border-brand/40 bg-brand/5 p-3 text-xs leading-relaxed">
+            <p className="font-semibold text-fg">Skip the copy-paste</p>
+            <p className="mt-1 text-muted">
+              <strong className="text-fg">Live Controller → OBS</strong>: connect once, then <strong className="text-fg">Create all scenes in OBS</strong> (or download the scene file for{' '}
+              <strong className="text-fg">Scene Collection → Import</strong>). OBS then switches scenes by itself as you run the show.
+            </p>
+          </div>
           <div className="mt-4 rounded-xl border border-amber-500/40 bg-amber-500/10 p-3 text-xs leading-relaxed">
             <p className="font-semibold text-fg">Black screen in OBS?</p>
             <ul className="mt-1 list-disc space-y-0.5 pl-4 text-muted">
@@ -112,7 +119,7 @@ export default function Dashboard() {
             </ul>
           </div>
           <p className="mt-2 text-xs text-muted">
-            More flags: <code>?preview=1</code> (checkerboard background), <code>?sound=1</code> (break loop audio), HUD <code>?players=0</code> / <code>?casters=0</code> / <code>?captions=0</code>.
+            More flags: <code>?preview=1</code> (checkerboard background), <code>?sound=0</code> (mute stingers), <code>?music=0</code> (no break music), <code>?vol=0.5</code>, HUD <code>?players=0</code> / <code>?casters=0</code> / <code>?captions=0</code>.
           </p>
         </Card>
 

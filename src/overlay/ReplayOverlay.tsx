@@ -4,11 +4,51 @@ import { useOverlayLive } from './demo';
 import { sideTeam } from '@/services/facts';
 import { Logo, TeamLogo } from '@/components/Brand';
 import { CasterStrip, Glass, OverlayStage, SIDE_COLOR, flag, useQuery } from './OverlayKit';
+import { REPLAY_PIP } from './layout';
+
+/**
+ * Frame for the live In-game HUD while the replay plays. Everything is drawn
+ * OUTSIDE the rectangle (outline, glow, LIVE badge) so the picture inside is
+ * never covered. In OBS, nest the In-game HUD scene at exactly REPLAY_PIP (the
+ * controller's "Set up live PiP in OBS" button does it automatically).
+ */
+function LivePip({ placeholder }: { placeholder: boolean }) {
+  const { x, y, w, h } = REPLAY_PIP;
+  return (
+    <motion.div
+      className="absolute"
+      style={{ left: x, top: y, width: w, height: h }}
+      initial={{ opacity: 0, x: 60 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ type: 'spring', damping: 20, delay: 0.15 }}
+    >
+      <div className="absolute -top-11 left-0 flex items-center gap-2">
+        <span className="flex items-center gap-1.5 rounded-md bg-crimson-600 px-2.5 py-1 font-cond text-lg font-bold uppercase tracking-widest text-white shadow-lg">
+          <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-white" /> Live
+        </span>
+        <span className="rounded-md bg-black/70 px-2.5 py-1 font-cond text-lg font-semibold uppercase tracking-widest text-white/90">In-game</span>
+      </div>
+      <div
+        className="absolute inset-0 rounded-sm"
+        style={{ outline: '4px solid rgba(255,255,255,0.95)', outlineOffset: 0, boxShadow: '0 0 0 8px rgba(13,11,14,0.55), 0 10px 40px rgba(0,0,0,0.7), 0 0 30px rgba(248,49,47,0.45)' }}
+      />
+      {placeholder && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-[repeating-linear-gradient(-45deg,rgba(255,255,255,0.06)_0_14px,transparent_14px_28px)] text-center">
+          <p className="font-display text-4xl uppercase leading-none text-white/80">In-game HUD · live</p>
+          <p className="mt-1 font-cond text-base uppercase tracking-wider text-white/50">
+            OBS scene here · x {x} · y {y} · {w}×{h}
+          </p>
+        </div>
+      )}
+    </motion.div>
+  );
+}
 
 /**
  * OBS Browser Source: /overlay/replay — place it ABOVE the replay Media Source
- * in your "Instant Replay" scene (or on top of everything). It is fully
- * transparent until the controller triggers an instant replay.
+ * (and the nested In-game HUD scene) in your "Instant Replay" scene. It is fully
+ * transparent until the controller triggers an instant replay. ?pip=0 hides the
+ * live-game frame.
  */
 export default function ReplayOverlay() {
   const { live, demo } = useOverlayLive();
@@ -54,6 +94,9 @@ export default function ReplayOverlay() {
             <div className="absolute right-14 top-12 opacity-90">
               <Logo size={120} className="drop-shadow-[0_0_24px_rgba(248,49,47,0.6)]" />
             </div>
+
+            {/* Live In-game HUD picture-in-picture (the nested OBS scene sits in this transparent window) */}
+            {flag(q, 'pip') && <LivePip placeholder={demo || flag(q, 'preview', false)} />}
 
             {/* Lower third */}
             <motion.div initial={{ y: 200 }} animate={{ y: 0 }} transition={{ type: 'spring', damping: 20, delay: 0.1 }} className="absolute bottom-16 left-14 max-w-[1100px]">

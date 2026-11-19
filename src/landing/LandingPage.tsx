@@ -4,6 +4,7 @@ import { BookOpen, Facebook, GitBranch, MessageCircle, Users } from 'lucide-reac
 import type { Match } from '@/types';
 import { useGames, useHighlights, useIndex, useMatches, usePlayers, useSettings, useTeams, useTournaments } from '@/hooks/useFirestore';
 import { computeLeaderboard, computeStandings } from '@/services/stats';
+import { featuredHeadline } from '@/services/featured';
 import { isFirebaseConfigured } from '@/services/firebase';
 import { BracketView } from '@/components/Bracket';
 import { Avatar, Logo, TeamLogo } from '@/components/Brand';
@@ -37,6 +38,10 @@ export default function LandingPage() {
       null
     );
   }, [tournaments.data, picked, settings.data.featuredTournamentId]);
+
+  // Home headline: a tournament picked by the visitor or matched in Settings shows its own
+  // name (so renames follow); otherwise the custom title typed in Settings; else the tournament.
+  const headline = featuredHeadline({ picked, featuredTournamentId: settings.data.featuredTournamentId, featuredTitle: settings.data.featuredTitle, tournament });
 
   const matches = useMatches(tournament?.id ?? null);
   const games = useGames(tournament?.id ?? null);
@@ -99,9 +104,9 @@ export default function LandingPage() {
 
       {/* Ambient page background (grid + crimson glow from the badge) */}
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-        <div className="grid-bg absolute inset-0 opacity-30 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
-        <div className="absolute -top-40 left-[70%] h-[640px] w-[640px] -translate-x-1/2 rounded-full bg-brand/15 blur-[120px]" />
-        <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-accent/10 blur-[100px]" />
+        <div className="grid-bg absolute inset-0 opacity-20 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)] dark:opacity-30" />
+        <div className="absolute -top-40 left-[70%] h-[640px] w-[640px] -translate-x-1/2 rounded-full bg-brand/[0.06] blur-[120px] dark:bg-brand/15" />
+        <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-accent/[0.06] blur-[100px] dark:bg-accent/10" />
       </div>
 
       {/* ── Home ───────────────────────────────────────────────────────── */}
@@ -130,7 +135,7 @@ export default function LandingPage() {
           </Notice>
         )}
         <div className="flex flex-1 items-center">
-          <Hero tournament={tournament} settings={settings.data} liveMatch={liveMatch} teams={teamIndex} stats={stats} />
+          <Hero tournament={tournament} settings={settings.data} liveMatch={liveMatch} teams={teamIndex} stats={stats} title={headline} />
         </div>
       </FullSection>
 
@@ -141,7 +146,7 @@ export default function LandingPage() {
 
       {/* ── Matches ────────────────────────────────────────────────────── */}
       <FullSection id="matches" eyebrow="Schedule & Results" title="Matches" actions={tournamentPicker}>
-        {loading ? loadingState : <MatchesSection matches={matches.data} teams={teamIndex} onSelect={setSelected} />}
+        {loading ? loadingState : <MatchesSection matches={matches.data} teams={teamIndex} onSelect={setSelected} facebookUrl={settings.data.facebookUrl} />}
       </FullSection>
 
       {/* ── Bracket ────────────────────────────────────────────────────── */}
@@ -149,7 +154,7 @@ export default function LandingPage() {
         {loading ? (
           loadingState
         ) : matches.data.length ? (
-          <BracketView matches={matches.data} teams={teamIndex} type={tournament?.type ?? 'single'} onSelect={setSelected} />
+          <BracketView matches={matches.data} teams={teamIndex} type={tournament?.type ?? 'single'} onSelect={setSelected} finalsMvp={tournament?.finalsMvp} title={tournament?.name} />
         ) : (
           <EmptyState icon={<GitBranch className="h-8 w-8" />} title="Bracket coming soon">
             The organisers haven&apos;t generated the bracket yet.
@@ -243,7 +248,7 @@ export default function LandingPage() {
         )}
       </FullSection>
 
-      <MatchModal match={selected ? (matches.data.find((m) => m.id === selected.id) ?? selected) : null} onClose={() => setSelected(null)} teams={teamIndex} games={games.data} />
+      <MatchModal match={selected ? (matches.data.find((m) => m.id === selected.id) ?? selected) : null} onClose={() => setSelected(null)} teams={teamIndex} games={games.data} facebookUrl={settings.data.facebookUrl} />
     </div>
   );
 }

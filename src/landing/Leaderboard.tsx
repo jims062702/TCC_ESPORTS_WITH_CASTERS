@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { ArrowDown, ArrowUp, BarChart3, Crown, Droplet, Flame, Shell, Skull, Swords, Target } from 'lucide-react';
+import { ArrowDown, ArrowUp, Award, BarChart3, Crown, Droplet, Flame, Shell, Skull, Swords, Target } from 'lucide-react';
 import type { Player, Team } from '@/types';
 import { rankBy, type LeaderboardKey, type PlayerAggregate } from '@/services/stats';
 import { Avatar, TeamLogo } from '@/components/Brand';
@@ -12,6 +12,8 @@ const COLUMNS: { key: LeaderboardKey; label: string; title: string }[] = [
   { key: 'd', label: 'D', title: 'Deaths' },
   { key: 'a', label: 'A', title: 'Assists' },
   { key: 'kda', label: 'KDA', title: '(Kills + Assists) / Deaths' },
+  { key: 'tp', label: 'TP%', title: 'Average teamfight participation' },
+  { key: 'mvps', label: 'MVP', title: 'Post-match MVPs' },
   { key: 'fb', label: 'FB', title: 'First Bloods' },
   { key: 'dk', label: '2K', title: 'Double Kills' },
   { key: 'tk', label: '3K', title: 'Triple Kills' },
@@ -23,6 +25,7 @@ const COLUMNS: { key: LeaderboardKey; label: string; title: string }[] = [
 
 const SPOTLIGHT: { key: LeaderboardKey; label: string; icon: typeof Crown }[] = [
   { key: 'kda', label: 'Best KDA', icon: BarChart3 },
+  { key: 'mvps', label: 'Most MVPs', icon: Award },
   { key: 'k', label: 'Most kills', icon: Swords },
   { key: 'fb', label: 'First Blood king', icon: Droplet },
   { key: 'savage', label: 'Most Savages', icon: Flame },
@@ -55,7 +58,7 @@ export function Leaderboard({ rows, players, teams }: { rows: PlayerAggregate[];
 
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-7">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
         {SPOTLIGHT.map((s) => {
           const top = rankBy(rows, s.key)[0];
           const value = top ? (s.key === 'kda' ? top.kda.toFixed(2) : top[s.key]) : 0;
@@ -125,7 +128,7 @@ export function Leaderboard({ rows, players, teams }: { rows: PlayerAggregate[];
                     </td>
                     {COLUMNS.map((c) => (
                       <td key={c.key} className={cn('px-2 py-2.5 text-center tabular', sort.key === c.key ? 'font-bold text-fg' : 'text-muted')}>
-                        {c.key === 'kda' ? r.kda.toFixed(2) : r[c.key]}
+                        {c.key === 'kda' ? r.kda.toFixed(2) : c.key === 'tp' ? (r.tp < 0 ? '—' : `${r.tp}%`) : r[c.key]}
                       </td>
                     ))}
                   </tr>

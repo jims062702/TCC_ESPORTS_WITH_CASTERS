@@ -94,14 +94,25 @@ Alternative: `npx vercel` from this folder, then `npx vercel --prod`.
 
 ## 6. OBS Studio setup
 
+### Fastest: connect OBS and let the controller do it
+1. OBS 28+ → **Tools → WebSocket Server Settings** → enable (port 4455) → **Show Connect Info** → copy the password.
+2. **Admin → Live Controller → OBS** card → paste → **Connect** (auto-reconnects next time).
+3. **Create all scenes in OBS** — builds *Game Feed*, *Draft*, *In-game HUD*, *Instant Replay* (with the live HUD window), *Break* and *Casters* with every overlay inside. Or **Download scene file** and in OBS use **Scene Collection → Import**.
+4. Put your game capture in **Game Feed** once (Draft and In-game HUD nest it).
+
+After that OBS follows the controller: Go live / next draft → **Draft**, Start game → **In-game HUD**, Instant replay → **Instant Replay** → back to **In-game HUD**, Go to break → **Break**.
+
+### Sound effects & break music
+The overlays generate their own audio (original, royalty-free): stingers on draft start, game start, into the replay and back to the game, and an intense 140 BPM, exactly 5-minute break track that loops on long breaks. Keep **Control audio via OBS** on the browser sources (automatic setup does it). `?sound=0` mutes an overlay, `?music=0` turns off break music, `?vol=0.5` sets the level. Preview them in **Live Controller → OBS → Sound check**.
+
 ### Browser sources (1920×1080)
 Copy the URLs from **Admin → Dashboard** (they use your deployed domain).
 
 | URL | Scene | Notes |
 |---|---|---|
 | `/overlay/draft` | Draft | Team names, logos, 10-ban draft (bans, picks, hero portraits), live timer ring, series score, caster names + captions, Game Intro banner |
-| `/overlay/hud` | Gameplay | Top scoreboard (kills, Turtles, Lords, gold-diff bar, series pips), player columns (photo, hero, K/D/A, battle-spell cooldown ring), event banners **with the player's photo**, caster strip + live subtitles |
-| `/overlay/replay` | Instant Replay (above the replay Media Source) | Transparent until a replay is triggered → INSTANT REPLAY frame, headline/description, progress bar, captions |
+| `/overlay/hud` | In-game HUD | Top scoreboard (kills, Turtles, Lords, gold-diff bar, series pips), player columns (photo, hero, K/D/A, battle-spell cooldown ring), event banners **with the player's photo**, caster strip + live subtitles |
+| `/overlay/replay` | Instant Replay (above the live PiP and the replay Media Source) | Transparent until a replay is triggered → INSTANT REPLAY frame, headline/description, progress bar, captions, and a **LIVE game window on the right** (picture-in-picture) |
 | `/overlay/break` | Break | Full-screen `<video autoplay muted loop>` highlight playlist, countdown, series card, "now playing" |
 | `/overlay/casters` | Desk / caster cam | Active caster pair + live subtitles only |
 
@@ -110,14 +121,17 @@ Tips:
 - Query flags: `?demo=1` (sample data for positioning — remove before the show), `?preview=1` (checkerboard background), `?always=1` (show outside its phase), HUD: `?players=0`, `?casters=0`, `?captions=0`, `?top=0`; break: `?sound=1` (play clip audio).
 
 ### Caster voices → stream audio
-Open **Admin → Caster Booth** in **Microsoft Edge** on the streaming PC and press **Start casting engine**. Edge ships free natural Philippine voices (en-PH *James/Rosa*, fil-PH *Angelo/Blessica*) that the booth assigns automatically. In OBS add **Application Audio Capture** → the Edge window (or use Desktop Audio). Keep only one booth open; a Firestore transaction prevents two booths from voicing the same event anyway.
+Open the admin in **Microsoft Edge** on the streaming PC and press **Start** in the casters pill (bottom-right of every admin page) or in **Caster Booth**. One tab is enough — the casting engine keeps running while you use the Live Controller. Edge ships free natural Philippine voices (en-PH *James/Rosa*, fil-PH *Angelo/Blessica*) that the booth assigns automatically. In OBS add **Application Audio Capture** → the Edge window (or use Desktop Audio). Keep only one booth open; a Firestore transaction prevents two booths from voicing the same event anyway.
 
 ### Instant replay (10 seconds)
+The saved clip is stretched over the whole canvas automatically (OBS often records it at 1280×720 while the canvas is 1920×1080). Tip: replays show what went out on stream, so avoid triggering a second replay within 10 seconds of the first.
+
 1. OBS → **Settings → Output → Replay Buffer**: enable, **Maximum Replay Time 10 s**. Start the Replay Buffer.
 2. Create a scene **Instant Replay** with a **Media Source** named **Replay Media**, and put the `/overlay/replay` browser source above it.
-3. Option A (automatic): OBS 28+ → **Tools → WebSocket Server Settings** → enable (note the password). In **Live Controller → Instant replay → OBS**, connect. One click then saves the buffer, loads the clip, cuts to the replay scene, plays it and cuts back.
+3. Option A (automatic): OBS 28+ → **Tools → WebSocket Server Settings** → enable (note the password). In **Live Controller → Instant replay → OBS**, connect. One click then saves the buffer, loads the clip, cuts to the replay scene, plays it and cuts back to your **In-game HUD** scene as soon as the clip ends (or after the replay length, whichever comes first). **End replay → In-game HUD** cuts back early.
    Option B (manual): press your Replay Buffer hotkey and switch scenes yourself — the overlay and casters still run from the controller.
-4. Upload good replays in **Media & Replays** (folder "replays") to add them to the break loop.
+4. **Live In-game HUD picture-in-picture:** in **Live Controller → Instant replay → OBS**, pick your *In-game HUD scene* (game capture + `/overlay/hud`) and press **Set up live PiP in OBS**. It nests that scene in the replay scene, fits it into the overlay's LIVE window (right side, 576×324 on a 1080p canvas, scaled automatically for other canvas sizes) and layers it under the replay overlay — so the live game *with its HUD* stays visible during the replay. Manual alternative: in the replay scene **+ → Scene → In-game HUD** → *Edit Transform* → position 1288, 220 → bounding box *Scale to inner bounds* 576×324; order top → bottom: `/overlay/replay`, In-game HUD, replay media. `?pip=0` hides the frame.
+5. Upload good replays in **Media & Replays** (folder "replays") to add them to the break loop.
 
 ---
 
@@ -130,13 +144,21 @@ Open **Admin → Caster Booth** in **Microsoft Edge** on the streaming PC and pr
 
 ## 8. Match-day workflow
 
-1. **Teams & Rosters** — logos, players (photo, IGN, role, battle spell, starter/sub). *Dashboard → Load sample data* creates 8 demo teams and a double-elimination bracket.
-2. **Tournaments** — create, seed teams, choose single/double elimination and formats (default Bo3, final Bo5), **Generate bracket** (byes go to top seeds). Click any match to schedule it, change its format, report a result, or **Go live**.
+1. **Teams & Rosters** — logos, an optional **coach** (shown on the draft overlay), up to **7 players** (photo, IGN, role, battle spell, default starter, optional signature heroes). *Dashboard → Load sample data* creates 8 demo teams and a double-elimination bracket.
+2. **Tournaments** — create, add teams, choose single/double elimination and formats (default Bo3, final Bo5). Either **Generate bracket** from your seed order (byes go to top seeds) or play a **Seeding round first**: teams are drawn into one-game (Bo1) matches — every team plays once — and **Generate bracket from seeding** puts the winners on the top seeds (ties: kill difference, then the quicker win). Seeding losses never eliminate anyone. After the seeding round, **seeding winners pick their opponent** (any team except themselves — winners or losers): the first-round matchups swap automatically, and a matchup locks once its draft starts. The bracket ends in a **CHAMPION** slot with the **Finals MVP**; match cards show their scheduled date & time; **Print bracket** prints it in high contrast, fitted to the page width (long brackets continue on the next page). Click any match to schedule it, change its format, report a result, or **Go live**.
 3. **Live Controller**
-   - *Draft*: type a hero + Enter to lock the highlighted slot (MLBB 10-ban order), timer start/pause/reset, undo, click a slot to fix it. Finishing the draft queues the draft breakdown.
-   - *In-game*: click a player, then **First Blood / Double / Triple / Maniac / Savage** (each adds +1 kill and shows a banner with the player's photo). **Turtle / Lord / Buff** per side show "TURTLE SLAIN" / "LORD SLAIN" / "BUFF SLAIN" with the photo of the player who took it ("slain by"); tick **steal** when it was stolen — steals are never credited to a battle spell. **Turtle/Lord/Buff fight** buttons make the casters ask *"Sino kaya ang makakakuha ng…?"*. Also: K/D/A ±, spell-used (cooldown ring), gold slider/presets, **Announce gold update**, **Instant replay**.
-   - *End game* — records stats for the leaderboard, updates the series, and when the series is won advances the bracket (winner → next round, loser → lower bracket) and queues the **series victory / champion** call.
-   - *Between games* — **Start Game N draft** (seats a new random caster pair), **Game intro**, **Break** with countdown + message, **End broadcast**.
+   - *Go live / Start Game N draft* — a lineup dialog: pick each team's **5 players + positions** for that game and the **coach** (or "No coach"). The system-picked caster pair is shown and **locked** for the game.
+   - *Phases*: only **Draft → In-game → Break** (a finished game stays under In-game with its post-game stats).
+   - *View on Facebook*: the switch in the controller header turns the website's **View on Facebook** button on/off for the match on air only (it opens the Facebook link from Settings). Every match card and match pop-up on the website shows its scheduled date & time ("TBA" until set). Bracket printing is in the admin only.
+   - *Draft*: type a few letters + Enter — the hero search locks the top match and the box empties for the next one (↑/↓ choose another). A team that skips a ban: type **none** or press **No ban**. Two picks by the same side share one timer. Picks go to the player of that hero's position (or whose signature hero it is); **⇅** on two teammates trades their heroes. Positions and coaches show on the draft overlay. **Start Game** unlocks only when all 10 heroes are picked (bans can be none). **Edit lineup**, timer, undo, click a slot to fix it. The casters call every ban (with the reason — e.g. Freya "para hindi mahirapan ang backline nila"), hype signature picks ("NAKUHA NI … ANG Ling! Hindi ito binan!"), speculate about the next ban/pick from each player's hero pool and the tournament meta, and tell the story of earlier games.
+   - *In-game*: the **game clock** counts the battle (pause, ±seconds, set mm:ss; it pauses on a mid-game break and the duration is saved). **+1 Kill** → pick the killer, then who died (+1 kill / +1 death). **First Blood / Double / Triple / Maniac / Savage** → pick the player, then who died — up to 1 / 2 / 3 / 4 / 5 players, only the ones not counted yet (pressed +1 Kill and it became a Double Kill? pick just the new victim). One kill per victim, one death each; banner with the killer's photo. **First Blood** locks once recorded. **Savage** pre-selects all five and opens a **10-second continuation**: another Savage in that window adds only the extra victims (+1, +2…) — each continuation restarts the 10 s. **Turtle / Lord / Purple Buff / Orange Buff** per side → pick who took it ("slain by"), tick **steal** in the same window — steals are never credited to a battle spell. Keys 1–5 / 6–0 pick players fast. **Gold difference**: turn on **Auto** after a one-minute setup (grab a frame from OBS, drag a box around the gold number, test read) — it reads the gold from the game every few seconds with free in-browser OCR, so you only press **Announce gold update**. Upload the real **battle spell icons** in Settings. **Fight** buttons make the casters ask *"Sino kaya ang makakakuha ng…?"*. **Battle spells: one click on the spell icon** starts the countdown and the casters call it (they don't read out cooldown seconds — the HUD shows the timer). Also: K/D/A ±, gold slider/presets, **Announce gold update**, **Instant replay**.
+   - *End game* — records stats for the leaderboard, updates the series, and when the series is won advances the bracket (winner → next round, loser → lower bracket) and queues the **series victory / champion** call. Then **Post-game stats**: KDA ratio and Lord/Turtle secures are automatic — type each player's **TP%** (teamfight participation) from the result screen → Save. The post-match **MVP** is the best rating on the winning team; in the Grand Final the **Finals MVP** (most game MVPs, tie → best total rating) is computed automatically and shown on the bracket. The leaderboard adds **TP%** and **MVP** columns.
+   - *Between games* — **Start Game N draft** (seats a new random caster pair), **Game intro**, **Break** with countdown + message (after a finished game, **End break → Game N draft** starts the next draft), **End broadcast**.
+   - *Automatic caster announcements* (no buttons, no AI quota — hand-written Taglish lines, {partner} = the other caster's name from Settings → Casters):
+     - **Go live / Start Game N draft** → "Welcome sa drafting phase natin, partner Ate Lyka!" — "Salamat, Direk Ken! …" + a DRAFT PHASE graphic on the draft overlay. Special lines for Game 1, match point and deciding games.
+     - **Start Game** → "At magsisimula na ang laro! Welcome sa Game 2, mga ka-TCC!" + a GAME 2 graphic on the HUD.
+     - **Instant replay** → every replay opens with "Tingnan muna natin ang instant replay…" (also enforced on live Gemini lines).
+     - **Go to break** → "Mag-break muna tayo, mga ka-TCC! Pagbalik natin, Game 3 na!" (uses the minutes; a mid-game pause gets pause lines instead).
 4. **Caster Booth** — keep running for the whole show (see section 8).
 
 ---
@@ -166,8 +188,8 @@ The free Gemini tier allows only a few voice requests per day, so set a **Daily 
 
 > The voices are original and do **not** imitate any real caster. Cloning a real person's voice requires that person's permission; if you want a real caster's voice, work with a caster who agrees to record lines for you.
 
-### One voice at a time
-Casters take turns. A line always finishes, the engine waits until speech is completely silent, then leaves a short handoff gap before the next caster speaks. A bigger moment (replay, result) waits for the current speaker to finish — it never cuts anyone off mid-sentence. The two seated casters are always given different voices.
+### One voice at a time — a click takes over after the current line
+Casters take turns — never two voices at once — with a short handoff gap between them. **Every click in the Live Controller takes over as soon as the current line is finished** (nobody is cut mid-sentence; the rest of that exchange is dropped and e.g. "Turtle slain by …" comes next). Events from the same click, like the last pick + draft breakdown, play in order. Only one booth talks at a time: starting the casters in one tab stops them in any other tab (the pill shows "on air in another tab" with **Stop them / Move here**). With **Instant response** on (default), a slow live AI line or realistic voice is replaced by the library line / instant voice so the desk never waits. Between clicks they **keep talking** about what's on screen — draft speculation and storytelling, in-game banter (player spotlights, lane matchups, game time, gold, objectives), post-game recap/MVP, and an occasional word during breaks. The two seated casters are always given different voices.
 
 ### Accuracy (no hallucinated game states)
 Every line — AI or pre-written — is built only from a verified **fact sheet** (teams, series score, format, game number, kills, Turtles/Lords, gold lead, the selected player's IGN/hero/KDA/spell, steal flag, replay description). Pre-written lines use `{placeholders}`; a line whose facts are unknown (e.g. `{hero}` before heroes are set) is skipped automatically.

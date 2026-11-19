@@ -8,16 +8,20 @@
  * Values are space-separated RGB so Tailwind can apply alpha (bg-brand/20 etc).
  */
 @layer base {
+  /* Light theme — softened for comfort: warm off-white instead of pure white,
+     slightly deeper crimson, gentler glows (see --glow-*). */
   :root {
-    --bg: 247 244 243;
-    --surface: 255 255 255;
-    --surface-2: 241 236 235;
-    --line: 226 218 217;
-    --fg: 29 27 32;
-    --muted: 106 99 108;
-    --brand: 225 29 27;
-    --brand-strong: 180 20 18;
-    --accent: 13 148 132;
+    --bg: 240 236 233;
+    --surface: 250 248 246;
+    --surface-2: 233 228 225;
+    --line: 219 212 208;
+    --fg: 38 34 40;
+    --muted: 104 97 104;
+    --brand: 200 32 30;
+    --brand-strong: 160 22 20;
+    --accent: 13 128 115;
+    --glow-a: 0.16;
+    --glow-lg-a: 0.12;
     color-scheme: light;
   }
 
@@ -31,6 +35,8 @@
     --brand: 248 49 47;
     --brand-strong: 225 29 27;
     --accent: 62 240 216;
+    --glow-a: 0.45;
+    --glow-lg-a: 0.35;
     color-scheme: dark;
   }
 
@@ -114,6 +120,14 @@
     color: #ff3b3b;
     text-shadow: 0 0 6px rgba(255, 45, 45, 0.9), 0 0 18px rgba(255, 30, 30, 0.6);
   }
+  /* Light theme: a glowing neon blur on a bright page is hard on the eyes — keep it crisp. */
+  html:not(.dark) .neon {
+    color: rgb(var(--brand));
+    text-shadow: none;
+  }
+  html:not(.dark) .text-glow {
+    text-shadow: none;
+  }
   .clip-slant-r {
     clip-path: polygon(0 0, 100% 0, calc(100% - 18px) 100%, 0 100%);
   }
@@ -136,4 +150,55 @@
   .tabular {
     font-variant-numeric: tabular-nums;
   }
+}
+
+/* ── Printing the bracket (Tournaments → Print bracket) ───────────────────── */
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 10mm;
+  }
+  :root,
+  html.dark {
+    --bg: 255 255 255;
+    --surface: 255 255 255;
+    --surface-2: 222 219 217;
+    --line: 70 66 66;
+    --fg: 0 0 0;
+    --muted: 35 35 40;
+    --glow-a: 0;
+    --glow-lg-a: 0;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  body * {
+    visibility: hidden !important;
+  }
+  .print-area,
+  .print-area * {
+    visibility: visible !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: max-content;
+    zoom: var(--print-zoom, 1);
+  }
+  .print-area .overflow-x-auto {
+    overflow: visible !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-hide {
+    display: none !important;
+  }
+}
+.print-only {
+  display: none;
 }

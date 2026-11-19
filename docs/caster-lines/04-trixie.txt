@@ -1,5 +1,2248 @@
 Trixie — Clutch & Spell Watcher (female)
-7,149 unique lines
+9,325 unique lines
+
+══════ Draft bans — 372 lines ══════
+Ay, sayang! Gusto ko pa naman makita ang {hero}!
+Ay, sayang! Gusto ko pa naman makita ang {hero}! Huwag mag-face-check!
+Ay, sayang! Gusto ko pa naman makita ang {hero}! Ingat sa spells!
+Ay, sayang! Gusto ko pa naman makita ang {hero}! Kinakabahan ako!
+Ay, sayang! Gusto ko pa naman makita ang {hero}! Bantayan ang cooldowns!
+Ay, sayang! Gusto ko pa naman makita ang {hero}! Clutch o kapalpakan?
+Spell watch. Ay, sayang! Gusto ko pa naman makita ang {hero}!
+Spell watch. Ay, sayang! Gusto ko pa naman makita ang {hero}! Huwag mag-face-check!
+Spell watch. Ay, sayang! Gusto ko pa naman makita ang {hero}! Ingat sa spells!
+Spell watch. Ay, sayang! Gusto ko pa naman makita ang {hero}! Kinakabahan ako!
+Spell watch. Ay, sayang! Gusto ko pa naman makita ang {hero}! Bantayan ang cooldowns!
+Spell watch. Ay, sayang! Gusto ko pa naman makita ang {hero}! Clutch o kapalpakan?
+Naku, mga lods. Ay, sayang! Gusto ko pa naman makita ang {hero}!
+Naku, mga lods. Ay, sayang! Gusto ko pa naman makita ang {hero}! Huwag mag-face-check!
+Naku, mga lods. Ay, sayang! Gusto ko pa naman makita ang {hero}! Ingat sa spells!
+Naku, mga lods. Ay, sayang! Gusto ko pa naman makita ang {hero}! Kinakabahan ako!
+Naku, mga lods. Ay, sayang! Gusto ko pa naman makita ang {hero}! Bantayan ang cooldowns!
+Naku, mga lods. Ay, sayang! Gusto ko pa naman makita ang {hero}! Clutch o kapalpakan?
+Hmm. Ay, sayang! Gusto ko pa naman makita ang {hero}!
+Hmm. Ay, sayang! Gusto ko pa naman makita ang {hero}! Huwag mag-face-check!
+Hmm. Ay, sayang! Gusto ko pa naman makita ang {hero}! Ingat sa spells!
+Hmm. Ay, sayang! Gusto ko pa naman makita ang {hero}! Kinakabahan ako!
+Hmm. Ay, sayang! Gusto ko pa naman makita ang {hero}! Bantayan ang cooldowns!
+Hmm. Ay, sayang! Gusto ko pa naman makita ang {hero}! Clutch o kapalpakan?
+Teka, teka. Ay, sayang! Gusto ko pa naman makita ang {hero}!
+Teka, teka. Ay, sayang! Gusto ko pa naman makita ang {hero}! Huwag mag-face-check!
+Teka, teka. Ay, sayang! Gusto ko pa naman makita ang {hero}! Ingat sa spells!
+Teka, teka. Ay, sayang! Gusto ko pa naman makita ang {hero}! Kinakabahan ako!
+Teka, teka. Ay, sayang! Gusto ko pa naman makita ang {hero}! Bantayan ang cooldowns!
+Teka, teka. Ay, sayang! Gusto ko pa naman makita ang {hero}! Clutch o kapalpakan?
+Bantayan natin. Ay, sayang! Gusto ko pa naman makita ang {hero}!
+Bantayan natin. Ay, sayang! Gusto ko pa naman makita ang {hero}! Huwag mag-face-check!
+Bantayan natin. Ay, sayang! Gusto ko pa naman makita ang {hero}! Ingat sa spells!
+Bantayan natin. Ay, sayang! Gusto ko pa naman makita ang {hero}! Kinakabahan ako!
+Bantayan natin. Ay, sayang! Gusto ko pa naman makita ang {hero}! Bantayan ang cooldowns!
+Bantayan natin. Ay, sayang! Gusto ko pa naman makita ang {hero}! Clutch o kapalpakan?
+Alam niyo ba? Ay, sayang! Gusto ko pa naman makita ang {hero}!
+Alam niyo ba? Ay, sayang! Gusto ko pa naman makita ang {hero}! Huwag mag-face-check!
+Alam niyo ba? Ay, sayang! Gusto ko pa naman makita ang {hero}! Ingat sa spells!
+Alam niyo ba? Ay, sayang! Gusto ko pa naman makita ang {hero}! Kinakabahan ako!
+Alam niyo ba? Ay, sayang! Gusto ko pa naman makita ang {hero}! Bantayan ang cooldowns!
+Alam niyo ba? Ay, sayang! Gusto ko pa naman makita ang {hero}! Clutch o kapalpakan?
+Ingat, ingat. Ay, sayang! Gusto ko pa naman makita ang {hero}!
+Ingat, ingat. Ay, sayang! Gusto ko pa naman makita ang {hero}! Huwag mag-face-check!
+Ingat, ingat. Ay, sayang! Gusto ko pa naman makita ang {hero}! Ingat sa spells!
+Ingat, ingat. Ay, sayang! Gusto ko pa naman makita ang {hero}! Kinakabahan ako!
+Ingat, ingat. Ay, sayang! Gusto ko pa naman makita ang {hero}! Bantayan ang cooldowns!
+Ingat, ingat. Ay, sayang! Gusto ko pa naman makita ang {hero}! Clutch o kapalpakan?
+Ban agad? Takot sila diyan, mga lods!
+Ban agad? Takot sila diyan, mga lods! Huwag mag-face-check!
+Ban agad? Takot sila diyan, mga lods! Ingat sa spells!
+Ban agad? Takot sila diyan, mga lods! Kinakabahan ako!
+Ban agad? Takot sila diyan, mga lods! Bantayan ang cooldowns!
+Ban agad? Takot sila diyan, mga lods! Clutch o kapalpakan?
+Spell watch. Ban agad? Takot sila diyan, mga lods!
+Spell watch. Ban agad? Takot sila diyan, mga lods! Huwag mag-face-check!
+Spell watch. Ban agad? Takot sila diyan, mga lods! Ingat sa spells!
+Spell watch. Ban agad? Takot sila diyan, mga lods! Kinakabahan ako!
+Spell watch. Ban agad? Takot sila diyan, mga lods! Bantayan ang cooldowns!
+Spell watch. Ban agad? Takot sila diyan, mga lods! Clutch o kapalpakan?
+Naku, mga lods. Ban agad? Takot sila diyan, mga lods!
+Naku, mga lods. Ban agad? Takot sila diyan, mga lods! Huwag mag-face-check!
+Naku, mga lods. Ban agad? Takot sila diyan, mga lods! Ingat sa spells!
+Naku, mga lods. Ban agad? Takot sila diyan, mga lods! Kinakabahan ako!
+Naku, mga lods. Ban agad? Takot sila diyan, mga lods! Bantayan ang cooldowns!
+Naku, mga lods. Ban agad? Takot sila diyan, mga lods! Clutch o kapalpakan?
+Hmm. Ban agad? Takot sila diyan, mga lods!
+Hmm. Ban agad? Takot sila diyan, mga lods! Huwag mag-face-check!
+Hmm. Ban agad? Takot sila diyan, mga lods! Ingat sa spells!
+Hmm. Ban agad? Takot sila diyan, mga lods! Kinakabahan ako!
+Hmm. Ban agad? Takot sila diyan, mga lods! Bantayan ang cooldowns!
+Hmm. Ban agad? Takot sila diyan, mga lods! Clutch o kapalpakan?
+Teka, teka. Ban agad? Takot sila diyan, mga lods!
+Teka, teka. Ban agad? Takot sila diyan, mga lods! Huwag mag-face-check!
+Teka, teka. Ban agad? Takot sila diyan, mga lods! Ingat sa spells!
+Teka, teka. Ban agad? Takot sila diyan, mga lods! Kinakabahan ako!
+Teka, teka. Ban agad? Takot sila diyan, mga lods! Bantayan ang cooldowns!
+Teka, teka. Ban agad? Takot sila diyan, mga lods! Clutch o kapalpakan?
+Ay, delikado. Ban agad? Takot sila diyan, mga lods!
+Ay, delikado. Ban agad? Takot sila diyan, mga lods! Huwag mag-face-check!
+Ay, delikado. Ban agad? Takot sila diyan, mga lods! Ingat sa spells!
+Ay, delikado. Ban agad? Takot sila diyan, mga lods! Kinakabahan ako!
+Ay, delikado. Ban agad? Takot sila diyan, mga lods! Bantayan ang cooldowns!
+Ay, delikado. Ban agad? Takot sila diyan, mga lods! Clutch o kapalpakan?
+Bantayan natin. Ban agad? Takot sila diyan, mga lods!
+Bantayan natin. Ban agad? Takot sila diyan, mga lods! Huwag mag-face-check!
+Bantayan natin. Ban agad? Takot sila diyan, mga lods! Ingat sa spells!
+Bantayan natin. Ban agad? Takot sila diyan, mga lods! Kinakabahan ako!
+Bantayan natin. Ban agad? Takot sila diyan, mga lods! Bantayan ang cooldowns!
+Bantayan natin. Ban agad? Takot sila diyan, mga lods! Clutch o kapalpakan?
+Alam niyo ba? Ban agad? Takot sila diyan, mga lods!
+Alam niyo ba? Ban agad? Takot sila diyan, mga lods! Huwag mag-face-check!
+Alam niyo ba? Ban agad? Takot sila diyan, mga lods! Ingat sa spells!
+Alam niyo ba? Ban agad? Takot sila diyan, mga lods! Kinakabahan ako!
+Alam niyo ba? Ban agad? Takot sila diyan, mga lods! Bantayan ang cooldowns!
+Alam niyo ba? Ban agad? Takot sila diyan, mga lods! Clutch o kapalpakan?
+Ingat, ingat. Ban agad? Takot sila diyan, mga lods!
+Ingat, ingat. Ban agad? Takot sila diyan, mga lods! Huwag mag-face-check!
+Ingat, ingat. Ban agad? Takot sila diyan, mga lods! Ingat sa spells!
+Ingat, ingat. Ban agad? Takot sila diyan, mga lods! Kinakabahan ako!
+Ingat, ingat. Ban agad? Takot sila diyan, mga lods! Bantayan ang cooldowns!
+Ingat, ingat. Ban agad? Takot sila diyan, mga lods! Clutch o kapalpakan?
+Malinaw ang mensahe ng ban na yan.
+Malinaw ang mensahe ng ban na yan. Huwag mag-face-check!
+Malinaw ang mensahe ng ban na yan. Ingat sa spells!
+Malinaw ang mensahe ng ban na yan. Kinakabahan ako!
+Malinaw ang mensahe ng ban na yan. Bantayan ang cooldowns!
+Malinaw ang mensahe ng ban na yan. Clutch o kapalpakan?
+Spell watch. Malinaw ang mensahe ng ban na yan.
+Spell watch. Malinaw ang mensahe ng ban na yan. Huwag mag-face-check!
+Spell watch. Malinaw ang mensahe ng ban na yan. Ingat sa spells!
+Spell watch. Malinaw ang mensahe ng ban na yan. Kinakabahan ako!
+Spell watch. Malinaw ang mensahe ng ban na yan. Bantayan ang cooldowns!
+Spell watch. Malinaw ang mensahe ng ban na yan. Clutch o kapalpakan?
+Naku, mga lods. Malinaw ang mensahe ng ban na yan.
+Naku, mga lods. Malinaw ang mensahe ng ban na yan. Huwag mag-face-check!
+Naku, mga lods. Malinaw ang mensahe ng ban na yan. Ingat sa spells!
+Naku, mga lods. Malinaw ang mensahe ng ban na yan. Kinakabahan ako!
+Naku, mga lods. Malinaw ang mensahe ng ban na yan. Bantayan ang cooldowns!
+Naku, mga lods. Malinaw ang mensahe ng ban na yan. Clutch o kapalpakan?
+Hmm. Malinaw ang mensahe ng ban na yan.
+Hmm. Malinaw ang mensahe ng ban na yan. Huwag mag-face-check!
+Hmm. Malinaw ang mensahe ng ban na yan. Ingat sa spells!
+Hmm. Malinaw ang mensahe ng ban na yan. Kinakabahan ako!
+Hmm. Malinaw ang mensahe ng ban na yan. Bantayan ang cooldowns!
+Hmm. Malinaw ang mensahe ng ban na yan. Clutch o kapalpakan?
+Teka, teka. Malinaw ang mensahe ng ban na yan.
+Teka, teka. Malinaw ang mensahe ng ban na yan. Huwag mag-face-check!
+Teka, teka. Malinaw ang mensahe ng ban na yan. Ingat sa spells!
+Teka, teka. Malinaw ang mensahe ng ban na yan. Kinakabahan ako!
+Teka, teka. Malinaw ang mensahe ng ban na yan. Bantayan ang cooldowns!
+Teka, teka. Malinaw ang mensahe ng ban na yan. Clutch o kapalpakan?
+Ay, delikado. Malinaw ang mensahe ng ban na yan.
+Ay, delikado. Malinaw ang mensahe ng ban na yan. Huwag mag-face-check!
+Ay, delikado. Malinaw ang mensahe ng ban na yan. Ingat sa spells!
+Ay, delikado. Malinaw ang mensahe ng ban na yan. Kinakabahan ako!
+Ay, delikado. Malinaw ang mensahe ng ban na yan. Bantayan ang cooldowns!
+Ay, delikado. Malinaw ang mensahe ng ban na yan. Clutch o kapalpakan?
+Bantayan natin. Malinaw ang mensahe ng ban na yan.
+Bantayan natin. Malinaw ang mensahe ng ban na yan. Huwag mag-face-check!
+Bantayan natin. Malinaw ang mensahe ng ban na yan. Ingat sa spells!
+Bantayan natin. Malinaw ang mensahe ng ban na yan. Kinakabahan ako!
+Bantayan natin. Malinaw ang mensahe ng ban na yan. Bantayan ang cooldowns!
+Bantayan natin. Malinaw ang mensahe ng ban na yan. Clutch o kapalpakan?
+Alam niyo ba? Malinaw ang mensahe ng ban na yan.
+Alam niyo ba? Malinaw ang mensahe ng ban na yan. Huwag mag-face-check!
+Alam niyo ba? Malinaw ang mensahe ng ban na yan. Ingat sa spells!
+Alam niyo ba? Malinaw ang mensahe ng ban na yan. Kinakabahan ako!
+Alam niyo ba? Malinaw ang mensahe ng ban na yan. Bantayan ang cooldowns!
+Alam niyo ba? Malinaw ang mensahe ng ban na yan. Clutch o kapalpakan?
+Ingat, ingat. Malinaw ang mensahe ng ban na yan.
+Ingat, ingat. Malinaw ang mensahe ng ban na yan. Huwag mag-face-check!
+Ingat, ingat. Malinaw ang mensahe ng ban na yan. Ingat sa spells!
+Ingat, ingat. Malinaw ang mensahe ng ban na yan. Kinakabahan ako!
+Ingat, ingat. Malinaw ang mensahe ng ban na yan. Bantayan ang cooldowns!
+Ingat, ingat. Malinaw ang mensahe ng ban na yan. Clutch o kapalpakan?
+Respeto sa {hero} yan.
+Respeto sa {hero} yan. Huwag mag-face-check!
+Respeto sa {hero} yan. Ingat sa spells!
+Respeto sa {hero} yan. Kinakabahan ako!
+Respeto sa {hero} yan. Bantayan ang cooldowns!
+Respeto sa {hero} yan. Clutch o kapalpakan?
+Spell watch. Respeto sa {hero} yan.
+Spell watch. Respeto sa {hero} yan. Huwag mag-face-check!
+Spell watch. Respeto sa {hero} yan. Ingat sa spells!
+Spell watch. Respeto sa {hero} yan. Kinakabahan ako!
+Spell watch. Respeto sa {hero} yan. Bantayan ang cooldowns!
+Spell watch. Respeto sa {hero} yan. Clutch o kapalpakan?
+Naku, mga lods. Respeto sa {hero} yan.
+Naku, mga lods. Respeto sa {hero} yan. Huwag mag-face-check!
+Naku, mga lods. Respeto sa {hero} yan. Ingat sa spells!
+Naku, mga lods. Respeto sa {hero} yan. Kinakabahan ako!
+Naku, mga lods. Respeto sa {hero} yan. Bantayan ang cooldowns!
+Naku, mga lods. Respeto sa {hero} yan. Clutch o kapalpakan?
+Hmm. Respeto sa {hero} yan.
+Hmm. Respeto sa {hero} yan. Huwag mag-face-check!
+Hmm. Respeto sa {hero} yan. Ingat sa spells!
+Hmm. Respeto sa {hero} yan. Kinakabahan ako!
+Hmm. Respeto sa {hero} yan. Bantayan ang cooldowns!
+Hmm. Respeto sa {hero} yan. Clutch o kapalpakan?
+Teka, teka. Respeto sa {hero} yan.
+Teka, teka. Respeto sa {hero} yan. Huwag mag-face-check!
+Teka, teka. Respeto sa {hero} yan. Ingat sa spells!
+Teka, teka. Respeto sa {hero} yan. Kinakabahan ako!
+Teka, teka. Respeto sa {hero} yan. Bantayan ang cooldowns!
+Teka, teka. Respeto sa {hero} yan. Clutch o kapalpakan?
+Ay, delikado. Respeto sa {hero} yan.
+Ay, delikado. Respeto sa {hero} yan. Huwag mag-face-check!
+Ay, delikado. Respeto sa {hero} yan. Ingat sa spells!
+Ay, delikado. Respeto sa {hero} yan. Kinakabahan ako!
+Ay, delikado. Respeto sa {hero} yan. Bantayan ang cooldowns!
+Ay, delikado. Respeto sa {hero} yan. Clutch o kapalpakan?
+Bantayan natin. Respeto sa {hero} yan.
+Bantayan natin. Respeto sa {hero} yan. Huwag mag-face-check!
+Bantayan natin. Respeto sa {hero} yan. Ingat sa spells!
+Bantayan natin. Respeto sa {hero} yan. Kinakabahan ako!
+Bantayan natin. Respeto sa {hero} yan. Bantayan ang cooldowns!
+Bantayan natin. Respeto sa {hero} yan. Clutch o kapalpakan?
+Alam niyo ba? Respeto sa {hero} yan.
+Alam niyo ba? Respeto sa {hero} yan. Huwag mag-face-check!
+Alam niyo ba? Respeto sa {hero} yan. Ingat sa spells!
+Alam niyo ba? Respeto sa {hero} yan. Kinakabahan ako!
+Alam niyo ba? Respeto sa {hero} yan. Bantayan ang cooldowns!
+Alam niyo ba? Respeto sa {hero} yan. Clutch o kapalpakan?
+Ingat, ingat. Respeto sa {hero} yan.
+Ingat, ingat. Respeto sa {hero} yan. Huwag mag-face-check!
+Ingat, ingat. Respeto sa {hero} yan. Ingat sa spells!
+Ingat, ingat. Respeto sa {hero} yan. Kinakabahan ako!
+Ingat, ingat. Respeto sa {hero} yan. Bantayan ang cooldowns!
+Ingat, ingat. Respeto sa {hero} yan. Clutch o kapalpakan?
+Ayaw nilang makaharap ang {hero} ngayong game.
+Ayaw nilang makaharap ang {hero} ngayong game. Huwag mag-face-check!
+Ayaw nilang makaharap ang {hero} ngayong game. Ingat sa spells!
+Ayaw nilang makaharap ang {hero} ngayong game. Kinakabahan ako!
+Ayaw nilang makaharap ang {hero} ngayong game. Bantayan ang cooldowns!
+Ayaw nilang makaharap ang {hero} ngayong game. Clutch o kapalpakan?
+Spell watch. Ayaw nilang makaharap ang {hero} ngayong game.
+Spell watch. Ayaw nilang makaharap ang {hero} ngayong game. Huwag mag-face-check!
+Spell watch. Ayaw nilang makaharap ang {hero} ngayong game. Ingat sa spells!
+Spell watch. Ayaw nilang makaharap ang {hero} ngayong game. Kinakabahan ako!
+Spell watch. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan ang cooldowns!
+Spell watch. Ayaw nilang makaharap ang {hero} ngayong game. Clutch o kapalpakan?
+Naku, mga lods. Ayaw nilang makaharap ang {hero} ngayong game.
+Naku, mga lods. Ayaw nilang makaharap ang {hero} ngayong game. Huwag mag-face-check!
+Naku, mga lods. Ayaw nilang makaharap ang {hero} ngayong game. Ingat sa spells!
+Naku, mga lods. Ayaw nilang makaharap ang {hero} ngayong game. Kinakabahan ako!
+Naku, mga lods. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan ang cooldowns!
+Naku, mga lods. Ayaw nilang makaharap ang {hero} ngayong game. Clutch o kapalpakan?
+Hmm. Ayaw nilang makaharap ang {hero} ngayong game.
+Hmm. Ayaw nilang makaharap ang {hero} ngayong game. Huwag mag-face-check!
+Hmm. Ayaw nilang makaharap ang {hero} ngayong game. Ingat sa spells!
+Hmm. Ayaw nilang makaharap ang {hero} ngayong game. Kinakabahan ako!
+Hmm. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan ang cooldowns!
+Hmm. Ayaw nilang makaharap ang {hero} ngayong game. Clutch o kapalpakan?
+Teka, teka. Ayaw nilang makaharap ang {hero} ngayong game.
+Teka, teka. Ayaw nilang makaharap ang {hero} ngayong game. Huwag mag-face-check!
+Teka, teka. Ayaw nilang makaharap ang {hero} ngayong game. Ingat sa spells!
+Teka, teka. Ayaw nilang makaharap ang {hero} ngayong game. Kinakabahan ako!
+Teka, teka. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan ang cooldowns!
+Teka, teka. Ayaw nilang makaharap ang {hero} ngayong game. Clutch o kapalpakan?
+Ay, delikado. Ayaw nilang makaharap ang {hero} ngayong game.
+Ay, delikado. Ayaw nilang makaharap ang {hero} ngayong game. Huwag mag-face-check!
+Ay, delikado. Ayaw nilang makaharap ang {hero} ngayong game. Ingat sa spells!
+Ay, delikado. Ayaw nilang makaharap ang {hero} ngayong game. Kinakabahan ako!
+Ay, delikado. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan ang cooldowns!
+Ay, delikado. Ayaw nilang makaharap ang {hero} ngayong game. Clutch o kapalpakan?
+Bantayan natin. Ayaw nilang makaharap ang {hero} ngayong game.
+Bantayan natin. Ayaw nilang makaharap ang {hero} ngayong game. Huwag mag-face-check!
+Bantayan natin. Ayaw nilang makaharap ang {hero} ngayong game. Ingat sa spells!
+Bantayan natin. Ayaw nilang makaharap ang {hero} ngayong game. Kinakabahan ako!
+Bantayan natin. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan ang cooldowns!
+Bantayan natin. Ayaw nilang makaharap ang {hero} ngayong game. Clutch o kapalpakan?
+Alam niyo ba? Ayaw nilang makaharap ang {hero} ngayong game.
+Alam niyo ba? Ayaw nilang makaharap ang {hero} ngayong game. Huwag mag-face-check!
+Alam niyo ba? Ayaw nilang makaharap ang {hero} ngayong game. Ingat sa spells!
+Alam niyo ba? Ayaw nilang makaharap ang {hero} ngayong game. Kinakabahan ako!
+Alam niyo ba? Ayaw nilang makaharap ang {hero} ngayong game. Bantayan ang cooldowns!
+Alam niyo ba? Ayaw nilang makaharap ang {hero} ngayong game. Clutch o kapalpakan?
+Ingat, ingat. Ayaw nilang makaharap ang {hero} ngayong game.
+Ingat, ingat. Ayaw nilang makaharap ang {hero} ngayong game. Huwag mag-face-check!
+Ingat, ingat. Ayaw nilang makaharap ang {hero} ngayong game. Ingat sa spells!
+Ingat, ingat. Ayaw nilang makaharap ang {hero} ngayong game. Kinakabahan ako!
+Ingat, ingat. Ayaw nilang makaharap ang {hero} ngayong game. Bantayan ang cooldowns!
+Ingat, ingat. Ayaw nilang makaharap ang {hero} ngayong game. Clutch o kapalpakan?
+Matalinong ban, sa totoo lang.
+Matalinong ban, sa totoo lang. Huwag mag-face-check!
+Matalinong ban, sa totoo lang. Ingat sa spells!
+Matalinong ban, sa totoo lang. Kinakabahan ako!
+Matalinong ban, sa totoo lang. Bantayan ang cooldowns!
+Matalinong ban, sa totoo lang. Clutch o kapalpakan?
+Spell watch. Matalinong ban, sa totoo lang.
+Spell watch. Matalinong ban, sa totoo lang. Huwag mag-face-check!
+Spell watch. Matalinong ban, sa totoo lang. Ingat sa spells!
+Spell watch. Matalinong ban, sa totoo lang. Kinakabahan ako!
+Spell watch. Matalinong ban, sa totoo lang. Bantayan ang cooldowns!
+Spell watch. Matalinong ban, sa totoo lang. Clutch o kapalpakan?
+Naku, mga lods. Matalinong ban, sa totoo lang.
+Naku, mga lods. Matalinong ban, sa totoo lang. Huwag mag-face-check!
+Naku, mga lods. Matalinong ban, sa totoo lang. Ingat sa spells!
+Naku, mga lods. Matalinong ban, sa totoo lang. Kinakabahan ako!
+Naku, mga lods. Matalinong ban, sa totoo lang. Bantayan ang cooldowns!
+Naku, mga lods. Matalinong ban, sa totoo lang. Clutch o kapalpakan?
+Hmm. Matalinong ban, sa totoo lang.
+Hmm. Matalinong ban, sa totoo lang. Huwag mag-face-check!
+Hmm. Matalinong ban, sa totoo lang. Ingat sa spells!
+Hmm. Matalinong ban, sa totoo lang. Kinakabahan ako!
+Hmm. Matalinong ban, sa totoo lang. Bantayan ang cooldowns!
+Hmm. Matalinong ban, sa totoo lang. Clutch o kapalpakan?
+Teka, teka. Matalinong ban, sa totoo lang.
+Teka, teka. Matalinong ban, sa totoo lang. Huwag mag-face-check!
+Teka, teka. Matalinong ban, sa totoo lang. Ingat sa spells!
+Teka, teka. Matalinong ban, sa totoo lang. Kinakabahan ako!
+Teka, teka. Matalinong ban, sa totoo lang. Bantayan ang cooldowns!
+Teka, teka. Matalinong ban, sa totoo lang. Clutch o kapalpakan?
+Ay, delikado. Matalinong ban, sa totoo lang.
+Ay, delikado. Matalinong ban, sa totoo lang. Huwag mag-face-check!
+Ay, delikado. Matalinong ban, sa totoo lang. Ingat sa spells!
+Ay, delikado. Matalinong ban, sa totoo lang. Kinakabahan ako!
+Ay, delikado. Matalinong ban, sa totoo lang. Bantayan ang cooldowns!
+Ay, delikado. Matalinong ban, sa totoo lang. Clutch o kapalpakan?
+Bantayan natin. Matalinong ban, sa totoo lang.
+Bantayan natin. Matalinong ban, sa totoo lang. Huwag mag-face-check!
+Bantayan natin. Matalinong ban, sa totoo lang. Ingat sa spells!
+Bantayan natin. Matalinong ban, sa totoo lang. Kinakabahan ako!
+Bantayan natin. Matalinong ban, sa totoo lang. Bantayan ang cooldowns!
+Bantayan natin. Matalinong ban, sa totoo lang. Clutch o kapalpakan?
+Alam niyo ba? Matalinong ban, sa totoo lang.
+Alam niyo ba? Matalinong ban, sa totoo lang. Huwag mag-face-check!
+Alam niyo ba? Matalinong ban, sa totoo lang. Ingat sa spells!
+Alam niyo ba? Matalinong ban, sa totoo lang. Kinakabahan ako!
+Alam niyo ba? Matalinong ban, sa totoo lang. Bantayan ang cooldowns!
+Alam niyo ba? Matalinong ban, sa totoo lang. Clutch o kapalpakan?
+Ingat, ingat. Matalinong ban, sa totoo lang.
+Ingat, ingat. Matalinong ban, sa totoo lang. Huwag mag-face-check!
+Ingat, ingat. Matalinong ban, sa totoo lang. Ingat sa spells!
+Ingat, ingat. Matalinong ban, sa totoo lang. Kinakabahan ako!
+Ingat, ingat. Matalinong ban, sa totoo lang. Bantayan ang cooldowns!
+Ingat, ingat. Matalinong ban, sa totoo lang. Clutch o kapalpakan?
+Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag mag-face-check!
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Ingat sa spells!
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Kinakabahan ako!
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan ang cooldowns!
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Clutch o kapalpakan?
+Spell watch. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Spell watch. Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag mag-face-check!
+Spell watch. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ingat sa spells!
+Spell watch. Isa-isang nababawasan ang mga opsyon ng {enemy}. Kinakabahan ako!
+Spell watch. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan ang cooldowns!
+Spell watch. Isa-isang nababawasan ang mga opsyon ng {enemy}. Clutch o kapalpakan?
+Naku, mga lods. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Naku, mga lods. Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag mag-face-check!
+Naku, mga lods. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ingat sa spells!
+Naku, mga lods. Isa-isang nababawasan ang mga opsyon ng {enemy}. Kinakabahan ako!
+Naku, mga lods. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan ang cooldowns!
+Naku, mga lods. Isa-isang nababawasan ang mga opsyon ng {enemy}. Clutch o kapalpakan?
+Hmm. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Hmm. Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag mag-face-check!
+Hmm. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ingat sa spells!
+Hmm. Isa-isang nababawasan ang mga opsyon ng {enemy}. Kinakabahan ako!
+Hmm. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan ang cooldowns!
+Hmm. Isa-isang nababawasan ang mga opsyon ng {enemy}. Clutch o kapalpakan?
+Teka, teka. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Teka, teka. Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag mag-face-check!
+Teka, teka. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ingat sa spells!
+Teka, teka. Isa-isang nababawasan ang mga opsyon ng {enemy}. Kinakabahan ako!
+Teka, teka. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan ang cooldowns!
+Teka, teka. Isa-isang nababawasan ang mga opsyon ng {enemy}. Clutch o kapalpakan?
+Ay, delikado. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Ay, delikado. Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag mag-face-check!
+Ay, delikado. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ingat sa spells!
+Ay, delikado. Isa-isang nababawasan ang mga opsyon ng {enemy}. Kinakabahan ako!
+Ay, delikado. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan ang cooldowns!
+Ay, delikado. Isa-isang nababawasan ang mga opsyon ng {enemy}. Clutch o kapalpakan?
+Bantayan natin. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Bantayan natin. Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag mag-face-check!
+Bantayan natin. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ingat sa spells!
+Bantayan natin. Isa-isang nababawasan ang mga opsyon ng {enemy}. Kinakabahan ako!
+Bantayan natin. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan ang cooldowns!
+Bantayan natin. Isa-isang nababawasan ang mga opsyon ng {enemy}. Clutch o kapalpakan?
+Alam niyo ba? Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Alam niyo ba? Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag mag-face-check!
+Alam niyo ba? Isa-isang nababawasan ang mga opsyon ng {enemy}. Ingat sa spells!
+Alam niyo ba? Isa-isang nababawasan ang mga opsyon ng {enemy}. Kinakabahan ako!
+Alam niyo ba? Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan ang cooldowns!
+Alam niyo ba? Isa-isang nababawasan ang mga opsyon ng {enemy}. Clutch o kapalpakan?
+Ingat, ingat. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Ingat, ingat. Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag mag-face-check!
+Ingat, ingat. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ingat sa spells!
+Ingat, ingat. Isa-isang nababawasan ang mga opsyon ng {enemy}. Kinakabahan ako!
+Ingat, ingat. Isa-isang nababawasan ang mga opsyon ng {enemy}. Bantayan ang cooldowns!
+Ingat, ingat. Isa-isang nababawasan ang mga opsyon ng {enemy}. Clutch o kapalpakan?
+
+══════ Draft picks — 366 lines ══════
+Ay, gusto ko yan! Clutch hero ang {hero}!
+Ay, gusto ko yan! Clutch hero ang {hero}! Galing!
+Ay, gusto ko yan! Clutch hero ang {hero}! Ang saya nito!
+Ay, gusto ko yan! Clutch hero ang {hero}! Kinikilig ako!
+Ay, gusto ko yan! Clutch hero ang {hero}! Grabe, ang ganda!
+Ay, gusto ko yan! Clutch hero ang {hero}! Yes, yes!
+Yes! Ay, gusto ko yan! Clutch hero ang {hero}!
+Yes! Ay, gusto ko yan! Clutch hero ang {hero}! Galing!
+Yes! Ay, gusto ko yan! Clutch hero ang {hero}! Ang saya nito!
+Yes! Ay, gusto ko yan! Clutch hero ang {hero}! Kinikilig ako!
+Yes! Ay, gusto ko yan! Clutch hero ang {hero}! Grabe, ang ganda!
+Yes! Ay, gusto ko yan! Clutch hero ang {hero}! Yes, yes!
+Wow! Ay, gusto ko yan! Clutch hero ang {hero}!
+Wow! Ay, gusto ko yan! Clutch hero ang {hero}! Galing!
+Wow! Ay, gusto ko yan! Clutch hero ang {hero}! Ang saya nito!
+Wow! Ay, gusto ko yan! Clutch hero ang {hero}! Kinikilig ako!
+Wow! Ay, gusto ko yan! Clutch hero ang {hero}! Grabe, ang ganda!
+Wow! Ay, gusto ko yan! Clutch hero ang {hero}! Yes, yes!
+Uy, uy! Ay, gusto ko yan! Clutch hero ang {hero}!
+Uy, uy! Ay, gusto ko yan! Clutch hero ang {hero}! Galing!
+Uy, uy! Ay, gusto ko yan! Clutch hero ang {hero}! Ang saya nito!
+Uy, uy! Ay, gusto ko yan! Clutch hero ang {hero}! Kinikilig ako!
+Uy, uy! Ay, gusto ko yan! Clutch hero ang {hero}! Grabe, ang ganda!
+Uy, uy! Ay, gusto ko yan! Clutch hero ang {hero}! Yes, yes!
+Kinikilig ako! Ay, gusto ko yan! Clutch hero ang {hero}!
+Kinikilig ako! Ay, gusto ko yan! Clutch hero ang {hero}! Galing!
+Kinikilig ako! Ay, gusto ko yan! Clutch hero ang {hero}! Ang saya nito!
+Kinikilig ako! Ay, gusto ko yan! Clutch hero ang {hero}! Kinikilig ako!
+Kinikilig ako! Ay, gusto ko yan! Clutch hero ang {hero}! Grabe, ang ganda!
+Kinikilig ako! Ay, gusto ko yan! Clutch hero ang {hero}! Yes, yes!
+Hala siya! Ay, gusto ko yan! Clutch hero ang {hero}!
+Hala siya! Ay, gusto ko yan! Clutch hero ang {hero}! Galing!
+Hala siya! Ay, gusto ko yan! Clutch hero ang {hero}! Ang saya nito!
+Hala siya! Ay, gusto ko yan! Clutch hero ang {hero}! Kinikilig ako!
+Hala siya! Ay, gusto ko yan! Clutch hero ang {hero}! Grabe, ang ganda!
+Hala siya! Ay, gusto ko yan! Clutch hero ang {hero}! Yes, yes!
+Ang galing! Ay, gusto ko yan! Clutch hero ang {hero}!
+Ang galing! Ay, gusto ko yan! Clutch hero ang {hero}! Galing!
+Ang galing! Ay, gusto ko yan! Clutch hero ang {hero}! Ang saya nito!
+Ang galing! Ay, gusto ko yan! Clutch hero ang {hero}! Kinikilig ako!
+Ang galing! Ay, gusto ko yan! Clutch hero ang {hero}! Grabe, ang ganda!
+Ang galing! Ay, gusto ko yan! Clutch hero ang {hero}! Yes, yes!
+Ayan na! Ay, gusto ko yan! Clutch hero ang {hero}!
+Ayan na! Ay, gusto ko yan! Clutch hero ang {hero}! Galing!
+Ayan na! Ay, gusto ko yan! Clutch hero ang {hero}! Ang saya nito!
+Ayan na! Ay, gusto ko yan! Clutch hero ang {hero}! Kinikilig ako!
+Ayan na! Ay, gusto ko yan! Clutch hero ang {hero}! Grabe, ang ganda!
+Ayan na! Ay, gusto ko yan! Clutch hero ang {hero}! Yes, yes!
+Naku, delikado ang {hero} kapag maganda ang timing!
+Naku, delikado ang {hero} kapag maganda ang timing! Galing!
+Naku, delikado ang {hero} kapag maganda ang timing! Ang saya nito!
+Naku, delikado ang {hero} kapag maganda ang timing! Kinikilig ako!
+Naku, delikado ang {hero} kapag maganda ang timing! Grabe, ang ganda!
+Naku, delikado ang {hero} kapag maganda ang timing! Yes, yes!
+Yes! Naku, delikado ang {hero} kapag maganda ang timing!
+Yes! Naku, delikado ang {hero} kapag maganda ang timing! Galing!
+Yes! Naku, delikado ang {hero} kapag maganda ang timing! Ang saya nito!
+Yes! Naku, delikado ang {hero} kapag maganda ang timing! Kinikilig ako!
+Yes! Naku, delikado ang {hero} kapag maganda ang timing! Grabe, ang ganda!
+Yes! Naku, delikado ang {hero} kapag maganda ang timing! Yes, yes!
+Ay grabe! Naku, delikado ang {hero} kapag maganda ang timing!
+Ay grabe! Naku, delikado ang {hero} kapag maganda ang timing! Galing!
+Ay grabe! Naku, delikado ang {hero} kapag maganda ang timing! Ang saya nito!
+Ay grabe! Naku, delikado ang {hero} kapag maganda ang timing! Kinikilig ako!
+Ay grabe! Naku, delikado ang {hero} kapag maganda ang timing! Grabe, ang ganda!
+Ay grabe! Naku, delikado ang {hero} kapag maganda ang timing! Yes, yes!
+Wow! Naku, delikado ang {hero} kapag maganda ang timing!
+Wow! Naku, delikado ang {hero} kapag maganda ang timing! Galing!
+Wow! Naku, delikado ang {hero} kapag maganda ang timing! Ang saya nito!
+Wow! Naku, delikado ang {hero} kapag maganda ang timing! Kinikilig ako!
+Wow! Naku, delikado ang {hero} kapag maganda ang timing! Grabe, ang ganda!
+Wow! Naku, delikado ang {hero} kapag maganda ang timing! Yes, yes!
+Uy, uy! Naku, delikado ang {hero} kapag maganda ang timing!
+Uy, uy! Naku, delikado ang {hero} kapag maganda ang timing! Galing!
+Uy, uy! Naku, delikado ang {hero} kapag maganda ang timing! Ang saya nito!
+Uy, uy! Naku, delikado ang {hero} kapag maganda ang timing! Kinikilig ako!
+Uy, uy! Naku, delikado ang {hero} kapag maganda ang timing! Grabe, ang ganda!
+Uy, uy! Naku, delikado ang {hero} kapag maganda ang timing! Yes, yes!
+Kinikilig ako! Naku, delikado ang {hero} kapag maganda ang timing!
+Kinikilig ako! Naku, delikado ang {hero} kapag maganda ang timing! Galing!
+Kinikilig ako! Naku, delikado ang {hero} kapag maganda ang timing! Ang saya nito!
+Kinikilig ako! Naku, delikado ang {hero} kapag maganda ang timing! Kinikilig ako!
+Kinikilig ako! Naku, delikado ang {hero} kapag maganda ang timing! Grabe, ang ganda!
+Kinikilig ako! Naku, delikado ang {hero} kapag maganda ang timing! Yes, yes!
+Hala siya! Naku, delikado ang {hero} kapag maganda ang timing!
+Hala siya! Naku, delikado ang {hero} kapag maganda ang timing! Galing!
+Hala siya! Naku, delikado ang {hero} kapag maganda ang timing! Ang saya nito!
+Hala siya! Naku, delikado ang {hero} kapag maganda ang timing! Kinikilig ako!
+Hala siya! Naku, delikado ang {hero} kapag maganda ang timing! Grabe, ang ganda!
+Hala siya! Naku, delikado ang {hero} kapag maganda ang timing! Yes, yes!
+Ang galing! Naku, delikado ang {hero} kapag maganda ang timing!
+Ang galing! Naku, delikado ang {hero} kapag maganda ang timing! Galing!
+Ang galing! Naku, delikado ang {hero} kapag maganda ang timing! Ang saya nito!
+Ang galing! Naku, delikado ang {hero} kapag maganda ang timing! Kinikilig ako!
+Ang galing! Naku, delikado ang {hero} kapag maganda ang timing! Grabe, ang ganda!
+Ang galing! Naku, delikado ang {hero} kapag maganda ang timing! Yes, yes!
+Ayan na! Naku, delikado ang {hero} kapag maganda ang timing!
+Ayan na! Naku, delikado ang {hero} kapag maganda ang timing! Galing!
+Ayan na! Naku, delikado ang {hero} kapag maganda ang timing! Ang saya nito!
+Ayan na! Naku, delikado ang {hero} kapag maganda ang timing! Kinikilig ako!
+Ayan na! Naku, delikado ang {hero} kapag maganda ang timing! Grabe, ang ganda!
+Ayan na! Naku, delikado ang {hero} kapag maganda ang timing! Yes, yes!
+Magandang pick yan para sa {team}.
+Magandang pick yan para sa {team}. Galing!
+Magandang pick yan para sa {team}. Ang saya nito!
+Magandang pick yan para sa {team}. Kinikilig ako!
+Magandang pick yan para sa {team}. Grabe, ang ganda!
+Magandang pick yan para sa {team}. Yes, yes!
+Yes! Magandang pick yan para sa {team}.
+Yes! Magandang pick yan para sa {team}. Galing!
+Yes! Magandang pick yan para sa {team}. Ang saya nito!
+Yes! Magandang pick yan para sa {team}. Kinikilig ako!
+Yes! Magandang pick yan para sa {team}. Grabe, ang ganda!
+Yes! Magandang pick yan para sa {team}. Yes, yes!
+Ay grabe! Magandang pick yan para sa {team}.
+Ay grabe! Magandang pick yan para sa {team}. Galing!
+Ay grabe! Magandang pick yan para sa {team}. Ang saya nito!
+Ay grabe! Magandang pick yan para sa {team}. Kinikilig ako!
+Ay grabe! Magandang pick yan para sa {team}. Grabe, ang ganda!
+Ay grabe! Magandang pick yan para sa {team}. Yes, yes!
+Wow! Magandang pick yan para sa {team}.
+Wow! Magandang pick yan para sa {team}. Galing!
+Wow! Magandang pick yan para sa {team}. Ang saya nito!
+Wow! Magandang pick yan para sa {team}. Kinikilig ako!
+Wow! Magandang pick yan para sa {team}. Grabe, ang ganda!
+Wow! Magandang pick yan para sa {team}. Yes, yes!
+Uy, uy! Magandang pick yan para sa {team}.
+Uy, uy! Magandang pick yan para sa {team}. Galing!
+Uy, uy! Magandang pick yan para sa {team}. Ang saya nito!
+Uy, uy! Magandang pick yan para sa {team}. Kinikilig ako!
+Uy, uy! Magandang pick yan para sa {team}. Grabe, ang ganda!
+Uy, uy! Magandang pick yan para sa {team}. Yes, yes!
+Kinikilig ako! Magandang pick yan para sa {team}.
+Kinikilig ako! Magandang pick yan para sa {team}. Galing!
+Kinikilig ako! Magandang pick yan para sa {team}. Ang saya nito!
+Kinikilig ako! Magandang pick yan para sa {team}. Kinikilig ako!
+Kinikilig ako! Magandang pick yan para sa {team}. Grabe, ang ganda!
+Kinikilig ako! Magandang pick yan para sa {team}. Yes, yes!
+Hala siya! Magandang pick yan para sa {team}.
+Hala siya! Magandang pick yan para sa {team}. Galing!
+Hala siya! Magandang pick yan para sa {team}. Ang saya nito!
+Hala siya! Magandang pick yan para sa {team}. Kinikilig ako!
+Hala siya! Magandang pick yan para sa {team}. Grabe, ang ganda!
+Hala siya! Magandang pick yan para sa {team}. Yes, yes!
+Ang galing! Magandang pick yan para sa {team}.
+Ang galing! Magandang pick yan para sa {team}. Galing!
+Ang galing! Magandang pick yan para sa {team}. Ang saya nito!
+Ang galing! Magandang pick yan para sa {team}. Kinikilig ako!
+Ang galing! Magandang pick yan para sa {team}. Grabe, ang ganda!
+Ang galing! Magandang pick yan para sa {team}. Yes, yes!
+Ayan na! Magandang pick yan para sa {team}.
+Ayan na! Magandang pick yan para sa {team}. Galing!
+Ayan na! Magandang pick yan para sa {team}. Ang saya nito!
+Ayan na! Magandang pick yan para sa {team}. Kinikilig ako!
+Ayan na! Magandang pick yan para sa {team}. Grabe, ang ganda!
+Ayan na! Magandang pick yan para sa {team}. Yes, yes!
+Abangan natin ang {hero} sa kamay ni {player}.
+Abangan natin ang {hero} sa kamay ni {player}. Galing!
+Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Abangan natin ang {hero} sa kamay ni {player}. Kinikilig ako!
+Abangan natin ang {hero} sa kamay ni {player}. Grabe, ang ganda!
+Abangan natin ang {hero} sa kamay ni {player}. Yes, yes!
+Yes! Abangan natin ang {hero} sa kamay ni {player}.
+Yes! Abangan natin ang {hero} sa kamay ni {player}. Galing!
+Yes! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Yes! Abangan natin ang {hero} sa kamay ni {player}. Kinikilig ako!
+Yes! Abangan natin ang {hero} sa kamay ni {player}. Grabe, ang ganda!
+Yes! Abangan natin ang {hero} sa kamay ni {player}. Yes, yes!
+Ay grabe! Abangan natin ang {hero} sa kamay ni {player}.
+Ay grabe! Abangan natin ang {hero} sa kamay ni {player}. Galing!
+Ay grabe! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Ay grabe! Abangan natin ang {hero} sa kamay ni {player}. Kinikilig ako!
+Ay grabe! Abangan natin ang {hero} sa kamay ni {player}. Grabe, ang ganda!
+Ay grabe! Abangan natin ang {hero} sa kamay ni {player}. Yes, yes!
+Wow! Abangan natin ang {hero} sa kamay ni {player}.
+Wow! Abangan natin ang {hero} sa kamay ni {player}. Galing!
+Wow! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Wow! Abangan natin ang {hero} sa kamay ni {player}. Kinikilig ako!
+Wow! Abangan natin ang {hero} sa kamay ni {player}. Grabe, ang ganda!
+Wow! Abangan natin ang {hero} sa kamay ni {player}. Yes, yes!
+Uy, uy! Abangan natin ang {hero} sa kamay ni {player}.
+Uy, uy! Abangan natin ang {hero} sa kamay ni {player}. Galing!
+Uy, uy! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Uy, uy! Abangan natin ang {hero} sa kamay ni {player}. Kinikilig ako!
+Uy, uy! Abangan natin ang {hero} sa kamay ni {player}. Grabe, ang ganda!
+Uy, uy! Abangan natin ang {hero} sa kamay ni {player}. Yes, yes!
+Kinikilig ako! Abangan natin ang {hero} sa kamay ni {player}.
+Kinikilig ako! Abangan natin ang {hero} sa kamay ni {player}. Galing!
+Kinikilig ako! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Kinikilig ako! Abangan natin ang {hero} sa kamay ni {player}. Kinikilig ako!
+Kinikilig ako! Abangan natin ang {hero} sa kamay ni {player}. Grabe, ang ganda!
+Kinikilig ako! Abangan natin ang {hero} sa kamay ni {player}. Yes, yes!
+Hala siya! Abangan natin ang {hero} sa kamay ni {player}.
+Hala siya! Abangan natin ang {hero} sa kamay ni {player}. Galing!
+Hala siya! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Hala siya! Abangan natin ang {hero} sa kamay ni {player}. Kinikilig ako!
+Hala siya! Abangan natin ang {hero} sa kamay ni {player}. Grabe, ang ganda!
+Hala siya! Abangan natin ang {hero} sa kamay ni {player}. Yes, yes!
+Ang galing! Abangan natin ang {hero} sa kamay ni {player}.
+Ang galing! Abangan natin ang {hero} sa kamay ni {player}. Galing!
+Ang galing! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Ang galing! Abangan natin ang {hero} sa kamay ni {player}. Kinikilig ako!
+Ang galing! Abangan natin ang {hero} sa kamay ni {player}. Grabe, ang ganda!
+Ang galing! Abangan natin ang {hero} sa kamay ni {player}. Yes, yes!
+Ayan na! Abangan natin ang {hero} sa kamay ni {player}.
+Ayan na! Abangan natin ang {hero} sa kamay ni {player}. Galing!
+Ayan na! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Ayan na! Abangan natin ang {hero} sa kamay ni {player}. Kinikilig ako!
+Ayan na! Abangan natin ang {hero} sa kamay ni {player}. Grabe, ang ganda!
+Ayan na! Abangan natin ang {hero} sa kamay ni {player}. Yes, yes!
+Ayan na ang {hero}!
+Ayan na ang {hero}! Galing!
+Ayan na ang {hero}! Ang saya nito!
+Ayan na ang {hero}! Kinikilig ako!
+Ayan na ang {hero}! Grabe, ang ganda!
+Ayan na ang {hero}! Yes, yes!
+Yes! Ayan na ang {hero}!
+Yes! Ayan na ang {hero}! Galing!
+Yes! Ayan na ang {hero}! Ang saya nito!
+Yes! Ayan na ang {hero}! Kinikilig ako!
+Yes! Ayan na ang {hero}! Grabe, ang ganda!
+Yes! Ayan na ang {hero}! Yes, yes!
+Ay grabe! Ayan na ang {hero}!
+Ay grabe! Ayan na ang {hero}! Galing!
+Ay grabe! Ayan na ang {hero}! Ang saya nito!
+Ay grabe! Ayan na ang {hero}! Kinikilig ako!
+Ay grabe! Ayan na ang {hero}! Grabe, ang ganda!
+Ay grabe! Ayan na ang {hero}! Yes, yes!
+Wow! Ayan na ang {hero}!
+Wow! Ayan na ang {hero}! Galing!
+Wow! Ayan na ang {hero}! Ang saya nito!
+Wow! Ayan na ang {hero}! Kinikilig ako!
+Wow! Ayan na ang {hero}! Grabe, ang ganda!
+Wow! Ayan na ang {hero}! Yes, yes!
+Uy, uy! Ayan na ang {hero}!
+Uy, uy! Ayan na ang {hero}! Galing!
+Uy, uy! Ayan na ang {hero}! Ang saya nito!
+Uy, uy! Ayan na ang {hero}! Kinikilig ako!
+Uy, uy! Ayan na ang {hero}! Grabe, ang ganda!
+Uy, uy! Ayan na ang {hero}! Yes, yes!
+Kinikilig ako! Ayan na ang {hero}!
+Kinikilig ako! Ayan na ang {hero}! Galing!
+Kinikilig ako! Ayan na ang {hero}! Ang saya nito!
+Kinikilig ako! Ayan na ang {hero}! Kinikilig ako!
+Kinikilig ako! Ayan na ang {hero}! Grabe, ang ganda!
+Kinikilig ako! Ayan na ang {hero}! Yes, yes!
+Hala siya! Ayan na ang {hero}!
+Hala siya! Ayan na ang {hero}! Galing!
+Hala siya! Ayan na ang {hero}! Ang saya nito!
+Hala siya! Ayan na ang {hero}! Kinikilig ako!
+Hala siya! Ayan na ang {hero}! Grabe, ang ganda!
+Hala siya! Ayan na ang {hero}! Yes, yes!
+Ang galing! Ayan na ang {hero}!
+Ang galing! Ayan na ang {hero}! Galing!
+Ang galing! Ayan na ang {hero}! Ang saya nito!
+Ang galing! Ayan na ang {hero}! Kinikilig ako!
+Ang galing! Ayan na ang {hero}! Grabe, ang ganda!
+Ang galing! Ayan na ang {hero}! Yes, yes!
+Unti-unting nabubuo ang lineup ng {team}.
+Unti-unting nabubuo ang lineup ng {team}. Galing!
+Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Unti-unting nabubuo ang lineup ng {team}. Kinikilig ako!
+Unti-unting nabubuo ang lineup ng {team}. Grabe, ang ganda!
+Unti-unting nabubuo ang lineup ng {team}. Yes, yes!
+Yes! Unti-unting nabubuo ang lineup ng {team}.
+Yes! Unti-unting nabubuo ang lineup ng {team}. Galing!
+Yes! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Yes! Unti-unting nabubuo ang lineup ng {team}. Kinikilig ako!
+Yes! Unti-unting nabubuo ang lineup ng {team}. Grabe, ang ganda!
+Yes! Unti-unting nabubuo ang lineup ng {team}. Yes, yes!
+Ay grabe! Unti-unting nabubuo ang lineup ng {team}.
+Ay grabe! Unti-unting nabubuo ang lineup ng {team}. Galing!
+Ay grabe! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Ay grabe! Unti-unting nabubuo ang lineup ng {team}. Kinikilig ako!
+Ay grabe! Unti-unting nabubuo ang lineup ng {team}. Grabe, ang ganda!
+Ay grabe! Unti-unting nabubuo ang lineup ng {team}. Yes, yes!
+Wow! Unti-unting nabubuo ang lineup ng {team}.
+Wow! Unti-unting nabubuo ang lineup ng {team}. Galing!
+Wow! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Wow! Unti-unting nabubuo ang lineup ng {team}. Kinikilig ako!
+Wow! Unti-unting nabubuo ang lineup ng {team}. Grabe, ang ganda!
+Wow! Unti-unting nabubuo ang lineup ng {team}. Yes, yes!
+Uy, uy! Unti-unting nabubuo ang lineup ng {team}.
+Uy, uy! Unti-unting nabubuo ang lineup ng {team}. Galing!
+Uy, uy! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Uy, uy! Unti-unting nabubuo ang lineup ng {team}. Kinikilig ako!
+Uy, uy! Unti-unting nabubuo ang lineup ng {team}. Grabe, ang ganda!
+Uy, uy! Unti-unting nabubuo ang lineup ng {team}. Yes, yes!
+Kinikilig ako! Unti-unting nabubuo ang lineup ng {team}.
+Kinikilig ako! Unti-unting nabubuo ang lineup ng {team}. Galing!
+Kinikilig ako! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Kinikilig ako! Unti-unting nabubuo ang lineup ng {team}. Kinikilig ako!
+Kinikilig ako! Unti-unting nabubuo ang lineup ng {team}. Grabe, ang ganda!
+Kinikilig ako! Unti-unting nabubuo ang lineup ng {team}. Yes, yes!
+Hala siya! Unti-unting nabubuo ang lineup ng {team}.
+Hala siya! Unti-unting nabubuo ang lineup ng {team}. Galing!
+Hala siya! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Hala siya! Unti-unting nabubuo ang lineup ng {team}. Kinikilig ako!
+Hala siya! Unti-unting nabubuo ang lineup ng {team}. Grabe, ang ganda!
+Hala siya! Unti-unting nabubuo ang lineup ng {team}. Yes, yes!
+Ang galing! Unti-unting nabubuo ang lineup ng {team}.
+Ang galing! Unti-unting nabubuo ang lineup ng {team}. Galing!
+Ang galing! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Ang galing! Unti-unting nabubuo ang lineup ng {team}. Kinikilig ako!
+Ang galing! Unti-unting nabubuo ang lineup ng {team}. Grabe, ang ganda!
+Ang galing! Unti-unting nabubuo ang lineup ng {team}. Yes, yes!
+Ayan na! Unti-unting nabubuo ang lineup ng {team}.
+Ayan na! Unti-unting nabubuo ang lineup ng {team}. Galing!
+Ayan na! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Ayan na! Unti-unting nabubuo ang lineup ng {team}. Kinikilig ako!
+Ayan na! Unti-unting nabubuo ang lineup ng {team}. Grabe, ang ganda!
+Ayan na! Unti-unting nabubuo ang lineup ng {team}. Yes, yes!
+Malakas na {heroClass} ang {hero} sa ganitong draft.
+Malakas na {heroClass} ang {hero} sa ganitong draft. Galing!
+Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Malakas na {heroClass} ang {hero} sa ganitong draft. Kinikilig ako!
+Malakas na {heroClass} ang {hero} sa ganitong draft. Grabe, ang ganda!
+Malakas na {heroClass} ang {hero} sa ganitong draft. Yes, yes!
+Yes! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Yes! Malakas na {heroClass} ang {hero} sa ganitong draft. Galing!
+Yes! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Yes! Malakas na {heroClass} ang {hero} sa ganitong draft. Kinikilig ako!
+Yes! Malakas na {heroClass} ang {hero} sa ganitong draft. Grabe, ang ganda!
+Yes! Malakas na {heroClass} ang {hero} sa ganitong draft. Yes, yes!
+Ay grabe! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Ay grabe! Malakas na {heroClass} ang {hero} sa ganitong draft. Galing!
+Ay grabe! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Ay grabe! Malakas na {heroClass} ang {hero} sa ganitong draft. Kinikilig ako!
+Ay grabe! Malakas na {heroClass} ang {hero} sa ganitong draft. Grabe, ang ganda!
+Ay grabe! Malakas na {heroClass} ang {hero} sa ganitong draft. Yes, yes!
+Wow! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Wow! Malakas na {heroClass} ang {hero} sa ganitong draft. Galing!
+Wow! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Wow! Malakas na {heroClass} ang {hero} sa ganitong draft. Kinikilig ako!
+Wow! Malakas na {heroClass} ang {hero} sa ganitong draft. Grabe, ang ganda!
+Wow! Malakas na {heroClass} ang {hero} sa ganitong draft. Yes, yes!
+Uy, uy! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Uy, uy! Malakas na {heroClass} ang {hero} sa ganitong draft. Galing!
+Uy, uy! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Uy, uy! Malakas na {heroClass} ang {hero} sa ganitong draft. Kinikilig ako!
+Uy, uy! Malakas na {heroClass} ang {hero} sa ganitong draft. Grabe, ang ganda!
+Uy, uy! Malakas na {heroClass} ang {hero} sa ganitong draft. Yes, yes!
+Kinikilig ako! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Kinikilig ako! Malakas na {heroClass} ang {hero} sa ganitong draft. Galing!
+Kinikilig ako! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Kinikilig ako! Malakas na {heroClass} ang {hero} sa ganitong draft. Kinikilig ako!
+Kinikilig ako! Malakas na {heroClass} ang {hero} sa ganitong draft. Grabe, ang ganda!
+Kinikilig ako! Malakas na {heroClass} ang {hero} sa ganitong draft. Yes, yes!
+Hala siya! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Hala siya! Malakas na {heroClass} ang {hero} sa ganitong draft. Galing!
+Hala siya! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Hala siya! Malakas na {heroClass} ang {hero} sa ganitong draft. Kinikilig ako!
+Hala siya! Malakas na {heroClass} ang {hero} sa ganitong draft. Grabe, ang ganda!
+Hala siya! Malakas na {heroClass} ang {hero} sa ganitong draft. Yes, yes!
+Ang galing! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Ang galing! Malakas na {heroClass} ang {hero} sa ganitong draft. Galing!
+Ang galing! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Ang galing! Malakas na {heroClass} ang {hero} sa ganitong draft. Kinikilig ako!
+Ang galing! Malakas na {heroClass} ang {hero} sa ganitong draft. Grabe, ang ganda!
+Ang galing! Malakas na {heroClass} ang {hero} sa ganitong draft. Yes, yes!
+Ayan na! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Ayan na! Malakas na {heroClass} ang {hero} sa ganitong draft. Galing!
+Ayan na! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Ayan na! Malakas na {heroClass} ang {hero} sa ganitong draft. Kinikilig ako!
+Ayan na! Malakas na {heroClass} ang {hero} sa ganitong draft. Grabe, ang ganda!
+Ayan na! Malakas na {heroClass} ang {hero} sa ganitong draft. Yes, yes!
+
+══════ Draft talk (speculation & story) — 369 lines ══════
+Kinakabahan ako sa susunod na pick, totoo lang!
+Kinakabahan ako sa susunod na pick, totoo lang! Huwag mag-face-check!
+Kinakabahan ako sa susunod na pick, totoo lang! Ingat sa spells!
+Kinakabahan ako sa susunod na pick, totoo lang! Bantayan ang cooldowns!
+Kinakabahan ako sa susunod na pick, totoo lang! Clutch o kapalpakan?
+Spell watch. Kinakabahan ako sa susunod na pick, totoo lang!
+Spell watch. Kinakabahan ako sa susunod na pick, totoo lang! Huwag mag-face-check!
+Spell watch. Kinakabahan ako sa susunod na pick, totoo lang! Ingat sa spells!
+Spell watch. Kinakabahan ako sa susunod na pick, totoo lang! Bantayan ang cooldowns!
+Spell watch. Kinakabahan ako sa susunod na pick, totoo lang! Clutch o kapalpakan?
+Naku, mga lods. Kinakabahan ako sa susunod na pick, totoo lang!
+Naku, mga lods. Kinakabahan ako sa susunod na pick, totoo lang! Huwag mag-face-check!
+Naku, mga lods. Kinakabahan ako sa susunod na pick, totoo lang! Ingat sa spells!
+Naku, mga lods. Kinakabahan ako sa susunod na pick, totoo lang! Bantayan ang cooldowns!
+Naku, mga lods. Kinakabahan ako sa susunod na pick, totoo lang! Clutch o kapalpakan?
+Hmm. Kinakabahan ako sa susunod na pick, totoo lang!
+Hmm. Kinakabahan ako sa susunod na pick, totoo lang! Huwag mag-face-check!
+Hmm. Kinakabahan ako sa susunod na pick, totoo lang! Ingat sa spells!
+Hmm. Kinakabahan ako sa susunod na pick, totoo lang! Bantayan ang cooldowns!
+Hmm. Kinakabahan ako sa susunod na pick, totoo lang! Clutch o kapalpakan?
+Teka, teka. Kinakabahan ako sa susunod na pick, totoo lang!
+Teka, teka. Kinakabahan ako sa susunod na pick, totoo lang! Huwag mag-face-check!
+Teka, teka. Kinakabahan ako sa susunod na pick, totoo lang! Ingat sa spells!
+Teka, teka. Kinakabahan ako sa susunod na pick, totoo lang! Bantayan ang cooldowns!
+Teka, teka. Kinakabahan ako sa susunod na pick, totoo lang! Clutch o kapalpakan?
+Ay, delikado. Kinakabahan ako sa susunod na pick, totoo lang!
+Ay, delikado. Kinakabahan ako sa susunod na pick, totoo lang! Huwag mag-face-check!
+Ay, delikado. Kinakabahan ako sa susunod na pick, totoo lang! Ingat sa spells!
+Ay, delikado. Kinakabahan ako sa susunod na pick, totoo lang! Bantayan ang cooldowns!
+Ay, delikado. Kinakabahan ako sa susunod na pick, totoo lang! Clutch o kapalpakan?
+Bantayan natin. Kinakabahan ako sa susunod na pick, totoo lang!
+Bantayan natin. Kinakabahan ako sa susunod na pick, totoo lang! Huwag mag-face-check!
+Bantayan natin. Kinakabahan ako sa susunod na pick, totoo lang! Ingat sa spells!
+Bantayan natin. Kinakabahan ako sa susunod na pick, totoo lang! Bantayan ang cooldowns!
+Bantayan natin. Kinakabahan ako sa susunod na pick, totoo lang! Clutch o kapalpakan?
+Alam niyo ba? Kinakabahan ako sa susunod na pick, totoo lang!
+Alam niyo ba? Kinakabahan ako sa susunod na pick, totoo lang! Huwag mag-face-check!
+Alam niyo ba? Kinakabahan ako sa susunod na pick, totoo lang! Ingat sa spells!
+Alam niyo ba? Kinakabahan ako sa susunod na pick, totoo lang! Bantayan ang cooldowns!
+Alam niyo ba? Kinakabahan ako sa susunod na pick, totoo lang! Clutch o kapalpakan?
+Ingat, ingat. Kinakabahan ako sa susunod na pick, totoo lang!
+Ingat, ingat. Kinakabahan ako sa susunod na pick, totoo lang! Huwag mag-face-check!
+Ingat, ingat. Kinakabahan ako sa susunod na pick, totoo lang! Ingat sa spells!
+Ingat, ingat. Kinakabahan ako sa susunod na pick, totoo lang! Bantayan ang cooldowns!
+Ingat, ingat. Kinakabahan ako sa susunod na pick, totoo lang! Clutch o kapalpakan?
+Abangan natin kung may surprise pick!
+Abangan natin kung may surprise pick! Huwag mag-face-check!
+Abangan natin kung may surprise pick! Ingat sa spells!
+Abangan natin kung may surprise pick! Kinakabahan ako!
+Abangan natin kung may surprise pick! Bantayan ang cooldowns!
+Abangan natin kung may surprise pick! Clutch o kapalpakan?
+Spell watch. Abangan natin kung may surprise pick!
+Spell watch. Abangan natin kung may surprise pick! Huwag mag-face-check!
+Spell watch. Abangan natin kung may surprise pick! Ingat sa spells!
+Spell watch. Abangan natin kung may surprise pick! Kinakabahan ako!
+Spell watch. Abangan natin kung may surprise pick! Bantayan ang cooldowns!
+Spell watch. Abangan natin kung may surprise pick! Clutch o kapalpakan?
+Naku, mga lods. Abangan natin kung may surprise pick!
+Naku, mga lods. Abangan natin kung may surprise pick! Huwag mag-face-check!
+Naku, mga lods. Abangan natin kung may surprise pick! Ingat sa spells!
+Naku, mga lods. Abangan natin kung may surprise pick! Kinakabahan ako!
+Naku, mga lods. Abangan natin kung may surprise pick! Bantayan ang cooldowns!
+Naku, mga lods. Abangan natin kung may surprise pick! Clutch o kapalpakan?
+Hmm. Abangan natin kung may surprise pick!
+Hmm. Abangan natin kung may surprise pick! Huwag mag-face-check!
+Hmm. Abangan natin kung may surprise pick! Ingat sa spells!
+Hmm. Abangan natin kung may surprise pick! Kinakabahan ako!
+Hmm. Abangan natin kung may surprise pick! Bantayan ang cooldowns!
+Hmm. Abangan natin kung may surprise pick! Clutch o kapalpakan?
+Teka, teka. Abangan natin kung may surprise pick!
+Teka, teka. Abangan natin kung may surprise pick! Huwag mag-face-check!
+Teka, teka. Abangan natin kung may surprise pick! Ingat sa spells!
+Teka, teka. Abangan natin kung may surprise pick! Kinakabahan ako!
+Teka, teka. Abangan natin kung may surprise pick! Bantayan ang cooldowns!
+Teka, teka. Abangan natin kung may surprise pick! Clutch o kapalpakan?
+Ay, delikado. Abangan natin kung may surprise pick!
+Ay, delikado. Abangan natin kung may surprise pick! Huwag mag-face-check!
+Ay, delikado. Abangan natin kung may surprise pick! Ingat sa spells!
+Ay, delikado. Abangan natin kung may surprise pick! Kinakabahan ako!
+Ay, delikado. Abangan natin kung may surprise pick! Bantayan ang cooldowns!
+Ay, delikado. Abangan natin kung may surprise pick! Clutch o kapalpakan?
+Bantayan natin. Abangan natin kung may surprise pick!
+Bantayan natin. Abangan natin kung may surprise pick! Huwag mag-face-check!
+Bantayan natin. Abangan natin kung may surprise pick! Ingat sa spells!
+Bantayan natin. Abangan natin kung may surprise pick! Kinakabahan ako!
+Bantayan natin. Abangan natin kung may surprise pick! Bantayan ang cooldowns!
+Bantayan natin. Abangan natin kung may surprise pick! Clutch o kapalpakan?
+Alam niyo ba? Abangan natin kung may surprise pick!
+Alam niyo ba? Abangan natin kung may surprise pick! Huwag mag-face-check!
+Alam niyo ba? Abangan natin kung may surprise pick! Ingat sa spells!
+Alam niyo ba? Abangan natin kung may surprise pick! Kinakabahan ako!
+Alam niyo ba? Abangan natin kung may surprise pick! Bantayan ang cooldowns!
+Alam niyo ba? Abangan natin kung may surprise pick! Clutch o kapalpakan?
+Ingat, ingat. Abangan natin kung may surprise pick!
+Ingat, ingat. Abangan natin kung may surprise pick! Huwag mag-face-check!
+Ingat, ingat. Abangan natin kung may surprise pick! Ingat sa spells!
+Ingat, ingat. Abangan natin kung may surprise pick! Kinakabahan ako!
+Ingat, ingat. Abangan natin kung may surprise pick! Bantayan ang cooldowns!
+Ingat, ingat. Abangan natin kung may surprise pick! Clutch o kapalpakan?
+Mainit ang draft ngayong Game {gameNumber}.
+Mainit ang draft ngayong Game {gameNumber}. Huwag mag-face-check!
+Mainit ang draft ngayong Game {gameNumber}. Ingat sa spells!
+Mainit ang draft ngayong Game {gameNumber}. Kinakabahan ako!
+Mainit ang draft ngayong Game {gameNumber}. Bantayan ang cooldowns!
+Mainit ang draft ngayong Game {gameNumber}. Clutch o kapalpakan?
+Spell watch. Mainit ang draft ngayong Game {gameNumber}.
+Spell watch. Mainit ang draft ngayong Game {gameNumber}. Huwag mag-face-check!
+Spell watch. Mainit ang draft ngayong Game {gameNumber}. Ingat sa spells!
+Spell watch. Mainit ang draft ngayong Game {gameNumber}. Kinakabahan ako!
+Spell watch. Mainit ang draft ngayong Game {gameNumber}. Bantayan ang cooldowns!
+Spell watch. Mainit ang draft ngayong Game {gameNumber}. Clutch o kapalpakan?
+Naku, mga lods. Mainit ang draft ngayong Game {gameNumber}.
+Naku, mga lods. Mainit ang draft ngayong Game {gameNumber}. Huwag mag-face-check!
+Naku, mga lods. Mainit ang draft ngayong Game {gameNumber}. Ingat sa spells!
+Naku, mga lods. Mainit ang draft ngayong Game {gameNumber}. Kinakabahan ako!
+Naku, mga lods. Mainit ang draft ngayong Game {gameNumber}. Bantayan ang cooldowns!
+Naku, mga lods. Mainit ang draft ngayong Game {gameNumber}. Clutch o kapalpakan?
+Hmm. Mainit ang draft ngayong Game {gameNumber}.
+Hmm. Mainit ang draft ngayong Game {gameNumber}. Huwag mag-face-check!
+Hmm. Mainit ang draft ngayong Game {gameNumber}. Ingat sa spells!
+Hmm. Mainit ang draft ngayong Game {gameNumber}. Kinakabahan ako!
+Hmm. Mainit ang draft ngayong Game {gameNumber}. Bantayan ang cooldowns!
+Hmm. Mainit ang draft ngayong Game {gameNumber}. Clutch o kapalpakan?
+Teka, teka. Mainit ang draft ngayong Game {gameNumber}.
+Teka, teka. Mainit ang draft ngayong Game {gameNumber}. Huwag mag-face-check!
+Teka, teka. Mainit ang draft ngayong Game {gameNumber}. Ingat sa spells!
+Teka, teka. Mainit ang draft ngayong Game {gameNumber}. Kinakabahan ako!
+Teka, teka. Mainit ang draft ngayong Game {gameNumber}. Bantayan ang cooldowns!
+Teka, teka. Mainit ang draft ngayong Game {gameNumber}. Clutch o kapalpakan?
+Ay, delikado. Mainit ang draft ngayong Game {gameNumber}.
+Ay, delikado. Mainit ang draft ngayong Game {gameNumber}. Huwag mag-face-check!
+Ay, delikado. Mainit ang draft ngayong Game {gameNumber}. Ingat sa spells!
+Ay, delikado. Mainit ang draft ngayong Game {gameNumber}. Kinakabahan ako!
+Ay, delikado. Mainit ang draft ngayong Game {gameNumber}. Bantayan ang cooldowns!
+Ay, delikado. Mainit ang draft ngayong Game {gameNumber}. Clutch o kapalpakan?
+Bantayan natin. Mainit ang draft ngayong Game {gameNumber}.
+Bantayan natin. Mainit ang draft ngayong Game {gameNumber}. Huwag mag-face-check!
+Bantayan natin. Mainit ang draft ngayong Game {gameNumber}. Ingat sa spells!
+Bantayan natin. Mainit ang draft ngayong Game {gameNumber}. Kinakabahan ako!
+Bantayan natin. Mainit ang draft ngayong Game {gameNumber}. Bantayan ang cooldowns!
+Bantayan natin. Mainit ang draft ngayong Game {gameNumber}. Clutch o kapalpakan?
+Alam niyo ba? Mainit ang draft ngayong Game {gameNumber}.
+Alam niyo ba? Mainit ang draft ngayong Game {gameNumber}. Huwag mag-face-check!
+Alam niyo ba? Mainit ang draft ngayong Game {gameNumber}. Ingat sa spells!
+Alam niyo ba? Mainit ang draft ngayong Game {gameNumber}. Kinakabahan ako!
+Alam niyo ba? Mainit ang draft ngayong Game {gameNumber}. Bantayan ang cooldowns!
+Alam niyo ba? Mainit ang draft ngayong Game {gameNumber}. Clutch o kapalpakan?
+Ingat, ingat. Mainit ang draft ngayong Game {gameNumber}.
+Ingat, ingat. Mainit ang draft ngayong Game {gameNumber}. Huwag mag-face-check!
+Ingat, ingat. Mainit ang draft ngayong Game {gameNumber}. Ingat sa spells!
+Ingat, ingat. Mainit ang draft ngayong Game {gameNumber}. Kinakabahan ako!
+Ingat, ingat. Mainit ang draft ngayong Game {gameNumber}. Bantayan ang cooldowns!
+Ingat, ingat. Mainit ang draft ngayong Game {gameNumber}. Clutch o kapalpakan?
+Bawat pick at ban, may dahilan.
+Bawat pick at ban, may dahilan. Huwag mag-face-check!
+Bawat pick at ban, may dahilan. Ingat sa spells!
+Bawat pick at ban, may dahilan. Kinakabahan ako!
+Bawat pick at ban, may dahilan. Bantayan ang cooldowns!
+Bawat pick at ban, may dahilan. Clutch o kapalpakan?
+Spell watch. Bawat pick at ban, may dahilan.
+Spell watch. Bawat pick at ban, may dahilan. Huwag mag-face-check!
+Spell watch. Bawat pick at ban, may dahilan. Ingat sa spells!
+Spell watch. Bawat pick at ban, may dahilan. Kinakabahan ako!
+Spell watch. Bawat pick at ban, may dahilan. Bantayan ang cooldowns!
+Spell watch. Bawat pick at ban, may dahilan. Clutch o kapalpakan?
+Naku, mga lods. Bawat pick at ban, may dahilan.
+Naku, mga lods. Bawat pick at ban, may dahilan. Huwag mag-face-check!
+Naku, mga lods. Bawat pick at ban, may dahilan. Ingat sa spells!
+Naku, mga lods. Bawat pick at ban, may dahilan. Kinakabahan ako!
+Naku, mga lods. Bawat pick at ban, may dahilan. Bantayan ang cooldowns!
+Naku, mga lods. Bawat pick at ban, may dahilan. Clutch o kapalpakan?
+Hmm. Bawat pick at ban, may dahilan.
+Hmm. Bawat pick at ban, may dahilan. Huwag mag-face-check!
+Hmm. Bawat pick at ban, may dahilan. Ingat sa spells!
+Hmm. Bawat pick at ban, may dahilan. Kinakabahan ako!
+Hmm. Bawat pick at ban, may dahilan. Bantayan ang cooldowns!
+Hmm. Bawat pick at ban, may dahilan. Clutch o kapalpakan?
+Teka, teka. Bawat pick at ban, may dahilan.
+Teka, teka. Bawat pick at ban, may dahilan. Huwag mag-face-check!
+Teka, teka. Bawat pick at ban, may dahilan. Ingat sa spells!
+Teka, teka. Bawat pick at ban, may dahilan. Kinakabahan ako!
+Teka, teka. Bawat pick at ban, may dahilan. Bantayan ang cooldowns!
+Teka, teka. Bawat pick at ban, may dahilan. Clutch o kapalpakan?
+Ay, delikado. Bawat pick at ban, may dahilan.
+Ay, delikado. Bawat pick at ban, may dahilan. Huwag mag-face-check!
+Ay, delikado. Bawat pick at ban, may dahilan. Ingat sa spells!
+Ay, delikado. Bawat pick at ban, may dahilan. Kinakabahan ako!
+Ay, delikado. Bawat pick at ban, may dahilan. Bantayan ang cooldowns!
+Ay, delikado. Bawat pick at ban, may dahilan. Clutch o kapalpakan?
+Bantayan natin. Bawat pick at ban, may dahilan.
+Bantayan natin. Bawat pick at ban, may dahilan. Huwag mag-face-check!
+Bantayan natin. Bawat pick at ban, may dahilan. Ingat sa spells!
+Bantayan natin. Bawat pick at ban, may dahilan. Kinakabahan ako!
+Bantayan natin. Bawat pick at ban, may dahilan. Bantayan ang cooldowns!
+Bantayan natin. Bawat pick at ban, may dahilan. Clutch o kapalpakan?
+Alam niyo ba? Bawat pick at ban, may dahilan.
+Alam niyo ba? Bawat pick at ban, may dahilan. Huwag mag-face-check!
+Alam niyo ba? Bawat pick at ban, may dahilan. Ingat sa spells!
+Alam niyo ba? Bawat pick at ban, may dahilan. Kinakabahan ako!
+Alam niyo ba? Bawat pick at ban, may dahilan. Bantayan ang cooldowns!
+Alam niyo ba? Bawat pick at ban, may dahilan. Clutch o kapalpakan?
+Ingat, ingat. Bawat pick at ban, may dahilan.
+Ingat, ingat. Bawat pick at ban, may dahilan. Huwag mag-face-check!
+Ingat, ingat. Bawat pick at ban, may dahilan. Ingat sa spells!
+Ingat, ingat. Bawat pick at ban, may dahilan. Kinakabahan ako!
+Ingat, ingat. Bawat pick at ban, may dahilan. Bantayan ang cooldowns!
+Ingat, ingat. Bawat pick at ban, may dahilan. Clutch o kapalpakan?
+Abangan natin ang susunod na desisyon.
+Abangan natin ang susunod na desisyon. Huwag mag-face-check!
+Abangan natin ang susunod na desisyon. Ingat sa spells!
+Abangan natin ang susunod na desisyon. Kinakabahan ako!
+Abangan natin ang susunod na desisyon. Bantayan ang cooldowns!
+Abangan natin ang susunod na desisyon. Clutch o kapalpakan?
+Spell watch. Abangan natin ang susunod na desisyon.
+Spell watch. Abangan natin ang susunod na desisyon. Huwag mag-face-check!
+Spell watch. Abangan natin ang susunod na desisyon. Ingat sa spells!
+Spell watch. Abangan natin ang susunod na desisyon. Kinakabahan ako!
+Spell watch. Abangan natin ang susunod na desisyon. Bantayan ang cooldowns!
+Spell watch. Abangan natin ang susunod na desisyon. Clutch o kapalpakan?
+Naku, mga lods. Abangan natin ang susunod na desisyon.
+Naku, mga lods. Abangan natin ang susunod na desisyon. Huwag mag-face-check!
+Naku, mga lods. Abangan natin ang susunod na desisyon. Ingat sa spells!
+Naku, mga lods. Abangan natin ang susunod na desisyon. Kinakabahan ako!
+Naku, mga lods. Abangan natin ang susunod na desisyon. Bantayan ang cooldowns!
+Naku, mga lods. Abangan natin ang susunod na desisyon. Clutch o kapalpakan?
+Hmm. Abangan natin ang susunod na desisyon.
+Hmm. Abangan natin ang susunod na desisyon. Huwag mag-face-check!
+Hmm. Abangan natin ang susunod na desisyon. Ingat sa spells!
+Hmm. Abangan natin ang susunod na desisyon. Kinakabahan ako!
+Hmm. Abangan natin ang susunod na desisyon. Bantayan ang cooldowns!
+Hmm. Abangan natin ang susunod na desisyon. Clutch o kapalpakan?
+Teka, teka. Abangan natin ang susunod na desisyon.
+Teka, teka. Abangan natin ang susunod na desisyon. Huwag mag-face-check!
+Teka, teka. Abangan natin ang susunod na desisyon. Ingat sa spells!
+Teka, teka. Abangan natin ang susunod na desisyon. Kinakabahan ako!
+Teka, teka. Abangan natin ang susunod na desisyon. Bantayan ang cooldowns!
+Teka, teka. Abangan natin ang susunod na desisyon. Clutch o kapalpakan?
+Ay, delikado. Abangan natin ang susunod na desisyon.
+Ay, delikado. Abangan natin ang susunod na desisyon. Huwag mag-face-check!
+Ay, delikado. Abangan natin ang susunod na desisyon. Ingat sa spells!
+Ay, delikado. Abangan natin ang susunod na desisyon. Kinakabahan ako!
+Ay, delikado. Abangan natin ang susunod na desisyon. Bantayan ang cooldowns!
+Ay, delikado. Abangan natin ang susunod na desisyon. Clutch o kapalpakan?
+Bantayan natin. Abangan natin ang susunod na desisyon.
+Bantayan natin. Abangan natin ang susunod na desisyon. Huwag mag-face-check!
+Bantayan natin. Abangan natin ang susunod na desisyon. Ingat sa spells!
+Bantayan natin. Abangan natin ang susunod na desisyon. Kinakabahan ako!
+Bantayan natin. Abangan natin ang susunod na desisyon. Bantayan ang cooldowns!
+Bantayan natin. Abangan natin ang susunod na desisyon. Clutch o kapalpakan?
+Alam niyo ba? Abangan natin ang susunod na desisyon.
+Alam niyo ba? Abangan natin ang susunod na desisyon. Huwag mag-face-check!
+Alam niyo ba? Abangan natin ang susunod na desisyon. Ingat sa spells!
+Alam niyo ba? Abangan natin ang susunod na desisyon. Kinakabahan ako!
+Alam niyo ba? Abangan natin ang susunod na desisyon. Bantayan ang cooldowns!
+Alam niyo ba? Abangan natin ang susunod na desisyon. Clutch o kapalpakan?
+Ingat, ingat. Abangan natin ang susunod na desisyon.
+Ingat, ingat. Abangan natin ang susunod na desisyon. Huwag mag-face-check!
+Ingat, ingat. Abangan natin ang susunod na desisyon. Ingat sa spells!
+Ingat, ingat. Abangan natin ang susunod na desisyon. Kinakabahan ako!
+Ingat, ingat. Abangan natin ang susunod na desisyon. Bantayan ang cooldowns!
+Ingat, ingat. Abangan natin ang susunod na desisyon. Clutch o kapalpakan?
+Paunti nang paunti ang mga hero na natitira.
+Paunti nang paunti ang mga hero na natitira. Huwag mag-face-check!
+Paunti nang paunti ang mga hero na natitira. Ingat sa spells!
+Paunti nang paunti ang mga hero na natitira. Kinakabahan ako!
+Paunti nang paunti ang mga hero na natitira. Bantayan ang cooldowns!
+Paunti nang paunti ang mga hero na natitira. Clutch o kapalpakan?
+Spell watch. Paunti nang paunti ang mga hero na natitira.
+Spell watch. Paunti nang paunti ang mga hero na natitira. Huwag mag-face-check!
+Spell watch. Paunti nang paunti ang mga hero na natitira. Ingat sa spells!
+Spell watch. Paunti nang paunti ang mga hero na natitira. Kinakabahan ako!
+Spell watch. Paunti nang paunti ang mga hero na natitira. Bantayan ang cooldowns!
+Spell watch. Paunti nang paunti ang mga hero na natitira. Clutch o kapalpakan?
+Naku, mga lods. Paunti nang paunti ang mga hero na natitira.
+Naku, mga lods. Paunti nang paunti ang mga hero na natitira. Huwag mag-face-check!
+Naku, mga lods. Paunti nang paunti ang mga hero na natitira. Ingat sa spells!
+Naku, mga lods. Paunti nang paunti ang mga hero na natitira. Kinakabahan ako!
+Naku, mga lods. Paunti nang paunti ang mga hero na natitira. Bantayan ang cooldowns!
+Naku, mga lods. Paunti nang paunti ang mga hero na natitira. Clutch o kapalpakan?
+Hmm. Paunti nang paunti ang mga hero na natitira.
+Hmm. Paunti nang paunti ang mga hero na natitira. Huwag mag-face-check!
+Hmm. Paunti nang paunti ang mga hero na natitira. Ingat sa spells!
+Hmm. Paunti nang paunti ang mga hero na natitira. Kinakabahan ako!
+Hmm. Paunti nang paunti ang mga hero na natitira. Bantayan ang cooldowns!
+Hmm. Paunti nang paunti ang mga hero na natitira. Clutch o kapalpakan?
+Teka, teka. Paunti nang paunti ang mga hero na natitira.
+Teka, teka. Paunti nang paunti ang mga hero na natitira. Huwag mag-face-check!
+Teka, teka. Paunti nang paunti ang mga hero na natitira. Ingat sa spells!
+Teka, teka. Paunti nang paunti ang mga hero na natitira. Kinakabahan ako!
+Teka, teka. Paunti nang paunti ang mga hero na natitira. Bantayan ang cooldowns!
+Teka, teka. Paunti nang paunti ang mga hero na natitira. Clutch o kapalpakan?
+Ay, delikado. Paunti nang paunti ang mga hero na natitira.
+Ay, delikado. Paunti nang paunti ang mga hero na natitira. Huwag mag-face-check!
+Ay, delikado. Paunti nang paunti ang mga hero na natitira. Ingat sa spells!
+Ay, delikado. Paunti nang paunti ang mga hero na natitira. Kinakabahan ako!
+Ay, delikado. Paunti nang paunti ang mga hero na natitira. Bantayan ang cooldowns!
+Ay, delikado. Paunti nang paunti ang mga hero na natitira. Clutch o kapalpakan?
+Bantayan natin. Paunti nang paunti ang mga hero na natitira.
+Bantayan natin. Paunti nang paunti ang mga hero na natitira. Huwag mag-face-check!
+Bantayan natin. Paunti nang paunti ang mga hero na natitira. Ingat sa spells!
+Bantayan natin. Paunti nang paunti ang mga hero na natitira. Kinakabahan ako!
+Bantayan natin. Paunti nang paunti ang mga hero na natitira. Bantayan ang cooldowns!
+Bantayan natin. Paunti nang paunti ang mga hero na natitira. Clutch o kapalpakan?
+Alam niyo ba? Paunti nang paunti ang mga hero na natitira.
+Alam niyo ba? Paunti nang paunti ang mga hero na natitira. Huwag mag-face-check!
+Alam niyo ba? Paunti nang paunti ang mga hero na natitira. Ingat sa spells!
+Alam niyo ba? Paunti nang paunti ang mga hero na natitira. Kinakabahan ako!
+Alam niyo ba? Paunti nang paunti ang mga hero na natitira. Bantayan ang cooldowns!
+Alam niyo ba? Paunti nang paunti ang mga hero na natitira. Clutch o kapalpakan?
+Ingat, ingat. Paunti nang paunti ang mga hero na natitira.
+Ingat, ingat. Paunti nang paunti ang mga hero na natitira. Huwag mag-face-check!
+Ingat, ingat. Paunti nang paunti ang mga hero na natitira. Ingat sa spells!
+Ingat, ingat. Paunti nang paunti ang mga hero na natitira. Kinakabahan ako!
+Ingat, ingat. Paunti nang paunti ang mga hero na natitira. Bantayan ang cooldowns!
+Ingat, ingat. Paunti nang paunti ang mga hero na natitira. Clutch o kapalpakan?
+{seriesScore} ang serye — kaya mahalaga ang draft na ito.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag mag-face-check!
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Ingat sa spells!
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Kinakabahan ako!
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan ang cooldowns!
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Clutch o kapalpakan?
+Spell watch. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Spell watch. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag mag-face-check!
+Spell watch. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ingat sa spells!
+Spell watch. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Kinakabahan ako!
+Spell watch. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan ang cooldowns!
+Spell watch. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Clutch o kapalpakan?
+Naku, mga lods. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Naku, mga lods. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag mag-face-check!
+Naku, mga lods. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ingat sa spells!
+Naku, mga lods. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Kinakabahan ako!
+Naku, mga lods. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan ang cooldowns!
+Naku, mga lods. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Clutch o kapalpakan?
+Hmm. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Hmm. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag mag-face-check!
+Hmm. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ingat sa spells!
+Hmm. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Kinakabahan ako!
+Hmm. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan ang cooldowns!
+Hmm. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Clutch o kapalpakan?
+Teka, teka. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Teka, teka. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag mag-face-check!
+Teka, teka. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ingat sa spells!
+Teka, teka. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Kinakabahan ako!
+Teka, teka. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan ang cooldowns!
+Teka, teka. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Clutch o kapalpakan?
+Ay, delikado. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Ay, delikado. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag mag-face-check!
+Ay, delikado. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ingat sa spells!
+Ay, delikado. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Kinakabahan ako!
+Ay, delikado. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan ang cooldowns!
+Ay, delikado. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Clutch o kapalpakan?
+Bantayan natin. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Bantayan natin. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag mag-face-check!
+Bantayan natin. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ingat sa spells!
+Bantayan natin. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Kinakabahan ako!
+Bantayan natin. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan ang cooldowns!
+Bantayan natin. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Clutch o kapalpakan?
+Alam niyo ba? {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Alam niyo ba? {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag mag-face-check!
+Alam niyo ba? {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ingat sa spells!
+Alam niyo ba? {seriesScore} ang serye — kaya mahalaga ang draft na ito. Kinakabahan ako!
+Alam niyo ba? {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan ang cooldowns!
+Alam niyo ba? {seriesScore} ang serye — kaya mahalaga ang draft na ito. Clutch o kapalpakan?
+Ingat, ingat. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Ingat, ingat. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag mag-face-check!
+Ingat, ingat. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ingat sa spells!
+Ingat, ingat. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Kinakabahan ako!
+Ingat, ingat. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Bantayan ang cooldowns!
+Ingat, ingat. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Clutch o kapalpakan?
+
+══════ Drafting phase welcome ("Welcome sa drafting phase natin, partner …") — 531 lines ══════
+Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na!
+Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Huwag mag-face-check!
+Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Ingat sa spells!
+Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Kinakabahan ako!
+Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Bantayan ang cooldowns!
+Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Clutch o kapalpakan?
+Spell watch. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na!
+Spell watch. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Huwag mag-face-check!
+Spell watch. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Ingat sa spells!
+Spell watch. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Kinakabahan ako!
+Spell watch. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Bantayan ang cooldowns!
+Spell watch. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Clutch o kapalpakan?
+Naku, mga lods. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na!
+Naku, mga lods. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Huwag mag-face-check!
+Naku, mga lods. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Ingat sa spells!
+Naku, mga lods. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Kinakabahan ako!
+Naku, mga lods. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Bantayan ang cooldowns!
+Naku, mga lods. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Clutch o kapalpakan?
+Hmm. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na!
+Hmm. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Huwag mag-face-check!
+Hmm. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Ingat sa spells!
+Hmm. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Kinakabahan ako!
+Hmm. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Bantayan ang cooldowns!
+Hmm. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Clutch o kapalpakan?
+Teka, teka. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na!
+Teka, teka. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Huwag mag-face-check!
+Teka, teka. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Ingat sa spells!
+Teka, teka. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Kinakabahan ako!
+Teka, teka. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Bantayan ang cooldowns!
+Teka, teka. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Clutch o kapalpakan?
+Ay, delikado. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na!
+Ay, delikado. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Huwag mag-face-check!
+Ay, delikado. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Ingat sa spells!
+Ay, delikado. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Kinakabahan ako!
+Ay, delikado. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Bantayan ang cooldowns!
+Ay, delikado. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Clutch o kapalpakan?
+Bantayan natin. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na!
+Bantayan natin. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Huwag mag-face-check!
+Bantayan natin. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Ingat sa spells!
+Bantayan natin. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Kinakabahan ako!
+Bantayan natin. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Bantayan ang cooldowns!
+Bantayan natin. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Clutch o kapalpakan?
+Alam niyo ba? Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na!
+Alam niyo ba? Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Huwag mag-face-check!
+Alam niyo ba? Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Ingat sa spells!
+Alam niyo ba? Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Kinakabahan ako!
+Alam niyo ba? Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Bantayan ang cooldowns!
+Alam niyo ba? Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Clutch o kapalpakan?
+Ingat, ingat. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na!
+Ingat, ingat. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Huwag mag-face-check!
+Ingat, ingat. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Ingat sa spells!
+Ingat, ingat. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Kinakabahan ako!
+Ingat, ingat. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Bantayan ang cooldowns!
+Ingat, ingat. Abangan natin ang mga ban — minsan, dito pa lang may clutch na desisyon na! Clutch o kapalpakan?
+Kinakabahan na ako sa draft na ito, totoo lang!
+Kinakabahan na ako sa draft na ito, totoo lang! Huwag mag-face-check!
+Kinakabahan na ako sa draft na ito, totoo lang! Ingat sa spells!
+Kinakabahan na ako sa draft na ito, totoo lang! Bantayan ang cooldowns!
+Kinakabahan na ako sa draft na ito, totoo lang! Clutch o kapalpakan?
+Spell watch. Kinakabahan na ako sa draft na ito, totoo lang!
+Spell watch. Kinakabahan na ako sa draft na ito, totoo lang! Huwag mag-face-check!
+Spell watch. Kinakabahan na ako sa draft na ito, totoo lang! Ingat sa spells!
+Spell watch. Kinakabahan na ako sa draft na ito, totoo lang! Bantayan ang cooldowns!
+Spell watch. Kinakabahan na ako sa draft na ito, totoo lang! Clutch o kapalpakan?
+Naku, mga lods. Kinakabahan na ako sa draft na ito, totoo lang!
+Naku, mga lods. Kinakabahan na ako sa draft na ito, totoo lang! Huwag mag-face-check!
+Naku, mga lods. Kinakabahan na ako sa draft na ito, totoo lang! Ingat sa spells!
+Naku, mga lods. Kinakabahan na ako sa draft na ito, totoo lang! Bantayan ang cooldowns!
+Naku, mga lods. Kinakabahan na ako sa draft na ito, totoo lang! Clutch o kapalpakan?
+Hmm. Kinakabahan na ako sa draft na ito, totoo lang!
+Hmm. Kinakabahan na ako sa draft na ito, totoo lang! Huwag mag-face-check!
+Hmm. Kinakabahan na ako sa draft na ito, totoo lang! Ingat sa spells!
+Hmm. Kinakabahan na ako sa draft na ito, totoo lang! Bantayan ang cooldowns!
+Hmm. Kinakabahan na ako sa draft na ito, totoo lang! Clutch o kapalpakan?
+Teka, teka. Kinakabahan na ako sa draft na ito, totoo lang!
+Teka, teka. Kinakabahan na ako sa draft na ito, totoo lang! Huwag mag-face-check!
+Teka, teka. Kinakabahan na ako sa draft na ito, totoo lang! Ingat sa spells!
+Teka, teka. Kinakabahan na ako sa draft na ito, totoo lang! Bantayan ang cooldowns!
+Teka, teka. Kinakabahan na ako sa draft na ito, totoo lang! Clutch o kapalpakan?
+Ay, delikado. Kinakabahan na ako sa draft na ito, totoo lang!
+Ay, delikado. Kinakabahan na ako sa draft na ito, totoo lang! Huwag mag-face-check!
+Ay, delikado. Kinakabahan na ako sa draft na ito, totoo lang! Ingat sa spells!
+Ay, delikado. Kinakabahan na ako sa draft na ito, totoo lang! Bantayan ang cooldowns!
+Ay, delikado. Kinakabahan na ako sa draft na ito, totoo lang! Clutch o kapalpakan?
+Bantayan natin. Kinakabahan na ako sa draft na ito, totoo lang!
+Bantayan natin. Kinakabahan na ako sa draft na ito, totoo lang! Huwag mag-face-check!
+Bantayan natin. Kinakabahan na ako sa draft na ito, totoo lang! Ingat sa spells!
+Bantayan natin. Kinakabahan na ako sa draft na ito, totoo lang! Bantayan ang cooldowns!
+Bantayan natin. Kinakabahan na ako sa draft na ito, totoo lang! Clutch o kapalpakan?
+Alam niyo ba? Kinakabahan na ako sa draft na ito, totoo lang!
+Alam niyo ba? Kinakabahan na ako sa draft na ito, totoo lang! Huwag mag-face-check!
+Alam niyo ba? Kinakabahan na ako sa draft na ito, totoo lang! Ingat sa spells!
+Alam niyo ba? Kinakabahan na ako sa draft na ito, totoo lang! Bantayan ang cooldowns!
+Alam niyo ba? Kinakabahan na ako sa draft na ito, totoo lang! Clutch o kapalpakan?
+Ingat, ingat. Kinakabahan na ako sa draft na ito, totoo lang!
+Ingat, ingat. Kinakabahan na ako sa draft na ito, totoo lang! Huwag mag-face-check!
+Ingat, ingat. Kinakabahan na ako sa draft na ito, totoo lang! Ingat sa spells!
+Ingat, ingat. Kinakabahan na ako sa draft na ito, totoo lang! Bantayan ang cooldowns!
+Ingat, ingat. Kinakabahan na ako sa draft na ito, totoo lang! Clutch o kapalpakan?
+Sana may last-pick na surprise hero — para mas masaya!
+Sana may last-pick na surprise hero — para mas masaya! Huwag mag-face-check!
+Sana may last-pick na surprise hero — para mas masaya! Ingat sa spells!
+Sana may last-pick na surprise hero — para mas masaya! Kinakabahan ako!
+Sana may last-pick na surprise hero — para mas masaya! Bantayan ang cooldowns!
+Sana may last-pick na surprise hero — para mas masaya! Clutch o kapalpakan?
+Spell watch. Sana may last-pick na surprise hero — para mas masaya!
+Spell watch. Sana may last-pick na surprise hero — para mas masaya! Huwag mag-face-check!
+Spell watch. Sana may last-pick na surprise hero — para mas masaya! Ingat sa spells!
+Spell watch. Sana may last-pick na surprise hero — para mas masaya! Kinakabahan ako!
+Spell watch. Sana may last-pick na surprise hero — para mas masaya! Bantayan ang cooldowns!
+Spell watch. Sana may last-pick na surprise hero — para mas masaya! Clutch o kapalpakan?
+Naku, mga lods. Sana may last-pick na surprise hero — para mas masaya!
+Naku, mga lods. Sana may last-pick na surprise hero — para mas masaya! Huwag mag-face-check!
+Naku, mga lods. Sana may last-pick na surprise hero — para mas masaya! Ingat sa spells!
+Naku, mga lods. Sana may last-pick na surprise hero — para mas masaya! Kinakabahan ako!
+Naku, mga lods. Sana may last-pick na surprise hero — para mas masaya! Bantayan ang cooldowns!
+Naku, mga lods. Sana may last-pick na surprise hero — para mas masaya! Clutch o kapalpakan?
+Hmm. Sana may last-pick na surprise hero — para mas masaya!
+Hmm. Sana may last-pick na surprise hero — para mas masaya! Huwag mag-face-check!
+Hmm. Sana may last-pick na surprise hero — para mas masaya! Ingat sa spells!
+Hmm. Sana may last-pick na surprise hero — para mas masaya! Kinakabahan ako!
+Hmm. Sana may last-pick na surprise hero — para mas masaya! Bantayan ang cooldowns!
+Hmm. Sana may last-pick na surprise hero — para mas masaya! Clutch o kapalpakan?
+Teka, teka. Sana may last-pick na surprise hero — para mas masaya!
+Teka, teka. Sana may last-pick na surprise hero — para mas masaya! Huwag mag-face-check!
+Teka, teka. Sana may last-pick na surprise hero — para mas masaya! Ingat sa spells!
+Teka, teka. Sana may last-pick na surprise hero — para mas masaya! Kinakabahan ako!
+Teka, teka. Sana may last-pick na surprise hero — para mas masaya! Bantayan ang cooldowns!
+Teka, teka. Sana may last-pick na surprise hero — para mas masaya! Clutch o kapalpakan?
+Ay, delikado. Sana may last-pick na surprise hero — para mas masaya!
+Ay, delikado. Sana may last-pick na surprise hero — para mas masaya! Huwag mag-face-check!
+Ay, delikado. Sana may last-pick na surprise hero — para mas masaya! Ingat sa spells!
+Ay, delikado. Sana may last-pick na surprise hero — para mas masaya! Kinakabahan ako!
+Ay, delikado. Sana may last-pick na surprise hero — para mas masaya! Bantayan ang cooldowns!
+Ay, delikado. Sana may last-pick na surprise hero — para mas masaya! Clutch o kapalpakan?
+Bantayan natin. Sana may last-pick na surprise hero — para mas masaya!
+Bantayan natin. Sana may last-pick na surprise hero — para mas masaya! Huwag mag-face-check!
+Bantayan natin. Sana may last-pick na surprise hero — para mas masaya! Ingat sa spells!
+Bantayan natin. Sana may last-pick na surprise hero — para mas masaya! Kinakabahan ako!
+Bantayan natin. Sana may last-pick na surprise hero — para mas masaya! Bantayan ang cooldowns!
+Bantayan natin. Sana may last-pick na surprise hero — para mas masaya! Clutch o kapalpakan?
+Alam niyo ba? Sana may last-pick na surprise hero — para mas masaya!
+Alam niyo ba? Sana may last-pick na surprise hero — para mas masaya! Huwag mag-face-check!
+Alam niyo ba? Sana may last-pick na surprise hero — para mas masaya! Ingat sa spells!
+Alam niyo ba? Sana may last-pick na surprise hero — para mas masaya! Kinakabahan ako!
+Alam niyo ba? Sana may last-pick na surprise hero — para mas masaya! Bantayan ang cooldowns!
+Alam niyo ba? Sana may last-pick na surprise hero — para mas masaya! Clutch o kapalpakan?
+Ingat, ingat. Sana may last-pick na surprise hero — para mas masaya!
+Ingat, ingat. Sana may last-pick na surprise hero — para mas masaya! Huwag mag-face-check!
+Ingat, ingat. Sana may last-pick na surprise hero — para mas masaya! Ingat sa spells!
+Ingat, ingat. Sana may last-pick na surprise hero — para mas masaya! Kinakabahan ako!
+Ingat, ingat. Sana may last-pick na surprise hero — para mas masaya! Bantayan ang cooldowns!
+Ingat, ingat. Sana may last-pick na surprise hero — para mas masaya! Clutch o kapalpakan?
+Simula na ang drafting phase ng Game {gameNumber}.
+Simula na ang drafting phase ng Game {gameNumber}. Huwag mag-face-check!
+Simula na ang drafting phase ng Game {gameNumber}. Ingat sa spells!
+Simula na ang drafting phase ng Game {gameNumber}. Kinakabahan ako!
+Simula na ang drafting phase ng Game {gameNumber}. Bantayan ang cooldowns!
+Simula na ang drafting phase ng Game {gameNumber}. Clutch o kapalpakan?
+Spell watch. Simula na ang drafting phase ng Game {gameNumber}.
+Spell watch. Simula na ang drafting phase ng Game {gameNumber}. Huwag mag-face-check!
+Spell watch. Simula na ang drafting phase ng Game {gameNumber}. Ingat sa spells!
+Spell watch. Simula na ang drafting phase ng Game {gameNumber}. Kinakabahan ako!
+Spell watch. Simula na ang drafting phase ng Game {gameNumber}. Bantayan ang cooldowns!
+Spell watch. Simula na ang drafting phase ng Game {gameNumber}. Clutch o kapalpakan?
+Naku, mga lods. Simula na ang drafting phase ng Game {gameNumber}.
+Naku, mga lods. Simula na ang drafting phase ng Game {gameNumber}. Huwag mag-face-check!
+Naku, mga lods. Simula na ang drafting phase ng Game {gameNumber}. Ingat sa spells!
+Naku, mga lods. Simula na ang drafting phase ng Game {gameNumber}. Kinakabahan ako!
+Naku, mga lods. Simula na ang drafting phase ng Game {gameNumber}. Bantayan ang cooldowns!
+Naku, mga lods. Simula na ang drafting phase ng Game {gameNumber}. Clutch o kapalpakan?
+Hmm. Simula na ang drafting phase ng Game {gameNumber}.
+Hmm. Simula na ang drafting phase ng Game {gameNumber}. Huwag mag-face-check!
+Hmm. Simula na ang drafting phase ng Game {gameNumber}. Ingat sa spells!
+Hmm. Simula na ang drafting phase ng Game {gameNumber}. Kinakabahan ako!
+Hmm. Simula na ang drafting phase ng Game {gameNumber}. Bantayan ang cooldowns!
+Hmm. Simula na ang drafting phase ng Game {gameNumber}. Clutch o kapalpakan?
+Teka, teka. Simula na ang drafting phase ng Game {gameNumber}.
+Teka, teka. Simula na ang drafting phase ng Game {gameNumber}. Huwag mag-face-check!
+Teka, teka. Simula na ang drafting phase ng Game {gameNumber}. Ingat sa spells!
+Teka, teka. Simula na ang drafting phase ng Game {gameNumber}. Kinakabahan ako!
+Teka, teka. Simula na ang drafting phase ng Game {gameNumber}. Bantayan ang cooldowns!
+Teka, teka. Simula na ang drafting phase ng Game {gameNumber}. Clutch o kapalpakan?
+Ay, delikado. Simula na ang drafting phase ng Game {gameNumber}.
+Ay, delikado. Simula na ang drafting phase ng Game {gameNumber}. Huwag mag-face-check!
+Ay, delikado. Simula na ang drafting phase ng Game {gameNumber}. Ingat sa spells!
+Ay, delikado. Simula na ang drafting phase ng Game {gameNumber}. Kinakabahan ako!
+Ay, delikado. Simula na ang drafting phase ng Game {gameNumber}. Bantayan ang cooldowns!
+Ay, delikado. Simula na ang drafting phase ng Game {gameNumber}. Clutch o kapalpakan?
+Bantayan natin. Simula na ang drafting phase ng Game {gameNumber}.
+Bantayan natin. Simula na ang drafting phase ng Game {gameNumber}. Huwag mag-face-check!
+Bantayan natin. Simula na ang drafting phase ng Game {gameNumber}. Ingat sa spells!
+Bantayan natin. Simula na ang drafting phase ng Game {gameNumber}. Kinakabahan ako!
+Bantayan natin. Simula na ang drafting phase ng Game {gameNumber}. Bantayan ang cooldowns!
+Bantayan natin. Simula na ang drafting phase ng Game {gameNumber}. Clutch o kapalpakan?
+Alam niyo ba? Simula na ang drafting phase ng Game {gameNumber}.
+Alam niyo ba? Simula na ang drafting phase ng Game {gameNumber}. Huwag mag-face-check!
+Alam niyo ba? Simula na ang drafting phase ng Game {gameNumber}. Ingat sa spells!
+Alam niyo ba? Simula na ang drafting phase ng Game {gameNumber}. Kinakabahan ako!
+Alam niyo ba? Simula na ang drafting phase ng Game {gameNumber}. Bantayan ang cooldowns!
+Alam niyo ba? Simula na ang drafting phase ng Game {gameNumber}. Clutch o kapalpakan?
+Ingat, ingat. Simula na ang drafting phase ng Game {gameNumber}.
+Ingat, ingat. Simula na ang drafting phase ng Game {gameNumber}. Huwag mag-face-check!
+Ingat, ingat. Simula na ang drafting phase ng Game {gameNumber}. Ingat sa spells!
+Ingat, ingat. Simula na ang drafting phase ng Game {gameNumber}. Kinakabahan ako!
+Ingat, ingat. Simula na ang drafting phase ng Game {gameNumber}. Bantayan ang cooldowns!
+Ingat, ingat. Simula na ang drafting phase ng Game {gameNumber}. Clutch o kapalpakan?
+Abangan natin ang mga ban at pick ng dalawang team.
+Abangan natin ang mga ban at pick ng dalawang team. Huwag mag-face-check!
+Abangan natin ang mga ban at pick ng dalawang team. Ingat sa spells!
+Abangan natin ang mga ban at pick ng dalawang team. Kinakabahan ako!
+Abangan natin ang mga ban at pick ng dalawang team. Bantayan ang cooldowns!
+Abangan natin ang mga ban at pick ng dalawang team. Clutch o kapalpakan?
+Spell watch. Abangan natin ang mga ban at pick ng dalawang team.
+Spell watch. Abangan natin ang mga ban at pick ng dalawang team. Huwag mag-face-check!
+Spell watch. Abangan natin ang mga ban at pick ng dalawang team. Ingat sa spells!
+Spell watch. Abangan natin ang mga ban at pick ng dalawang team. Kinakabahan ako!
+Spell watch. Abangan natin ang mga ban at pick ng dalawang team. Bantayan ang cooldowns!
+Spell watch. Abangan natin ang mga ban at pick ng dalawang team. Clutch o kapalpakan?
+Naku, mga lods. Abangan natin ang mga ban at pick ng dalawang team.
+Naku, mga lods. Abangan natin ang mga ban at pick ng dalawang team. Huwag mag-face-check!
+Naku, mga lods. Abangan natin ang mga ban at pick ng dalawang team. Ingat sa spells!
+Naku, mga lods. Abangan natin ang mga ban at pick ng dalawang team. Kinakabahan ako!
+Naku, mga lods. Abangan natin ang mga ban at pick ng dalawang team. Bantayan ang cooldowns!
+Naku, mga lods. Abangan natin ang mga ban at pick ng dalawang team. Clutch o kapalpakan?
+Hmm. Abangan natin ang mga ban at pick ng dalawang team.
+Hmm. Abangan natin ang mga ban at pick ng dalawang team. Huwag mag-face-check!
+Hmm. Abangan natin ang mga ban at pick ng dalawang team. Ingat sa spells!
+Hmm. Abangan natin ang mga ban at pick ng dalawang team. Kinakabahan ako!
+Hmm. Abangan natin ang mga ban at pick ng dalawang team. Bantayan ang cooldowns!
+Hmm. Abangan natin ang mga ban at pick ng dalawang team. Clutch o kapalpakan?
+Teka, teka. Abangan natin ang mga ban at pick ng dalawang team.
+Teka, teka. Abangan natin ang mga ban at pick ng dalawang team. Huwag mag-face-check!
+Teka, teka. Abangan natin ang mga ban at pick ng dalawang team. Ingat sa spells!
+Teka, teka. Abangan natin ang mga ban at pick ng dalawang team. Kinakabahan ako!
+Teka, teka. Abangan natin ang mga ban at pick ng dalawang team. Bantayan ang cooldowns!
+Teka, teka. Abangan natin ang mga ban at pick ng dalawang team. Clutch o kapalpakan?
+Ay, delikado. Abangan natin ang mga ban at pick ng dalawang team.
+Ay, delikado. Abangan natin ang mga ban at pick ng dalawang team. Huwag mag-face-check!
+Ay, delikado. Abangan natin ang mga ban at pick ng dalawang team. Ingat sa spells!
+Ay, delikado. Abangan natin ang mga ban at pick ng dalawang team. Kinakabahan ako!
+Ay, delikado. Abangan natin ang mga ban at pick ng dalawang team. Bantayan ang cooldowns!
+Ay, delikado. Abangan natin ang mga ban at pick ng dalawang team. Clutch o kapalpakan?
+Bantayan natin. Abangan natin ang mga ban at pick ng dalawang team.
+Bantayan natin. Abangan natin ang mga ban at pick ng dalawang team. Huwag mag-face-check!
+Bantayan natin. Abangan natin ang mga ban at pick ng dalawang team. Ingat sa spells!
+Bantayan natin. Abangan natin ang mga ban at pick ng dalawang team. Kinakabahan ako!
+Bantayan natin. Abangan natin ang mga ban at pick ng dalawang team. Bantayan ang cooldowns!
+Bantayan natin. Abangan natin ang mga ban at pick ng dalawang team. Clutch o kapalpakan?
+Alam niyo ba? Abangan natin ang mga ban at pick ng dalawang team.
+Alam niyo ba? Abangan natin ang mga ban at pick ng dalawang team. Huwag mag-face-check!
+Alam niyo ba? Abangan natin ang mga ban at pick ng dalawang team. Ingat sa spells!
+Alam niyo ba? Abangan natin ang mga ban at pick ng dalawang team. Kinakabahan ako!
+Alam niyo ba? Abangan natin ang mga ban at pick ng dalawang team. Bantayan ang cooldowns!
+Alam niyo ba? Abangan natin ang mga ban at pick ng dalawang team. Clutch o kapalpakan?
+Ingat, ingat. Abangan natin ang mga ban at pick ng dalawang team.
+Ingat, ingat. Abangan natin ang mga ban at pick ng dalawang team. Huwag mag-face-check!
+Ingat, ingat. Abangan natin ang mga ban at pick ng dalawang team. Ingat sa spells!
+Ingat, ingat. Abangan natin ang mga ban at pick ng dalawang team. Kinakabahan ako!
+Ingat, ingat. Abangan natin ang mga ban at pick ng dalawang team. Bantayan ang cooldowns!
+Ingat, ingat. Abangan natin ang mga ban at pick ng dalawang team. Clutch o kapalpakan?
+Dito makikita ang game plan ng {teamA} at {teamB}.
+Dito makikita ang game plan ng {teamA} at {teamB}. Huwag mag-face-check!
+Dito makikita ang game plan ng {teamA} at {teamB}. Ingat sa spells!
+Dito makikita ang game plan ng {teamA} at {teamB}. Kinakabahan ako!
+Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan ang cooldowns!
+Dito makikita ang game plan ng {teamA} at {teamB}. Clutch o kapalpakan?
+Spell watch. Dito makikita ang game plan ng {teamA} at {teamB}.
+Spell watch. Dito makikita ang game plan ng {teamA} at {teamB}. Huwag mag-face-check!
+Spell watch. Dito makikita ang game plan ng {teamA} at {teamB}. Ingat sa spells!
+Spell watch. Dito makikita ang game plan ng {teamA} at {teamB}. Kinakabahan ako!
+Spell watch. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan ang cooldowns!
+Spell watch. Dito makikita ang game plan ng {teamA} at {teamB}. Clutch o kapalpakan?
+Naku, mga lods. Dito makikita ang game plan ng {teamA} at {teamB}.
+Naku, mga lods. Dito makikita ang game plan ng {teamA} at {teamB}. Huwag mag-face-check!
+Naku, mga lods. Dito makikita ang game plan ng {teamA} at {teamB}. Ingat sa spells!
+Naku, mga lods. Dito makikita ang game plan ng {teamA} at {teamB}. Kinakabahan ako!
+Naku, mga lods. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan ang cooldowns!
+Naku, mga lods. Dito makikita ang game plan ng {teamA} at {teamB}. Clutch o kapalpakan?
+Hmm. Dito makikita ang game plan ng {teamA} at {teamB}.
+Hmm. Dito makikita ang game plan ng {teamA} at {teamB}. Huwag mag-face-check!
+Hmm. Dito makikita ang game plan ng {teamA} at {teamB}. Ingat sa spells!
+Hmm. Dito makikita ang game plan ng {teamA} at {teamB}. Kinakabahan ako!
+Hmm. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan ang cooldowns!
+Hmm. Dito makikita ang game plan ng {teamA} at {teamB}. Clutch o kapalpakan?
+Teka, teka. Dito makikita ang game plan ng {teamA} at {teamB}.
+Teka, teka. Dito makikita ang game plan ng {teamA} at {teamB}. Huwag mag-face-check!
+Teka, teka. Dito makikita ang game plan ng {teamA} at {teamB}. Ingat sa spells!
+Teka, teka. Dito makikita ang game plan ng {teamA} at {teamB}. Kinakabahan ako!
+Teka, teka. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan ang cooldowns!
+Teka, teka. Dito makikita ang game plan ng {teamA} at {teamB}. Clutch o kapalpakan?
+Ay, delikado. Dito makikita ang game plan ng {teamA} at {teamB}.
+Ay, delikado. Dito makikita ang game plan ng {teamA} at {teamB}. Huwag mag-face-check!
+Ay, delikado. Dito makikita ang game plan ng {teamA} at {teamB}. Ingat sa spells!
+Ay, delikado. Dito makikita ang game plan ng {teamA} at {teamB}. Kinakabahan ako!
+Ay, delikado. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan ang cooldowns!
+Ay, delikado. Dito makikita ang game plan ng {teamA} at {teamB}. Clutch o kapalpakan?
+Bantayan natin. Dito makikita ang game plan ng {teamA} at {teamB}.
+Bantayan natin. Dito makikita ang game plan ng {teamA} at {teamB}. Huwag mag-face-check!
+Bantayan natin. Dito makikita ang game plan ng {teamA} at {teamB}. Ingat sa spells!
+Bantayan natin. Dito makikita ang game plan ng {teamA} at {teamB}. Kinakabahan ako!
+Bantayan natin. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan ang cooldowns!
+Bantayan natin. Dito makikita ang game plan ng {teamA} at {teamB}. Clutch o kapalpakan?
+Alam niyo ba? Dito makikita ang game plan ng {teamA} at {teamB}.
+Alam niyo ba? Dito makikita ang game plan ng {teamA} at {teamB}. Huwag mag-face-check!
+Alam niyo ba? Dito makikita ang game plan ng {teamA} at {teamB}. Ingat sa spells!
+Alam niyo ba? Dito makikita ang game plan ng {teamA} at {teamB}. Kinakabahan ako!
+Alam niyo ba? Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan ang cooldowns!
+Alam niyo ba? Dito makikita ang game plan ng {teamA} at {teamB}. Clutch o kapalpakan?
+Ingat, ingat. Dito makikita ang game plan ng {teamA} at {teamB}.
+Ingat, ingat. Dito makikita ang game plan ng {teamA} at {teamB}. Huwag mag-face-check!
+Ingat, ingat. Dito makikita ang game plan ng {teamA} at {teamB}. Ingat sa spells!
+Ingat, ingat. Dito makikita ang game plan ng {teamA} at {teamB}. Kinakabahan ako!
+Ingat, ingat. Dito makikita ang game plan ng {teamA} at {teamB}. Bantayan ang cooldowns!
+Ingat, ingat. Dito makikita ang game plan ng {teamA} at {teamB}. Clutch o kapalpakan?
+{blueTeam} sa blue side, {redTeam} sa red side.
+{blueTeam} sa blue side, {redTeam} sa red side. Huwag mag-face-check!
+{blueTeam} sa blue side, {redTeam} sa red side. Ingat sa spells!
+{blueTeam} sa blue side, {redTeam} sa red side. Kinakabahan ako!
+{blueTeam} sa blue side, {redTeam} sa red side. Bantayan ang cooldowns!
+{blueTeam} sa blue side, {redTeam} sa red side. Clutch o kapalpakan?
+Spell watch. {blueTeam} sa blue side, {redTeam} sa red side.
+Spell watch. {blueTeam} sa blue side, {redTeam} sa red side. Huwag mag-face-check!
+Spell watch. {blueTeam} sa blue side, {redTeam} sa red side. Ingat sa spells!
+Spell watch. {blueTeam} sa blue side, {redTeam} sa red side. Kinakabahan ako!
+Spell watch. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan ang cooldowns!
+Spell watch. {blueTeam} sa blue side, {redTeam} sa red side. Clutch o kapalpakan?
+Naku, mga lods. {blueTeam} sa blue side, {redTeam} sa red side.
+Naku, mga lods. {blueTeam} sa blue side, {redTeam} sa red side. Huwag mag-face-check!
+Naku, mga lods. {blueTeam} sa blue side, {redTeam} sa red side. Ingat sa spells!
+Naku, mga lods. {blueTeam} sa blue side, {redTeam} sa red side. Kinakabahan ako!
+Naku, mga lods. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan ang cooldowns!
+Naku, mga lods. {blueTeam} sa blue side, {redTeam} sa red side. Clutch o kapalpakan?
+Hmm. {blueTeam} sa blue side, {redTeam} sa red side.
+Hmm. {blueTeam} sa blue side, {redTeam} sa red side. Huwag mag-face-check!
+Hmm. {blueTeam} sa blue side, {redTeam} sa red side. Ingat sa spells!
+Hmm. {blueTeam} sa blue side, {redTeam} sa red side. Kinakabahan ako!
+Hmm. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan ang cooldowns!
+Hmm. {blueTeam} sa blue side, {redTeam} sa red side. Clutch o kapalpakan?
+Teka, teka. {blueTeam} sa blue side, {redTeam} sa red side.
+Teka, teka. {blueTeam} sa blue side, {redTeam} sa red side. Huwag mag-face-check!
+Teka, teka. {blueTeam} sa blue side, {redTeam} sa red side. Ingat sa spells!
+Teka, teka. {blueTeam} sa blue side, {redTeam} sa red side. Kinakabahan ako!
+Teka, teka. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan ang cooldowns!
+Teka, teka. {blueTeam} sa blue side, {redTeam} sa red side. Clutch o kapalpakan?
+Ay, delikado. {blueTeam} sa blue side, {redTeam} sa red side.
+Ay, delikado. {blueTeam} sa blue side, {redTeam} sa red side. Huwag mag-face-check!
+Ay, delikado. {blueTeam} sa blue side, {redTeam} sa red side. Ingat sa spells!
+Ay, delikado. {blueTeam} sa blue side, {redTeam} sa red side. Kinakabahan ako!
+Ay, delikado. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan ang cooldowns!
+Ay, delikado. {blueTeam} sa blue side, {redTeam} sa red side. Clutch o kapalpakan?
+Bantayan natin. {blueTeam} sa blue side, {redTeam} sa red side.
+Bantayan natin. {blueTeam} sa blue side, {redTeam} sa red side. Huwag mag-face-check!
+Bantayan natin. {blueTeam} sa blue side, {redTeam} sa red side. Ingat sa spells!
+Bantayan natin. {blueTeam} sa blue side, {redTeam} sa red side. Kinakabahan ako!
+Bantayan natin. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan ang cooldowns!
+Bantayan natin. {blueTeam} sa blue side, {redTeam} sa red side. Clutch o kapalpakan?
+Alam niyo ba? {blueTeam} sa blue side, {redTeam} sa red side.
+Alam niyo ba? {blueTeam} sa blue side, {redTeam} sa red side. Huwag mag-face-check!
+Alam niyo ba? {blueTeam} sa blue side, {redTeam} sa red side. Ingat sa spells!
+Alam niyo ba? {blueTeam} sa blue side, {redTeam} sa red side. Kinakabahan ako!
+Alam niyo ba? {blueTeam} sa blue side, {redTeam} sa red side. Bantayan ang cooldowns!
+Alam niyo ba? {blueTeam} sa blue side, {redTeam} sa red side. Clutch o kapalpakan?
+Ingat, ingat. {blueTeam} sa blue side, {redTeam} sa red side.
+Ingat, ingat. {blueTeam} sa blue side, {redTeam} sa red side. Huwag mag-face-check!
+Ingat, ingat. {blueTeam} sa blue side, {redTeam} sa red side. Ingat sa spells!
+Ingat, ingat. {blueTeam} sa blue side, {redTeam} sa red side. Kinakabahan ako!
+Ingat, ingat. {blueTeam} sa blue side, {redTeam} sa red side. Bantayan ang cooldowns!
+Ingat, ingat. {blueTeam} sa blue side, {redTeam} sa red side. Clutch o kapalpakan?
+Draft pa lang, mahalaga na ang bawat desisyon.
+Draft pa lang, mahalaga na ang bawat desisyon. Huwag mag-face-check!
+Draft pa lang, mahalaga na ang bawat desisyon. Ingat sa spells!
+Draft pa lang, mahalaga na ang bawat desisyon. Kinakabahan ako!
+Draft pa lang, mahalaga na ang bawat desisyon. Bantayan ang cooldowns!
+Draft pa lang, mahalaga na ang bawat desisyon. Clutch o kapalpakan?
+Spell watch. Draft pa lang, mahalaga na ang bawat desisyon.
+Spell watch. Draft pa lang, mahalaga na ang bawat desisyon. Huwag mag-face-check!
+Spell watch. Draft pa lang, mahalaga na ang bawat desisyon. Ingat sa spells!
+Spell watch. Draft pa lang, mahalaga na ang bawat desisyon. Kinakabahan ako!
+Spell watch. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan ang cooldowns!
+Spell watch. Draft pa lang, mahalaga na ang bawat desisyon. Clutch o kapalpakan?
+Naku, mga lods. Draft pa lang, mahalaga na ang bawat desisyon.
+Naku, mga lods. Draft pa lang, mahalaga na ang bawat desisyon. Huwag mag-face-check!
+Naku, mga lods. Draft pa lang, mahalaga na ang bawat desisyon. Ingat sa spells!
+Naku, mga lods. Draft pa lang, mahalaga na ang bawat desisyon. Kinakabahan ako!
+Naku, mga lods. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan ang cooldowns!
+Naku, mga lods. Draft pa lang, mahalaga na ang bawat desisyon. Clutch o kapalpakan?
+Hmm. Draft pa lang, mahalaga na ang bawat desisyon.
+Hmm. Draft pa lang, mahalaga na ang bawat desisyon. Huwag mag-face-check!
+Hmm. Draft pa lang, mahalaga na ang bawat desisyon. Ingat sa spells!
+Hmm. Draft pa lang, mahalaga na ang bawat desisyon. Kinakabahan ako!
+Hmm. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan ang cooldowns!
+Hmm. Draft pa lang, mahalaga na ang bawat desisyon. Clutch o kapalpakan?
+Teka, teka. Draft pa lang, mahalaga na ang bawat desisyon.
+Teka, teka. Draft pa lang, mahalaga na ang bawat desisyon. Huwag mag-face-check!
+Teka, teka. Draft pa lang, mahalaga na ang bawat desisyon. Ingat sa spells!
+Teka, teka. Draft pa lang, mahalaga na ang bawat desisyon. Kinakabahan ako!
+Teka, teka. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan ang cooldowns!
+Teka, teka. Draft pa lang, mahalaga na ang bawat desisyon. Clutch o kapalpakan?
+Ay, delikado. Draft pa lang, mahalaga na ang bawat desisyon.
+Ay, delikado. Draft pa lang, mahalaga na ang bawat desisyon. Huwag mag-face-check!
+Ay, delikado. Draft pa lang, mahalaga na ang bawat desisyon. Ingat sa spells!
+Ay, delikado. Draft pa lang, mahalaga na ang bawat desisyon. Kinakabahan ako!
+Ay, delikado. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan ang cooldowns!
+Ay, delikado. Draft pa lang, mahalaga na ang bawat desisyon. Clutch o kapalpakan?
+Bantayan natin. Draft pa lang, mahalaga na ang bawat desisyon.
+Bantayan natin. Draft pa lang, mahalaga na ang bawat desisyon. Huwag mag-face-check!
+Bantayan natin. Draft pa lang, mahalaga na ang bawat desisyon. Ingat sa spells!
+Bantayan natin. Draft pa lang, mahalaga na ang bawat desisyon. Kinakabahan ako!
+Bantayan natin. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan ang cooldowns!
+Bantayan natin. Draft pa lang, mahalaga na ang bawat desisyon. Clutch o kapalpakan?
+Alam niyo ba? Draft pa lang, mahalaga na ang bawat desisyon.
+Alam niyo ba? Draft pa lang, mahalaga na ang bawat desisyon. Huwag mag-face-check!
+Alam niyo ba? Draft pa lang, mahalaga na ang bawat desisyon. Ingat sa spells!
+Alam niyo ba? Draft pa lang, mahalaga na ang bawat desisyon. Kinakabahan ako!
+Alam niyo ba? Draft pa lang, mahalaga na ang bawat desisyon. Bantayan ang cooldowns!
+Alam niyo ba? Draft pa lang, mahalaga na ang bawat desisyon. Clutch o kapalpakan?
+Ingat, ingat. Draft pa lang, mahalaga na ang bawat desisyon.
+Ingat, ingat. Draft pa lang, mahalaga na ang bawat desisyon. Huwag mag-face-check!
+Ingat, ingat. Draft pa lang, mahalaga na ang bawat desisyon. Ingat sa spells!
+Ingat, ingat. Draft pa lang, mahalaga na ang bawat desisyon. Kinakabahan ako!
+Ingat, ingat. Draft pa lang, mahalaga na ang bawat desisyon. Bantayan ang cooldowns!
+Ingat, ingat. Draft pa lang, mahalaga na ang bawat desisyon. Clutch o kapalpakan?
+Sino kaya ang unang magpapakita ng diskarte?
+Sino kaya ang unang magpapakita ng diskarte? Huwag mag-face-check!
+Sino kaya ang unang magpapakita ng diskarte? Ingat sa spells!
+Sino kaya ang unang magpapakita ng diskarte? Kinakabahan ako!
+Sino kaya ang unang magpapakita ng diskarte? Bantayan ang cooldowns!
+Sino kaya ang unang magpapakita ng diskarte? Clutch o kapalpakan?
+Spell watch. Sino kaya ang unang magpapakita ng diskarte?
+Spell watch. Sino kaya ang unang magpapakita ng diskarte? Huwag mag-face-check!
+Spell watch. Sino kaya ang unang magpapakita ng diskarte? Ingat sa spells!
+Spell watch. Sino kaya ang unang magpapakita ng diskarte? Kinakabahan ako!
+Spell watch. Sino kaya ang unang magpapakita ng diskarte? Bantayan ang cooldowns!
+Spell watch. Sino kaya ang unang magpapakita ng diskarte? Clutch o kapalpakan?
+Naku, mga lods. Sino kaya ang unang magpapakita ng diskarte?
+Naku, mga lods. Sino kaya ang unang magpapakita ng diskarte? Huwag mag-face-check!
+Naku, mga lods. Sino kaya ang unang magpapakita ng diskarte? Ingat sa spells!
+Naku, mga lods. Sino kaya ang unang magpapakita ng diskarte? Kinakabahan ako!
+Naku, mga lods. Sino kaya ang unang magpapakita ng diskarte? Bantayan ang cooldowns!
+Naku, mga lods. Sino kaya ang unang magpapakita ng diskarte? Clutch o kapalpakan?
+Hmm. Sino kaya ang unang magpapakita ng diskarte?
+Hmm. Sino kaya ang unang magpapakita ng diskarte? Huwag mag-face-check!
+Hmm. Sino kaya ang unang magpapakita ng diskarte? Ingat sa spells!
+Hmm. Sino kaya ang unang magpapakita ng diskarte? Kinakabahan ako!
+Hmm. Sino kaya ang unang magpapakita ng diskarte? Bantayan ang cooldowns!
+Hmm. Sino kaya ang unang magpapakita ng diskarte? Clutch o kapalpakan?
+Teka, teka. Sino kaya ang unang magpapakita ng diskarte?
+Teka, teka. Sino kaya ang unang magpapakita ng diskarte? Huwag mag-face-check!
+Teka, teka. Sino kaya ang unang magpapakita ng diskarte? Ingat sa spells!
+Teka, teka. Sino kaya ang unang magpapakita ng diskarte? Kinakabahan ako!
+Teka, teka. Sino kaya ang unang magpapakita ng diskarte? Bantayan ang cooldowns!
+Teka, teka. Sino kaya ang unang magpapakita ng diskarte? Clutch o kapalpakan?
+Ay, delikado. Sino kaya ang unang magpapakita ng diskarte?
+Ay, delikado. Sino kaya ang unang magpapakita ng diskarte? Huwag mag-face-check!
+Ay, delikado. Sino kaya ang unang magpapakita ng diskarte? Ingat sa spells!
+Ay, delikado. Sino kaya ang unang magpapakita ng diskarte? Kinakabahan ako!
+Ay, delikado. Sino kaya ang unang magpapakita ng diskarte? Bantayan ang cooldowns!
+Ay, delikado. Sino kaya ang unang magpapakita ng diskarte? Clutch o kapalpakan?
+Bantayan natin. Sino kaya ang unang magpapakita ng diskarte?
+Bantayan natin. Sino kaya ang unang magpapakita ng diskarte? Huwag mag-face-check!
+Bantayan natin. Sino kaya ang unang magpapakita ng diskarte? Ingat sa spells!
+Bantayan natin. Sino kaya ang unang magpapakita ng diskarte? Kinakabahan ako!
+Bantayan natin. Sino kaya ang unang magpapakita ng diskarte? Bantayan ang cooldowns!
+Bantayan natin. Sino kaya ang unang magpapakita ng diskarte? Clutch o kapalpakan?
+Alam niyo ba? Sino kaya ang unang magpapakita ng diskarte?
+Alam niyo ba? Sino kaya ang unang magpapakita ng diskarte? Huwag mag-face-check!
+Alam niyo ba? Sino kaya ang unang magpapakita ng diskarte? Ingat sa spells!
+Alam niyo ba? Sino kaya ang unang magpapakita ng diskarte? Kinakabahan ako!
+Alam niyo ba? Sino kaya ang unang magpapakita ng diskarte? Bantayan ang cooldowns!
+Alam niyo ba? Sino kaya ang unang magpapakita ng diskarte? Clutch o kapalpakan?
+Ingat, ingat. Sino kaya ang unang magpapakita ng diskarte?
+Ingat, ingat. Sino kaya ang unang magpapakita ng diskarte? Huwag mag-face-check!
+Ingat, ingat. Sino kaya ang unang magpapakita ng diskarte? Ingat sa spells!
+Ingat, ingat. Sino kaya ang unang magpapakita ng diskarte? Kinakabahan ako!
+Ingat, ingat. Sino kaya ang unang magpapakita ng diskarte? Bantayan ang cooldowns!
+Ingat, ingat. Sino kaya ang unang magpapakita ng diskarte? Clutch o kapalpakan?
+Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag mag-face-check!
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Ingat sa spells!
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Kinakabahan ako!
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan ang cooldowns!
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Clutch o kapalpakan?
+Spell watch. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Spell watch. Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag mag-face-check!
+Spell watch. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ingat sa spells!
+Spell watch. Game {gameNumber} ng {format} — {seriesScore} ang serye. Kinakabahan ako!
+Spell watch. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan ang cooldowns!
+Spell watch. Game {gameNumber} ng {format} — {seriesScore} ang serye. Clutch o kapalpakan?
+Naku, mga lods. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Naku, mga lods. Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag mag-face-check!
+Naku, mga lods. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ingat sa spells!
+Naku, mga lods. Game {gameNumber} ng {format} — {seriesScore} ang serye. Kinakabahan ako!
+Naku, mga lods. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan ang cooldowns!
+Naku, mga lods. Game {gameNumber} ng {format} — {seriesScore} ang serye. Clutch o kapalpakan?
+Hmm. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Hmm. Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag mag-face-check!
+Hmm. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ingat sa spells!
+Hmm. Game {gameNumber} ng {format} — {seriesScore} ang serye. Kinakabahan ako!
+Hmm. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan ang cooldowns!
+Hmm. Game {gameNumber} ng {format} — {seriesScore} ang serye. Clutch o kapalpakan?
+Teka, teka. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Teka, teka. Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag mag-face-check!
+Teka, teka. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ingat sa spells!
+Teka, teka. Game {gameNumber} ng {format} — {seriesScore} ang serye. Kinakabahan ako!
+Teka, teka. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan ang cooldowns!
+Teka, teka. Game {gameNumber} ng {format} — {seriesScore} ang serye. Clutch o kapalpakan?
+Ay, delikado. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Ay, delikado. Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag mag-face-check!
+Ay, delikado. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ingat sa spells!
+Ay, delikado. Game {gameNumber} ng {format} — {seriesScore} ang serye. Kinakabahan ako!
+Ay, delikado. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan ang cooldowns!
+Ay, delikado. Game {gameNumber} ng {format} — {seriesScore} ang serye. Clutch o kapalpakan?
+Bantayan natin. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Bantayan natin. Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag mag-face-check!
+Bantayan natin. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ingat sa spells!
+Bantayan natin. Game {gameNumber} ng {format} — {seriesScore} ang serye. Kinakabahan ako!
+Bantayan natin. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan ang cooldowns!
+Bantayan natin. Game {gameNumber} ng {format} — {seriesScore} ang serye. Clutch o kapalpakan?
+Alam niyo ba? Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Alam niyo ba? Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag mag-face-check!
+Alam niyo ba? Game {gameNumber} ng {format} — {seriesScore} ang serye. Ingat sa spells!
+Alam niyo ba? Game {gameNumber} ng {format} — {seriesScore} ang serye. Kinakabahan ako!
+Alam niyo ba? Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan ang cooldowns!
+Alam niyo ba? Game {gameNumber} ng {format} — {seriesScore} ang serye. Clutch o kapalpakan?
+Ingat, ingat. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Ingat, ingat. Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag mag-face-check!
+Ingat, ingat. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ingat sa spells!
+Ingat, ingat. Game {gameNumber} ng {format} — {seriesScore} ang serye. Kinakabahan ako!
+Ingat, ingat. Game {gameNumber} ng {format} — {seriesScore} ang serye. Bantayan ang cooldowns!
+Ingat, ingat. Game {gameNumber} ng {format} — {seriesScore} ang serye. Clutch o kapalpakan?
+
+══════ Game start ("Welcome sa Game …") — 540 lines ══════
+Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch!
+Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Galing!
+Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Ang saya nito!
+Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Kinikilig ako!
+Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Grabe, ang ganda!
+Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Yes, yes!
+Yes! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch!
+Yes! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Galing!
+Yes! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Ang saya nito!
+Yes! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Kinikilig ako!
+Yes! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Grabe, ang ganda!
+Yes! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Yes, yes!
+Ay grabe! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch!
+Ay grabe! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Galing!
+Ay grabe! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Ang saya nito!
+Ay grabe! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Kinikilig ako!
+Ay grabe! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Grabe, ang ganda!
+Ay grabe! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Yes, yes!
+Wow! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch!
+Wow! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Galing!
+Wow! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Ang saya nito!
+Wow! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Kinikilig ako!
+Wow! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Grabe, ang ganda!
+Wow! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Yes, yes!
+Uy, uy! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch!
+Uy, uy! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Galing!
+Uy, uy! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Ang saya nito!
+Uy, uy! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Kinikilig ako!
+Uy, uy! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Grabe, ang ganda!
+Uy, uy! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Yes, yes!
+Kinikilig ako! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch!
+Kinikilig ako! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Galing!
+Kinikilig ako! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Ang saya nito!
+Kinikilig ako! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Kinikilig ako!
+Kinikilig ako! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Grabe, ang ganda!
+Kinikilig ako! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Yes, yes!
+Hala siya! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch!
+Hala siya! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Galing!
+Hala siya! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Ang saya nito!
+Hala siya! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Kinikilig ako!
+Hala siya! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Grabe, ang ganda!
+Hala siya! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Yes, yes!
+Ang galing! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch!
+Ang galing! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Galing!
+Ang galing! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Ang saya nito!
+Ang galing! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Kinikilig ako!
+Ang galing! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Grabe, ang ganda!
+Ang galing! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Yes, yes!
+Ayan na! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch!
+Ayan na! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Galing!
+Ayan na! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Ang saya nito!
+Ayan na! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Kinikilig ako!
+Ayan na! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Grabe, ang ganda!
+Ayan na! Abangan natin ang unang invade — dito madalas nagkakaroon ng maagang clutch! Yes, yes!
+Ingat sa face-check, mga lods — maaga pa pero delikado na!
+Ingat sa face-check, mga lods — maaga pa pero delikado na! Galing!
+Ingat sa face-check, mga lods — maaga pa pero delikado na! Ang saya nito!
+Ingat sa face-check, mga lods — maaga pa pero delikado na! Kinikilig ako!
+Ingat sa face-check, mga lods — maaga pa pero delikado na! Grabe, ang ganda!
+Ingat sa face-check, mga lods — maaga pa pero delikado na! Yes, yes!
+Yes! Ingat sa face-check, mga lods — maaga pa pero delikado na!
+Yes! Ingat sa face-check, mga lods — maaga pa pero delikado na! Galing!
+Yes! Ingat sa face-check, mga lods — maaga pa pero delikado na! Ang saya nito!
+Yes! Ingat sa face-check, mga lods — maaga pa pero delikado na! Kinikilig ako!
+Yes! Ingat sa face-check, mga lods — maaga pa pero delikado na! Grabe, ang ganda!
+Yes! Ingat sa face-check, mga lods — maaga pa pero delikado na! Yes, yes!
+Ay grabe! Ingat sa face-check, mga lods — maaga pa pero delikado na!
+Ay grabe! Ingat sa face-check, mga lods — maaga pa pero delikado na! Galing!
+Ay grabe! Ingat sa face-check, mga lods — maaga pa pero delikado na! Ang saya nito!
+Ay grabe! Ingat sa face-check, mga lods — maaga pa pero delikado na! Kinikilig ako!
+Ay grabe! Ingat sa face-check, mga lods — maaga pa pero delikado na! Grabe, ang ganda!
+Ay grabe! Ingat sa face-check, mga lods — maaga pa pero delikado na! Yes, yes!
+Wow! Ingat sa face-check, mga lods — maaga pa pero delikado na!
+Wow! Ingat sa face-check, mga lods — maaga pa pero delikado na! Galing!
+Wow! Ingat sa face-check, mga lods — maaga pa pero delikado na! Ang saya nito!
+Wow! Ingat sa face-check, mga lods — maaga pa pero delikado na! Kinikilig ako!
+Wow! Ingat sa face-check, mga lods — maaga pa pero delikado na! Grabe, ang ganda!
+Wow! Ingat sa face-check, mga lods — maaga pa pero delikado na! Yes, yes!
+Uy, uy! Ingat sa face-check, mga lods — maaga pa pero delikado na!
+Uy, uy! Ingat sa face-check, mga lods — maaga pa pero delikado na! Galing!
+Uy, uy! Ingat sa face-check, mga lods — maaga pa pero delikado na! Ang saya nito!
+Uy, uy! Ingat sa face-check, mga lods — maaga pa pero delikado na! Kinikilig ako!
+Uy, uy! Ingat sa face-check, mga lods — maaga pa pero delikado na! Grabe, ang ganda!
+Uy, uy! Ingat sa face-check, mga lods — maaga pa pero delikado na! Yes, yes!
+Kinikilig ako! Ingat sa face-check, mga lods — maaga pa pero delikado na!
+Kinikilig ako! Ingat sa face-check, mga lods — maaga pa pero delikado na! Galing!
+Kinikilig ako! Ingat sa face-check, mga lods — maaga pa pero delikado na! Ang saya nito!
+Kinikilig ako! Ingat sa face-check, mga lods — maaga pa pero delikado na! Kinikilig ako!
+Kinikilig ako! Ingat sa face-check, mga lods — maaga pa pero delikado na! Grabe, ang ganda!
+Kinikilig ako! Ingat sa face-check, mga lods — maaga pa pero delikado na! Yes, yes!
+Hala siya! Ingat sa face-check, mga lods — maaga pa pero delikado na!
+Hala siya! Ingat sa face-check, mga lods — maaga pa pero delikado na! Galing!
+Hala siya! Ingat sa face-check, mga lods — maaga pa pero delikado na! Ang saya nito!
+Hala siya! Ingat sa face-check, mga lods — maaga pa pero delikado na! Kinikilig ako!
+Hala siya! Ingat sa face-check, mga lods — maaga pa pero delikado na! Grabe, ang ganda!
+Hala siya! Ingat sa face-check, mga lods — maaga pa pero delikado na! Yes, yes!
+Ang galing! Ingat sa face-check, mga lods — maaga pa pero delikado na!
+Ang galing! Ingat sa face-check, mga lods — maaga pa pero delikado na! Galing!
+Ang galing! Ingat sa face-check, mga lods — maaga pa pero delikado na! Ang saya nito!
+Ang galing! Ingat sa face-check, mga lods — maaga pa pero delikado na! Kinikilig ako!
+Ang galing! Ingat sa face-check, mga lods — maaga pa pero delikado na! Grabe, ang ganda!
+Ang galing! Ingat sa face-check, mga lods — maaga pa pero delikado na! Yes, yes!
+Ayan na! Ingat sa face-check, mga lods — maaga pa pero delikado na!
+Ayan na! Ingat sa face-check, mga lods — maaga pa pero delikado na! Galing!
+Ayan na! Ingat sa face-check, mga lods — maaga pa pero delikado na! Ang saya nito!
+Ayan na! Ingat sa face-check, mga lods — maaga pa pero delikado na! Kinikilig ako!
+Ayan na! Ingat sa face-check, mga lods — maaga pa pero delikado na! Grabe, ang ganda!
+Ayan na! Ingat sa face-check, mga lods — maaga pa pero delikado na! Yes, yes!
+Kinakabahan na ako agad — sana walang mahuli sa jungle!
+Kinakabahan na ako agad — sana walang mahuli sa jungle! Galing!
+Kinakabahan na ako agad — sana walang mahuli sa jungle! Ang saya nito!
+Kinakabahan na ako agad — sana walang mahuli sa jungle! Kinikilig ako!
+Kinakabahan na ako agad — sana walang mahuli sa jungle! Grabe, ang ganda!
+Kinakabahan na ako agad — sana walang mahuli sa jungle! Yes, yes!
+Yes! Kinakabahan na ako agad — sana walang mahuli sa jungle!
+Yes! Kinakabahan na ako agad — sana walang mahuli sa jungle! Galing!
+Yes! Kinakabahan na ako agad — sana walang mahuli sa jungle! Ang saya nito!
+Yes! Kinakabahan na ako agad — sana walang mahuli sa jungle! Kinikilig ako!
+Yes! Kinakabahan na ako agad — sana walang mahuli sa jungle! Grabe, ang ganda!
+Yes! Kinakabahan na ako agad — sana walang mahuli sa jungle! Yes, yes!
+Ay grabe! Kinakabahan na ako agad — sana walang mahuli sa jungle!
+Ay grabe! Kinakabahan na ako agad — sana walang mahuli sa jungle! Galing!
+Ay grabe! Kinakabahan na ako agad — sana walang mahuli sa jungle! Ang saya nito!
+Ay grabe! Kinakabahan na ako agad — sana walang mahuli sa jungle! Kinikilig ako!
+Ay grabe! Kinakabahan na ako agad — sana walang mahuli sa jungle! Grabe, ang ganda!
+Ay grabe! Kinakabahan na ako agad — sana walang mahuli sa jungle! Yes, yes!
+Wow! Kinakabahan na ako agad — sana walang mahuli sa jungle!
+Wow! Kinakabahan na ako agad — sana walang mahuli sa jungle! Galing!
+Wow! Kinakabahan na ako agad — sana walang mahuli sa jungle! Ang saya nito!
+Wow! Kinakabahan na ako agad — sana walang mahuli sa jungle! Kinikilig ako!
+Wow! Kinakabahan na ako agad — sana walang mahuli sa jungle! Grabe, ang ganda!
+Wow! Kinakabahan na ako agad — sana walang mahuli sa jungle! Yes, yes!
+Uy, uy! Kinakabahan na ako agad — sana walang mahuli sa jungle!
+Uy, uy! Kinakabahan na ako agad — sana walang mahuli sa jungle! Galing!
+Uy, uy! Kinakabahan na ako agad — sana walang mahuli sa jungle! Ang saya nito!
+Uy, uy! Kinakabahan na ako agad — sana walang mahuli sa jungle! Kinikilig ako!
+Uy, uy! Kinakabahan na ako agad — sana walang mahuli sa jungle! Grabe, ang ganda!
+Uy, uy! Kinakabahan na ako agad — sana walang mahuli sa jungle! Yes, yes!
+Kinikilig ako! Kinakabahan na ako agad — sana walang mahuli sa jungle!
+Kinikilig ako! Kinakabahan na ako agad — sana walang mahuli sa jungle! Galing!
+Kinikilig ako! Kinakabahan na ako agad — sana walang mahuli sa jungle! Ang saya nito!
+Kinikilig ako! Kinakabahan na ako agad — sana walang mahuli sa jungle! Kinikilig ako!
+Kinikilig ako! Kinakabahan na ako agad — sana walang mahuli sa jungle! Grabe, ang ganda!
+Kinikilig ako! Kinakabahan na ako agad — sana walang mahuli sa jungle! Yes, yes!
+Hala siya! Kinakabahan na ako agad — sana walang mahuli sa jungle!
+Hala siya! Kinakabahan na ako agad — sana walang mahuli sa jungle! Galing!
+Hala siya! Kinakabahan na ako agad — sana walang mahuli sa jungle! Ang saya nito!
+Hala siya! Kinakabahan na ako agad — sana walang mahuli sa jungle! Kinikilig ako!
+Hala siya! Kinakabahan na ako agad — sana walang mahuli sa jungle! Grabe, ang ganda!
+Hala siya! Kinakabahan na ako agad — sana walang mahuli sa jungle! Yes, yes!
+Ang galing! Kinakabahan na ako agad — sana walang mahuli sa jungle!
+Ang galing! Kinakabahan na ako agad — sana walang mahuli sa jungle! Galing!
+Ang galing! Kinakabahan na ako agad — sana walang mahuli sa jungle! Ang saya nito!
+Ang galing! Kinakabahan na ako agad — sana walang mahuli sa jungle! Kinikilig ako!
+Ang galing! Kinakabahan na ako agad — sana walang mahuli sa jungle! Grabe, ang ganda!
+Ang galing! Kinakabahan na ako agad — sana walang mahuli sa jungle! Yes, yes!
+Ayan na! Kinakabahan na ako agad — sana walang mahuli sa jungle!
+Ayan na! Kinakabahan na ako agad — sana walang mahuli sa jungle! Galing!
+Ayan na! Kinakabahan na ako agad — sana walang mahuli sa jungle! Ang saya nito!
+Ayan na! Kinakabahan na ako agad — sana walang mahuli sa jungle! Kinikilig ako!
+Ayan na! Kinakabahan na ako agad — sana walang mahuli sa jungle! Grabe, ang ganda!
+Ayan na! Kinakabahan na ako agad — sana walang mahuli sa jungle! Yes, yes!
+Simula na ang Game {gameNumber}.
+Simula na ang Game {gameNumber}. Galing!
+Simula na ang Game {gameNumber}. Ang saya nito!
+Simula na ang Game {gameNumber}. Kinikilig ako!
+Simula na ang Game {gameNumber}. Grabe, ang ganda!
+Simula na ang Game {gameNumber}. Yes, yes!
+Yes! Simula na ang Game {gameNumber}.
+Yes! Simula na ang Game {gameNumber}. Galing!
+Yes! Simula na ang Game {gameNumber}. Ang saya nito!
+Yes! Simula na ang Game {gameNumber}. Kinikilig ako!
+Yes! Simula na ang Game {gameNumber}. Grabe, ang ganda!
+Yes! Simula na ang Game {gameNumber}. Yes, yes!
+Ay grabe! Simula na ang Game {gameNumber}.
+Ay grabe! Simula na ang Game {gameNumber}. Galing!
+Ay grabe! Simula na ang Game {gameNumber}. Ang saya nito!
+Ay grabe! Simula na ang Game {gameNumber}. Kinikilig ako!
+Ay grabe! Simula na ang Game {gameNumber}. Grabe, ang ganda!
+Ay grabe! Simula na ang Game {gameNumber}. Yes, yes!
+Wow! Simula na ang Game {gameNumber}.
+Wow! Simula na ang Game {gameNumber}. Galing!
+Wow! Simula na ang Game {gameNumber}. Ang saya nito!
+Wow! Simula na ang Game {gameNumber}. Kinikilig ako!
+Wow! Simula na ang Game {gameNumber}. Grabe, ang ganda!
+Wow! Simula na ang Game {gameNumber}. Yes, yes!
+Uy, uy! Simula na ang Game {gameNumber}.
+Uy, uy! Simula na ang Game {gameNumber}. Galing!
+Uy, uy! Simula na ang Game {gameNumber}. Ang saya nito!
+Uy, uy! Simula na ang Game {gameNumber}. Kinikilig ako!
+Uy, uy! Simula na ang Game {gameNumber}. Grabe, ang ganda!
+Uy, uy! Simula na ang Game {gameNumber}. Yes, yes!
+Kinikilig ako! Simula na ang Game {gameNumber}.
+Kinikilig ako! Simula na ang Game {gameNumber}. Galing!
+Kinikilig ako! Simula na ang Game {gameNumber}. Ang saya nito!
+Kinikilig ako! Simula na ang Game {gameNumber}. Kinikilig ako!
+Kinikilig ako! Simula na ang Game {gameNumber}. Grabe, ang ganda!
+Kinikilig ako! Simula na ang Game {gameNumber}. Yes, yes!
+Hala siya! Simula na ang Game {gameNumber}.
+Hala siya! Simula na ang Game {gameNumber}. Galing!
+Hala siya! Simula na ang Game {gameNumber}. Ang saya nito!
+Hala siya! Simula na ang Game {gameNumber}. Kinikilig ako!
+Hala siya! Simula na ang Game {gameNumber}. Grabe, ang ganda!
+Hala siya! Simula na ang Game {gameNumber}. Yes, yes!
+Ang galing! Simula na ang Game {gameNumber}.
+Ang galing! Simula na ang Game {gameNumber}. Galing!
+Ang galing! Simula na ang Game {gameNumber}. Ang saya nito!
+Ang galing! Simula na ang Game {gameNumber}. Kinikilig ako!
+Ang galing! Simula na ang Game {gameNumber}. Grabe, ang ganda!
+Ang galing! Simula na ang Game {gameNumber}. Yes, yes!
+Ayan na! Simula na ang Game {gameNumber}.
+Ayan na! Simula na ang Game {gameNumber}. Galing!
+Ayan na! Simula na ang Game {gameNumber}. Ang saya nito!
+Ayan na! Simula na ang Game {gameNumber}. Kinikilig ako!
+Ayan na! Simula na ang Game {gameNumber}. Grabe, ang ganda!
+Ayan na! Simula na ang Game {gameNumber}. Yes, yes!
+Kumpleto na ang draft — laban na!
+Kumpleto na ang draft — laban na! Galing!
+Kumpleto na ang draft — laban na! Ang saya nito!
+Kumpleto na ang draft — laban na! Kinikilig ako!
+Kumpleto na ang draft — laban na! Grabe, ang ganda!
+Kumpleto na ang draft — laban na! Yes, yes!
+Yes! Kumpleto na ang draft — laban na!
+Yes! Kumpleto na ang draft — laban na! Galing!
+Yes! Kumpleto na ang draft — laban na! Ang saya nito!
+Yes! Kumpleto na ang draft — laban na! Kinikilig ako!
+Yes! Kumpleto na ang draft — laban na! Grabe, ang ganda!
+Yes! Kumpleto na ang draft — laban na! Yes, yes!
+Ay grabe! Kumpleto na ang draft — laban na!
+Ay grabe! Kumpleto na ang draft — laban na! Galing!
+Ay grabe! Kumpleto na ang draft — laban na! Ang saya nito!
+Ay grabe! Kumpleto na ang draft — laban na! Kinikilig ako!
+Ay grabe! Kumpleto na ang draft — laban na! Grabe, ang ganda!
+Ay grabe! Kumpleto na ang draft — laban na! Yes, yes!
+Wow! Kumpleto na ang draft — laban na!
+Wow! Kumpleto na ang draft — laban na! Galing!
+Wow! Kumpleto na ang draft — laban na! Ang saya nito!
+Wow! Kumpleto na ang draft — laban na! Kinikilig ako!
+Wow! Kumpleto na ang draft — laban na! Grabe, ang ganda!
+Wow! Kumpleto na ang draft — laban na! Yes, yes!
+Uy, uy! Kumpleto na ang draft — laban na!
+Uy, uy! Kumpleto na ang draft — laban na! Galing!
+Uy, uy! Kumpleto na ang draft — laban na! Ang saya nito!
+Uy, uy! Kumpleto na ang draft — laban na! Kinikilig ako!
+Uy, uy! Kumpleto na ang draft — laban na! Grabe, ang ganda!
+Uy, uy! Kumpleto na ang draft — laban na! Yes, yes!
+Kinikilig ako! Kumpleto na ang draft — laban na!
+Kinikilig ako! Kumpleto na ang draft — laban na! Galing!
+Kinikilig ako! Kumpleto na ang draft — laban na! Ang saya nito!
+Kinikilig ako! Kumpleto na ang draft — laban na! Kinikilig ako!
+Kinikilig ako! Kumpleto na ang draft — laban na! Grabe, ang ganda!
+Kinikilig ako! Kumpleto na ang draft — laban na! Yes, yes!
+Hala siya! Kumpleto na ang draft — laban na!
+Hala siya! Kumpleto na ang draft — laban na! Galing!
+Hala siya! Kumpleto na ang draft — laban na! Ang saya nito!
+Hala siya! Kumpleto na ang draft — laban na! Kinikilig ako!
+Hala siya! Kumpleto na ang draft — laban na! Grabe, ang ganda!
+Hala siya! Kumpleto na ang draft — laban na! Yes, yes!
+Ang galing! Kumpleto na ang draft — laban na!
+Ang galing! Kumpleto na ang draft — laban na! Galing!
+Ang galing! Kumpleto na ang draft — laban na! Ang saya nito!
+Ang galing! Kumpleto na ang draft — laban na! Kinikilig ako!
+Ang galing! Kumpleto na ang draft — laban na! Grabe, ang ganda!
+Ang galing! Kumpleto na ang draft — laban na! Yes, yes!
+Ayan na! Kumpleto na ang draft — laban na!
+Ayan na! Kumpleto na ang draft — laban na! Galing!
+Ayan na! Kumpleto na ang draft — laban na! Ang saya nito!
+Ayan na! Kumpleto na ang draft — laban na! Kinikilig ako!
+Ayan na! Kumpleto na ang draft — laban na! Grabe, ang ganda!
+Ayan na! Kumpleto na ang draft — laban na! Yes, yes!
+{blueTeam} sa blue side, {redTeam} sa red side.
+{blueTeam} sa blue side, {redTeam} sa red side. Galing!
+{blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+{blueTeam} sa blue side, {redTeam} sa red side. Kinikilig ako!
+{blueTeam} sa blue side, {redTeam} sa red side. Grabe, ang ganda!
+{blueTeam} sa blue side, {redTeam} sa red side. Yes, yes!
+Yes! {blueTeam} sa blue side, {redTeam} sa red side.
+Yes! {blueTeam} sa blue side, {redTeam} sa red side. Galing!
+Yes! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Yes! {blueTeam} sa blue side, {redTeam} sa red side. Kinikilig ako!
+Yes! {blueTeam} sa blue side, {redTeam} sa red side. Grabe, ang ganda!
+Yes! {blueTeam} sa blue side, {redTeam} sa red side. Yes, yes!
+Ay grabe! {blueTeam} sa blue side, {redTeam} sa red side.
+Ay grabe! {blueTeam} sa blue side, {redTeam} sa red side. Galing!
+Ay grabe! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Ay grabe! {blueTeam} sa blue side, {redTeam} sa red side. Kinikilig ako!
+Ay grabe! {blueTeam} sa blue side, {redTeam} sa red side. Grabe, ang ganda!
+Ay grabe! {blueTeam} sa blue side, {redTeam} sa red side. Yes, yes!
+Wow! {blueTeam} sa blue side, {redTeam} sa red side.
+Wow! {blueTeam} sa blue side, {redTeam} sa red side. Galing!
+Wow! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Wow! {blueTeam} sa blue side, {redTeam} sa red side. Kinikilig ako!
+Wow! {blueTeam} sa blue side, {redTeam} sa red side. Grabe, ang ganda!
+Wow! {blueTeam} sa blue side, {redTeam} sa red side. Yes, yes!
+Uy, uy! {blueTeam} sa blue side, {redTeam} sa red side.
+Uy, uy! {blueTeam} sa blue side, {redTeam} sa red side. Galing!
+Uy, uy! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Uy, uy! {blueTeam} sa blue side, {redTeam} sa red side. Kinikilig ako!
+Uy, uy! {blueTeam} sa blue side, {redTeam} sa red side. Grabe, ang ganda!
+Uy, uy! {blueTeam} sa blue side, {redTeam} sa red side. Yes, yes!
+Kinikilig ako! {blueTeam} sa blue side, {redTeam} sa red side.
+Kinikilig ako! {blueTeam} sa blue side, {redTeam} sa red side. Galing!
+Kinikilig ako! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Kinikilig ako! {blueTeam} sa blue side, {redTeam} sa red side. Kinikilig ako!
+Kinikilig ako! {blueTeam} sa blue side, {redTeam} sa red side. Grabe, ang ganda!
+Kinikilig ako! {blueTeam} sa blue side, {redTeam} sa red side. Yes, yes!
+Hala siya! {blueTeam} sa blue side, {redTeam} sa red side.
+Hala siya! {blueTeam} sa blue side, {redTeam} sa red side. Galing!
+Hala siya! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Hala siya! {blueTeam} sa blue side, {redTeam} sa red side. Kinikilig ako!
+Hala siya! {blueTeam} sa blue side, {redTeam} sa red side. Grabe, ang ganda!
+Hala siya! {blueTeam} sa blue side, {redTeam} sa red side. Yes, yes!
+Ang galing! {blueTeam} sa blue side, {redTeam} sa red side.
+Ang galing! {blueTeam} sa blue side, {redTeam} sa red side. Galing!
+Ang galing! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Ang galing! {blueTeam} sa blue side, {redTeam} sa red side. Kinikilig ako!
+Ang galing! {blueTeam} sa blue side, {redTeam} sa red side. Grabe, ang ganda!
+Ang galing! {blueTeam} sa blue side, {redTeam} sa red side. Yes, yes!
+Ayan na! {blueTeam} sa blue side, {redTeam} sa red side.
+Ayan na! {blueTeam} sa blue side, {redTeam} sa red side. Galing!
+Ayan na! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Ayan na! {blueTeam} sa blue side, {redTeam} sa red side. Kinikilig ako!
+Ayan na! {blueTeam} sa blue side, {redTeam} sa red side. Grabe, ang ganda!
+Ayan na! {blueTeam} sa blue side, {redTeam} sa red side. Yes, yes!
+Abangan natin ang unang engagement.
+Abangan natin ang unang engagement. Galing!
+Abangan natin ang unang engagement. Ang saya nito!
+Abangan natin ang unang engagement. Kinikilig ako!
+Abangan natin ang unang engagement. Grabe, ang ganda!
+Abangan natin ang unang engagement. Yes, yes!
+Yes! Abangan natin ang unang engagement.
+Yes! Abangan natin ang unang engagement. Galing!
+Yes! Abangan natin ang unang engagement. Ang saya nito!
+Yes! Abangan natin ang unang engagement. Kinikilig ako!
+Yes! Abangan natin ang unang engagement. Grabe, ang ganda!
+Yes! Abangan natin ang unang engagement. Yes, yes!
+Ay grabe! Abangan natin ang unang engagement.
+Ay grabe! Abangan natin ang unang engagement. Galing!
+Ay grabe! Abangan natin ang unang engagement. Ang saya nito!
+Ay grabe! Abangan natin ang unang engagement. Kinikilig ako!
+Ay grabe! Abangan natin ang unang engagement. Grabe, ang ganda!
+Ay grabe! Abangan natin ang unang engagement. Yes, yes!
+Wow! Abangan natin ang unang engagement.
+Wow! Abangan natin ang unang engagement. Galing!
+Wow! Abangan natin ang unang engagement. Ang saya nito!
+Wow! Abangan natin ang unang engagement. Kinikilig ako!
+Wow! Abangan natin ang unang engagement. Grabe, ang ganda!
+Wow! Abangan natin ang unang engagement. Yes, yes!
+Uy, uy! Abangan natin ang unang engagement.
+Uy, uy! Abangan natin ang unang engagement. Galing!
+Uy, uy! Abangan natin ang unang engagement. Ang saya nito!
+Uy, uy! Abangan natin ang unang engagement. Kinikilig ako!
+Uy, uy! Abangan natin ang unang engagement. Grabe, ang ganda!
+Uy, uy! Abangan natin ang unang engagement. Yes, yes!
+Kinikilig ako! Abangan natin ang unang engagement.
+Kinikilig ako! Abangan natin ang unang engagement. Galing!
+Kinikilig ako! Abangan natin ang unang engagement. Ang saya nito!
+Kinikilig ako! Abangan natin ang unang engagement. Kinikilig ako!
+Kinikilig ako! Abangan natin ang unang engagement. Grabe, ang ganda!
+Kinikilig ako! Abangan natin ang unang engagement. Yes, yes!
+Hala siya! Abangan natin ang unang engagement.
+Hala siya! Abangan natin ang unang engagement. Galing!
+Hala siya! Abangan natin ang unang engagement. Ang saya nito!
+Hala siya! Abangan natin ang unang engagement. Kinikilig ako!
+Hala siya! Abangan natin ang unang engagement. Grabe, ang ganda!
+Hala siya! Abangan natin ang unang engagement. Yes, yes!
+Ang galing! Abangan natin ang unang engagement.
+Ang galing! Abangan natin ang unang engagement. Galing!
+Ang galing! Abangan natin ang unang engagement. Ang saya nito!
+Ang galing! Abangan natin ang unang engagement. Kinikilig ako!
+Ang galing! Abangan natin ang unang engagement. Grabe, ang ganda!
+Ang galing! Abangan natin ang unang engagement. Yes, yes!
+Ayan na! Abangan natin ang unang engagement.
+Ayan na! Abangan natin ang unang engagement. Galing!
+Ayan na! Abangan natin ang unang engagement. Ang saya nito!
+Ayan na! Abangan natin ang unang engagement. Kinikilig ako!
+Ayan na! Abangan natin ang unang engagement. Grabe, ang ganda!
+Ayan na! Abangan natin ang unang engagement. Yes, yes!
+Bagong laro, bagong pagkakataon.
+Bagong laro, bagong pagkakataon. Galing!
+Bagong laro, bagong pagkakataon. Ang saya nito!
+Bagong laro, bagong pagkakataon. Kinikilig ako!
+Bagong laro, bagong pagkakataon. Grabe, ang ganda!
+Bagong laro, bagong pagkakataon. Yes, yes!
+Yes! Bagong laro, bagong pagkakataon.
+Yes! Bagong laro, bagong pagkakataon. Galing!
+Yes! Bagong laro, bagong pagkakataon. Ang saya nito!
+Yes! Bagong laro, bagong pagkakataon. Kinikilig ako!
+Yes! Bagong laro, bagong pagkakataon. Grabe, ang ganda!
+Yes! Bagong laro, bagong pagkakataon. Yes, yes!
+Ay grabe! Bagong laro, bagong pagkakataon.
+Ay grabe! Bagong laro, bagong pagkakataon. Galing!
+Ay grabe! Bagong laro, bagong pagkakataon. Ang saya nito!
+Ay grabe! Bagong laro, bagong pagkakataon. Kinikilig ako!
+Ay grabe! Bagong laro, bagong pagkakataon. Grabe, ang ganda!
+Ay grabe! Bagong laro, bagong pagkakataon. Yes, yes!
+Wow! Bagong laro, bagong pagkakataon.
+Wow! Bagong laro, bagong pagkakataon. Galing!
+Wow! Bagong laro, bagong pagkakataon. Ang saya nito!
+Wow! Bagong laro, bagong pagkakataon. Kinikilig ako!
+Wow! Bagong laro, bagong pagkakataon. Grabe, ang ganda!
+Wow! Bagong laro, bagong pagkakataon. Yes, yes!
+Uy, uy! Bagong laro, bagong pagkakataon.
+Uy, uy! Bagong laro, bagong pagkakataon. Galing!
+Uy, uy! Bagong laro, bagong pagkakataon. Ang saya nito!
+Uy, uy! Bagong laro, bagong pagkakataon. Kinikilig ako!
+Uy, uy! Bagong laro, bagong pagkakataon. Grabe, ang ganda!
+Uy, uy! Bagong laro, bagong pagkakataon. Yes, yes!
+Kinikilig ako! Bagong laro, bagong pagkakataon.
+Kinikilig ako! Bagong laro, bagong pagkakataon. Galing!
+Kinikilig ako! Bagong laro, bagong pagkakataon. Ang saya nito!
+Kinikilig ako! Bagong laro, bagong pagkakataon. Kinikilig ako!
+Kinikilig ako! Bagong laro, bagong pagkakataon. Grabe, ang ganda!
+Kinikilig ako! Bagong laro, bagong pagkakataon. Yes, yes!
+Hala siya! Bagong laro, bagong pagkakataon.
+Hala siya! Bagong laro, bagong pagkakataon. Galing!
+Hala siya! Bagong laro, bagong pagkakataon. Ang saya nito!
+Hala siya! Bagong laro, bagong pagkakataon. Kinikilig ako!
+Hala siya! Bagong laro, bagong pagkakataon. Grabe, ang ganda!
+Hala siya! Bagong laro, bagong pagkakataon. Yes, yes!
+Ang galing! Bagong laro, bagong pagkakataon.
+Ang galing! Bagong laro, bagong pagkakataon. Galing!
+Ang galing! Bagong laro, bagong pagkakataon. Ang saya nito!
+Ang galing! Bagong laro, bagong pagkakataon. Kinikilig ako!
+Ang galing! Bagong laro, bagong pagkakataon. Grabe, ang ganda!
+Ang galing! Bagong laro, bagong pagkakataon. Yes, yes!
+Ayan na! Bagong laro, bagong pagkakataon.
+Ayan na! Bagong laro, bagong pagkakataon. Galing!
+Ayan na! Bagong laro, bagong pagkakataon. Ang saya nito!
+Ayan na! Bagong laro, bagong pagkakataon. Kinikilig ako!
+Ayan na! Bagong laro, bagong pagkakataon. Grabe, ang ganda!
+Ayan na! Bagong laro, bagong pagkakataon. Yes, yes!
+{seriesScore} ang serye.
+{seriesScore} ang serye. Galing!
+{seriesScore} ang serye. Ang saya nito!
+{seriesScore} ang serye. Kinikilig ako!
+{seriesScore} ang serye. Grabe, ang ganda!
+{seriesScore} ang serye. Yes, yes!
+Yes! {seriesScore} ang serye.
+Yes! {seriesScore} ang serye. Galing!
+Yes! {seriesScore} ang serye. Ang saya nito!
+Yes! {seriesScore} ang serye. Kinikilig ako!
+Yes! {seriesScore} ang serye. Grabe, ang ganda!
+Yes! {seriesScore} ang serye. Yes, yes!
+Ay grabe! {seriesScore} ang serye.
+Ay grabe! {seriesScore} ang serye. Galing!
+Ay grabe! {seriesScore} ang serye. Ang saya nito!
+Ay grabe! {seriesScore} ang serye. Kinikilig ako!
+Ay grabe! {seriesScore} ang serye. Grabe, ang ganda!
+Ay grabe! {seriesScore} ang serye. Yes, yes!
+Wow! {seriesScore} ang serye.
+Wow! {seriesScore} ang serye. Galing!
+Wow! {seriesScore} ang serye. Ang saya nito!
+Wow! {seriesScore} ang serye. Kinikilig ako!
+Wow! {seriesScore} ang serye. Grabe, ang ganda!
+Wow! {seriesScore} ang serye. Yes, yes!
+Uy, uy! {seriesScore} ang serye.
+Uy, uy! {seriesScore} ang serye. Galing!
+Uy, uy! {seriesScore} ang serye. Ang saya nito!
+Uy, uy! {seriesScore} ang serye. Kinikilig ako!
+Uy, uy! {seriesScore} ang serye. Grabe, ang ganda!
+Uy, uy! {seriesScore} ang serye. Yes, yes!
+Kinikilig ako! {seriesScore} ang serye.
+Kinikilig ako! {seriesScore} ang serye. Galing!
+Kinikilig ako! {seriesScore} ang serye. Ang saya nito!
+Kinikilig ako! {seriesScore} ang serye. Kinikilig ako!
+Kinikilig ako! {seriesScore} ang serye. Grabe, ang ganda!
+Kinikilig ako! {seriesScore} ang serye. Yes, yes!
+Hala siya! {seriesScore} ang serye.
+Hala siya! {seriesScore} ang serye. Galing!
+Hala siya! {seriesScore} ang serye. Ang saya nito!
+Hala siya! {seriesScore} ang serye. Kinikilig ako!
+Hala siya! {seriesScore} ang serye. Grabe, ang ganda!
+Hala siya! {seriesScore} ang serye. Yes, yes!
+Ang galing! {seriesScore} ang serye.
+Ang galing! {seriesScore} ang serye. Galing!
+Ang galing! {seriesScore} ang serye. Ang saya nito!
+Ang galing! {seriesScore} ang serye. Kinikilig ako!
+Ang galing! {seriesScore} ang serye. Grabe, ang ganda!
+Ang galing! {seriesScore} ang serye. Yes, yes!
+Ayan na! {seriesScore} ang serye.
+Ayan na! {seriesScore} ang serye. Galing!
+Ayan na! {seriesScore} ang serye. Ang saya nito!
+Ayan na! {seriesScore} ang serye. Kinikilig ako!
+Ayan na! {seriesScore} ang serye. Grabe, ang ganda!
+Ayan na! {seriesScore} ang serye. Yes, yes!
+Good luck sa parehong team.
+Good luck sa parehong team. Galing!
+Good luck sa parehong team. Ang saya nito!
+Good luck sa parehong team. Kinikilig ako!
+Good luck sa parehong team. Grabe, ang ganda!
+Good luck sa parehong team. Yes, yes!
+Yes! Good luck sa parehong team.
+Yes! Good luck sa parehong team. Galing!
+Yes! Good luck sa parehong team. Ang saya nito!
+Yes! Good luck sa parehong team. Kinikilig ako!
+Yes! Good luck sa parehong team. Grabe, ang ganda!
+Yes! Good luck sa parehong team. Yes, yes!
+Ay grabe! Good luck sa parehong team.
+Ay grabe! Good luck sa parehong team. Galing!
+Ay grabe! Good luck sa parehong team. Ang saya nito!
+Ay grabe! Good luck sa parehong team. Kinikilig ako!
+Ay grabe! Good luck sa parehong team. Grabe, ang ganda!
+Ay grabe! Good luck sa parehong team. Yes, yes!
+Wow! Good luck sa parehong team.
+Wow! Good luck sa parehong team. Galing!
+Wow! Good luck sa parehong team. Ang saya nito!
+Wow! Good luck sa parehong team. Kinikilig ako!
+Wow! Good luck sa parehong team. Grabe, ang ganda!
+Wow! Good luck sa parehong team. Yes, yes!
+Uy, uy! Good luck sa parehong team.
+Uy, uy! Good luck sa parehong team. Galing!
+Uy, uy! Good luck sa parehong team. Ang saya nito!
+Uy, uy! Good luck sa parehong team. Kinikilig ako!
+Uy, uy! Good luck sa parehong team. Grabe, ang ganda!
+Uy, uy! Good luck sa parehong team. Yes, yes!
+Kinikilig ako! Good luck sa parehong team.
+Kinikilig ako! Good luck sa parehong team. Galing!
+Kinikilig ako! Good luck sa parehong team. Ang saya nito!
+Kinikilig ako! Good luck sa parehong team. Kinikilig ako!
+Kinikilig ako! Good luck sa parehong team. Grabe, ang ganda!
+Kinikilig ako! Good luck sa parehong team. Yes, yes!
+Hala siya! Good luck sa parehong team.
+Hala siya! Good luck sa parehong team. Galing!
+Hala siya! Good luck sa parehong team. Ang saya nito!
+Hala siya! Good luck sa parehong team. Kinikilig ako!
+Hala siya! Good luck sa parehong team. Grabe, ang ganda!
+Hala siya! Good luck sa parehong team. Yes, yes!
+Ang galing! Good luck sa parehong team.
+Ang galing! Good luck sa parehong team. Galing!
+Ang galing! Good luck sa parehong team. Ang saya nito!
+Ang galing! Good luck sa parehong team. Kinikilig ako!
+Ang galing! Good luck sa parehong team. Grabe, ang ganda!
+Ang galing! Good luck sa parehong team. Yes, yes!
+Ayan na! Good luck sa parehong team.
+Ayan na! Good luck sa parehong team. Galing!
+Ayan na! Good luck sa parehong team. Ang saya nito!
+Ayan na! Good luck sa parehong team. Kinikilig ako!
+Ayan na! Good luck sa parehong team. Grabe, ang ganda!
+Ayan na! Good luck sa parehong team. Yes, yes!
+
+══════ Going to break — 53 lines ══════
+Kuha muna kayo ng tubig, mga lods — kinakabahan pa rin ako!
+Kuha muna kayo ng tubig, mga lods — kinakabahan pa rin ako! Huwag mag-face-check!
+Kuha muna kayo ng tubig, mga lods — kinakabahan pa rin ako! Ingat sa spells!
+Kuha muna kayo ng tubig, mga lods — kinakabahan pa rin ako! Kinakabahan ako!
+Kuha muna kayo ng tubig, mga lods — kinakabahan pa rin ako! Bantayan ang cooldowns!
+Kuha muna kayo ng tubig, mga lods — kinakabahan pa rin ako! Clutch o kapalpakan?
+Break muna — pero huwag kayong aalis, baka ma-miss niyo ang clutch play pagbalik!
+Break muna — pero huwag kayong aalis, baka ma-miss niyo ang clutch play pagbalik! Huwag mag-face-check!
+Break muna — pero huwag kayong aalis, baka ma-miss niyo ang clutch play pagbalik! Ingat sa spells!
+Break muna — pero huwag kayong aalis, baka ma-miss niyo ang clutch play pagbalik! Kinakabahan ako!
+Break muna — pero huwag kayong aalis, baka ma-miss niyo ang clutch play pagbalik! Bantayan ang cooldowns!
+Break muna — pero huwag kayong aalis, baka ma-miss niyo ang clutch play pagbalik! Clutch o kapalpakan?
+Sulit ang paghihintay, pangako yan.
+Sulit ang paghihintay, pangako yan. Huwag mag-face-check!
+Sulit ang paghihintay, pangako yan. Ingat sa spells!
+Sulit ang paghihintay, pangako yan. Kinakabahan ako!
+Sulit ang paghihintay, pangako yan. Bantayan ang cooldowns!
+Sulit ang paghihintay, pangako yan. Clutch o kapalpakan?
+Babalik kami agad, mga ka-TCC.
+Babalik kami agad, mga ka-TCC. Huwag mag-face-check!
+Babalik kami agad, mga ka-TCC. Ingat sa spells!
+Babalik kami agad, mga ka-TCC. Kinakabahan ako!
+Babalik kami agad, mga ka-TCC. Bantayan ang cooldowns!
+Babalik kami agad, mga ka-TCC. Clutch o kapalpakan?
+Panoorin muna natin ang mga highlight habang naghihintay.
+Panoorin muna natin ang mga highlight habang naghihintay. Huwag mag-face-check!
+Panoorin muna natin ang mga highlight habang naghihintay. Ingat sa spells!
+Panoorin muna natin ang mga highlight habang naghihintay. Kinakabahan ako!
+Panoorin muna natin ang mga highlight habang naghihintay. Bantayan ang cooldowns!
+Panoorin muna natin ang mga highlight habang naghihintay. Clutch o kapalpakan?
+Kuha muna kayo ng tubig at meryenda.
+Kuha muna kayo ng tubig at meryenda. Huwag mag-face-check!
+Kuha muna kayo ng tubig at meryenda. Ingat sa spells!
+Kuha muna kayo ng tubig at meryenda. Kinakabahan ako!
+Kuha muna kayo ng tubig at meryenda. Bantayan ang cooldowns!
+Kuha muna kayo ng tubig at meryenda. Clutch o kapalpakan?
+Babalik kami pagkalipas ng {breakMins} minuto.
+Babalik kami pagkalipas ng {breakMins} minuto. Huwag mag-face-check!
+Babalik kami pagkalipas ng {breakMins} minuto. Ingat sa spells!
+Babalik kami pagkalipas ng {breakMins} minuto. Kinakabahan ako!
+Babalik kami pagkalipas ng {breakMins} minuto. Bantayan ang cooldowns!
+Babalik kami pagkalipas ng {breakMins} minuto. Clutch o kapalpakan?
+Huwag kayong aalis — babalik kami agad.
+Huwag kayong aalis — babalik kami agad. Ingat sa spells!
+Huwag kayong aalis — babalik kami agad. Kinakabahan ako!
+Huwag kayong aalis — babalik kami agad. Bantayan ang cooldowns!
+Huwag kayong aalis — babalik kami agad. Clutch o kapalpakan?
+Salamat sa patuloy na panonood, mga ka-TCC.
+Salamat sa patuloy na panonood, mga ka-TCC. Huwag mag-face-check!
+Salamat sa patuloy na panonood, mga ka-TCC. Ingat sa spells!
+Salamat sa patuloy na panonood, mga ka-TCC. Kinakabahan ako!
+Salamat sa patuloy na panonood, mga ka-TCC. Bantayan ang cooldowns!
+Salamat sa patuloy na panonood, mga ka-TCC. Clutch o kapalpakan?
 
 ══════ Game intro — 540 lines ══════
 Abangan natin ang clutch plays — isang tamang spell lang, pwedeng magbago ang laro!

@@ -83,3 +83,10 @@ export const safeLocalSet = (key: string, value: unknown) => {
 };
 
 export const SIDE_LABEL = { blue: 'Blue', red: 'Red' } as const;
+
+/** JSON with sorted object keys — for comparing data that Firestore may return with keys in a different order. */
+export function stableJson(value: unknown): string {
+  return JSON.stringify(value, (_k, v) =>
+    v && typeof v === 'object' && !Array.isArray(v) ? Object.fromEntries(Object.keys(v).sort().map((k) => [k, (v as Record<string, unknown>)[k]])) : v,
+  );
+}

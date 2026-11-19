@@ -1,6 +1,6 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Crown, Droplet, Flame, HelpCircle, Leaf, Shell, Skull, Swords, Trophy } from 'lucide-react';
+import { ClipboardList, Crown, Droplet, Flame, Gamepad2, HelpCircle, Leaf, Shell, Skull, Swords, Trophy } from 'lucide-react';
 import type { Banner, EventType } from '@/types';
 import { useSettings } from '@/hooks/useFirestore';
 import { useOverlayCaption } from './demo';
@@ -78,9 +78,11 @@ const BANNER_ICON: Partial<Record<EventType, typeof Swords>> = {
   OBJECTIVE_CONTEST: HelpCircle,
   GAME_RESULT: Trophy,
   SERIES_VICTORY: Trophy,
+  DRAFT_START: ClipboardList,
+  GAME_START: Gamepad2,
 };
 
-const BANNER_MS: Partial<Record<EventType, number>> = { SAVAGE: 6500, MANIAC: 5500, SERIES_VICTORY: 9000, GAME_RESULT: 7000, GAME_INTRO: 7000, OBJECTIVE_CONTEST: 6000 };
+const BANNER_MS: Partial<Record<EventType, number>> = { SAVAGE: 6500, MANIAC: 5500, SERIES_VICTORY: 9000, GAME_RESULT: 7000, GAME_INTRO: 7000, OBJECTIVE_CONTEST: 6000, DRAFT_START: 6500, GAME_START: 6500 };
 
 /** Shows the latest banner from live/current for a few seconds, with the player's photo. */
 export function EventBanner({ banner, allow, top = 150 }: { banner: Banner | null; allow?: EventType[]; top?: number }) {
@@ -194,12 +196,16 @@ export function CasterStrip({
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
-            className="max-w-[1100px] rounded-xl border border-white/10 bg-ink-950/90 px-5 py-2.5 text-center shadow-xl"
+            className="flex max-w-[1100px] items-center gap-3 rounded-xl border border-white/10 bg-ink-950/90 py-2 pl-2 pr-5 text-left shadow-xl"
           >
-            <span className="mr-2 font-cond text-xl font-bold uppercase tracking-wider" style={{ color: CASTER_BY_ID[current.casterId]?.color }}>
-              {profiles[current.casterId]?.displayName || CASTER_BY_ID[current.casterId]?.name}:
-            </span>
-            <span className={cn('font-semibold leading-snug text-white', size === 'lg' ? 'text-3xl' : 'text-2xl')}>{current.text}</span>
+            {/* Speaking caster's picture (set in Admin → Settings → Caster graphics) */}
+            <CasterAvatar casterId={current.casterId} url={profiles[current.casterId]?.avatarUrl} size={size === 'lg' ? 52 : 44} speaking />
+            <p className="min-w-0">
+              <span className="mr-2 font-cond text-xl font-bold uppercase tracking-wider" style={{ color: CASTER_BY_ID[current.casterId]?.color }}>
+                {profiles[current.casterId]?.displayName || CASTER_BY_ID[current.casterId]?.name}:
+              </span>
+              <span className={cn('font-semibold leading-snug text-white', size === 'lg' ? 'text-3xl' : 'text-2xl')}>{current.text}</span>
+            </p>
           </motion.div>
         )}
       </AnimatePresence>

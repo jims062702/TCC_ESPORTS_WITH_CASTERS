@@ -1,5 +1,1783 @@
 Mika — Host & Crowd Hype (female)
-6,907 unique lines
+8,625 unique lines
+
+══════ Draft bans — 270 lines ══════
+Sino dito ang nalungkot na banned ang {hero}? Comment na!
+Sino dito ang nalungkot na banned ang {hero}? Comment na! Stay tuned!
+Sino dito ang nalungkot na banned ang {hero}? Comment na! Comment na kayo!
+Sino dito ang nalungkot na banned ang {hero}? Comment na! Huwag aalis, ha!
+Sino dito ang nalungkot na banned ang {hero}? Comment na! Ang saya nito!
+Hello sa lahat ng nanonood! Sino dito ang nalungkot na banned ang {hero}? Comment na!
+Hello sa lahat ng nanonood! Sino dito ang nalungkot na banned ang {hero}? Comment na! Stay tuned!
+Hello sa lahat ng nanonood! Sino dito ang nalungkot na banned ang {hero}? Comment na! Comment na kayo!
+Hello sa lahat ng nanonood! Sino dito ang nalungkot na banned ang {hero}? Comment na! Huwag aalis, ha!
+Hello sa lahat ng nanonood! Sino dito ang nalungkot na banned ang {hero}? Comment na! Ang saya nito!
+Shoutout sa chat! Sino dito ang nalungkot na banned ang {hero}? Comment na!
+Shoutout sa chat! Sino dito ang nalungkot na banned ang {hero}? Comment na! Stay tuned!
+Shoutout sa chat! Sino dito ang nalungkot na banned ang {hero}? Comment na! Comment na kayo!
+Shoutout sa chat! Sino dito ang nalungkot na banned ang {hero}? Comment na! Huwag aalis, ha!
+Shoutout sa chat! Sino dito ang nalungkot na banned ang {hero}? Comment na! Ang saya nito!
+Okay, everyone! Sino dito ang nalungkot na banned ang {hero}? Comment na!
+Okay, everyone! Sino dito ang nalungkot na banned ang {hero}? Comment na! Stay tuned!
+Okay, everyone! Sino dito ang nalungkot na banned ang {hero}? Comment na! Comment na kayo!
+Okay, everyone! Sino dito ang nalungkot na banned ang {hero}? Comment na! Huwag aalis, ha!
+Okay, everyone! Sino dito ang nalungkot na banned ang {hero}? Comment na! Ang saya nito!
+Uy, chat! Sino dito ang nalungkot na banned ang {hero}? Comment na!
+Uy, chat! Sino dito ang nalungkot na banned ang {hero}? Comment na! Stay tuned!
+Uy, chat! Sino dito ang nalungkot na banned ang {hero}? Comment na! Comment na kayo!
+Uy, chat! Sino dito ang nalungkot na banned ang {hero}? Comment na! Huwag aalis, ha!
+Uy, chat! Sino dito ang nalungkot na banned ang {hero}? Comment na! Ang saya nito!
+Quick reminder! Sino dito ang nalungkot na banned ang {hero}? Comment na!
+Quick reminder! Sino dito ang nalungkot na banned ang {hero}? Comment na! Stay tuned!
+Quick reminder! Sino dito ang nalungkot na banned ang {hero}? Comment na! Comment na kayo!
+Quick reminder! Sino dito ang nalungkot na banned ang {hero}? Comment na! Huwag aalis, ha!
+Quick reminder! Sino dito ang nalungkot na banned ang {hero}? Comment na! Ang saya nito!
+Kumusta, mga ka-TCC? Sino dito ang nalungkot na banned ang {hero}? Comment na!
+Kumusta, mga ka-TCC? Sino dito ang nalungkot na banned ang {hero}? Comment na! Stay tuned!
+Kumusta, mga ka-TCC? Sino dito ang nalungkot na banned ang {hero}? Comment na! Comment na kayo!
+Kumusta, mga ka-TCC? Sino dito ang nalungkot na banned ang {hero}? Comment na! Huwag aalis, ha!
+Kumusta, mga ka-TCC? Sino dito ang nalungkot na banned ang {hero}? Comment na! Ang saya nito!
+Real talk! Sino dito ang nalungkot na banned ang {hero}? Comment na!
+Real talk! Sino dito ang nalungkot na banned ang {hero}? Comment na! Stay tuned!
+Real talk! Sino dito ang nalungkot na banned ang {hero}? Comment na! Comment na kayo!
+Real talk! Sino dito ang nalungkot na banned ang {hero}? Comment na! Huwag aalis, ha!
+Real talk! Sino dito ang nalungkot na banned ang {hero}? Comment na! Ang saya nito!
+Sige, mga ka-TCC! Sino dito ang nalungkot na banned ang {hero}? Comment na!
+Sige, mga ka-TCC! Sino dito ang nalungkot na banned ang {hero}? Comment na! Stay tuned!
+Sige, mga ka-TCC! Sino dito ang nalungkot na banned ang {hero}? Comment na! Comment na kayo!
+Sige, mga ka-TCC! Sino dito ang nalungkot na banned ang {hero}? Comment na! Huwag aalis, ha!
+Sige, mga ka-TCC! Sino dito ang nalungkot na banned ang {hero}? Comment na! Ang saya nito!
+Malinaw ang mensahe ng ban na yan.
+Malinaw ang mensahe ng ban na yan. Stay tuned!
+Malinaw ang mensahe ng ban na yan. Comment na kayo!
+Malinaw ang mensahe ng ban na yan. Huwag aalis, ha!
+Malinaw ang mensahe ng ban na yan. Ang saya nito!
+Hello sa lahat ng nanonood! Malinaw ang mensahe ng ban na yan.
+Hello sa lahat ng nanonood! Malinaw ang mensahe ng ban na yan. Stay tuned!
+Hello sa lahat ng nanonood! Malinaw ang mensahe ng ban na yan. Comment na kayo!
+Hello sa lahat ng nanonood! Malinaw ang mensahe ng ban na yan. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Malinaw ang mensahe ng ban na yan. Ang saya nito!
+Shoutout sa chat! Malinaw ang mensahe ng ban na yan.
+Shoutout sa chat! Malinaw ang mensahe ng ban na yan. Stay tuned!
+Shoutout sa chat! Malinaw ang mensahe ng ban na yan. Comment na kayo!
+Shoutout sa chat! Malinaw ang mensahe ng ban na yan. Huwag aalis, ha!
+Shoutout sa chat! Malinaw ang mensahe ng ban na yan. Ang saya nito!
+Okay, everyone! Malinaw ang mensahe ng ban na yan.
+Okay, everyone! Malinaw ang mensahe ng ban na yan. Stay tuned!
+Okay, everyone! Malinaw ang mensahe ng ban na yan. Comment na kayo!
+Okay, everyone! Malinaw ang mensahe ng ban na yan. Huwag aalis, ha!
+Okay, everyone! Malinaw ang mensahe ng ban na yan. Ang saya nito!
+Uy, chat! Malinaw ang mensahe ng ban na yan.
+Uy, chat! Malinaw ang mensahe ng ban na yan. Stay tuned!
+Uy, chat! Malinaw ang mensahe ng ban na yan. Comment na kayo!
+Uy, chat! Malinaw ang mensahe ng ban na yan. Huwag aalis, ha!
+Uy, chat! Malinaw ang mensahe ng ban na yan. Ang saya nito!
+Quick reminder! Malinaw ang mensahe ng ban na yan.
+Quick reminder! Malinaw ang mensahe ng ban na yan. Stay tuned!
+Quick reminder! Malinaw ang mensahe ng ban na yan. Comment na kayo!
+Quick reminder! Malinaw ang mensahe ng ban na yan. Huwag aalis, ha!
+Quick reminder! Malinaw ang mensahe ng ban na yan. Ang saya nito!
+Kumusta, mga ka-TCC? Malinaw ang mensahe ng ban na yan.
+Kumusta, mga ka-TCC? Malinaw ang mensahe ng ban na yan. Stay tuned!
+Kumusta, mga ka-TCC? Malinaw ang mensahe ng ban na yan. Comment na kayo!
+Kumusta, mga ka-TCC? Malinaw ang mensahe ng ban na yan. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Malinaw ang mensahe ng ban na yan. Ang saya nito!
+Real talk! Malinaw ang mensahe ng ban na yan.
+Real talk! Malinaw ang mensahe ng ban na yan. Stay tuned!
+Real talk! Malinaw ang mensahe ng ban na yan. Comment na kayo!
+Real talk! Malinaw ang mensahe ng ban na yan. Huwag aalis, ha!
+Real talk! Malinaw ang mensahe ng ban na yan. Ang saya nito!
+Sige, mga ka-TCC! Malinaw ang mensahe ng ban na yan.
+Sige, mga ka-TCC! Malinaw ang mensahe ng ban na yan. Stay tuned!
+Sige, mga ka-TCC! Malinaw ang mensahe ng ban na yan. Comment na kayo!
+Sige, mga ka-TCC! Malinaw ang mensahe ng ban na yan. Huwag aalis, ha!
+Sige, mga ka-TCC! Malinaw ang mensahe ng ban na yan. Ang saya nito!
+Respeto sa {hero} yan.
+Respeto sa {hero} yan. Stay tuned!
+Respeto sa {hero} yan. Comment na kayo!
+Respeto sa {hero} yan. Huwag aalis, ha!
+Respeto sa {hero} yan. Ang saya nito!
+Hello sa lahat ng nanonood! Respeto sa {hero} yan.
+Hello sa lahat ng nanonood! Respeto sa {hero} yan. Stay tuned!
+Hello sa lahat ng nanonood! Respeto sa {hero} yan. Comment na kayo!
+Hello sa lahat ng nanonood! Respeto sa {hero} yan. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Respeto sa {hero} yan. Ang saya nito!
+Shoutout sa chat! Respeto sa {hero} yan.
+Shoutout sa chat! Respeto sa {hero} yan. Stay tuned!
+Shoutout sa chat! Respeto sa {hero} yan. Comment na kayo!
+Shoutout sa chat! Respeto sa {hero} yan. Huwag aalis, ha!
+Shoutout sa chat! Respeto sa {hero} yan. Ang saya nito!
+Okay, everyone! Respeto sa {hero} yan.
+Okay, everyone! Respeto sa {hero} yan. Stay tuned!
+Okay, everyone! Respeto sa {hero} yan. Comment na kayo!
+Okay, everyone! Respeto sa {hero} yan. Huwag aalis, ha!
+Okay, everyone! Respeto sa {hero} yan. Ang saya nito!
+Uy, chat! Respeto sa {hero} yan.
+Uy, chat! Respeto sa {hero} yan. Stay tuned!
+Uy, chat! Respeto sa {hero} yan. Comment na kayo!
+Uy, chat! Respeto sa {hero} yan. Huwag aalis, ha!
+Uy, chat! Respeto sa {hero} yan. Ang saya nito!
+Quick reminder! Respeto sa {hero} yan.
+Quick reminder! Respeto sa {hero} yan. Stay tuned!
+Quick reminder! Respeto sa {hero} yan. Comment na kayo!
+Quick reminder! Respeto sa {hero} yan. Huwag aalis, ha!
+Quick reminder! Respeto sa {hero} yan. Ang saya nito!
+Kumusta, mga ka-TCC? Respeto sa {hero} yan.
+Kumusta, mga ka-TCC? Respeto sa {hero} yan. Stay tuned!
+Kumusta, mga ka-TCC? Respeto sa {hero} yan. Comment na kayo!
+Kumusta, mga ka-TCC? Respeto sa {hero} yan. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Respeto sa {hero} yan. Ang saya nito!
+Real talk! Respeto sa {hero} yan.
+Real talk! Respeto sa {hero} yan. Stay tuned!
+Real talk! Respeto sa {hero} yan. Comment na kayo!
+Real talk! Respeto sa {hero} yan. Huwag aalis, ha!
+Real talk! Respeto sa {hero} yan. Ang saya nito!
+Sige, mga ka-TCC! Respeto sa {hero} yan.
+Sige, mga ka-TCC! Respeto sa {hero} yan. Stay tuned!
+Sige, mga ka-TCC! Respeto sa {hero} yan. Comment na kayo!
+Sige, mga ka-TCC! Respeto sa {hero} yan. Huwag aalis, ha!
+Sige, mga ka-TCC! Respeto sa {hero} yan. Ang saya nito!
+Ayaw nilang makaharap ang {hero} ngayong game.
+Ayaw nilang makaharap ang {hero} ngayong game. Stay tuned!
+Ayaw nilang makaharap ang {hero} ngayong game. Comment na kayo!
+Ayaw nilang makaharap ang {hero} ngayong game. Huwag aalis, ha!
+Ayaw nilang makaharap ang {hero} ngayong game. Ang saya nito!
+Hello sa lahat ng nanonood! Ayaw nilang makaharap ang {hero} ngayong game.
+Hello sa lahat ng nanonood! Ayaw nilang makaharap ang {hero} ngayong game. Stay tuned!
+Hello sa lahat ng nanonood! Ayaw nilang makaharap ang {hero} ngayong game. Comment na kayo!
+Hello sa lahat ng nanonood! Ayaw nilang makaharap ang {hero} ngayong game. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Ayaw nilang makaharap ang {hero} ngayong game. Ang saya nito!
+Shoutout sa chat! Ayaw nilang makaharap ang {hero} ngayong game.
+Shoutout sa chat! Ayaw nilang makaharap ang {hero} ngayong game. Stay tuned!
+Shoutout sa chat! Ayaw nilang makaharap ang {hero} ngayong game. Comment na kayo!
+Shoutout sa chat! Ayaw nilang makaharap ang {hero} ngayong game. Huwag aalis, ha!
+Shoutout sa chat! Ayaw nilang makaharap ang {hero} ngayong game. Ang saya nito!
+Okay, everyone! Ayaw nilang makaharap ang {hero} ngayong game.
+Okay, everyone! Ayaw nilang makaharap ang {hero} ngayong game. Stay tuned!
+Okay, everyone! Ayaw nilang makaharap ang {hero} ngayong game. Comment na kayo!
+Okay, everyone! Ayaw nilang makaharap ang {hero} ngayong game. Huwag aalis, ha!
+Okay, everyone! Ayaw nilang makaharap ang {hero} ngayong game. Ang saya nito!
+Uy, chat! Ayaw nilang makaharap ang {hero} ngayong game.
+Uy, chat! Ayaw nilang makaharap ang {hero} ngayong game. Stay tuned!
+Uy, chat! Ayaw nilang makaharap ang {hero} ngayong game. Comment na kayo!
+Uy, chat! Ayaw nilang makaharap ang {hero} ngayong game. Huwag aalis, ha!
+Uy, chat! Ayaw nilang makaharap ang {hero} ngayong game. Ang saya nito!
+Quick reminder! Ayaw nilang makaharap ang {hero} ngayong game.
+Quick reminder! Ayaw nilang makaharap ang {hero} ngayong game. Stay tuned!
+Quick reminder! Ayaw nilang makaharap ang {hero} ngayong game. Comment na kayo!
+Quick reminder! Ayaw nilang makaharap ang {hero} ngayong game. Huwag aalis, ha!
+Quick reminder! Ayaw nilang makaharap ang {hero} ngayong game. Ang saya nito!
+Kumusta, mga ka-TCC? Ayaw nilang makaharap ang {hero} ngayong game.
+Kumusta, mga ka-TCC? Ayaw nilang makaharap ang {hero} ngayong game. Stay tuned!
+Kumusta, mga ka-TCC? Ayaw nilang makaharap ang {hero} ngayong game. Comment na kayo!
+Kumusta, mga ka-TCC? Ayaw nilang makaharap ang {hero} ngayong game. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Ayaw nilang makaharap ang {hero} ngayong game. Ang saya nito!
+Real talk! Ayaw nilang makaharap ang {hero} ngayong game.
+Real talk! Ayaw nilang makaharap ang {hero} ngayong game. Stay tuned!
+Real talk! Ayaw nilang makaharap ang {hero} ngayong game. Comment na kayo!
+Real talk! Ayaw nilang makaharap ang {hero} ngayong game. Huwag aalis, ha!
+Real talk! Ayaw nilang makaharap ang {hero} ngayong game. Ang saya nito!
+Sige, mga ka-TCC! Ayaw nilang makaharap ang {hero} ngayong game.
+Sige, mga ka-TCC! Ayaw nilang makaharap ang {hero} ngayong game. Stay tuned!
+Sige, mga ka-TCC! Ayaw nilang makaharap ang {hero} ngayong game. Comment na kayo!
+Sige, mga ka-TCC! Ayaw nilang makaharap ang {hero} ngayong game. Huwag aalis, ha!
+Sige, mga ka-TCC! Ayaw nilang makaharap ang {hero} ngayong game. Ang saya nito!
+Matalinong ban, sa totoo lang.
+Matalinong ban, sa totoo lang. Stay tuned!
+Matalinong ban, sa totoo lang. Comment na kayo!
+Matalinong ban, sa totoo lang. Huwag aalis, ha!
+Matalinong ban, sa totoo lang. Ang saya nito!
+Hello sa lahat ng nanonood! Matalinong ban, sa totoo lang.
+Hello sa lahat ng nanonood! Matalinong ban, sa totoo lang. Stay tuned!
+Hello sa lahat ng nanonood! Matalinong ban, sa totoo lang. Comment na kayo!
+Hello sa lahat ng nanonood! Matalinong ban, sa totoo lang. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Matalinong ban, sa totoo lang. Ang saya nito!
+Shoutout sa chat! Matalinong ban, sa totoo lang.
+Shoutout sa chat! Matalinong ban, sa totoo lang. Stay tuned!
+Shoutout sa chat! Matalinong ban, sa totoo lang. Comment na kayo!
+Shoutout sa chat! Matalinong ban, sa totoo lang. Huwag aalis, ha!
+Shoutout sa chat! Matalinong ban, sa totoo lang. Ang saya nito!
+Okay, everyone! Matalinong ban, sa totoo lang.
+Okay, everyone! Matalinong ban, sa totoo lang. Stay tuned!
+Okay, everyone! Matalinong ban, sa totoo lang. Comment na kayo!
+Okay, everyone! Matalinong ban, sa totoo lang. Huwag aalis, ha!
+Okay, everyone! Matalinong ban, sa totoo lang. Ang saya nito!
+Uy, chat! Matalinong ban, sa totoo lang.
+Uy, chat! Matalinong ban, sa totoo lang. Stay tuned!
+Uy, chat! Matalinong ban, sa totoo lang. Comment na kayo!
+Uy, chat! Matalinong ban, sa totoo lang. Huwag aalis, ha!
+Uy, chat! Matalinong ban, sa totoo lang. Ang saya nito!
+Quick reminder! Matalinong ban, sa totoo lang.
+Quick reminder! Matalinong ban, sa totoo lang. Stay tuned!
+Quick reminder! Matalinong ban, sa totoo lang. Comment na kayo!
+Quick reminder! Matalinong ban, sa totoo lang. Huwag aalis, ha!
+Quick reminder! Matalinong ban, sa totoo lang. Ang saya nito!
+Kumusta, mga ka-TCC? Matalinong ban, sa totoo lang.
+Kumusta, mga ka-TCC? Matalinong ban, sa totoo lang. Stay tuned!
+Kumusta, mga ka-TCC? Matalinong ban, sa totoo lang. Comment na kayo!
+Kumusta, mga ka-TCC? Matalinong ban, sa totoo lang. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Matalinong ban, sa totoo lang. Ang saya nito!
+Real talk! Matalinong ban, sa totoo lang.
+Real talk! Matalinong ban, sa totoo lang. Stay tuned!
+Real talk! Matalinong ban, sa totoo lang. Comment na kayo!
+Real talk! Matalinong ban, sa totoo lang. Huwag aalis, ha!
+Real talk! Matalinong ban, sa totoo lang. Ang saya nito!
+Sige, mga ka-TCC! Matalinong ban, sa totoo lang.
+Sige, mga ka-TCC! Matalinong ban, sa totoo lang. Stay tuned!
+Sige, mga ka-TCC! Matalinong ban, sa totoo lang. Comment na kayo!
+Sige, mga ka-TCC! Matalinong ban, sa totoo lang. Huwag aalis, ha!
+Sige, mga ka-TCC! Matalinong ban, sa totoo lang. Ang saya nito!
+Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Stay tuned!
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Comment na kayo!
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag aalis, ha!
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Ang saya nito!
+Hello sa lahat ng nanonood! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Hello sa lahat ng nanonood! Isa-isang nababawasan ang mga opsyon ng {enemy}. Stay tuned!
+Hello sa lahat ng nanonood! Isa-isang nababawasan ang mga opsyon ng {enemy}. Comment na kayo!
+Hello sa lahat ng nanonood! Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ang saya nito!
+Shoutout sa chat! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Shoutout sa chat! Isa-isang nababawasan ang mga opsyon ng {enemy}. Stay tuned!
+Shoutout sa chat! Isa-isang nababawasan ang mga opsyon ng {enemy}. Comment na kayo!
+Shoutout sa chat! Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag aalis, ha!
+Shoutout sa chat! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ang saya nito!
+Okay, everyone! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Okay, everyone! Isa-isang nababawasan ang mga opsyon ng {enemy}. Stay tuned!
+Okay, everyone! Isa-isang nababawasan ang mga opsyon ng {enemy}. Comment na kayo!
+Okay, everyone! Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag aalis, ha!
+Okay, everyone! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ang saya nito!
+Uy, chat! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Uy, chat! Isa-isang nababawasan ang mga opsyon ng {enemy}. Stay tuned!
+Uy, chat! Isa-isang nababawasan ang mga opsyon ng {enemy}. Comment na kayo!
+Uy, chat! Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag aalis, ha!
+Uy, chat! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ang saya nito!
+Quick reminder! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Quick reminder! Isa-isang nababawasan ang mga opsyon ng {enemy}. Stay tuned!
+Quick reminder! Isa-isang nababawasan ang mga opsyon ng {enemy}. Comment na kayo!
+Quick reminder! Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag aalis, ha!
+Quick reminder! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ang saya nito!
+Kumusta, mga ka-TCC? Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Kumusta, mga ka-TCC? Isa-isang nababawasan ang mga opsyon ng {enemy}. Stay tuned!
+Kumusta, mga ka-TCC? Isa-isang nababawasan ang mga opsyon ng {enemy}. Comment na kayo!
+Kumusta, mga ka-TCC? Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Isa-isang nababawasan ang mga opsyon ng {enemy}. Ang saya nito!
+Real talk! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Real talk! Isa-isang nababawasan ang mga opsyon ng {enemy}. Stay tuned!
+Real talk! Isa-isang nababawasan ang mga opsyon ng {enemy}. Comment na kayo!
+Real talk! Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag aalis, ha!
+Real talk! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ang saya nito!
+Sige, mga ka-TCC! Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Sige, mga ka-TCC! Isa-isang nababawasan ang mga opsyon ng {enemy}. Stay tuned!
+Sige, mga ka-TCC! Isa-isang nababawasan ang mga opsyon ng {enemy}. Comment na kayo!
+Sige, mga ka-TCC! Isa-isang nababawasan ang mga opsyon ng {enemy}. Huwag aalis, ha!
+Sige, mga ka-TCC! Isa-isang nababawasan ang mga opsyon ng {enemy}. Ang saya nito!
+
+══════ Draft picks — 310 lines ══════
+Fans ng {hero}, ingay naman diyan!
+Fans ng {hero}, ingay naman diyan! Comment na kayo!
+Fans ng {hero}, ingay naman diyan! Ang saya nito!
+Fans ng {hero}, ingay naman diyan! Palakpakan natin!
+Fans ng {hero}, ingay naman diyan! Ingay pa, chat!
+Wooo! Fans ng {hero}, ingay naman diyan!
+Wooo! Fans ng {hero}, ingay naman diyan! Comment na kayo!
+Wooo! Fans ng {hero}, ingay naman diyan! Ang saya nito!
+Wooo! Fans ng {hero}, ingay naman diyan! Palakpakan natin!
+Wooo! Fans ng {hero}, ingay naman diyan! Ingay pa, chat!
+Let's go! Fans ng {hero}, ingay naman diyan!
+Let's go! Fans ng {hero}, ingay naman diyan! Comment na kayo!
+Let's go! Fans ng {hero}, ingay naman diyan! Ang saya nito!
+Let's go! Fans ng {hero}, ingay naman diyan! Palakpakan natin!
+Let's go! Fans ng {hero}, ingay naman diyan! Ingay pa, chat!
+Palakpakan natin! Fans ng {hero}, ingay naman diyan!
+Palakpakan natin! Fans ng {hero}, ingay naman diyan! Comment na kayo!
+Palakpakan natin! Fans ng {hero}, ingay naman diyan! Ang saya nito!
+Palakpakan natin! Fans ng {hero}, ingay naman diyan! Palakpakan natin!
+Palakpakan natin! Fans ng {hero}, ingay naman diyan! Ingay pa, chat!
+Ay, ang saya! Fans ng {hero}, ingay naman diyan!
+Ay, ang saya! Fans ng {hero}, ingay naman diyan! Comment na kayo!
+Ay, ang saya! Fans ng {hero}, ingay naman diyan! Ang saya nito!
+Ay, ang saya! Fans ng {hero}, ingay naman diyan! Palakpakan natin!
+Ay, ang saya! Fans ng {hero}, ingay naman diyan! Ingay pa, chat!
+Grabe kayo, chat! Fans ng {hero}, ingay naman diyan!
+Grabe kayo, chat! Fans ng {hero}, ingay naman diyan! Comment na kayo!
+Grabe kayo, chat! Fans ng {hero}, ingay naman diyan! Ang saya nito!
+Grabe kayo, chat! Fans ng {hero}, ingay naman diyan! Palakpakan natin!
+Grabe kayo, chat! Fans ng {hero}, ingay naman diyan! Ingay pa, chat!
+Yes, yes! Fans ng {hero}, ingay naman diyan!
+Yes, yes! Fans ng {hero}, ingay naman diyan! Comment na kayo!
+Yes, yes! Fans ng {hero}, ingay naman diyan! Ang saya nito!
+Yes, yes! Fans ng {hero}, ingay naman diyan! Palakpakan natin!
+Yes, yes! Fans ng {hero}, ingay naman diyan! Ingay pa, chat!
+Hello, mga ka-TCC! Fans ng {hero}, ingay naman diyan!
+Hello, mga ka-TCC! Fans ng {hero}, ingay naman diyan! Comment na kayo!
+Hello, mga ka-TCC! Fans ng {hero}, ingay naman diyan! Ang saya nito!
+Hello, mga ka-TCC! Fans ng {hero}, ingay naman diyan! Palakpakan natin!
+Hello, mga ka-TCC! Fans ng {hero}, ingay naman diyan! Ingay pa, chat!
+I-comment niyo kung gusto niyo ang pick na yan!
+I-comment niyo kung gusto niyo ang pick na yan! Comment na kayo!
+I-comment niyo kung gusto niyo ang pick na yan! Ang saya nito!
+I-comment niyo kung gusto niyo ang pick na yan! Palakpakan natin!
+I-comment niyo kung gusto niyo ang pick na yan! Ingay pa, chat!
+Ingay naman diyan! I-comment niyo kung gusto niyo ang pick na yan!
+Ingay naman diyan! I-comment niyo kung gusto niyo ang pick na yan! Comment na kayo!
+Ingay naman diyan! I-comment niyo kung gusto niyo ang pick na yan! Ang saya nito!
+Ingay naman diyan! I-comment niyo kung gusto niyo ang pick na yan! Palakpakan natin!
+Ingay naman diyan! I-comment niyo kung gusto niyo ang pick na yan! Ingay pa, chat!
+Wooo! I-comment niyo kung gusto niyo ang pick na yan!
+Wooo! I-comment niyo kung gusto niyo ang pick na yan! Comment na kayo!
+Wooo! I-comment niyo kung gusto niyo ang pick na yan! Ang saya nito!
+Wooo! I-comment niyo kung gusto niyo ang pick na yan! Palakpakan natin!
+Wooo! I-comment niyo kung gusto niyo ang pick na yan! Ingay pa, chat!
+Let's go! I-comment niyo kung gusto niyo ang pick na yan!
+Let's go! I-comment niyo kung gusto niyo ang pick na yan! Comment na kayo!
+Let's go! I-comment niyo kung gusto niyo ang pick na yan! Ang saya nito!
+Let's go! I-comment niyo kung gusto niyo ang pick na yan! Palakpakan natin!
+Let's go! I-comment niyo kung gusto niyo ang pick na yan! Ingay pa, chat!
+Palakpakan natin! I-comment niyo kung gusto niyo ang pick na yan!
+Palakpakan natin! I-comment niyo kung gusto niyo ang pick na yan! Comment na kayo!
+Palakpakan natin! I-comment niyo kung gusto niyo ang pick na yan! Ang saya nito!
+Palakpakan natin! I-comment niyo kung gusto niyo ang pick na yan! Palakpakan natin!
+Palakpakan natin! I-comment niyo kung gusto niyo ang pick na yan! Ingay pa, chat!
+Ay, ang saya! I-comment niyo kung gusto niyo ang pick na yan!
+Ay, ang saya! I-comment niyo kung gusto niyo ang pick na yan! Comment na kayo!
+Ay, ang saya! I-comment niyo kung gusto niyo ang pick na yan! Ang saya nito!
+Ay, ang saya! I-comment niyo kung gusto niyo ang pick na yan! Palakpakan natin!
+Ay, ang saya! I-comment niyo kung gusto niyo ang pick na yan! Ingay pa, chat!
+Grabe kayo, chat! I-comment niyo kung gusto niyo ang pick na yan!
+Grabe kayo, chat! I-comment niyo kung gusto niyo ang pick na yan! Comment na kayo!
+Grabe kayo, chat! I-comment niyo kung gusto niyo ang pick na yan! Ang saya nito!
+Grabe kayo, chat! I-comment niyo kung gusto niyo ang pick na yan! Palakpakan natin!
+Grabe kayo, chat! I-comment niyo kung gusto niyo ang pick na yan! Ingay pa, chat!
+Yes, yes! I-comment niyo kung gusto niyo ang pick na yan!
+Yes, yes! I-comment niyo kung gusto niyo ang pick na yan! Comment na kayo!
+Yes, yes! I-comment niyo kung gusto niyo ang pick na yan! Ang saya nito!
+Yes, yes! I-comment niyo kung gusto niyo ang pick na yan! Palakpakan natin!
+Yes, yes! I-comment niyo kung gusto niyo ang pick na yan! Ingay pa, chat!
+Hello, mga ka-TCC! I-comment niyo kung gusto niyo ang pick na yan!
+Hello, mga ka-TCC! I-comment niyo kung gusto niyo ang pick na yan! Comment na kayo!
+Hello, mga ka-TCC! I-comment niyo kung gusto niyo ang pick na yan! Ang saya nito!
+Hello, mga ka-TCC! I-comment niyo kung gusto niyo ang pick na yan! Palakpakan natin!
+Hello, mga ka-TCC! I-comment niyo kung gusto niyo ang pick na yan! Ingay pa, chat!
+Magandang pick yan para sa {team}.
+Magandang pick yan para sa {team}. Comment na kayo!
+Magandang pick yan para sa {team}. Ang saya nito!
+Magandang pick yan para sa {team}. Palakpakan natin!
+Magandang pick yan para sa {team}. Ingay pa, chat!
+Ingay naman diyan! Magandang pick yan para sa {team}.
+Ingay naman diyan! Magandang pick yan para sa {team}. Comment na kayo!
+Ingay naman diyan! Magandang pick yan para sa {team}. Ang saya nito!
+Ingay naman diyan! Magandang pick yan para sa {team}. Palakpakan natin!
+Ingay naman diyan! Magandang pick yan para sa {team}. Ingay pa, chat!
+Wooo! Magandang pick yan para sa {team}.
+Wooo! Magandang pick yan para sa {team}. Comment na kayo!
+Wooo! Magandang pick yan para sa {team}. Ang saya nito!
+Wooo! Magandang pick yan para sa {team}. Palakpakan natin!
+Wooo! Magandang pick yan para sa {team}. Ingay pa, chat!
+Let's go! Magandang pick yan para sa {team}.
+Let's go! Magandang pick yan para sa {team}. Comment na kayo!
+Let's go! Magandang pick yan para sa {team}. Ang saya nito!
+Let's go! Magandang pick yan para sa {team}. Palakpakan natin!
+Let's go! Magandang pick yan para sa {team}. Ingay pa, chat!
+Palakpakan natin! Magandang pick yan para sa {team}.
+Palakpakan natin! Magandang pick yan para sa {team}. Comment na kayo!
+Palakpakan natin! Magandang pick yan para sa {team}. Ang saya nito!
+Palakpakan natin! Magandang pick yan para sa {team}. Palakpakan natin!
+Palakpakan natin! Magandang pick yan para sa {team}. Ingay pa, chat!
+Ay, ang saya! Magandang pick yan para sa {team}.
+Ay, ang saya! Magandang pick yan para sa {team}. Comment na kayo!
+Ay, ang saya! Magandang pick yan para sa {team}. Ang saya nito!
+Ay, ang saya! Magandang pick yan para sa {team}. Palakpakan natin!
+Ay, ang saya! Magandang pick yan para sa {team}. Ingay pa, chat!
+Grabe kayo, chat! Magandang pick yan para sa {team}.
+Grabe kayo, chat! Magandang pick yan para sa {team}. Comment na kayo!
+Grabe kayo, chat! Magandang pick yan para sa {team}. Ang saya nito!
+Grabe kayo, chat! Magandang pick yan para sa {team}. Palakpakan natin!
+Grabe kayo, chat! Magandang pick yan para sa {team}. Ingay pa, chat!
+Yes, yes! Magandang pick yan para sa {team}.
+Yes, yes! Magandang pick yan para sa {team}. Comment na kayo!
+Yes, yes! Magandang pick yan para sa {team}. Ang saya nito!
+Yes, yes! Magandang pick yan para sa {team}. Palakpakan natin!
+Yes, yes! Magandang pick yan para sa {team}. Ingay pa, chat!
+Hello, mga ka-TCC! Magandang pick yan para sa {team}.
+Hello, mga ka-TCC! Magandang pick yan para sa {team}. Comment na kayo!
+Hello, mga ka-TCC! Magandang pick yan para sa {team}. Ang saya nito!
+Hello, mga ka-TCC! Magandang pick yan para sa {team}. Palakpakan natin!
+Hello, mga ka-TCC! Magandang pick yan para sa {team}. Ingay pa, chat!
+Abangan natin ang {hero} sa kamay ni {player}.
+Abangan natin ang {hero} sa kamay ni {player}. Comment na kayo!
+Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Abangan natin ang {hero} sa kamay ni {player}. Palakpakan natin!
+Abangan natin ang {hero} sa kamay ni {player}. Ingay pa, chat!
+Ingay naman diyan! Abangan natin ang {hero} sa kamay ni {player}.
+Ingay naman diyan! Abangan natin ang {hero} sa kamay ni {player}. Comment na kayo!
+Ingay naman diyan! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Ingay naman diyan! Abangan natin ang {hero} sa kamay ni {player}. Palakpakan natin!
+Ingay naman diyan! Abangan natin ang {hero} sa kamay ni {player}. Ingay pa, chat!
+Wooo! Abangan natin ang {hero} sa kamay ni {player}.
+Wooo! Abangan natin ang {hero} sa kamay ni {player}. Comment na kayo!
+Wooo! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Wooo! Abangan natin ang {hero} sa kamay ni {player}. Palakpakan natin!
+Wooo! Abangan natin ang {hero} sa kamay ni {player}. Ingay pa, chat!
+Let's go! Abangan natin ang {hero} sa kamay ni {player}.
+Let's go! Abangan natin ang {hero} sa kamay ni {player}. Comment na kayo!
+Let's go! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Let's go! Abangan natin ang {hero} sa kamay ni {player}. Palakpakan natin!
+Let's go! Abangan natin ang {hero} sa kamay ni {player}. Ingay pa, chat!
+Palakpakan natin! Abangan natin ang {hero} sa kamay ni {player}.
+Palakpakan natin! Abangan natin ang {hero} sa kamay ni {player}. Comment na kayo!
+Palakpakan natin! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Palakpakan natin! Abangan natin ang {hero} sa kamay ni {player}. Palakpakan natin!
+Palakpakan natin! Abangan natin ang {hero} sa kamay ni {player}. Ingay pa, chat!
+Ay, ang saya! Abangan natin ang {hero} sa kamay ni {player}.
+Ay, ang saya! Abangan natin ang {hero} sa kamay ni {player}. Comment na kayo!
+Ay, ang saya! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Ay, ang saya! Abangan natin ang {hero} sa kamay ni {player}. Palakpakan natin!
+Ay, ang saya! Abangan natin ang {hero} sa kamay ni {player}. Ingay pa, chat!
+Grabe kayo, chat! Abangan natin ang {hero} sa kamay ni {player}.
+Grabe kayo, chat! Abangan natin ang {hero} sa kamay ni {player}. Comment na kayo!
+Grabe kayo, chat! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Grabe kayo, chat! Abangan natin ang {hero} sa kamay ni {player}. Palakpakan natin!
+Grabe kayo, chat! Abangan natin ang {hero} sa kamay ni {player}. Ingay pa, chat!
+Yes, yes! Abangan natin ang {hero} sa kamay ni {player}.
+Yes, yes! Abangan natin ang {hero} sa kamay ni {player}. Comment na kayo!
+Yes, yes! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Yes, yes! Abangan natin ang {hero} sa kamay ni {player}. Palakpakan natin!
+Yes, yes! Abangan natin ang {hero} sa kamay ni {player}. Ingay pa, chat!
+Hello, mga ka-TCC! Abangan natin ang {hero} sa kamay ni {player}.
+Hello, mga ka-TCC! Abangan natin ang {hero} sa kamay ni {player}. Comment na kayo!
+Hello, mga ka-TCC! Abangan natin ang {hero} sa kamay ni {player}. Ang saya nito!
+Hello, mga ka-TCC! Abangan natin ang {hero} sa kamay ni {player}. Palakpakan natin!
+Hello, mga ka-TCC! Abangan natin ang {hero} sa kamay ni {player}. Ingay pa, chat!
+Ayan na ang {hero}!
+Ayan na ang {hero}! Comment na kayo!
+Ayan na ang {hero}! Ang saya nito!
+Ayan na ang {hero}! Palakpakan natin!
+Ayan na ang {hero}! Ingay pa, chat!
+Ingay naman diyan! Ayan na ang {hero}!
+Ingay naman diyan! Ayan na ang {hero}! Comment na kayo!
+Ingay naman diyan! Ayan na ang {hero}! Ang saya nito!
+Ingay naman diyan! Ayan na ang {hero}! Palakpakan natin!
+Ingay naman diyan! Ayan na ang {hero}! Ingay pa, chat!
+Wooo! Ayan na ang {hero}!
+Wooo! Ayan na ang {hero}! Comment na kayo!
+Wooo! Ayan na ang {hero}! Ang saya nito!
+Wooo! Ayan na ang {hero}! Palakpakan natin!
+Wooo! Ayan na ang {hero}! Ingay pa, chat!
+Let's go! Ayan na ang {hero}!
+Let's go! Ayan na ang {hero}! Comment na kayo!
+Let's go! Ayan na ang {hero}! Ang saya nito!
+Let's go! Ayan na ang {hero}! Palakpakan natin!
+Let's go! Ayan na ang {hero}! Ingay pa, chat!
+Palakpakan natin! Ayan na ang {hero}!
+Palakpakan natin! Ayan na ang {hero}! Comment na kayo!
+Palakpakan natin! Ayan na ang {hero}! Ang saya nito!
+Palakpakan natin! Ayan na ang {hero}! Palakpakan natin!
+Palakpakan natin! Ayan na ang {hero}! Ingay pa, chat!
+Ay, ang saya! Ayan na ang {hero}!
+Ay, ang saya! Ayan na ang {hero}! Comment na kayo!
+Ay, ang saya! Ayan na ang {hero}! Ang saya nito!
+Ay, ang saya! Ayan na ang {hero}! Palakpakan natin!
+Ay, ang saya! Ayan na ang {hero}! Ingay pa, chat!
+Grabe kayo, chat! Ayan na ang {hero}!
+Grabe kayo, chat! Ayan na ang {hero}! Comment na kayo!
+Grabe kayo, chat! Ayan na ang {hero}! Ang saya nito!
+Grabe kayo, chat! Ayan na ang {hero}! Palakpakan natin!
+Grabe kayo, chat! Ayan na ang {hero}! Ingay pa, chat!
+Yes, yes! Ayan na ang {hero}!
+Yes, yes! Ayan na ang {hero}! Comment na kayo!
+Yes, yes! Ayan na ang {hero}! Ang saya nito!
+Yes, yes! Ayan na ang {hero}! Palakpakan natin!
+Yes, yes! Ayan na ang {hero}! Ingay pa, chat!
+Hello, mga ka-TCC! Ayan na ang {hero}!
+Hello, mga ka-TCC! Ayan na ang {hero}! Comment na kayo!
+Hello, mga ka-TCC! Ayan na ang {hero}! Ang saya nito!
+Hello, mga ka-TCC! Ayan na ang {hero}! Palakpakan natin!
+Hello, mga ka-TCC! Ayan na ang {hero}! Ingay pa, chat!
+Unti-unting nabubuo ang lineup ng {team}.
+Unti-unting nabubuo ang lineup ng {team}. Comment na kayo!
+Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Unti-unting nabubuo ang lineup ng {team}. Palakpakan natin!
+Unti-unting nabubuo ang lineup ng {team}. Ingay pa, chat!
+Ingay naman diyan! Unti-unting nabubuo ang lineup ng {team}.
+Ingay naman diyan! Unti-unting nabubuo ang lineup ng {team}. Comment na kayo!
+Ingay naman diyan! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Ingay naman diyan! Unti-unting nabubuo ang lineup ng {team}. Palakpakan natin!
+Ingay naman diyan! Unti-unting nabubuo ang lineup ng {team}. Ingay pa, chat!
+Wooo! Unti-unting nabubuo ang lineup ng {team}.
+Wooo! Unti-unting nabubuo ang lineup ng {team}. Comment na kayo!
+Wooo! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Wooo! Unti-unting nabubuo ang lineup ng {team}. Palakpakan natin!
+Wooo! Unti-unting nabubuo ang lineup ng {team}. Ingay pa, chat!
+Let's go! Unti-unting nabubuo ang lineup ng {team}.
+Let's go! Unti-unting nabubuo ang lineup ng {team}. Comment na kayo!
+Let's go! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Let's go! Unti-unting nabubuo ang lineup ng {team}. Palakpakan natin!
+Let's go! Unti-unting nabubuo ang lineup ng {team}. Ingay pa, chat!
+Palakpakan natin! Unti-unting nabubuo ang lineup ng {team}.
+Palakpakan natin! Unti-unting nabubuo ang lineup ng {team}. Comment na kayo!
+Palakpakan natin! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Palakpakan natin! Unti-unting nabubuo ang lineup ng {team}. Palakpakan natin!
+Palakpakan natin! Unti-unting nabubuo ang lineup ng {team}. Ingay pa, chat!
+Ay, ang saya! Unti-unting nabubuo ang lineup ng {team}.
+Ay, ang saya! Unti-unting nabubuo ang lineup ng {team}. Comment na kayo!
+Ay, ang saya! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Ay, ang saya! Unti-unting nabubuo ang lineup ng {team}. Palakpakan natin!
+Ay, ang saya! Unti-unting nabubuo ang lineup ng {team}. Ingay pa, chat!
+Grabe kayo, chat! Unti-unting nabubuo ang lineup ng {team}.
+Grabe kayo, chat! Unti-unting nabubuo ang lineup ng {team}. Comment na kayo!
+Grabe kayo, chat! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Grabe kayo, chat! Unti-unting nabubuo ang lineup ng {team}. Palakpakan natin!
+Grabe kayo, chat! Unti-unting nabubuo ang lineup ng {team}. Ingay pa, chat!
+Yes, yes! Unti-unting nabubuo ang lineup ng {team}.
+Yes, yes! Unti-unting nabubuo ang lineup ng {team}. Comment na kayo!
+Yes, yes! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Yes, yes! Unti-unting nabubuo ang lineup ng {team}. Palakpakan natin!
+Yes, yes! Unti-unting nabubuo ang lineup ng {team}. Ingay pa, chat!
+Hello, mga ka-TCC! Unti-unting nabubuo ang lineup ng {team}.
+Hello, mga ka-TCC! Unti-unting nabubuo ang lineup ng {team}. Comment na kayo!
+Hello, mga ka-TCC! Unti-unting nabubuo ang lineup ng {team}. Ang saya nito!
+Hello, mga ka-TCC! Unti-unting nabubuo ang lineup ng {team}. Palakpakan natin!
+Hello, mga ka-TCC! Unti-unting nabubuo ang lineup ng {team}. Ingay pa, chat!
+Malakas na {heroClass} ang {hero} sa ganitong draft.
+Malakas na {heroClass} ang {hero} sa ganitong draft. Comment na kayo!
+Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Malakas na {heroClass} ang {hero} sa ganitong draft. Palakpakan natin!
+Malakas na {heroClass} ang {hero} sa ganitong draft. Ingay pa, chat!
+Ingay naman diyan! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Ingay naman diyan! Malakas na {heroClass} ang {hero} sa ganitong draft. Comment na kayo!
+Ingay naman diyan! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Ingay naman diyan! Malakas na {heroClass} ang {hero} sa ganitong draft. Palakpakan natin!
+Ingay naman diyan! Malakas na {heroClass} ang {hero} sa ganitong draft. Ingay pa, chat!
+Wooo! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Wooo! Malakas na {heroClass} ang {hero} sa ganitong draft. Comment na kayo!
+Wooo! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Wooo! Malakas na {heroClass} ang {hero} sa ganitong draft. Palakpakan natin!
+Wooo! Malakas na {heroClass} ang {hero} sa ganitong draft. Ingay pa, chat!
+Let's go! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Let's go! Malakas na {heroClass} ang {hero} sa ganitong draft. Comment na kayo!
+Let's go! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Let's go! Malakas na {heroClass} ang {hero} sa ganitong draft. Palakpakan natin!
+Let's go! Malakas na {heroClass} ang {hero} sa ganitong draft. Ingay pa, chat!
+Palakpakan natin! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Palakpakan natin! Malakas na {heroClass} ang {hero} sa ganitong draft. Comment na kayo!
+Palakpakan natin! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Palakpakan natin! Malakas na {heroClass} ang {hero} sa ganitong draft. Palakpakan natin!
+Palakpakan natin! Malakas na {heroClass} ang {hero} sa ganitong draft. Ingay pa, chat!
+Ay, ang saya! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Ay, ang saya! Malakas na {heroClass} ang {hero} sa ganitong draft. Comment na kayo!
+Ay, ang saya! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Ay, ang saya! Malakas na {heroClass} ang {hero} sa ganitong draft. Palakpakan natin!
+Ay, ang saya! Malakas na {heroClass} ang {hero} sa ganitong draft. Ingay pa, chat!
+Grabe kayo, chat! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Grabe kayo, chat! Malakas na {heroClass} ang {hero} sa ganitong draft. Comment na kayo!
+Grabe kayo, chat! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Grabe kayo, chat! Malakas na {heroClass} ang {hero} sa ganitong draft. Palakpakan natin!
+Grabe kayo, chat! Malakas na {heroClass} ang {hero} sa ganitong draft. Ingay pa, chat!
+Yes, yes! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Yes, yes! Malakas na {heroClass} ang {hero} sa ganitong draft. Comment na kayo!
+Yes, yes! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Yes, yes! Malakas na {heroClass} ang {hero} sa ganitong draft. Palakpakan natin!
+Yes, yes! Malakas na {heroClass} ang {hero} sa ganitong draft. Ingay pa, chat!
+Hello, mga ka-TCC! Malakas na {heroClass} ang {hero} sa ganitong draft.
+Hello, mga ka-TCC! Malakas na {heroClass} ang {hero} sa ganitong draft. Comment na kayo!
+Hello, mga ka-TCC! Malakas na {heroClass} ang {hero} sa ganitong draft. Ang saya nito!
+Hello, mga ka-TCC! Malakas na {heroClass} ang {hero} sa ganitong draft. Palakpakan natin!
+Hello, mga ka-TCC! Malakas na {heroClass} ang {hero} sa ganitong draft. Ingay pa, chat!
+
+══════ Draft talk (speculation & story) — 260 lines ══════
+Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC!
+Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Stay tuned!
+Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Comment na kayo!
+Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Huwag aalis, ha!
+Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Ang saya nito!
+Hello sa lahat ng nanonood! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC!
+Hello sa lahat ng nanonood! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Stay tuned!
+Hello sa lahat ng nanonood! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Comment na kayo!
+Hello sa lahat ng nanonood! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Huwag aalis, ha!
+Hello sa lahat ng nanonood! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Ang saya nito!
+Shoutout sa chat! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC!
+Shoutout sa chat! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Stay tuned!
+Shoutout sa chat! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Comment na kayo!
+Shoutout sa chat! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Huwag aalis, ha!
+Shoutout sa chat! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Ang saya nito!
+Okay, everyone! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC!
+Okay, everyone! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Stay tuned!
+Okay, everyone! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Comment na kayo!
+Okay, everyone! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Huwag aalis, ha!
+Okay, everyone! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Ang saya nito!
+Uy, chat! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC!
+Uy, chat! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Stay tuned!
+Uy, chat! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Comment na kayo!
+Uy, chat! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Huwag aalis, ha!
+Uy, chat! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Ang saya nito!
+Quick reminder! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC!
+Quick reminder! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Stay tuned!
+Quick reminder! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Comment na kayo!
+Quick reminder! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Huwag aalis, ha!
+Quick reminder! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Ang saya nito!
+Real talk! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC!
+Real talk! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Stay tuned!
+Real talk! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Comment na kayo!
+Real talk! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Huwag aalis, ha!
+Real talk! Ano ang gusto niyong makita sa draft na ito? Comment na, mga ka-TCC! Ang saya nito!
+Mainit ang draft ngayong Game {gameNumber}.
+Mainit ang draft ngayong Game {gameNumber}. Stay tuned!
+Mainit ang draft ngayong Game {gameNumber}. Comment na kayo!
+Mainit ang draft ngayong Game {gameNumber}. Huwag aalis, ha!
+Mainit ang draft ngayong Game {gameNumber}. Ang saya nito!
+Hello sa lahat ng nanonood! Mainit ang draft ngayong Game {gameNumber}.
+Hello sa lahat ng nanonood! Mainit ang draft ngayong Game {gameNumber}. Stay tuned!
+Hello sa lahat ng nanonood! Mainit ang draft ngayong Game {gameNumber}. Comment na kayo!
+Hello sa lahat ng nanonood! Mainit ang draft ngayong Game {gameNumber}. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Mainit ang draft ngayong Game {gameNumber}. Ang saya nito!
+Shoutout sa chat! Mainit ang draft ngayong Game {gameNumber}.
+Shoutout sa chat! Mainit ang draft ngayong Game {gameNumber}. Stay tuned!
+Shoutout sa chat! Mainit ang draft ngayong Game {gameNumber}. Comment na kayo!
+Shoutout sa chat! Mainit ang draft ngayong Game {gameNumber}. Huwag aalis, ha!
+Shoutout sa chat! Mainit ang draft ngayong Game {gameNumber}. Ang saya nito!
+Okay, everyone! Mainit ang draft ngayong Game {gameNumber}.
+Okay, everyone! Mainit ang draft ngayong Game {gameNumber}. Stay tuned!
+Okay, everyone! Mainit ang draft ngayong Game {gameNumber}. Comment na kayo!
+Okay, everyone! Mainit ang draft ngayong Game {gameNumber}. Huwag aalis, ha!
+Okay, everyone! Mainit ang draft ngayong Game {gameNumber}. Ang saya nito!
+Uy, chat! Mainit ang draft ngayong Game {gameNumber}.
+Uy, chat! Mainit ang draft ngayong Game {gameNumber}. Stay tuned!
+Uy, chat! Mainit ang draft ngayong Game {gameNumber}. Comment na kayo!
+Uy, chat! Mainit ang draft ngayong Game {gameNumber}. Huwag aalis, ha!
+Uy, chat! Mainit ang draft ngayong Game {gameNumber}. Ang saya nito!
+Quick reminder! Mainit ang draft ngayong Game {gameNumber}.
+Quick reminder! Mainit ang draft ngayong Game {gameNumber}. Stay tuned!
+Quick reminder! Mainit ang draft ngayong Game {gameNumber}. Comment na kayo!
+Quick reminder! Mainit ang draft ngayong Game {gameNumber}. Huwag aalis, ha!
+Quick reminder! Mainit ang draft ngayong Game {gameNumber}. Ang saya nito!
+Kumusta, mga ka-TCC? Mainit ang draft ngayong Game {gameNumber}.
+Kumusta, mga ka-TCC? Mainit ang draft ngayong Game {gameNumber}. Stay tuned!
+Kumusta, mga ka-TCC? Mainit ang draft ngayong Game {gameNumber}. Comment na kayo!
+Kumusta, mga ka-TCC? Mainit ang draft ngayong Game {gameNumber}. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Mainit ang draft ngayong Game {gameNumber}. Ang saya nito!
+Real talk! Mainit ang draft ngayong Game {gameNumber}.
+Real talk! Mainit ang draft ngayong Game {gameNumber}. Stay tuned!
+Real talk! Mainit ang draft ngayong Game {gameNumber}. Comment na kayo!
+Real talk! Mainit ang draft ngayong Game {gameNumber}. Huwag aalis, ha!
+Real talk! Mainit ang draft ngayong Game {gameNumber}. Ang saya nito!
+Sige, mga ka-TCC! Mainit ang draft ngayong Game {gameNumber}.
+Sige, mga ka-TCC! Mainit ang draft ngayong Game {gameNumber}. Stay tuned!
+Sige, mga ka-TCC! Mainit ang draft ngayong Game {gameNumber}. Comment na kayo!
+Sige, mga ka-TCC! Mainit ang draft ngayong Game {gameNumber}. Huwag aalis, ha!
+Sige, mga ka-TCC! Mainit ang draft ngayong Game {gameNumber}. Ang saya nito!
+Bawat pick at ban, may dahilan.
+Bawat pick at ban, may dahilan. Stay tuned!
+Bawat pick at ban, may dahilan. Comment na kayo!
+Bawat pick at ban, may dahilan. Huwag aalis, ha!
+Bawat pick at ban, may dahilan. Ang saya nito!
+Hello sa lahat ng nanonood! Bawat pick at ban, may dahilan.
+Hello sa lahat ng nanonood! Bawat pick at ban, may dahilan. Stay tuned!
+Hello sa lahat ng nanonood! Bawat pick at ban, may dahilan. Comment na kayo!
+Hello sa lahat ng nanonood! Bawat pick at ban, may dahilan. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Bawat pick at ban, may dahilan. Ang saya nito!
+Shoutout sa chat! Bawat pick at ban, may dahilan.
+Shoutout sa chat! Bawat pick at ban, may dahilan. Stay tuned!
+Shoutout sa chat! Bawat pick at ban, may dahilan. Comment na kayo!
+Shoutout sa chat! Bawat pick at ban, may dahilan. Huwag aalis, ha!
+Shoutout sa chat! Bawat pick at ban, may dahilan. Ang saya nito!
+Okay, everyone! Bawat pick at ban, may dahilan.
+Okay, everyone! Bawat pick at ban, may dahilan. Stay tuned!
+Okay, everyone! Bawat pick at ban, may dahilan. Comment na kayo!
+Okay, everyone! Bawat pick at ban, may dahilan. Huwag aalis, ha!
+Okay, everyone! Bawat pick at ban, may dahilan. Ang saya nito!
+Uy, chat! Bawat pick at ban, may dahilan.
+Uy, chat! Bawat pick at ban, may dahilan. Stay tuned!
+Uy, chat! Bawat pick at ban, may dahilan. Comment na kayo!
+Uy, chat! Bawat pick at ban, may dahilan. Huwag aalis, ha!
+Uy, chat! Bawat pick at ban, may dahilan. Ang saya nito!
+Quick reminder! Bawat pick at ban, may dahilan.
+Quick reminder! Bawat pick at ban, may dahilan. Stay tuned!
+Quick reminder! Bawat pick at ban, may dahilan. Comment na kayo!
+Quick reminder! Bawat pick at ban, may dahilan. Huwag aalis, ha!
+Quick reminder! Bawat pick at ban, may dahilan. Ang saya nito!
+Kumusta, mga ka-TCC? Bawat pick at ban, may dahilan.
+Kumusta, mga ka-TCC? Bawat pick at ban, may dahilan. Stay tuned!
+Kumusta, mga ka-TCC? Bawat pick at ban, may dahilan. Comment na kayo!
+Kumusta, mga ka-TCC? Bawat pick at ban, may dahilan. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Bawat pick at ban, may dahilan. Ang saya nito!
+Real talk! Bawat pick at ban, may dahilan.
+Real talk! Bawat pick at ban, may dahilan. Stay tuned!
+Real talk! Bawat pick at ban, may dahilan. Comment na kayo!
+Real talk! Bawat pick at ban, may dahilan. Huwag aalis, ha!
+Real talk! Bawat pick at ban, may dahilan. Ang saya nito!
+Sige, mga ka-TCC! Bawat pick at ban, may dahilan.
+Sige, mga ka-TCC! Bawat pick at ban, may dahilan. Stay tuned!
+Sige, mga ka-TCC! Bawat pick at ban, may dahilan. Comment na kayo!
+Sige, mga ka-TCC! Bawat pick at ban, may dahilan. Huwag aalis, ha!
+Sige, mga ka-TCC! Bawat pick at ban, may dahilan. Ang saya nito!
+Abangan natin ang susunod na desisyon.
+Abangan natin ang susunod na desisyon. Stay tuned!
+Abangan natin ang susunod na desisyon. Comment na kayo!
+Abangan natin ang susunod na desisyon. Huwag aalis, ha!
+Abangan natin ang susunod na desisyon. Ang saya nito!
+Hello sa lahat ng nanonood! Abangan natin ang susunod na desisyon.
+Hello sa lahat ng nanonood! Abangan natin ang susunod na desisyon. Stay tuned!
+Hello sa lahat ng nanonood! Abangan natin ang susunod na desisyon. Comment na kayo!
+Hello sa lahat ng nanonood! Abangan natin ang susunod na desisyon. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Abangan natin ang susunod na desisyon. Ang saya nito!
+Shoutout sa chat! Abangan natin ang susunod na desisyon.
+Shoutout sa chat! Abangan natin ang susunod na desisyon. Stay tuned!
+Shoutout sa chat! Abangan natin ang susunod na desisyon. Comment na kayo!
+Shoutout sa chat! Abangan natin ang susunod na desisyon. Huwag aalis, ha!
+Shoutout sa chat! Abangan natin ang susunod na desisyon. Ang saya nito!
+Okay, everyone! Abangan natin ang susunod na desisyon.
+Okay, everyone! Abangan natin ang susunod na desisyon. Stay tuned!
+Okay, everyone! Abangan natin ang susunod na desisyon. Comment na kayo!
+Okay, everyone! Abangan natin ang susunod na desisyon. Huwag aalis, ha!
+Okay, everyone! Abangan natin ang susunod na desisyon. Ang saya nito!
+Uy, chat! Abangan natin ang susunod na desisyon.
+Uy, chat! Abangan natin ang susunod na desisyon. Stay tuned!
+Uy, chat! Abangan natin ang susunod na desisyon. Comment na kayo!
+Uy, chat! Abangan natin ang susunod na desisyon. Huwag aalis, ha!
+Uy, chat! Abangan natin ang susunod na desisyon. Ang saya nito!
+Quick reminder! Abangan natin ang susunod na desisyon.
+Quick reminder! Abangan natin ang susunod na desisyon. Stay tuned!
+Quick reminder! Abangan natin ang susunod na desisyon. Comment na kayo!
+Quick reminder! Abangan natin ang susunod na desisyon. Huwag aalis, ha!
+Quick reminder! Abangan natin ang susunod na desisyon. Ang saya nito!
+Kumusta, mga ka-TCC? Abangan natin ang susunod na desisyon.
+Kumusta, mga ka-TCC? Abangan natin ang susunod na desisyon. Stay tuned!
+Kumusta, mga ka-TCC? Abangan natin ang susunod na desisyon. Comment na kayo!
+Kumusta, mga ka-TCC? Abangan natin ang susunod na desisyon. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Abangan natin ang susunod na desisyon. Ang saya nito!
+Real talk! Abangan natin ang susunod na desisyon.
+Real talk! Abangan natin ang susunod na desisyon. Stay tuned!
+Real talk! Abangan natin ang susunod na desisyon. Comment na kayo!
+Real talk! Abangan natin ang susunod na desisyon. Huwag aalis, ha!
+Real talk! Abangan natin ang susunod na desisyon. Ang saya nito!
+Sige, mga ka-TCC! Abangan natin ang susunod na desisyon.
+Sige, mga ka-TCC! Abangan natin ang susunod na desisyon. Stay tuned!
+Sige, mga ka-TCC! Abangan natin ang susunod na desisyon. Comment na kayo!
+Sige, mga ka-TCC! Abangan natin ang susunod na desisyon. Huwag aalis, ha!
+Sige, mga ka-TCC! Abangan natin ang susunod na desisyon. Ang saya nito!
+Paunti nang paunti ang mga hero na natitira.
+Paunti nang paunti ang mga hero na natitira. Stay tuned!
+Paunti nang paunti ang mga hero na natitira. Comment na kayo!
+Paunti nang paunti ang mga hero na natitira. Huwag aalis, ha!
+Paunti nang paunti ang mga hero na natitira. Ang saya nito!
+Hello sa lahat ng nanonood! Paunti nang paunti ang mga hero na natitira.
+Hello sa lahat ng nanonood! Paunti nang paunti ang mga hero na natitira. Stay tuned!
+Hello sa lahat ng nanonood! Paunti nang paunti ang mga hero na natitira. Comment na kayo!
+Hello sa lahat ng nanonood! Paunti nang paunti ang mga hero na natitira. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Paunti nang paunti ang mga hero na natitira. Ang saya nito!
+Shoutout sa chat! Paunti nang paunti ang mga hero na natitira.
+Shoutout sa chat! Paunti nang paunti ang mga hero na natitira. Stay tuned!
+Shoutout sa chat! Paunti nang paunti ang mga hero na natitira. Comment na kayo!
+Shoutout sa chat! Paunti nang paunti ang mga hero na natitira. Huwag aalis, ha!
+Shoutout sa chat! Paunti nang paunti ang mga hero na natitira. Ang saya nito!
+Okay, everyone! Paunti nang paunti ang mga hero na natitira.
+Okay, everyone! Paunti nang paunti ang mga hero na natitira. Stay tuned!
+Okay, everyone! Paunti nang paunti ang mga hero na natitira. Comment na kayo!
+Okay, everyone! Paunti nang paunti ang mga hero na natitira. Huwag aalis, ha!
+Okay, everyone! Paunti nang paunti ang mga hero na natitira. Ang saya nito!
+Uy, chat! Paunti nang paunti ang mga hero na natitira.
+Uy, chat! Paunti nang paunti ang mga hero na natitira. Stay tuned!
+Uy, chat! Paunti nang paunti ang mga hero na natitira. Comment na kayo!
+Uy, chat! Paunti nang paunti ang mga hero na natitira. Huwag aalis, ha!
+Uy, chat! Paunti nang paunti ang mga hero na natitira. Ang saya nito!
+Quick reminder! Paunti nang paunti ang mga hero na natitira.
+Quick reminder! Paunti nang paunti ang mga hero na natitira. Stay tuned!
+Quick reminder! Paunti nang paunti ang mga hero na natitira. Comment na kayo!
+Quick reminder! Paunti nang paunti ang mga hero na natitira. Huwag aalis, ha!
+Quick reminder! Paunti nang paunti ang mga hero na natitira. Ang saya nito!
+Kumusta, mga ka-TCC? Paunti nang paunti ang mga hero na natitira.
+Kumusta, mga ka-TCC? Paunti nang paunti ang mga hero na natitira. Stay tuned!
+Kumusta, mga ka-TCC? Paunti nang paunti ang mga hero na natitira. Comment na kayo!
+Kumusta, mga ka-TCC? Paunti nang paunti ang mga hero na natitira. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Paunti nang paunti ang mga hero na natitira. Ang saya nito!
+Real talk! Paunti nang paunti ang mga hero na natitira.
+Real talk! Paunti nang paunti ang mga hero na natitira. Stay tuned!
+Real talk! Paunti nang paunti ang mga hero na natitira. Comment na kayo!
+Real talk! Paunti nang paunti ang mga hero na natitira. Huwag aalis, ha!
+Real talk! Paunti nang paunti ang mga hero na natitira. Ang saya nito!
+Sige, mga ka-TCC! Paunti nang paunti ang mga hero na natitira.
+Sige, mga ka-TCC! Paunti nang paunti ang mga hero na natitira. Stay tuned!
+Sige, mga ka-TCC! Paunti nang paunti ang mga hero na natitira. Comment na kayo!
+Sige, mga ka-TCC! Paunti nang paunti ang mga hero na natitira. Huwag aalis, ha!
+Sige, mga ka-TCC! Paunti nang paunti ang mga hero na natitira. Ang saya nito!
+{seriesScore} ang serye — kaya mahalaga ang draft na ito.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Stay tuned!
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Comment na kayo!
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag aalis, ha!
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Ang saya nito!
+Hello sa lahat ng nanonood! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Hello sa lahat ng nanonood! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Stay tuned!
+Hello sa lahat ng nanonood! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Comment na kayo!
+Hello sa lahat ng nanonood! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag aalis, ha!
+Hello sa lahat ng nanonood! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ang saya nito!
+Shoutout sa chat! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Shoutout sa chat! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Stay tuned!
+Shoutout sa chat! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Comment na kayo!
+Shoutout sa chat! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag aalis, ha!
+Shoutout sa chat! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ang saya nito!
+Okay, everyone! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Okay, everyone! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Stay tuned!
+Okay, everyone! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Comment na kayo!
+Okay, everyone! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag aalis, ha!
+Okay, everyone! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ang saya nito!
+Uy, chat! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Uy, chat! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Stay tuned!
+Uy, chat! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Comment na kayo!
+Uy, chat! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag aalis, ha!
+Uy, chat! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ang saya nito!
+Quick reminder! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Quick reminder! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Stay tuned!
+Quick reminder! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Comment na kayo!
+Quick reminder! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag aalis, ha!
+Quick reminder! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ang saya nito!
+Kumusta, mga ka-TCC? {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Kumusta, mga ka-TCC? {seriesScore} ang serye — kaya mahalaga ang draft na ito. Stay tuned!
+Kumusta, mga ka-TCC? {seriesScore} ang serye — kaya mahalaga ang draft na ito. Comment na kayo!
+Kumusta, mga ka-TCC? {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag aalis, ha!
+Kumusta, mga ka-TCC? {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ang saya nito!
+Real talk! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Real talk! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Stay tuned!
+Real talk! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Comment na kayo!
+Real talk! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag aalis, ha!
+Real talk! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ang saya nito!
+Sige, mga ka-TCC! {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Sige, mga ka-TCC! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Stay tuned!
+Sige, mga ka-TCC! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Comment na kayo!
+Sige, mga ka-TCC! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Huwag aalis, ha!
+Sige, mga ka-TCC! {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ang saya nito!
+
+══════ Drafting phase welcome ("Welcome sa drafting phase natin, partner …") — 440 lines ══════
+I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito!
+I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Stay tuned!
+I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Comment na kayo!
+I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Huwag aalis, ha!
+I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Ang saya nito!
+Hello sa lahat ng nanonood! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito!
+Hello sa lahat ng nanonood! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Stay tuned!
+Hello sa lahat ng nanonood! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Comment na kayo!
+Hello sa lahat ng nanonood! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Huwag aalis, ha!
+Hello sa lahat ng nanonood! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Ang saya nito!
+Shoutout sa chat! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito!
+Shoutout sa chat! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Stay tuned!
+Shoutout sa chat! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Comment na kayo!
+Shoutout sa chat! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Huwag aalis, ha!
+Shoutout sa chat! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Ang saya nito!
+Okay, everyone! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito!
+Okay, everyone! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Stay tuned!
+Okay, everyone! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Comment na kayo!
+Okay, everyone! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Huwag aalis, ha!
+Okay, everyone! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Ang saya nito!
+Uy, chat! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito!
+Uy, chat! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Stay tuned!
+Uy, chat! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Comment na kayo!
+Uy, chat! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Huwag aalis, ha!
+Uy, chat! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Ang saya nito!
+Quick reminder! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito!
+Quick reminder! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Stay tuned!
+Quick reminder! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Comment na kayo!
+Quick reminder! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Huwag aalis, ha!
+Quick reminder! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Ang saya nito!
+Kumusta, mga ka-TCC? I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito!
+Kumusta, mga ka-TCC? I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Stay tuned!
+Kumusta, mga ka-TCC? I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Comment na kayo!
+Kumusta, mga ka-TCC? I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Huwag aalis, ha!
+Kumusta, mga ka-TCC? I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Ang saya nito!
+Real talk! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito!
+Real talk! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Stay tuned!
+Real talk! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Comment na kayo!
+Real talk! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Huwag aalis, ha!
+Real talk! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Ang saya nito!
+Sige, mga ka-TCC! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito!
+Sige, mga ka-TCC! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Stay tuned!
+Sige, mga ka-TCC! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Comment na kayo!
+Sige, mga ka-TCC! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Huwag aalis, ha!
+Sige, mga ka-TCC! I-comment niyo na kung anong hero ang gusto niyong makita sa draft na ito! Ang saya nito!
+Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft!
+Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Stay tuned!
+Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Comment na kayo!
+Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Huwag aalis, ha!
+Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Ang saya nito!
+Hello sa lahat ng nanonood! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft!
+Hello sa lahat ng nanonood! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Stay tuned!
+Hello sa lahat ng nanonood! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Comment na kayo!
+Hello sa lahat ng nanonood! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Huwag aalis, ha!
+Hello sa lahat ng nanonood! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Ang saya nito!
+Shoutout sa chat! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft!
+Shoutout sa chat! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Stay tuned!
+Shoutout sa chat! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Comment na kayo!
+Shoutout sa chat! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Huwag aalis, ha!
+Shoutout sa chat! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Ang saya nito!
+Okay, everyone! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft!
+Okay, everyone! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Stay tuned!
+Okay, everyone! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Comment na kayo!
+Okay, everyone! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Huwag aalis, ha!
+Okay, everyone! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Ang saya nito!
+Uy, chat! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft!
+Uy, chat! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Stay tuned!
+Uy, chat! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Comment na kayo!
+Uy, chat! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Huwag aalis, ha!
+Uy, chat! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Ang saya nito!
+Quick reminder! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft!
+Quick reminder! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Stay tuned!
+Quick reminder! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Comment na kayo!
+Quick reminder! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Huwag aalis, ha!
+Quick reminder! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Ang saya nito!
+Kumusta, mga ka-TCC? Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft!
+Kumusta, mga ka-TCC? Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Stay tuned!
+Kumusta, mga ka-TCC? Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Comment na kayo!
+Kumusta, mga ka-TCC? Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Huwag aalis, ha!
+Kumusta, mga ka-TCC? Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Ang saya nito!
+Real talk! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft!
+Real talk! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Stay tuned!
+Real talk! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Comment na kayo!
+Real talk! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Huwag aalis, ha!
+Real talk! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Ang saya nito!
+Sige, mga ka-TCC! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft!
+Sige, mga ka-TCC! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Stay tuned!
+Sige, mga ka-TCC! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Comment na kayo!
+Sige, mga ka-TCC! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Huwag aalis, ha!
+Sige, mga ka-TCC! Ingay naman diyan para sa {teamA} at {teamB}! Simula na ang draft! Ang saya nito!
+Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC!
+Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Stay tuned!
+Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Comment na kayo!
+Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Huwag aalis, ha!
+Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Ang saya nito!
+Hello sa lahat ng nanonood! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC!
+Hello sa lahat ng nanonood! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Stay tuned!
+Hello sa lahat ng nanonood! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Comment na kayo!
+Hello sa lahat ng nanonood! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Huwag aalis, ha!
+Hello sa lahat ng nanonood! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Ang saya nito!
+Shoutout sa chat! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC!
+Shoutout sa chat! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Stay tuned!
+Shoutout sa chat! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Comment na kayo!
+Shoutout sa chat! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Huwag aalis, ha!
+Shoutout sa chat! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Ang saya nito!
+Okay, everyone! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC!
+Okay, everyone! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Stay tuned!
+Okay, everyone! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Comment na kayo!
+Okay, everyone! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Huwag aalis, ha!
+Okay, everyone! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Ang saya nito!
+Uy, chat! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC!
+Uy, chat! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Stay tuned!
+Uy, chat! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Comment na kayo!
+Uy, chat! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Huwag aalis, ha!
+Uy, chat! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Ang saya nito!
+Quick reminder! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC!
+Quick reminder! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Stay tuned!
+Quick reminder! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Comment na kayo!
+Quick reminder! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Huwag aalis, ha!
+Quick reminder! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Ang saya nito!
+Real talk! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC!
+Real talk! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Stay tuned!
+Real talk! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Comment na kayo!
+Real talk! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Huwag aalis, ha!
+Real talk! Sino ang manok niyo ngayong Game {gameNumber}? Comment na, mga ka-TCC! Ang saya nito!
+Simula na ang drafting phase ng Game {gameNumber}.
+Simula na ang drafting phase ng Game {gameNumber}. Stay tuned!
+Simula na ang drafting phase ng Game {gameNumber}. Comment na kayo!
+Simula na ang drafting phase ng Game {gameNumber}. Huwag aalis, ha!
+Simula na ang drafting phase ng Game {gameNumber}. Ang saya nito!
+Hello sa lahat ng nanonood! Simula na ang drafting phase ng Game {gameNumber}.
+Hello sa lahat ng nanonood! Simula na ang drafting phase ng Game {gameNumber}. Stay tuned!
+Hello sa lahat ng nanonood! Simula na ang drafting phase ng Game {gameNumber}. Comment na kayo!
+Hello sa lahat ng nanonood! Simula na ang drafting phase ng Game {gameNumber}. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Simula na ang drafting phase ng Game {gameNumber}. Ang saya nito!
+Shoutout sa chat! Simula na ang drafting phase ng Game {gameNumber}.
+Shoutout sa chat! Simula na ang drafting phase ng Game {gameNumber}. Stay tuned!
+Shoutout sa chat! Simula na ang drafting phase ng Game {gameNumber}. Comment na kayo!
+Shoutout sa chat! Simula na ang drafting phase ng Game {gameNumber}. Huwag aalis, ha!
+Shoutout sa chat! Simula na ang drafting phase ng Game {gameNumber}. Ang saya nito!
+Okay, everyone! Simula na ang drafting phase ng Game {gameNumber}.
+Okay, everyone! Simula na ang drafting phase ng Game {gameNumber}. Stay tuned!
+Okay, everyone! Simula na ang drafting phase ng Game {gameNumber}. Comment na kayo!
+Okay, everyone! Simula na ang drafting phase ng Game {gameNumber}. Huwag aalis, ha!
+Okay, everyone! Simula na ang drafting phase ng Game {gameNumber}. Ang saya nito!
+Uy, chat! Simula na ang drafting phase ng Game {gameNumber}.
+Uy, chat! Simula na ang drafting phase ng Game {gameNumber}. Stay tuned!
+Uy, chat! Simula na ang drafting phase ng Game {gameNumber}. Comment na kayo!
+Uy, chat! Simula na ang drafting phase ng Game {gameNumber}. Huwag aalis, ha!
+Uy, chat! Simula na ang drafting phase ng Game {gameNumber}. Ang saya nito!
+Quick reminder! Simula na ang drafting phase ng Game {gameNumber}.
+Quick reminder! Simula na ang drafting phase ng Game {gameNumber}. Stay tuned!
+Quick reminder! Simula na ang drafting phase ng Game {gameNumber}. Comment na kayo!
+Quick reminder! Simula na ang drafting phase ng Game {gameNumber}. Huwag aalis, ha!
+Quick reminder! Simula na ang drafting phase ng Game {gameNumber}. Ang saya nito!
+Kumusta, mga ka-TCC? Simula na ang drafting phase ng Game {gameNumber}.
+Kumusta, mga ka-TCC? Simula na ang drafting phase ng Game {gameNumber}. Stay tuned!
+Kumusta, mga ka-TCC? Simula na ang drafting phase ng Game {gameNumber}. Comment na kayo!
+Kumusta, mga ka-TCC? Simula na ang drafting phase ng Game {gameNumber}. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Simula na ang drafting phase ng Game {gameNumber}. Ang saya nito!
+Real talk! Simula na ang drafting phase ng Game {gameNumber}.
+Real talk! Simula na ang drafting phase ng Game {gameNumber}. Stay tuned!
+Real talk! Simula na ang drafting phase ng Game {gameNumber}. Comment na kayo!
+Real talk! Simula na ang drafting phase ng Game {gameNumber}. Huwag aalis, ha!
+Real talk! Simula na ang drafting phase ng Game {gameNumber}. Ang saya nito!
+Sige, mga ka-TCC! Simula na ang drafting phase ng Game {gameNumber}.
+Sige, mga ka-TCC! Simula na ang drafting phase ng Game {gameNumber}. Stay tuned!
+Sige, mga ka-TCC! Simula na ang drafting phase ng Game {gameNumber}. Comment na kayo!
+Sige, mga ka-TCC! Simula na ang drafting phase ng Game {gameNumber}. Huwag aalis, ha!
+Sige, mga ka-TCC! Simula na ang drafting phase ng Game {gameNumber}. Ang saya nito!
+Abangan natin ang mga ban at pick ng dalawang team.
+Abangan natin ang mga ban at pick ng dalawang team. Stay tuned!
+Abangan natin ang mga ban at pick ng dalawang team. Comment na kayo!
+Abangan natin ang mga ban at pick ng dalawang team. Huwag aalis, ha!
+Abangan natin ang mga ban at pick ng dalawang team. Ang saya nito!
+Hello sa lahat ng nanonood! Abangan natin ang mga ban at pick ng dalawang team.
+Hello sa lahat ng nanonood! Abangan natin ang mga ban at pick ng dalawang team. Stay tuned!
+Hello sa lahat ng nanonood! Abangan natin ang mga ban at pick ng dalawang team. Comment na kayo!
+Hello sa lahat ng nanonood! Abangan natin ang mga ban at pick ng dalawang team. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Abangan natin ang mga ban at pick ng dalawang team. Ang saya nito!
+Shoutout sa chat! Abangan natin ang mga ban at pick ng dalawang team.
+Shoutout sa chat! Abangan natin ang mga ban at pick ng dalawang team. Stay tuned!
+Shoutout sa chat! Abangan natin ang mga ban at pick ng dalawang team. Comment na kayo!
+Shoutout sa chat! Abangan natin ang mga ban at pick ng dalawang team. Huwag aalis, ha!
+Shoutout sa chat! Abangan natin ang mga ban at pick ng dalawang team. Ang saya nito!
+Okay, everyone! Abangan natin ang mga ban at pick ng dalawang team.
+Okay, everyone! Abangan natin ang mga ban at pick ng dalawang team. Stay tuned!
+Okay, everyone! Abangan natin ang mga ban at pick ng dalawang team. Comment na kayo!
+Okay, everyone! Abangan natin ang mga ban at pick ng dalawang team. Huwag aalis, ha!
+Okay, everyone! Abangan natin ang mga ban at pick ng dalawang team. Ang saya nito!
+Uy, chat! Abangan natin ang mga ban at pick ng dalawang team.
+Uy, chat! Abangan natin ang mga ban at pick ng dalawang team. Stay tuned!
+Uy, chat! Abangan natin ang mga ban at pick ng dalawang team. Comment na kayo!
+Uy, chat! Abangan natin ang mga ban at pick ng dalawang team. Huwag aalis, ha!
+Uy, chat! Abangan natin ang mga ban at pick ng dalawang team. Ang saya nito!
+Quick reminder! Abangan natin ang mga ban at pick ng dalawang team.
+Quick reminder! Abangan natin ang mga ban at pick ng dalawang team. Stay tuned!
+Quick reminder! Abangan natin ang mga ban at pick ng dalawang team. Comment na kayo!
+Quick reminder! Abangan natin ang mga ban at pick ng dalawang team. Huwag aalis, ha!
+Quick reminder! Abangan natin ang mga ban at pick ng dalawang team. Ang saya nito!
+Kumusta, mga ka-TCC? Abangan natin ang mga ban at pick ng dalawang team.
+Kumusta, mga ka-TCC? Abangan natin ang mga ban at pick ng dalawang team. Stay tuned!
+Kumusta, mga ka-TCC? Abangan natin ang mga ban at pick ng dalawang team. Comment na kayo!
+Kumusta, mga ka-TCC? Abangan natin ang mga ban at pick ng dalawang team. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Abangan natin ang mga ban at pick ng dalawang team. Ang saya nito!
+Real talk! Abangan natin ang mga ban at pick ng dalawang team.
+Real talk! Abangan natin ang mga ban at pick ng dalawang team. Stay tuned!
+Real talk! Abangan natin ang mga ban at pick ng dalawang team. Comment na kayo!
+Real talk! Abangan natin ang mga ban at pick ng dalawang team. Huwag aalis, ha!
+Real talk! Abangan natin ang mga ban at pick ng dalawang team. Ang saya nito!
+Sige, mga ka-TCC! Abangan natin ang mga ban at pick ng dalawang team.
+Sige, mga ka-TCC! Abangan natin ang mga ban at pick ng dalawang team. Stay tuned!
+Sige, mga ka-TCC! Abangan natin ang mga ban at pick ng dalawang team. Comment na kayo!
+Sige, mga ka-TCC! Abangan natin ang mga ban at pick ng dalawang team. Huwag aalis, ha!
+Sige, mga ka-TCC! Abangan natin ang mga ban at pick ng dalawang team. Ang saya nito!
+Dito makikita ang game plan ng {teamA} at {teamB}.
+Dito makikita ang game plan ng {teamA} at {teamB}. Stay tuned!
+Dito makikita ang game plan ng {teamA} at {teamB}. Comment na kayo!
+Dito makikita ang game plan ng {teamA} at {teamB}. Huwag aalis, ha!
+Dito makikita ang game plan ng {teamA} at {teamB}. Ang saya nito!
+Hello sa lahat ng nanonood! Dito makikita ang game plan ng {teamA} at {teamB}.
+Hello sa lahat ng nanonood! Dito makikita ang game plan ng {teamA} at {teamB}. Stay tuned!
+Hello sa lahat ng nanonood! Dito makikita ang game plan ng {teamA} at {teamB}. Comment na kayo!
+Hello sa lahat ng nanonood! Dito makikita ang game plan ng {teamA} at {teamB}. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Dito makikita ang game plan ng {teamA} at {teamB}. Ang saya nito!
+Shoutout sa chat! Dito makikita ang game plan ng {teamA} at {teamB}.
+Shoutout sa chat! Dito makikita ang game plan ng {teamA} at {teamB}. Stay tuned!
+Shoutout sa chat! Dito makikita ang game plan ng {teamA} at {teamB}. Comment na kayo!
+Shoutout sa chat! Dito makikita ang game plan ng {teamA} at {teamB}. Huwag aalis, ha!
+Shoutout sa chat! Dito makikita ang game plan ng {teamA} at {teamB}. Ang saya nito!
+Okay, everyone! Dito makikita ang game plan ng {teamA} at {teamB}.
+Okay, everyone! Dito makikita ang game plan ng {teamA} at {teamB}. Stay tuned!
+Okay, everyone! Dito makikita ang game plan ng {teamA} at {teamB}. Comment na kayo!
+Okay, everyone! Dito makikita ang game plan ng {teamA} at {teamB}. Huwag aalis, ha!
+Okay, everyone! Dito makikita ang game plan ng {teamA} at {teamB}. Ang saya nito!
+Uy, chat! Dito makikita ang game plan ng {teamA} at {teamB}.
+Uy, chat! Dito makikita ang game plan ng {teamA} at {teamB}. Stay tuned!
+Uy, chat! Dito makikita ang game plan ng {teamA} at {teamB}. Comment na kayo!
+Uy, chat! Dito makikita ang game plan ng {teamA} at {teamB}. Huwag aalis, ha!
+Uy, chat! Dito makikita ang game plan ng {teamA} at {teamB}. Ang saya nito!
+Quick reminder! Dito makikita ang game plan ng {teamA} at {teamB}.
+Quick reminder! Dito makikita ang game plan ng {teamA} at {teamB}. Stay tuned!
+Quick reminder! Dito makikita ang game plan ng {teamA} at {teamB}. Comment na kayo!
+Quick reminder! Dito makikita ang game plan ng {teamA} at {teamB}. Huwag aalis, ha!
+Quick reminder! Dito makikita ang game plan ng {teamA} at {teamB}. Ang saya nito!
+Kumusta, mga ka-TCC? Dito makikita ang game plan ng {teamA} at {teamB}.
+Kumusta, mga ka-TCC? Dito makikita ang game plan ng {teamA} at {teamB}. Stay tuned!
+Kumusta, mga ka-TCC? Dito makikita ang game plan ng {teamA} at {teamB}. Comment na kayo!
+Kumusta, mga ka-TCC? Dito makikita ang game plan ng {teamA} at {teamB}. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Dito makikita ang game plan ng {teamA} at {teamB}. Ang saya nito!
+Real talk! Dito makikita ang game plan ng {teamA} at {teamB}.
+Real talk! Dito makikita ang game plan ng {teamA} at {teamB}. Stay tuned!
+Real talk! Dito makikita ang game plan ng {teamA} at {teamB}. Comment na kayo!
+Real talk! Dito makikita ang game plan ng {teamA} at {teamB}. Huwag aalis, ha!
+Real talk! Dito makikita ang game plan ng {teamA} at {teamB}. Ang saya nito!
+Sige, mga ka-TCC! Dito makikita ang game plan ng {teamA} at {teamB}.
+Sige, mga ka-TCC! Dito makikita ang game plan ng {teamA} at {teamB}. Stay tuned!
+Sige, mga ka-TCC! Dito makikita ang game plan ng {teamA} at {teamB}. Comment na kayo!
+Sige, mga ka-TCC! Dito makikita ang game plan ng {teamA} at {teamB}. Huwag aalis, ha!
+Sige, mga ka-TCC! Dito makikita ang game plan ng {teamA} at {teamB}. Ang saya nito!
+{blueTeam} sa blue side, {redTeam} sa red side.
+{blueTeam} sa blue side, {redTeam} sa red side. Stay tuned!
+{blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+{blueTeam} sa blue side, {redTeam} sa red side. Huwag aalis, ha!
+{blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Hello sa lahat ng nanonood! {blueTeam} sa blue side, {redTeam} sa red side.
+Hello sa lahat ng nanonood! {blueTeam} sa blue side, {redTeam} sa red side. Stay tuned!
+Hello sa lahat ng nanonood! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Hello sa lahat ng nanonood! {blueTeam} sa blue side, {redTeam} sa red side. Huwag aalis, ha!
+Hello sa lahat ng nanonood! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Shoutout sa chat! {blueTeam} sa blue side, {redTeam} sa red side.
+Shoutout sa chat! {blueTeam} sa blue side, {redTeam} sa red side. Stay tuned!
+Shoutout sa chat! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Shoutout sa chat! {blueTeam} sa blue side, {redTeam} sa red side. Huwag aalis, ha!
+Shoutout sa chat! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Okay, everyone! {blueTeam} sa blue side, {redTeam} sa red side.
+Okay, everyone! {blueTeam} sa blue side, {redTeam} sa red side. Stay tuned!
+Okay, everyone! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Okay, everyone! {blueTeam} sa blue side, {redTeam} sa red side. Huwag aalis, ha!
+Okay, everyone! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Uy, chat! {blueTeam} sa blue side, {redTeam} sa red side.
+Uy, chat! {blueTeam} sa blue side, {redTeam} sa red side. Stay tuned!
+Uy, chat! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Uy, chat! {blueTeam} sa blue side, {redTeam} sa red side. Huwag aalis, ha!
+Uy, chat! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Quick reminder! {blueTeam} sa blue side, {redTeam} sa red side.
+Quick reminder! {blueTeam} sa blue side, {redTeam} sa red side. Stay tuned!
+Quick reminder! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Quick reminder! {blueTeam} sa blue side, {redTeam} sa red side. Huwag aalis, ha!
+Quick reminder! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Kumusta, mga ka-TCC? {blueTeam} sa blue side, {redTeam} sa red side.
+Kumusta, mga ka-TCC? {blueTeam} sa blue side, {redTeam} sa red side. Stay tuned!
+Kumusta, mga ka-TCC? {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Kumusta, mga ka-TCC? {blueTeam} sa blue side, {redTeam} sa red side. Huwag aalis, ha!
+Kumusta, mga ka-TCC? {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Real talk! {blueTeam} sa blue side, {redTeam} sa red side.
+Real talk! {blueTeam} sa blue side, {redTeam} sa red side. Stay tuned!
+Real talk! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Real talk! {blueTeam} sa blue side, {redTeam} sa red side. Huwag aalis, ha!
+Real talk! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Sige, mga ka-TCC! {blueTeam} sa blue side, {redTeam} sa red side.
+Sige, mga ka-TCC! {blueTeam} sa blue side, {redTeam} sa red side. Stay tuned!
+Sige, mga ka-TCC! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Sige, mga ka-TCC! {blueTeam} sa blue side, {redTeam} sa red side. Huwag aalis, ha!
+Sige, mga ka-TCC! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Draft pa lang, mahalaga na ang bawat desisyon.
+Draft pa lang, mahalaga na ang bawat desisyon. Stay tuned!
+Draft pa lang, mahalaga na ang bawat desisyon. Comment na kayo!
+Draft pa lang, mahalaga na ang bawat desisyon. Huwag aalis, ha!
+Draft pa lang, mahalaga na ang bawat desisyon. Ang saya nito!
+Hello sa lahat ng nanonood! Draft pa lang, mahalaga na ang bawat desisyon.
+Hello sa lahat ng nanonood! Draft pa lang, mahalaga na ang bawat desisyon. Stay tuned!
+Hello sa lahat ng nanonood! Draft pa lang, mahalaga na ang bawat desisyon. Comment na kayo!
+Hello sa lahat ng nanonood! Draft pa lang, mahalaga na ang bawat desisyon. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Draft pa lang, mahalaga na ang bawat desisyon. Ang saya nito!
+Shoutout sa chat! Draft pa lang, mahalaga na ang bawat desisyon.
+Shoutout sa chat! Draft pa lang, mahalaga na ang bawat desisyon. Stay tuned!
+Shoutout sa chat! Draft pa lang, mahalaga na ang bawat desisyon. Comment na kayo!
+Shoutout sa chat! Draft pa lang, mahalaga na ang bawat desisyon. Huwag aalis, ha!
+Shoutout sa chat! Draft pa lang, mahalaga na ang bawat desisyon. Ang saya nito!
+Okay, everyone! Draft pa lang, mahalaga na ang bawat desisyon.
+Okay, everyone! Draft pa lang, mahalaga na ang bawat desisyon. Stay tuned!
+Okay, everyone! Draft pa lang, mahalaga na ang bawat desisyon. Comment na kayo!
+Okay, everyone! Draft pa lang, mahalaga na ang bawat desisyon. Huwag aalis, ha!
+Okay, everyone! Draft pa lang, mahalaga na ang bawat desisyon. Ang saya nito!
+Uy, chat! Draft pa lang, mahalaga na ang bawat desisyon.
+Uy, chat! Draft pa lang, mahalaga na ang bawat desisyon. Stay tuned!
+Uy, chat! Draft pa lang, mahalaga na ang bawat desisyon. Comment na kayo!
+Uy, chat! Draft pa lang, mahalaga na ang bawat desisyon. Huwag aalis, ha!
+Uy, chat! Draft pa lang, mahalaga na ang bawat desisyon. Ang saya nito!
+Quick reminder! Draft pa lang, mahalaga na ang bawat desisyon.
+Quick reminder! Draft pa lang, mahalaga na ang bawat desisyon. Stay tuned!
+Quick reminder! Draft pa lang, mahalaga na ang bawat desisyon. Comment na kayo!
+Quick reminder! Draft pa lang, mahalaga na ang bawat desisyon. Huwag aalis, ha!
+Quick reminder! Draft pa lang, mahalaga na ang bawat desisyon. Ang saya nito!
+Kumusta, mga ka-TCC? Draft pa lang, mahalaga na ang bawat desisyon.
+Kumusta, mga ka-TCC? Draft pa lang, mahalaga na ang bawat desisyon. Stay tuned!
+Kumusta, mga ka-TCC? Draft pa lang, mahalaga na ang bawat desisyon. Comment na kayo!
+Kumusta, mga ka-TCC? Draft pa lang, mahalaga na ang bawat desisyon. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Draft pa lang, mahalaga na ang bawat desisyon. Ang saya nito!
+Real talk! Draft pa lang, mahalaga na ang bawat desisyon.
+Real talk! Draft pa lang, mahalaga na ang bawat desisyon. Stay tuned!
+Real talk! Draft pa lang, mahalaga na ang bawat desisyon. Comment na kayo!
+Real talk! Draft pa lang, mahalaga na ang bawat desisyon. Huwag aalis, ha!
+Real talk! Draft pa lang, mahalaga na ang bawat desisyon. Ang saya nito!
+Sige, mga ka-TCC! Draft pa lang, mahalaga na ang bawat desisyon.
+Sige, mga ka-TCC! Draft pa lang, mahalaga na ang bawat desisyon. Stay tuned!
+Sige, mga ka-TCC! Draft pa lang, mahalaga na ang bawat desisyon. Comment na kayo!
+Sige, mga ka-TCC! Draft pa lang, mahalaga na ang bawat desisyon. Huwag aalis, ha!
+Sige, mga ka-TCC! Draft pa lang, mahalaga na ang bawat desisyon. Ang saya nito!
+Sino kaya ang unang magpapakita ng diskarte?
+Sino kaya ang unang magpapakita ng diskarte? Stay tuned!
+Sino kaya ang unang magpapakita ng diskarte? Comment na kayo!
+Sino kaya ang unang magpapakita ng diskarte? Huwag aalis, ha!
+Sino kaya ang unang magpapakita ng diskarte? Ang saya nito!
+Hello sa lahat ng nanonood! Sino kaya ang unang magpapakita ng diskarte?
+Hello sa lahat ng nanonood! Sino kaya ang unang magpapakita ng diskarte? Stay tuned!
+Hello sa lahat ng nanonood! Sino kaya ang unang magpapakita ng diskarte? Comment na kayo!
+Hello sa lahat ng nanonood! Sino kaya ang unang magpapakita ng diskarte? Huwag aalis, ha!
+Hello sa lahat ng nanonood! Sino kaya ang unang magpapakita ng diskarte? Ang saya nito!
+Shoutout sa chat! Sino kaya ang unang magpapakita ng diskarte?
+Shoutout sa chat! Sino kaya ang unang magpapakita ng diskarte? Stay tuned!
+Shoutout sa chat! Sino kaya ang unang magpapakita ng diskarte? Comment na kayo!
+Shoutout sa chat! Sino kaya ang unang magpapakita ng diskarte? Huwag aalis, ha!
+Shoutout sa chat! Sino kaya ang unang magpapakita ng diskarte? Ang saya nito!
+Okay, everyone! Sino kaya ang unang magpapakita ng diskarte?
+Okay, everyone! Sino kaya ang unang magpapakita ng diskarte? Stay tuned!
+Okay, everyone! Sino kaya ang unang magpapakita ng diskarte? Comment na kayo!
+Okay, everyone! Sino kaya ang unang magpapakita ng diskarte? Huwag aalis, ha!
+Okay, everyone! Sino kaya ang unang magpapakita ng diskarte? Ang saya nito!
+Uy, chat! Sino kaya ang unang magpapakita ng diskarte?
+Uy, chat! Sino kaya ang unang magpapakita ng diskarte? Stay tuned!
+Uy, chat! Sino kaya ang unang magpapakita ng diskarte? Comment na kayo!
+Uy, chat! Sino kaya ang unang magpapakita ng diskarte? Huwag aalis, ha!
+Uy, chat! Sino kaya ang unang magpapakita ng diskarte? Ang saya nito!
+Quick reminder! Sino kaya ang unang magpapakita ng diskarte?
+Quick reminder! Sino kaya ang unang magpapakita ng diskarte? Stay tuned!
+Quick reminder! Sino kaya ang unang magpapakita ng diskarte? Comment na kayo!
+Quick reminder! Sino kaya ang unang magpapakita ng diskarte? Huwag aalis, ha!
+Quick reminder! Sino kaya ang unang magpapakita ng diskarte? Ang saya nito!
+Kumusta, mga ka-TCC? Sino kaya ang unang magpapakita ng diskarte?
+Kumusta, mga ka-TCC? Sino kaya ang unang magpapakita ng diskarte? Stay tuned!
+Kumusta, mga ka-TCC? Sino kaya ang unang magpapakita ng diskarte? Comment na kayo!
+Kumusta, mga ka-TCC? Sino kaya ang unang magpapakita ng diskarte? Huwag aalis, ha!
+Kumusta, mga ka-TCC? Sino kaya ang unang magpapakita ng diskarte? Ang saya nito!
+Real talk! Sino kaya ang unang magpapakita ng diskarte?
+Real talk! Sino kaya ang unang magpapakita ng diskarte? Stay tuned!
+Real talk! Sino kaya ang unang magpapakita ng diskarte? Comment na kayo!
+Real talk! Sino kaya ang unang magpapakita ng diskarte? Huwag aalis, ha!
+Real talk! Sino kaya ang unang magpapakita ng diskarte? Ang saya nito!
+Sige, mga ka-TCC! Sino kaya ang unang magpapakita ng diskarte?
+Sige, mga ka-TCC! Sino kaya ang unang magpapakita ng diskarte? Stay tuned!
+Sige, mga ka-TCC! Sino kaya ang unang magpapakita ng diskarte? Comment na kayo!
+Sige, mga ka-TCC! Sino kaya ang unang magpapakita ng diskarte? Huwag aalis, ha!
+Sige, mga ka-TCC! Sino kaya ang unang magpapakita ng diskarte? Ang saya nito!
+Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Stay tuned!
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Comment na kayo!
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag aalis, ha!
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Ang saya nito!
+Hello sa lahat ng nanonood! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Hello sa lahat ng nanonood! Game {gameNumber} ng {format} — {seriesScore} ang serye. Stay tuned!
+Hello sa lahat ng nanonood! Game {gameNumber} ng {format} — {seriesScore} ang serye. Comment na kayo!
+Hello sa lahat ng nanonood! Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag aalis, ha!
+Hello sa lahat ng nanonood! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ang saya nito!
+Shoutout sa chat! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Shoutout sa chat! Game {gameNumber} ng {format} — {seriesScore} ang serye. Stay tuned!
+Shoutout sa chat! Game {gameNumber} ng {format} — {seriesScore} ang serye. Comment na kayo!
+Shoutout sa chat! Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag aalis, ha!
+Shoutout sa chat! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ang saya nito!
+Okay, everyone! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Okay, everyone! Game {gameNumber} ng {format} — {seriesScore} ang serye. Stay tuned!
+Okay, everyone! Game {gameNumber} ng {format} — {seriesScore} ang serye. Comment na kayo!
+Okay, everyone! Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag aalis, ha!
+Okay, everyone! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ang saya nito!
+Uy, chat! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Uy, chat! Game {gameNumber} ng {format} — {seriesScore} ang serye. Stay tuned!
+Uy, chat! Game {gameNumber} ng {format} — {seriesScore} ang serye. Comment na kayo!
+Uy, chat! Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag aalis, ha!
+Uy, chat! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ang saya nito!
+Quick reminder! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Quick reminder! Game {gameNumber} ng {format} — {seriesScore} ang serye. Stay tuned!
+Quick reminder! Game {gameNumber} ng {format} — {seriesScore} ang serye. Comment na kayo!
+Quick reminder! Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag aalis, ha!
+Quick reminder! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ang saya nito!
+Kumusta, mga ka-TCC? Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Kumusta, mga ka-TCC? Game {gameNumber} ng {format} — {seriesScore} ang serye. Stay tuned!
+Kumusta, mga ka-TCC? Game {gameNumber} ng {format} — {seriesScore} ang serye. Comment na kayo!
+Kumusta, mga ka-TCC? Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag aalis, ha!
+Kumusta, mga ka-TCC? Game {gameNumber} ng {format} — {seriesScore} ang serye. Ang saya nito!
+Real talk! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Real talk! Game {gameNumber} ng {format} — {seriesScore} ang serye. Stay tuned!
+Real talk! Game {gameNumber} ng {format} — {seriesScore} ang serye. Comment na kayo!
+Real talk! Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag aalis, ha!
+Real talk! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ang saya nito!
+Sige, mga ka-TCC! Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Sige, mga ka-TCC! Game {gameNumber} ng {format} — {seriesScore} ang serye. Stay tuned!
+Sige, mga ka-TCC! Game {gameNumber} ng {format} — {seriesScore} ang serye. Comment na kayo!
+Sige, mga ka-TCC! Game {gameNumber} ng {format} — {seriesScore} ang serye. Huwag aalis, ha!
+Sige, mga ka-TCC! Game {gameNumber} ng {format} — {seriesScore} ang serye. Ang saya nito!
+
+══════ Game start ("Welcome sa Game …") — 428 lines ══════
+Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}!
+Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Comment na kayo!
+Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Ang saya nito!
+Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Palakpakan natin!
+Wooo! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}!
+Wooo! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Comment na kayo!
+Wooo! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Ang saya nito!
+Wooo! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Palakpakan natin!
+Let's go! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}!
+Let's go! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Comment na kayo!
+Let's go! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Ang saya nito!
+Let's go! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Palakpakan natin!
+Palakpakan natin! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}!
+Palakpakan natin! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Comment na kayo!
+Palakpakan natin! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Ang saya nito!
+Palakpakan natin! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Palakpakan natin!
+Ay, ang saya! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}!
+Ay, ang saya! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Comment na kayo!
+Ay, ang saya! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Ang saya nito!
+Ay, ang saya! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Palakpakan natin!
+Grabe kayo, chat! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}!
+Grabe kayo, chat! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Comment na kayo!
+Grabe kayo, chat! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Ang saya nito!
+Grabe kayo, chat! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Palakpakan natin!
+Yes, yes! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}!
+Yes, yes! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Comment na kayo!
+Yes, yes! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Ang saya nito!
+Yes, yes! Ingay naman diyan, mga ka-TCC! Simula na ang Game {gameNumber}! Palakpakan natin!
+I-comment niyo na kung sino ang mananalo sa Game {gameNumber}!
+I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Comment na kayo!
+I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ang saya nito!
+I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Palakpakan natin!
+I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ingay pa, chat!
+Ingay naman diyan! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}!
+Ingay naman diyan! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Comment na kayo!
+Ingay naman diyan! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ang saya nito!
+Ingay naman diyan! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Palakpakan natin!
+Ingay naman diyan! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ingay pa, chat!
+Wooo! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}!
+Wooo! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Comment na kayo!
+Wooo! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ang saya nito!
+Wooo! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Palakpakan natin!
+Wooo! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ingay pa, chat!
+Let's go! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}!
+Let's go! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Comment na kayo!
+Let's go! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ang saya nito!
+Let's go! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Palakpakan natin!
+Let's go! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ingay pa, chat!
+Palakpakan natin! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}!
+Palakpakan natin! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Comment na kayo!
+Palakpakan natin! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ang saya nito!
+Palakpakan natin! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Palakpakan natin!
+Palakpakan natin! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ingay pa, chat!
+Ay, ang saya! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}!
+Ay, ang saya! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Comment na kayo!
+Ay, ang saya! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ang saya nito!
+Ay, ang saya! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Palakpakan natin!
+Ay, ang saya! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ingay pa, chat!
+Grabe kayo, chat! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}!
+Grabe kayo, chat! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Comment na kayo!
+Grabe kayo, chat! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ang saya nito!
+Grabe kayo, chat! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Palakpakan natin!
+Grabe kayo, chat! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ingay pa, chat!
+Yes, yes! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}!
+Yes, yes! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Comment na kayo!
+Yes, yes! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ang saya nito!
+Yes, yes! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Palakpakan natin!
+Yes, yes! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ingay pa, chat!
+Hello, mga ka-TCC! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}!
+Hello, mga ka-TCC! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Comment na kayo!
+Hello, mga ka-TCC! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ang saya nito!
+Hello, mga ka-TCC! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Palakpakan natin!
+Hello, mga ka-TCC! I-comment niyo na kung sino ang mananalo sa Game {gameNumber}! Ingay pa, chat!
+Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC!
+Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Comment na kayo!
+Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ang saya nito!
+Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Palakpakan natin!
+Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ingay pa, chat!
+Ingay naman diyan! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC!
+Ingay naman diyan! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Comment na kayo!
+Ingay naman diyan! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ang saya nito!
+Ingay naman diyan! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Palakpakan natin!
+Ingay naman diyan! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ingay pa, chat!
+Wooo! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC!
+Wooo! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Comment na kayo!
+Wooo! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ang saya nito!
+Wooo! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Palakpakan natin!
+Wooo! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ingay pa, chat!
+Let's go! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC!
+Let's go! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Comment na kayo!
+Let's go! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ang saya nito!
+Let's go! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Palakpakan natin!
+Let's go! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ingay pa, chat!
+Palakpakan natin! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC!
+Palakpakan natin! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Comment na kayo!
+Palakpakan natin! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ang saya nito!
+Palakpakan natin! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Palakpakan natin!
+Palakpakan natin! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ingay pa, chat!
+Ay, ang saya! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC!
+Ay, ang saya! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Comment na kayo!
+Ay, ang saya! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ang saya nito!
+Ay, ang saya! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Palakpakan natin!
+Ay, ang saya! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ingay pa, chat!
+Grabe kayo, chat! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC!
+Grabe kayo, chat! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Comment na kayo!
+Grabe kayo, chat! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ang saya nito!
+Grabe kayo, chat! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Palakpakan natin!
+Grabe kayo, chat! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ingay pa, chat!
+Yes, yes! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC!
+Yes, yes! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Comment na kayo!
+Yes, yes! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ang saya nito!
+Yes, yes! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Palakpakan natin!
+Yes, yes! Good luck sa {teamA} at {teamB}! Enjoy sa panonood, mga ka-TCC! Ingay pa, chat!
+Simula na ang Game {gameNumber}.
+Simula na ang Game {gameNumber}. Comment na kayo!
+Simula na ang Game {gameNumber}. Ang saya nito!
+Simula na ang Game {gameNumber}. Palakpakan natin!
+Simula na ang Game {gameNumber}. Ingay pa, chat!
+Ingay naman diyan! Simula na ang Game {gameNumber}.
+Ingay naman diyan! Simula na ang Game {gameNumber}. Comment na kayo!
+Ingay naman diyan! Simula na ang Game {gameNumber}. Ang saya nito!
+Ingay naman diyan! Simula na ang Game {gameNumber}. Palakpakan natin!
+Ingay naman diyan! Simula na ang Game {gameNumber}. Ingay pa, chat!
+Wooo! Simula na ang Game {gameNumber}.
+Wooo! Simula na ang Game {gameNumber}. Comment na kayo!
+Wooo! Simula na ang Game {gameNumber}. Ang saya nito!
+Wooo! Simula na ang Game {gameNumber}. Palakpakan natin!
+Wooo! Simula na ang Game {gameNumber}. Ingay pa, chat!
+Let's go! Simula na ang Game {gameNumber}.
+Let's go! Simula na ang Game {gameNumber}. Comment na kayo!
+Let's go! Simula na ang Game {gameNumber}. Ang saya nito!
+Let's go! Simula na ang Game {gameNumber}. Palakpakan natin!
+Let's go! Simula na ang Game {gameNumber}. Ingay pa, chat!
+Palakpakan natin! Simula na ang Game {gameNumber}.
+Palakpakan natin! Simula na ang Game {gameNumber}. Comment na kayo!
+Palakpakan natin! Simula na ang Game {gameNumber}. Ang saya nito!
+Palakpakan natin! Simula na ang Game {gameNumber}. Palakpakan natin!
+Palakpakan natin! Simula na ang Game {gameNumber}. Ingay pa, chat!
+Ay, ang saya! Simula na ang Game {gameNumber}.
+Ay, ang saya! Simula na ang Game {gameNumber}. Comment na kayo!
+Ay, ang saya! Simula na ang Game {gameNumber}. Ang saya nito!
+Ay, ang saya! Simula na ang Game {gameNumber}. Palakpakan natin!
+Ay, ang saya! Simula na ang Game {gameNumber}. Ingay pa, chat!
+Grabe kayo, chat! Simula na ang Game {gameNumber}.
+Grabe kayo, chat! Simula na ang Game {gameNumber}. Comment na kayo!
+Grabe kayo, chat! Simula na ang Game {gameNumber}. Ang saya nito!
+Grabe kayo, chat! Simula na ang Game {gameNumber}. Palakpakan natin!
+Grabe kayo, chat! Simula na ang Game {gameNumber}. Ingay pa, chat!
+Yes, yes! Simula na ang Game {gameNumber}.
+Yes, yes! Simula na ang Game {gameNumber}. Comment na kayo!
+Yes, yes! Simula na ang Game {gameNumber}. Ang saya nito!
+Yes, yes! Simula na ang Game {gameNumber}. Palakpakan natin!
+Yes, yes! Simula na ang Game {gameNumber}. Ingay pa, chat!
+Hello, mga ka-TCC! Simula na ang Game {gameNumber}.
+Hello, mga ka-TCC! Simula na ang Game {gameNumber}. Comment na kayo!
+Hello, mga ka-TCC! Simula na ang Game {gameNumber}. Ang saya nito!
+Hello, mga ka-TCC! Simula na ang Game {gameNumber}. Palakpakan natin!
+Hello, mga ka-TCC! Simula na ang Game {gameNumber}. Ingay pa, chat!
+Kumpleto na ang draft — laban na!
+Kumpleto na ang draft — laban na! Comment na kayo!
+Kumpleto na ang draft — laban na! Ang saya nito!
+Kumpleto na ang draft — laban na! Palakpakan natin!
+Kumpleto na ang draft — laban na! Ingay pa, chat!
+Ingay naman diyan! Kumpleto na ang draft — laban na!
+Ingay naman diyan! Kumpleto na ang draft — laban na! Comment na kayo!
+Ingay naman diyan! Kumpleto na ang draft — laban na! Ang saya nito!
+Ingay naman diyan! Kumpleto na ang draft — laban na! Palakpakan natin!
+Ingay naman diyan! Kumpleto na ang draft — laban na! Ingay pa, chat!
+Wooo! Kumpleto na ang draft — laban na!
+Wooo! Kumpleto na ang draft — laban na! Comment na kayo!
+Wooo! Kumpleto na ang draft — laban na! Ang saya nito!
+Wooo! Kumpleto na ang draft — laban na! Palakpakan natin!
+Wooo! Kumpleto na ang draft — laban na! Ingay pa, chat!
+Let's go! Kumpleto na ang draft — laban na!
+Let's go! Kumpleto na ang draft — laban na! Comment na kayo!
+Let's go! Kumpleto na ang draft — laban na! Ang saya nito!
+Let's go! Kumpleto na ang draft — laban na! Palakpakan natin!
+Let's go! Kumpleto na ang draft — laban na! Ingay pa, chat!
+Palakpakan natin! Kumpleto na ang draft — laban na!
+Palakpakan natin! Kumpleto na ang draft — laban na! Comment na kayo!
+Palakpakan natin! Kumpleto na ang draft — laban na! Ang saya nito!
+Palakpakan natin! Kumpleto na ang draft — laban na! Palakpakan natin!
+Palakpakan natin! Kumpleto na ang draft — laban na! Ingay pa, chat!
+Ay, ang saya! Kumpleto na ang draft — laban na!
+Ay, ang saya! Kumpleto na ang draft — laban na! Comment na kayo!
+Ay, ang saya! Kumpleto na ang draft — laban na! Ang saya nito!
+Ay, ang saya! Kumpleto na ang draft — laban na! Palakpakan natin!
+Ay, ang saya! Kumpleto na ang draft — laban na! Ingay pa, chat!
+Grabe kayo, chat! Kumpleto na ang draft — laban na!
+Grabe kayo, chat! Kumpleto na ang draft — laban na! Comment na kayo!
+Grabe kayo, chat! Kumpleto na ang draft — laban na! Ang saya nito!
+Grabe kayo, chat! Kumpleto na ang draft — laban na! Palakpakan natin!
+Grabe kayo, chat! Kumpleto na ang draft — laban na! Ingay pa, chat!
+Yes, yes! Kumpleto na ang draft — laban na!
+Yes, yes! Kumpleto na ang draft — laban na! Comment na kayo!
+Yes, yes! Kumpleto na ang draft — laban na! Ang saya nito!
+Yes, yes! Kumpleto na ang draft — laban na! Palakpakan natin!
+Yes, yes! Kumpleto na ang draft — laban na! Ingay pa, chat!
+Hello, mga ka-TCC! Kumpleto na ang draft — laban na!
+Hello, mga ka-TCC! Kumpleto na ang draft — laban na! Comment na kayo!
+Hello, mga ka-TCC! Kumpleto na ang draft — laban na! Ang saya nito!
+Hello, mga ka-TCC! Kumpleto na ang draft — laban na! Palakpakan natin!
+Hello, mga ka-TCC! Kumpleto na ang draft — laban na! Ingay pa, chat!
+{blueTeam} sa blue side, {redTeam} sa red side.
+{blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+{blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+{blueTeam} sa blue side, {redTeam} sa red side. Palakpakan natin!
+{blueTeam} sa blue side, {redTeam} sa red side. Ingay pa, chat!
+Ingay naman diyan! {blueTeam} sa blue side, {redTeam} sa red side.
+Ingay naman diyan! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Ingay naman diyan! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Ingay naman diyan! {blueTeam} sa blue side, {redTeam} sa red side. Palakpakan natin!
+Ingay naman diyan! {blueTeam} sa blue side, {redTeam} sa red side. Ingay pa, chat!
+Wooo! {blueTeam} sa blue side, {redTeam} sa red side.
+Wooo! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Wooo! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Wooo! {blueTeam} sa blue side, {redTeam} sa red side. Palakpakan natin!
+Wooo! {blueTeam} sa blue side, {redTeam} sa red side. Ingay pa, chat!
+Let's go! {blueTeam} sa blue side, {redTeam} sa red side.
+Let's go! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Let's go! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Let's go! {blueTeam} sa blue side, {redTeam} sa red side. Palakpakan natin!
+Let's go! {blueTeam} sa blue side, {redTeam} sa red side. Ingay pa, chat!
+Palakpakan natin! {blueTeam} sa blue side, {redTeam} sa red side.
+Palakpakan natin! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Palakpakan natin! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Palakpakan natin! {blueTeam} sa blue side, {redTeam} sa red side. Palakpakan natin!
+Palakpakan natin! {blueTeam} sa blue side, {redTeam} sa red side. Ingay pa, chat!
+Ay, ang saya! {blueTeam} sa blue side, {redTeam} sa red side.
+Ay, ang saya! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Ay, ang saya! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Ay, ang saya! {blueTeam} sa blue side, {redTeam} sa red side. Palakpakan natin!
+Ay, ang saya! {blueTeam} sa blue side, {redTeam} sa red side. Ingay pa, chat!
+Grabe kayo, chat! {blueTeam} sa blue side, {redTeam} sa red side.
+Grabe kayo, chat! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Grabe kayo, chat! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Grabe kayo, chat! {blueTeam} sa blue side, {redTeam} sa red side. Palakpakan natin!
+Grabe kayo, chat! {blueTeam} sa blue side, {redTeam} sa red side. Ingay pa, chat!
+Yes, yes! {blueTeam} sa blue side, {redTeam} sa red side.
+Yes, yes! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Yes, yes! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Yes, yes! {blueTeam} sa blue side, {redTeam} sa red side. Palakpakan natin!
+Yes, yes! {blueTeam} sa blue side, {redTeam} sa red side. Ingay pa, chat!
+Hello, mga ka-TCC! {blueTeam} sa blue side, {redTeam} sa red side.
+Hello, mga ka-TCC! {blueTeam} sa blue side, {redTeam} sa red side. Comment na kayo!
+Hello, mga ka-TCC! {blueTeam} sa blue side, {redTeam} sa red side. Ang saya nito!
+Hello, mga ka-TCC! {blueTeam} sa blue side, {redTeam} sa red side. Palakpakan natin!
+Hello, mga ka-TCC! {blueTeam} sa blue side, {redTeam} sa red side. Ingay pa, chat!
+Abangan natin ang unang engagement.
+Abangan natin ang unang engagement. Comment na kayo!
+Abangan natin ang unang engagement. Ang saya nito!
+Abangan natin ang unang engagement. Palakpakan natin!
+Abangan natin ang unang engagement. Ingay pa, chat!
+Ingay naman diyan! Abangan natin ang unang engagement.
+Ingay naman diyan! Abangan natin ang unang engagement. Comment na kayo!
+Ingay naman diyan! Abangan natin ang unang engagement. Ang saya nito!
+Ingay naman diyan! Abangan natin ang unang engagement. Palakpakan natin!
+Ingay naman diyan! Abangan natin ang unang engagement. Ingay pa, chat!
+Wooo! Abangan natin ang unang engagement.
+Wooo! Abangan natin ang unang engagement. Comment na kayo!
+Wooo! Abangan natin ang unang engagement. Ang saya nito!
+Wooo! Abangan natin ang unang engagement. Palakpakan natin!
+Wooo! Abangan natin ang unang engagement. Ingay pa, chat!
+Let's go! Abangan natin ang unang engagement.
+Let's go! Abangan natin ang unang engagement. Comment na kayo!
+Let's go! Abangan natin ang unang engagement. Ang saya nito!
+Let's go! Abangan natin ang unang engagement. Palakpakan natin!
+Let's go! Abangan natin ang unang engagement. Ingay pa, chat!
+Palakpakan natin! Abangan natin ang unang engagement.
+Palakpakan natin! Abangan natin ang unang engagement. Comment na kayo!
+Palakpakan natin! Abangan natin ang unang engagement. Ang saya nito!
+Palakpakan natin! Abangan natin ang unang engagement. Palakpakan natin!
+Palakpakan natin! Abangan natin ang unang engagement. Ingay pa, chat!
+Ay, ang saya! Abangan natin ang unang engagement.
+Ay, ang saya! Abangan natin ang unang engagement. Comment na kayo!
+Ay, ang saya! Abangan natin ang unang engagement. Ang saya nito!
+Ay, ang saya! Abangan natin ang unang engagement. Palakpakan natin!
+Ay, ang saya! Abangan natin ang unang engagement. Ingay pa, chat!
+Grabe kayo, chat! Abangan natin ang unang engagement.
+Grabe kayo, chat! Abangan natin ang unang engagement. Comment na kayo!
+Grabe kayo, chat! Abangan natin ang unang engagement. Ang saya nito!
+Grabe kayo, chat! Abangan natin ang unang engagement. Palakpakan natin!
+Grabe kayo, chat! Abangan natin ang unang engagement. Ingay pa, chat!
+Yes, yes! Abangan natin ang unang engagement.
+Yes, yes! Abangan natin ang unang engagement. Comment na kayo!
+Yes, yes! Abangan natin ang unang engagement. Ang saya nito!
+Yes, yes! Abangan natin ang unang engagement. Palakpakan natin!
+Yes, yes! Abangan natin ang unang engagement. Ingay pa, chat!
+Hello, mga ka-TCC! Abangan natin ang unang engagement.
+Hello, mga ka-TCC! Abangan natin ang unang engagement. Comment na kayo!
+Hello, mga ka-TCC! Abangan natin ang unang engagement. Ang saya nito!
+Hello, mga ka-TCC! Abangan natin ang unang engagement. Palakpakan natin!
+Hello, mga ka-TCC! Abangan natin ang unang engagement. Ingay pa, chat!
+Bagong laro, bagong pagkakataon.
+Bagong laro, bagong pagkakataon. Comment na kayo!
+Bagong laro, bagong pagkakataon. Ang saya nito!
+Bagong laro, bagong pagkakataon. Palakpakan natin!
+Bagong laro, bagong pagkakataon. Ingay pa, chat!
+Ingay naman diyan! Bagong laro, bagong pagkakataon.
+Ingay naman diyan! Bagong laro, bagong pagkakataon. Comment na kayo!
+Ingay naman diyan! Bagong laro, bagong pagkakataon. Ang saya nito!
+Ingay naman diyan! Bagong laro, bagong pagkakataon. Palakpakan natin!
+Ingay naman diyan! Bagong laro, bagong pagkakataon. Ingay pa, chat!
+Wooo! Bagong laro, bagong pagkakataon.
+Wooo! Bagong laro, bagong pagkakataon. Comment na kayo!
+Wooo! Bagong laro, bagong pagkakataon. Ang saya nito!
+Wooo! Bagong laro, bagong pagkakataon. Palakpakan natin!
+Wooo! Bagong laro, bagong pagkakataon. Ingay pa, chat!
+Let's go! Bagong laro, bagong pagkakataon.
+Let's go! Bagong laro, bagong pagkakataon. Comment na kayo!
+Let's go! Bagong laro, bagong pagkakataon. Ang saya nito!
+Let's go! Bagong laro, bagong pagkakataon. Palakpakan natin!
+Let's go! Bagong laro, bagong pagkakataon. Ingay pa, chat!
+Palakpakan natin! Bagong laro, bagong pagkakataon.
+Palakpakan natin! Bagong laro, bagong pagkakataon. Comment na kayo!
+Palakpakan natin! Bagong laro, bagong pagkakataon. Ang saya nito!
+Palakpakan natin! Bagong laro, bagong pagkakataon. Palakpakan natin!
+Palakpakan natin! Bagong laro, bagong pagkakataon. Ingay pa, chat!
+Ay, ang saya! Bagong laro, bagong pagkakataon.
+Ay, ang saya! Bagong laro, bagong pagkakataon. Comment na kayo!
+Ay, ang saya! Bagong laro, bagong pagkakataon. Ang saya nito!
+Ay, ang saya! Bagong laro, bagong pagkakataon. Palakpakan natin!
+Ay, ang saya! Bagong laro, bagong pagkakataon. Ingay pa, chat!
+Grabe kayo, chat! Bagong laro, bagong pagkakataon.
+Grabe kayo, chat! Bagong laro, bagong pagkakataon. Comment na kayo!
+Grabe kayo, chat! Bagong laro, bagong pagkakataon. Ang saya nito!
+Grabe kayo, chat! Bagong laro, bagong pagkakataon. Palakpakan natin!
+Grabe kayo, chat! Bagong laro, bagong pagkakataon. Ingay pa, chat!
+Yes, yes! Bagong laro, bagong pagkakataon.
+Yes, yes! Bagong laro, bagong pagkakataon. Comment na kayo!
+Yes, yes! Bagong laro, bagong pagkakataon. Ang saya nito!
+Yes, yes! Bagong laro, bagong pagkakataon. Palakpakan natin!
+Yes, yes! Bagong laro, bagong pagkakataon. Ingay pa, chat!
+Hello, mga ka-TCC! Bagong laro, bagong pagkakataon.
+Hello, mga ka-TCC! Bagong laro, bagong pagkakataon. Comment na kayo!
+Hello, mga ka-TCC! Bagong laro, bagong pagkakataon. Ang saya nito!
+Hello, mga ka-TCC! Bagong laro, bagong pagkakataon. Palakpakan natin!
+Hello, mga ka-TCC! Bagong laro, bagong pagkakataon. Ingay pa, chat!
+{seriesScore} ang serye.
+{seriesScore} ang serye. Comment na kayo!
+{seriesScore} ang serye. Ang saya nito!
+{seriesScore} ang serye. Palakpakan natin!
+{seriesScore} ang serye. Ingay pa, chat!
+Ingay naman diyan! {seriesScore} ang serye.
+Ingay naman diyan! {seriesScore} ang serye. Comment na kayo!
+Ingay naman diyan! {seriesScore} ang serye. Ang saya nito!
+Ingay naman diyan! {seriesScore} ang serye. Palakpakan natin!
+Ingay naman diyan! {seriesScore} ang serye. Ingay pa, chat!
+Wooo! {seriesScore} ang serye.
+Wooo! {seriesScore} ang serye. Comment na kayo!
+Wooo! {seriesScore} ang serye. Ang saya nito!
+Wooo! {seriesScore} ang serye. Palakpakan natin!
+Wooo! {seriesScore} ang serye. Ingay pa, chat!
+Let's go! {seriesScore} ang serye.
+Let's go! {seriesScore} ang serye. Comment na kayo!
+Let's go! {seriesScore} ang serye. Ang saya nito!
+Let's go! {seriesScore} ang serye. Palakpakan natin!
+Let's go! {seriesScore} ang serye. Ingay pa, chat!
+Palakpakan natin! {seriesScore} ang serye.
+Palakpakan natin! {seriesScore} ang serye. Comment na kayo!
+Palakpakan natin! {seriesScore} ang serye. Ang saya nito!
+Palakpakan natin! {seriesScore} ang serye. Palakpakan natin!
+Palakpakan natin! {seriesScore} ang serye. Ingay pa, chat!
+Ay, ang saya! {seriesScore} ang serye.
+Ay, ang saya! {seriesScore} ang serye. Comment na kayo!
+Ay, ang saya! {seriesScore} ang serye. Ang saya nito!
+Ay, ang saya! {seriesScore} ang serye. Palakpakan natin!
+Ay, ang saya! {seriesScore} ang serye. Ingay pa, chat!
+Grabe kayo, chat! {seriesScore} ang serye.
+Grabe kayo, chat! {seriesScore} ang serye. Comment na kayo!
+Grabe kayo, chat! {seriesScore} ang serye. Ang saya nito!
+Grabe kayo, chat! {seriesScore} ang serye. Palakpakan natin!
+Grabe kayo, chat! {seriesScore} ang serye. Ingay pa, chat!
+Yes, yes! {seriesScore} ang serye.
+Yes, yes! {seriesScore} ang serye. Comment na kayo!
+Yes, yes! {seriesScore} ang serye. Ang saya nito!
+Yes, yes! {seriesScore} ang serye. Palakpakan natin!
+Yes, yes! {seriesScore} ang serye. Ingay pa, chat!
+Hello, mga ka-TCC! {seriesScore} ang serye.
+Hello, mga ka-TCC! {seriesScore} ang serye. Comment na kayo!
+Hello, mga ka-TCC! {seriesScore} ang serye. Ang saya nito!
+Hello, mga ka-TCC! {seriesScore} ang serye. Palakpakan natin!
+Hello, mga ka-TCC! {seriesScore} ang serye. Ingay pa, chat!
+Good luck sa parehong team.
+Good luck sa parehong team. Comment na kayo!
+Good luck sa parehong team. Ang saya nito!
+Good luck sa parehong team. Palakpakan natin!
+Good luck sa parehong team. Ingay pa, chat!
+Ingay naman diyan! Good luck sa parehong team.
+Ingay naman diyan! Good luck sa parehong team. Comment na kayo!
+Ingay naman diyan! Good luck sa parehong team. Ang saya nito!
+Ingay naman diyan! Good luck sa parehong team. Palakpakan natin!
+Ingay naman diyan! Good luck sa parehong team. Ingay pa, chat!
+Wooo! Good luck sa parehong team.
+Wooo! Good luck sa parehong team. Comment na kayo!
+Wooo! Good luck sa parehong team. Ang saya nito!
+Wooo! Good luck sa parehong team. Palakpakan natin!
+Wooo! Good luck sa parehong team. Ingay pa, chat!
+Let's go! Good luck sa parehong team.
+Let's go! Good luck sa parehong team. Comment na kayo!
+Let's go! Good luck sa parehong team. Ang saya nito!
+Let's go! Good luck sa parehong team. Palakpakan natin!
+Let's go! Good luck sa parehong team. Ingay pa, chat!
+Palakpakan natin! Good luck sa parehong team.
+Palakpakan natin! Good luck sa parehong team. Comment na kayo!
+Palakpakan natin! Good luck sa parehong team. Ang saya nito!
+Palakpakan natin! Good luck sa parehong team. Palakpakan natin!
+Palakpakan natin! Good luck sa parehong team. Ingay pa, chat!
+Ay, ang saya! Good luck sa parehong team.
+Ay, ang saya! Good luck sa parehong team. Comment na kayo!
+Ay, ang saya! Good luck sa parehong team. Ang saya nito!
+Ay, ang saya! Good luck sa parehong team. Palakpakan natin!
+Ay, ang saya! Good luck sa parehong team. Ingay pa, chat!
+Grabe kayo, chat! Good luck sa parehong team.
+Grabe kayo, chat! Good luck sa parehong team. Comment na kayo!
+Grabe kayo, chat! Good luck sa parehong team. Ang saya nito!
+Grabe kayo, chat! Good luck sa parehong team. Palakpakan natin!
+Grabe kayo, chat! Good luck sa parehong team. Ingay pa, chat!
+Yes, yes! Good luck sa parehong team.
+Yes, yes! Good luck sa parehong team. Comment na kayo!
+Yes, yes! Good luck sa parehong team. Ang saya nito!
+Yes, yes! Good luck sa parehong team. Palakpakan natin!
+Yes, yes! Good luck sa parehong team. Ingay pa, chat!
+Hello, mga ka-TCC! Good luck sa parehong team.
+Hello, mga ka-TCC! Good luck sa parehong team. Comment na kayo!
+Hello, mga ka-TCC! Good luck sa parehong team. Ang saya nito!
+Hello, mga ka-TCC! Good luck sa parehong team. Palakpakan natin!
+Hello, mga ka-TCC! Good luck sa parehong team. Ingay pa, chat!
+
+══════ Going to break — 58 lines ══════
+Habang naghihintay, i-follow niyo muna ang TCC Esports, mga ka-TCC!
+Habang naghihintay, i-follow niyo muna ang TCC Esports, mga ka-TCC! Stay tuned!
+Habang naghihintay, i-follow niyo muna ang TCC Esports, mga ka-TCC! Comment na kayo!
+Habang naghihintay, i-follow niyo muna ang TCC Esports, mga ka-TCC! Salamat sa panonood!
+Habang naghihintay, i-follow niyo muna ang TCC Esports, mga ka-TCC! Huwag aalis, ha!
+Habang naghihintay, i-follow niyo muna ang TCC Esports, mga ka-TCC! Ang saya nito!
+Panoorin muna natin ang mga highlight habang naghihintay!
+Panoorin muna natin ang mga highlight habang naghihintay! Stay tuned!
+Panoorin muna natin ang mga highlight habang naghihintay! Comment na kayo!
+Panoorin muna natin ang mga highlight habang naghihintay! Salamat sa panonood!
+Panoorin muna natin ang mga highlight habang naghihintay! Huwag aalis, ha!
+Panoorin muna natin ang mga highlight habang naghihintay! Ang saya nito!
+I-comment niyo kung sino ang MVP niyo so far!
+I-comment niyo kung sino ang MVP niyo so far! Stay tuned!
+I-comment niyo kung sino ang MVP niyo so far! Comment na kayo!
+I-comment niyo kung sino ang MVP niyo so far! Salamat sa panonood!
+I-comment niyo kung sino ang MVP niyo so far! Huwag aalis, ha!
+I-comment niyo kung sino ang MVP niyo so far! Ang saya nito!
+Sulit ang paghihintay, pangako yan.
+Sulit ang paghihintay, pangako yan. Stay tuned!
+Sulit ang paghihintay, pangako yan. Comment na kayo!
+Sulit ang paghihintay, pangako yan. Salamat sa panonood!
+Sulit ang paghihintay, pangako yan. Huwag aalis, ha!
+Sulit ang paghihintay, pangako yan. Ang saya nito!
+Babalik kami agad, mga ka-TCC.
+Babalik kami agad, mga ka-TCC. Stay tuned!
+Babalik kami agad, mga ka-TCC. Comment na kayo!
+Babalik kami agad, mga ka-TCC. Salamat sa panonood!
+Babalik kami agad, mga ka-TCC. Huwag aalis, ha!
+Babalik kami agad, mga ka-TCC. Ang saya nito!
+Panoorin muna natin ang mga highlight habang naghihintay.
+Panoorin muna natin ang mga highlight habang naghihintay. Stay tuned!
+Panoorin muna natin ang mga highlight habang naghihintay. Comment na kayo!
+Panoorin muna natin ang mga highlight habang naghihintay. Salamat sa panonood!
+Panoorin muna natin ang mga highlight habang naghihintay. Huwag aalis, ha!
+Panoorin muna natin ang mga highlight habang naghihintay. Ang saya nito!
+Kuha muna kayo ng tubig at meryenda.
+Kuha muna kayo ng tubig at meryenda. Stay tuned!
+Kuha muna kayo ng tubig at meryenda. Comment na kayo!
+Kuha muna kayo ng tubig at meryenda. Salamat sa panonood!
+Kuha muna kayo ng tubig at meryenda. Huwag aalis, ha!
+Kuha muna kayo ng tubig at meryenda. Ang saya nito!
+Babalik kami pagkalipas ng {breakMins} minuto.
+Babalik kami pagkalipas ng {breakMins} minuto. Stay tuned!
+Babalik kami pagkalipas ng {breakMins} minuto. Comment na kayo!
+Babalik kami pagkalipas ng {breakMins} minuto. Salamat sa panonood!
+Babalik kami pagkalipas ng {breakMins} minuto. Huwag aalis, ha!
+Babalik kami pagkalipas ng {breakMins} minuto. Ang saya nito!
+Huwag kayong aalis — babalik kami agad.
+Huwag kayong aalis — babalik kami agad. Stay tuned!
+Huwag kayong aalis — babalik kami agad. Comment na kayo!
+Huwag kayong aalis — babalik kami agad. Salamat sa panonood!
+Huwag kayong aalis — babalik kami agad. Ang saya nito!
+Salamat sa patuloy na panonood, mga ka-TCC.
+Salamat sa patuloy na panonood, mga ka-TCC. Stay tuned!
+Salamat sa patuloy na panonood, mga ka-TCC. Comment na kayo!
+Salamat sa patuloy na panonood, mga ka-TCC. Huwag aalis, ha!
+Salamat sa patuloy na panonood, mga ka-TCC. Ang saya nito!
 
 ══════ Game intro — 630 lines ══════
 Magandang araw, mga ka-TCC! Salamat sa pagsama sa {tournament}!

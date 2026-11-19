@@ -8,7 +8,9 @@ import { cld } from '@/services/cloudinary';
 import { SpellBadge, SeriesPips } from '@/components/game';
 import { TeamLogo } from '@/components/Brand';
 import { cn, formatGold, initials } from '@/lib/utils';
+import { formatClock, gameElapsedMs } from '@/lib/clock';
 import { CasterStrip, EventBanner, Glass, OverlayStage, SIDE_COLOR, flag, useQuery } from './OverlayKit';
+import { soundOptions, useBannerStinger, useReplayStingers } from './useBroadcastSound';
 
 /**
  * OBS Browser Source: /overlay/hud (1920×1080, transparent).
@@ -17,8 +19,12 @@ import { CasterStrip, EventBanner, Glass, OverlayStage, SIDE_COLOR, flag, useQue
  */
 export default function HudOverlay() {
   const { live, demo } = useOverlayLive();
-  const now = useNow(500);
+  const now = useNow(250);
   const q = useQuery();
+  // Sound: game-start stinger + whoosh into / out of instant replays (?sound=0 mutes, ?vol=0.5).
+  const snd = soundOptions(q, demo);
+  useBannerStinger(live.banner, 'GAME_START', 'game', snd.on, snd.vol);
+  useReplayStingers(live.replay, now, snd.on, snd.vol);
   const visible = demo || (live.matchId && (live.phase === 'ingame' || live.phase === 'postgame' || flag(q, 'always', false)));
 
   return (
@@ -26,7 +32,7 @@ export default function HudOverlay() {
       <AnimatePresence>
         {visible && (
           <motion.div key="hud" className="absolute inset-0" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            {flag(q, 'top') && <ScoreBar live={live} />}
+            {flag(q, 'top') && <ScoreBar live={live} now={now} />}
             {flag(q, 'players') && (
               <>
                 <PlayerColumn live={live} side="blue" now={now} />
@@ -46,7 +52,7 @@ export default function HudOverlay() {
   );
 }
 
-function ScoreBar({ live }: { live: LiveState }) {
+function ScoreBar({ live, now }: { live: LiveState; now: number }) {
   const blue = sideTeam(live, 'blue');
   const red = sideTeam(live, 'red');
   const kills = (s: Side) => live[s].players.reduce((n, p) => n + p.k, 0);
@@ -90,8 +96,11 @@ function ScoreBar({ live }: { live: LiveState }) {
           {team('blue')}
         </div>
         <div className="flex w-[230px] flex-col items-center justify-center border-x border-white/10 px-3">
-          <p className="font-cond text-xs font-semibold uppercase tracking-[0.3em] text-white/50">
+          <p className="flex items-center gap-2 font-cond text-xs font-semibold uppercase tracking-[0.3em] text-white/50">
             Game {live.gameNumber} · {live.format.replace('BO', 'Bo')}
+            {live.gameStartedAt && (
+              <span className={cn('font-display text-lg tracking-normal tabular', live.clockPausedAt ? 'text-amber-300' : 'text-white')}>{formatClock(gameElapsedMs(live, now))}</span>
+            )}
           </p>
           <p className="font-display text-3xl leading-none tabular" style={{ color: gd === 0 ? '#fff' : gd > 0 ? SIDE_COLOR.blue : SIDE_COLOR.red }}>
             {gd === 0 ? 'EVEN' : `${gd > 0 ? '◀' : ''} +${formatGold(gd)} ${gd < 0 ? '▶' : ''}`}

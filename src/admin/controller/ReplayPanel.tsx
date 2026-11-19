@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
-import { Clapperboard, Link2, Link2Off, RefreshCw, Settings2, X } from 'lucide-react';
+import { Clapperboard, Link2, Link2Off, PictureInPicture2, RefreshCw, Settings2, X } from 'lucide-react';
 import type { LiveState, Side } from '@/types';
 import { clearReplay, triggerEvent } from '@/services/live';
-import { loadObsSettings, obsBridge, saveObsSettings, type ObsSettings } from '@/services/obs';
+import { obsBridge, pipSourceOf, saveObsSettings, useObsSettings, type ObsSettings } from '@/services/obs';
+import { REPLAY_PIP } from '@/overlay/layout';
 import { useNow } from '@/hooks/useFirestore';
 import { Badge, Button, Card, Field, Input, Select, Switch } from '@/components/ui';
 import { useToast } from '@/components/Toast';
@@ -13,17 +14,17 @@ export function ReplayPanel({ live }: { live: LiveState }) {
   const [title, setTitle] = useState('');
   const [note, setNote] = useState('');
   const [side, setSide] = useState<Side | ''>('');
-  const [obs, setObs] = useState<ObsSettings>(loadObsSettings);
+  // Shared with the OBS card (one copy of the settings on this computer).
+  const [obs, updateObs] = useObsSettings();
+  const setObs = (next: ObsSettings) => updateObs(next);
   const [connected, setConnected] = useState(obsBridge.connected);
   const [showObs, setShowObs] = useState(false);
   const [scenes, setScenes] = useState<string[]>([]);
   const [inputs, setInputs] = useState<string[]>([]);
   const [busy, setBusy] = useState(false);
+  const [pipBusy, setPipBusy] = useState(false);
 
-  useEffect(() => obsBridge.onChange((c, err) => {
-    setConnected(c);
-    if (err) toast.error(`OBS: ${err}`);
-  }), [toast]);
+  useEffect(() => obsBridge.onChange((c) => setConnected(c)), []);
 
   // Suggest a title from the latest HUD banner (e.g. "SAVAGE — Kairi").
   const recentBanner = live.banner && now - live.banner.at < 60_000 ? live.banner : null;
@@ -67,7 +68,13 @@ export function ReplayPanel({ live }: { live: LiveState }) {
     const results = await Promise.allSettled(tasks);
     results.forEach((r) => r.status === 'rejected' && toast.error((r.reason as Error).message));
     if (results[0].status === 'fulfilled') {
-      toast.success(connected ? 'Replay saved in OBS & rolling' : 'Replay frame on air — press your OBS Replay Buffer hotkey');
+      toast.success(
+        connected
+          ? obs.autoSwitch
+            ? `Replay rolling — back to "${obs.hudScene || 'previous scene'}" when the clip ends`
+            : 'Replay saved in OBS'
+          : 'Replay frame on air — press your OBS Replay Buffer hotkey, then switch back to the In-game HUD after',
+      );
       setTitle('');
       setNote('');
     }
@@ -107,8 +114,13 @@ export function ReplayPanel({ live }: { live: LiveState }) {
           Trigger instant replay ({obs.replaySeconds}s)
         </Button>
         {replayActive && (
-          <Button size="lg" variant="secondary" icon={<X className="h-5 w-5" />} onClick={() => toast.run(clearReplay)}>
-            Hide frame ({Math.ceil((live.replay.endsAt - now) / 1000)}s)
+          <Button
+            size="lg"
+            variant="secondary"
+            icon={<X className="h-5 w-5" />}
+            onClick={() => toast.run(() => Promise.all([clearReplay(), connected ? obsBridge.endReplay() : null]))}
+          >
+            {connected && obs.autoSwitch ? 'End replay → In-game HUD' : 'Hide frame'} ({Math.ceil((live.replay.endsAt - now) / 1000)}s)
           </Button>
         )}
       </div>
@@ -119,8 +131,8 @@ export function ReplayPanel({ live }: { live: LiveState }) {
       {showObs && (
         <div className="mt-4 space-y-3 rounded-xl border border-line bg-surface2 p-4">
           <p className="text-sm text-muted">
-            OBS 28+ → Tools → WebSocket Server Settings → enable. Set Settings → Output → Replay Buffer to <strong>10 s</strong>. Create a scene with a Media Source for replays and put the
-            <code> /overlay/replay</code> browser source above it.
+            OBS 28+ → Tools → WebSocket Server Settings → enable. Set Settings → Output → Replay Buffer to <strong>10 s</strong>. You need two scenes: your <strong>In-game HUD</strong> scene (game
+            capture + <code>/overlay/hud</code>) and an <strong>Instant Replay</strong> scene with a Media Source and the <code>/overlay/replay</code> browser source on top.
           </p>
           <div className="grid gap-3 md:grid-cols-2">
             <Field label="WebSocket URL">
@@ -151,15 +163,82 @@ export function ReplayPanel({ live }: { live: LiveState }) {
                 <Input value={obs.replaySource} onChange={(e) => setObs({ ...obs, replaySource: e.target.value })} />
               )}
             </Field>
-            <Field label="Return to scene (blank = previous)">
-              <Input value={obs.returnScene} onChange={(e) => setObs({ ...obs, returnScene: e.target.value })} />
+            <Field label="In-game HUD scene (live game + HUD)">
+              {scenes.length ? (
+                <Select value={obs.hudScene} onChange={(e) => setObs({ ...obs, hudScene: e.target.value })}>
+                  {!scenes.includes(obs.hudScene) && <option value={obs.hudScene}>{obs.hudScene || '— choose —'}</option>}
+                  {scenes
+                    .filter((sc) => sc !== obs.replayScene)
+                    .map((sc) => (
+                      <option key={sc}>{sc}</option>
+                    ))}
+                </Select>
+              ) : (
+                <Input value={obs.hudScene} onChange={(e) => setObs({ ...obs, hudScene: e.target.value })} placeholder="In-game HUD" />
+              )}
+            </Field>
+            <Field label="Small live window during replays">
+              <Select value={obs.pipSource} onChange={(e) => setObs({ ...obs, pipSource: e.target.value })}>
+                <option value="">In-game HUD scene (recommended)</option>
+                {inputs.length > 0 && (
+                  <optgroup label="Sources">
+                    {inputs.map((s) => (
+                      <option key={`i-${s}`} value={s}>
+                        {s}
+                      </option>
+                    ))}
+                  </optgroup>
+                )}
+                {scenes.filter((sc) => sc !== obs.replayScene && sc !== obs.hudScene).length > 0 && (
+                  <optgroup label="Other scenes">
+                    {scenes
+                      .filter((sc) => sc !== obs.replayScene && sc !== obs.hudScene)
+                      .map((sc) => (
+                        <option key={`s-${sc}`} value={sc}>
+                          {sc}
+                        </option>
+                      ))}
+                  </optgroup>
+                )}
+                {obs.pipSource && !inputs.includes(obs.pipSource) && !scenes.includes(obs.pipSource) && <option value={obs.pipSource}>{obs.pipSource}</option>}
+              </Select>
             </Field>
             <Field label="Replay length (s)">
               <Input type="number" min={5} max={30} value={obs.replaySeconds} onChange={(e) => setObs({ ...obs, replaySeconds: Math.max(5, Number(e.target.value) || 10) })} />
             </Field>
           </div>
+          <div className="rounded-lg border border-line bg-surface p-3">
+            <p className="flex items-center gap-1.5 text-sm font-semibold">
+              <PictureInPicture2 className="h-4 w-4 text-brand" /> Live game picture-in-picture
+            </p>
+            <p className="mt-1 text-xs text-muted">
+              During a replay the <strong>In-game HUD</strong> (live game with the scoreboard) stays visible in a small window on the right, and when the clip ends OBS cuts back to the In-game
+              HUD automatically. Pick your In-game HUD scene above (Refresh lists if empty), then click the button — it nests that scene in the replay scene, fits it into the overlay&apos;s LIVE
+              frame and layers it under the overlay.
+            </p>
+            <Button
+              size="sm"
+              className="mt-2"
+              loading={pipBusy}
+              disabled={!connected || !pipSourceOf(obs)}
+              icon={<PictureInPicture2 className="h-4 w-4" />}
+              onClick={async () => {
+                saveObsSettings(obs);
+                setPipBusy(true);
+                const msg = await toast.run(() => obsBridge.setupReplayPip(obs));
+                setPipBusy(false);
+                if (msg) toast.success(msg);
+              }}
+            >
+              Set up live PiP in OBS
+            </Button>
+            <p className="mt-2 text-xs text-muted">
+              Manual setup (1920×1080 canvas): in the replay scene click <strong>+ → Scene</strong> → pick &ldquo;{obs.hudScene || 'In-game HUD'}&rdquo; → Edit Transform → Position {REPLAY_PIP.x},{' '}
+              {REPLAY_PIP.y} · Bounding box &ldquo;Scale to inner bounds&rdquo; {REPLAY_PIP.w}×{REPLAY_PIP.h}. Order (top → bottom): /overlay/replay, In-game HUD, replay media.
+            </p>
+          </div>
           <div className="flex flex-wrap items-center gap-2">
-            <Switch checked={obs.autoSwitch} onChange={(autoSwitch) => setObs({ ...obs, autoSwitch })} label="Auto-switch scenes" />
+            <Switch checked={obs.autoSwitch} onChange={(autoSwitch) => setObs({ ...obs, autoSwitch })} label="Auto-switch (replay → back to In-game HUD)" />
             <div className="ml-auto flex gap-2">
               {connected ? (
                 <>

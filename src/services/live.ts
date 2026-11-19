@@ -13,7 +13,14 @@ import {
 } from 'firebase/firestore';
 import type {
   Banner,
+  GameRecord,
+  BuffColor,
+  Coach,
   DraftState,
+  HeroPoolEntry,
+  MetaHero,
+  Role,
+  SeriesGameSummary,
   EventType,
   GameEvent,
   GamePlayerStat,
@@ -34,13 +41,39 @@ import { sideTeam } from './facts';
 import {
   BANS_PER_SIDE,
   DRAFT_SEQUENCE,
+  NO_BAN,
+  isNoBan,
+  isPairStart,
+  picksComplete,
   EVENT_DEFS,
+  LINEUP_SIZE,
   PICKS_PER_SIDE,
   ROLES,
   SPELL_COOLDOWN,
   winsNeeded,
 } from '@/lib/constants';
 import { formatGold, uid } from '@/lib/utils';
+import { canonicalHero, heroInfo } from '@/lib/heroData';
+import { gameElapsedMs } from '@/lib/clock';
+import { computeFinalsMvp, gameMvp, playerRating } from './stats';
+
+/** Who plays this game for one team, in which position, and the coach (null = "No coach"). */
+export interface TeamLineup {
+  players: { playerId: string; role: Role }[];
+  coach: Coach | null;
+}
+
+/** Everything chosen in the lineup dialog before a game's draft. */
+export interface GameSetup {
+  /** By team id. */
+  lineups: Record<string, TeamLineup>;
+  /** Player id → signature heroes (from recorded games + Teams & Rosters). */
+  pools?: Record<string, HeroPoolEntry[]>;
+  meta?: MetaHero[];
+  history?: SeriesGameSummary[];
+  /** The system-picked caster pair shown in the dialog (locked for the game). */
+  casters?: string[];
+}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Live broadcast state machine. The admin controller calls these functions;
@@ -86,6 +119,8 @@ export const defaultLive = (): LiveState => ({
   banner: null,
   breakEndsAt: null,
   breakMessage: '',
+  history: [],
+  meta: [],
   updatedAt: Date.now(),
 });
 
@@ -96,7 +131,7 @@ export const normalizeLive = (raw: Partial<LiveState> | null): LiveState => {
   return {
     ...base,
     ...raw,
-    draft: { ...base.draft, ...(raw.draft ?? {}) },
+    draft: { ...base.draft, ...(raw.draft ?? {}), slots: raw.draft?.slots ?? [] },
     blue: { ...base.blue, ...(raw.blue ?? {}) },
     red: { ...base.red, ...(raw.red ?? {}) },
     replay: { ...base.replay, ...(raw.replay ?? {}) },
@@ -111,18 +146,33 @@ const ROLE_ORDER = (r: string) => {
   return i === -1 ? 99 : i;
 };
 
-export function lineupFor(teamId: string | null | undefined, players: Player[]): LivePlayer[] {
-  if (!teamId) return [];
-  return players
+/** Default five: starters first, by position. */
+export function defaultLineup(teamId: string, players: Player[], coach: Coach | null = null): TeamLineup {
+  const chosen = players
     .filter((p) => p.teamId === teamId)
     .sort((a, b) => Number(b.isStarter) - Number(a.isStarter) || ROLE_ORDER(a.role) - ROLE_ORDER(b.role) || a.order - b.order)
-    .slice(0, 5)
-    .map((p) => ({
+    .slice(0, LINEUP_SIZE);
+  const free = ROLES.filter((r) => r !== 'Sub' && !chosen.some((p) => p.role === r));
+  return { players: chosen.map((p) => ({ playerId: p.id, role: p.role === 'Sub' ? (free.shift() ?? 'EXP') : p.role })), coach };
+}
+
+/** The lineup currently on air for a side (to carry it into the next game). */
+const currentLineup = (side: LiveSide): TeamLineup => ({ players: side.players.map((p) => ({ playerId: p.playerId, role: p.role })), coach: side.coach ?? null });
+
+export function lineupFor(teamId: string | null | undefined, players: Player[], lineup?: TeamLineup, pools: Record<string, HeroPoolEntry[]> = {}): LivePlayer[] {
+  if (!teamId) return [];
+  const chosen = (lineup?.players.length ? lineup : defaultLineup(teamId, players)).players
+    .map((s) => ({ p: players.find((x) => x.id === s.playerId && x.teamId === teamId), role: s.role }))
+    .filter((c): c is { p: Player; role: Role } => Boolean(c.p))
+    .sort((a, b) => ROLE_ORDER(a.role) - ROLE_ORDER(b.role))
+    .slice(0, LINEUP_SIZE);
+  return chosen.map(({ p, role }) => ({
       playerId: p.id,
       teamId: p.teamId,
       ign: p.ign,
       photoUrl: p.photoUrl,
-      role: p.role,
+      role,
+      pool: pools[p.id] ?? [],
       hero: '',
       spell: p.spell,
       spellReadyAt: null,
@@ -143,6 +193,37 @@ const write = (patch: Record<string, unknown>) => updateDoc(liveRef(), { ...patc
 
 export const patchLive = (patch: Partial<LiveState>) => write(patch as Record<string, unknown>);
 
+/** A pending caster event (no player attached). */
+function eventDoc(live: Pick<LiveState, 'matchId' | 'gameNumber'>, type: EventType, data: GameEvent['data'], gameNumber = live.gameNumber): Omit<GameEvent, 'id'> {
+  return {
+    matchId: live.matchId ?? '',
+    gameNumber,
+    type,
+    side: null,
+    playerId: null,
+    playerIgn: null,
+    hero: null,
+    spell: null,
+    note: '',
+    data,
+    status: 'pending',
+    claimedBy: null,
+    createdAt: Date.now(),
+  };
+}
+
+const versus = (live: Pick<LiveState, 'teamA' | 'teamB'>) => `${live.teamA?.name ?? 'TBD'} vs ${live.teamB?.name ?? 'TBD'}`;
+
+/** On-screen graphic for the automatic phase announcements. */
+function phaseBanner(live: Pick<LiveState, 'teamA' | 'teamB'>, type: 'DRAFT_START' | 'GAME_START', id: string, gameNumber: number): Banner {
+  return type === 'DRAFT_START'
+    ? { id, type, at: Date.now(), side: null, title: 'DRAFT PHASE', subtitle: `Game ${gameNumber} · ${versus(live)}` }
+    : { id, type, at: Date.now(), side: null, title: `GAME ${gameNumber}`, subtitle: `Let the battle begin! · ${versus(live)}` };
+}
+
+/** True once the current game has a recorded result (scores already include it). */
+const currentGameDone = (live: LiveState) => live.scoreA + live.scoreB >= live.gameNumber;
+
 // ── Series lifecycle ────────────────────────────────────────────────────────
 
 export async function goLive(opts: {
@@ -151,10 +232,16 @@ export async function goLive(opts: {
   teams: Team[];
   players: Player[];
   previousCasters?: string[];
+  setup?: GameSetup;
 }) {
-  const { match, tournament, teams, players } = opts;
+  const { match, tournament, teams, players, setup } = opts;
   const teamA = teams.find((t) => t.id === match.teamAId);
   const teamB = teams.find((t) => t.id === match.teamBId);
+  const sideFor = (team: Team | undefined): LiveSide => ({
+    ...emptySide(),
+    players: lineupFor(team?.id, players, team ? setup?.lineups[team.id] : undefined, setup?.pools),
+    coach: team ? (setup?.lineups[team.id] ? setup.lineups[team.id].coach : (team.coach ?? null)) : null,
+  });
   const state: LiveState = {
     ...defaultLive(),
     matchId: match.id,
@@ -170,32 +257,85 @@ export async function goLive(opts: {
     teamB: toLiveTeam(teamB),
     blueIsA: true,
     phase: 'draft',
-    blue: { ...emptySide(), players: lineupFor(teamA?.id, players) },
-    red: { ...emptySide(), players: lineupFor(teamB?.id, players) },
-    casters: pickCasterPair(opts.previousCasters),
+    blue: sideFor(teamA),
+    red: sideFor(teamB),
+    // The system picks the pair once; it can't be changed during the game.
+    casters: setup?.casters?.length === 2 ? setup.casters : pickCasterPair(opts.previousCasters),
+    history: setup?.history ?? [],
+    meta: setup?.meta ?? [],
   };
+  // The casters open the show: "Welcome sa drafting phase natin, partner …!"
+  const eventId = uid('ev_');
+  state.banner = phaseBanner(state, 'DRAFT_START', eventId, state.gameNumber);
   const batch = writeBatch(db);
   batch.set(liveRef(), state);
+  batch.set(doc(db, COL.events, eventId), eventDoc(state, 'DRAFT_START', {}));
   batch.update(doc(db, COL.matches, match.id), { status: 'live', updatedAt: Date.now() });
   await batch.commit();
 }
 
-/** Prepare the next game in the same series: fresh draft & stats, new random caster pair. */
-export async function nextGame(live: LiveState, players: Player[]) {
+/**
+ * Prepare the next game in the same series: fresh draft & stats, the lineups
+ * chosen for this game (default: same five and coach as last game) and a new
+ * system-picked caster pair.
+ */
+export async function nextGame(live: LiveState, players: Player[], setup?: GameSetup) {
   const blueTeam = sideTeam(live, 'blue');
   const redTeam = sideTeam(live, 'red');
-  await write({
-    gameNumber: live.scoreA + live.scoreB + 1,
+  const gameNumber = live.scoreA + live.scoreB + 1;
+  const previousPools = Object.fromEntries([...live.blue.players, ...live.red.players].map((p) => [p.playerId, p.pool ?? []]));
+  const pools = { ...previousPools, ...(setup?.pools ?? {}) };
+  const sideFor = (side: Side, team: LiveTeam | null): LiveSide => {
+    const lineup = (team && setup?.lineups[team.id]) || currentLineup(live[side]);
+    return { ...emptySide(), players: lineupFor(team?.id, players, lineup, pools), coach: lineup.coach };
+  };
+  const eventId = uid('ev_');
+  const batch = writeBatch(db);
+  batch.update(liveRef(), {
+    gameNumber,
     phase: 'draft',
     draft: emptyDraft(live.draft.timerDuration),
-    blue: { ...emptySide(), players: lineupFor(blueTeam?.id, players) },
-    red: { ...emptySide(), players: lineupFor(redTeam?.id, players) },
+    blue: sideFor('blue', blueTeam),
+    red: sideFor('red', redTeam),
     goldDiff: 0,
     gameStartedAt: null,
-    casters: pickCasterPair(live.casters),
-    banner: null,
+    clockPausedAt: null,
+    casters: setup?.casters?.length === 2 ? setup.casters : pickCasterPair(live.casters),
+    ...(setup?.meta ? { meta: setup.meta } : {}),
+    banner: phaseBanner(live, 'DRAFT_START', eventId, gameNumber),
     replay: defaultLive().replay,
+    breakEndsAt: null,
+    updatedAt: Date.now(),
   });
+  // The new caster pair welcomes each other to the draft of this game.
+  batch.set(doc(db, COL.events, eventId), eventDoc(live, 'DRAFT_START', {}, gameNumber));
+  await batch.commit();
+}
+
+/** The lineups on air now, by team id (to pre-fill the lineup dialog). */
+export function lineupsOf(live: LiveState): Record<string, TeamLineup> {
+  const out: Record<string, TeamLineup> = {};
+  for (const side of ['blue', 'red'] as const) {
+    const team = sideTeam(live, side);
+    if (team && live[side].players.length) out[team.id] = currentLineup(live[side]);
+  }
+  return out;
+}
+
+/** Change who plays the current game (before it starts) — players, positions, coach. */
+export function applyLineups(live: LiveState, players: Player[], setup: GameSetup) {
+  const previousPools = Object.fromEntries([...live.blue.players, ...live.red.players].map((p) => [p.playerId, p.pool ?? []]));
+  const pools = { ...previousPools, ...(setup.pools ?? {}) };
+  const patch: Record<string, unknown> = {};
+  for (const side of ['blue', 'red'] as const) {
+    const team = sideTeam(live, side);
+    const lineup = team ? setup.lineups[team.id] : undefined;
+    if (!team || !lineup) continue;
+    patch[`${side}.players`] = lineupFor(team.id, players, lineup, pools);
+    patch[`${side}.coach`] = lineup.coach;
+  }
+  if (setup.meta) patch.meta = setup.meta;
+  return write(patch);
 }
 
 export async function endBroadcast(live: LiveState) {
@@ -227,45 +367,113 @@ export const swapSides = (live: LiveState) =>
     },
   });
 
-export const rerollCasters = (live: LiveState) => write({ casters: pickCasterPair(live.casters) });
-
-export const setCasters = (ids: string[]) => write({ casters: ids.slice(0, 2) });
-
 export const setPhase = (phase: LiveState['phase']) => write({ phase });
 
 // ── Draft ───────────────────────────────────────────────────────────────────
 
 const timerFresh = (d: DraftState) => ({ timerEndsAt: Date.now() + d.timerDuration * 1000, timerPausedLeft: null });
 
-export async function draftLock(live: LiveState, hero: string) {
+/**
+ * Which player gets a picked hero: the one whose signature heroes include it,
+ * else the one playing the hero's lane, else the first player without a hero.
+ * (Fix any slot with the swap buttons — heroes are exchanged between players.)
+ */
+export function pickSlotFor(picks: string[], players: LivePlayer[], hero: string, fallback: number): number {
+  const empty = picks.map((h, i) => (h ? -1 : i)).filter((i) => i >= 0);
+  if (!empty.length) return fallback;
+  const key = hero.toLowerCase();
+  const bySignature = empty.find((i) => players[i]?.pool?.some((e) => e.hero.toLowerCase() === key));
+  if (bySignature !== undefined) return bySignature;
+  for (const lane of heroInfo(hero)?.lanes ?? []) {
+    const byLane = empty.find((i) => players[i]?.role === lane);
+    if (byLane !== undefined) return byLane;
+  }
+  return empty[0];
+}
+
+type DraftKey = 'blueBans' | 'redBans' | 'bluePicks' | 'redPicks';
+
+export async function draftLock(live: LiveState, heroInput: string) {
   const d = live.draft;
   const step = DRAFT_SEQUENCE[d.step];
-  if (!step || !hero.trim()) return;
-  const key = `${step.side}${step.kind === 'ban' ? 'Bans' : 'Picks'}` as 'blueBans' | 'redBans' | 'bluePicks' | 'redPicks';
+  // A team may skip a ban: the operator types "none".
+  const none = isNoBan(heroInput);
+  if (none && step?.kind === 'pick') throw new Error('Every pick needs a hero — "none" is only for bans.');
+  const hero = none ? NO_BAN : canonicalHero(heroInput);
+  if (!step || !hero) return;
+  const key = `${step.side}${step.kind === 'ban' ? 'Bans' : 'Picks'}` as DraftKey;
   const arr = [...d[key]];
-  arr[step.index] = hero.trim();
+  const slot =
+    step.kind === 'pick'
+      ? pickSlotFor(arr, live[step.side].players, hero, step.index)
+      : !arr[step.index]
+        ? step.index
+        : Math.max(0, arr.findIndex((h) => !h));
+  arr[slot] = hero;
   const nextStep = d.step + 1;
   const done = nextStep >= DRAFT_SEQUENCE.length;
-  await write({
-    draft: { ...d, [key]: arr, step: nextStep, ...(done ? { timerEndsAt: null, timerPausedLeft: null } : timerFresh(d)) },
+  const now = Date.now();
+  const slots = [...(d.slots ?? []).slice(0, d.step), slot];
+  const player = step.kind === 'pick' ? (live[step.side].players[slot] ?? null) : null;
+  // Two picks by the same side happen together: the timer keeps running for the second hero.
+  const timer = done ? { timerEndsAt: null, timerPausedLeft: null } : isPairStart(d.step) ? {} : timerFresh(d);
+  const batch = writeBatch(db);
+  batch.update(liveRef(), {
+    draft: { ...d, [key]: arr, step: nextStep, slots, ...timer },
+    updatedAt: now,
   });
-  if (done) await pushEvent(live, 'DRAFT_COMPLETE', {});
+  // The casters call every ban and pick ("Binan ng … ang Freya — para hindi mahirapan ang backline").
+  batch.set(doc(db, COL.events, uid('ev_')), {
+    ...eventDoc(live, step.kind === 'ban' ? 'DRAFT_BAN' : 'DRAFT_PICK', { hero, slot, step: d.step, order: step.index + 1, phase: step.phase, none }),
+    side: step.side,
+    playerId: player?.playerId ?? null,
+    playerIgn: player?.ign ?? null,
+    hero,
+  });
+  if (done) batch.set(doc(db, COL.events, uid('ev_')), { ...eventDoc(live, 'DRAFT_COMPLETE', {}), createdAt: now + 1 });
+  await batch.commit();
 }
 
 export async function draftUndo(live: LiveState) {
   const d = live.draft;
   if (d.step === 0) return;
   const step = DRAFT_SEQUENCE[d.step - 1];
-  const key = `${step.side}${step.kind === 'ban' ? 'Bans' : 'Picks'}` as 'blueBans' | 'redBans' | 'bluePicks' | 'redPicks';
+  const key = `${step.side}${step.kind === 'ban' ? 'Bans' : 'Picks'}` as DraftKey;
   const arr = [...d[key]];
-  arr[step.index] = '';
-  await write({ draft: { ...d, [key]: arr, step: d.step - 1, ...timerFresh(d) } });
+  arr[d.slots?.[d.step - 1] ?? step.index] = '';
+  await write({ draft: { ...d, [key]: arr, step: d.step - 1, slots: (d.slots ?? []).slice(0, d.step - 1), ...timerFresh(d) } });
 }
 
-export const draftSetSlot = (live: LiveState, key: 'blueBans' | 'redBans' | 'bluePicks' | 'redPicks', index: number, hero: string) => {
+export const draftSetSlot = (live: LiveState, key: DraftKey, index: number, hero: string) => {
   const arr = [...live.draft[key]];
-  arr[index] = hero;
+  arr[index] = hero ? canonicalHero(hero) : '';
   return write({ draft: { ...live.draft, [key]: arr } });
+};
+
+/**
+ * Hero trade between two players of the same team: player i gets player j's
+ * hero and vice versa (also after the game has started).
+ */
+export const draftSwapPicks = (live: LiveState, side: Side, i: number, j: number) => {
+  if (i === j) return Promise.resolve();
+  const key = `${side}Picks` as DraftKey;
+  const picks = [...live.draft[key]];
+  [picks[i], picks[j]] = [picks[j] ?? '', picks[i] ?? ''];
+  // Keep Undo pointing at the slot where each hero now sits.
+  const slots = (live.draft.slots ?? []).map((s, n) => {
+    const st = DRAFT_SEQUENCE[n];
+    if (!st || st.side !== side || st.kind !== 'pick') return s;
+    return s === i ? j : s === j ? i : s;
+  });
+  const patch: Record<string, unknown> = { draft: { ...live.draft, [key]: picks, slots } };
+  const players = [...live[side].players];
+  if (players[i] && players[j] && (players[i].hero || players[j].hero)) {
+    const hi = players[i].hero;
+    players[i] = { ...players[i], hero: players[j].hero };
+    players[j] = { ...players[j], hero: hi };
+    patch[`${side}.players`] = players;
+  }
+  return write(patch);
 };
 
 export const draftReset = (live: LiveState) => write({ draft: emptyDraft(live.draft.timerDuration) });
@@ -289,15 +497,25 @@ export const timerSetDuration = (live: LiveState, seconds: number) =>
 
 /** Start the game: copy draft picks onto players (pick order → lineup order) if not set. */
 export async function startGame(live: LiveState) {
+  if (live.phase !== 'ingame' && !picksComplete(live.draft)) throw new Error('Pick all 10 heroes first (bans can be "none").');
   const assign = (players: LivePlayer[], picks: string[]) =>
     players.map((p, i) => ({ ...p, hero: p.hero || picks[i] || '' }));
-  await write({
+  const announce = live.phase !== 'ingame'; // pressing Start twice doesn't re-announce
+  const eventId = uid('ev_');
+  const batch = writeBatch(db);
+  batch.update(liveRef(), {
     phase: 'ingame',
-    gameStartedAt: Date.now(),
+    // The game clock starts now (pressing Start again on a running game keeps the time).
+    ...(announce ? { gameStartedAt: Date.now(), clockPausedAt: null } : {}),
     blue: { ...live.blue, players: assign(live.blue.players, live.draft.bluePicks) },
     red: { ...live.red, players: assign(live.red.players, live.draft.redPicks) },
     draft: { ...live.draft, timerEndsAt: null, timerPausedLeft: null },
+    ...(announce ? { banner: phaseBanner(live, 'GAME_START', eventId, live.gameNumber) } : {}),
+    updatedAt: Date.now(),
   });
+  // "At magsisimula na ang laro! Welcome sa Game N…"
+  if (announce) batch.set(doc(db, COL.events, eventId), eventDoc(live, 'GAME_START', {}));
+  await batch.commit();
 }
 
 type StatKey = 'k' | 'd' | 'a';
@@ -330,8 +548,49 @@ export const setGoldDiff = (goldDiff: number) => write({ goldDiff: Math.round(go
 
 export const clearReplay = () => write({ replay: defaultLive().replay });
 
-export const setBreak = (minutes: number | null, message: string) =>
-  write({ phase: 'break', breakEndsAt: minutes ? Date.now() + minutes * 60_000 : null, breakMessage: message });
+/** Break loop on air + the casters send the show to break. */
+export async function setBreak(live: LiveState, minutes: number | null, message: string) {
+  const seriesOver = Math.max(live.scoreA, live.scoreB) >= winsNeeded(live.format);
+  const done = currentGameDone(live);
+  const midGame = live.phase === 'ingame' && !done;
+  // Which game comes after the break (null when the series is over or a game is paused mid-way).
+  const upcoming = seriesOver || midGame ? null : done ? live.scoreA + live.scoreB + 1 : live.gameNumber;
+  const batch = writeBatch(db);
+  batch.update(liveRef(), {
+    phase: 'break',
+    breakEndsAt: minutes ? Date.now() + minutes * 60_000 : null,
+    breakMessage: message,
+    // A pause in the middle of a game stops the game clock.
+    ...(midGame && live.gameStartedAt && !live.clockPausedAt ? { clockPausedAt: Date.now() } : {}),
+    updatedAt: Date.now(),
+  });
+  batch.set(doc(db, COL.events, uid('ev_')), eventDoc(live, 'BREAK_START', { minutes: minutes ?? 0, message: message.trim(), nextGame: upcoming ?? 0, midGame, seriesOver }));
+  await batch.commit();
+}
+
+/** Leave the break: next game's draft (if the last game finished), back to the paused game, or post-game. */
+export async function endBreak(live: LiveState, players: Player[], setup?: GameSetup) {
+  if (Math.max(live.scoreA, live.scoreB) >= winsNeeded(live.format)) return write({ phase: 'postgame', breakEndsAt: null });
+  if (currentGameDone(live)) return nextGame(live, players, setup);
+  if (live.gameStartedAt) return write({ phase: 'ingame', breakEndsAt: null, ...resumePatch(live) });
+  return write({ phase: 'draft', breakEndsAt: null });
+}
+
+// ── Game clock ──────────────────────────────────────────────────────────────
+
+const resumePatch = (live: LiveState) =>
+  live.gameStartedAt && live.clockPausedAt ? { gameStartedAt: live.gameStartedAt + (Date.now() - live.clockPausedAt), clockPausedAt: null } : {};
+
+export const clockPause = (live: LiveState) => (live.gameStartedAt && !live.clockPausedAt ? write({ clockPausedAt: Date.now() }) : Promise.resolve());
+export const clockResume = (live: LiveState) => write(resumePatch(live));
+/** Add (or remove, with a negative number) seconds to match the in-game timer. */
+export const clockAdjust = (live: LiveState, seconds: number) =>
+  live.gameStartedAt ? write({ gameStartedAt: Math.min(live.clockPausedAt ?? Date.now(), live.gameStartedAt - seconds * 1000) }) : Promise.resolve();
+/** Set the clock to exactly mm:ss. */
+export const clockSet = (live: LiveState, seconds: number) => {
+  const base = live.clockPausedAt ?? Date.now();
+  return write({ gameStartedAt: base - Math.max(0, seconds) * 1000, ...(live.gameStartedAt ? {} : { clockPausedAt: null }) });
+};
 
 // ── Events (+ their side effects on the live state) ─────────────────────────
 
@@ -362,12 +621,18 @@ export async function triggerEvent(live: LiveState, type: EventType, opts: Trigg
     const p = players[opts.playerIndex];
     if (p) {
       const next = { ...p };
-      // Each MLBB kill-streak announcement corresponds to one kill.
-      if (type === 'FIRST_BLOOD') Object.assign(next, { k: p.k + 1, fb: 1 });
-      if (type === 'DOUBLE_KILL') Object.assign(next, { k: p.k + 1, dk: p.dk + 1 });
-      if (type === 'TRIPLE_KILL') Object.assign(next, { k: p.k + 1, tk: p.tk + 1 });
-      if (type === 'MANIAC') Object.assign(next, { k: p.k + 1, maniac: p.maniac + 1 });
-      if (type === 'SAVAGE') Object.assign(next, { k: p.k + 1, savage: p.savage + 1 });
+      // One kill per player killed (the victims picked in the controller); without
+      // victims: Double +2, Triple +3, Maniac +4, Savage +5. A Savage continuation
+      // (more kills within 10 s) adds only its victims and no second Savage.
+      const victimCount = parseVictims(opts.data?.victims).length;
+      const add = (fallback: number) => (victimCount || fallback);
+      const cont = Boolean(opts.data?.continuation);
+      if (type === 'KILL') next.k = p.k + 1;
+      if (type === 'FIRST_BLOOD') Object.assign(next, { k: p.k + add(1), fb: 1 });
+      if (type === 'DOUBLE_KILL') Object.assign(next, { k: p.k + add(2), dk: p.dk + 1 });
+      if (type === 'TRIPLE_KILL') Object.assign(next, { k: p.k + add(3), tk: p.tk + 1 });
+      if (type === 'MANIAC') Object.assign(next, { k: p.k + add(4), maniac: p.maniac + 1 });
+      if (type === 'SAVAGE') Object.assign(next, { k: p.k + add(5), savage: p.savage + (cont ? 0 : 1) });
       if (type === 'TURTLE') next.turtles = p.turtles + 1;
       if (type === 'LORD') next.lords = p.lords + 1;
       if (type === 'SPELL_USED') next.spellReadyAt = now + (SPELL_COOLDOWN[p.spell] ?? 90) * 1000;
@@ -376,6 +641,22 @@ export async function triggerEvent(live: LiveState, type: EventType, opts: Trigg
       player = next;
     }
   }
+  // Players who died (+1 death each): the single victim of +1 Kill, or the victims of a kill streak.
+  const victimRefs: { side: Side; index: number }[] = parseVictims(opts.data?.victims).length
+    ? parseVictims(opts.data?.victims)
+    : opts.data?.victimSide
+      ? [{ side: opts.data.victimSide as Side, index: Number(opts.data.victimIndex ?? -1) }]
+      : [];
+  const victims: LivePlayer[] = [];
+  for (const ref of victimRefs) {
+    const current = (patch[`${ref.side}.players`] as LivePlayer[] | undefined) ?? live[ref.side].players;
+    if (!current[ref.index]) continue;
+    const list = [...current];
+    list[ref.index] = { ...list[ref.index], d: list[ref.index].d + 1 };
+    victims.push(list[ref.index]);
+    patch[`${ref.side}.players`] = list;
+  }
+  const victim = victims[0] ?? null;
   if (side && type === 'TURTLE') patch[`${side}.turtles`] = live[side].turtles + 1;
   if (side && type === 'LORD') patch[`${side}.lords`] = live[side].lords + 1;
 
@@ -413,6 +694,7 @@ export async function triggerEvent(live: LiveState, type: EventType, opts: Trigg
       goldDiff: live.goldDiff,
       title: opts.replayTitle ?? def.label,
       ...(opts.data ?? {}),
+      ...(victim ? { victimIgn: victim.ign, victimHero: victim.hero || '', victimIgns: victims.map((v) => v.ign).join('|') } : {}),
     },
     status: 'pending',
     claimedBy: null,
@@ -426,24 +708,21 @@ export async function triggerEvent(live: LiveState, type: EventType, opts: Trigg
   return eventId;
 }
 
+/** Victims picked in the controller, stored compactly in event data: "red:2,red:3". */
+export const encodeVictims = (list: { side: Side; index: number }[]) => list.map((v) => `${v.side}:${v.index}`).join(',');
+export function parseVictims(raw: unknown): { side: Side; index: number }[] {
+  if (typeof raw !== 'string' || !raw) return [];
+  return raw
+    .split(',')
+    .map((x) => x.split(':'))
+    .filter(([s, i]) => (s === 'blue' || s === 'red') && /^\d+$/.test(i ?? ''))
+    .map(([s, i]) => ({ side: s as Side, index: Number(i) }));
+}
+
 /** Queue an event for the casters without touching stats (e.g. draft complete). */
 export async function pushEvent(live: LiveState, type: EventType, data: GameEvent['data'], side: Side | null = null) {
   const id = uid('ev_');
-  await setDoc(doc(db, COL.events, id), {
-    matchId: live.matchId ?? '',
-    gameNumber: live.gameNumber,
-    type,
-    side,
-    playerId: null,
-    playerIgn: null,
-    hero: null,
-    spell: null,
-    note: '',
-    data,
-    status: 'pending',
-    claimedBy: null,
-    createdAt: Date.now(),
-  } satisfies Omit<GameEvent, 'id'>);
+  await setDoc(doc(db, COL.events, id), { ...eventDoc(live, type, data), side });
   return id;
 }
 
@@ -494,7 +773,8 @@ function buildBanner(
   }
   if (!def.banner) return null;
   const isObjective = type === 'LORD' || type === 'TURTLE' || type === 'BUFF';
-  const objectiveName = type === 'LORD' ? 'LORD' : type === 'TURTLE' ? 'TURTLE' : 'BUFF';
+  const buff = opts.data?.buff as BuffColor | undefined;
+  const objectiveName = type === 'LORD' ? 'LORD' : type === 'TURTLE' ? 'TURTLE' : buff ? `${buff.toUpperCase()} BUFF` : 'BUFF';
   const playerLabel = player ? `${player.ign}${player.hero ? ` · ${player.hero}` : ''}` : null;
   return {
     id,
@@ -502,7 +782,7 @@ function buildBanner(
     at,
     side,
     // Objectives: "TURTLE SLAIN" / "LORD STEAL!" + "Slain by IGN" (any hero can steal — no spell is implied).
-    title: isObjective && opts.steal ? `${objectiveName} STEAL!` : def.banner,
+    title: isObjective && opts.steal ? `${objectiveName} STEAL!` : isObjective ? `${objectiveName} SLAIN` : def.banner,
     subtitle: isObjective
       ? [player ? `Slain by ${player.ign}` : null, team?.name].filter(Boolean).join(' — ')
       : [playerLabel, team?.name].filter(Boolean).join(' — '),
@@ -564,7 +844,7 @@ export async function endGame(live: LiveState, winnerSide: Side, durationSec?: n
     redTeamId: redTeam.id,
     winnerTeamId: winnerTeam.id,
     winnerSide,
-    durationSec: durationSec ?? (live.gameStartedAt ? Math.round((now - live.gameStartedAt) / 1000) : 0),
+    durationSec: durationSec ?? Math.round(gameElapsedMs(live, now) / 1000),
     blue: { kills: kills(live.blue), turtles: live.blue.turtles, lords: live.blue.lords, bans: live.draft.blueBans, picks: live.draft.bluePicks },
     red: { kills: kills(live.red), turtles: live.red.turtles, lords: live.red.lords, bans: live.draft.redBans, picks: live.draft.redPicks },
     players: [...live.blue.players, ...live.red.players].map(statOf),
@@ -595,10 +875,16 @@ export async function endGame(live: LiveState, winnerSide: Side, durationSec?: n
   const eventType: EventType = seriesOver ? 'SERIES_VICTORY' : 'GAME_RESULT';
   const winsW = winnerIsA ? scoreA : scoreB;
   const winsL = winnerIsA ? scoreB : scoreA;
+  const winnerPicks = live.draft[`${winnerSide}Picks`].filter(Boolean);
+  const loserPicks = live.draft[`${winnerSide === 'blue' ? 'red' : 'blue'}Picks`].filter(Boolean);
+  const loserTeam = winnerSide === 'blue' ? redTeam : blueTeam;
   batch.update(liveRef(), {
     scoreA,
     scoreB,
     phase: 'postgame',
+    // Freeze the game clock at the final time.
+    ...(live.gameStartedAt && !live.clockPausedAt ? { clockPausedAt: now } : {}),
+    history: [...(live.history ?? []).filter((h) => h.game !== live.gameNumber), { game: live.gameNumber, winner: winnerTeam.name, loser: loserTeam.name, winnerPicks, loserPicks }],
     updatedAt: now,
     banner: {
       id: eventId,
@@ -625,5 +911,34 @@ export async function endGame(live: LiveState, winnerSide: Side, durationSec?: n
     createdAt: now,
   } satisfies Omit<GameEvent, 'id'>);
   await batch.commit();
+  // Grand Final won → crown the Finals MVP straight away (updated again when TP% is entered).
+  if (isChampionship && live.tournamentId) await refreshFinalsMvp(live.tournamentId, live.matchId).catch(() => {});
   return { seriesOver, winnerTeamId: winnerTeam.id, isChampionship };
+}
+
+/** Recompute and store the Finals MVP from the Grand Final games. */
+export async function refreshFinalsMvp(tournamentId: string, finalMatchId: string) {
+  const snap = await getDocs(query(collection(db, COL.games), where('matchId', '==', finalMatchId)));
+  const games = snap.docs.map((d) => ({ id: d.id, ...d.data() }) as GameRecord);
+  const mvp = computeFinalsMvp(games);
+  if (mvp) {
+    const player = await getDoc(doc(db, COL.players, mvp.playerId)).catch(() => null);
+    mvp.photoUrl = (player?.exists() ? (player.data() as Player).photoUrl : '') || '';
+  }
+  await updateDoc(doc(db, COL.tournaments, tournamentId), { finalsMvp: mvp ?? null });
+  return mvp;
+}
+
+/**
+ * Post-game stats: save each player's teamfight participation (TP%), then pick
+ * the post-match MVP (best rating on the winning team). Grand Final games also
+ * refresh the Finals MVP.
+ */
+export async function saveGameStats(game: GameRecord, tp: Record<string, number | null>, opts: { isFinal: boolean; tournamentId: string | null }) {
+  const players = game.players.map((p) => ({ ...p, tp: tp[p.playerId] ?? p.tp ?? null }));
+  const scored = { ...game, players, mvpPlayerId: null };
+  const mvpPlayerId = gameMvp(scored);
+  await updateDoc(doc(db, COL.games, game.id), { players, mvpPlayerId });
+  if (opts.isFinal && opts.tournamentId) await refreshFinalsMvp(opts.tournamentId, game.matchId);
+  return { mvpPlayerId, ratings: Object.fromEntries(players.map((p) => [p.playerId, playerRating(p, p.teamId === game.winnerTeamId)])) };
 }

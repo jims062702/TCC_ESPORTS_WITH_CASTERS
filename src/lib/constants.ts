@@ -16,6 +16,11 @@ export const winsNeeded = (format: SeriesFormat): number =>
 export const maxGames = (format: SeriesFormat): number => winsNeeded(format) * 2 - 1;
 
 export const ROLES: Role[] = ['EXP', 'Jungle', 'Mid', 'Gold', 'Roam', 'Sub'];
+/** The five in-game positions (lineup order on overlays). */
+export const POSITIONS: Role[] = ['EXP', 'Jungle', 'Mid', 'Gold', 'Roam'];
+export const POSITION_LABEL: Record<Role, string> = { EXP: 'EXP Lane', Jungle: 'Jungler', Mid: 'Mid Lane', Gold: 'Gold Lane', Roam: 'Roamer', Sub: 'Sub' };
+export const MAX_ROSTER = 7;
+export const LINEUP_SIZE = 5;
 
 export const BATTLE_SPELLS: BattleSpell[] = [
   'Retribution',
@@ -96,6 +101,20 @@ export const DRAFT_SEQUENCE: DraftStep[] = (() => {
   return seq.map(([side, kind, phase]) => ({ side, kind, phase, index: counters[side][kind]++ }));
 })();
 
+/** True when this step and the next are the same side picking together (e.g. red picks 2 & 3) — one shared timer. */
+export const isPairStart = (step: number) => {
+  const a = DRAFT_SEQUENCE[step];
+  const b = DRAFT_SEQUENCE[step + 1];
+  return Boolean(a && b && a.kind === 'pick' && b.kind === 'pick' && a.side === b.side);
+};
+export const isPairSecond = (step: number) => step > 0 && isPairStart(step - 1);
+
+/** Typed instead of a hero when a team skips a ban. */
+export const NO_BAN = 'None';
+export const isNoBan = (h: string) => h.trim().toLowerCase() === 'none';
+/** Every pick slot of both teams filled (bans may be empty or "None"). */
+export const picksComplete = (d: { bluePicks: string[]; redPicks: string[] }) => d.bluePicks.every(Boolean) && d.redPicks.every(Boolean);
+
 export const BANS_PER_SIDE = 5;
 export const PICKS_PER_SIDE = 5;
 
@@ -106,7 +125,7 @@ export const MLBB_HEROES: string[] = [
   'Claude', 'Clint', 'Cyclops', 'Diggie', 'Dyrroth', 'Edith', 'Esmeralda', 'Estes', 'Eudora',
   'Fanny', 'Faramis', 'Floryn', 'Franco', 'Fredrinn', 'Freya', 'Gatotkaca', 'Gloo', 'Gord',
   'Granger', 'Grock', 'Guinevere', 'Gusion', 'Hanabi', 'Hanzo', 'Harith', 'Harley', 'Hayabusa',
-  'Helcurt', 'Hilda', 'Hylos', 'Irithel', 'Ixia', 'Jawhead', 'Johnson', 'Joy', 'Julian',
+  'Helcurt', 'Hilda', 'Hirara', 'Hylos', 'Irithel', 'Ixia', 'Jawhead', 'Johnson', 'Joy', 'Julian',
   'Kadita', 'Kagura', 'Kaja', 'Kalea', 'Karina', 'Karrie', 'Khaleed', 'Khufra', 'Kimmy',
   'Lancelot', 'Lapu-Lapu', 'Layla', 'Leomord', 'Lesley', 'Ling', 'Lolita', 'Lukas', 'Lunox',
   'Luo Yi', 'Lylia', 'Marcel', 'Martis', 'Masha', 'Mathilda', 'Melissa', 'Minotaur', 'Minsitthar',
@@ -138,6 +157,16 @@ export interface EventDef {
 }
 
 export const EVENT_DEFS: Record<EventType, EventDef> = {
+  // Automatic phase announcements (Go live / next game → draft, Start game, Go to break).
+  DRAFT_START: { label: 'Draft Phase Welcome', short: 'Draft', tier: 'major', needsSide: false, needsPlayer: false, banner: null },
+  GAME_START: { label: 'Game Start', short: 'Start', tier: 'major', needsSide: false, needsPlayer: false, banner: null },
+  BREAK_START: { label: 'Break', short: 'Break', tier: 'major', needsSide: false, needsPlayer: false, banner: null },
+  // A single kill: pick the killer, then the player who died (+1 kill / +1 death).
+  KILL: { label: 'Kill', short: '+1 Kill', tier: 'minor', needsSide: true, needsPlayer: true, banner: null },
+  // Draft play-by-play (automatic on every lock) + engine-made speculation/storytelling while drafting.
+  DRAFT_BAN: { label: 'Draft Ban', short: 'Ban', tier: 'minor', needsSide: true, needsPlayer: false, banner: null },
+  DRAFT_PICK: { label: 'Draft Pick', short: 'Pick', tier: 'minor', needsSide: true, needsPlayer: false, banner: null },
+  DRAFT_TALK: { label: 'Draft Talk', short: 'Talk', tier: 'minor', needsSide: false, needsPlayer: false, banner: null },
   GAME_INTRO: { label: 'Game Intro', short: 'Intro', tier: 'major', needsSide: false, needsPlayer: false, banner: null },
   DRAFT_COMPLETE: { label: 'Draft Breakdown', short: 'Draft', tier: 'major', needsSide: false, needsPlayer: false, banner: null },
   FIRST_BLOOD: { label: 'First Blood', short: 'FB', tier: 'minor', needsSide: true, needsPlayer: true, banner: 'FIRST BLOOD' },

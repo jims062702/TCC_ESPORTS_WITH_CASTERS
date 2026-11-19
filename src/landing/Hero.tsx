@@ -16,12 +16,15 @@ export function Hero({
   liveMatch,
   teams,
   stats,
+  title,
 }: {
   tournament: Tournament | null;
   settings: SiteSettings;
   liveMatch: Match | null;
   teams: Record<string, Team>;
   stats: { label: string; value: string | number }[];
+  /** Home headline: the featured tournament name or the custom title typed in Settings. */
+  title: string;
 }) {
   const champion = tournament?.championTeamId ? teams[tournament.championTeamId] : null;
   return (
@@ -44,7 +47,7 @@ export function Hero({
         transition={{ delay: 0.05 }}
         className="font-display text-6xl uppercase leading-[0.85] tracking-wide drop-shadow-sm sm:text-7xl xl:text-8xl"
       >
-        {tournament?.name ?? 'TCC Esports'}
+        {title}
       </motion.h1>
       <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15 }} className="neon mt-3 font-display text-3xl uppercase tracking-[0.3em] sm:text-4xl">
         {settings.tagline || 'Let the game begin'}

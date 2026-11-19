@@ -209,8 +209,49 @@ function useParts(origin: string): Part[] {
         icon: MonitorPlay,
         steps: [
           {
+            id: 'obs-connect',
+            title: 'Easiest: connect OBS and let the controller build everything',
+            body: (
+              <>
+                <ol className="list-decimal space-y-1 pl-5">
+                  <li>
+                    OBS 28 or newer → <B>Tools → WebSocket Server Settings</B> → tick <B>Enable WebSocket server</B> (port 4455) → <B>Show Connect Info</B> → copy the <B>Server Password</B>.
+                  </li>
+                  <li>
+                    Open <B>Admin → Live Controller</B> → the <B>OBS</B> card → paste the password → <B>Connect</B>. It reconnects by itself every time you open the controller.
+                  </li>
+                  <li>
+                    Press <B>Create all scenes in OBS</B>. It makes <B>Game Feed</B>, <B>Draft</B>, <B>In-game HUD</B>, <B>Instant Replay</B> (with the live HUD window), <B>Break</B> and <B>Casters</B>, with every overlay already inside.
+                  </li>
+                  <li>
+                    Put your game capture (phone mirror, emulator window or capture card) in the <B>Game Feed</B> scene <B>once</B> — Draft and In-game HUD both use it.
+                  </li>
+                </ol>
+                <Tip>
+                  Prefer importing? <B>Download scene file</B> in the same card, then in OBS: <B>Scene Collection → Import</B> → pick the file → <B>Import</B> → <B>Scene Collection → TCC Esports</B>.
+                </Tip>
+                <p className="mt-2">
+                  From then on you never click in OBS: <B>Go live / next draft → Draft</B>, <B>Start game → In-game HUD</B>, <B>Instant replay → Instant Replay → back to In-game HUD</B>, <B>Go to break → Break</B>, <B>End break → Draft</B>.
+                </p>
+                <Warn>OBS must run on the same computer as the controller page (the browser talks to <code>ws://127.0.0.1:4455</code>).</Warn>
+              </>
+            ),
+          },
+          {
+            id: 'sounds',
+            title: 'Sound effects & break music (automatic)',
+            body: (
+              <p>
+                The overlays play their own sound in OBS — a stinger when the draft starts, when the game starts, into the instant replay and back to the game, plus an intense 5-minute gaming
+                track during breaks that loops for long breaks. All generated live (original, no copyright). Keep <B>Control audio via OBS</B> ticked on the browser sources (the automatic setup
+                does it) and set the level in the Audio Mixer. Flags: <code>?sound=0</code> mutes an overlay, <code>?music=0</code> turns off the break music, <code>?vol=0.5</code> sets the
+                level. Try them in <B>Live Controller → OBS → Sound check</B>.
+              </p>
+            ),
+          },
+          {
             id: 'sources',
-            title: 'Add the overlays as Browser Sources (1920×1080)',
+            title: 'Manual setup: add the overlays as Browser Sources (1920×1080)',
             body: (
               <>
                 <p>In OBS: <B>Sources → + → Browser</B> → paste the URL → width 1920, height 1080 → tick <B>&ldquo;Refresh browser when scene becomes active&rdquo;</B>.</p>
@@ -229,9 +270,10 @@ function useParts(origin: string): Part[] {
             title: 'Create the scenes',
             body: (
               <ul className="list-disc space-y-1 pl-5">
-                <li><B>Draft</B>: game capture + <code>/overlay/draft</code></li>
-                <li><B>Gameplay</B>: game capture + <code>/overlay/hud</code></li>
-                <li><B>Instant Replay</B>: Media Source named <code>Replay Media</code> + <code>/overlay/replay</code> on top</li>
+                <li><B>Game Feed</B>: your game capture (nested in the next two)</li>
+                <li><B>Draft</B>: Game Feed + <code>/overlay/draft</code></li>
+                <li><B>In-game HUD</B>: Game Feed + <code>/overlay/hud</code></li>
+                <li><B>Instant Replay</B> (top → bottom): <code>/overlay/replay</code>, the <B>In-game HUD</B> scene as a small live window (see below), Media Source named <code>Replay Media</code></li>
                 <li><B>Break</B>: <code>/overlay/break</code></li>
                 <li><B>Desk</B> (optional): camera + <code>/overlay/casters</code></li>
               </ul>
@@ -248,10 +290,10 @@ function useParts(origin: string): Part[] {
           },
           {
             id: 'websocket',
-            title: 'Connect OBS to the controller (automatic replays)',
+            title: 'Instant replays with OBS connected',
             body: (
               <p>
-                <B>Tools → WebSocket Server Settings</B> → Enable → copy the password. In <B>Live Controller → Instant replay → OBS</B> enter <code>ws://127.0.0.1:4455</code> + password → <B>Connect</B>. Now one click saves the replay, plays it in the replay scene and cuts back.
+                Connected via <B>Live Controller → OBS</B> (step 1). Now one click saves the replay, plays it in the replay scene and — the moment the clip ends — cuts back to your <B>In-game HUD</B> scene. Pick that scene under <B>In-game HUD scene</B> and press <B>Set up live PiP in OBS</B>: the In-game HUD (live game + scoreboard) stays visible in a small window on the right during every replay. (Manual: in the replay scene click + → Scene → In-game HUD → Edit Transform → Position 1288, 220 · bounding box &ldquo;Scale to inner bounds&rdquo; 576×324, layered under the replay overlay.)
               </p>
             ),
           },
@@ -334,7 +376,7 @@ function useParts(origin: string): Part[] {
           {
             id: 'booth-test',
             title: 'Do a test run',
-            body: <p>With a series on air, press <B>Game intro</B> in the Live Controller — you should hear two casters taking turns and see the subtitles on the HUD/caster overlays.</p>,
+            body: <p>Press <B>Go live</B> on a series in the Live Controller — the casters open the draft on their own (&ldquo;Welcome sa drafting phase natin, partner …!&rdquo;). You should hear two casters taking turns and see the subtitles on the overlays. <B>Game intro</B> works as a manual test any time.</p>,
           },
         ],
       },
@@ -344,27 +386,31 @@ function useParts(origin: string): Part[] {
         subtitle: 'What to click, in order, during the broadcast.',
         icon: Gamepad2,
         steps: [
-          { id: 'live', title: 'Put the series on air', body: <p><B>Live Controller</B> → pick the series → <B>Go live</B>. Rosters load and two random casters are seated.</p> },
-          { id: 'intro', title: 'Game intro', body: <p>Switch OBS to <B>Draft</B> → <B>Announcements → Game intro</B>.</p> },
+          { id: 'casters-on', title: 'Start the casters (one tab is enough)', body: <p>Press <B>Start</B> in the casters pill at the bottom-right of any admin page (or in the Caster Booth). They keep talking while you work in the Live Controller in the same tab — no second window. Every click takes over as soon as the current line is finished; between clicks they keep talking about the draft or the game. Starting them in one tab stops them in any other tab.</p> },
+          { id: 'live', title: 'Put the series on air', body: <p><B>Live Controller</B> → pick the series → <B>Go live</B> → choose each team&apos;s <B>5 players and positions</B> (rosters can have up to 7) and the <B>coach</B> (or &ldquo;No coach&rdquo;) → <B>Go live</B>. The system seats two random casters (locked for the game); OBS cuts to <B>Draft</B> and the casters welcome each other: &ldquo;Welcome sa drafting phase natin, partner Ate Lyka!&rdquo;.</p> },
+          { id: 'intro', title: 'Game intro (optional)', body: <p><B>Announcements → Game intro</B> plays an extra series intro whenever you want one.</p> },
           {
             id: 'draft',
             title: 'Run the draft',
-            body: <p>Type a hero and press <K>Enter</K> to lock the highlighted slot (MLBB 10-ban order). Use Start/Pause/Reset for the timer and Undo for mistakes. When the draft finishes the analyst breaks it down → <B>Start Game</B> and switch OBS to <B>Gameplay</B>.</p>,
+            body: <p>Type a few letters and press <K>Enter</K> — the top matching hero locks and the box empties for the next one (↑/↓ pick another match). No ban from a team? Type <B>none</B> or press <B>No ban</B>. Two picks by the same side share one timer. A pick goes straight to the player who plays that hero&apos;s position (or whose signature hero it is); press <B>⇅</B> on two teammates to trade heroes. <B>Start Game</B> unlocks only when all 10 heroes are picked. The casters call every ban (&ldquo;Binan nila ang Freya para hindi mahirapan ang backline nila&rdquo;) and pick (&ldquo;NAKUHA NI … ANG Ling! Hindi ito binan!&rdquo;) and talk about what may come next. <B>Edit lineup</B> changes players before the game. When the picks are complete → <B>Start Game</B> (OBS cuts to <B>In-game HUD</B>). The casters announce it on their own (&ldquo;At magsisimula na ang laro! Welcome sa Game 2…&rdquo; — with special lines for match point and deciding games) and a GAME 2 graphic shows on the HUD.</p>,
           },
           {
             id: 'ingame',
             title: 'Call the game',
             body: (
               <ul className="list-disc space-y-1 pl-5">
-                <li>Click a player, then <B>First Blood / Double / Triple / Maniac / Savage</B> — +1 kill and a banner with their photo.</li>
-                <li>Before an objective press <B>Turtle / Lord / Buff fight</B> (&ldquo;Sino kaya ang makakakuha…?&rdquo;), then the side&apos;s <B>Turtle / Lord / Buff</B> button when it falls (tick <B>steal</B> if stolen).</li>
-                <li>Update K/D/A, spells and the gold slider; press <B>Announce gold update</B> now and then.</li>
+                <li><B>+1 Kill</B>: pick the killer, then who died. <B>First Blood / Double / Triple / Maniac / Savage</B>: pick the player, then who died (up to 1 / 2 / 3 / 4 / 5 — only the ones not counted yet). One kill per victim. First Blood locks once recorded; Savage gives 10 seconds to add more kills (Savage +). (Keys 1–5 / 6–0 pick fast.)</li>
+                <li>Before an objective press <B>Turtle / Lord / Purple Buff / Orange Buff fight</B> (&ldquo;Sino kaya ang makakakuha…?&rdquo;), then the side&apos;s button when it falls and pick who took it (tick <B>steal</B> in the same window).</li>
+                <li>The <B>game clock</B> runs by itself; sync it to the in-game timer with ±seconds or Set mm:ss.</li>
+                <li><B>Gold difference → Auto</B>: one-time setup (grab a frame from OBS, drag a box around the gold number, test read) — then it follows the game and you only press <B>Announce gold update</B>.</li>
+                <li>Battle spell used? Click the spell icon in the player table — the cooldown countdown starts and the casters call it. Click again to reset.</li>
+                <li>Fix K/D/A with ± if needed.</li>
               </ul>
             ),
           },
-          { id: 'replay', title: 'Instant replay', body: <p>Type what happened (e.g. &ldquo;flickers in, steals Lord, escapes&rdquo;) → <B>Trigger instant replay</B>. With OBS connected everything is automatic; otherwise press your Save Replay hotkey and switch to the replay scene.</p> },
-          { id: 'end', title: 'End the game', body: <p>Press <B>Blue wins</B> or <B>Red wins</B>. Stats go to the leaderboard and the series score updates. Then <B>Start Game N draft</B> (new caster pair) — or, if the series is won, the bracket advances and the victory/champion call plays.</p> },
-          { id: 'break', title: 'Breaks', body: <p><B>Go to break</B> with minutes + message, switch OBS to <B>Break</B>. <B>End break</B> to continue.</p> },
+          { id: 'replay', title: 'Instant replay', body: <p>Type what happened (e.g. &ldquo;flickers in, steals Lord, escapes&rdquo;) → <B>Trigger instant replay</B>. With OBS connected everything is automatic — the replay plays with the In-game HUD small on the right, then OBS cuts back to the In-game HUD. Otherwise press your Save Replay hotkey, switch to the replay scene, and switch back to the In-game HUD after.</p> },
+          { id: 'end', title: 'End the game', body: <p>Press <B>Blue wins</B> or <B>Red wins</B>. Stats go to the leaderboard and the series score updates. In <B>Post-game stats</B> type each player&apos;s <B>TP%</B> → Save: the game MVP is picked (and in the Grand Final, the Finals MVP). Then <B>Start Game N draft</B> → confirm or change the lineup for that game → a new caster pair is seated and greets each other — or, if the series is won, the bracket advances and the victory/champion call plays.</p> },
+          { id: 'break', title: 'Breaks', body: <p><B>Go to break</B> with minutes + message — OBS cuts to <B>Break</B>, the break music starts, and the casters send the show to break (&ldquo;Mag-break muna tayo, mga ka-TCC! Pagbalik natin, Game 3 na!&rdquo;). After a finished game, <B>End break → Game N draft</B> starts the next draft (and its welcome); during a mid-game pause, <B>End break</B> returns to the game.</p> },
           { id: 'off', title: 'Finish', body: <p><B>End broadcast</B> takes the series off air. Results stay saved.</p> },
         ],
       },

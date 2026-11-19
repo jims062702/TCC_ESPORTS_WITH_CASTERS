@@ -7,6 +7,7 @@ import { Logo, ThemeToggle } from '@/components/Brand';
 import { Button, LiveDot, Notice, Spinner } from '@/components/ui';
 import { useToast } from '@/components/Toast';
 import { cn } from '@/lib/utils';
+import { BoothKeeper, useBoothStatus } from './BoothKeeper';
 
 const NAV = [
   { to: '/admin', label: 'Dashboard', icon: LayoutDashboard, end: true },
@@ -124,9 +125,11 @@ export default function AdminLayout() {
           </Button>
         </div>
       </aside>
-      <main className="min-w-0 px-4 py-6 sm:px-6 lg:px-8">
+      <main className="min-w-0 px-4 py-6 pb-24 sm:px-6 lg:px-8">
         <Outlet />
       </main>
+      {/* The casting engine lives here, so it keeps running on every admin page. */}
+      <BoothKeeper />
     </div>
   );
 }
@@ -136,7 +139,8 @@ function StatusPills() {
   const live = useLive();
   const booth = useBooth();
   const now = useNow(5000);
-  const boothOnline = Boolean(booth.data?.online && now - (booth.data?.lastBeat ?? 0) < 40_000);
+  const here = useBoothStatus().running;
+  const boothOnline = here || Boolean(booth.data?.online && now - (booth.data?.lastBeat ?? 0) < 40_000);
   return (
     <div className="space-y-1.5 text-xs">
       <div className="flex items-center gap-2">
@@ -145,7 +149,7 @@ function StatusPills() {
       </div>
       <div className="flex items-center gap-2">
         <span className={cn('h-2 w-2 rounded-full', boothOnline ? 'bg-accent shadow-glow-teal' : 'bg-line')} />
-        <span className="text-muted">Caster booth {boothOnline ? 'online' : 'offline'}</span>
+        <span className="text-muted">Casters {here ? 'on air (this tab)' : boothOnline ? 'on air (another tab)' : 'off'}</span>
       </div>
       <a href="/overlay/hud" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-muted hover:text-brand">
         <Clapperboard className="h-3.5 w-3.5" /> Preview HUD overlay <ExternalLink className="h-3 w-3" />

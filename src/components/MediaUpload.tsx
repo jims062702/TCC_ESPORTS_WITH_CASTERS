@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ImagePlus, Loader2, Trash2, UploadCloud } from 'lucide-react';
 import { isCloudinaryConfigured, uploadToCloudinary, type CloudinaryFolder, type UploadResult } from '@/services/cloudinary';
 import { cn } from '@/lib/utils';
@@ -22,6 +22,8 @@ export function ImageUpload({
 }) {
   const input = useRef<HTMLInputElement>(null);
   const [progress, setProgress] = useState<number | null>(null);
+  const [broken, setBroken] = useState(false);
+  useEffect(() => setBroken(false), [value]);
   const toast = useToast();
 
   const pick = async (file: File | undefined) => {
@@ -51,7 +53,11 @@ export function ImageUpload({
         style={{ width: size, height: size }}
         title={isCloudinaryConfigured ? label : 'Configure Cloudinary to enable uploads'}
       >
-        {value ? <img src={value} alt="" className={cn('h-full w-full', shape === 'circle' ? 'object-cover' : 'object-contain p-1')} /> : <ImagePlus className="h-6 w-6 text-muted group-hover:text-brand" />}
+        {value && !broken ? (
+          <img src={value} alt="" onError={() => setBroken(true)} className={cn('h-full w-full', shape === 'circle' ? 'object-cover' : 'object-contain p-1')} />
+        ) : (
+          <ImagePlus className="h-6 w-6 text-muted group-hover:text-brand" />
+        )}
         {progress !== null && (
           <span className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 text-xs font-semibold text-white">
             <Loader2 className="mb-1 h-5 w-5 animate-spin" />
@@ -66,6 +72,9 @@ export function ImageUpload({
           value={value}
           onChange={(e) => onChange(e.target.value)}
         />
+        {value && broken && (
+          <p className="text-xs text-amber-600 dark:text-amber-400">This link isn&apos;t a direct image (e.g. a Facebook or Google Drive page). Upload the file, or use a link that ends in .jpg / .png.</p>
+        )}
         {value && (
           <button type="button" onClick={() => onChange('')} className="inline-flex items-center gap-1 text-xs text-muted hover:text-red-500">
             <Trash2 className="h-3.5 w-3.5" /> Remove

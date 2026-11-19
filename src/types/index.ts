@@ -23,12 +23,20 @@ export type BattleSpell =
 export type Side = 'blue' | 'red';
 export type Slot = 'A' | 'B';
 
+/** Team coach — shown on the draft overlay. */
+export interface Coach {
+  name: string;
+  photoUrl: string;
+}
+
 export interface Team {
   id: string;
   name: string;
   tag: string;
   logoUrl: string;
   color?: string;
+  /** Optional coach (null/absent = "No coach"). */
+  coach?: Coach | null;
   createdAt: number;
 }
 
@@ -42,6 +50,8 @@ export interface Player {
   spell: BattleSpell;
   isStarter: boolean;
   order: number;
+  /** Optional hand-picked signature heroes (merged with heroes from recorded games). */
+  signatureHeroes?: string[];
   createdAt: number;
 }
 
@@ -61,10 +71,30 @@ export interface Tournament {
   prizePool?: string;
   startDate?: string;
   bracketGenerated: boolean;
+  /** Computed from the Grand Final: most game MVPs (tie → best total rating). */
+  finalsMvp?: FinalsMvp | null;
+  /** Seeding round in progress (each team plays one game before the bracket). */
+  seeding?: boolean;
+  /** Seeding winners' opponent choices: winner team id → the team they picked. */
+  opponentPicks?: Record<string, string>;
   createdAt: number;
 }
 
-export type BracketKind = 'UB' | 'LB' | 'GF';
+export interface FinalsMvp {
+  playerId: string;
+  ign: string;
+  teamId: string;
+  photoUrl?: string;
+  gameMvps: number;
+  games: number;
+  kda: number;
+  tp: number | null;
+  lords: number;
+  turtles: number;
+}
+
+/** SEED = the one-game seeding round every team plays before the bracket. */
+export type BracketKind = 'UB' | 'LB' | 'GF' | 'SEED';
 
 export interface SlotSource {
   kind: 'seed' | 'winner' | 'loser';
@@ -103,6 +133,8 @@ export interface Match {
   loserTo: MatchLink | null;
   isFinal: boolean;
   scheduledAt: number | null;
+  /** Show "View on Facebook" for this match on the website (switched in the Live Controller). */
+  facebookLive?: boolean;
   updatedAt: number;
 }
 
@@ -122,6 +154,8 @@ export interface GamePlayerStat {
   savage: number;
   lords: number;
   turtles: number;
+  /** Teamfight participation % — typed by the operator after the game (null = not entered). */
+  tp?: number | null;
 }
 
 /** One finished game inside a series — the source of truth for leaderboards. */
@@ -138,6 +172,8 @@ export interface GameRecord {
   blue: { kills: number; turtles: number; lords: number; bans: string[]; picks: string[] };
   red: { kills: number; turtles: number; lords: number; bans: string[]; picks: string[] };
   players: GamePlayerStat[];
+  /** Post-match MVP (best rating on the winning team), set when the post-game stats are saved. */
+  mvpPlayerId?: string | null;
   createdAt: number;
 }
 
@@ -150,12 +186,22 @@ export interface LiveTeam {
   logoUrl: string;
 }
 
+/** A hero a player is known for: from recorded games (games/wins) or hand-picked (games 0). */
+export interface HeroPoolEntry {
+  hero: string;
+  games: number;
+  wins: number;
+}
+
 export interface LivePlayer {
   playerId: string;
   teamId: string;
   ign: string;
   photoUrl: string;
+  /** Position for THIS game (EXP / Jungle / Mid / Gold / Roam). */
   role: Role;
+  /** Signature heroes, used by the casters during the draft. */
+  pool?: HeroPoolEntry[];
   hero: string;
   spell: BattleSpell;
   spellReadyAt: number | null;
@@ -175,6 +221,23 @@ export interface LiveSide {
   turtles: number;
   lords: number;
   players: LivePlayer[];
+  /** Coach for this game (null = "No coach"). */
+  coach?: Coach | null;
+}
+
+/** A finished game of the current series — for the casters' storytelling. */
+export interface SeriesGameSummary {
+  game: number;
+  winner: string;
+  loser: string;
+  winnerPicks: string[];
+  loserPicks: string[];
+}
+
+/** Most picked/banned heroes of the tournament so far. */
+export interface MetaHero {
+  hero: string;
+  count: number;
 }
 
 export interface DraftState {
@@ -186,11 +249,14 @@ export interface DraftState {
   timerDuration: number;
   timerEndsAt: number | null;
   timerPausedLeft: number | null;
+  /** Slot used by each completed step (so Undo clears the right slot after auto-assignment / swaps). */
+  slots?: number[];
 }
 
 export type LivePhase = 'idle' | 'draft' | 'ingame' | 'postgame' | 'break';
 
-export type ObjectiveKind = 'Turtle' | 'Lord' | 'Buff';
+export type ObjectiveKind = 'Turtle' | 'Lord' | 'Buff' | 'Purple Buff' | 'Orange Buff';
+export type BuffColor = 'purple' | 'orange';
 
 export interface Banner {
   id: string;
@@ -236,12 +302,18 @@ export interface LiveState {
   blue: LiveSide;
   red: LiveSide;
   goldDiff: number;
+  /** Game clock: start time (shifted when paused/adjusted) and pause moment. */
   gameStartedAt: number | null;
+  clockPausedAt?: number | null;
   casters: string[];
   replay: ReplayState;
   banner: Banner | null;
   breakEndsAt: number | null;
   breakMessage: string;
+  /** Earlier games of this series (winner + heroes) — draft storytelling. */
+  history?: SeriesGameSummary[];
+  /** Tournament meta (most picked/banned heroes) — draft storytelling. */
+  meta?: MetaHero[];
   updatedAt: number;
 }
 
@@ -262,6 +334,8 @@ export interface CaptionState {
 /** live/booth — heartbeat so the controller knows the voice engine is running. */
 export interface BoothState {
   online: boolean;
+  /** Ask the engine with this id to stop (another tab took over / pressed Stop). */
+  stopRequested?: string | null;
   lastBeat: number;
   aiCallsToday: number;
   queue: number;
@@ -271,6 +345,13 @@ export interface BoothState {
 // ── Events (admin triggers → caster booth) ──────────────────────────────────
 
 export type EventType =
+  | 'KILL'
+  | 'DRAFT_START'
+  | 'DRAFT_BAN'
+  | 'DRAFT_PICK'
+  | 'DRAFT_TALK'
+  | 'GAME_START'
+  | 'BREAK_START'
   | 'GAME_INTRO'
   | 'DRAFT_COMPLETE'
   | 'FIRST_BLOOD'
@@ -373,6 +454,8 @@ export interface HeroSlide {
 
 export interface SiteSettings {
   featuredTournamentId: string | null;
+  /** Free text typed in Settings. If it matches a tournament's name, that tournament is featured; otherwise it's a custom Home title. */
+  featuredTitle: string;
   heroSlides: HeroSlide[];
   streamUrl: string;
   facebookUrl: string;
@@ -380,5 +463,17 @@ export interface SiteSettings {
   tagline: string;
   announcement: string;
   casterProfiles: Record<string, CasterProfile>;
+  /** Uploaded battle spell icons (spell name → image URL), shown on the HUD and controller. */
+  spellIcons?: Record<string, string>;
+  /** Heroes released after this build — added in Settings so the draft knows them. */
+  extraHeroes?: ExtraHero[];
   updatedAt: number;
+}
+
+export interface ExtraHero {
+  name: string;
+  /** e.g. "Assassin" or "Mage/Support" */
+  classes?: string;
+  /** e.g. "Jungle" or "Mid/Roam" */
+  lanes?: string;
 }

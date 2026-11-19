@@ -4,11 +4,12 @@ import type { LiveState, Side } from '@/types';
 import { useHeroPortraits, useNow } from '@/hooks/useFirestore';
 import { useOverlayLive } from './demo';
 import { sideTeam } from '@/services/facts';
-import { DRAFT_SEQUENCE, FORMAT_LABEL } from '@/lib/constants';
+import { DRAFT_SEQUENCE, FORMAT_LABEL, POSITION_LABEL } from '@/lib/constants';
 import { HeroArt, SeriesPips } from '@/components/game';
 import { TeamLogo } from '@/components/Brand';
 import { cn } from '@/lib/utils';
 import { BrandBug, CasterStrip, EventBanner, Glass, OverlayStage, SIDE_COLOR, flag, useQuery } from './OverlayKit';
+import { soundOptions, useBannerStinger } from './useBroadcastSound';
 
 /** OBS Browser Source: /overlay/draft (1920×1080, transparent). */
 export default function DraftOverlay() {
@@ -16,6 +17,8 @@ export default function DraftOverlay() {
   const portraits = useHeroPortraits();
   const now = useNow(200);
   const q = useQuery();
+  const snd = soundOptions(q, demo);
+  useBannerStinger(live.banner, 'DRAFT_START', 'draft', snd.on, snd.vol);
   const d = live.draft;
   const step = DRAFT_SEQUENCE[d.step];
   const done = d.step >= DRAFT_SEQUENCE.length;
@@ -41,7 +44,7 @@ export default function DraftOverlay() {
               {flag(q, 'casters') ? <CasterStrip casters={live.casters} captions={false} size="sm" /> : <div className="w-[300px]" />}
             </motion.div>
 
-            <EventBanner banner={live.banner} allow={['GAME_INTRO', 'DRAFT_COMPLETE']} top={260} />
+            <EventBanner banner={live.banner} allow={['DRAFT_START', 'GAME_INTRO', 'DRAFT_COMPLETE']} top={260} />
 
             {/* Captions while drafting */}
             {flag(q, 'captions') && (
@@ -54,7 +57,7 @@ export default function DraftOverlay() {
             <motion.div initial={{ y: 400 }} animate={{ y: 0 }} transition={{ type: 'spring', damping: 22, delay: 0.1 }} className="absolute inset-x-0 bottom-0 h-[372px]">
               <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/95 to-transparent" />
               <div className="relative flex h-full items-end justify-between gap-6 px-8 pb-6">
-                <SidePanel live={live} side="blue" portraits={portraits.map} activeKind={step?.side === 'blue' ? step.kind : null} activeIndex={step?.side === 'blue' ? step.index : -1} />
+                <SidePanel live={live} side="blue" portraits={portraits.map} activeKind={step?.side === 'blue' ? step.kind : null} activeIndex={step?.side === 'blue' ? (step.kind === 'pick' ? d.bluePicks.findIndex((h) => !h) : step.index) : -1} />
 
                 {/* Centre: timer & phase */}
                 <div className="flex w-[260px] shrink-0 flex-col items-center pb-2">
@@ -90,7 +93,7 @@ export default function DraftOverlay() {
                   </p>
                 </div>
 
-                <SidePanel live={live} side="red" portraits={portraits.map} activeKind={step?.side === 'red' ? step.kind : null} activeIndex={step?.side === 'red' ? step.index : -1} />
+                <SidePanel live={live} side="red" portraits={portraits.map} activeKind={step?.side === 'red' ? step.kind : null} activeIndex={step?.side === 'red' ? (step.kind === 'pick' ? d.redPicks.findIndex((h) => !h) : step.index) : -1} />
               </div>
             </motion.div>
           </motion.div>
@@ -116,8 +119,17 @@ function SidePanel({ live, side, portraits, activeKind, activeIndex }: { live: L
             {side} side
           </p>
           <p className="font-display text-6xl uppercase leading-[0.85]">{team?.name ?? 'TBD'}</p>
-          <div className="mt-2">
+          <div className={cn('mt-2 flex items-center gap-3', right && 'flex-row-reverse')}>
             <SeriesPips format={live.format} wins={wins} color={color} reverse={right} size={14} />
+            <span className="font-cond text-lg font-semibold uppercase tracking-[0.2em] text-white/70">
+              {live[side].coach?.name ? (
+                <>
+                  Coach <span className="text-white">{live[side].coach!.name}</span>
+                </>
+              ) : (
+                'No coach'
+              )}
+            </span>
           </div>
         </div>
         <div className={cn('flex gap-2', right ? 'mr-6 flex-row-reverse' : 'ml-6')}>
@@ -125,7 +137,11 @@ function SidePanel({ live, side, portraits, activeKind, activeIndex }: { live: L
             const active = activeKind === 'ban' && activeIndex === i;
             return (
               <div key={i} className={cn('relative h-[64px] w-[64px] overflow-hidden rounded-lg border-2 bg-ink-900', active ? 'animate-pulse' : 'border-white/10')} style={active ? { borderColor: color, boxShadow: `0 0 16px ${color}` } : undefined}>
-                {h ? (
+                {h && h.toLowerCase() === 'none' ? (
+                  <span className="flex h-full flex-col items-center justify-center font-cond text-[11px] font-bold uppercase leading-tight tracking-wider text-white/50">
+                    No<br />ban
+                  </span>
+                ) : h ? (
                   <>
                     <HeroArt name={h} portraits={portraits} className="h-full w-full text-[10px]" dim />
                     <span className="absolute inset-0 flex items-center justify-center bg-black/35">
@@ -168,7 +184,12 @@ function SidePanel({ live, side, portraits, activeKind, activeIndex }: { live: L
                   )}
                 </AnimatePresence>
               </motion.div>
-              <span className="max-w-[132px] truncate font-cond text-lg font-semibold uppercase tracking-wider text-white/80">{player?.ign ?? ''}</span>
+              {player && (
+                <span className="font-cond text-sm font-bold uppercase tracking-[0.2em]" style={{ color }}>
+                  {POSITION_LABEL[player.role] ?? player.role}
+                </span>
+              )}
+              <span className="-mt-1 max-w-[132px] truncate font-cond text-lg font-semibold uppercase tracking-wider text-white/80">{player?.ign ?? ''}</span>
             </div>
           );
         })}

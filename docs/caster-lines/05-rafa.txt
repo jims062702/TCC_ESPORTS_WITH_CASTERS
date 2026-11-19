@@ -1,5 +1,2309 @@
 Coach Rafa — Draft & Meta Strategist (male)
-7,017 unique lines
+9,225 unique lines
+
+══════ Draft bans — 372 lines ══════
+Kung ako ang coach, ganyan din ang ban ko.
+Kung ako ang coach, ganyan din ang ban ko. Tandaan ang draft.
+Kung ako ang coach, ganyan din ang ban ko. Preparation ang susi.
+Kung ako ang coach, ganyan din ang ban ko. Adjustments ang labanan.
+Kung ako ang coach, ganyan din ang ban ko. Plano muna bago laro.
+Kung ako ang coach, ganyan din ang ban ko. Ganyan ang coaching.
+Ito ang take ko. Kung ako ang coach, ganyan din ang ban ko.
+Ito ang take ko. Kung ako ang coach, ganyan din ang ban ko. Tandaan ang draft.
+Ito ang take ko. Kung ako ang coach, ganyan din ang ban ko. Preparation ang susi.
+Ito ang take ko. Kung ako ang coach, ganyan din ang ban ko. Adjustments ang labanan.
+Ito ang take ko. Kung ako ang coach, ganyan din ang ban ko. Plano muna bago laro.
+Ito ang take ko. Kung ako ang coach, ganyan din ang ban ko. Ganyan ang coaching.
+Game plan check. Kung ako ang coach, ganyan din ang ban ko.
+Game plan check. Kung ako ang coach, ganyan din ang ban ko. Tandaan ang draft.
+Game plan check. Kung ako ang coach, ganyan din ang ban ko. Preparation ang susi.
+Game plan check. Kung ako ang coach, ganyan din ang ban ko. Adjustments ang labanan.
+Game plan check. Kung ako ang coach, ganyan din ang ban ko. Plano muna bago laro.
+Game plan check. Kung ako ang coach, ganyan din ang ban ko. Ganyan ang coaching.
+Pakinggan niyo ito. Kung ako ang coach, ganyan din ang ban ko.
+Pakinggan niyo ito. Kung ako ang coach, ganyan din ang ban ko. Tandaan ang draft.
+Pakinggan niyo ito. Kung ako ang coach, ganyan din ang ban ko. Preparation ang susi.
+Pakinggan niyo ito. Kung ako ang coach, ganyan din ang ban ko. Adjustments ang labanan.
+Pakinggan niyo ito. Kung ako ang coach, ganyan din ang ban ko. Plano muna bago laro.
+Pakinggan niyo ito. Kung ako ang coach, ganyan din ang ban ko. Ganyan ang coaching.
+Strategically. Kung ako ang coach, ganyan din ang ban ko.
+Strategically. Kung ako ang coach, ganyan din ang ban ko. Tandaan ang draft.
+Strategically. Kung ako ang coach, ganyan din ang ban ko. Preparation ang susi.
+Strategically. Kung ako ang coach, ganyan din ang ban ko. Adjustments ang labanan.
+Strategically. Kung ako ang coach, ganyan din ang ban ko. Plano muna bago laro.
+Strategically. Kung ako ang coach, ganyan din ang ban ko. Ganyan ang coaching.
+Malinaw ito. Kung ako ang coach, ganyan din ang ban ko.
+Malinaw ito. Kung ako ang coach, ganyan din ang ban ko. Tandaan ang draft.
+Malinaw ito. Kung ako ang coach, ganyan din ang ban ko. Preparation ang susi.
+Malinaw ito. Kung ako ang coach, ganyan din ang ban ko. Adjustments ang labanan.
+Malinaw ito. Kung ako ang coach, ganyan din ang ban ko. Plano muna bago laro.
+Malinaw ito. Kung ako ang coach, ganyan din ang ban ko. Ganyan ang coaching.
+Coach mode muna tayo. Kung ako ang coach, ganyan din ang ban ko.
+Coach mode muna tayo. Kung ako ang coach, ganyan din ang ban ko. Tandaan ang draft.
+Coach mode muna tayo. Kung ako ang coach, ganyan din ang ban ko. Preparation ang susi.
+Coach mode muna tayo. Kung ako ang coach, ganyan din ang ban ko. Adjustments ang labanan.
+Coach mode muna tayo. Kung ako ang coach, ganyan din ang ban ko. Plano muna bago laro.
+Coach mode muna tayo. Kung ako ang coach, ganyan din ang ban ko. Ganyan ang coaching.
+Sa tingin ko. Kung ako ang coach, ganyan din ang ban ko.
+Sa tingin ko. Kung ako ang coach, ganyan din ang ban ko. Tandaan ang draft.
+Sa tingin ko. Kung ako ang coach, ganyan din ang ban ko. Preparation ang susi.
+Sa tingin ko. Kung ako ang coach, ganyan din ang ban ko. Adjustments ang labanan.
+Sa tingin ko. Kung ako ang coach, ganyan din ang ban ko. Plano muna bago laro.
+Sa tingin ko. Kung ako ang coach, ganyan din ang ban ko. Ganyan ang coaching.
+Tingnan natin ang plano. Kung ako ang coach, ganyan din ang ban ko.
+Tingnan natin ang plano. Kung ako ang coach, ganyan din ang ban ko. Tandaan ang draft.
+Tingnan natin ang plano. Kung ako ang coach, ganyan din ang ban ko. Preparation ang susi.
+Tingnan natin ang plano. Kung ako ang coach, ganyan din ang ban ko. Adjustments ang labanan.
+Tingnan natin ang plano. Kung ako ang coach, ganyan din ang ban ko. Plano muna bago laro.
+Tingnan natin ang plano. Kung ako ang coach, ganyan din ang ban ko. Ganyan ang coaching.
+Ban pa lang, kita mo na ang paghahanda ng {team}.
+Ban pa lang, kita mo na ang paghahanda ng {team}. Tandaan ang draft.
+Ban pa lang, kita mo na ang paghahanda ng {team}. Preparation ang susi.
+Ban pa lang, kita mo na ang paghahanda ng {team}. Adjustments ang labanan.
+Ban pa lang, kita mo na ang paghahanda ng {team}. Plano muna bago laro.
+Ban pa lang, kita mo na ang paghahanda ng {team}. Ganyan ang coaching.
+Ito ang take ko. Ban pa lang, kita mo na ang paghahanda ng {team}.
+Ito ang take ko. Ban pa lang, kita mo na ang paghahanda ng {team}. Tandaan ang draft.
+Ito ang take ko. Ban pa lang, kita mo na ang paghahanda ng {team}. Preparation ang susi.
+Ito ang take ko. Ban pa lang, kita mo na ang paghahanda ng {team}. Adjustments ang labanan.
+Ito ang take ko. Ban pa lang, kita mo na ang paghahanda ng {team}. Plano muna bago laro.
+Ito ang take ko. Ban pa lang, kita mo na ang paghahanda ng {team}. Ganyan ang coaching.
+Game plan check. Ban pa lang, kita mo na ang paghahanda ng {team}.
+Game plan check. Ban pa lang, kita mo na ang paghahanda ng {team}. Tandaan ang draft.
+Game plan check. Ban pa lang, kita mo na ang paghahanda ng {team}. Preparation ang susi.
+Game plan check. Ban pa lang, kita mo na ang paghahanda ng {team}. Adjustments ang labanan.
+Game plan check. Ban pa lang, kita mo na ang paghahanda ng {team}. Plano muna bago laro.
+Game plan check. Ban pa lang, kita mo na ang paghahanda ng {team}. Ganyan ang coaching.
+Pakinggan niyo ito. Ban pa lang, kita mo na ang paghahanda ng {team}.
+Pakinggan niyo ito. Ban pa lang, kita mo na ang paghahanda ng {team}. Tandaan ang draft.
+Pakinggan niyo ito. Ban pa lang, kita mo na ang paghahanda ng {team}. Preparation ang susi.
+Pakinggan niyo ito. Ban pa lang, kita mo na ang paghahanda ng {team}. Adjustments ang labanan.
+Pakinggan niyo ito. Ban pa lang, kita mo na ang paghahanda ng {team}. Plano muna bago laro.
+Pakinggan niyo ito. Ban pa lang, kita mo na ang paghahanda ng {team}. Ganyan ang coaching.
+Strategically. Ban pa lang, kita mo na ang paghahanda ng {team}.
+Strategically. Ban pa lang, kita mo na ang paghahanda ng {team}. Tandaan ang draft.
+Strategically. Ban pa lang, kita mo na ang paghahanda ng {team}. Preparation ang susi.
+Strategically. Ban pa lang, kita mo na ang paghahanda ng {team}. Adjustments ang labanan.
+Strategically. Ban pa lang, kita mo na ang paghahanda ng {team}. Plano muna bago laro.
+Strategically. Ban pa lang, kita mo na ang paghahanda ng {team}. Ganyan ang coaching.
+Malinaw ito. Ban pa lang, kita mo na ang paghahanda ng {team}.
+Malinaw ito. Ban pa lang, kita mo na ang paghahanda ng {team}. Tandaan ang draft.
+Malinaw ito. Ban pa lang, kita mo na ang paghahanda ng {team}. Preparation ang susi.
+Malinaw ito. Ban pa lang, kita mo na ang paghahanda ng {team}. Adjustments ang labanan.
+Malinaw ito. Ban pa lang, kita mo na ang paghahanda ng {team}. Plano muna bago laro.
+Malinaw ito. Ban pa lang, kita mo na ang paghahanda ng {team}. Ganyan ang coaching.
+Coach mode muna tayo. Ban pa lang, kita mo na ang paghahanda ng {team}.
+Coach mode muna tayo. Ban pa lang, kita mo na ang paghahanda ng {team}. Tandaan ang draft.
+Coach mode muna tayo. Ban pa lang, kita mo na ang paghahanda ng {team}. Preparation ang susi.
+Coach mode muna tayo. Ban pa lang, kita mo na ang paghahanda ng {team}. Adjustments ang labanan.
+Coach mode muna tayo. Ban pa lang, kita mo na ang paghahanda ng {team}. Plano muna bago laro.
+Coach mode muna tayo. Ban pa lang, kita mo na ang paghahanda ng {team}. Ganyan ang coaching.
+Sa tingin ko. Ban pa lang, kita mo na ang paghahanda ng {team}.
+Sa tingin ko. Ban pa lang, kita mo na ang paghahanda ng {team}. Tandaan ang draft.
+Sa tingin ko. Ban pa lang, kita mo na ang paghahanda ng {team}. Preparation ang susi.
+Sa tingin ko. Ban pa lang, kita mo na ang paghahanda ng {team}. Adjustments ang labanan.
+Sa tingin ko. Ban pa lang, kita mo na ang paghahanda ng {team}. Plano muna bago laro.
+Sa tingin ko. Ban pa lang, kita mo na ang paghahanda ng {team}. Ganyan ang coaching.
+Tingnan natin ang plano. Ban pa lang, kita mo na ang paghahanda ng {team}.
+Tingnan natin ang plano. Ban pa lang, kita mo na ang paghahanda ng {team}. Tandaan ang draft.
+Tingnan natin ang plano. Ban pa lang, kita mo na ang paghahanda ng {team}. Preparation ang susi.
+Tingnan natin ang plano. Ban pa lang, kita mo na ang paghahanda ng {team}. Adjustments ang labanan.
+Tingnan natin ang plano. Ban pa lang, kita mo na ang paghahanda ng {team}. Plano muna bago laro.
+Tingnan natin ang plano. Ban pa lang, kita mo na ang paghahanda ng {team}. Ganyan ang coaching.
+Malinaw ang mensahe ng ban na yan.
+Malinaw ang mensahe ng ban na yan. Tandaan ang draft.
+Malinaw ang mensahe ng ban na yan. Preparation ang susi.
+Malinaw ang mensahe ng ban na yan. Adjustments ang labanan.
+Malinaw ang mensahe ng ban na yan. Plano muna bago laro.
+Malinaw ang mensahe ng ban na yan. Ganyan ang coaching.
+Ito ang take ko. Malinaw ang mensahe ng ban na yan.
+Ito ang take ko. Malinaw ang mensahe ng ban na yan. Tandaan ang draft.
+Ito ang take ko. Malinaw ang mensahe ng ban na yan. Preparation ang susi.
+Ito ang take ko. Malinaw ang mensahe ng ban na yan. Adjustments ang labanan.
+Ito ang take ko. Malinaw ang mensahe ng ban na yan. Plano muna bago laro.
+Ito ang take ko. Malinaw ang mensahe ng ban na yan. Ganyan ang coaching.
+Game plan check. Malinaw ang mensahe ng ban na yan.
+Game plan check. Malinaw ang mensahe ng ban na yan. Tandaan ang draft.
+Game plan check. Malinaw ang mensahe ng ban na yan. Preparation ang susi.
+Game plan check. Malinaw ang mensahe ng ban na yan. Adjustments ang labanan.
+Game plan check. Malinaw ang mensahe ng ban na yan. Plano muna bago laro.
+Game plan check. Malinaw ang mensahe ng ban na yan. Ganyan ang coaching.
+Pakinggan niyo ito. Malinaw ang mensahe ng ban na yan.
+Pakinggan niyo ito. Malinaw ang mensahe ng ban na yan. Tandaan ang draft.
+Pakinggan niyo ito. Malinaw ang mensahe ng ban na yan. Preparation ang susi.
+Pakinggan niyo ito. Malinaw ang mensahe ng ban na yan. Adjustments ang labanan.
+Pakinggan niyo ito. Malinaw ang mensahe ng ban na yan. Plano muna bago laro.
+Pakinggan niyo ito. Malinaw ang mensahe ng ban na yan. Ganyan ang coaching.
+Strategically. Malinaw ang mensahe ng ban na yan.
+Strategically. Malinaw ang mensahe ng ban na yan. Tandaan ang draft.
+Strategically. Malinaw ang mensahe ng ban na yan. Preparation ang susi.
+Strategically. Malinaw ang mensahe ng ban na yan. Adjustments ang labanan.
+Strategically. Malinaw ang mensahe ng ban na yan. Plano muna bago laro.
+Strategically. Malinaw ang mensahe ng ban na yan. Ganyan ang coaching.
+Coach mode muna tayo. Malinaw ang mensahe ng ban na yan.
+Coach mode muna tayo. Malinaw ang mensahe ng ban na yan. Tandaan ang draft.
+Coach mode muna tayo. Malinaw ang mensahe ng ban na yan. Preparation ang susi.
+Coach mode muna tayo. Malinaw ang mensahe ng ban na yan. Adjustments ang labanan.
+Coach mode muna tayo. Malinaw ang mensahe ng ban na yan. Plano muna bago laro.
+Coach mode muna tayo. Malinaw ang mensahe ng ban na yan. Ganyan ang coaching.
+Sa tingin ko. Malinaw ang mensahe ng ban na yan.
+Sa tingin ko. Malinaw ang mensahe ng ban na yan. Tandaan ang draft.
+Sa tingin ko. Malinaw ang mensahe ng ban na yan. Preparation ang susi.
+Sa tingin ko. Malinaw ang mensahe ng ban na yan. Adjustments ang labanan.
+Sa tingin ko. Malinaw ang mensahe ng ban na yan. Plano muna bago laro.
+Sa tingin ko. Malinaw ang mensahe ng ban na yan. Ganyan ang coaching.
+Tingnan natin ang plano. Malinaw ang mensahe ng ban na yan.
+Tingnan natin ang plano. Malinaw ang mensahe ng ban na yan. Tandaan ang draft.
+Tingnan natin ang plano. Malinaw ang mensahe ng ban na yan. Preparation ang susi.
+Tingnan natin ang plano. Malinaw ang mensahe ng ban na yan. Adjustments ang labanan.
+Tingnan natin ang plano. Malinaw ang mensahe ng ban na yan. Plano muna bago laro.
+Tingnan natin ang plano. Malinaw ang mensahe ng ban na yan. Ganyan ang coaching.
+Respeto sa {hero} yan.
+Respeto sa {hero} yan. Tandaan ang draft.
+Respeto sa {hero} yan. Preparation ang susi.
+Respeto sa {hero} yan. Adjustments ang labanan.
+Respeto sa {hero} yan. Plano muna bago laro.
+Respeto sa {hero} yan. Ganyan ang coaching.
+Ito ang take ko. Respeto sa {hero} yan.
+Ito ang take ko. Respeto sa {hero} yan. Tandaan ang draft.
+Ito ang take ko. Respeto sa {hero} yan. Preparation ang susi.
+Ito ang take ko. Respeto sa {hero} yan. Adjustments ang labanan.
+Ito ang take ko. Respeto sa {hero} yan. Plano muna bago laro.
+Ito ang take ko. Respeto sa {hero} yan. Ganyan ang coaching.
+Game plan check. Respeto sa {hero} yan.
+Game plan check. Respeto sa {hero} yan. Tandaan ang draft.
+Game plan check. Respeto sa {hero} yan. Preparation ang susi.
+Game plan check. Respeto sa {hero} yan. Adjustments ang labanan.
+Game plan check. Respeto sa {hero} yan. Plano muna bago laro.
+Game plan check. Respeto sa {hero} yan. Ganyan ang coaching.
+Pakinggan niyo ito. Respeto sa {hero} yan.
+Pakinggan niyo ito. Respeto sa {hero} yan. Tandaan ang draft.
+Pakinggan niyo ito. Respeto sa {hero} yan. Preparation ang susi.
+Pakinggan niyo ito. Respeto sa {hero} yan. Adjustments ang labanan.
+Pakinggan niyo ito. Respeto sa {hero} yan. Plano muna bago laro.
+Pakinggan niyo ito. Respeto sa {hero} yan. Ganyan ang coaching.
+Strategically. Respeto sa {hero} yan.
+Strategically. Respeto sa {hero} yan. Tandaan ang draft.
+Strategically. Respeto sa {hero} yan. Preparation ang susi.
+Strategically. Respeto sa {hero} yan. Adjustments ang labanan.
+Strategically. Respeto sa {hero} yan. Plano muna bago laro.
+Strategically. Respeto sa {hero} yan. Ganyan ang coaching.
+Malinaw ito. Respeto sa {hero} yan.
+Malinaw ito. Respeto sa {hero} yan. Tandaan ang draft.
+Malinaw ito. Respeto sa {hero} yan. Preparation ang susi.
+Malinaw ito. Respeto sa {hero} yan. Adjustments ang labanan.
+Malinaw ito. Respeto sa {hero} yan. Plano muna bago laro.
+Malinaw ito. Respeto sa {hero} yan. Ganyan ang coaching.
+Coach mode muna tayo. Respeto sa {hero} yan.
+Coach mode muna tayo. Respeto sa {hero} yan. Tandaan ang draft.
+Coach mode muna tayo. Respeto sa {hero} yan. Preparation ang susi.
+Coach mode muna tayo. Respeto sa {hero} yan. Adjustments ang labanan.
+Coach mode muna tayo. Respeto sa {hero} yan. Plano muna bago laro.
+Coach mode muna tayo. Respeto sa {hero} yan. Ganyan ang coaching.
+Sa tingin ko. Respeto sa {hero} yan.
+Sa tingin ko. Respeto sa {hero} yan. Tandaan ang draft.
+Sa tingin ko. Respeto sa {hero} yan. Preparation ang susi.
+Sa tingin ko. Respeto sa {hero} yan. Adjustments ang labanan.
+Sa tingin ko. Respeto sa {hero} yan. Plano muna bago laro.
+Sa tingin ko. Respeto sa {hero} yan. Ganyan ang coaching.
+Tingnan natin ang plano. Respeto sa {hero} yan.
+Tingnan natin ang plano. Respeto sa {hero} yan. Tandaan ang draft.
+Tingnan natin ang plano. Respeto sa {hero} yan. Preparation ang susi.
+Tingnan natin ang plano. Respeto sa {hero} yan. Adjustments ang labanan.
+Tingnan natin ang plano. Respeto sa {hero} yan. Plano muna bago laro.
+Tingnan natin ang plano. Respeto sa {hero} yan. Ganyan ang coaching.
+Ayaw nilang makaharap ang {hero} ngayong game.
+Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang draft.
+Ayaw nilang makaharap ang {hero} ngayong game. Preparation ang susi.
+Ayaw nilang makaharap ang {hero} ngayong game. Adjustments ang labanan.
+Ayaw nilang makaharap ang {hero} ngayong game. Plano muna bago laro.
+Ayaw nilang makaharap ang {hero} ngayong game. Ganyan ang coaching.
+Ito ang take ko. Ayaw nilang makaharap ang {hero} ngayong game.
+Ito ang take ko. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang draft.
+Ito ang take ko. Ayaw nilang makaharap ang {hero} ngayong game. Preparation ang susi.
+Ito ang take ko. Ayaw nilang makaharap ang {hero} ngayong game. Adjustments ang labanan.
+Ito ang take ko. Ayaw nilang makaharap ang {hero} ngayong game. Plano muna bago laro.
+Ito ang take ko. Ayaw nilang makaharap ang {hero} ngayong game. Ganyan ang coaching.
+Game plan check. Ayaw nilang makaharap ang {hero} ngayong game.
+Game plan check. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang draft.
+Game plan check. Ayaw nilang makaharap ang {hero} ngayong game. Preparation ang susi.
+Game plan check. Ayaw nilang makaharap ang {hero} ngayong game. Adjustments ang labanan.
+Game plan check. Ayaw nilang makaharap ang {hero} ngayong game. Plano muna bago laro.
+Game plan check. Ayaw nilang makaharap ang {hero} ngayong game. Ganyan ang coaching.
+Pakinggan niyo ito. Ayaw nilang makaharap ang {hero} ngayong game.
+Pakinggan niyo ito. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang draft.
+Pakinggan niyo ito. Ayaw nilang makaharap ang {hero} ngayong game. Preparation ang susi.
+Pakinggan niyo ito. Ayaw nilang makaharap ang {hero} ngayong game. Adjustments ang labanan.
+Pakinggan niyo ito. Ayaw nilang makaharap ang {hero} ngayong game. Plano muna bago laro.
+Pakinggan niyo ito. Ayaw nilang makaharap ang {hero} ngayong game. Ganyan ang coaching.
+Strategically. Ayaw nilang makaharap ang {hero} ngayong game.
+Strategically. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang draft.
+Strategically. Ayaw nilang makaharap ang {hero} ngayong game. Preparation ang susi.
+Strategically. Ayaw nilang makaharap ang {hero} ngayong game. Adjustments ang labanan.
+Strategically. Ayaw nilang makaharap ang {hero} ngayong game. Plano muna bago laro.
+Strategically. Ayaw nilang makaharap ang {hero} ngayong game. Ganyan ang coaching.
+Malinaw ito. Ayaw nilang makaharap ang {hero} ngayong game.
+Malinaw ito. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang draft.
+Malinaw ito. Ayaw nilang makaharap ang {hero} ngayong game. Preparation ang susi.
+Malinaw ito. Ayaw nilang makaharap ang {hero} ngayong game. Adjustments ang labanan.
+Malinaw ito. Ayaw nilang makaharap ang {hero} ngayong game. Plano muna bago laro.
+Malinaw ito. Ayaw nilang makaharap ang {hero} ngayong game. Ganyan ang coaching.
+Coach mode muna tayo. Ayaw nilang makaharap ang {hero} ngayong game.
+Coach mode muna tayo. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang draft.
+Coach mode muna tayo. Ayaw nilang makaharap ang {hero} ngayong game. Preparation ang susi.
+Coach mode muna tayo. Ayaw nilang makaharap ang {hero} ngayong game. Adjustments ang labanan.
+Coach mode muna tayo. Ayaw nilang makaharap ang {hero} ngayong game. Plano muna bago laro.
+Coach mode muna tayo. Ayaw nilang makaharap ang {hero} ngayong game. Ganyan ang coaching.
+Sa tingin ko. Ayaw nilang makaharap ang {hero} ngayong game.
+Sa tingin ko. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang draft.
+Sa tingin ko. Ayaw nilang makaharap ang {hero} ngayong game. Preparation ang susi.
+Sa tingin ko. Ayaw nilang makaharap ang {hero} ngayong game. Adjustments ang labanan.
+Sa tingin ko. Ayaw nilang makaharap ang {hero} ngayong game. Plano muna bago laro.
+Sa tingin ko. Ayaw nilang makaharap ang {hero} ngayong game. Ganyan ang coaching.
+Tingnan natin ang plano. Ayaw nilang makaharap ang {hero} ngayong game.
+Tingnan natin ang plano. Ayaw nilang makaharap ang {hero} ngayong game. Tandaan ang draft.
+Tingnan natin ang plano. Ayaw nilang makaharap ang {hero} ngayong game. Preparation ang susi.
+Tingnan natin ang plano. Ayaw nilang makaharap ang {hero} ngayong game. Adjustments ang labanan.
+Tingnan natin ang plano. Ayaw nilang makaharap ang {hero} ngayong game. Plano muna bago laro.
+Tingnan natin ang plano. Ayaw nilang makaharap ang {hero} ngayong game. Ganyan ang coaching.
+Matalinong ban, sa totoo lang.
+Matalinong ban, sa totoo lang. Tandaan ang draft.
+Matalinong ban, sa totoo lang. Preparation ang susi.
+Matalinong ban, sa totoo lang. Adjustments ang labanan.
+Matalinong ban, sa totoo lang. Plano muna bago laro.
+Matalinong ban, sa totoo lang. Ganyan ang coaching.
+Ito ang take ko. Matalinong ban, sa totoo lang.
+Ito ang take ko. Matalinong ban, sa totoo lang. Tandaan ang draft.
+Ito ang take ko. Matalinong ban, sa totoo lang. Preparation ang susi.
+Ito ang take ko. Matalinong ban, sa totoo lang. Adjustments ang labanan.
+Ito ang take ko. Matalinong ban, sa totoo lang. Plano muna bago laro.
+Ito ang take ko. Matalinong ban, sa totoo lang. Ganyan ang coaching.
+Game plan check. Matalinong ban, sa totoo lang.
+Game plan check. Matalinong ban, sa totoo lang. Tandaan ang draft.
+Game plan check. Matalinong ban, sa totoo lang. Preparation ang susi.
+Game plan check. Matalinong ban, sa totoo lang. Adjustments ang labanan.
+Game plan check. Matalinong ban, sa totoo lang. Plano muna bago laro.
+Game plan check. Matalinong ban, sa totoo lang. Ganyan ang coaching.
+Pakinggan niyo ito. Matalinong ban, sa totoo lang.
+Pakinggan niyo ito. Matalinong ban, sa totoo lang. Tandaan ang draft.
+Pakinggan niyo ito. Matalinong ban, sa totoo lang. Preparation ang susi.
+Pakinggan niyo ito. Matalinong ban, sa totoo lang. Adjustments ang labanan.
+Pakinggan niyo ito. Matalinong ban, sa totoo lang. Plano muna bago laro.
+Pakinggan niyo ito. Matalinong ban, sa totoo lang. Ganyan ang coaching.
+Strategically. Matalinong ban, sa totoo lang.
+Strategically. Matalinong ban, sa totoo lang. Tandaan ang draft.
+Strategically. Matalinong ban, sa totoo lang. Preparation ang susi.
+Strategically. Matalinong ban, sa totoo lang. Adjustments ang labanan.
+Strategically. Matalinong ban, sa totoo lang. Plano muna bago laro.
+Strategically. Matalinong ban, sa totoo lang. Ganyan ang coaching.
+Malinaw ito. Matalinong ban, sa totoo lang.
+Malinaw ito. Matalinong ban, sa totoo lang. Tandaan ang draft.
+Malinaw ito. Matalinong ban, sa totoo lang. Preparation ang susi.
+Malinaw ito. Matalinong ban, sa totoo lang. Adjustments ang labanan.
+Malinaw ito. Matalinong ban, sa totoo lang. Plano muna bago laro.
+Malinaw ito. Matalinong ban, sa totoo lang. Ganyan ang coaching.
+Coach mode muna tayo. Matalinong ban, sa totoo lang.
+Coach mode muna tayo. Matalinong ban, sa totoo lang. Tandaan ang draft.
+Coach mode muna tayo. Matalinong ban, sa totoo lang. Preparation ang susi.
+Coach mode muna tayo. Matalinong ban, sa totoo lang. Adjustments ang labanan.
+Coach mode muna tayo. Matalinong ban, sa totoo lang. Plano muna bago laro.
+Coach mode muna tayo. Matalinong ban, sa totoo lang. Ganyan ang coaching.
+Sa tingin ko. Matalinong ban, sa totoo lang.
+Sa tingin ko. Matalinong ban, sa totoo lang. Tandaan ang draft.
+Sa tingin ko. Matalinong ban, sa totoo lang. Preparation ang susi.
+Sa tingin ko. Matalinong ban, sa totoo lang. Adjustments ang labanan.
+Sa tingin ko. Matalinong ban, sa totoo lang. Plano muna bago laro.
+Sa tingin ko. Matalinong ban, sa totoo lang. Ganyan ang coaching.
+Tingnan natin ang plano. Matalinong ban, sa totoo lang.
+Tingnan natin ang plano. Matalinong ban, sa totoo lang. Tandaan ang draft.
+Tingnan natin ang plano. Matalinong ban, sa totoo lang. Preparation ang susi.
+Tingnan natin ang plano. Matalinong ban, sa totoo lang. Adjustments ang labanan.
+Tingnan natin ang plano. Matalinong ban, sa totoo lang. Plano muna bago laro.
+Tingnan natin ang plano. Matalinong ban, sa totoo lang. Ganyan ang coaching.
+Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang draft.
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Preparation ang susi.
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Adjustments ang labanan.
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Plano muna bago laro.
+Isa-isang nababawasan ang mga opsyon ng {enemy}. Ganyan ang coaching.
+Ito ang take ko. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Ito ang take ko. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang draft.
+Ito ang take ko. Isa-isang nababawasan ang mga opsyon ng {enemy}. Preparation ang susi.
+Ito ang take ko. Isa-isang nababawasan ang mga opsyon ng {enemy}. Adjustments ang labanan.
+Ito ang take ko. Isa-isang nababawasan ang mga opsyon ng {enemy}. Plano muna bago laro.
+Ito ang take ko. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ganyan ang coaching.
+Game plan check. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Game plan check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang draft.
+Game plan check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Preparation ang susi.
+Game plan check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Adjustments ang labanan.
+Game plan check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Plano muna bago laro.
+Game plan check. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ganyan ang coaching.
+Pakinggan niyo ito. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Pakinggan niyo ito. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang draft.
+Pakinggan niyo ito. Isa-isang nababawasan ang mga opsyon ng {enemy}. Preparation ang susi.
+Pakinggan niyo ito. Isa-isang nababawasan ang mga opsyon ng {enemy}. Adjustments ang labanan.
+Pakinggan niyo ito. Isa-isang nababawasan ang mga opsyon ng {enemy}. Plano muna bago laro.
+Pakinggan niyo ito. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ganyan ang coaching.
+Strategically. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Strategically. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang draft.
+Strategically. Isa-isang nababawasan ang mga opsyon ng {enemy}. Preparation ang susi.
+Strategically. Isa-isang nababawasan ang mga opsyon ng {enemy}. Adjustments ang labanan.
+Strategically. Isa-isang nababawasan ang mga opsyon ng {enemy}. Plano muna bago laro.
+Strategically. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ganyan ang coaching.
+Malinaw ito. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Malinaw ito. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang draft.
+Malinaw ito. Isa-isang nababawasan ang mga opsyon ng {enemy}. Preparation ang susi.
+Malinaw ito. Isa-isang nababawasan ang mga opsyon ng {enemy}. Adjustments ang labanan.
+Malinaw ito. Isa-isang nababawasan ang mga opsyon ng {enemy}. Plano muna bago laro.
+Malinaw ito. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ganyan ang coaching.
+Coach mode muna tayo. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Coach mode muna tayo. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang draft.
+Coach mode muna tayo. Isa-isang nababawasan ang mga opsyon ng {enemy}. Preparation ang susi.
+Coach mode muna tayo. Isa-isang nababawasan ang mga opsyon ng {enemy}. Adjustments ang labanan.
+Coach mode muna tayo. Isa-isang nababawasan ang mga opsyon ng {enemy}. Plano muna bago laro.
+Coach mode muna tayo. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ganyan ang coaching.
+Sa tingin ko. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Sa tingin ko. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang draft.
+Sa tingin ko. Isa-isang nababawasan ang mga opsyon ng {enemy}. Preparation ang susi.
+Sa tingin ko. Isa-isang nababawasan ang mga opsyon ng {enemy}. Adjustments ang labanan.
+Sa tingin ko. Isa-isang nababawasan ang mga opsyon ng {enemy}. Plano muna bago laro.
+Sa tingin ko. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ganyan ang coaching.
+Tingnan natin ang plano. Isa-isang nababawasan ang mga opsyon ng {enemy}.
+Tingnan natin ang plano. Isa-isang nababawasan ang mga opsyon ng {enemy}. Tandaan ang draft.
+Tingnan natin ang plano. Isa-isang nababawasan ang mga opsyon ng {enemy}. Preparation ang susi.
+Tingnan natin ang plano. Isa-isang nababawasan ang mga opsyon ng {enemy}. Adjustments ang labanan.
+Tingnan natin ang plano. Isa-isang nababawasan ang mga opsyon ng {enemy}. Plano muna bago laro.
+Tingnan natin ang plano. Isa-isang nababawasan ang mga opsyon ng {enemy}. Ganyan ang coaching.
+
+══════ Draft picks — 366 lines ══════
+Kung ako ang coach, masaya ako sa pick na yan.
+Kung ako ang coach, masaya ako sa pick na yan. Preparation ang susi.
+Kung ako ang coach, masaya ako sa pick na yan. Ganyan ang coaching.
+Kung ako ang coach, masaya ako sa pick na yan. Adjustments ang labanan.
+Kung ako ang coach, masaya ako sa pick na yan. Plano muna bago laro.
+Kung ako ang coach, masaya ako sa pick na yan. Tandaan ang draft.
+Okay. Kung ako ang coach, masaya ako sa pick na yan.
+Okay. Kung ako ang coach, masaya ako sa pick na yan. Preparation ang susi.
+Okay. Kung ako ang coach, masaya ako sa pick na yan. Ganyan ang coaching.
+Okay. Kung ako ang coach, masaya ako sa pick na yan. Adjustments ang labanan.
+Okay. Kung ako ang coach, masaya ako sa pick na yan. Plano muna bago laro.
+Okay. Kung ako ang coach, masaya ako sa pick na yan. Tandaan ang draft.
+Pakinggan niyo ito. Kung ako ang coach, masaya ako sa pick na yan.
+Pakinggan niyo ito. Kung ako ang coach, masaya ako sa pick na yan. Preparation ang susi.
+Pakinggan niyo ito. Kung ako ang coach, masaya ako sa pick na yan. Ganyan ang coaching.
+Pakinggan niyo ito. Kung ako ang coach, masaya ako sa pick na yan. Adjustments ang labanan.
+Pakinggan niyo ito. Kung ako ang coach, masaya ako sa pick na yan. Plano muna bago laro.
+Pakinggan niyo ito. Kung ako ang coach, masaya ako sa pick na yan. Tandaan ang draft.
+Malinaw ito. Kung ako ang coach, masaya ako sa pick na yan.
+Malinaw ito. Kung ako ang coach, masaya ako sa pick na yan. Preparation ang susi.
+Malinaw ito. Kung ako ang coach, masaya ako sa pick na yan. Ganyan ang coaching.
+Malinaw ito. Kung ako ang coach, masaya ako sa pick na yan. Adjustments ang labanan.
+Malinaw ito. Kung ako ang coach, masaya ako sa pick na yan. Plano muna bago laro.
+Malinaw ito. Kung ako ang coach, masaya ako sa pick na yan. Tandaan ang draft.
+Ito ang take ko. Kung ako ang coach, masaya ako sa pick na yan.
+Ito ang take ko. Kung ako ang coach, masaya ako sa pick na yan. Preparation ang susi.
+Ito ang take ko. Kung ako ang coach, masaya ako sa pick na yan. Ganyan ang coaching.
+Ito ang take ko. Kung ako ang coach, masaya ako sa pick na yan. Adjustments ang labanan.
+Ito ang take ko. Kung ako ang coach, masaya ako sa pick na yan. Plano muna bago laro.
+Ito ang take ko. Kung ako ang coach, masaya ako sa pick na yan. Tandaan ang draft.
+Ayan na. Kung ako ang coach, masaya ako sa pick na yan.
+Ayan na. Kung ako ang coach, masaya ako sa pick na yan. Preparation ang susi.
+Ayan na. Kung ako ang coach, masaya ako sa pick na yan. Ganyan ang coaching.
+Ayan na. Kung ako ang coach, masaya ako sa pick na yan. Adjustments ang labanan.
+Ayan na. Kung ako ang coach, masaya ako sa pick na yan. Plano muna bago laro.
+Ayan na. Kung ako ang coach, masaya ako sa pick na yan. Tandaan ang draft.
+Strategically. Kung ako ang coach, masaya ako sa pick na yan.
+Strategically. Kung ako ang coach, masaya ako sa pick na yan. Preparation ang susi.
+Strategically. Kung ako ang coach, masaya ako sa pick na yan. Ganyan ang coaching.
+Strategically. Kung ako ang coach, masaya ako sa pick na yan. Adjustments ang labanan.
+Strategically. Kung ako ang coach, masaya ako sa pick na yan. Plano muna bago laro.
+Strategically. Kung ako ang coach, masaya ako sa pick na yan. Tandaan ang draft.
+Mahalaga ito. Kung ako ang coach, masaya ako sa pick na yan.
+Mahalaga ito. Kung ako ang coach, masaya ako sa pick na yan. Preparation ang susi.
+Mahalaga ito. Kung ako ang coach, masaya ako sa pick na yan. Ganyan ang coaching.
+Mahalaga ito. Kung ako ang coach, masaya ako sa pick na yan. Adjustments ang labanan.
+Mahalaga ito. Kung ako ang coach, masaya ako sa pick na yan. Plano muna bago laro.
+Mahalaga ito. Kung ako ang coach, masaya ako sa pick na yan. Tandaan ang draft.
+Tingnan natin. Kung ako ang coach, masaya ako sa pick na yan.
+Tingnan natin. Kung ako ang coach, masaya ako sa pick na yan. Preparation ang susi.
+Tingnan natin. Kung ako ang coach, masaya ako sa pick na yan. Ganyan ang coaching.
+Tingnan natin. Kung ako ang coach, masaya ako sa pick na yan. Adjustments ang labanan.
+Tingnan natin. Kung ako ang coach, masaya ako sa pick na yan. Plano muna bago laro.
+Tingnan natin. Kung ako ang coach, masaya ako sa pick na yan. Tandaan ang draft.
+Malinaw ang win condition — at ang {hero} ang isa sa mga susi.
+Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Preparation ang susi.
+Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Ganyan ang coaching.
+Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Adjustments ang labanan.
+Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Plano muna bago laro.
+Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Tandaan ang draft.
+Okay. Malinaw ang win condition — at ang {hero} ang isa sa mga susi.
+Okay. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Preparation ang susi.
+Okay. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Ganyan ang coaching.
+Okay. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Adjustments ang labanan.
+Okay. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Plano muna bago laro.
+Okay. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Tandaan ang draft.
+Pakinggan niyo ito. Malinaw ang win condition — at ang {hero} ang isa sa mga susi.
+Pakinggan niyo ito. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Preparation ang susi.
+Pakinggan niyo ito. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Ganyan ang coaching.
+Pakinggan niyo ito. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Adjustments ang labanan.
+Pakinggan niyo ito. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Plano muna bago laro.
+Pakinggan niyo ito. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Tandaan ang draft.
+Ito ang take ko. Malinaw ang win condition — at ang {hero} ang isa sa mga susi.
+Ito ang take ko. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Preparation ang susi.
+Ito ang take ko. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Ganyan ang coaching.
+Ito ang take ko. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Adjustments ang labanan.
+Ito ang take ko. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Plano muna bago laro.
+Ito ang take ko. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Tandaan ang draft.
+Ayan na. Malinaw ang win condition — at ang {hero} ang isa sa mga susi.
+Ayan na. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Preparation ang susi.
+Ayan na. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Ganyan ang coaching.
+Ayan na. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Adjustments ang labanan.
+Ayan na. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Plano muna bago laro.
+Ayan na. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Tandaan ang draft.
+Strategically. Malinaw ang win condition — at ang {hero} ang isa sa mga susi.
+Strategically. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Preparation ang susi.
+Strategically. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Ganyan ang coaching.
+Strategically. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Adjustments ang labanan.
+Strategically. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Plano muna bago laro.
+Strategically. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Tandaan ang draft.
+Mahalaga ito. Malinaw ang win condition — at ang {hero} ang isa sa mga susi.
+Mahalaga ito. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Preparation ang susi.
+Mahalaga ito. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Ganyan ang coaching.
+Mahalaga ito. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Adjustments ang labanan.
+Mahalaga ito. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Plano muna bago laro.
+Mahalaga ito. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Tandaan ang draft.
+Tingnan natin. Malinaw ang win condition — at ang {hero} ang isa sa mga susi.
+Tingnan natin. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Preparation ang susi.
+Tingnan natin. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Ganyan ang coaching.
+Tingnan natin. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Adjustments ang labanan.
+Tingnan natin. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Plano muna bago laro.
+Tingnan natin. Malinaw ang win condition — at ang {hero} ang isa sa mga susi. Tandaan ang draft.
+Magandang pick yan para sa {team}.
+Magandang pick yan para sa {team}. Preparation ang susi.
+Magandang pick yan para sa {team}. Ganyan ang coaching.
+Magandang pick yan para sa {team}. Adjustments ang labanan.
+Magandang pick yan para sa {team}. Plano muna bago laro.
+Magandang pick yan para sa {team}. Tandaan ang draft.
+Okay. Magandang pick yan para sa {team}.
+Okay. Magandang pick yan para sa {team}. Preparation ang susi.
+Okay. Magandang pick yan para sa {team}. Ganyan ang coaching.
+Okay. Magandang pick yan para sa {team}. Adjustments ang labanan.
+Okay. Magandang pick yan para sa {team}. Plano muna bago laro.
+Okay. Magandang pick yan para sa {team}. Tandaan ang draft.
+Pakinggan niyo ito. Magandang pick yan para sa {team}.
+Pakinggan niyo ito. Magandang pick yan para sa {team}. Preparation ang susi.
+Pakinggan niyo ito. Magandang pick yan para sa {team}. Ganyan ang coaching.
+Pakinggan niyo ito. Magandang pick yan para sa {team}. Adjustments ang labanan.
+Pakinggan niyo ito. Magandang pick yan para sa {team}. Plano muna bago laro.
+Pakinggan niyo ito. Magandang pick yan para sa {team}. Tandaan ang draft.
+Malinaw ito. Magandang pick yan para sa {team}.
+Malinaw ito. Magandang pick yan para sa {team}. Preparation ang susi.
+Malinaw ito. Magandang pick yan para sa {team}. Ganyan ang coaching.
+Malinaw ito. Magandang pick yan para sa {team}. Adjustments ang labanan.
+Malinaw ito. Magandang pick yan para sa {team}. Plano muna bago laro.
+Malinaw ito. Magandang pick yan para sa {team}. Tandaan ang draft.
+Ito ang take ko. Magandang pick yan para sa {team}.
+Ito ang take ko. Magandang pick yan para sa {team}. Preparation ang susi.
+Ito ang take ko. Magandang pick yan para sa {team}. Ganyan ang coaching.
+Ito ang take ko. Magandang pick yan para sa {team}. Adjustments ang labanan.
+Ito ang take ko. Magandang pick yan para sa {team}. Plano muna bago laro.
+Ito ang take ko. Magandang pick yan para sa {team}. Tandaan ang draft.
+Ayan na. Magandang pick yan para sa {team}.
+Ayan na. Magandang pick yan para sa {team}. Preparation ang susi.
+Ayan na. Magandang pick yan para sa {team}. Ganyan ang coaching.
+Ayan na. Magandang pick yan para sa {team}. Adjustments ang labanan.
+Ayan na. Magandang pick yan para sa {team}. Plano muna bago laro.
+Ayan na. Magandang pick yan para sa {team}. Tandaan ang draft.
+Strategically. Magandang pick yan para sa {team}.
+Strategically. Magandang pick yan para sa {team}. Preparation ang susi.
+Strategically. Magandang pick yan para sa {team}. Ganyan ang coaching.
+Strategically. Magandang pick yan para sa {team}. Adjustments ang labanan.
+Strategically. Magandang pick yan para sa {team}. Plano muna bago laro.
+Strategically. Magandang pick yan para sa {team}. Tandaan ang draft.
+Mahalaga ito. Magandang pick yan para sa {team}.
+Mahalaga ito. Magandang pick yan para sa {team}. Preparation ang susi.
+Mahalaga ito. Magandang pick yan para sa {team}. Ganyan ang coaching.
+Mahalaga ito. Magandang pick yan para sa {team}. Adjustments ang labanan.
+Mahalaga ito. Magandang pick yan para sa {team}. Plano muna bago laro.
+Mahalaga ito. Magandang pick yan para sa {team}. Tandaan ang draft.
+Tingnan natin. Magandang pick yan para sa {team}.
+Tingnan natin. Magandang pick yan para sa {team}. Preparation ang susi.
+Tingnan natin. Magandang pick yan para sa {team}. Ganyan ang coaching.
+Tingnan natin. Magandang pick yan para sa {team}. Adjustments ang labanan.
+Tingnan natin. Magandang pick yan para sa {team}. Plano muna bago laro.
+Tingnan natin. Magandang pick yan para sa {team}. Tandaan ang draft.
+Abangan natin ang {hero} sa kamay ni {player}.
+Abangan natin ang {hero} sa kamay ni {player}. Preparation ang susi.
+Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang coaching.
+Abangan natin ang {hero} sa kamay ni {player}. Adjustments ang labanan.
+Abangan natin ang {hero} sa kamay ni {player}. Plano muna bago laro.
+Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang draft.
+Okay. Abangan natin ang {hero} sa kamay ni {player}.
+Okay. Abangan natin ang {hero} sa kamay ni {player}. Preparation ang susi.
+Okay. Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang coaching.
+Okay. Abangan natin ang {hero} sa kamay ni {player}. Adjustments ang labanan.
+Okay. Abangan natin ang {hero} sa kamay ni {player}. Plano muna bago laro.
+Okay. Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang draft.
+Pakinggan niyo ito. Abangan natin ang {hero} sa kamay ni {player}.
+Pakinggan niyo ito. Abangan natin ang {hero} sa kamay ni {player}. Preparation ang susi.
+Pakinggan niyo ito. Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang coaching.
+Pakinggan niyo ito. Abangan natin ang {hero} sa kamay ni {player}. Adjustments ang labanan.
+Pakinggan niyo ito. Abangan natin ang {hero} sa kamay ni {player}. Plano muna bago laro.
+Pakinggan niyo ito. Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang draft.
+Malinaw ito. Abangan natin ang {hero} sa kamay ni {player}.
+Malinaw ito. Abangan natin ang {hero} sa kamay ni {player}. Preparation ang susi.
+Malinaw ito. Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang coaching.
+Malinaw ito. Abangan natin ang {hero} sa kamay ni {player}. Adjustments ang labanan.
+Malinaw ito. Abangan natin ang {hero} sa kamay ni {player}. Plano muna bago laro.
+Malinaw ito. Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang draft.
+Ito ang take ko. Abangan natin ang {hero} sa kamay ni {player}.
+Ito ang take ko. Abangan natin ang {hero} sa kamay ni {player}. Preparation ang susi.
+Ito ang take ko. Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang coaching.
+Ito ang take ko. Abangan natin ang {hero} sa kamay ni {player}. Adjustments ang labanan.
+Ito ang take ko. Abangan natin ang {hero} sa kamay ni {player}. Plano muna bago laro.
+Ito ang take ko. Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang draft.
+Ayan na. Abangan natin ang {hero} sa kamay ni {player}.
+Ayan na. Abangan natin ang {hero} sa kamay ni {player}. Preparation ang susi.
+Ayan na. Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang coaching.
+Ayan na. Abangan natin ang {hero} sa kamay ni {player}. Adjustments ang labanan.
+Ayan na. Abangan natin ang {hero} sa kamay ni {player}. Plano muna bago laro.
+Ayan na. Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang draft.
+Strategically. Abangan natin ang {hero} sa kamay ni {player}.
+Strategically. Abangan natin ang {hero} sa kamay ni {player}. Preparation ang susi.
+Strategically. Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang coaching.
+Strategically. Abangan natin ang {hero} sa kamay ni {player}. Adjustments ang labanan.
+Strategically. Abangan natin ang {hero} sa kamay ni {player}. Plano muna bago laro.
+Strategically. Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang draft.
+Mahalaga ito. Abangan natin ang {hero} sa kamay ni {player}.
+Mahalaga ito. Abangan natin ang {hero} sa kamay ni {player}. Preparation ang susi.
+Mahalaga ito. Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang coaching.
+Mahalaga ito. Abangan natin ang {hero} sa kamay ni {player}. Adjustments ang labanan.
+Mahalaga ito. Abangan natin ang {hero} sa kamay ni {player}. Plano muna bago laro.
+Mahalaga ito. Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang draft.
+Tingnan natin. Abangan natin ang {hero} sa kamay ni {player}.
+Tingnan natin. Abangan natin ang {hero} sa kamay ni {player}. Preparation ang susi.
+Tingnan natin. Abangan natin ang {hero} sa kamay ni {player}. Ganyan ang coaching.
+Tingnan natin. Abangan natin ang {hero} sa kamay ni {player}. Adjustments ang labanan.
+Tingnan natin. Abangan natin ang {hero} sa kamay ni {player}. Plano muna bago laro.
+Tingnan natin. Abangan natin ang {hero} sa kamay ni {player}. Tandaan ang draft.
+Ayan na ang {hero}!
+Ayan na ang {hero}! Preparation ang susi.
+Ayan na ang {hero}! Ganyan ang coaching.
+Ayan na ang {hero}! Adjustments ang labanan.
+Ayan na ang {hero}! Plano muna bago laro.
+Ayan na ang {hero}! Tandaan ang draft.
+Okay. Ayan na ang {hero}!
+Okay. Ayan na ang {hero}! Preparation ang susi.
+Okay. Ayan na ang {hero}! Ganyan ang coaching.
+Okay. Ayan na ang {hero}! Adjustments ang labanan.
+Okay. Ayan na ang {hero}! Plano muna bago laro.
+Okay. Ayan na ang {hero}! Tandaan ang draft.
+Pakinggan niyo ito. Ayan na ang {hero}!
+Pakinggan niyo ito. Ayan na ang {hero}! Preparation ang susi.
+Pakinggan niyo ito. Ayan na ang {hero}! Ganyan ang coaching.
+Pakinggan niyo ito. Ayan na ang {hero}! Adjustments ang labanan.
+Pakinggan niyo ito. Ayan na ang {hero}! Plano muna bago laro.
+Pakinggan niyo ito. Ayan na ang {hero}! Tandaan ang draft.
+Malinaw ito. Ayan na ang {hero}!
+Malinaw ito. Ayan na ang {hero}! Preparation ang susi.
+Malinaw ito. Ayan na ang {hero}! Ganyan ang coaching.
+Malinaw ito. Ayan na ang {hero}! Adjustments ang labanan.
+Malinaw ito. Ayan na ang {hero}! Plano muna bago laro.
+Malinaw ito. Ayan na ang {hero}! Tandaan ang draft.
+Ito ang take ko. Ayan na ang {hero}!
+Ito ang take ko. Ayan na ang {hero}! Preparation ang susi.
+Ito ang take ko. Ayan na ang {hero}! Ganyan ang coaching.
+Ito ang take ko. Ayan na ang {hero}! Adjustments ang labanan.
+Ito ang take ko. Ayan na ang {hero}! Plano muna bago laro.
+Ito ang take ko. Ayan na ang {hero}! Tandaan ang draft.
+Strategically. Ayan na ang {hero}!
+Strategically. Ayan na ang {hero}! Preparation ang susi.
+Strategically. Ayan na ang {hero}! Ganyan ang coaching.
+Strategically. Ayan na ang {hero}! Adjustments ang labanan.
+Strategically. Ayan na ang {hero}! Plano muna bago laro.
+Strategically. Ayan na ang {hero}! Tandaan ang draft.
+Mahalaga ito. Ayan na ang {hero}!
+Mahalaga ito. Ayan na ang {hero}! Preparation ang susi.
+Mahalaga ito. Ayan na ang {hero}! Ganyan ang coaching.
+Mahalaga ito. Ayan na ang {hero}! Adjustments ang labanan.
+Mahalaga ito. Ayan na ang {hero}! Plano muna bago laro.
+Mahalaga ito. Ayan na ang {hero}! Tandaan ang draft.
+Tingnan natin. Ayan na ang {hero}!
+Tingnan natin. Ayan na ang {hero}! Preparation ang susi.
+Tingnan natin. Ayan na ang {hero}! Ganyan ang coaching.
+Tingnan natin. Ayan na ang {hero}! Adjustments ang labanan.
+Tingnan natin. Ayan na ang {hero}! Plano muna bago laro.
+Tingnan natin. Ayan na ang {hero}! Tandaan ang draft.
+Unti-unting nabubuo ang lineup ng {team}.
+Unti-unting nabubuo ang lineup ng {team}. Preparation ang susi.
+Unti-unting nabubuo ang lineup ng {team}. Ganyan ang coaching.
+Unti-unting nabubuo ang lineup ng {team}. Adjustments ang labanan.
+Unti-unting nabubuo ang lineup ng {team}. Plano muna bago laro.
+Unti-unting nabubuo ang lineup ng {team}. Tandaan ang draft.
+Okay. Unti-unting nabubuo ang lineup ng {team}.
+Okay. Unti-unting nabubuo ang lineup ng {team}. Preparation ang susi.
+Okay. Unti-unting nabubuo ang lineup ng {team}. Ganyan ang coaching.
+Okay. Unti-unting nabubuo ang lineup ng {team}. Adjustments ang labanan.
+Okay. Unti-unting nabubuo ang lineup ng {team}. Plano muna bago laro.
+Okay. Unti-unting nabubuo ang lineup ng {team}. Tandaan ang draft.
+Pakinggan niyo ito. Unti-unting nabubuo ang lineup ng {team}.
+Pakinggan niyo ito. Unti-unting nabubuo ang lineup ng {team}. Preparation ang susi.
+Pakinggan niyo ito. Unti-unting nabubuo ang lineup ng {team}. Ganyan ang coaching.
+Pakinggan niyo ito. Unti-unting nabubuo ang lineup ng {team}. Adjustments ang labanan.
+Pakinggan niyo ito. Unti-unting nabubuo ang lineup ng {team}. Plano muna bago laro.
+Pakinggan niyo ito. Unti-unting nabubuo ang lineup ng {team}. Tandaan ang draft.
+Malinaw ito. Unti-unting nabubuo ang lineup ng {team}.
+Malinaw ito. Unti-unting nabubuo ang lineup ng {team}. Preparation ang susi.
+Malinaw ito. Unti-unting nabubuo ang lineup ng {team}. Ganyan ang coaching.
+Malinaw ito. Unti-unting nabubuo ang lineup ng {team}. Adjustments ang labanan.
+Malinaw ito. Unti-unting nabubuo ang lineup ng {team}. Plano muna bago laro.
+Malinaw ito. Unti-unting nabubuo ang lineup ng {team}. Tandaan ang draft.
+Ito ang take ko. Unti-unting nabubuo ang lineup ng {team}.
+Ito ang take ko. Unti-unting nabubuo ang lineup ng {team}. Preparation ang susi.
+Ito ang take ko. Unti-unting nabubuo ang lineup ng {team}. Ganyan ang coaching.
+Ito ang take ko. Unti-unting nabubuo ang lineup ng {team}. Adjustments ang labanan.
+Ito ang take ko. Unti-unting nabubuo ang lineup ng {team}. Plano muna bago laro.
+Ito ang take ko. Unti-unting nabubuo ang lineup ng {team}. Tandaan ang draft.
+Ayan na. Unti-unting nabubuo ang lineup ng {team}.
+Ayan na. Unti-unting nabubuo ang lineup ng {team}. Preparation ang susi.
+Ayan na. Unti-unting nabubuo ang lineup ng {team}. Ganyan ang coaching.
+Ayan na. Unti-unting nabubuo ang lineup ng {team}. Adjustments ang labanan.
+Ayan na. Unti-unting nabubuo ang lineup ng {team}. Plano muna bago laro.
+Ayan na. Unti-unting nabubuo ang lineup ng {team}. Tandaan ang draft.
+Strategically. Unti-unting nabubuo ang lineup ng {team}.
+Strategically. Unti-unting nabubuo ang lineup ng {team}. Preparation ang susi.
+Strategically. Unti-unting nabubuo ang lineup ng {team}. Ganyan ang coaching.
+Strategically. Unti-unting nabubuo ang lineup ng {team}. Adjustments ang labanan.
+Strategically. Unti-unting nabubuo ang lineup ng {team}. Plano muna bago laro.
+Strategically. Unti-unting nabubuo ang lineup ng {team}. Tandaan ang draft.
+Mahalaga ito. Unti-unting nabubuo ang lineup ng {team}.
+Mahalaga ito. Unti-unting nabubuo ang lineup ng {team}. Preparation ang susi.
+Mahalaga ito. Unti-unting nabubuo ang lineup ng {team}. Ganyan ang coaching.
+Mahalaga ito. Unti-unting nabubuo ang lineup ng {team}. Adjustments ang labanan.
+Mahalaga ito. Unti-unting nabubuo ang lineup ng {team}. Plano muna bago laro.
+Mahalaga ito. Unti-unting nabubuo ang lineup ng {team}. Tandaan ang draft.
+Tingnan natin. Unti-unting nabubuo ang lineup ng {team}.
+Tingnan natin. Unti-unting nabubuo ang lineup ng {team}. Preparation ang susi.
+Tingnan natin. Unti-unting nabubuo ang lineup ng {team}. Ganyan ang coaching.
+Tingnan natin. Unti-unting nabubuo ang lineup ng {team}. Adjustments ang labanan.
+Tingnan natin. Unti-unting nabubuo ang lineup ng {team}. Plano muna bago laro.
+Tingnan natin. Unti-unting nabubuo ang lineup ng {team}. Tandaan ang draft.
+Malakas na {heroClass} ang {hero} sa ganitong draft.
+Malakas na {heroClass} ang {hero} sa ganitong draft. Preparation ang susi.
+Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang coaching.
+Malakas na {heroClass} ang {hero} sa ganitong draft. Adjustments ang labanan.
+Malakas na {heroClass} ang {hero} sa ganitong draft. Plano muna bago laro.
+Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang draft.
+Okay. Malakas na {heroClass} ang {hero} sa ganitong draft.
+Okay. Malakas na {heroClass} ang {hero} sa ganitong draft. Preparation ang susi.
+Okay. Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang coaching.
+Okay. Malakas na {heroClass} ang {hero} sa ganitong draft. Adjustments ang labanan.
+Okay. Malakas na {heroClass} ang {hero} sa ganitong draft. Plano muna bago laro.
+Okay. Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang draft.
+Pakinggan niyo ito. Malakas na {heroClass} ang {hero} sa ganitong draft.
+Pakinggan niyo ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Preparation ang susi.
+Pakinggan niyo ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang coaching.
+Pakinggan niyo ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Adjustments ang labanan.
+Pakinggan niyo ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Plano muna bago laro.
+Pakinggan niyo ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang draft.
+Malinaw ito. Malakas na {heroClass} ang {hero} sa ganitong draft.
+Malinaw ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Preparation ang susi.
+Malinaw ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang coaching.
+Malinaw ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Adjustments ang labanan.
+Malinaw ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Plano muna bago laro.
+Malinaw ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang draft.
+Ito ang take ko. Malakas na {heroClass} ang {hero} sa ganitong draft.
+Ito ang take ko. Malakas na {heroClass} ang {hero} sa ganitong draft. Preparation ang susi.
+Ito ang take ko. Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang coaching.
+Ito ang take ko. Malakas na {heroClass} ang {hero} sa ganitong draft. Adjustments ang labanan.
+Ito ang take ko. Malakas na {heroClass} ang {hero} sa ganitong draft. Plano muna bago laro.
+Ito ang take ko. Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang draft.
+Ayan na. Malakas na {heroClass} ang {hero} sa ganitong draft.
+Ayan na. Malakas na {heroClass} ang {hero} sa ganitong draft. Preparation ang susi.
+Ayan na. Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang coaching.
+Ayan na. Malakas na {heroClass} ang {hero} sa ganitong draft. Adjustments ang labanan.
+Ayan na. Malakas na {heroClass} ang {hero} sa ganitong draft. Plano muna bago laro.
+Ayan na. Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang draft.
+Strategically. Malakas na {heroClass} ang {hero} sa ganitong draft.
+Strategically. Malakas na {heroClass} ang {hero} sa ganitong draft. Preparation ang susi.
+Strategically. Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang coaching.
+Strategically. Malakas na {heroClass} ang {hero} sa ganitong draft. Adjustments ang labanan.
+Strategically. Malakas na {heroClass} ang {hero} sa ganitong draft. Plano muna bago laro.
+Strategically. Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang draft.
+Mahalaga ito. Malakas na {heroClass} ang {hero} sa ganitong draft.
+Mahalaga ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Preparation ang susi.
+Mahalaga ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang coaching.
+Mahalaga ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Adjustments ang labanan.
+Mahalaga ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Plano muna bago laro.
+Mahalaga ito. Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang draft.
+Tingnan natin. Malakas na {heroClass} ang {hero} sa ganitong draft.
+Tingnan natin. Malakas na {heroClass} ang {hero} sa ganitong draft. Preparation ang susi.
+Tingnan natin. Malakas na {heroClass} ang {hero} sa ganitong draft. Ganyan ang coaching.
+Tingnan natin. Malakas na {heroClass} ang {hero} sa ganitong draft. Adjustments ang labanan.
+Tingnan natin. Malakas na {heroClass} ang {hero} sa ganitong draft. Plano muna bago laro.
+Tingnan natin. Malakas na {heroClass} ang {hero} sa ganitong draft. Tandaan ang draft.
+
+══════ Draft talk (speculation & story) — 378 lines ══════
+Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup?
+Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Tandaan ang draft.
+Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Preparation ang susi.
+Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Adjustments ang labanan.
+Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Plano muna bago laro.
+Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Ganyan ang coaching.
+Ito ang take ko. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup?
+Ito ang take ko. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Tandaan ang draft.
+Ito ang take ko. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Preparation ang susi.
+Ito ang take ko. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Adjustments ang labanan.
+Ito ang take ko. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Plano muna bago laro.
+Ito ang take ko. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Ganyan ang coaching.
+Game plan check. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup?
+Game plan check. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Tandaan ang draft.
+Game plan check. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Preparation ang susi.
+Game plan check. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Adjustments ang labanan.
+Game plan check. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Plano muna bago laro.
+Game plan check. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Ganyan ang coaching.
+Pakinggan niyo ito. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup?
+Pakinggan niyo ito. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Tandaan ang draft.
+Pakinggan niyo ito. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Preparation ang susi.
+Pakinggan niyo ito. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Adjustments ang labanan.
+Pakinggan niyo ito. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Plano muna bago laro.
+Pakinggan niyo ito. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Ganyan ang coaching.
+Strategically. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup?
+Strategically. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Tandaan ang draft.
+Strategically. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Preparation ang susi.
+Strategically. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Adjustments ang labanan.
+Strategically. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Plano muna bago laro.
+Strategically. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Ganyan ang coaching.
+Malinaw ito. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup?
+Malinaw ito. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Tandaan ang draft.
+Malinaw ito. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Preparation ang susi.
+Malinaw ito. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Adjustments ang labanan.
+Malinaw ito. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Plano muna bago laro.
+Malinaw ito. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Ganyan ang coaching.
+Coach mode muna tayo. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup?
+Coach mode muna tayo. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Tandaan ang draft.
+Coach mode muna tayo. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Preparation ang susi.
+Coach mode muna tayo. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Adjustments ang labanan.
+Coach mode muna tayo. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Plano muna bago laro.
+Coach mode muna tayo. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Ganyan ang coaching.
+Sa tingin ko. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup?
+Sa tingin ko. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Tandaan ang draft.
+Sa tingin ko. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Preparation ang susi.
+Sa tingin ko. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Adjustments ang labanan.
+Sa tingin ko. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Plano muna bago laro.
+Sa tingin ko. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Ganyan ang coaching.
+Tingnan natin ang plano. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup?
+Tingnan natin ang plano. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Tandaan ang draft.
+Tingnan natin ang plano. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Preparation ang susi.
+Tingnan natin ang plano. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Adjustments ang labanan.
+Tingnan natin ang plano. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Plano muna bago laro.
+Tingnan natin ang plano. Kung ako ang coach, ang tanong ko ngayon: ano ang kulang sa lineup? Ganyan ang coaching.
+Draft pa lang, kalahati na ng laban — tandaan niyo yan.
+Draft pa lang, kalahati na ng laban — tandaan niyo yan. Tandaan ang draft.
+Draft pa lang, kalahati na ng laban — tandaan niyo yan. Preparation ang susi.
+Draft pa lang, kalahati na ng laban — tandaan niyo yan. Adjustments ang labanan.
+Draft pa lang, kalahati na ng laban — tandaan niyo yan. Plano muna bago laro.
+Draft pa lang, kalahati na ng laban — tandaan niyo yan. Ganyan ang coaching.
+Ito ang take ko. Draft pa lang, kalahati na ng laban — tandaan niyo yan.
+Ito ang take ko. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Tandaan ang draft.
+Ito ang take ko. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Preparation ang susi.
+Ito ang take ko. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Adjustments ang labanan.
+Ito ang take ko. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Plano muna bago laro.
+Ito ang take ko. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Ganyan ang coaching.
+Game plan check. Draft pa lang, kalahati na ng laban — tandaan niyo yan.
+Game plan check. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Tandaan ang draft.
+Game plan check. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Preparation ang susi.
+Game plan check. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Adjustments ang labanan.
+Game plan check. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Plano muna bago laro.
+Game plan check. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Ganyan ang coaching.
+Pakinggan niyo ito. Draft pa lang, kalahati na ng laban — tandaan niyo yan.
+Pakinggan niyo ito. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Tandaan ang draft.
+Pakinggan niyo ito. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Preparation ang susi.
+Pakinggan niyo ito. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Adjustments ang labanan.
+Pakinggan niyo ito. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Plano muna bago laro.
+Pakinggan niyo ito. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Ganyan ang coaching.
+Strategically. Draft pa lang, kalahati na ng laban — tandaan niyo yan.
+Strategically. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Tandaan ang draft.
+Strategically. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Preparation ang susi.
+Strategically. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Adjustments ang labanan.
+Strategically. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Plano muna bago laro.
+Strategically. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Ganyan ang coaching.
+Malinaw ito. Draft pa lang, kalahati na ng laban — tandaan niyo yan.
+Malinaw ito. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Tandaan ang draft.
+Malinaw ito. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Preparation ang susi.
+Malinaw ito. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Adjustments ang labanan.
+Malinaw ito. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Plano muna bago laro.
+Malinaw ito. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Ganyan ang coaching.
+Coach mode muna tayo. Draft pa lang, kalahati na ng laban — tandaan niyo yan.
+Coach mode muna tayo. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Tandaan ang draft.
+Coach mode muna tayo. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Preparation ang susi.
+Coach mode muna tayo. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Adjustments ang labanan.
+Coach mode muna tayo. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Plano muna bago laro.
+Coach mode muna tayo. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Ganyan ang coaching.
+Sa tingin ko. Draft pa lang, kalahati na ng laban — tandaan niyo yan.
+Sa tingin ko. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Tandaan ang draft.
+Sa tingin ko. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Preparation ang susi.
+Sa tingin ko. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Adjustments ang labanan.
+Sa tingin ko. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Plano muna bago laro.
+Sa tingin ko. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Ganyan ang coaching.
+Tingnan natin ang plano. Draft pa lang, kalahati na ng laban — tandaan niyo yan.
+Tingnan natin ang plano. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Tandaan ang draft.
+Tingnan natin ang plano. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Preparation ang susi.
+Tingnan natin ang plano. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Adjustments ang labanan.
+Tingnan natin ang plano. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Plano muna bago laro.
+Tingnan natin ang plano. Draft pa lang, kalahati na ng laban — tandaan niyo yan. Ganyan ang coaching.
+Mainit ang draft ngayong Game {gameNumber}.
+Mainit ang draft ngayong Game {gameNumber}. Tandaan ang draft.
+Mainit ang draft ngayong Game {gameNumber}. Preparation ang susi.
+Mainit ang draft ngayong Game {gameNumber}. Adjustments ang labanan.
+Mainit ang draft ngayong Game {gameNumber}. Plano muna bago laro.
+Mainit ang draft ngayong Game {gameNumber}. Ganyan ang coaching.
+Ito ang take ko. Mainit ang draft ngayong Game {gameNumber}.
+Ito ang take ko. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang draft.
+Ito ang take ko. Mainit ang draft ngayong Game {gameNumber}. Preparation ang susi.
+Ito ang take ko. Mainit ang draft ngayong Game {gameNumber}. Adjustments ang labanan.
+Ito ang take ko. Mainit ang draft ngayong Game {gameNumber}. Plano muna bago laro.
+Ito ang take ko. Mainit ang draft ngayong Game {gameNumber}. Ganyan ang coaching.
+Game plan check. Mainit ang draft ngayong Game {gameNumber}.
+Game plan check. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang draft.
+Game plan check. Mainit ang draft ngayong Game {gameNumber}. Preparation ang susi.
+Game plan check. Mainit ang draft ngayong Game {gameNumber}. Adjustments ang labanan.
+Game plan check. Mainit ang draft ngayong Game {gameNumber}. Plano muna bago laro.
+Game plan check. Mainit ang draft ngayong Game {gameNumber}. Ganyan ang coaching.
+Pakinggan niyo ito. Mainit ang draft ngayong Game {gameNumber}.
+Pakinggan niyo ito. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang draft.
+Pakinggan niyo ito. Mainit ang draft ngayong Game {gameNumber}. Preparation ang susi.
+Pakinggan niyo ito. Mainit ang draft ngayong Game {gameNumber}. Adjustments ang labanan.
+Pakinggan niyo ito. Mainit ang draft ngayong Game {gameNumber}. Plano muna bago laro.
+Pakinggan niyo ito. Mainit ang draft ngayong Game {gameNumber}. Ganyan ang coaching.
+Strategically. Mainit ang draft ngayong Game {gameNumber}.
+Strategically. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang draft.
+Strategically. Mainit ang draft ngayong Game {gameNumber}. Preparation ang susi.
+Strategically. Mainit ang draft ngayong Game {gameNumber}. Adjustments ang labanan.
+Strategically. Mainit ang draft ngayong Game {gameNumber}. Plano muna bago laro.
+Strategically. Mainit ang draft ngayong Game {gameNumber}. Ganyan ang coaching.
+Malinaw ito. Mainit ang draft ngayong Game {gameNumber}.
+Malinaw ito. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang draft.
+Malinaw ito. Mainit ang draft ngayong Game {gameNumber}. Preparation ang susi.
+Malinaw ito. Mainit ang draft ngayong Game {gameNumber}. Adjustments ang labanan.
+Malinaw ito. Mainit ang draft ngayong Game {gameNumber}. Plano muna bago laro.
+Malinaw ito. Mainit ang draft ngayong Game {gameNumber}. Ganyan ang coaching.
+Coach mode muna tayo. Mainit ang draft ngayong Game {gameNumber}.
+Coach mode muna tayo. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang draft.
+Coach mode muna tayo. Mainit ang draft ngayong Game {gameNumber}. Preparation ang susi.
+Coach mode muna tayo. Mainit ang draft ngayong Game {gameNumber}. Adjustments ang labanan.
+Coach mode muna tayo. Mainit ang draft ngayong Game {gameNumber}. Plano muna bago laro.
+Coach mode muna tayo. Mainit ang draft ngayong Game {gameNumber}. Ganyan ang coaching.
+Sa tingin ko. Mainit ang draft ngayong Game {gameNumber}.
+Sa tingin ko. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang draft.
+Sa tingin ko. Mainit ang draft ngayong Game {gameNumber}. Preparation ang susi.
+Sa tingin ko. Mainit ang draft ngayong Game {gameNumber}. Adjustments ang labanan.
+Sa tingin ko. Mainit ang draft ngayong Game {gameNumber}. Plano muna bago laro.
+Sa tingin ko. Mainit ang draft ngayong Game {gameNumber}. Ganyan ang coaching.
+Tingnan natin ang plano. Mainit ang draft ngayong Game {gameNumber}.
+Tingnan natin ang plano. Mainit ang draft ngayong Game {gameNumber}. Tandaan ang draft.
+Tingnan natin ang plano. Mainit ang draft ngayong Game {gameNumber}. Preparation ang susi.
+Tingnan natin ang plano. Mainit ang draft ngayong Game {gameNumber}. Adjustments ang labanan.
+Tingnan natin ang plano. Mainit ang draft ngayong Game {gameNumber}. Plano muna bago laro.
+Tingnan natin ang plano. Mainit ang draft ngayong Game {gameNumber}. Ganyan ang coaching.
+Bawat pick at ban, may dahilan.
+Bawat pick at ban, may dahilan. Tandaan ang draft.
+Bawat pick at ban, may dahilan. Preparation ang susi.
+Bawat pick at ban, may dahilan. Adjustments ang labanan.
+Bawat pick at ban, may dahilan. Plano muna bago laro.
+Bawat pick at ban, may dahilan. Ganyan ang coaching.
+Ito ang take ko. Bawat pick at ban, may dahilan.
+Ito ang take ko. Bawat pick at ban, may dahilan. Tandaan ang draft.
+Ito ang take ko. Bawat pick at ban, may dahilan. Preparation ang susi.
+Ito ang take ko. Bawat pick at ban, may dahilan. Adjustments ang labanan.
+Ito ang take ko. Bawat pick at ban, may dahilan. Plano muna bago laro.
+Ito ang take ko. Bawat pick at ban, may dahilan. Ganyan ang coaching.
+Game plan check. Bawat pick at ban, may dahilan.
+Game plan check. Bawat pick at ban, may dahilan. Tandaan ang draft.
+Game plan check. Bawat pick at ban, may dahilan. Preparation ang susi.
+Game plan check. Bawat pick at ban, may dahilan. Adjustments ang labanan.
+Game plan check. Bawat pick at ban, may dahilan. Plano muna bago laro.
+Game plan check. Bawat pick at ban, may dahilan. Ganyan ang coaching.
+Pakinggan niyo ito. Bawat pick at ban, may dahilan.
+Pakinggan niyo ito. Bawat pick at ban, may dahilan. Tandaan ang draft.
+Pakinggan niyo ito. Bawat pick at ban, may dahilan. Preparation ang susi.
+Pakinggan niyo ito. Bawat pick at ban, may dahilan. Adjustments ang labanan.
+Pakinggan niyo ito. Bawat pick at ban, may dahilan. Plano muna bago laro.
+Pakinggan niyo ito. Bawat pick at ban, may dahilan. Ganyan ang coaching.
+Strategically. Bawat pick at ban, may dahilan.
+Strategically. Bawat pick at ban, may dahilan. Tandaan ang draft.
+Strategically. Bawat pick at ban, may dahilan. Preparation ang susi.
+Strategically. Bawat pick at ban, may dahilan. Adjustments ang labanan.
+Strategically. Bawat pick at ban, may dahilan. Plano muna bago laro.
+Strategically. Bawat pick at ban, may dahilan. Ganyan ang coaching.
+Malinaw ito. Bawat pick at ban, may dahilan.
+Malinaw ito. Bawat pick at ban, may dahilan. Tandaan ang draft.
+Malinaw ito. Bawat pick at ban, may dahilan. Preparation ang susi.
+Malinaw ito. Bawat pick at ban, may dahilan. Adjustments ang labanan.
+Malinaw ito. Bawat pick at ban, may dahilan. Plano muna bago laro.
+Malinaw ito. Bawat pick at ban, may dahilan. Ganyan ang coaching.
+Coach mode muna tayo. Bawat pick at ban, may dahilan.
+Coach mode muna tayo. Bawat pick at ban, may dahilan. Tandaan ang draft.
+Coach mode muna tayo. Bawat pick at ban, may dahilan. Preparation ang susi.
+Coach mode muna tayo. Bawat pick at ban, may dahilan. Adjustments ang labanan.
+Coach mode muna tayo. Bawat pick at ban, may dahilan. Plano muna bago laro.
+Coach mode muna tayo. Bawat pick at ban, may dahilan. Ganyan ang coaching.
+Sa tingin ko. Bawat pick at ban, may dahilan.
+Sa tingin ko. Bawat pick at ban, may dahilan. Tandaan ang draft.
+Sa tingin ko. Bawat pick at ban, may dahilan. Preparation ang susi.
+Sa tingin ko. Bawat pick at ban, may dahilan. Adjustments ang labanan.
+Sa tingin ko. Bawat pick at ban, may dahilan. Plano muna bago laro.
+Sa tingin ko. Bawat pick at ban, may dahilan. Ganyan ang coaching.
+Tingnan natin ang plano. Bawat pick at ban, may dahilan.
+Tingnan natin ang plano. Bawat pick at ban, may dahilan. Tandaan ang draft.
+Tingnan natin ang plano. Bawat pick at ban, may dahilan. Preparation ang susi.
+Tingnan natin ang plano. Bawat pick at ban, may dahilan. Adjustments ang labanan.
+Tingnan natin ang plano. Bawat pick at ban, may dahilan. Plano muna bago laro.
+Tingnan natin ang plano. Bawat pick at ban, may dahilan. Ganyan ang coaching.
+Abangan natin ang susunod na desisyon.
+Abangan natin ang susunod na desisyon. Tandaan ang draft.
+Abangan natin ang susunod na desisyon. Preparation ang susi.
+Abangan natin ang susunod na desisyon. Adjustments ang labanan.
+Abangan natin ang susunod na desisyon. Plano muna bago laro.
+Abangan natin ang susunod na desisyon. Ganyan ang coaching.
+Ito ang take ko. Abangan natin ang susunod na desisyon.
+Ito ang take ko. Abangan natin ang susunod na desisyon. Tandaan ang draft.
+Ito ang take ko. Abangan natin ang susunod na desisyon. Preparation ang susi.
+Ito ang take ko. Abangan natin ang susunod na desisyon. Adjustments ang labanan.
+Ito ang take ko. Abangan natin ang susunod na desisyon. Plano muna bago laro.
+Ito ang take ko. Abangan natin ang susunod na desisyon. Ganyan ang coaching.
+Game plan check. Abangan natin ang susunod na desisyon.
+Game plan check. Abangan natin ang susunod na desisyon. Tandaan ang draft.
+Game plan check. Abangan natin ang susunod na desisyon. Preparation ang susi.
+Game plan check. Abangan natin ang susunod na desisyon. Adjustments ang labanan.
+Game plan check. Abangan natin ang susunod na desisyon. Plano muna bago laro.
+Game plan check. Abangan natin ang susunod na desisyon. Ganyan ang coaching.
+Pakinggan niyo ito. Abangan natin ang susunod na desisyon.
+Pakinggan niyo ito. Abangan natin ang susunod na desisyon. Tandaan ang draft.
+Pakinggan niyo ito. Abangan natin ang susunod na desisyon. Preparation ang susi.
+Pakinggan niyo ito. Abangan natin ang susunod na desisyon. Adjustments ang labanan.
+Pakinggan niyo ito. Abangan natin ang susunod na desisyon. Plano muna bago laro.
+Pakinggan niyo ito. Abangan natin ang susunod na desisyon. Ganyan ang coaching.
+Strategically. Abangan natin ang susunod na desisyon.
+Strategically. Abangan natin ang susunod na desisyon. Tandaan ang draft.
+Strategically. Abangan natin ang susunod na desisyon. Preparation ang susi.
+Strategically. Abangan natin ang susunod na desisyon. Adjustments ang labanan.
+Strategically. Abangan natin ang susunod na desisyon. Plano muna bago laro.
+Strategically. Abangan natin ang susunod na desisyon. Ganyan ang coaching.
+Malinaw ito. Abangan natin ang susunod na desisyon.
+Malinaw ito. Abangan natin ang susunod na desisyon. Tandaan ang draft.
+Malinaw ito. Abangan natin ang susunod na desisyon. Preparation ang susi.
+Malinaw ito. Abangan natin ang susunod na desisyon. Adjustments ang labanan.
+Malinaw ito. Abangan natin ang susunod na desisyon. Plano muna bago laro.
+Malinaw ito. Abangan natin ang susunod na desisyon. Ganyan ang coaching.
+Coach mode muna tayo. Abangan natin ang susunod na desisyon.
+Coach mode muna tayo. Abangan natin ang susunod na desisyon. Tandaan ang draft.
+Coach mode muna tayo. Abangan natin ang susunod na desisyon. Preparation ang susi.
+Coach mode muna tayo. Abangan natin ang susunod na desisyon. Adjustments ang labanan.
+Coach mode muna tayo. Abangan natin ang susunod na desisyon. Plano muna bago laro.
+Coach mode muna tayo. Abangan natin ang susunod na desisyon. Ganyan ang coaching.
+Sa tingin ko. Abangan natin ang susunod na desisyon.
+Sa tingin ko. Abangan natin ang susunod na desisyon. Tandaan ang draft.
+Sa tingin ko. Abangan natin ang susunod na desisyon. Preparation ang susi.
+Sa tingin ko. Abangan natin ang susunod na desisyon. Adjustments ang labanan.
+Sa tingin ko. Abangan natin ang susunod na desisyon. Plano muna bago laro.
+Sa tingin ko. Abangan natin ang susunod na desisyon. Ganyan ang coaching.
+Tingnan natin ang plano. Abangan natin ang susunod na desisyon.
+Tingnan natin ang plano. Abangan natin ang susunod na desisyon. Tandaan ang draft.
+Tingnan natin ang plano. Abangan natin ang susunod na desisyon. Preparation ang susi.
+Tingnan natin ang plano. Abangan natin ang susunod na desisyon. Adjustments ang labanan.
+Tingnan natin ang plano. Abangan natin ang susunod na desisyon. Plano muna bago laro.
+Tingnan natin ang plano. Abangan natin ang susunod na desisyon. Ganyan ang coaching.
+Paunti nang paunti ang mga hero na natitira.
+Paunti nang paunti ang mga hero na natitira. Tandaan ang draft.
+Paunti nang paunti ang mga hero na natitira. Preparation ang susi.
+Paunti nang paunti ang mga hero na natitira. Adjustments ang labanan.
+Paunti nang paunti ang mga hero na natitira. Plano muna bago laro.
+Paunti nang paunti ang mga hero na natitira. Ganyan ang coaching.
+Ito ang take ko. Paunti nang paunti ang mga hero na natitira.
+Ito ang take ko. Paunti nang paunti ang mga hero na natitira. Tandaan ang draft.
+Ito ang take ko. Paunti nang paunti ang mga hero na natitira. Preparation ang susi.
+Ito ang take ko. Paunti nang paunti ang mga hero na natitira. Adjustments ang labanan.
+Ito ang take ko. Paunti nang paunti ang mga hero na natitira. Plano muna bago laro.
+Ito ang take ko. Paunti nang paunti ang mga hero na natitira. Ganyan ang coaching.
+Game plan check. Paunti nang paunti ang mga hero na natitira.
+Game plan check. Paunti nang paunti ang mga hero na natitira. Tandaan ang draft.
+Game plan check. Paunti nang paunti ang mga hero na natitira. Preparation ang susi.
+Game plan check. Paunti nang paunti ang mga hero na natitira. Adjustments ang labanan.
+Game plan check. Paunti nang paunti ang mga hero na natitira. Plano muna bago laro.
+Game plan check. Paunti nang paunti ang mga hero na natitira. Ganyan ang coaching.
+Pakinggan niyo ito. Paunti nang paunti ang mga hero na natitira.
+Pakinggan niyo ito. Paunti nang paunti ang mga hero na natitira. Tandaan ang draft.
+Pakinggan niyo ito. Paunti nang paunti ang mga hero na natitira. Preparation ang susi.
+Pakinggan niyo ito. Paunti nang paunti ang mga hero na natitira. Adjustments ang labanan.
+Pakinggan niyo ito. Paunti nang paunti ang mga hero na natitira. Plano muna bago laro.
+Pakinggan niyo ito. Paunti nang paunti ang mga hero na natitira. Ganyan ang coaching.
+Strategically. Paunti nang paunti ang mga hero na natitira.
+Strategically. Paunti nang paunti ang mga hero na natitira. Tandaan ang draft.
+Strategically. Paunti nang paunti ang mga hero na natitira. Preparation ang susi.
+Strategically. Paunti nang paunti ang mga hero na natitira. Adjustments ang labanan.
+Strategically. Paunti nang paunti ang mga hero na natitira. Plano muna bago laro.
+Strategically. Paunti nang paunti ang mga hero na natitira. Ganyan ang coaching.
+Malinaw ito. Paunti nang paunti ang mga hero na natitira.
+Malinaw ito. Paunti nang paunti ang mga hero na natitira. Tandaan ang draft.
+Malinaw ito. Paunti nang paunti ang mga hero na natitira. Preparation ang susi.
+Malinaw ito. Paunti nang paunti ang mga hero na natitira. Adjustments ang labanan.
+Malinaw ito. Paunti nang paunti ang mga hero na natitira. Plano muna bago laro.
+Malinaw ito. Paunti nang paunti ang mga hero na natitira. Ganyan ang coaching.
+Coach mode muna tayo. Paunti nang paunti ang mga hero na natitira.
+Coach mode muna tayo. Paunti nang paunti ang mga hero na natitira. Tandaan ang draft.
+Coach mode muna tayo. Paunti nang paunti ang mga hero na natitira. Preparation ang susi.
+Coach mode muna tayo. Paunti nang paunti ang mga hero na natitira. Adjustments ang labanan.
+Coach mode muna tayo. Paunti nang paunti ang mga hero na natitira. Plano muna bago laro.
+Coach mode muna tayo. Paunti nang paunti ang mga hero na natitira. Ganyan ang coaching.
+Sa tingin ko. Paunti nang paunti ang mga hero na natitira.
+Sa tingin ko. Paunti nang paunti ang mga hero na natitira. Tandaan ang draft.
+Sa tingin ko. Paunti nang paunti ang mga hero na natitira. Preparation ang susi.
+Sa tingin ko. Paunti nang paunti ang mga hero na natitira. Adjustments ang labanan.
+Sa tingin ko. Paunti nang paunti ang mga hero na natitira. Plano muna bago laro.
+Sa tingin ko. Paunti nang paunti ang mga hero na natitira. Ganyan ang coaching.
+Tingnan natin ang plano. Paunti nang paunti ang mga hero na natitira.
+Tingnan natin ang plano. Paunti nang paunti ang mga hero na natitira. Tandaan ang draft.
+Tingnan natin ang plano. Paunti nang paunti ang mga hero na natitira. Preparation ang susi.
+Tingnan natin ang plano. Paunti nang paunti ang mga hero na natitira. Adjustments ang labanan.
+Tingnan natin ang plano. Paunti nang paunti ang mga hero na natitira. Plano muna bago laro.
+Tingnan natin ang plano. Paunti nang paunti ang mga hero na natitira. Ganyan ang coaching.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang draft.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Preparation ang susi.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Adjustments ang labanan.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Plano muna bago laro.
+{seriesScore} ang serye — kaya mahalaga ang draft na ito. Ganyan ang coaching.
+Ito ang take ko. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Ito ang take ko. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang draft.
+Ito ang take ko. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Preparation ang susi.
+Ito ang take ko. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Adjustments ang labanan.
+Ito ang take ko. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Plano muna bago laro.
+Ito ang take ko. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ganyan ang coaching.
+Game plan check. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Game plan check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang draft.
+Game plan check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Preparation ang susi.
+Game plan check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Adjustments ang labanan.
+Game plan check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Plano muna bago laro.
+Game plan check. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ganyan ang coaching.
+Pakinggan niyo ito. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Pakinggan niyo ito. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang draft.
+Pakinggan niyo ito. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Preparation ang susi.
+Pakinggan niyo ito. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Adjustments ang labanan.
+Pakinggan niyo ito. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Plano muna bago laro.
+Pakinggan niyo ito. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ganyan ang coaching.
+Strategically. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Strategically. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang draft.
+Strategically. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Preparation ang susi.
+Strategically. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Adjustments ang labanan.
+Strategically. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Plano muna bago laro.
+Strategically. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ganyan ang coaching.
+Malinaw ito. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Malinaw ito. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang draft.
+Malinaw ito. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Preparation ang susi.
+Malinaw ito. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Adjustments ang labanan.
+Malinaw ito. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Plano muna bago laro.
+Malinaw ito. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ganyan ang coaching.
+Coach mode muna tayo. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Coach mode muna tayo. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang draft.
+Coach mode muna tayo. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Preparation ang susi.
+Coach mode muna tayo. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Adjustments ang labanan.
+Coach mode muna tayo. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Plano muna bago laro.
+Coach mode muna tayo. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ganyan ang coaching.
+Sa tingin ko. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Sa tingin ko. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang draft.
+Sa tingin ko. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Preparation ang susi.
+Sa tingin ko. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Adjustments ang labanan.
+Sa tingin ko. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Plano muna bago laro.
+Sa tingin ko. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ganyan ang coaching.
+Tingnan natin ang plano. {seriesScore} ang serye — kaya mahalaga ang draft na ito.
+Tingnan natin ang plano. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Tandaan ang draft.
+Tingnan natin ang plano. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Preparation ang susi.
+Tingnan natin ang plano. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Adjustments ang labanan.
+Tingnan natin ang plano. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Plano muna bago laro.
+Tingnan natin ang plano. {seriesScore} ang serye — kaya mahalaga ang draft na ito. Ganyan ang coaching.
+
+══════ Drafting phase welcome ("Welcome sa drafting phase natin, partner …") — 582 lines ══════
+Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}?
+Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Tandaan ang draft.
+Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Preparation ang susi.
+Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Adjustments ang labanan.
+Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Plano muna bago laro.
+Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Ganyan ang coaching.
+Ito ang take ko. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}?
+Ito ang take ko. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Tandaan ang draft.
+Ito ang take ko. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Preparation ang susi.
+Ito ang take ko. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Adjustments ang labanan.
+Ito ang take ko. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Plano muna bago laro.
+Ito ang take ko. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Ganyan ang coaching.
+Game plan check. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}?
+Game plan check. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Tandaan ang draft.
+Game plan check. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Preparation ang susi.
+Game plan check. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Adjustments ang labanan.
+Game plan check. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Plano muna bago laro.
+Game plan check. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Ganyan ang coaching.
+Pakinggan niyo ito. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}?
+Pakinggan niyo ito. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Tandaan ang draft.
+Pakinggan niyo ito. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Preparation ang susi.
+Pakinggan niyo ito. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Adjustments ang labanan.
+Pakinggan niyo ito. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Plano muna bago laro.
+Pakinggan niyo ito. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Ganyan ang coaching.
+Strategically. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}?
+Strategically. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Tandaan ang draft.
+Strategically. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Preparation ang susi.
+Strategically. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Adjustments ang labanan.
+Strategically. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Plano muna bago laro.
+Strategically. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Ganyan ang coaching.
+Malinaw ito. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}?
+Malinaw ito. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Tandaan ang draft.
+Malinaw ito. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Preparation ang susi.
+Malinaw ito. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Adjustments ang labanan.
+Malinaw ito. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Plano muna bago laro.
+Malinaw ito. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Ganyan ang coaching.
+Coach mode muna tayo. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}?
+Coach mode muna tayo. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Tandaan ang draft.
+Coach mode muna tayo. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Preparation ang susi.
+Coach mode muna tayo. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Adjustments ang labanan.
+Coach mode muna tayo. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Plano muna bago laro.
+Coach mode muna tayo. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Ganyan ang coaching.
+Sa tingin ko. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}?
+Sa tingin ko. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Tandaan ang draft.
+Sa tingin ko. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Preparation ang susi.
+Sa tingin ko. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Adjustments ang labanan.
+Sa tingin ko. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Plano muna bago laro.
+Sa tingin ko. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Ganyan ang coaching.
+Tingnan natin ang plano. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}?
+Tingnan natin ang plano. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Tandaan ang draft.
+Tingnan natin ang plano. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Preparation ang susi.
+Tingnan natin ang plano. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Adjustments ang labanan.
+Tingnan natin ang plano. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Plano muna bago laro.
+Tingnan natin ang plano. Kung ako ang coach, ang unang tanong ko: ano ang win condition natin ngayong Game {gameNumber}? Ganyan ang coaching.
+Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban.
+Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Tandaan ang draft.
+Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Preparation ang susi.
+Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Adjustments ang labanan.
+Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Plano muna bago laro.
+Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Ganyan ang coaching.
+Ito ang take ko. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban.
+Ito ang take ko. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Tandaan ang draft.
+Ito ang take ko. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Preparation ang susi.
+Ito ang take ko. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Adjustments ang labanan.
+Ito ang take ko. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Plano muna bago laro.
+Ito ang take ko. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Ganyan ang coaching.
+Game plan check. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban.
+Game plan check. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Tandaan ang draft.
+Game plan check. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Preparation ang susi.
+Game plan check. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Adjustments ang labanan.
+Game plan check. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Plano muna bago laro.
+Game plan check. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Ganyan ang coaching.
+Pakinggan niyo ito. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban.
+Pakinggan niyo ito. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Tandaan ang draft.
+Pakinggan niyo ito. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Preparation ang susi.
+Pakinggan niyo ito. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Adjustments ang labanan.
+Pakinggan niyo ito. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Plano muna bago laro.
+Pakinggan niyo ito. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Ganyan ang coaching.
+Strategically. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban.
+Strategically. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Tandaan ang draft.
+Strategically. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Preparation ang susi.
+Strategically. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Adjustments ang labanan.
+Strategically. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Plano muna bago laro.
+Strategically. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Ganyan ang coaching.
+Malinaw ito. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban.
+Malinaw ito. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Tandaan ang draft.
+Malinaw ito. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Preparation ang susi.
+Malinaw ito. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Adjustments ang labanan.
+Malinaw ito. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Plano muna bago laro.
+Malinaw ito. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Ganyan ang coaching.
+Coach mode muna tayo. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban.
+Coach mode muna tayo. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Tandaan ang draft.
+Coach mode muna tayo. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Preparation ang susi.
+Coach mode muna tayo. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Adjustments ang labanan.
+Coach mode muna tayo. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Plano muna bago laro.
+Coach mode muna tayo. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Ganyan ang coaching.
+Sa tingin ko. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban.
+Sa tingin ko. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Tandaan ang draft.
+Sa tingin ko. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Preparation ang susi.
+Sa tingin ko. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Adjustments ang labanan.
+Sa tingin ko. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Plano muna bago laro.
+Sa tingin ko. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Ganyan ang coaching.
+Tingnan natin ang plano. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban.
+Tingnan natin ang plano. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Tandaan ang draft.
+Tingnan natin ang plano. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Preparation ang susi.
+Tingnan natin ang plano. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Adjustments ang labanan.
+Tingnan natin ang plano. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Plano muna bago laro.
+Tingnan natin ang plano. Draft pa lang, kalahati na ng laban — kaya panoorin natin nang mabuti ang bawat ban. Ganyan ang coaching.
+Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano.
+Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Tandaan ang draft.
+Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Preparation ang susi.
+Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Adjustments ang labanan.
+Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Plano muna bago laro.
+Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Ganyan ang coaching.
+Ito ang take ko. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano.
+Ito ang take ko. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Tandaan ang draft.
+Ito ang take ko. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Preparation ang susi.
+Ito ang take ko. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Adjustments ang labanan.
+Ito ang take ko. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Plano muna bago laro.
+Ito ang take ko. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Ganyan ang coaching.
+Game plan check. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano.
+Game plan check. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Tandaan ang draft.
+Game plan check. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Preparation ang susi.
+Game plan check. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Adjustments ang labanan.
+Game plan check. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Plano muna bago laro.
+Game plan check. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Ganyan ang coaching.
+Pakinggan niyo ito. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano.
+Pakinggan niyo ito. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Tandaan ang draft.
+Pakinggan niyo ito. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Preparation ang susi.
+Pakinggan niyo ito. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Adjustments ang labanan.
+Pakinggan niyo ito. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Plano muna bago laro.
+Pakinggan niyo ito. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Ganyan ang coaching.
+Strategically. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano.
+Strategically. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Tandaan ang draft.
+Strategically. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Preparation ang susi.
+Strategically. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Adjustments ang labanan.
+Strategically. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Plano muna bago laro.
+Strategically. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Ganyan ang coaching.
+Malinaw ito. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano.
+Malinaw ito. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Tandaan ang draft.
+Malinaw ito. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Preparation ang susi.
+Malinaw ito. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Adjustments ang labanan.
+Malinaw ito. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Plano muna bago laro.
+Malinaw ito. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Ganyan ang coaching.
+Coach mode muna tayo. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano.
+Coach mode muna tayo. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Tandaan ang draft.
+Coach mode muna tayo. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Preparation ang susi.
+Coach mode muna tayo. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Adjustments ang labanan.
+Coach mode muna tayo. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Plano muna bago laro.
+Coach mode muna tayo. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Ganyan ang coaching.
+Sa tingin ko. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano.
+Sa tingin ko. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Tandaan ang draft.
+Sa tingin ko. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Preparation ang susi.
+Sa tingin ko. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Adjustments ang labanan.
+Sa tingin ko. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Plano muna bago laro.
+Sa tingin ko. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Ganyan ang coaching.
+Tingnan natin ang plano. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano.
+Tingnan natin ang plano. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Tandaan ang draft.
+Tingnan natin ang plano. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Preparation ang susi.
+Tingnan natin ang plano. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Adjustments ang labanan.
+Tingnan natin ang plano. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Plano muna bago laro.
+Tingnan natin ang plano. Abangan natin ang unang dalawang ban — madalas, doon na makikita ang buong plano. Ganyan ang coaching.
+Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon.
+Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Tandaan ang draft.
+Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Preparation ang susi.
+Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Adjustments ang labanan.
+Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Plano muna bago laro.
+Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Ganyan ang coaching.
+Ito ang take ko. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon.
+Ito ang take ko. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Tandaan ang draft.
+Ito ang take ko. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Preparation ang susi.
+Ito ang take ko. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Adjustments ang labanan.
+Ito ang take ko. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Plano muna bago laro.
+Ito ang take ko. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Ganyan ang coaching.
+Game plan check. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon.
+Game plan check. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Tandaan ang draft.
+Game plan check. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Preparation ang susi.
+Game plan check. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Adjustments ang labanan.
+Game plan check. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Plano muna bago laro.
+Game plan check. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Ganyan ang coaching.
+Pakinggan niyo ito. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon.
+Pakinggan niyo ito. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Tandaan ang draft.
+Pakinggan niyo ito. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Preparation ang susi.
+Pakinggan niyo ito. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Adjustments ang labanan.
+Pakinggan niyo ito. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Plano muna bago laro.
+Pakinggan niyo ito. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Ganyan ang coaching.
+Strategically. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon.
+Strategically. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Tandaan ang draft.
+Strategically. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Preparation ang susi.
+Strategically. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Adjustments ang labanan.
+Strategically. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Plano muna bago laro.
+Strategically. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Ganyan ang coaching.
+Malinaw ito. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon.
+Malinaw ito. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Tandaan ang draft.
+Malinaw ito. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Preparation ang susi.
+Malinaw ito. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Adjustments ang labanan.
+Malinaw ito. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Plano muna bago laro.
+Malinaw ito. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Ganyan ang coaching.
+Coach mode muna tayo. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon.
+Coach mode muna tayo. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Tandaan ang draft.
+Coach mode muna tayo. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Preparation ang susi.
+Coach mode muna tayo. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Adjustments ang labanan.
+Coach mode muna tayo. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Plano muna bago laro.
+Coach mode muna tayo. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Ganyan ang coaching.
+Tingnan natin ang plano. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon.
+Tingnan natin ang plano. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Tandaan ang draft.
+Tingnan natin ang plano. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Preparation ang susi.
+Tingnan natin ang plano. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Adjustments ang labanan.
+Tingnan natin ang plano. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Plano muna bago laro.
+Tingnan natin ang plano. Sa draft nananalo ang mga handang team — tingnan natin kung sino ang mas handa ngayon. Ganyan ang coaching.
+Simula na ang drafting phase ng Game {gameNumber}.
+Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang draft.
+Simula na ang drafting phase ng Game {gameNumber}. Preparation ang susi.
+Simula na ang drafting phase ng Game {gameNumber}. Adjustments ang labanan.
+Simula na ang drafting phase ng Game {gameNumber}. Plano muna bago laro.
+Simula na ang drafting phase ng Game {gameNumber}. Ganyan ang coaching.
+Ito ang take ko. Simula na ang drafting phase ng Game {gameNumber}.
+Ito ang take ko. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang draft.
+Ito ang take ko. Simula na ang drafting phase ng Game {gameNumber}. Preparation ang susi.
+Ito ang take ko. Simula na ang drafting phase ng Game {gameNumber}. Adjustments ang labanan.
+Ito ang take ko. Simula na ang drafting phase ng Game {gameNumber}. Plano muna bago laro.
+Ito ang take ko. Simula na ang drafting phase ng Game {gameNumber}. Ganyan ang coaching.
+Game plan check. Simula na ang drafting phase ng Game {gameNumber}.
+Game plan check. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang draft.
+Game plan check. Simula na ang drafting phase ng Game {gameNumber}. Preparation ang susi.
+Game plan check. Simula na ang drafting phase ng Game {gameNumber}. Adjustments ang labanan.
+Game plan check. Simula na ang drafting phase ng Game {gameNumber}. Plano muna bago laro.
+Game plan check. Simula na ang drafting phase ng Game {gameNumber}. Ganyan ang coaching.
+Pakinggan niyo ito. Simula na ang drafting phase ng Game {gameNumber}.
+Pakinggan niyo ito. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang draft.
+Pakinggan niyo ito. Simula na ang drafting phase ng Game {gameNumber}. Preparation ang susi.
+Pakinggan niyo ito. Simula na ang drafting phase ng Game {gameNumber}. Adjustments ang labanan.
+Pakinggan niyo ito. Simula na ang drafting phase ng Game {gameNumber}. Plano muna bago laro.
+Pakinggan niyo ito. Simula na ang drafting phase ng Game {gameNumber}. Ganyan ang coaching.
+Strategically. Simula na ang drafting phase ng Game {gameNumber}.
+Strategically. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang draft.
+Strategically. Simula na ang drafting phase ng Game {gameNumber}. Preparation ang susi.
+Strategically. Simula na ang drafting phase ng Game {gameNumber}. Adjustments ang labanan.
+Strategically. Simula na ang drafting phase ng Game {gameNumber}. Plano muna bago laro.
+Strategically. Simula na ang drafting phase ng Game {gameNumber}. Ganyan ang coaching.
+Malinaw ito. Simula na ang drafting phase ng Game {gameNumber}.
+Malinaw ito. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang draft.
+Malinaw ito. Simula na ang drafting phase ng Game {gameNumber}. Preparation ang susi.
+Malinaw ito. Simula na ang drafting phase ng Game {gameNumber}. Adjustments ang labanan.
+Malinaw ito. Simula na ang drafting phase ng Game {gameNumber}. Plano muna bago laro.
+Malinaw ito. Simula na ang drafting phase ng Game {gameNumber}. Ganyan ang coaching.
+Coach mode muna tayo. Simula na ang drafting phase ng Game {gameNumber}.
+Coach mode muna tayo. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang draft.
+Coach mode muna tayo. Simula na ang drafting phase ng Game {gameNumber}. Preparation ang susi.
+Coach mode muna tayo. Simula na ang drafting phase ng Game {gameNumber}. Adjustments ang labanan.
+Coach mode muna tayo. Simula na ang drafting phase ng Game {gameNumber}. Plano muna bago laro.
+Coach mode muna tayo. Simula na ang drafting phase ng Game {gameNumber}. Ganyan ang coaching.
+Sa tingin ko. Simula na ang drafting phase ng Game {gameNumber}.
+Sa tingin ko. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang draft.
+Sa tingin ko. Simula na ang drafting phase ng Game {gameNumber}. Preparation ang susi.
+Sa tingin ko. Simula na ang drafting phase ng Game {gameNumber}. Adjustments ang labanan.
+Sa tingin ko. Simula na ang drafting phase ng Game {gameNumber}. Plano muna bago laro.
+Sa tingin ko. Simula na ang drafting phase ng Game {gameNumber}. Ganyan ang coaching.
+Tingnan natin ang plano. Simula na ang drafting phase ng Game {gameNumber}.
+Tingnan natin ang plano. Simula na ang drafting phase ng Game {gameNumber}. Tandaan ang draft.
+Tingnan natin ang plano. Simula na ang drafting phase ng Game {gameNumber}. Preparation ang susi.
+Tingnan natin ang plano. Simula na ang drafting phase ng Game {gameNumber}. Adjustments ang labanan.
+Tingnan natin ang plano. Simula na ang drafting phase ng Game {gameNumber}. Plano muna bago laro.
+Tingnan natin ang plano. Simula na ang drafting phase ng Game {gameNumber}. Ganyan ang coaching.
+Abangan natin ang mga ban at pick ng dalawang team.
+Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang draft.
+Abangan natin ang mga ban at pick ng dalawang team. Preparation ang susi.
+Abangan natin ang mga ban at pick ng dalawang team. Adjustments ang labanan.
+Abangan natin ang mga ban at pick ng dalawang team. Plano muna bago laro.
+Abangan natin ang mga ban at pick ng dalawang team. Ganyan ang coaching.
+Ito ang take ko. Abangan natin ang mga ban at pick ng dalawang team.
+Ito ang take ko. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang draft.
+Ito ang take ko. Abangan natin ang mga ban at pick ng dalawang team. Preparation ang susi.
+Ito ang take ko. Abangan natin ang mga ban at pick ng dalawang team. Adjustments ang labanan.
+Ito ang take ko. Abangan natin ang mga ban at pick ng dalawang team. Plano muna bago laro.
+Ito ang take ko. Abangan natin ang mga ban at pick ng dalawang team. Ganyan ang coaching.
+Game plan check. Abangan natin ang mga ban at pick ng dalawang team.
+Game plan check. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang draft.
+Game plan check. Abangan natin ang mga ban at pick ng dalawang team. Preparation ang susi.
+Game plan check. Abangan natin ang mga ban at pick ng dalawang team. Adjustments ang labanan.
+Game plan check. Abangan natin ang mga ban at pick ng dalawang team. Plano muna bago laro.
+Game plan check. Abangan natin ang mga ban at pick ng dalawang team. Ganyan ang coaching.
+Pakinggan niyo ito. Abangan natin ang mga ban at pick ng dalawang team.
+Pakinggan niyo ito. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang draft.
+Pakinggan niyo ito. Abangan natin ang mga ban at pick ng dalawang team. Preparation ang susi.
+Pakinggan niyo ito. Abangan natin ang mga ban at pick ng dalawang team. Adjustments ang labanan.
+Pakinggan niyo ito. Abangan natin ang mga ban at pick ng dalawang team. Plano muna bago laro.
+Pakinggan niyo ito. Abangan natin ang mga ban at pick ng dalawang team. Ganyan ang coaching.
+Strategically. Abangan natin ang mga ban at pick ng dalawang team.
+Strategically. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang draft.
+Strategically. Abangan natin ang mga ban at pick ng dalawang team. Preparation ang susi.
+Strategically. Abangan natin ang mga ban at pick ng dalawang team. Adjustments ang labanan.
+Strategically. Abangan natin ang mga ban at pick ng dalawang team. Plano muna bago laro.
+Strategically. Abangan natin ang mga ban at pick ng dalawang team. Ganyan ang coaching.
+Malinaw ito. Abangan natin ang mga ban at pick ng dalawang team.
+Malinaw ito. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang draft.
+Malinaw ito. Abangan natin ang mga ban at pick ng dalawang team. Preparation ang susi.
+Malinaw ito. Abangan natin ang mga ban at pick ng dalawang team. Adjustments ang labanan.
+Malinaw ito. Abangan natin ang mga ban at pick ng dalawang team. Plano muna bago laro.
+Malinaw ito. Abangan natin ang mga ban at pick ng dalawang team. Ganyan ang coaching.
+Coach mode muna tayo. Abangan natin ang mga ban at pick ng dalawang team.
+Coach mode muna tayo. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang draft.
+Coach mode muna tayo. Abangan natin ang mga ban at pick ng dalawang team. Preparation ang susi.
+Coach mode muna tayo. Abangan natin ang mga ban at pick ng dalawang team. Adjustments ang labanan.
+Coach mode muna tayo. Abangan natin ang mga ban at pick ng dalawang team. Plano muna bago laro.
+Coach mode muna tayo. Abangan natin ang mga ban at pick ng dalawang team. Ganyan ang coaching.
+Sa tingin ko. Abangan natin ang mga ban at pick ng dalawang team.
+Sa tingin ko. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang draft.
+Sa tingin ko. Abangan natin ang mga ban at pick ng dalawang team. Preparation ang susi.
+Sa tingin ko. Abangan natin ang mga ban at pick ng dalawang team. Adjustments ang labanan.
+Sa tingin ko. Abangan natin ang mga ban at pick ng dalawang team. Plano muna bago laro.
+Sa tingin ko. Abangan natin ang mga ban at pick ng dalawang team. Ganyan ang coaching.
+Tingnan natin ang plano. Abangan natin ang mga ban at pick ng dalawang team.
+Tingnan natin ang plano. Abangan natin ang mga ban at pick ng dalawang team. Tandaan ang draft.
+Tingnan natin ang plano. Abangan natin ang mga ban at pick ng dalawang team. Preparation ang susi.
+Tingnan natin ang plano. Abangan natin ang mga ban at pick ng dalawang team. Adjustments ang labanan.
+Tingnan natin ang plano. Abangan natin ang mga ban at pick ng dalawang team. Plano muna bago laro.
+Tingnan natin ang plano. Abangan natin ang mga ban at pick ng dalawang team. Ganyan ang coaching.
+Dito makikita ang game plan ng {teamA} at {teamB}.
+Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang draft.
+Dito makikita ang game plan ng {teamA} at {teamB}. Preparation ang susi.
+Dito makikita ang game plan ng {teamA} at {teamB}. Adjustments ang labanan.
+Dito makikita ang game plan ng {teamA} at {teamB}. Plano muna bago laro.
+Dito makikita ang game plan ng {teamA} at {teamB}. Ganyan ang coaching.
+Ito ang take ko. Dito makikita ang game plan ng {teamA} at {teamB}.
+Ito ang take ko. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang draft.
+Ito ang take ko. Dito makikita ang game plan ng {teamA} at {teamB}. Preparation ang susi.
+Ito ang take ko. Dito makikita ang game plan ng {teamA} at {teamB}. Adjustments ang labanan.
+Ito ang take ko. Dito makikita ang game plan ng {teamA} at {teamB}. Plano muna bago laro.
+Ito ang take ko. Dito makikita ang game plan ng {teamA} at {teamB}. Ganyan ang coaching.
+Game plan check. Dito makikita ang game plan ng {teamA} at {teamB}.
+Game plan check. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang draft.
+Game plan check. Dito makikita ang game plan ng {teamA} at {teamB}. Preparation ang susi.
+Game plan check. Dito makikita ang game plan ng {teamA} at {teamB}. Adjustments ang labanan.
+Game plan check. Dito makikita ang game plan ng {teamA} at {teamB}. Plano muna bago laro.
+Game plan check. Dito makikita ang game plan ng {teamA} at {teamB}. Ganyan ang coaching.
+Pakinggan niyo ito. Dito makikita ang game plan ng {teamA} at {teamB}.
+Pakinggan niyo ito. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang draft.
+Pakinggan niyo ito. Dito makikita ang game plan ng {teamA} at {teamB}. Preparation ang susi.
+Pakinggan niyo ito. Dito makikita ang game plan ng {teamA} at {teamB}. Adjustments ang labanan.
+Pakinggan niyo ito. Dito makikita ang game plan ng {teamA} at {teamB}. Plano muna bago laro.
+Pakinggan niyo ito. Dito makikita ang game plan ng {teamA} at {teamB}. Ganyan ang coaching.
+Strategically. Dito makikita ang game plan ng {teamA} at {teamB}.
+Strategically. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang draft.
+Strategically. Dito makikita ang game plan ng {teamA} at {teamB}. Preparation ang susi.
+Strategically. Dito makikita ang game plan ng {teamA} at {teamB}. Adjustments ang labanan.
+Strategically. Dito makikita ang game plan ng {teamA} at {teamB}. Plano muna bago laro.
+Strategically. Dito makikita ang game plan ng {teamA} at {teamB}. Ganyan ang coaching.
+Malinaw ito. Dito makikita ang game plan ng {teamA} at {teamB}.
+Malinaw ito. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang draft.
+Malinaw ito. Dito makikita ang game plan ng {teamA} at {teamB}. Preparation ang susi.
+Malinaw ito. Dito makikita ang game plan ng {teamA} at {teamB}. Adjustments ang labanan.
+Malinaw ito. Dito makikita ang game plan ng {teamA} at {teamB}. Plano muna bago laro.
+Malinaw ito. Dito makikita ang game plan ng {teamA} at {teamB}. Ganyan ang coaching.
+Coach mode muna tayo. Dito makikita ang game plan ng {teamA} at {teamB}.
+Coach mode muna tayo. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang draft.
+Coach mode muna tayo. Dito makikita ang game plan ng {teamA} at {teamB}. Preparation ang susi.
+Coach mode muna tayo. Dito makikita ang game plan ng {teamA} at {teamB}. Adjustments ang labanan.
+Coach mode muna tayo. Dito makikita ang game plan ng {teamA} at {teamB}. Plano muna bago laro.
+Coach mode muna tayo. Dito makikita ang game plan ng {teamA} at {teamB}. Ganyan ang coaching.
+Sa tingin ko. Dito makikita ang game plan ng {teamA} at {teamB}.
+Sa tingin ko. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang draft.
+Sa tingin ko. Dito makikita ang game plan ng {teamA} at {teamB}. Preparation ang susi.
+Sa tingin ko. Dito makikita ang game plan ng {teamA} at {teamB}. Adjustments ang labanan.
+Sa tingin ko. Dito makikita ang game plan ng {teamA} at {teamB}. Plano muna bago laro.
+Sa tingin ko. Dito makikita ang game plan ng {teamA} at {teamB}. Ganyan ang coaching.
+Tingnan natin ang plano. Dito makikita ang game plan ng {teamA} at {teamB}.
+Tingnan natin ang plano. Dito makikita ang game plan ng {teamA} at {teamB}. Tandaan ang draft.
+Tingnan natin ang plano. Dito makikita ang game plan ng {teamA} at {teamB}. Preparation ang susi.
+Tingnan natin ang plano. Dito makikita ang game plan ng {teamA} at {teamB}. Adjustments ang labanan.
+Tingnan natin ang plano. Dito makikita ang game plan ng {teamA} at {teamB}. Plano muna bago laro.
+Tingnan natin ang plano. Dito makikita ang game plan ng {teamA} at {teamB}. Ganyan ang coaching.
+{blueTeam} sa blue side, {redTeam} sa red side.
+{blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+{blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+{blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+{blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+{blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Ito ang take ko. {blueTeam} sa blue side, {redTeam} sa red side.
+Ito ang take ko. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Ito ang take ko. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Ito ang take ko. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Ito ang take ko. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Ito ang take ko. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Game plan check. {blueTeam} sa blue side, {redTeam} sa red side.
+Game plan check. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Game plan check. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Game plan check. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Game plan check. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Game plan check. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Pakinggan niyo ito. {blueTeam} sa blue side, {redTeam} sa red side.
+Pakinggan niyo ito. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Pakinggan niyo ito. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Pakinggan niyo ito. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Pakinggan niyo ito. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Pakinggan niyo ito. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Strategically. {blueTeam} sa blue side, {redTeam} sa red side.
+Strategically. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Strategically. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Strategically. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Strategically. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Strategically. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Malinaw ito. {blueTeam} sa blue side, {redTeam} sa red side.
+Malinaw ito. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Malinaw ito. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Malinaw ito. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Malinaw ito. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Malinaw ito. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Coach mode muna tayo. {blueTeam} sa blue side, {redTeam} sa red side.
+Coach mode muna tayo. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Coach mode muna tayo. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Coach mode muna tayo. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Coach mode muna tayo. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Coach mode muna tayo. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Sa tingin ko. {blueTeam} sa blue side, {redTeam} sa red side.
+Sa tingin ko. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Sa tingin ko. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Sa tingin ko. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Sa tingin ko. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Sa tingin ko. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Tingnan natin ang plano. {blueTeam} sa blue side, {redTeam} sa red side.
+Tingnan natin ang plano. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Tingnan natin ang plano. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Tingnan natin ang plano. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Tingnan natin ang plano. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Tingnan natin ang plano. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Draft pa lang, mahalaga na ang bawat desisyon.
+Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang draft.
+Draft pa lang, mahalaga na ang bawat desisyon. Preparation ang susi.
+Draft pa lang, mahalaga na ang bawat desisyon. Adjustments ang labanan.
+Draft pa lang, mahalaga na ang bawat desisyon. Plano muna bago laro.
+Draft pa lang, mahalaga na ang bawat desisyon. Ganyan ang coaching.
+Ito ang take ko. Draft pa lang, mahalaga na ang bawat desisyon.
+Ito ang take ko. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang draft.
+Ito ang take ko. Draft pa lang, mahalaga na ang bawat desisyon. Preparation ang susi.
+Ito ang take ko. Draft pa lang, mahalaga na ang bawat desisyon. Adjustments ang labanan.
+Ito ang take ko. Draft pa lang, mahalaga na ang bawat desisyon. Plano muna bago laro.
+Ito ang take ko. Draft pa lang, mahalaga na ang bawat desisyon. Ganyan ang coaching.
+Game plan check. Draft pa lang, mahalaga na ang bawat desisyon.
+Game plan check. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang draft.
+Game plan check. Draft pa lang, mahalaga na ang bawat desisyon. Preparation ang susi.
+Game plan check. Draft pa lang, mahalaga na ang bawat desisyon. Adjustments ang labanan.
+Game plan check. Draft pa lang, mahalaga na ang bawat desisyon. Plano muna bago laro.
+Game plan check. Draft pa lang, mahalaga na ang bawat desisyon. Ganyan ang coaching.
+Pakinggan niyo ito. Draft pa lang, mahalaga na ang bawat desisyon.
+Pakinggan niyo ito. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang draft.
+Pakinggan niyo ito. Draft pa lang, mahalaga na ang bawat desisyon. Preparation ang susi.
+Pakinggan niyo ito. Draft pa lang, mahalaga na ang bawat desisyon. Adjustments ang labanan.
+Pakinggan niyo ito. Draft pa lang, mahalaga na ang bawat desisyon. Plano muna bago laro.
+Pakinggan niyo ito. Draft pa lang, mahalaga na ang bawat desisyon. Ganyan ang coaching.
+Strategically. Draft pa lang, mahalaga na ang bawat desisyon.
+Strategically. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang draft.
+Strategically. Draft pa lang, mahalaga na ang bawat desisyon. Preparation ang susi.
+Strategically. Draft pa lang, mahalaga na ang bawat desisyon. Adjustments ang labanan.
+Strategically. Draft pa lang, mahalaga na ang bawat desisyon. Plano muna bago laro.
+Strategically. Draft pa lang, mahalaga na ang bawat desisyon. Ganyan ang coaching.
+Malinaw ito. Draft pa lang, mahalaga na ang bawat desisyon.
+Malinaw ito. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang draft.
+Malinaw ito. Draft pa lang, mahalaga na ang bawat desisyon. Preparation ang susi.
+Malinaw ito. Draft pa lang, mahalaga na ang bawat desisyon. Adjustments ang labanan.
+Malinaw ito. Draft pa lang, mahalaga na ang bawat desisyon. Plano muna bago laro.
+Malinaw ito. Draft pa lang, mahalaga na ang bawat desisyon. Ganyan ang coaching.
+Coach mode muna tayo. Draft pa lang, mahalaga na ang bawat desisyon.
+Coach mode muna tayo. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang draft.
+Coach mode muna tayo. Draft pa lang, mahalaga na ang bawat desisyon. Preparation ang susi.
+Coach mode muna tayo. Draft pa lang, mahalaga na ang bawat desisyon. Adjustments ang labanan.
+Coach mode muna tayo. Draft pa lang, mahalaga na ang bawat desisyon. Plano muna bago laro.
+Coach mode muna tayo. Draft pa lang, mahalaga na ang bawat desisyon. Ganyan ang coaching.
+Sa tingin ko. Draft pa lang, mahalaga na ang bawat desisyon.
+Sa tingin ko. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang draft.
+Sa tingin ko. Draft pa lang, mahalaga na ang bawat desisyon. Preparation ang susi.
+Sa tingin ko. Draft pa lang, mahalaga na ang bawat desisyon. Adjustments ang labanan.
+Sa tingin ko. Draft pa lang, mahalaga na ang bawat desisyon. Plano muna bago laro.
+Sa tingin ko. Draft pa lang, mahalaga na ang bawat desisyon. Ganyan ang coaching.
+Tingnan natin ang plano. Draft pa lang, mahalaga na ang bawat desisyon.
+Tingnan natin ang plano. Draft pa lang, mahalaga na ang bawat desisyon. Tandaan ang draft.
+Tingnan natin ang plano. Draft pa lang, mahalaga na ang bawat desisyon. Preparation ang susi.
+Tingnan natin ang plano. Draft pa lang, mahalaga na ang bawat desisyon. Adjustments ang labanan.
+Tingnan natin ang plano. Draft pa lang, mahalaga na ang bawat desisyon. Plano muna bago laro.
+Tingnan natin ang plano. Draft pa lang, mahalaga na ang bawat desisyon. Ganyan ang coaching.
+Sino kaya ang unang magpapakita ng diskarte?
+Sino kaya ang unang magpapakita ng diskarte? Tandaan ang draft.
+Sino kaya ang unang magpapakita ng diskarte? Preparation ang susi.
+Sino kaya ang unang magpapakita ng diskarte? Adjustments ang labanan.
+Sino kaya ang unang magpapakita ng diskarte? Plano muna bago laro.
+Sino kaya ang unang magpapakita ng diskarte? Ganyan ang coaching.
+Ito ang take ko. Sino kaya ang unang magpapakita ng diskarte?
+Ito ang take ko. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang draft.
+Ito ang take ko. Sino kaya ang unang magpapakita ng diskarte? Preparation ang susi.
+Ito ang take ko. Sino kaya ang unang magpapakita ng diskarte? Adjustments ang labanan.
+Ito ang take ko. Sino kaya ang unang magpapakita ng diskarte? Plano muna bago laro.
+Ito ang take ko. Sino kaya ang unang magpapakita ng diskarte? Ganyan ang coaching.
+Game plan check. Sino kaya ang unang magpapakita ng diskarte?
+Game plan check. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang draft.
+Game plan check. Sino kaya ang unang magpapakita ng diskarte? Preparation ang susi.
+Game plan check. Sino kaya ang unang magpapakita ng diskarte? Adjustments ang labanan.
+Game plan check. Sino kaya ang unang magpapakita ng diskarte? Plano muna bago laro.
+Game plan check. Sino kaya ang unang magpapakita ng diskarte? Ganyan ang coaching.
+Pakinggan niyo ito. Sino kaya ang unang magpapakita ng diskarte?
+Pakinggan niyo ito. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang draft.
+Pakinggan niyo ito. Sino kaya ang unang magpapakita ng diskarte? Preparation ang susi.
+Pakinggan niyo ito. Sino kaya ang unang magpapakita ng diskarte? Adjustments ang labanan.
+Pakinggan niyo ito. Sino kaya ang unang magpapakita ng diskarte? Plano muna bago laro.
+Pakinggan niyo ito. Sino kaya ang unang magpapakita ng diskarte? Ganyan ang coaching.
+Strategically. Sino kaya ang unang magpapakita ng diskarte?
+Strategically. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang draft.
+Strategically. Sino kaya ang unang magpapakita ng diskarte? Preparation ang susi.
+Strategically. Sino kaya ang unang magpapakita ng diskarte? Adjustments ang labanan.
+Strategically. Sino kaya ang unang magpapakita ng diskarte? Plano muna bago laro.
+Strategically. Sino kaya ang unang magpapakita ng diskarte? Ganyan ang coaching.
+Malinaw ito. Sino kaya ang unang magpapakita ng diskarte?
+Malinaw ito. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang draft.
+Malinaw ito. Sino kaya ang unang magpapakita ng diskarte? Preparation ang susi.
+Malinaw ito. Sino kaya ang unang magpapakita ng diskarte? Adjustments ang labanan.
+Malinaw ito. Sino kaya ang unang magpapakita ng diskarte? Plano muna bago laro.
+Malinaw ito. Sino kaya ang unang magpapakita ng diskarte? Ganyan ang coaching.
+Coach mode muna tayo. Sino kaya ang unang magpapakita ng diskarte?
+Coach mode muna tayo. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang draft.
+Coach mode muna tayo. Sino kaya ang unang magpapakita ng diskarte? Preparation ang susi.
+Coach mode muna tayo. Sino kaya ang unang magpapakita ng diskarte? Adjustments ang labanan.
+Coach mode muna tayo. Sino kaya ang unang magpapakita ng diskarte? Plano muna bago laro.
+Coach mode muna tayo. Sino kaya ang unang magpapakita ng diskarte? Ganyan ang coaching.
+Sa tingin ko. Sino kaya ang unang magpapakita ng diskarte?
+Sa tingin ko. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang draft.
+Sa tingin ko. Sino kaya ang unang magpapakita ng diskarte? Preparation ang susi.
+Sa tingin ko. Sino kaya ang unang magpapakita ng diskarte? Adjustments ang labanan.
+Sa tingin ko. Sino kaya ang unang magpapakita ng diskarte? Plano muna bago laro.
+Sa tingin ko. Sino kaya ang unang magpapakita ng diskarte? Ganyan ang coaching.
+Tingnan natin ang plano. Sino kaya ang unang magpapakita ng diskarte?
+Tingnan natin ang plano. Sino kaya ang unang magpapakita ng diskarte? Tandaan ang draft.
+Tingnan natin ang plano. Sino kaya ang unang magpapakita ng diskarte? Preparation ang susi.
+Tingnan natin ang plano. Sino kaya ang unang magpapakita ng diskarte? Adjustments ang labanan.
+Tingnan natin ang plano. Sino kaya ang unang magpapakita ng diskarte? Plano muna bago laro.
+Tingnan natin ang plano. Sino kaya ang unang magpapakita ng diskarte? Ganyan ang coaching.
+Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang draft.
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Preparation ang susi.
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Adjustments ang labanan.
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Plano muna bago laro.
+Game {gameNumber} ng {format} — {seriesScore} ang serye. Ganyan ang coaching.
+Ito ang take ko. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Ito ang take ko. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang draft.
+Ito ang take ko. Game {gameNumber} ng {format} — {seriesScore} ang serye. Preparation ang susi.
+Ito ang take ko. Game {gameNumber} ng {format} — {seriesScore} ang serye. Adjustments ang labanan.
+Ito ang take ko. Game {gameNumber} ng {format} — {seriesScore} ang serye. Plano muna bago laro.
+Ito ang take ko. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ganyan ang coaching.
+Pakinggan niyo ito. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Pakinggan niyo ito. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang draft.
+Pakinggan niyo ito. Game {gameNumber} ng {format} — {seriesScore} ang serye. Preparation ang susi.
+Pakinggan niyo ito. Game {gameNumber} ng {format} — {seriesScore} ang serye. Adjustments ang labanan.
+Pakinggan niyo ito. Game {gameNumber} ng {format} — {seriesScore} ang serye. Plano muna bago laro.
+Pakinggan niyo ito. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ganyan ang coaching.
+Strategically. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Strategically. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang draft.
+Strategically. Game {gameNumber} ng {format} — {seriesScore} ang serye. Preparation ang susi.
+Strategically. Game {gameNumber} ng {format} — {seriesScore} ang serye. Adjustments ang labanan.
+Strategically. Game {gameNumber} ng {format} — {seriesScore} ang serye. Plano muna bago laro.
+Strategically. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ganyan ang coaching.
+Malinaw ito. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Malinaw ito. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang draft.
+Malinaw ito. Game {gameNumber} ng {format} — {seriesScore} ang serye. Preparation ang susi.
+Malinaw ito. Game {gameNumber} ng {format} — {seriesScore} ang serye. Adjustments ang labanan.
+Malinaw ito. Game {gameNumber} ng {format} — {seriesScore} ang serye. Plano muna bago laro.
+Malinaw ito. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ganyan ang coaching.
+Coach mode muna tayo. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Coach mode muna tayo. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang draft.
+Coach mode muna tayo. Game {gameNumber} ng {format} — {seriesScore} ang serye. Preparation ang susi.
+Coach mode muna tayo. Game {gameNumber} ng {format} — {seriesScore} ang serye. Adjustments ang labanan.
+Coach mode muna tayo. Game {gameNumber} ng {format} — {seriesScore} ang serye. Plano muna bago laro.
+Coach mode muna tayo. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ganyan ang coaching.
+Sa tingin ko. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Sa tingin ko. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang draft.
+Sa tingin ko. Game {gameNumber} ng {format} — {seriesScore} ang serye. Preparation ang susi.
+Sa tingin ko. Game {gameNumber} ng {format} — {seriesScore} ang serye. Adjustments ang labanan.
+Sa tingin ko. Game {gameNumber} ng {format} — {seriesScore} ang serye. Plano muna bago laro.
+Sa tingin ko. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ganyan ang coaching.
+Tingnan natin ang plano. Game {gameNumber} ng {format} — {seriesScore} ang serye.
+Tingnan natin ang plano. Game {gameNumber} ng {format} — {seriesScore} ang serye. Tandaan ang draft.
+Tingnan natin ang plano. Game {gameNumber} ng {format} — {seriesScore} ang serye. Preparation ang susi.
+Tingnan natin ang plano. Game {gameNumber} ng {format} — {seriesScore} ang serye. Adjustments ang labanan.
+Tingnan natin ang plano. Game {gameNumber} ng {format} — {seriesScore} ang serye. Plano muna bago laro.
+Tingnan natin ang plano. Game {gameNumber} ng {format} — {seriesScore} ang serye. Ganyan ang coaching.
+
+══════ Game start ("Welcome sa Game …") — 540 lines ══════
+Ngayon natin malalaman kung gagana ang game plan ng bawat team.
+Ngayon natin malalaman kung gagana ang game plan ng bawat team. Preparation ang susi.
+Ngayon natin malalaman kung gagana ang game plan ng bawat team. Ganyan ang coaching.
+Ngayon natin malalaman kung gagana ang game plan ng bawat team. Adjustments ang labanan.
+Ngayon natin malalaman kung gagana ang game plan ng bawat team. Plano muna bago laro.
+Ngayon natin malalaman kung gagana ang game plan ng bawat team. Tandaan ang draft.
+Okay. Ngayon natin malalaman kung gagana ang game plan ng bawat team.
+Okay. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Preparation ang susi.
+Okay. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Ganyan ang coaching.
+Okay. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Adjustments ang labanan.
+Okay. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Plano muna bago laro.
+Okay. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Tandaan ang draft.
+Pakinggan niyo ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team.
+Pakinggan niyo ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Preparation ang susi.
+Pakinggan niyo ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Ganyan ang coaching.
+Pakinggan niyo ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Adjustments ang labanan.
+Pakinggan niyo ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Plano muna bago laro.
+Pakinggan niyo ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Tandaan ang draft.
+Malinaw ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team.
+Malinaw ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Preparation ang susi.
+Malinaw ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Ganyan ang coaching.
+Malinaw ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Adjustments ang labanan.
+Malinaw ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Plano muna bago laro.
+Malinaw ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Tandaan ang draft.
+Ito ang take ko. Ngayon natin malalaman kung gagana ang game plan ng bawat team.
+Ito ang take ko. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Preparation ang susi.
+Ito ang take ko. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Ganyan ang coaching.
+Ito ang take ko. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Adjustments ang labanan.
+Ito ang take ko. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Plano muna bago laro.
+Ito ang take ko. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Tandaan ang draft.
+Ayan na. Ngayon natin malalaman kung gagana ang game plan ng bawat team.
+Ayan na. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Preparation ang susi.
+Ayan na. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Ganyan ang coaching.
+Ayan na. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Adjustments ang labanan.
+Ayan na. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Plano muna bago laro.
+Ayan na. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Tandaan ang draft.
+Strategically. Ngayon natin malalaman kung gagana ang game plan ng bawat team.
+Strategically. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Preparation ang susi.
+Strategically. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Ganyan ang coaching.
+Strategically. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Adjustments ang labanan.
+Strategically. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Plano muna bago laro.
+Strategically. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Tandaan ang draft.
+Mahalaga ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team.
+Mahalaga ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Preparation ang susi.
+Mahalaga ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Ganyan ang coaching.
+Mahalaga ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Adjustments ang labanan.
+Mahalaga ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Plano muna bago laro.
+Mahalaga ito. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Tandaan ang draft.
+Tingnan natin. Ngayon natin malalaman kung gagana ang game plan ng bawat team.
+Tingnan natin. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Preparation ang susi.
+Tingnan natin. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Ganyan ang coaching.
+Tingnan natin. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Adjustments ang labanan.
+Tingnan natin. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Plano muna bago laro.
+Tingnan natin. Ngayon natin malalaman kung gagana ang game plan ng bawat team. Tandaan ang draft.
+Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic.
+Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Preparation ang susi.
+Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Ganyan ang coaching.
+Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Adjustments ang labanan.
+Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Plano muna bago laro.
+Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Tandaan ang draft.
+Okay. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic.
+Okay. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Preparation ang susi.
+Okay. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Ganyan ang coaching.
+Okay. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Adjustments ang labanan.
+Okay. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Plano muna bago laro.
+Okay. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Tandaan ang draft.
+Pakinggan niyo ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic.
+Pakinggan niyo ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Preparation ang susi.
+Pakinggan niyo ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Ganyan ang coaching.
+Pakinggan niyo ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Adjustments ang labanan.
+Pakinggan niyo ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Plano muna bago laro.
+Pakinggan niyo ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Tandaan ang draft.
+Malinaw ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic.
+Malinaw ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Preparation ang susi.
+Malinaw ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Ganyan ang coaching.
+Malinaw ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Adjustments ang labanan.
+Malinaw ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Plano muna bago laro.
+Malinaw ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Tandaan ang draft.
+Ito ang take ko. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic.
+Ito ang take ko. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Preparation ang susi.
+Ito ang take ko. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Ganyan ang coaching.
+Ito ang take ko. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Adjustments ang labanan.
+Ito ang take ko. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Plano muna bago laro.
+Ito ang take ko. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Tandaan ang draft.
+Ayan na. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic.
+Ayan na. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Preparation ang susi.
+Ayan na. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Ganyan ang coaching.
+Ayan na. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Adjustments ang labanan.
+Ayan na. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Plano muna bago laro.
+Ayan na. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Tandaan ang draft.
+Strategically. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic.
+Strategically. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Preparation ang susi.
+Strategically. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Ganyan ang coaching.
+Strategically. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Adjustments ang labanan.
+Strategically. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Plano muna bago laro.
+Strategically. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Tandaan ang draft.
+Mahalaga ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic.
+Mahalaga ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Preparation ang susi.
+Mahalaga ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Ganyan ang coaching.
+Mahalaga ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Adjustments ang labanan.
+Mahalaga ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Plano muna bago laro.
+Mahalaga ito. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Tandaan ang draft.
+Tingnan natin. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic.
+Tingnan natin. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Preparation ang susi.
+Tingnan natin. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Ganyan ang coaching.
+Tingnan natin. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Adjustments ang labanan.
+Tingnan natin. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Plano muna bago laro.
+Tingnan natin. Kung ako ang coach, simple ang bilin ko: sundin ang plano at huwag mag-panic. Tandaan ang draft.
+Draft, tapos na. Ngayon, execution na ang labanan.
+Draft, tapos na. Ngayon, execution na ang labanan. Preparation ang susi.
+Draft, tapos na. Ngayon, execution na ang labanan. Ganyan ang coaching.
+Draft, tapos na. Ngayon, execution na ang labanan. Adjustments ang labanan.
+Draft, tapos na. Ngayon, execution na ang labanan. Plano muna bago laro.
+Draft, tapos na. Ngayon, execution na ang labanan. Tandaan ang draft.
+Okay. Draft, tapos na. Ngayon, execution na ang labanan.
+Okay. Draft, tapos na. Ngayon, execution na ang labanan. Preparation ang susi.
+Okay. Draft, tapos na. Ngayon, execution na ang labanan. Ganyan ang coaching.
+Okay. Draft, tapos na. Ngayon, execution na ang labanan. Adjustments ang labanan.
+Okay. Draft, tapos na. Ngayon, execution na ang labanan. Plano muna bago laro.
+Okay. Draft, tapos na. Ngayon, execution na ang labanan. Tandaan ang draft.
+Pakinggan niyo ito. Draft, tapos na. Ngayon, execution na ang labanan.
+Pakinggan niyo ito. Draft, tapos na. Ngayon, execution na ang labanan. Preparation ang susi.
+Pakinggan niyo ito. Draft, tapos na. Ngayon, execution na ang labanan. Ganyan ang coaching.
+Pakinggan niyo ito. Draft, tapos na. Ngayon, execution na ang labanan. Adjustments ang labanan.
+Pakinggan niyo ito. Draft, tapos na. Ngayon, execution na ang labanan. Plano muna bago laro.
+Pakinggan niyo ito. Draft, tapos na. Ngayon, execution na ang labanan. Tandaan ang draft.
+Malinaw ito. Draft, tapos na. Ngayon, execution na ang labanan.
+Malinaw ito. Draft, tapos na. Ngayon, execution na ang labanan. Preparation ang susi.
+Malinaw ito. Draft, tapos na. Ngayon, execution na ang labanan. Ganyan ang coaching.
+Malinaw ito. Draft, tapos na. Ngayon, execution na ang labanan. Adjustments ang labanan.
+Malinaw ito. Draft, tapos na. Ngayon, execution na ang labanan. Plano muna bago laro.
+Malinaw ito. Draft, tapos na. Ngayon, execution na ang labanan. Tandaan ang draft.
+Ito ang take ko. Draft, tapos na. Ngayon, execution na ang labanan.
+Ito ang take ko. Draft, tapos na. Ngayon, execution na ang labanan. Preparation ang susi.
+Ito ang take ko. Draft, tapos na. Ngayon, execution na ang labanan. Ganyan ang coaching.
+Ito ang take ko. Draft, tapos na. Ngayon, execution na ang labanan. Adjustments ang labanan.
+Ito ang take ko. Draft, tapos na. Ngayon, execution na ang labanan. Plano muna bago laro.
+Ito ang take ko. Draft, tapos na. Ngayon, execution na ang labanan. Tandaan ang draft.
+Ayan na. Draft, tapos na. Ngayon, execution na ang labanan.
+Ayan na. Draft, tapos na. Ngayon, execution na ang labanan. Preparation ang susi.
+Ayan na. Draft, tapos na. Ngayon, execution na ang labanan. Ganyan ang coaching.
+Ayan na. Draft, tapos na. Ngayon, execution na ang labanan. Adjustments ang labanan.
+Ayan na. Draft, tapos na. Ngayon, execution na ang labanan. Plano muna bago laro.
+Ayan na. Draft, tapos na. Ngayon, execution na ang labanan. Tandaan ang draft.
+Strategically. Draft, tapos na. Ngayon, execution na ang labanan.
+Strategically. Draft, tapos na. Ngayon, execution na ang labanan. Preparation ang susi.
+Strategically. Draft, tapos na. Ngayon, execution na ang labanan. Ganyan ang coaching.
+Strategically. Draft, tapos na. Ngayon, execution na ang labanan. Adjustments ang labanan.
+Strategically. Draft, tapos na. Ngayon, execution na ang labanan. Plano muna bago laro.
+Strategically. Draft, tapos na. Ngayon, execution na ang labanan. Tandaan ang draft.
+Mahalaga ito. Draft, tapos na. Ngayon, execution na ang labanan.
+Mahalaga ito. Draft, tapos na. Ngayon, execution na ang labanan. Preparation ang susi.
+Mahalaga ito. Draft, tapos na. Ngayon, execution na ang labanan. Ganyan ang coaching.
+Mahalaga ito. Draft, tapos na. Ngayon, execution na ang labanan. Adjustments ang labanan.
+Mahalaga ito. Draft, tapos na. Ngayon, execution na ang labanan. Plano muna bago laro.
+Mahalaga ito. Draft, tapos na. Ngayon, execution na ang labanan. Tandaan ang draft.
+Tingnan natin. Draft, tapos na. Ngayon, execution na ang labanan.
+Tingnan natin. Draft, tapos na. Ngayon, execution na ang labanan. Preparation ang susi.
+Tingnan natin. Draft, tapos na. Ngayon, execution na ang labanan. Ganyan ang coaching.
+Tingnan natin. Draft, tapos na. Ngayon, execution na ang labanan. Adjustments ang labanan.
+Tingnan natin. Draft, tapos na. Ngayon, execution na ang labanan. Plano muna bago laro.
+Tingnan natin. Draft, tapos na. Ngayon, execution na ang labanan. Tandaan ang draft.
+Simula na ang Game {gameNumber}.
+Simula na ang Game {gameNumber}. Preparation ang susi.
+Simula na ang Game {gameNumber}. Ganyan ang coaching.
+Simula na ang Game {gameNumber}. Adjustments ang labanan.
+Simula na ang Game {gameNumber}. Plano muna bago laro.
+Simula na ang Game {gameNumber}. Tandaan ang draft.
+Okay. Simula na ang Game {gameNumber}.
+Okay. Simula na ang Game {gameNumber}. Preparation ang susi.
+Okay. Simula na ang Game {gameNumber}. Ganyan ang coaching.
+Okay. Simula na ang Game {gameNumber}. Adjustments ang labanan.
+Okay. Simula na ang Game {gameNumber}. Plano muna bago laro.
+Okay. Simula na ang Game {gameNumber}. Tandaan ang draft.
+Pakinggan niyo ito. Simula na ang Game {gameNumber}.
+Pakinggan niyo ito. Simula na ang Game {gameNumber}. Preparation ang susi.
+Pakinggan niyo ito. Simula na ang Game {gameNumber}. Ganyan ang coaching.
+Pakinggan niyo ito. Simula na ang Game {gameNumber}. Adjustments ang labanan.
+Pakinggan niyo ito. Simula na ang Game {gameNumber}. Plano muna bago laro.
+Pakinggan niyo ito. Simula na ang Game {gameNumber}. Tandaan ang draft.
+Malinaw ito. Simula na ang Game {gameNumber}.
+Malinaw ito. Simula na ang Game {gameNumber}. Preparation ang susi.
+Malinaw ito. Simula na ang Game {gameNumber}. Ganyan ang coaching.
+Malinaw ito. Simula na ang Game {gameNumber}. Adjustments ang labanan.
+Malinaw ito. Simula na ang Game {gameNumber}. Plano muna bago laro.
+Malinaw ito. Simula na ang Game {gameNumber}. Tandaan ang draft.
+Ito ang take ko. Simula na ang Game {gameNumber}.
+Ito ang take ko. Simula na ang Game {gameNumber}. Preparation ang susi.
+Ito ang take ko. Simula na ang Game {gameNumber}. Ganyan ang coaching.
+Ito ang take ko. Simula na ang Game {gameNumber}. Adjustments ang labanan.
+Ito ang take ko. Simula na ang Game {gameNumber}. Plano muna bago laro.
+Ito ang take ko. Simula na ang Game {gameNumber}. Tandaan ang draft.
+Ayan na. Simula na ang Game {gameNumber}.
+Ayan na. Simula na ang Game {gameNumber}. Preparation ang susi.
+Ayan na. Simula na ang Game {gameNumber}. Ganyan ang coaching.
+Ayan na. Simula na ang Game {gameNumber}. Adjustments ang labanan.
+Ayan na. Simula na ang Game {gameNumber}. Plano muna bago laro.
+Ayan na. Simula na ang Game {gameNumber}. Tandaan ang draft.
+Strategically. Simula na ang Game {gameNumber}.
+Strategically. Simula na ang Game {gameNumber}. Preparation ang susi.
+Strategically. Simula na ang Game {gameNumber}. Ganyan ang coaching.
+Strategically. Simula na ang Game {gameNumber}. Adjustments ang labanan.
+Strategically. Simula na ang Game {gameNumber}. Plano muna bago laro.
+Strategically. Simula na ang Game {gameNumber}. Tandaan ang draft.
+Mahalaga ito. Simula na ang Game {gameNumber}.
+Mahalaga ito. Simula na ang Game {gameNumber}. Preparation ang susi.
+Mahalaga ito. Simula na ang Game {gameNumber}. Ganyan ang coaching.
+Mahalaga ito. Simula na ang Game {gameNumber}. Adjustments ang labanan.
+Mahalaga ito. Simula na ang Game {gameNumber}. Plano muna bago laro.
+Mahalaga ito. Simula na ang Game {gameNumber}. Tandaan ang draft.
+Tingnan natin. Simula na ang Game {gameNumber}.
+Tingnan natin. Simula na ang Game {gameNumber}. Preparation ang susi.
+Tingnan natin. Simula na ang Game {gameNumber}. Ganyan ang coaching.
+Tingnan natin. Simula na ang Game {gameNumber}. Adjustments ang labanan.
+Tingnan natin. Simula na ang Game {gameNumber}. Plano muna bago laro.
+Tingnan natin. Simula na ang Game {gameNumber}. Tandaan ang draft.
+Kumpleto na ang draft — laban na!
+Kumpleto na ang draft — laban na! Preparation ang susi.
+Kumpleto na ang draft — laban na! Ganyan ang coaching.
+Kumpleto na ang draft — laban na! Adjustments ang labanan.
+Kumpleto na ang draft — laban na! Plano muna bago laro.
+Kumpleto na ang draft — laban na! Tandaan ang draft.
+Okay. Kumpleto na ang draft — laban na!
+Okay. Kumpleto na ang draft — laban na! Preparation ang susi.
+Okay. Kumpleto na ang draft — laban na! Ganyan ang coaching.
+Okay. Kumpleto na ang draft — laban na! Adjustments ang labanan.
+Okay. Kumpleto na ang draft — laban na! Plano muna bago laro.
+Okay. Kumpleto na ang draft — laban na! Tandaan ang draft.
+Pakinggan niyo ito. Kumpleto na ang draft — laban na!
+Pakinggan niyo ito. Kumpleto na ang draft — laban na! Preparation ang susi.
+Pakinggan niyo ito. Kumpleto na ang draft — laban na! Ganyan ang coaching.
+Pakinggan niyo ito. Kumpleto na ang draft — laban na! Adjustments ang labanan.
+Pakinggan niyo ito. Kumpleto na ang draft — laban na! Plano muna bago laro.
+Pakinggan niyo ito. Kumpleto na ang draft — laban na! Tandaan ang draft.
+Malinaw ito. Kumpleto na ang draft — laban na!
+Malinaw ito. Kumpleto na ang draft — laban na! Preparation ang susi.
+Malinaw ito. Kumpleto na ang draft — laban na! Ganyan ang coaching.
+Malinaw ito. Kumpleto na ang draft — laban na! Adjustments ang labanan.
+Malinaw ito. Kumpleto na ang draft — laban na! Plano muna bago laro.
+Malinaw ito. Kumpleto na ang draft — laban na! Tandaan ang draft.
+Ito ang take ko. Kumpleto na ang draft — laban na!
+Ito ang take ko. Kumpleto na ang draft — laban na! Preparation ang susi.
+Ito ang take ko. Kumpleto na ang draft — laban na! Ganyan ang coaching.
+Ito ang take ko. Kumpleto na ang draft — laban na! Adjustments ang labanan.
+Ito ang take ko. Kumpleto na ang draft — laban na! Plano muna bago laro.
+Ito ang take ko. Kumpleto na ang draft — laban na! Tandaan ang draft.
+Ayan na. Kumpleto na ang draft — laban na!
+Ayan na. Kumpleto na ang draft — laban na! Preparation ang susi.
+Ayan na. Kumpleto na ang draft — laban na! Ganyan ang coaching.
+Ayan na. Kumpleto na ang draft — laban na! Adjustments ang labanan.
+Ayan na. Kumpleto na ang draft — laban na! Plano muna bago laro.
+Ayan na. Kumpleto na ang draft — laban na! Tandaan ang draft.
+Strategically. Kumpleto na ang draft — laban na!
+Strategically. Kumpleto na ang draft — laban na! Preparation ang susi.
+Strategically. Kumpleto na ang draft — laban na! Ganyan ang coaching.
+Strategically. Kumpleto na ang draft — laban na! Adjustments ang labanan.
+Strategically. Kumpleto na ang draft — laban na! Plano muna bago laro.
+Strategically. Kumpleto na ang draft — laban na! Tandaan ang draft.
+Mahalaga ito. Kumpleto na ang draft — laban na!
+Mahalaga ito. Kumpleto na ang draft — laban na! Preparation ang susi.
+Mahalaga ito. Kumpleto na ang draft — laban na! Ganyan ang coaching.
+Mahalaga ito. Kumpleto na ang draft — laban na! Adjustments ang labanan.
+Mahalaga ito. Kumpleto na ang draft — laban na! Plano muna bago laro.
+Mahalaga ito. Kumpleto na ang draft — laban na! Tandaan ang draft.
+Tingnan natin. Kumpleto na ang draft — laban na!
+Tingnan natin. Kumpleto na ang draft — laban na! Preparation ang susi.
+Tingnan natin. Kumpleto na ang draft — laban na! Ganyan ang coaching.
+Tingnan natin. Kumpleto na ang draft — laban na! Adjustments ang labanan.
+Tingnan natin. Kumpleto na ang draft — laban na! Plano muna bago laro.
+Tingnan natin. Kumpleto na ang draft — laban na! Tandaan ang draft.
+{blueTeam} sa blue side, {redTeam} sa red side.
+{blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+{blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+{blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+{blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+{blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Okay. {blueTeam} sa blue side, {redTeam} sa red side.
+Okay. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Okay. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Okay. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Okay. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Okay. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Pakinggan niyo ito. {blueTeam} sa blue side, {redTeam} sa red side.
+Pakinggan niyo ito. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Pakinggan niyo ito. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Pakinggan niyo ito. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Pakinggan niyo ito. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Pakinggan niyo ito. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Malinaw ito. {blueTeam} sa blue side, {redTeam} sa red side.
+Malinaw ito. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Malinaw ito. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Malinaw ito. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Malinaw ito. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Malinaw ito. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Ito ang take ko. {blueTeam} sa blue side, {redTeam} sa red side.
+Ito ang take ko. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Ito ang take ko. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Ito ang take ko. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Ito ang take ko. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Ito ang take ko. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Ayan na. {blueTeam} sa blue side, {redTeam} sa red side.
+Ayan na. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Ayan na. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Ayan na. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Ayan na. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Ayan na. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Strategically. {blueTeam} sa blue side, {redTeam} sa red side.
+Strategically. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Strategically. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Strategically. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Strategically. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Strategically. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Mahalaga ito. {blueTeam} sa blue side, {redTeam} sa red side.
+Mahalaga ito. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Mahalaga ito. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Mahalaga ito. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Mahalaga ito. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Mahalaga ito. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Tingnan natin. {blueTeam} sa blue side, {redTeam} sa red side.
+Tingnan natin. {blueTeam} sa blue side, {redTeam} sa red side. Preparation ang susi.
+Tingnan natin. {blueTeam} sa blue side, {redTeam} sa red side. Ganyan ang coaching.
+Tingnan natin. {blueTeam} sa blue side, {redTeam} sa red side. Adjustments ang labanan.
+Tingnan natin. {blueTeam} sa blue side, {redTeam} sa red side. Plano muna bago laro.
+Tingnan natin. {blueTeam} sa blue side, {redTeam} sa red side. Tandaan ang draft.
+Abangan natin ang unang engagement.
+Abangan natin ang unang engagement. Preparation ang susi.
+Abangan natin ang unang engagement. Ganyan ang coaching.
+Abangan natin ang unang engagement. Adjustments ang labanan.
+Abangan natin ang unang engagement. Plano muna bago laro.
+Abangan natin ang unang engagement. Tandaan ang draft.
+Okay. Abangan natin ang unang engagement.
+Okay. Abangan natin ang unang engagement. Preparation ang susi.
+Okay. Abangan natin ang unang engagement. Ganyan ang coaching.
+Okay. Abangan natin ang unang engagement. Adjustments ang labanan.
+Okay. Abangan natin ang unang engagement. Plano muna bago laro.
+Okay. Abangan natin ang unang engagement. Tandaan ang draft.
+Pakinggan niyo ito. Abangan natin ang unang engagement.
+Pakinggan niyo ito. Abangan natin ang unang engagement. Preparation ang susi.
+Pakinggan niyo ito. Abangan natin ang unang engagement. Ganyan ang coaching.
+Pakinggan niyo ito. Abangan natin ang unang engagement. Adjustments ang labanan.
+Pakinggan niyo ito. Abangan natin ang unang engagement. Plano muna bago laro.
+Pakinggan niyo ito. Abangan natin ang unang engagement. Tandaan ang draft.
+Malinaw ito. Abangan natin ang unang engagement.
+Malinaw ito. Abangan natin ang unang engagement. Preparation ang susi.
+Malinaw ito. Abangan natin ang unang engagement. Ganyan ang coaching.
+Malinaw ito. Abangan natin ang unang engagement. Adjustments ang labanan.
+Malinaw ito. Abangan natin ang unang engagement. Plano muna bago laro.
+Malinaw ito. Abangan natin ang unang engagement. Tandaan ang draft.
+Ito ang take ko. Abangan natin ang unang engagement.
+Ito ang take ko. Abangan natin ang unang engagement. Preparation ang susi.
+Ito ang take ko. Abangan natin ang unang engagement. Ganyan ang coaching.
+Ito ang take ko. Abangan natin ang unang engagement. Adjustments ang labanan.
+Ito ang take ko. Abangan natin ang unang engagement. Plano muna bago laro.
+Ito ang take ko. Abangan natin ang unang engagement. Tandaan ang draft.
+Ayan na. Abangan natin ang unang engagement.
+Ayan na. Abangan natin ang unang engagement. Preparation ang susi.
+Ayan na. Abangan natin ang unang engagement. Ganyan ang coaching.
+Ayan na. Abangan natin ang unang engagement. Adjustments ang labanan.
+Ayan na. Abangan natin ang unang engagement. Plano muna bago laro.
+Ayan na. Abangan natin ang unang engagement. Tandaan ang draft.
+Strategically. Abangan natin ang unang engagement.
+Strategically. Abangan natin ang unang engagement. Preparation ang susi.
+Strategically. Abangan natin ang unang engagement. Ganyan ang coaching.
+Strategically. Abangan natin ang unang engagement. Adjustments ang labanan.
+Strategically. Abangan natin ang unang engagement. Plano muna bago laro.
+Strategically. Abangan natin ang unang engagement. Tandaan ang draft.
+Mahalaga ito. Abangan natin ang unang engagement.
+Mahalaga ito. Abangan natin ang unang engagement. Preparation ang susi.
+Mahalaga ito. Abangan natin ang unang engagement. Ganyan ang coaching.
+Mahalaga ito. Abangan natin ang unang engagement. Adjustments ang labanan.
+Mahalaga ito. Abangan natin ang unang engagement. Plano muna bago laro.
+Mahalaga ito. Abangan natin ang unang engagement. Tandaan ang draft.
+Tingnan natin. Abangan natin ang unang engagement.
+Tingnan natin. Abangan natin ang unang engagement. Preparation ang susi.
+Tingnan natin. Abangan natin ang unang engagement. Ganyan ang coaching.
+Tingnan natin. Abangan natin ang unang engagement. Adjustments ang labanan.
+Tingnan natin. Abangan natin ang unang engagement. Plano muna bago laro.
+Tingnan natin. Abangan natin ang unang engagement. Tandaan ang draft.
+Bagong laro, bagong pagkakataon.
+Bagong laro, bagong pagkakataon. Preparation ang susi.
+Bagong laro, bagong pagkakataon. Ganyan ang coaching.
+Bagong laro, bagong pagkakataon. Adjustments ang labanan.
+Bagong laro, bagong pagkakataon. Plano muna bago laro.
+Bagong laro, bagong pagkakataon. Tandaan ang draft.
+Okay. Bagong laro, bagong pagkakataon.
+Okay. Bagong laro, bagong pagkakataon. Preparation ang susi.
+Okay. Bagong laro, bagong pagkakataon. Ganyan ang coaching.
+Okay. Bagong laro, bagong pagkakataon. Adjustments ang labanan.
+Okay. Bagong laro, bagong pagkakataon. Plano muna bago laro.
+Okay. Bagong laro, bagong pagkakataon. Tandaan ang draft.
+Pakinggan niyo ito. Bagong laro, bagong pagkakataon.
+Pakinggan niyo ito. Bagong laro, bagong pagkakataon. Preparation ang susi.
+Pakinggan niyo ito. Bagong laro, bagong pagkakataon. Ganyan ang coaching.
+Pakinggan niyo ito. Bagong laro, bagong pagkakataon. Adjustments ang labanan.
+Pakinggan niyo ito. Bagong laro, bagong pagkakataon. Plano muna bago laro.
+Pakinggan niyo ito. Bagong laro, bagong pagkakataon. Tandaan ang draft.
+Malinaw ito. Bagong laro, bagong pagkakataon.
+Malinaw ito. Bagong laro, bagong pagkakataon. Preparation ang susi.
+Malinaw ito. Bagong laro, bagong pagkakataon. Ganyan ang coaching.
+Malinaw ito. Bagong laro, bagong pagkakataon. Adjustments ang labanan.
+Malinaw ito. Bagong laro, bagong pagkakataon. Plano muna bago laro.
+Malinaw ito. Bagong laro, bagong pagkakataon. Tandaan ang draft.
+Ito ang take ko. Bagong laro, bagong pagkakataon.
+Ito ang take ko. Bagong laro, bagong pagkakataon. Preparation ang susi.
+Ito ang take ko. Bagong laro, bagong pagkakataon. Ganyan ang coaching.
+Ito ang take ko. Bagong laro, bagong pagkakataon. Adjustments ang labanan.
+Ito ang take ko. Bagong laro, bagong pagkakataon. Plano muna bago laro.
+Ito ang take ko. Bagong laro, bagong pagkakataon. Tandaan ang draft.
+Ayan na. Bagong laro, bagong pagkakataon.
+Ayan na. Bagong laro, bagong pagkakataon. Preparation ang susi.
+Ayan na. Bagong laro, bagong pagkakataon. Ganyan ang coaching.
+Ayan na. Bagong laro, bagong pagkakataon. Adjustments ang labanan.
+Ayan na. Bagong laro, bagong pagkakataon. Plano muna bago laro.
+Ayan na. Bagong laro, bagong pagkakataon. Tandaan ang draft.
+Strategically. Bagong laro, bagong pagkakataon.
+Strategically. Bagong laro, bagong pagkakataon. Preparation ang susi.
+Strategically. Bagong laro, bagong pagkakataon. Ganyan ang coaching.
+Strategically. Bagong laro, bagong pagkakataon. Adjustments ang labanan.
+Strategically. Bagong laro, bagong pagkakataon. Plano muna bago laro.
+Strategically. Bagong laro, bagong pagkakataon. Tandaan ang draft.
+Mahalaga ito. Bagong laro, bagong pagkakataon.
+Mahalaga ito. Bagong laro, bagong pagkakataon. Preparation ang susi.
+Mahalaga ito. Bagong laro, bagong pagkakataon. Ganyan ang coaching.
+Mahalaga ito. Bagong laro, bagong pagkakataon. Adjustments ang labanan.
+Mahalaga ito. Bagong laro, bagong pagkakataon. Plano muna bago laro.
+Mahalaga ito. Bagong laro, bagong pagkakataon. Tandaan ang draft.
+Tingnan natin. Bagong laro, bagong pagkakataon.
+Tingnan natin. Bagong laro, bagong pagkakataon. Preparation ang susi.
+Tingnan natin. Bagong laro, bagong pagkakataon. Ganyan ang coaching.
+Tingnan natin. Bagong laro, bagong pagkakataon. Adjustments ang labanan.
+Tingnan natin. Bagong laro, bagong pagkakataon. Plano muna bago laro.
+Tingnan natin. Bagong laro, bagong pagkakataon. Tandaan ang draft.
+{seriesScore} ang serye.
+{seriesScore} ang serye. Preparation ang susi.
+{seriesScore} ang serye. Ganyan ang coaching.
+{seriesScore} ang serye. Adjustments ang labanan.
+{seriesScore} ang serye. Plano muna bago laro.
+{seriesScore} ang serye. Tandaan ang draft.
+Okay. {seriesScore} ang serye.
+Okay. {seriesScore} ang serye. Preparation ang susi.
+Okay. {seriesScore} ang serye. Ganyan ang coaching.
+Okay. {seriesScore} ang serye. Adjustments ang labanan.
+Okay. {seriesScore} ang serye. Plano muna bago laro.
+Okay. {seriesScore} ang serye. Tandaan ang draft.
+Pakinggan niyo ito. {seriesScore} ang serye.
+Pakinggan niyo ito. {seriesScore} ang serye. Preparation ang susi.
+Pakinggan niyo ito. {seriesScore} ang serye. Ganyan ang coaching.
+Pakinggan niyo ito. {seriesScore} ang serye. Adjustments ang labanan.
+Pakinggan niyo ito. {seriesScore} ang serye. Plano muna bago laro.
+Pakinggan niyo ito. {seriesScore} ang serye. Tandaan ang draft.
+Malinaw ito. {seriesScore} ang serye.
+Malinaw ito. {seriesScore} ang serye. Preparation ang susi.
+Malinaw ito. {seriesScore} ang serye. Ganyan ang coaching.
+Malinaw ito. {seriesScore} ang serye. Adjustments ang labanan.
+Malinaw ito. {seriesScore} ang serye. Plano muna bago laro.
+Malinaw ito. {seriesScore} ang serye. Tandaan ang draft.
+Ito ang take ko. {seriesScore} ang serye.
+Ito ang take ko. {seriesScore} ang serye. Preparation ang susi.
+Ito ang take ko. {seriesScore} ang serye. Ganyan ang coaching.
+Ito ang take ko. {seriesScore} ang serye. Adjustments ang labanan.
+Ito ang take ko. {seriesScore} ang serye. Plano muna bago laro.
+Ito ang take ko. {seriesScore} ang serye. Tandaan ang draft.
+Ayan na. {seriesScore} ang serye.
+Ayan na. {seriesScore} ang serye. Preparation ang susi.
+Ayan na. {seriesScore} ang serye. Ganyan ang coaching.
+Ayan na. {seriesScore} ang serye. Adjustments ang labanan.
+Ayan na. {seriesScore} ang serye. Plano muna bago laro.
+Ayan na. {seriesScore} ang serye. Tandaan ang draft.
+Strategically. {seriesScore} ang serye.
+Strategically. {seriesScore} ang serye. Preparation ang susi.
+Strategically. {seriesScore} ang serye. Ganyan ang coaching.
+Strategically. {seriesScore} ang serye. Adjustments ang labanan.
+Strategically. {seriesScore} ang serye. Plano muna bago laro.
+Strategically. {seriesScore} ang serye. Tandaan ang draft.
+Mahalaga ito. {seriesScore} ang serye.
+Mahalaga ito. {seriesScore} ang serye. Preparation ang susi.
+Mahalaga ito. {seriesScore} ang serye. Ganyan ang coaching.
+Mahalaga ito. {seriesScore} ang serye. Adjustments ang labanan.
+Mahalaga ito. {seriesScore} ang serye. Plano muna bago laro.
+Mahalaga ito. {seriesScore} ang serye. Tandaan ang draft.
+Tingnan natin. {seriesScore} ang serye.
+Tingnan natin. {seriesScore} ang serye. Preparation ang susi.
+Tingnan natin. {seriesScore} ang serye. Ganyan ang coaching.
+Tingnan natin. {seriesScore} ang serye. Adjustments ang labanan.
+Tingnan natin. {seriesScore} ang serye. Plano muna bago laro.
+Tingnan natin. {seriesScore} ang serye. Tandaan ang draft.
+Good luck sa parehong team.
+Good luck sa parehong team. Preparation ang susi.
+Good luck sa parehong team. Ganyan ang coaching.
+Good luck sa parehong team. Adjustments ang labanan.
+Good luck sa parehong team. Plano muna bago laro.
+Good luck sa parehong team. Tandaan ang draft.
+Okay. Good luck sa parehong team.
+Okay. Good luck sa parehong team. Preparation ang susi.
+Okay. Good luck sa parehong team. Ganyan ang coaching.
+Okay. Good luck sa parehong team. Adjustments ang labanan.
+Okay. Good luck sa parehong team. Plano muna bago laro.
+Okay. Good luck sa parehong team. Tandaan ang draft.
+Pakinggan niyo ito. Good luck sa parehong team.
+Pakinggan niyo ito. Good luck sa parehong team. Preparation ang susi.
+Pakinggan niyo ito. Good luck sa parehong team. Ganyan ang coaching.
+Pakinggan niyo ito. Good luck sa parehong team. Adjustments ang labanan.
+Pakinggan niyo ito. Good luck sa parehong team. Plano muna bago laro.
+Pakinggan niyo ito. Good luck sa parehong team. Tandaan ang draft.
+Malinaw ito. Good luck sa parehong team.
+Malinaw ito. Good luck sa parehong team. Preparation ang susi.
+Malinaw ito. Good luck sa parehong team. Ganyan ang coaching.
+Malinaw ito. Good luck sa parehong team. Adjustments ang labanan.
+Malinaw ito. Good luck sa parehong team. Plano muna bago laro.
+Malinaw ito. Good luck sa parehong team. Tandaan ang draft.
+Ito ang take ko. Good luck sa parehong team.
+Ito ang take ko. Good luck sa parehong team. Preparation ang susi.
+Ito ang take ko. Good luck sa parehong team. Ganyan ang coaching.
+Ito ang take ko. Good luck sa parehong team. Adjustments ang labanan.
+Ito ang take ko. Good luck sa parehong team. Plano muna bago laro.
+Ito ang take ko. Good luck sa parehong team. Tandaan ang draft.
+Ayan na. Good luck sa parehong team.
+Ayan na. Good luck sa parehong team. Preparation ang susi.
+Ayan na. Good luck sa parehong team. Ganyan ang coaching.
+Ayan na. Good luck sa parehong team. Adjustments ang labanan.
+Ayan na. Good luck sa parehong team. Plano muna bago laro.
+Ayan na. Good luck sa parehong team. Tandaan ang draft.
+Strategically. Good luck sa parehong team.
+Strategically. Good luck sa parehong team. Preparation ang susi.
+Strategically. Good luck sa parehong team. Ganyan ang coaching.
+Strategically. Good luck sa parehong team. Adjustments ang labanan.
+Strategically. Good luck sa parehong team. Plano muna bago laro.
+Strategically. Good luck sa parehong team. Tandaan ang draft.
+Mahalaga ito. Good luck sa parehong team.
+Mahalaga ito. Good luck sa parehong team. Preparation ang susi.
+Mahalaga ito. Good luck sa parehong team. Ganyan ang coaching.
+Mahalaga ito. Good luck sa parehong team. Adjustments ang labanan.
+Mahalaga ito. Good luck sa parehong team. Plano muna bago laro.
+Mahalaga ito. Good luck sa parehong team. Tandaan ang draft.
+Tingnan natin. Good luck sa parehong team.
+Tingnan natin. Good luck sa parehong team. Preparation ang susi.
+Tingnan natin. Good luck sa parehong team. Ganyan ang coaching.
+Tingnan natin. Good luck sa parehong team. Adjustments ang labanan.
+Tingnan natin. Good luck sa parehong team. Plano muna bago laro.
+Tingnan natin. Good luck sa parehong team. Tandaan ang draft.
+
+══════ Going to break — 54 lines ══════
+Sa break, dito pumapasok ang coaching — abangan ang mga adjustment.
+Sa break, dito pumapasok ang coaching — abangan ang mga adjustment. Tandaan ang draft.
+Sa break, dito pumapasok ang coaching — abangan ang mga adjustment. Preparation ang susi.
+Sa break, dito pumapasok ang coaching — abangan ang mga adjustment. Adjustments ang labanan.
+Sa break, dito pumapasok ang coaching — abangan ang mga adjustment. Plano muna bago laro.
+Sa break, dito pumapasok ang coaching — abangan ang mga adjustment. Ganyan ang coaching.
+Kung ako ang coach, ito na ang oras para ayusin ang plano.
+Kung ako ang coach, ito na ang oras para ayusin ang plano. Tandaan ang draft.
+Kung ako ang coach, ito na ang oras para ayusin ang plano. Preparation ang susi.
+Kung ako ang coach, ito na ang oras para ayusin ang plano. Adjustments ang labanan.
+Kung ako ang coach, ito na ang oras para ayusin ang plano. Plano muna bago laro.
+Kung ako ang coach, ito na ang oras para ayusin ang plano. Ganyan ang coaching.
+Sulit ang paghihintay, pangako yan.
+Sulit ang paghihintay, pangako yan. Tandaan ang draft.
+Sulit ang paghihintay, pangako yan. Preparation ang susi.
+Sulit ang paghihintay, pangako yan. Adjustments ang labanan.
+Sulit ang paghihintay, pangako yan. Plano muna bago laro.
+Sulit ang paghihintay, pangako yan. Ganyan ang coaching.
+Babalik kami agad, mga ka-TCC.
+Babalik kami agad, mga ka-TCC. Tandaan ang draft.
+Babalik kami agad, mga ka-TCC. Preparation ang susi.
+Babalik kami agad, mga ka-TCC. Adjustments ang labanan.
+Babalik kami agad, mga ka-TCC. Plano muna bago laro.
+Babalik kami agad, mga ka-TCC. Ganyan ang coaching.
+Panoorin muna natin ang mga highlight habang naghihintay.
+Panoorin muna natin ang mga highlight habang naghihintay. Tandaan ang draft.
+Panoorin muna natin ang mga highlight habang naghihintay. Preparation ang susi.
+Panoorin muna natin ang mga highlight habang naghihintay. Adjustments ang labanan.
+Panoorin muna natin ang mga highlight habang naghihintay. Plano muna bago laro.
+Panoorin muna natin ang mga highlight habang naghihintay. Ganyan ang coaching.
+Kuha muna kayo ng tubig at meryenda.
+Kuha muna kayo ng tubig at meryenda. Tandaan ang draft.
+Kuha muna kayo ng tubig at meryenda. Preparation ang susi.
+Kuha muna kayo ng tubig at meryenda. Adjustments ang labanan.
+Kuha muna kayo ng tubig at meryenda. Plano muna bago laro.
+Kuha muna kayo ng tubig at meryenda. Ganyan ang coaching.
+Babalik kami pagkalipas ng {breakMins} minuto.
+Babalik kami pagkalipas ng {breakMins} minuto. Tandaan ang draft.
+Babalik kami pagkalipas ng {breakMins} minuto. Preparation ang susi.
+Babalik kami pagkalipas ng {breakMins} minuto. Adjustments ang labanan.
+Babalik kami pagkalipas ng {breakMins} minuto. Plano muna bago laro.
+Babalik kami pagkalipas ng {breakMins} minuto. Ganyan ang coaching.
+Huwag kayong aalis — babalik kami agad.
+Huwag kayong aalis — babalik kami agad. Tandaan ang draft.
+Huwag kayong aalis — babalik kami agad. Preparation ang susi.
+Huwag kayong aalis — babalik kami agad. Adjustments ang labanan.
+Huwag kayong aalis — babalik kami agad. Plano muna bago laro.
+Huwag kayong aalis — babalik kami agad. Ganyan ang coaching.
+Salamat sa patuloy na panonood, mga ka-TCC.
+Salamat sa patuloy na panonood, mga ka-TCC. Tandaan ang draft.
+Salamat sa patuloy na panonood, mga ka-TCC. Preparation ang susi.
+Salamat sa patuloy na panonood, mga ka-TCC. Adjustments ang labanan.
+Salamat sa patuloy na panonood, mga ka-TCC. Plano muna bago laro.
+Salamat sa patuloy na panonood, mga ka-TCC. Ganyan ang coaching.
 
 ══════ Game intro — 588 lines ══════
 Para sa akin, ang adjustments sa draft ang magdedesisyon ng larong ito.

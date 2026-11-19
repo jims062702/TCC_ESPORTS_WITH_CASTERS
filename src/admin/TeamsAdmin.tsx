@@ -3,7 +3,8 @@ import { Pencil, Plus, Save, Star, Trash2, UserPlus, Users } from 'lucide-react'
 import type { BattleSpell, Player, Role, Team } from '@/types';
 import { usePlayers, useTeams } from '@/hooks/useFirestore';
 import { createPlayer, createTeam, deletePlayer, deleteTeam, updatePlayer, updateTeam } from '@/services/db';
-import { BATTLE_SPELLS, DEFAULT_SPELL_BY_ROLE, ROLES } from '@/lib/constants';
+import { BATTLE_SPELLS, DEFAULT_SPELL_BY_ROLE, MAX_ROSTER, MLBB_HEROES, ROLES } from '@/lib/constants';
+import { canonicalHero } from '@/lib/heroData';
 import { Avatar, TeamLogo } from '@/components/Brand';
 import { ImageUpload } from '@/components/MediaUpload';
 import { SpellBadge } from '@/components/game';
@@ -11,10 +12,21 @@ import { Badge, Button, Card, EmptyState, Field, Input, Modal, Select, Switch } 
 import { useToast } from '@/components/Toast';
 import { cn } from '@/lib/utils';
 
-type TeamDraft = Pick<Team, 'name' | 'tag' | 'logoUrl'>;
+type TeamDraft = Pick<Team, 'name' | 'tag' | 'logoUrl'> & { coachName: string; coachPhoto: string };
 type PlayerDraft = Omit<Player, 'id' | 'createdAt'>;
 
-const blankTeam: TeamDraft = { name: '', tag: '', logoUrl: '' };
+const blankTeam: TeamDraft = { name: '', tag: '', logoUrl: '', coachName: '', coachPhoto: '' };
+const teamDraft = (t: Team): TeamDraft => ({ name: t.name, tag: t.tag, logoUrl: t.logoUrl, coachName: t.coach?.name ?? '', coachPhoto: t.coach?.photoUrl ?? '' });
+const coachOf = (d: TeamDraft) => (d.coachName.trim() ? { name: d.coachName.trim(), photoUrl: d.coachPhoto } : null);
+
+/** "ling, Fanny" → ["Ling", "Fanny"]; unknown names are kept but flagged. */
+const parseHeroes = (text: string) =>
+  text
+    .split(',')
+    .map((h) => canonicalHero(h))
+    .filter(Boolean)
+    .slice(0, 5);
+const unknownHeroes = (list: string[]) => list.filter((h) => !MLBB_HEROES.includes(h));
 
 export default function TeamsAdmin() {
   const teams = useTeams();
@@ -34,7 +46,7 @@ export default function TeamsAdmin() {
   const create = async () => {
     if (!newTeam.name.trim()) return toast.error('Team name is required');
     const ref = await toast.run(
-      () => createTeam({ name: newTeam.name.trim(), tag: (newTeam.tag || newTeam.name.slice(0, 3)).toUpperCase().trim(), logoUrl: newTeam.logoUrl }),
+      () => createTeam({ name: newTeam.name.trim(), tag: (newTeam.tag || newTeam.name.slice(0, 3)).toUpperCase().trim(), logoUrl: newTeam.logoUrl, coach: coachOf(newTeam) }),
       'Team created',
     );
     if (ref) {
@@ -105,24 +117,35 @@ export default function TeamsAdmin() {
 
 function TeamEditor({ team, roster }: { team: Team; roster: Player[] }) {
   const toast = useToast();
-  const [draft, setDraft] = useState<TeamDraft>({ name: team.name, tag: team.tag, logoUrl: team.logoUrl });
+  const [draft, setDraft] = useState<TeamDraft>(() => teamDraft(team));
   const [editing, setEditing] = useState<{ id: string | null; data: PlayerDraft } | null>(null);
-  const dirty = draft.name !== team.name || draft.tag !== team.tag || draft.logoUrl !== team.logoUrl;
+  const [heroText, setHeroText] = useState('');
+  const original = teamDraft(team);
+  const dirty = (Object.keys(original) as (keyof TeamDraft)[]).some((k) => draft[k] !== original[k]);
+  const full = roster.length >= MAX_ROSTER;
   const sorted = [...roster].sort((a, b) => Number(b.isStarter) - Number(a.isStarter) || a.order - b.order);
   const starters = roster.filter((p) => p.isStarter).length;
 
-  useEffect(() => setDraft({ name: team.name, tag: team.tag, logoUrl: team.logoUrl }), [team.name, team.tag, team.logoUrl]);
+  useEffect(() => setDraft(teamDraft(team)), [team.name, team.tag, team.logoUrl, team.coach?.name, team.coach?.photoUrl]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const openNew = () =>
+  const openNew = () => {
+    if (full) return toast.error(`A team can have at most ${MAX_ROSTER} players.`);
+    setHeroText('');
     setEditing({
       id: null,
-      data: { teamId: team.id, ign: '', realName: '', role: 'EXP', photoUrl: '', spell: 'Vengeance', isStarter: starters < 5, order: roster.length },
+      data: { teamId: team.id, ign: '', realName: '', role: 'EXP', photoUrl: '', spell: 'Vengeance', isStarter: starters < 5, order: roster.length, signatureHeroes: [] },
     });
+  };
+  const openEdit = (p: Player) => {
+    setHeroText((p.signatureHeroes ?? []).join(', '));
+    setEditing({ id: p.id, data: { ...p } });
+  };
 
   const savePlayer = async () => {
     if (!editing) return;
     if (!editing.data.ign.trim()) return toast.error('IGN is required');
-    const data = { ...editing.data, ign: editing.data.ign.trim() };
+    if (!editing.id && full) return toast.error(`A team can have at most ${MAX_ROSTER} players.`);
+    const data = { ...editing.data, ign: editing.data.ign.trim(), signatureHeroes: parseHeroes(heroText) };
     await toast.run<unknown>(() => (editing.id ? updatePlayer(editing.id, data) : createPlayer(data)), editing.id ? 'Player updated' : 'Player added');
     setEditing(null);
   };
@@ -143,7 +166,12 @@ function TeamEditor({ team, roster }: { team: Team; roster: Player[] }) {
             >
               Delete
             </Button>
-            <Button size="sm" disabled={!dirty} icon={<Save className="h-4 w-4" />} onClick={() => toast.run(() => updateTeam(team.id, draft), 'Team saved')}>
+            <Button
+              size="sm"
+              disabled={!dirty}
+              icon={<Save className="h-4 w-4" />}
+              onClick={() => toast.run(() => updateTeam(team.id, { name: draft.name, tag: draft.tag, logoUrl: draft.logoUrl, coach: coachOf(draft) }), 'Team saved')}
+            >
               Save
             </Button>
           </>
@@ -161,15 +189,21 @@ function TeamEditor({ team, roster }: { team: Team; roster: Player[] }) {
           <Field label="Logo">
             <ImageUpload value={draft.logoUrl} onChange={(logoUrl) => setDraft({ ...draft, logoUrl })} folder="teams" size={112} />
           </Field>
+          <Field label="Coach (optional — shown on the draft overlay)" hint="Leave blank for “No coach”.">
+            <Input value={draft.coachName} placeholder="Coach name" onChange={(e) => setDraft({ ...draft, coachName: e.target.value })} />
+          </Field>
+          <Field label="Coach photo (optional)">
+            <ImageUpload value={draft.coachPhoto} onChange={(coachPhoto) => setDraft({ ...draft, coachPhoto })} folder="players" shape="circle" size={72} />
+          </Field>
         </div>
       </Card>
 
       <Card
         title="Roster"
-        subtitle={`${starters}/5 starters · battle spells feed the HUD & Trixie's spell calls`}
+        subtitle={`${roster.length}/${MAX_ROSTER} players · ${starters}/5 default starters · pick who plays each game when you Go live / start the next draft`}
         actions={
-          <Button size="sm" icon={<UserPlus className="h-4 w-4" />} onClick={openNew}>
-            Add player
+          <Button size="sm" icon={<UserPlus className="h-4 w-4" />} onClick={openNew} disabled={full} title={full ? `Max ${MAX_ROSTER} players per team` : undefined}>
+            {full ? 'Roster full (7)' : 'Add player'}
           </Button>
         }
       >
@@ -187,6 +221,7 @@ function TeamEditor({ team, roster }: { team: Team; roster: Player[] }) {
                   <p className="text-xs text-muted">
                     {p.role}
                     {p.realName && ` · ${p.realName}`}
+                    {p.signatureHeroes?.length ? ` · ★ ${p.signatureHeroes.join(', ')}` : ''}
                   </p>
                 </div>
                 <span className="flex items-center gap-2 text-xs text-muted">
@@ -200,7 +235,7 @@ function TeamEditor({ team, roster }: { team: Team; roster: Player[] }) {
                     onClick={() => toast.run(() => updatePlayer(p.id, { isStarter: !p.isStarter }))}
                     icon={<Star className={cn('h-4 w-4', p.isStarter && 'fill-brand text-brand')} />}
                   />
-                  <Button size="xs" variant="ghost" onClick={() => setEditing({ id: p.id, data: { ...p } })} icon={<Pencil className="h-4 w-4" />} />
+                  <Button size="xs" variant="ghost" onClick={() => openEdit(p)} icon={<Pencil className="h-4 w-4" />} />
                   <Button
                     size="xs"
                     variant="ghost"
@@ -256,6 +291,12 @@ function TeamEditor({ team, roster }: { team: Team; roster: Player[] }) {
                 <Switch checked={editing.data.isStarter} onChange={(isStarter) => setEditing({ ...editing, data: { ...editing.data, isStarter } })} label="Starter" />
               </div>
             </div>
+            <Field label="Signature heroes (optional, comma-separated)" hint="The casters hype these in the draft — e.g. “NAKUHA NI … ANG Ling!”. Heroes from recorded games are added automatically.">
+              <Input value={heroText} list="mlbb-heroes-sig" placeholder="e.g. Ling, Fanny, Lancelot" onChange={(e) => setHeroText(e.target.value)} />
+              {unknownHeroes(parseHeroes(heroText)).length > 0 && (
+                <p className="mt-1 text-xs text-amber-600 dark:text-amber-400">Not in the hero list: {unknownHeroes(parseHeroes(heroText)).join(', ')} — check the spelling.</p>
+              )}
+            </Field>
             <Button className="w-full" onClick={savePlayer} icon={<Save className="h-4 w-4" />}>
               Save player
             </Button>

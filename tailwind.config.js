@@ -55,8 +55,9 @@ export default {
         cond: ['"Barlow Condensed"', 'Barlow', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        glow: '0 0 24px rgb(var(--brand) / 0.45)',
-        'glow-lg': '0 0 60px rgb(var(--brand) / 0.35)',
+        // Glow strength comes from the theme (softer in light mode).
+        glow: '0 0 24px rgb(var(--brand) / var(--glow-a, 0.45))',
+        'glow-lg': '0 0 60px rgb(var(--brand) / var(--glow-lg-a, 0.35))',
         'glow-teal': '0 0 24px rgba(62, 240, 216, 0.45)',
       },
       keyframes: {

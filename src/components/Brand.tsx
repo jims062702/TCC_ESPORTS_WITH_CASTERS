@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useTheme } from '@/hooks/useTheme';
@@ -45,10 +46,19 @@ export function ThemeToggle({ className }: { className?: string }) {
 }
 
 /** Team logo with a crimson initials badge fallback. */
+/** True once an image URL failed to load (resets when the URL changes). */
+function useBrokenImage(url?: string | null) {
+  const [broken, setBroken] = useState(false);
+  useEffect(() => setBroken(false), [url]);
+  return [broken, () => setBroken(true)] as const;
+}
+
 export function TeamLogo({ url, name, size = 40, className }: { url?: string | null; name?: string; size?: number; className?: string }) {
-  if (url) {
+  const [broken, onError] = useBrokenImage(url);
+  if (url && !broken) {
     return (
       <img
+        onError={onError}
         src={cld(url, { w: size * 2, h: size * 2, crop: 'pad' })}
         alt={name ?? 'Team logo'}
         width={size}
@@ -71,10 +81,12 @@ export function TeamLogo({ url, name, size = 40, className }: { url?: string | n
 }
 
 export function Avatar({ url, name, size = 36, className, ring }: { url?: string | null; name: string; size?: number; className?: string; ring?: string }) {
+  const [broken, onError] = useBrokenImage(url);
   const style = { width: size, height: size, ...(ring ? { boxShadow: `0 0 0 2px ${ring}` } : {}) };
-  if (url) {
+  if (url && !broken) {
     return (
       <img
+        onError={onError}
         src={cld(url, { w: size * 2, h: size * 2, gravity: 'face' })}
         alt={name}
         width={size}
@@ -97,13 +109,14 @@ export function Avatar({ url, name, size = 36, className, ring }: { url?: string
 
 /** Caster avatar: uploaded photo (Settings) or a persona-coloured monogram. */
 export function CasterAvatar({ casterId, url, size = 40, speaking, className }: { casterId: string; url?: string; size?: number; speaking?: boolean; className?: string }) {
+  const [broken, onError] = useBrokenImage(url);
   const c = CASTER_BY_ID[casterId];
   const color = c?.color ?? '#f8312f';
   return (
     <span className={cn('relative inline-flex shrink-0', className)} style={{ width: size, height: size }}>
       {speaking && <span className="absolute -inset-1 animate-ping rounded-full opacity-60" style={{ background: color }} />}
-      {url ? (
-        <img src={cld(url, { w: size * 2, h: size * 2, gravity: 'face' })} alt={c?.name} className="relative h-full w-full rounded-full object-cover" style={{ boxShadow: `0 0 0 2px ${color}` }} />
+      {url && !broken ? (
+        <img onError={onError} src={cld(url, { w: size * 2, h: size * 2, gravity: 'face' })} alt={c?.name} className="relative h-full w-full rounded-full object-cover" style={{ boxShadow: `0 0 0 2px ${color}` }} />
       ) : (
         <span
           className="relative flex h-full w-full items-center justify-center rounded-full bg-ink-900 font-display leading-none"
