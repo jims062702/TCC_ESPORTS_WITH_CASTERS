@@ -1,0 +1,42 @@
+rules_version = '2';
+
+// TCC Esports — Firestore security rules (free Spark plan).
+// Public: tournament data, live broadcast state (landing page + OBS overlays read without login).
+// Admins: anyone with a document at admins/{uid} (create it by hand in the Firebase console).
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return signedIn() && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    // Admin allow-list. A user can only check their own entry (also used by the
+    // /api/gemini function to verify callers). Never writable from the client.
+    match /admins/{uid} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    // Public, read-only for viewers.
+    match /teams/{id}       { allow read: if true; allow write: if isAdmin(); }
+    match /players/{id}     { allow read: if true; allow write: if isAdmin(); }
+    match /tournaments/{id} { allow read: if true; allow write: if isAdmin(); }
+    match /matches/{id}     { allow read: if true; allow write: if isAdmin(); }
+    match /games/{id}       { allow read: if true; allow write: if isAdmin(); }
+    match /highlights/{id}  { allow read: if true; allow write: if isAdmin(); }
+    match /heroes/{id}      { allow read: if true; allow write: if isAdmin(); }
+    match /settings/{id}    { allow read: if true; allow write: if isAdmin(); }
+
+    // Live broadcast state: live/current, live/caption, live/booth (OBS overlays read these).
+    match /live/{id}        { allow read: if true; allow write: if isAdmin(); }
+
+    // Control-room only: event queue, commentary archive, pre-shoutcast library.
+    match /events/{id}      { allow read, write: if isAdmin(); }
+    match /commentary/{id}  { allow read, write: if isAdmin(); }
+    match /scripts/{id}     { allow read, write: if isAdmin(); }
+  }
+}

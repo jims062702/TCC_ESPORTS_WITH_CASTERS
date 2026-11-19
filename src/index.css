@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Theme tokens — colours sampled from the TCC Esports badge:
+ *   crimson banner red, charcoal ring, white lettering and the bull's teal eyes.
+ * Values are space-separated RGB so Tailwind can apply alpha (bg-brand/20 etc).
+ */
+@layer base {
+  :root {
+    --bg: 247 244 243;
+    --surface: 255 255 255;
+    --surface-2: 241 236 235;
+    --line: 226 218 217;
+    --fg: 29 27 32;
+    --muted: 106 99 108;
+    --brand: 225 29 27;
+    --brand-strong: 180 20 18;
+    --accent: 13 148 132;
+    color-scheme: light;
+  }
+
+  .dark {
+    --bg: 13 11 14;
+    --surface: 23 21 25;
+    --surface-2: 33 31 36;
+    --line: 52 48 56;
+    --fg: 246 243 244;
+    --muted: 163 155 162;
+    --brand: 248 49 47;
+    --brand-strong: 225 29 27;
+    --accent: 62 240 216;
+    color-scheme: dark;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  /* OBS browser sources: fully transparent page so overlays sit on top of the game feed. */
+  html.overlay-mode,
+  html.overlay-mode body {
+    background: transparent !important;
+    overflow: hidden;
+  }
+
+  /* Landing page: free scrolling (no snapping — the page stays exactly where
+     you stop), with smooth scrolling when a menu link is clicked. */
+  html.smooth-page {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html.smooth-page {
+      scroll-behavior: auto;
+    }
+  }
+
+  ::selection {
+    background: rgb(var(--brand) / 0.35);
+  }
+
+  input[type='number']::-webkit-inner-spin-button {
+    opacity: 0.4;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-line bg-surface shadow-sm;
+  }
+  .card-hover {
+    @apply transition hover:-translate-y-0.5 hover:border-brand/50 hover:shadow-glow;
+  }
+  .section-title {
+    @apply font-display text-4xl uppercase leading-none tracking-wide sm:text-5xl;
+  }
+  .eyebrow {
+    @apply font-cond text-xs font-semibold uppercase tracking-[0.25em] text-brand;
+  }
+  .input {
+    @apply w-full rounded-lg border border-line bg-surface2 px-3 py-2 text-sm text-fg outline-none transition placeholder:text-muted/70 focus:border-brand focus:ring-2 focus:ring-brand/25;
+  }
+  .label {
+    @apply mb-1 block font-cond text-xs font-semibold uppercase tracking-wider text-muted;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full border border-line bg-surface2 px-2.5 py-0.5 text-xs font-semibold;
+  }
+  .table-head {
+    @apply font-cond text-xs font-semibold uppercase tracking-wider text-muted;
+  }
+  .stripe-bg {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgb(var(--brand) / 0.06) 0 10px,
+      transparent 10px 20px
+    );
+  }
+  .grid-bg {
+    background-image: linear-gradient(rgb(var(--line) / 0.6) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(var(--line) / 0.6) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .text-glow {
+    text-shadow: 0 0 18px rgb(var(--brand) / 0.65);
+  }
+  .neon {
+    color: #ff3b3b;
+    text-shadow: 0 0 6px rgba(255, 45, 45, 0.9), 0 0 18px rgba(255, 30, 30, 0.6);
+  }
+  .clip-slant-r {
+    clip-path: polygon(0 0, 100% 0, calc(100% - 18px) 100%, 0 100%);
+  }
+  .clip-slant-l {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 18px 100%);
+  }
+  .clip-tab {
+    clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 100%, 0 100%);
+  }
+  .clip-tab-down {
+    clip-path: polygon(0 0, 100% 0, calc(100% - 14px) 100%, 14px 100%);
+  }
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--line)) transparent;
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
