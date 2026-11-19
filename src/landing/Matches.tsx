@@ -43,7 +43,7 @@ export function MatchesSection({ matches, teams, onSelect, facebookUrl }: { matc
         </EmptyState>
       ) : (
         <div className="grid gap-8 lg:grid-cols-2">
-          <div className="space-y-3">
+          <div className="min-w-0 space-y-3">
             <h3 className="flex items-center gap-2 font-cond text-sm font-semibold uppercase tracking-wider text-muted">
               <Swords className="h-4 w-4 text-brand" /> {live.length ? 'Live & up next' : 'Up next'}
             </h3>
@@ -52,7 +52,7 @@ export function MatchesSection({ matches, teams, onSelect, facebookUrl }: { matc
             ))}
             {!live.length && !upcoming.length && <p className="text-sm text-muted">No upcoming matches.</p>}
           </div>
-          <div className="space-y-3">
+          <div className="min-w-0 space-y-3">
             <h3 className="flex items-center gap-2 font-cond text-sm font-semibold uppercase tracking-wider text-muted">
               <Trophy className="h-4 w-4 text-brand" /> Recent results
             </h3>
@@ -76,7 +76,8 @@ function MatchRow({ m, teams, onSelect, facebookUrl }: { m: Match; teams: Record
     <div className={cn('flex min-w-0 flex-1 items-center gap-3', right && 'flex-row-reverse text-right', done && !won && 'opacity-55')}>
       <TeamLogo url={t?.logoUrl} name={t?.name ?? 'TBD'} size={40} />
       <div className="min-w-0">
-        <p className={cn('truncate font-semibold', !t && 'italic text-muted')}>{t?.name ?? 'TBD'}</p>
+        {/* Phones: up to two lines so long team names stay readable */}
+        <p className={cn('line-clamp-2 break-words text-[15px] font-semibold leading-tight sm:truncate sm:text-base', !t && 'italic text-muted')}>{t?.name ?? 'TBD'}</p>
         <p className="font-cond text-xs uppercase tracking-wider text-muted">{t?.tag ?? '—'}</p>
       </div>
       {(live || done) && <span className={cn('font-display text-4xl leading-none tabular', right ? 'mr-auto' : 'ml-auto', won ? 'text-brand' : '')}>{score}</span>}
@@ -90,9 +91,9 @@ function MatchRow({ m, teams, onSelect, facebookUrl }: { m: Match; teams: Record
       onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onSelect(m)}
       className={cn('card card-hover flex w-full cursor-pointer flex-col gap-3 p-4 text-left', live && 'border-brand shadow-glow')}
     >
-      <div className="flex items-center justify-between gap-2 font-cond text-xs font-semibold uppercase tracking-wider text-muted">
-        <span className="truncate">{m.label}</span>
-        <span className="flex shrink-0 items-center gap-2">
+      <div className="flex flex-wrap items-center justify-between gap-x-2 gap-y-1 font-cond text-xs font-semibold uppercase tracking-wider text-muted">
+        <span className="min-w-0 truncate">{m.label}</span>
+        <span className="ml-auto flex flex-wrap items-center justify-end gap-2">
           {/* Schedule (local time) on every card — upcoming, live and final */}
           <span className="flex items-center gap-1">
             <CalendarClock className="h-3.5 w-3.5" /> {m.scheduledAt ? formatDateTime(m.scheduledAt) : 'TBA'}

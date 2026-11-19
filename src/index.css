@@ -202,3 +202,10 @@
 .print-only {
   display: none;
 }
+
+/* Mobile safety net: nothing may widen the page sideways (sticky still works with clip). */
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}

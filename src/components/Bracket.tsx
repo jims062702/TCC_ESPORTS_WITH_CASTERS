@@ -42,7 +42,11 @@ export function BracketView({
 
   return (
     <div className="print-area space-y-10">
-      {title && <h2 className="print-only font-display text-3xl uppercase">{title} — Bracket</h2>}
+      {title && (
+        <h2 hidden className="print-only font-display text-3xl uppercase">
+          {title} — Bracket
+        </h2>
+      )}
       {seeding.length > 0 && (
         <div>
           <h3 className="eyebrow mb-1">Seeding Round</h3>
