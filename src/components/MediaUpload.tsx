@@ -12,6 +12,7 @@ export function ImageUpload({
   shape = 'square',
   size = 96,
   label = 'Upload',
+  stackLg = false,
 }: {
   value: string;
   onChange: (url: string) => void;
@@ -19,6 +20,8 @@ export function ImageUpload({
   shape?: 'square' | 'circle';
   size?: number;
   label?: string;
+  /** Desktop: picture on top, URL box below (for narrow side columns). */
+  stackLg?: boolean;
 }) {
   const input = useRef<HTMLInputElement>(null);
   const [progress, setProgress] = useState<number | null>(null);
@@ -41,7 +44,7 @@ export function ImageUpload({
   };
 
   return (
-    <div className="flex items-center gap-3">
+    <div className={cn('flex items-center gap-3', stackLg && 'lg:flex-col lg:items-center')}>
       <button
         type="button"
         onClick={() => input.current?.click()}
@@ -65,7 +68,7 @@ export function ImageUpload({
           </span>
         )}
       </button>
-      <div className="min-w-0 flex-1 space-y-1.5">
+      <div className={cn('min-w-0 flex-1 space-y-1.5', stackLg && 'lg:w-full lg:flex-none')}>
         <input
           className="input text-xs"
           placeholder={isCloudinaryConfigured ? 'or paste an image URL' : 'Paste an image URL (Cloudinary not configured)'}

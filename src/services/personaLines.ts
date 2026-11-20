@@ -53,6 +53,9 @@ export function groupForKey(key: string): LineGroup {
   if (key.startsWith('MANIAC') || key.startsWith('SAVAGE')) return 'BIGKILL';
   if (key.endsWith('_STEAL')) return 'STEAL';
   if (key === 'TURTLE' || key === 'LORD' || key === 'BUFF') return 'OBJECTIVE';
+  if (key === 'TURTLE_HEALING' || key.startsWith('TURRET') || key === 'WISP_REVEAL') return 'OBJECTIVE';
+  if (key.startsWith('INVADE')) return 'CONTEST';
+  if (key.startsWith('MAP_EFFECT')) return 'INTRO';
   if (key === 'OBJECTIVE_CONTEST') return 'CONTEST';
   if (key === 'GOLD_UPDATE') return 'GOLD';
   if (key === 'GOLD_EVEN') return 'EVEN';

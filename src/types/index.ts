@@ -37,6 +37,8 @@ export interface Team {
   color?: string;
   /** Optional coach (null/absent = "No coach"). */
   coach?: Coach | null;
+  /** Season this team (and its roster) plays in, e.g. "Season 2". Absent = the first season. */
+  season?: string;
   createdAt: number;
 }
 
@@ -47,15 +49,25 @@ export interface Player {
   realName?: string;
   role: Role;
   photoUrl: string;
-  spell: BattleSpell;
+  /** Older rosters only — battle spells are now picked per game in the Drafting phase. */
+  spell?: BattleSpell | null;
   isStarter: boolean;
   order: number;
   /** Optional hand-picked signature heroes (merged with heroes from recorded games). */
   signatureHeroes?: string[];
+  /** Public profile (player page on the website). */
+  age?: number | null;
+  sex?: 'Male' | 'Female' | null;
+  course?: string;
+  /** Favourite hero ('' = none). */
+  favoriteHero?: string;
+  /** Short description / bio. */
+  bio?: string;
   createdAt: number;
 }
 
 export type TournamentType = 'single' | 'double';
+// (Tournament.levelRecord: fastest Level 15 of the tournament — see LevelRecord.)
 export type TournamentStatus = 'upcoming' | 'ongoing' | 'completed';
 
 export interface Tournament {
@@ -78,6 +90,8 @@ export interface Tournament {
   /** Seeding winners' opponent choices: winner team id → the team they picked. */
   opponentPicks?: Record<string, string>;
   createdAt: number;
+  /** Fastest time to Level 15 in this tournament (updated when a game's winner is declared). */
+  levelRecord?: LevelRecord | null;
 }
 
 export interface FinalsMvp {
@@ -143,7 +157,7 @@ export interface GamePlayerStat {
   teamId: string;
   ign: string;
   hero: string;
-  spell: BattleSpell;
+  spell: BattleSpell | null;
   k: number;
   d: number;
   a: number;
@@ -154,6 +168,10 @@ export interface GamePlayerStat {
   savage: number;
   lords: number;
   turtles: number;
+  /** Hero level at the end of the game (1–15). */
+  level?: number;
+  /** Game time (seconds) when the player reached Level 15. */
+  maxLevelSec?: number | null;
   /** Teamfight participation % — typed by the operator after the game (null = not entered). */
   tp?: number | null;
 }
@@ -174,6 +192,8 @@ export interface GameRecord {
   players: GamePlayerStat[];
   /** Post-match MVP (best rating on the winning team), set when the post-game stats are saved. */
   mvpPlayerId?: string | null;
+  /** Battlefield effect of that game. */
+  mapEffect?: MapEffect | null;
   createdAt: number;
 }
 
@@ -203,8 +223,15 @@ export interface LivePlayer {
   /** Signature heroes, used by the casters during the draft. */
   pool?: HeroPoolEntry[];
   hero: string;
-  spell: BattleSpell;
+  /** Picked in the Drafting phase (null = not set yet). */
+  spell: BattleSpell | null;
   spellReadyAt: number | null;
+  /** When the spell was used (with spellReadyAt gives the real cooldown length). */
+  spellUsedAt?: number | null;
+  /** Hero level 1–15 (+ Level in the controller). */
+  level?: number;
+  /** Game time (seconds) when this player reached Level 15. */
+  maxLevelSec?: number | null;
   k: number;
   d: number;
   a: number;
@@ -220,6 +247,8 @@ export interface LivePlayer {
 export interface LiveSide {
   turtles: number;
   lords: number;
+  /** Enemy turrets this side destroyed. */
+  turrets?: number;
   players: LivePlayer[];
   /** Coach for this game (null = "No coach"). */
   coach?: Coach | null;
@@ -275,6 +304,10 @@ export interface Banner {
 
 export interface ReplayState {
   active: boolean;
+  /** OBS plays the clip (with zoom transitions): the overlay waits for `playingAt`. */
+  obs?: boolean;
+  /** When the clip actually started playing in OBS (null until then). */
+  playingAt?: number | null;
   startedAt: number;
   endsAt: number;
   title: string;
@@ -309,12 +342,47 @@ export interface LiveState {
   replay: ReplayState;
   banner: Banner | null;
   breakEndsAt: number | null;
+  /** The break is a "Pause the game" (mid-game): the controller stays on In-game and the clock resumes when it ends. */
+  breakPause?: boolean;
   breakMessage: string;
   /** Earlier games of this series (winner + heroes) — draft storytelling. */
   history?: SeriesGameSummary[];
   /** Tournament meta (most picked/banned heroes) — draft storytelling. */
   meta?: MetaHero[];
+  /** This game's battlefield effect (set by the operator once the game shows it). */
+  mapEffect?: MapEffect | null;
+  /** "Level 15" pop-up on the HUD (new best time, with the old record slashed). */
+  levelPop?: LevelPop | null;
+  /** Fastest Level 15 of THIS game — saved to the tournament only when the winner is declared. */
+  levelBest?: LevelRecord | null;
   updatedAt: number;
+}
+
+/** Fastest time to the max level (Level 15) — kept per tournament. */
+export interface LevelRecord {
+  sec: number;
+  playerId: string;
+  ign: string;
+  team: string;
+  hero: string;
+  gameNumber: number;
+  matchLabel: string;
+  at: number;
+}
+
+export interface LevelPop {
+  id: string;
+  at: number;
+  side: Side;
+  ign: string;
+  team: string;
+  hero: string;
+  photoUrl: string;
+  sec: number;
+  /** Beat (or set) the tournament's fastest Level 15. */
+  best: boolean;
+  /** The record before this one (slashed when beaten; the standing best otherwise). */
+  prev: LevelRecord | null;
 }
 
 /** live/caption — what the casters are saying right now (written by the Caster Booth). */
@@ -344,7 +412,16 @@ export interface BoothState {
 
 // ── Events (admin triggers → caster booth) ──────────────────────────────────
 
+/** 2026 annual map: one battlefield effect per game, picked at random by the game. */
+export type MapEffect = 'revealingWisps' | 'healingTurtle' | 'goldenTurret' | 'flyingCloud';
+export type TurretTier = 'Outer' | 'Inner' | 'Base';
+
 export type EventType =
+  | 'LEVEL_MAX'
+  | 'INVADE'
+  | 'TURRET'
+  | 'WISP_REVEAL'
+  | 'MAP_EFFECT'
   | 'KILL'
   | 'DRAFT_START'
   | 'DRAFT_BAN'
@@ -430,6 +507,13 @@ export interface Highlight {
   /** Shown in the public Highlights section (default true). */
   showOnSite?: boolean;
   durationSec?: number;
+  /** Short description of the play. */
+  description?: string;
+  /** Search keywords (e.g. "savage", "lord steal"). */
+  keywords?: string[];
+  /** The player in the clip (and their squad) — searchable on the website. */
+  playerId?: string | null;
+  teamId?: string | null;
   order: number;
   createdAt: number;
 }

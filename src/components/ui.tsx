@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 
 // ── Button ──────────────────────────────────────────────────────────────────
 
-type Variant = 'primary' | 'secondary' | 'ghost' | 'danger' | 'outline' | 'accent';
+type Variant = 'primary' | 'secondary' | 'ghost' | 'danger' | 'destructive' | 'outline' | 'accent';
 type Size = 'xs' | 'sm' | 'md' | 'lg';
 
 const variants: Record<Variant, string> = {
@@ -13,6 +13,7 @@ const variants: Record<Variant, string> = {
   secondary: 'bg-surface2 text-fg hover:bg-line/70 border border-line',
   ghost: 'text-fg hover:bg-surface2',
   danger: 'bg-red-600/10 text-red-600 dark:text-red-400 hover:bg-red-600/20 border border-red-600/30',
+  destructive: 'bg-red-600 text-white hover:bg-red-700 shadow-sm shadow-red-600/30',
   outline: 'border border-brand/60 text-brand hover:bg-brand/10',
   accent: 'bg-accent text-ink-950 hover:brightness-110',
 };
@@ -86,7 +87,7 @@ export function Switch({ checked, onChange, label, disabled }: { checked: boolea
       onClick={() => onChange(!checked)}
       className="inline-flex items-center gap-2 text-sm disabled:opacity-50"
     >
-      <span className={cn('relative h-5 w-9 rounded-full transition', checked ? 'bg-brand' : 'bg-line')}>
+      <span className={cn('relative h-5 w-9 shrink-0 rounded-full transition', checked ? 'bg-brand' : 'bg-line')}>
         <span className={cn('absolute top-0.5 h-4 w-4 rounded-full bg-white shadow transition-all', checked ? 'left-[18px]' : 'left-0.5')} />
       </span>
       {label}
@@ -98,7 +99,7 @@ export function Switch({ checked, onChange, label, disabled }: { checked: boolea
 
 export function Card({ className, children, title, actions, subtitle }: { className?: string; children: ReactNode; title?: ReactNode; subtitle?: ReactNode; actions?: ReactNode }) {
   return (
-    <section className={cn('card p-4 sm:p-5', className)}>
+    <section className={cn('card min-w-0 p-4 sm:p-5', className)}>
       {(title || actions) && (
         <header className="mb-4 flex flex-wrap items-start justify-between gap-3">
           <div className="min-w-0">
@@ -161,7 +162,7 @@ export function Notice({ tone = 'info', children, className }: { tone?: 'info' |
   return <div className={cn('rounded-xl border px-4 py-3 text-sm', tones[tone], className)}>{children}</div>;
 }
 
-export function Tabs<T extends string>({ value, onChange, items, className }: { value: T; onChange: (v: T) => void; items: { value: T; label: ReactNode }[]; className?: string }) {
+export function Tabs<T extends string>({ value, onChange, items, className }: { value: T; onChange: (v: T) => void; items: { value: T; label: ReactNode; disabled?: boolean; title?: string }[]; className?: string }) {
   return (
     <div className={cn('inline-flex rounded-xl border border-line bg-surface2 p-1', className)} role="tablist">
       {items.map((it) => (
@@ -169,9 +170,11 @@ export function Tabs<T extends string>({ value, onChange, items, className }: { 
           key={it.value}
           role="tab"
           aria-selected={value === it.value}
+          disabled={it.disabled}
+          title={it.title}
           onClick={() => onChange(it.value)}
           className={cn(
-            'relative rounded-lg px-3 py-1.5 font-cond text-sm font-semibold uppercase tracking-wider transition',
+            'relative rounded-lg px-3 py-1.5 font-cond text-sm font-semibold uppercase tracking-wider transition disabled:cursor-not-allowed disabled:opacity-40',
             value === it.value ? 'text-white' : 'text-muted hover:text-fg',
           )}
         >
@@ -185,7 +188,7 @@ export function Tabs<T extends string>({ value, onChange, items, className }: { 
 
 // ── Modal ───────────────────────────────────────────────────────────────────
 
-export function Modal({ open, onClose, title, children, wide }: { open: boolean; onClose: () => void; title: ReactNode; children: ReactNode; wide?: boolean }) {
+export function Modal({ open, onClose, title, children, wide, xl }: { open: boolean; onClose: () => void; title: ReactNode; children: ReactNode; wide?: boolean; /** Extra wide on desktop (forms that should fit without scrolling). */ xl?: boolean }) {
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose();
@@ -201,7 +204,7 @@ export function Modal({ open, onClose, title, children, wide }: { open: boolean;
           <motion.div
             role="dialog"
             aria-modal="true"
-            className={cn('card relative max-h-[92vh] w-full overflow-y-auto rounded-b-none p-5 sm:rounded-2xl', wide ? 'sm:max-w-3xl' : 'sm:max-w-lg')}
+            className={cn('card relative max-h-[92vh] w-full overflow-y-auto rounded-b-none p-5 sm:rounded-2xl', xl ? 'sm:max-w-3xl lg:max-w-5xl' : wide ? 'sm:max-w-3xl' : 'sm:max-w-lg')}
             initial={{ y: 40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 40, opacity: 0 }}

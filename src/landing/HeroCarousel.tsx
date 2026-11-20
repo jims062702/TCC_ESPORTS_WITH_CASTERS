@@ -67,14 +67,15 @@ function BuiltinSlide({ kind }: { kind: string }) {
 
 /** Full-bleed versions of the built-in slides: artwork sits on the right half (the left fades under the text). */
 function BuiltinBackground({ kind }: { kind: string }) {
-  const right = 'absolute inset-y-0 right-0 hidden w-1/2 flex-col items-center justify-center px-10 text-center lg:flex';
+  // Phones: artwork in the lower part of the screen (the text sits on top); desktop: the right half.
+  const right = 'absolute inset-x-0 bottom-[7%] flex h-[42%] flex-col items-center justify-center px-6 text-center opacity-60 lg:left-auto lg:right-0 lg:top-0 lg:bottom-0 lg:h-auto lg:w-1/2 lg:px-10 lg:opacity-100';
   if (kind === 'tagline') {
     return (
       <div className="absolute inset-0 bg-gradient-to-br from-[#f8e4e1] via-[#f1d3cf] to-[#ece4e1] dark:from-crimson-950 dark:via-crimson-800 dark:to-crimson-950">
         <div className="grid-bg absolute inset-0 opacity-30 dark:opacity-15" />
         <div className={right}>
-          <Logo size={180} className="h-[22vh] w-auto drop-shadow-[0_14px_28px_rgba(80,20,20,0.22)] dark:drop-shadow-[0_0_30px_rgba(0,0,0,0.6)]" />
-          <p className="neon mt-6 font-display text-7xl uppercase leading-[0.9] tracking-[0.18em] xl:text-8xl">
+          <Logo size={180} className="h-[12vh] w-auto lg:h-[22vh] drop-shadow-[0_14px_28px_rgba(80,20,20,0.22)] dark:drop-shadow-[0_0_30px_rgba(0,0,0,0.6)]" />
+          <p className="neon mt-4 font-display text-5xl uppercase leading-[0.9] tracking-[0.18em] lg:mt-6 lg:text-7xl xl:text-8xl">
             Let the
             <br />
             game begin
@@ -89,13 +90,13 @@ function BuiltinBackground({ kind }: { kind: string }) {
         <div className="absolute right-[30%] top-[10%] h-[50vh] w-[50vh] rounded-full bg-teal-deep/10 blur-[100px] dark:bg-teal-glow/15" />
         <div className="absolute -bottom-20 right-0 h-[60vh] w-[60vh] rounded-full bg-crimson-600/15 blur-[110px] dark:bg-crimson-600/30" />
         <div className={right}>
-          <p className="font-cond text-lg font-semibold uppercase tracking-[0.35em] text-teal-deep dark:text-teal-glow">Mobile Legends: Bang Bang</p>
-          <p className="mt-3 font-display text-8xl uppercase leading-[0.85] text-ink-900 dark:text-white">
+          <p className="font-cond text-sm font-semibold uppercase tracking-[0.3em] text-teal-deep dark:text-teal-glow lg:text-lg lg:tracking-[0.35em]">Mobile Legends: Bang Bang</p>
+          <p className="mt-2 font-display text-6xl uppercase leading-[0.85] text-ink-900 dark:text-white lg:mt-3 lg:text-8xl">
             TCC Esports
             <br />
             <span className="text-crimson-700 dark:text-crimson-500">Tournament</span>
           </p>
-          <p className="mt-5 font-cond text-lg uppercase tracking-[0.25em] text-ink-600 dark:text-white/70">Live brackets · Standings · Leaderboards</p>
+          <p className="mt-3 font-cond text-sm uppercase tracking-[0.2em] text-ink-600 dark:text-white/70 lg:mt-5 lg:text-lg lg:tracking-[0.25em]">Live brackets · Standings · Leaderboards</p>
         </div>
       </div>
     );

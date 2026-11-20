@@ -1,11 +1,13 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Film, Maximize2, Play, X } from 'lucide-react';
-import type { Highlight } from '@/types';
+import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Film, Maximize2, Play, Search, X } from 'lucide-react';
+import type { Highlight, Player, Role, Team } from '@/types';
+import { POSITION_LABEL, ROLES } from '@/lib/constants';
 import { videoPoster, videoStreamUrl } from '@/services/cloudinary';
-import { Button, EmptyState } from '@/components/ui';
+import { Button, EmptyState, Input, Select } from '@/components/ui';
 import { cn, formatDuration } from '@/lib/utils';
 import { scrollToSection } from './sections';
+import { DEFAULT_SEASON, sameSeason, teamSeason } from '@/lib/seasons';
 
 const PAGE = 4; // cards per row / per "See more"
 
@@ -27,12 +29,43 @@ function useCanHover() {
  * muted preview. Any device: clicking/tapping opens the big player with sound.
  * Shows 4 at a time — "See more" adds 4 more, "Show less" collapses back.
  */
-export function HighlightsSection({ highlights }: { highlights: Highlight[] }) {
+/** Everything a viewer may type to find a clip: title, description, keywords, player, squad, position. */
+export function highlightHaystack(h: Highlight, players: Record<string, Player>, teams: Record<string, Team>): string {
+  const p = h.playerId ? players[h.playerId] : undefined;
+  const t = teams[h.teamId ?? p?.teamId ?? ''];
+  return [h.title, h.description, ...(h.keywords ?? []), p?.ign, p?.realName, p ? POSITION_LABEL[p.role] : '', p?.role, t?.name, t?.tag].filter(Boolean).join(' ').toLowerCase();
+}
+
+/** Every word typed must appear somewhere (e.g. "gold lane mnl"). */
+export function matchesSearch(haystack: string, query: string): boolean {
+  const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+  return words.every((w) => haystack.includes(w));
+}
+
+export function HighlightsSection({ highlights: all, players = {}, teams = {}, filters = true }: { highlights: Highlight[]; players?: Record<string, Player>; teams?: Record<string, Team>; filters?: boolean }) {
   const [visible, setVisible] = useState(PAGE);
   const [open, setOpen] = useState<number | null>(null);
+  const [q, setQ] = useState('');
+  const [team, setTeam] = useState('');
+  const [role, setRole] = useState<Role | ''>('');
   const canHover = useCanHover();
 
-  if (!highlights.length) {
+  // Search + filters (squad, position) — e.g. the gold laner of a squad.
+  const highlights = useMemo(
+    () =>
+      all.filter((h) => {
+        const p = h.playerId ? players[h.playerId] : undefined;
+        if (team && (h.teamId ?? p?.teamId) !== team) return false;
+        if (role && p?.role !== role) return false;
+        return !q.trim() || matchesSearch(highlightHaystack(h, players, teams), q);
+      }),
+    [all, players, teams, q, team, role],
+  );
+  useEffect(() => setVisible(PAGE), [q, team, role]);
+  const squads = useMemo(() => [...new Set(all.map((h) => h.teamId ?? (h.playerId ? players[h.playerId]?.teamId : undefined)).filter(Boolean) as string[])].map((id) => teams[id]).filter(Boolean), [all, players, teams]);
+  const filtering = Boolean(q.trim() || team || role);
+
+  if (!all.length) {
     return (
       <EmptyState icon={<Film className="h-8 w-8" />} title="No highlights yet">
         The best plays of the tournament will appear here.
@@ -45,11 +78,54 @@ export function HighlightsSection({ highlights }: { highlights: Highlight[] }) {
 
   return (
     <div>
+      {filters && (
+      <div className="mb-4 grid gap-2 sm:grid-cols-[1fr_200px_170px_auto]" data-testid="highlight-filters">
+        <div className="relative">
+          <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted" />
+          <Input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search: player, squad, keyword — e.g. gold lane, savage" className="pl-9" aria-label="Search highlights" />
+        </div>
+        <Select value={team} onChange={(e) => setTeam(e.target.value)} aria-label="Squad">
+          <option value="">All squads</option>
+          {squads.map((t) => (
+            <option key={t.id} value={t.id}>
+              {/* Same squad in two seasons → "Falcons · Season 2" */}
+              {squads.some((o) => o.id !== t.id && o.name.trim().toLowerCase() === t.name.trim().toLowerCase() && !sameSeason(teamSeason(o, DEFAULT_SEASON), teamSeason(t, DEFAULT_SEASON))) ? `${t.name} · ${teamSeason(t, DEFAULT_SEASON)}` : t.name}
+            </option>
+          ))}
+        </Select>
+        <Select value={role} onChange={(e) => setRole(e.target.value as Role | '')} aria-label="Position">
+          <option value="">All positions</option>
+          {ROLES.map((r) => (
+            <option key={r} value={r}>
+              {POSITION_LABEL[r] ?? r}
+            </option>
+          ))}
+        </Select>
+        {filtering && (
+          <Button
+            variant="ghost"
+            icon={<X className="h-4 w-4" />}
+            onClick={() => {
+              setQ('');
+              setTeam('');
+              setRole('');
+            }}
+          >
+            Clear
+          </Button>
+        )}
+      </div>
+      )}
+      {!highlights.length && (
+        <EmptyState icon={<Search className="h-8 w-8" />} title="No highlights match">
+          Try another keyword, squad or position.
+        </EmptyState>
+      )}
       <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
         <AnimatePresence initial={false}>
           {shown.map((h, i) => (
             <motion.div key={h.id} layout initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 8 }} transition={{ duration: 0.25, delay: i >= visible - PAGE ? (i % PAGE) * 0.05 : 0 }}>
-              <HighlightCard h={h} canHover={canHover} onOpen={() => setOpen(i)} />
+              <HighlightCard h={h} canHover={canHover} onOpen={() => setOpen(i)} player={h.playerId ? players[h.playerId] : undefined} team={teams[h.teamId ?? (h.playerId ? players[h.playerId]?.teamId : '') ?? '']} />
             </motion.div>
           ))}
         </AnimatePresence>
@@ -77,7 +153,8 @@ export function HighlightsSection({ highlights }: { highlights: Highlight[] }) {
         </div>
       )}
       <p className="mt-3 text-center text-xs text-muted">
-        Showing {shown.length} of {highlights.length} · {canHover ? 'hover to preview, click to watch' : 'tap a video to watch'}
+        Showing {shown.length} of {highlights.length}
+        {filtering ? ` (filtered from ${all.length})` : ''} · {canHover ? 'hover to preview, click to watch' : 'tap a video to watch'}
       </p>
 
       <HighlightPlayer list={highlights} index={open} onClose={() => setOpen(null)} onNav={(d) => setOpen((i) => (i === null ? i : (i + d + highlights.length) % highlights.length))} />
@@ -85,7 +162,7 @@ export function HighlightsSection({ highlights }: { highlights: Highlight[] }) {
   );
 }
 
-function HighlightCard({ h, canHover, onOpen }: { h: Highlight; canHover: boolean; onOpen: () => void }) {
+function HighlightCard({ h, canHover, onOpen, player, team }: { h: Highlight; canHover: boolean; onOpen: () => void; player?: Player; team?: Team }) {
   const video = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
   const poster = h.thumbnailUrl || videoPoster(h.videoUrl, 640) || undefined;
@@ -145,6 +222,13 @@ function HighlightCard({ h, canHover, onOpen }: { h: Highlight; canHover: boolea
       </div>
       <div className="p-3">
         <p className="line-clamp-2 text-sm font-semibold leading-snug sm:text-base">{h.title}</p>
+        {player && (
+          <p className="mt-0.5 truncate text-xs font-semibold text-brand">
+            {player.ign}
+            {team ? ` · ${team.tag || team.name}` : ''} · {POSITION_LABEL[player.role] ?? player.role}
+          </p>
+        )}
+        {h.description && <p className="mt-0.5 line-clamp-2 text-xs text-muted">{h.description}</p>}
         <p className="mt-0.5 text-xs text-muted">{new Date(h.createdAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}</p>
       </div>
     </button>
@@ -197,7 +281,9 @@ function HighlightPlayer({ list, index, onClose, onNav }: { list: Highlight[]; i
                 <p className="truncate font-display text-2xl uppercase leading-none sm:text-3xl">{h.title}</p>
                 <p className="mt-1 font-cond text-xs uppercase tracking-wider text-white/60">
                   Highlight {index! + 1} of {list.length}
+                  {h.keywords?.length ? ` · ${h.keywords.map((k) => '#' + k.replace(/\s+/g, '')).join(' ')}` : ''}
                 </p>
+                {h.description && <p className="mt-1 text-sm text-white/80">{h.description}</p>}
               </div>
               <button onClick={onClose} className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 hover:bg-brand" aria-label="Close">
                 <X className="h-5 w-5" />

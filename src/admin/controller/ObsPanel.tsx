@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import { ChevronDown, Download, Link2, Link2Off, MonitorPlay, Music, RefreshCw, Volume2, Wand2 } from 'lucide-react';
+import { ChevronDown, Clapperboard, Download, Link2, Link2Off, MonitorPlay, Music, PictureInPicture2, RefreshCw, Volume2, Wand2 } from 'lucide-react';
 import type { LivePhase } from '@/types';
-import { buildSceneCollection, getObsSettings, obsBridge, overlayBase, sceneForPhase, useObsSettings } from '@/services/obs';
+import { buildSceneCollection, getObsSettings, obsBridge, overlayBase, pipSourceOf, sceneForPhase, useObsSettings } from '@/services/obs';
+import { REPLAY_PIP } from '@/overlay/layout';
 import { breakMusic, playStinger, type Stinger } from '@/overlay/sound';
 import { Badge, Button, Field, Input, Select, Switch } from '@/components/ui';
 import { useToast } from '@/components/Toast';
@@ -23,19 +24,14 @@ export function useObsConnected() {
 }
 
 /**
- * Hands-free OBS: reconnects when the controller opens (if you connected
- * before) and cuts to the right scene whenever the phase changes — Go live /
+ * Hands-free OBS: cuts to the right scene whenever the phase changes (the
+ * admin layout keeps OBS connected, also after a refresh) — Go live /
  * next draft → Draft, Start game → In-game HUD, Go to break → Break. Instant
  * replays switch to the replay scene and back to the In-game HUD by themselves.
  */
 export function useObsAutomation(phase: LivePhase, onAir: boolean) {
   const toast = useToast();
   const prev = useRef<LivePhase | null>(null);
-
-  useEffect(() => {
-    const s = getObsSettings();
-    if (s.autoConnect && !obsBridge.connected) obsBridge.connect(s).catch(() => {});
-  }, []);
 
   useEffect(() => {
     const current: LivePhase = onAir ? phase : 'idle';
@@ -54,31 +50,37 @@ const STINGERS: { kind: Stinger; label: string }[] = [
   { kind: 'game', label: 'Game start' },
   { kind: 'replayIn', label: 'Into replay' },
   { kind: 'replayOut', label: 'Back to game' },
+  { kind: 'reveal', label: 'Battlefield reveal' },
 ];
 
-/** OBS connection, automatic scenes, one-click scene setup / import file, and a sound check. */
-export function ObsPanel({ phase }: { phase: LivePhase }) {
+/** OBS connection, automatic scenes, instant-replay setup, one-click scene setup / import file, and a sound check. */
+export function ObsPanel({ phase, defaultOpen = false }: { phase: LivePhase; matchId?: string | null; defaultOpen?: boolean }) {
   const toast = useToast();
   const [s, update] = useObsSettings();
   const { connected, error } = useObsConnected();
-  const [open, setOpen] = useState(!s.autoConnect);
+  const [open, setOpen] = useState(defaultOpen || !s.autoConnect);
   const [scenes, setScenes] = useState<string[]>([]);
+  const [inputs, setInputs] = useState<string[]>([]);
   const [busy, setBusy] = useState(false);
+  const [pipBusy, setPipBusy] = useState(false);
   const [music, setMusic] = useState(false);
 
   useEffect(() => {
-    if (connected) void obsBridge.listScenes().then(setScenes).catch(() => {});
+    if (!connected) return;
+    void obsBridge.listScenes().then(setScenes).catch(() => {});
+    void obsBridge.listInputs().then(setInputs).catch(() => {});
   }, [connected]);
   useEffect(() => () => breakMusic.stop(0.2), []);
 
   const connect = async () => {
     setBusy(true);
     try {
-      await obsBridge.connect(getObsSettings());
       update({ autoConnect: true });
+      await obsBridge.connect(getObsSettings());
       toast.success('Connected to OBS — scenes will follow the controller');
     } catch {
-      toast.error('Could not reach OBS. Is OBS open with the WebSocket server enabled?');
+      update({ autoConnect: false });
+      toast.error(`Could not reach OBS (${obsBridge.lastError ?? 'no answer'}). Is OBS open with the WebSocket server enabled?`);
     }
     setBusy(false);
   };
@@ -180,13 +182,93 @@ export function ObsPanel({ phase }: { phase: LivePhase }) {
               Create all scenes in OBS
             </Button>
             <Button variant="secondary" icon={<Download className="h-4 w-4" />} onClick={download}>
-              Download scene file (OBS → Scene Collection → Import)
+              <span className="sm:hidden">Download scene file</span>
+              <span className="hidden sm:inline">Download scene file (OBS → Scene Collection → Import)</span>
             </Button>
             {connected && (
               <Button variant="ghost" icon={<RefreshCw className="h-4 w-4" />} onClick={() => nextScene && toast.run(() => obsBridge.switchScene(nextScene))}>
                 Go to the current scene
               </Button>
             )}
+          </div>
+
+          {/* Instant replay — the trigger button is in Event triggers; everything else is set here */}
+          <div className="rounded-xl border border-line bg-surface2 p-3" data-testid="obs-replay-settings">
+            <p className="flex items-center gap-1.5 text-sm font-semibold">
+              <Clapperboard className="h-4 w-4 text-brand" /> Instant replay
+            </p>
+            <p className="mt-1 text-xs text-muted">
+              OBS → Settings → Output → <strong>Replay Buffer</strong>: enable, <strong>Maximum Replay Time 10 s</strong>. The <strong>Instant replay</strong> button is in the Live
+              Controller&apos;s <strong>Event triggers</strong>: it saves the buffer, zooms the clip out of a small window, keeps the live In-game HUD in the LIVE window, and zooms back to
+              the game at the end.
+            </p>
+            <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              <Field label="Replay media source">
+                {inputs.length ? (
+                  <Select value={s.replaySource} onChange={(e) => update({ replaySource: e.target.value })}>
+                    {!inputs.includes(s.replaySource) && <option value={s.replaySource}>{s.replaySource} (not in OBS yet)</option>}
+                    {inputs.map((x) => (
+                      <option key={x}>{x}</option>
+                    ))}
+                  </Select>
+                ) : (
+                  <Input value={s.replaySource} onChange={(e) => update({ replaySource: e.target.value })} />
+                )}
+              </Field>
+              <Field label="Small live window during replays">
+                <Select value={s.pipSource} onChange={(e) => update({ pipSource: e.target.value })}>
+                  <option value="">In-game HUD scene (recommended)</option>
+                  {inputs.length > 0 && (
+                    <optgroup label="Sources">
+                      {inputs.map((x) => (
+                        <option key={`i-${x}`} value={x}>
+                          {x}
+                        </option>
+                      ))}
+                    </optgroup>
+                  )}
+                  {scenes.filter((sc) => sc !== s.replayScene && sc !== s.hudScene).length > 0 && (
+                    <optgroup label="Other scenes">
+                      {scenes
+                        .filter((sc) => sc !== s.replayScene && sc !== s.hudScene)
+                        .map((sc) => (
+                          <option key={`s-${sc}`} value={sc}>
+                            {sc}
+                          </option>
+                        ))}
+                    </optgroup>
+                  )}
+                  {s.pipSource && !inputs.includes(s.pipSource) && !scenes.includes(s.pipSource) && <option value={s.pipSource}>{s.pipSource}</option>}
+                </Select>
+              </Field>
+              <Field label="Replay length (s)">
+                <Input type="number" min={5} max={30} value={s.replaySeconds} onChange={(e) => update({ replaySeconds: Math.max(5, Number(e.target.value) || 10) })} />
+              </Field>
+              <div className="flex items-end pb-2">
+                <Switch checked={s.replayZoom} onChange={(replayZoom) => update({ replayZoom })} label="Zoom transitions" />
+              </div>
+            </div>
+            <div className="mt-3 flex flex-wrap items-center gap-3">
+              <Button
+                size="sm"
+                variant="secondary"
+                loading={pipBusy}
+                disabled={!connected || !pipSourceOf(s)}
+                icon={<PictureInPicture2 className="h-4 w-4" />}
+                onClick={async () => {
+                  setPipBusy(true);
+                  const msg = await toast.run(() => obsBridge.setupReplayPip(getObsSettings()));
+                  setPipBusy(false);
+                  if (msg) toast.success(msg);
+                }}
+              >
+                Set up live PiP in OBS
+              </Button>
+              <p className="text-xs text-muted">
+                Nests &ldquo;{pipSourceOf(s) || 'In-game HUD'}&rdquo; in the replay scene at {REPLAY_PIP.x}, {REPLAY_PIP.y} · {REPLAY_PIP.w}×{REPLAY_PIP.h} under the replay overlay (Create all scenes does it too).
+              </p>
+            </div>
+            <p className="mt-3 text-xs text-muted">Replays are saved in OBS&apos;s recording folder. Upload the ones you want on the break screen and the website in <strong>Media &amp; Replays</strong> (add a description, keywords and the player).</p>
           </div>
 
           <div className="rounded-xl border border-line bg-surface2 p-3">

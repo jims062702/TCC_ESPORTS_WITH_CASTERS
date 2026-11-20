@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import type { Banner, CaptionState, LivePlayer, LiveState, Role, BattleSpell } from '@/types';
+import type { Banner, CaptionState, GameRecord, HeroPoolEntry, LivePlayer, LiveState, Role, BattleSpell } from '@/types';
 import { useCaption, useLive, useNow } from '@/hooks/useFirestore';
 import { DRAFT_SEQUENCE } from '@/lib/constants';
 import { defaultLive } from '@/services/live';
@@ -29,6 +29,19 @@ const RED: Array<[string, Role, string, BattleSpell]> = [
   ['Kugita', 'Roam', 'Khufra', 'Flicker'],
 ];
 const BANS = { blue: ['Fanny', 'Joy', 'Chou', 'Nolan', 'Harith'], red: ['Arlott', 'Cici', 'Zhuxin', 'Yin', 'Gloo'] };
+// Hero pools (what each demo player is known for) — feeds the AI Draft Predictor.
+const POOLS: Record<string, Array<[string, number, number]>> = {
+  Kidlat: [['Fredrinn', 4, 3], ['Yu Zhong', 2, 1]],
+  Bagwis: [['Ling', 5, 4], ['Hayabusa', 3, 2], ['Fanny', 2, 1]],
+  Sinag: [['Valentina', 4, 3], ['Yve', 2, 1]],
+  Halimaw: [['Claude', 3, 2], ['Harith', 3, 2], ['Karrie', 1, 0]],
+  Tikbalang: [['Tigreal', 3, 2], ['Mathilda', 2, 2]],
+  Alon: [['Terizla', 3, 1], ['Cici', 3, 2]],
+  Bagyo: [['Lancelot', 5, 3], ['Joy', 3, 2], ['Nolan', 2, 1]],
+  Dagat: [['Pharsa', 3, 2], ['Zhuxin', 2, 2]],
+  Pating: [['Beatrix', 4, 2], ['Granger', 2, 1]],
+  Kugita: [['Khufra', 3, 2], ['Gloo', 2, 1]],
+};
 const KDA = { blue: [[3, 1, 6], [6, 0, 4], [2, 2, 7], [5, 1, 3], [0, 2, 11]], red: [[1, 4, 3], [3, 3, 2], [2, 4, 1], [3, 2, 2], [0, 3, 5]] };
 
 const player = ([ign, role, hero, spell]: (typeof BLUE)[number], i: number, teamId: string, now: number, side: 'blue' | 'red'): LivePlayer => ({
@@ -37,6 +50,7 @@ const player = ([ign, role, hero, spell]: (typeof BLUE)[number], i: number, team
   ign,
   photoUrl: '',
   role,
+  pool: (POOLS[ign] ?? []).map(([hero, games, wins]): HeroPoolEntry => ({ hero, games, wins })),
   hero,
   spell,
   // one spell per team cycling through its cooldown so the ring is visible
@@ -69,10 +83,13 @@ export function demoLive(now: number): LiveState {
   const base = defaultLive();
   const blue = BLUE.map((p, i) => player(p, i, 'demo-a', now, 'blue'));
   const red = RED.map((p, i) => player(p, i, 'demo-b', now, 'red'));
-  // Draft: first 13 steps locked, step 14 active, 30 s timer looping.
-  const draft = { ...base.draft, step: 13, timerDuration: 30, timerEndsAt: (Math.floor(now / 30_000) + 1) * 30_000 };
+  // Draft: plays steps 13 → 20 on a loop, one lock every 7 s (predictor + lock cards in action).
+  const STEP_MS = 7000;
+  const slot = Math.floor(now / STEP_MS);
+  const step = 13 + (slot % 8);
+  const draft = { ...base.draft, step, timerDuration: 30, timerEndsAt: slot * STEP_MS + 30_000 };
   const counters = { blue: { ban: 0, pick: 0 }, red: { ban: 0, pick: 0 } };
-  for (const s of DRAFT_SEQUENCE.slice(0, 13)) {
+  for (const s of DRAFT_SEQUENCE.slice(0, step)) {
     const i = counters[s.side][s.kind]++;
     if (s.kind === 'ban') draft[`${s.side}Bans`][i] = BANS[s.side][i];
     else draft[`${s.side}Picks`][i] = (s.side === 'blue' ? BLUE : RED)[i][2];
@@ -103,6 +120,7 @@ export function demoLive(now: number): LiveState {
     banner: demoBanner(now, blue),
     breakEndsAt: (Math.floor(now / 300_000) + 1) * 300_000,
     breakMessage: 'Game 4 starts soon',
+    mapEffect: (['revealingWisps', 'healingTurtle', 'goldenTurret', 'flyingCloud'] as const)[Math.floor(now / 15_000) % 4],
     updatedAt: now,
   };
 }
@@ -118,6 +136,36 @@ export function demoCaption(now: number): CaptionState {
   const slot = Math.floor(now / 4500);
   const [casterId, text] = DEMO_LINES[slot % DEMO_LINES.length];
   return { current: { casterId, text, at: slot * 4500, source: 'template' }, recent: [], updatedAt: now };
+}
+
+/** A few finished sample games, so the demo predictor and lock cards have stats to show. */
+export function demoGames(): GameRecord[] {
+  const picksA = ['Fredrinn', 'Ling', 'Valentina', 'Claude', 'Tigreal'];
+  const picksB = ['Terizla', 'Lancelot', 'Pharsa', 'Beatrix', 'Khufra'];
+  const extra = ['Joy', 'Cici', 'Harith', 'Mathilda', 'Hayabusa', 'Yve', 'Granger', 'Gloo', 'Zhuxin', 'Nolan'];
+  return Array.from({ length: 8 }, (_, i) => {
+    const swapA = [...picksA];
+    const swapB = [...picksB];
+    swapA[i % 5] = extra[i % extra.length];
+    swapB[(i + 2) % 5] = extra[(i + 5) % extra.length];
+    const blueWins = i % 3 !== 1;
+    const side = (picks: string[], bans: string[]) => ({ kills: 10 + i, turtles: 1, lords: 1, bans, picks });
+    return {
+      id: `demo-g${i}`,
+      tournamentId: 'demo',
+      matchId: `demo-m${i >> 1}`,
+      gameNumber: (i % 2) + 1,
+      blueTeamId: 'demo-a',
+      redTeamId: 'demo-b',
+      winnerTeamId: blueWins ? 'demo-a' : 'demo-b',
+      winnerSide: blueWins ? 'blue' : 'red',
+      durationSec: 900 + i * 60,
+      blue: side(swapA, ['Fanny', 'Joy', i % 2 ? 'Chou' : 'Arlott', 'Nolan', 'Hirara'].filter((h) => !swapA.includes(h))),
+      red: side(swapB, ['Arlott', 'Cici', i % 2 ? 'Hirara' : 'Zhuxin', 'Yin', 'Gloo'].filter((h) => !swapB.includes(h))),
+      players: [],
+      createdAt: i,
+    } as GameRecord;
+  });
 }
 
 /** Live state for overlays: real data, or sample data with ?demo=1. */

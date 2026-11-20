@@ -153,7 +153,7 @@ function stab(t: number, notes: number[], dur: number, peak: number, out: AudioN
 
 // ── stingers ────────────────────────────────────────────────────────────────
 
-export type Stinger = 'draft' | 'game' | 'replayIn' | 'replayOut';
+export type Stinger = 'draft' | 'game' | 'replayIn' | 'replayOut' | 'reveal';
 
 export function playStinger(kind: Stinger, volume = 0.8) {
   const c = audio();
@@ -182,19 +182,41 @@ export function playStinger(kind: Stinger, volume = 0.8) {
     osc('sine', 55, hit, 1.8, 0.6, out);
     stab(hit + 0.55, [48, 55, 60, 67], 0.5, 0.25, out, 2600);
     stab(hit + 0.85, [50, 57, 62, 69], 1.2, 0.3, out, 2600);
+  } else if (kind === 'reveal') {
+    // Battlefield reveal: shimmering rise → impact → bright chord.
+    sweep(t, 0.55, 500, 6500, 0.28, out);
+    [64, 69, 71, 76, 81].forEach((n, i) => osc('triangle', midi(n), t + i * 0.08, 0.22, 0.06, out));
+    kick(t + 0.55, out, 0.9);
+    crash(t + 0.55, out, 0.22);
+    stab(t + 0.55, [57, 64, 69, 73], 1.1, 0.4, out, 3600);
+    osc('sine', 55, t + 0.55, 0.9, 0.4, out);
   } else if (kind === 'replayIn') {
-    // Tape-rewind whoosh into the replay.
+    // Tape-rewind whoosh into the replay (lands as the clip finishes zooming to full screen).
     sweep(t, 0.7, 6000, 250, 0.35, out);
+    [81, 76, 72, 69].forEach((n, i) => osc('triangle', midi(n), t + i * 0.12, 0.2, 0.07, out));
     osc('sawtooth', 880, t, 0.55, 0.12, out).frequency.exponentialRampToValueAtTime(110, t + 0.55);
     kick(t + 0.62, out, 0.8);
     stab(t + 0.62, [57, 64, 69], 0.7, 0.3, out, 2000);
   } else {
-    // Whoosh back to the live game.
+    // Whoosh back to the live game (rises while the live window zooms in, hits as it fills the screen).
     sweep(t, 0.6, 250, 7000, 0.35, out);
+    [69, 72, 76, 81].forEach((n, i) => osc('triangle', midi(n), t + i * 0.12, 0.2, 0.07, out));
     kick(t + 0.6, out, 0.9);
     crash(t + 0.6, out, 0.25);
     stab(t + 0.6, [57, 60, 64, 69], 0.8, 0.35, out, 3000);
   }
+}
+
+/** Controller reminder (plays on the operator's computer, not on stream): a two-tone alarm beep. */
+export function playReminderBeep(volume = 0.6) {
+  const c = audio();
+  if (!c || !master) return;
+  const out = c.createGain();
+  out.gain.value = volume;
+  out.connect(master);
+  const t = c.currentTime + 0.02;
+  osc('square', 988, t, 0.14, 0.16, out);
+  osc('square', 740, t + 0.18, 0.14, 0.16, out);
 }
 
 // ── break music: 140 BPM, 175 bars = exactly 5:00, then loops ──────────────

@@ -3,7 +3,7 @@ import { AlertTriangle, CheckCircle2, Info, Loader2, Plus, Save, Trash2, Undo2, 
 import type { CasterProfile, ExtraHero, SiteSettings } from '@/types';
 import { BATTLE_SPELLS, MLBB_HEROES, SPELL_COOLDOWN } from '@/lib/constants';
 import { SpellBadge } from '@/components/game';
-import { useSettings, useTournaments } from '@/hooks/useFirestore';
+import { useLive, useSettings, useTournaments } from '@/hooks/useFirestore';
 import { saveSettings } from '@/services/db';
 import { matchTournamentByName } from '@/services/featured';
 import { CASTERS } from '@/services/casters';
@@ -13,6 +13,10 @@ import { Button, Card, Field, Input } from '@/components/ui';
 import { useToast } from '@/components/Toast';
 import { stableJson } from '@/lib/utils';
 import { CarouselEditor } from './CarouselEditor';
+import { ResetDataCard } from './ResetData';
+import { ObsPanel } from './controller/ObsPanel';
+import { GoldCard } from './controller/GoldReader';
+import { SpellReaderCard } from './controller/SpellReader';
 
 /** Everything except casterProfiles (auto-saved) and updatedAt. */
 const otherFields = (s: SiteSettings) => {
@@ -23,6 +27,7 @@ const otherFields = (s: SiteSettings) => {
 type CasterSave = 'idle' | 'saving' | 'saved' | 'error';
 
 export default function SettingsAdmin() {
+  const live = useLive();
   const settings = useSettings();
   const tournaments = useTournaments();
   const toast = useToast();
@@ -109,6 +114,11 @@ export default function SettingsAdmin() {
         </Button>
       </header>
 
+      {/* OBS connection, automatic scenes and instant-replay setup (saved on this computer) */}
+      <ObsPanel phase={live.data.matchId ? live.data.phase : 'idle'} matchId={live.data.matchId} defaultOpen />
+      <GoldCard live={live.data} />
+      <SpellReaderCard live={live.data} />
+
       <CarouselEditor
         slides={draft.heroSlides ?? []}
         onChange={(heroSlides) => edit((d) => ({ ...d, heroSlides }))}
@@ -147,7 +157,7 @@ export default function SettingsAdmin() {
                   ))}
                 </datalist>
               </div>
-              <p className="mt-1.5 flex items-start gap-1.5 text-xs text-muted">
+              <p className="mt-1.5 text-xs text-muted [&>svg]:mr-1 [&>svg]:inline [&>svg]:align-[-3px]">
                 {!featuredText.trim() ? (
                   <>
                     <Info className="mt-px h-3.5 w-3.5 shrink-0" /> Automatic — the Home page shows {autoTournament ? <strong className="text-fg">“{autoTournament.name}”</strong> : 'the newest tournament'} (newest ongoing).
@@ -258,6 +268,8 @@ export default function SettingsAdmin() {
           </div>
         </Card>
       </div>
+
+      <ResetDataCard />
 
       {/* Unsaved changes bar */}
       {/* (spell icons and new heroes are saved with this bar too) */}

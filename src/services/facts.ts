@@ -1,5 +1,7 @@
-import type { GameEvent, HeroPoolEntry, LivePlayer, LiveState, LiveTeam, ObjectiveKind, Side } from '@/types';
-import { DRAFT_SEQUENCE, FORMAT_LABEL, POSITION_LABEL, winsNeeded } from '@/lib/constants';
+import type { GameEvent, HeroPoolEntry, LivePlayer, LiveState, LiveTeam, ObjectiveKind, Side, MapEffect } from '@/types';
+import { DRAFT_SEQUENCE, FORMAT_LABEL, POSITION_LABEL, winsNeeded, MAP_EFFECTS, SPELL_COOLDOWN } from '@/lib/constants';
+import { heroSkills, type HeroSkills } from '@/lib/heroSkills';
+import { formatClock } from '@/lib/clock';
 import { banReason, heroClassLabel, pickHype } from '@/lib/heroData';
 import { formatGold, pickRandom } from '@/lib/utils';
 import { poolRecord } from './heroStats';
@@ -58,7 +60,9 @@ export interface ActorFacts {
   team: string;
   side: Side;
   role: string;
-  spell: string;
+  spell: string | null;
+  /** The hero's real skill names — casters say these, never "1st skill / ultimate". */
+  skills?: HeroSkills;
   kills: number;
   deaths: number;
   assists: number;
@@ -119,7 +123,56 @@ export interface CommentaryFacts {
   nextGame?: number | null;
   /** Going to break: minutes (0 = no countdown), producer message, the game after the break, or a mid-game pause. */
   breakInfo?: { minutes: number; message: string; nextGame: number | null; midGame: boolean };
+  /** This game's battlefield effect (2026 map). */
+  mapEffect?: { id: MapEffect; label: string; detail: string };
+  /** Turret destroyed: which one, Golden Turret bonus, how many that team has taken. */
+  turret?: { tier: string; golden: boolean; count: number };
+  /** Turtle taken while the Healing Turtle effect is on. */
+  healingTurtle?: boolean;
+  /** Losing this series ends the team's run (lower bracket, single elimination, grand final). */
+  elimination?: boolean;
+  /** Invade: going for the enemy's jungle creeps or a buff. */
+  invade?: 'jungle' | 'buff';
+  /** Battle spell just used: its cooldown, and whether it was an escape (Flicker / Purify) or the jungler's Retribution. */
+  spellUse?: { spell: string; cooldown: number; escape: boolean; retri: boolean };
+  /** Each jungler's Retribution: ready, or seconds left (objective fights, invades). */
+  retri?: { blue: RetriState | null; red: RetriState | null };
+  /** A player reached Level 15: game time + the record. */
+  level?: { time: string; sec: number; best: boolean; prevTime?: string; prevPlayer?: string; prevTeam?: string };
 }
+
+export interface RetriState {
+  player: string;
+  team: string;
+  ready: boolean;
+  /** Seconds until it is back (0 = ready). */
+  secs: number;
+}
+
+/** Escape spells — the casters warn the player is exposed while these are down. */
+export const ESCAPE_SPELLS = new Set(['Flicker', 'Purify']);
+
+/** The side's jungler with Retribution (the Jungle player first), or null. */
+export function retriState(live: LiveState, side: Side, now = Date.now()): RetriState | null {
+  const players = live[side].players;
+  const j = players.find((p) => p.spell === 'Retribution' && p.role === 'Jungle') ?? players.find((p) => p.spell === 'Retribution');
+  if (!j) return null;
+  const secs = j.spellReadyAt && j.spellReadyAt > now ? Math.ceil((j.spellReadyAt - now) / 1000) : 0;
+  return { player: j.ign, team: teamName(sideTeam(live, side)), ready: secs === 0, secs };
+}
+
+/**
+ * How a caster says the stage: "Upper Round 1 · M2" → "Upper Bracket Round 1",
+ * "Upper Semifinals" → "Upper Bracket Semifinals", "Seeding · M3" → "Seeding Round".
+ */
+export function spokenStage(label: string): string {
+  const base = (label || '').replace(/\s*·\s*M\d+$/i, '').trim();
+  if (/^seeding/i.test(base)) return 'Seeding Round';
+  return base.replace(/^Upper (?!Bracket)/, 'Upper Bracket ').replace(/^Lower (?!Bracket)/, 'Lower Bracket ');
+}
+
+/** Losing this series knocks the team out. */
+export const isElimination = (label: string, isFinal = false) => isFinal || (!/^(Upper|Seeding)/i.test(label || '') && Boolean(label));
 
 export const sideTeam = (live: LiveState, side: Side): LiveTeam | null =>
   side === 'blue' ? (live.blueIsA ? live.teamA : live.teamB) : live.blueIsA ? live.teamB : live.teamA;
@@ -143,7 +196,8 @@ export function buildFacts(event: GameEvent, live: LiveState): CommentaryFacts {
 
   const facts: CommentaryFacts = {
     tournament: live.tournamentName || 'TCC Esports Tournament',
-    stage: live.matchLabel,
+    stage: spokenStage(live.matchLabel),
+    elimination: isElimination(live.matchLabel, live.isFinal),
     format: FORMAT_LABEL[live.format] ?? live.format,
     winsNeeded: winsNeeded(live.format),
     gameNumber: live.gameNumber,
@@ -176,7 +230,8 @@ export function buildFacts(event: GameEvent, live: LiveState): CommentaryFacts {
         team: facts.actorTeam,
         side: event.side,
         role: p.role,
-        spell: event.spell ?? p.spell,
+        spell: event.spell ?? p.spell ?? null,
+        ...(heroSkills(p.hero || event.hero) ? { skills: heroSkills(p.hero || event.hero)! } : {}),
         kills: p.k,
         deaths: p.d,
         assists: p.a,
@@ -184,6 +239,14 @@ export function buildFacts(event: GameEvent, live: LiveState): CommentaryFacts {
     }
   }
 
+  if (live.mapEffect && MAP_EFFECTS[live.mapEffect]) facts.mapEffect = { id: live.mapEffect, label: MAP_EFFECTS[live.mapEffect].label, detail: MAP_EFFECTS[live.mapEffect].detail };
+  if (event.type === 'MAP_EFFECT' && MAP_EFFECTS[event.data?.effect as MapEffect]) {
+    const e = event.data!.effect as MapEffect;
+    facts.mapEffect = { id: e, label: MAP_EFFECTS[e].label, detail: MAP_EFFECTS[e].detail };
+  }
+  if (event.type === 'TURRET' && event.side) facts.turret = { tier: String(event.data?.tier || 'Outer'), golden: Boolean(event.data?.golden), count: live[event.side].turrets ?? 1 };
+  if (event.type === 'TURTLE' && event.data?.healing) facts.healingTurtle = true;
+  if (event.type === 'INVADE') facts.invade = event.data?.target === 'buff' ? 'buff' : 'jungle';
   if (event.data?.steal) facts.steal = true;
   const buff = event.data?.buff === 'purple' ? 'Purple Buff' : event.data?.buff === 'orange' ? 'Orange Buff' : 'Buff';
   const objective: ObjectiveKind | null =
@@ -196,12 +259,37 @@ export function buildFacts(event: GameEvent, live: LiveState): CommentaryFacts {
   const cds: string[] = [];
   for (const side of ['blue', 'red'] as const) {
     for (const p of live[side].players) {
-      if (p.spellReadyAt && p.spellReadyAt > now) {
+      if (p.spell && p.spellReadyAt && p.spellReadyAt > now) {
         cds.push(`wala pang ${p.spell} si ${p.ign} ng ${side === 'blue' ? blue : red}`);
       }
     }
   }
   if (cds.length) facts.spellCooldowns = cds.slice(0, 6);
+
+  // Battle spell used: cooldown + escape / Retribution.
+  if (event.type === 'SPELL_USED' && facts.actor?.spell) {
+    const spell = facts.actor.spell;
+    const p = event.side ? live[event.side].players.find((x) => x.playerId === event.playerId) : null;
+    const measured = p?.spellReadyAt && p.spellUsedAt && p.spellReadyAt > p.spellUsedAt ? Math.round((p.spellReadyAt - p.spellUsedAt) / 1000) : 0;
+    facts.spellUse = { spell, cooldown: measured || SPELL_COOLDOWN[spell as keyof typeof SPELL_COOLDOWN] || 90, escape: ESCAPE_SPELLS.has(spell), retri: spell === 'Retribution' };
+  }
+  // Retribution battle: objective fights, invades, objectives, desk talk.
+  if (['OBJECTIVE_CONTEST', 'INVADE', 'TURTLE', 'LORD', 'BUFF', 'IDLE_BANTER', 'SPELL_USED'].includes(event.type)) {
+    const r = { blue: retriState(live, 'blue', now), red: retriState(live, 'red', now) };
+    if (r.blue || r.red) facts.retri = r;
+  }
+  // Level 15: the game time and the record it had to beat.
+  if (event.type === 'LEVEL_MAX') {
+    const d = event.data ?? {};
+    const sec = Number(d.sec) || 0;
+    const prevSec = d.prevSec === null || d.prevSec === undefined ? null : Number(d.prevSec);
+    facts.level = {
+      time: formatClock(sec * 1000),
+      sec,
+      best: Boolean(d.best),
+      ...(prevSec !== null && Number.isFinite(prevSec) ? { prevTime: formatClock(prevSec * 1000), prevPlayer: String(d.prevIgn ?? '') || undefined, prevTeam: String(d.prevTeam ?? '') || undefined } : {}),
+    };
+  }
 
   // Phase announcements speak about the game they were created for.
   if ((event.type === 'DRAFT_START' || event.type === 'GAME_START') && event.gameNumber) facts.gameNumber = event.gameNumber;

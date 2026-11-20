@@ -61,7 +61,7 @@ export default function Dashboard() {
       </div>
 
       <div className="grid gap-6 xl:grid-cols-[1.4fr_1fr]">
-        <Card title="OBS Browser Sources" subtitle="Add each as a Browser Source at 1920×1080. Tick “Refresh browser when scene becomes active”.">
+        <Card className="min-w-0" title="OBS Browser Sources" subtitle="Add each as a Browser Source at 1920×1080. Tick “Refresh browser when scene becomes active”.">
           <div className="space-y-2">
             {OVERLAYS.map((o) => (
               <div key={o.path} className="flex flex-wrap items-center gap-3 rounded-xl border border-line bg-surface2 p-3">

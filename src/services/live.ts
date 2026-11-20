@@ -28,11 +28,13 @@ import type {
   LiveSide,
   LiveState,
   LiveTeam,
+  LevelRecord,
   Match,
   Player,
   Side,
   Team,
   Tournament,
+  MapEffect,
 } from '@/types';
 import { COL, LIVE_DOC, db } from './firebase';
 import { pickCasterPair } from './casters';
@@ -51,6 +53,7 @@ import {
   ROLES,
   SPELL_COOLDOWN,
   winsNeeded,
+  MAP_EFFECTS,
 } from '@/lib/constants';
 import { formatGold, uid } from '@/lib/utils';
 import { canonicalHero, heroInfo } from '@/lib/heroData';
@@ -118,9 +121,11 @@ export const defaultLive = (): LiveState => ({
   replay: { active: false, startedAt: 0, endsAt: 0, title: '', description: '', side: null, eventId: null },
   banner: null,
   breakEndsAt: null,
+  breakPause: false,
   breakMessage: '',
   history: [],
   meta: [],
+  mapEffect: null,
   updatedAt: Date.now(),
 });
 
@@ -174,8 +179,11 @@ export function lineupFor(teamId: string | null | undefined, players: Player[], 
       role,
       pool: pools[p.id] ?? [],
       hero: '',
-      spell: p.spell,
+      // Battle spells are picked for each game in the Drafting phase.
+      spell: null,
       spellReadyAt: null,
+      level: 1,
+      maxLevelSec: null,
       k: 0,
       d: 0,
       a: 0,
@@ -300,11 +308,15 @@ export async function nextGame(live: LiveState, players: Player[], setup?: GameS
     goldDiff: 0,
     gameStartedAt: null,
     clockPausedAt: null,
+    mapEffect: null,
+    levelPop: null,
+    levelBest: null,
     casters: setup?.casters?.length === 2 ? setup.casters : pickCasterPair(live.casters),
     ...(setup?.meta ? { meta: setup.meta } : {}),
     banner: phaseBanner(live, 'DRAFT_START', eventId, gameNumber),
     replay: defaultLive().replay,
     breakEndsAt: null,
+    breakPause: false,
     updatedAt: Date.now(),
   });
   // The new caster pair welcomes each other to the draft of this game.
@@ -518,6 +530,37 @@ export async function startGame(live: LiveState) {
   await batch.commit();
 }
 
+export const MAX_LEVEL = 15;
+
+/** The record a Level 15 has to beat: this game's fastest so far, else the tournament's. */
+export async function levelRecordToBeat(live: LiveState): Promise<LevelRecord | null> {
+  let saved: LevelRecord | null = null;
+  if (live.tournamentId) {
+    const snap = await getDoc(doc(db, COL.tournaments, live.tournamentId));
+    saved = (snap.exists() ? (snap.data().levelRecord as LevelRecord | null | undefined) : null) ?? null;
+  }
+  const game = live.levelBest ?? null;
+  if (game && (!saved || game.sec < saved.sec)) return game;
+  return saved;
+}
+
+/**
+ * + / − Level. Reaching Level 15 records the game time: a new best time pops up
+ * on the HUD (the old record slashed) and the casters call it.
+ */
+export async function changeLevel(live: LiveState, side: Side, index: number, delta: 1 | -1) {
+  const p = live[side].players[index];
+  if (!p) return;
+  const from = p.level ?? 1;
+  const to = Math.min(MAX_LEVEL, Math.max(1, from + delta));
+  if (to === from) return;
+  if (to < MAX_LEVEL) return updatePlayer(live, side, index, { level: to, ...(from === MAX_LEVEL ? { maxLevelSec: null } : {}) });
+  const sec = Math.max(0, Math.round(gameElapsedMs(live, Date.now()) / 1000));
+  const prev = await levelRecordToBeat(live);
+  const best = !prev || sec < prev.sec;
+  await triggerEvent(live, 'LEVEL_MAX', { side, playerIndex: index, data: { sec, best, prev: prev ? JSON.stringify(prev) : null, prevSec: prev?.sec ?? null, prevIgn: prev?.ign ?? null, prevTeam: prev?.team ?? null } });
+}
+
 type StatKey = 'k' | 'd' | 'a';
 
 export const adjustPlayerStat = (live: LiveState, side: Side, index: number, key: StatKey, delta: number) => {
@@ -537,8 +580,9 @@ export const replaceLineupPlayer = (live: LiveState, side: Side, index: number, 
     ign: player.ign,
     photoUrl: player.photoUrl,
     role: player.role,
-    spell: player.spell,
+    spell: null,
     spellReadyAt: null,
+    spellUsedAt: null,
   });
 
 export const adjustObjective = (live: LiveState, side: Side, key: 'turtles' | 'lords', delta: number) =>
@@ -548,8 +592,19 @@ export const setGoldDiff = (goldDiff: number) => write({ goldDiff: Math.round(go
 
 export const clearReplay = () => write({ replay: defaultLive().replay });
 
+/** OBS started the clip: the frame, sounds and zooms line up with the real playback. */
+export const replayPlaying = (playingAt: number, endsAt: number) => write({ 'replay.playingAt': playingAt, 'replay.endsAt': endsAt });
+
+/** OBS couldn't play it: fall back to a plain timed replay frame. */
+export const replayWithoutObs = (seconds: number) => write({ 'replay.obs': false, 'replay.playingAt': Date.now(), 'replay.endsAt': Date.now() + seconds * 1000 });
+
 /** Break loop on air + the casters send the show to break. */
-export async function setBreak(live: LiveState, minutes: number | null, message: string) {
+/**
+ * Go to break. `pause: true` = "Pause the game" from the In-game screen: the
+ * game clock stops, the controller stays on In-game, and the game resumes by
+ * itself when the countdown ends (or with End pause).
+ */
+export async function setBreak(live: LiveState, minutes: number | null, message: string, opts: { pause?: boolean } = {}) {
   const seriesOver = Math.max(live.scoreA, live.scoreB) >= winsNeeded(live.format);
   const done = currentGameDone(live);
   const midGame = live.phase === 'ingame' && !done;
@@ -558,7 +613,8 @@ export async function setBreak(live: LiveState, minutes: number | null, message:
   const batch = writeBatch(db);
   batch.update(liveRef(), {
     phase: 'break',
-    breakEndsAt: minutes ? Date.now() + minutes * 60_000 : null,
+    breakEndsAt: minutes && minutes > 0 ? Date.now() + minutes * 60_000 : null,
+    breakPause: Boolean(opts.pause) && midGame,
     breakMessage: message,
     // A pause in the middle of a game stops the game clock.
     ...(midGame && live.gameStartedAt && !live.clockPausedAt ? { clockPausedAt: Date.now() } : {}),
@@ -570,11 +626,17 @@ export async function setBreak(live: LiveState, minutes: number | null, message:
 
 /** Leave the break: next game's draft (if the last game finished), back to the paused game, or post-game. */
 export async function endBreak(live: LiveState, players: Player[], setup?: GameSetup) {
-  if (Math.max(live.scoreA, live.scoreB) >= winsNeeded(live.format)) return write({ phase: 'postgame', breakEndsAt: null });
+  if (Math.max(live.scoreA, live.scoreB) >= winsNeeded(live.format)) return write({ phase: 'postgame', breakEndsAt: null, breakPause: false });
   if (currentGameDone(live)) return nextGame(live, players, setup);
-  if (live.gameStartedAt) return write({ phase: 'ingame', breakEndsAt: null, ...resumePatch(live) });
-  return write({ phase: 'draft', breakEndsAt: null });
+  if (live.gameStartedAt) return write({ phase: 'ingame', breakEndsAt: null, breakPause: false, ...resumePatch(live) });
+  return write({ phase: 'draft', breakEndsAt: null, breakPause: false });
 }
+
+/** Add time to the break / pause countdown (starts one if there was none). */
+export const extendBreak = (live: LiveState, seconds: number) => write({ breakEndsAt: Math.max(live.breakEndsAt ?? 0, Date.now()) + seconds * 1000 });
+
+/** Turn a "Pause the game" into a full break (the controller moves to the Break tab; no auto-resume). */
+export const pauseToBreak = () => write({ breakPause: false });
 
 // ── Game clock ──────────────────────────────────────────────────────────────
 
@@ -601,6 +663,8 @@ export interface TriggerOptions {
   steal?: boolean;
   replaySeconds?: number;
   replayTitle?: string;
+  /** OBS will play the clip — the overlay waits until it really starts (see replayPlaying). */
+  replayObs?: boolean;
   data?: GameEvent['data'];
 }
 
@@ -609,7 +673,21 @@ export interface TriggerOptions {
  * multi-kill counters), shows a HUD banner, and queues the event for the
  * caster booth — all in one atomic batch.
  */
+/** Set this game's battlefield effect — the overlays show it and the casters explain it. */
+export function setMapEffect(live: LiveState, effect: MapEffect | null) {
+  if (!effect) return write({ mapEffect: null });
+  return triggerEvent(live, 'MAP_EFFECT', { side: null, data: { effect } });
+}
+
+/** Total kills on the scoreboard. */
+const totalKills = (live: LiveState) => [...live.blue.players, ...live.red.players].reduce((n, p) => n + p.k, 0);
+
 export async function triggerEvent(live: LiveState, type: EventType, opts: TriggerOptions = {}) {
+  // The first kill of the game (0 - 0 on the scoreboard) is First Blood.
+  if (type === 'KILL' && totalKills(live) === 0 && ![...live.blue.players, ...live.red.players].some((p) => p.fb > 0)) type = 'FIRST_BLOOD';
+  // Battlefield effects change what Turtles and turrets mean (banner + caster lines).
+  if (type === 'TURTLE' && live.mapEffect === 'healingTurtle') opts = { ...opts, data: { ...(opts.data ?? {}), healing: true } };
+  if (type === 'TURRET' && live.mapEffect === 'goldenTurret') opts = { ...opts, data: { ...(opts.data ?? {}), golden: true } };
   const now = Date.now();
   const side = opts.side ?? null;
   const eventId = uid('ev_');
@@ -635,7 +713,14 @@ export async function triggerEvent(live: LiveState, type: EventType, opts: Trigg
       if (type === 'SAVAGE') Object.assign(next, { k: p.k + add(5), savage: p.savage + (cont ? 0 : 1) });
       if (type === 'TURTLE') next.turtles = p.turtles + 1;
       if (type === 'LORD') next.lords = p.lords + 1;
-      if (type === 'SPELL_USED') next.spellReadyAt = now + (SPELL_COOLDOWN[p.spell] ?? 90) * 1000;
+      if (type === 'SPELL_USED' && p.spell) {
+        next.spellUsedAt = now;
+        next.spellReadyAt = now + (SPELL_COOLDOWN[p.spell] ?? 90) * 1000;
+      }
+      if (type === 'LEVEL_MAX') {
+        next.level = MAX_LEVEL;
+        next.maxLevelSec = Number(opts.data?.sec) || 0;
+      }
       players[opts.playerIndex] = next;
       patch[`${side}.players`] = players;
       player = next;
@@ -658,6 +743,18 @@ export async function triggerEvent(live: LiveState, type: EventType, opts: Trigg
   }
   const victim = victims[0] ?? null;
   if (side && type === 'TURTLE') patch[`${side}.turtles`] = live[side].turtles + 1;
+  if (side && type === 'TURRET') patch[`${side}.turrets`] = (live[side].turrets ?? 0) + 1;
+  if (type === 'MAP_EFFECT') patch.mapEffect = (opts.data?.effect as MapEffect) ?? null;
+  if (type === 'LEVEL_MAX' && side && player) {
+    const sec = Number(opts.data?.sec) || 0;
+    const prev = (opts.data?.prev ? JSON.parse(String(opts.data.prev)) : null) as LevelRecord | null;
+    const best = Boolean(opts.data?.best);
+    const t = sideTeam(live, side);
+    patch.levelPop = { id: eventId, at: now, side, ign: player.ign, team: t?.name ?? '', hero: player.hero || '', photoUrl: player.photoUrl || '', sec, best, prev };
+    if (best) {
+      patch.levelBest = { sec, playerId: player.playerId, ign: player.ign, team: t?.name ?? '', hero: player.hero || '', gameNumber: live.gameNumber, matchLabel: live.matchLabel, at: now } satisfies LevelRecord;
+    }
+  }
   if (side && type === 'LORD') patch[`${side}.lords`] = live[side].lords + 1;
 
   const team = side ? sideTeam(live, side) : null;
@@ -667,8 +764,11 @@ export async function triggerEvent(live: LiveState, type: EventType, opts: Trigg
     const seconds = opts.replaySeconds ?? 10;
     patch.replay = {
       active: true,
+      obs: Boolean(opts.replayObs),
+      playingAt: opts.replayObs ? null : now,
       startedAt: now,
-      endsAt: now + seconds * 1000,
+      // With OBS the real end comes from the clip (replayPlaying); this is a safety net.
+      endsAt: now + (seconds + (opts.replayObs ? 6 : 0)) * 1000,
       title: opts.replayTitle || 'Instant Replay',
       description: opts.note ?? '',
       side,
@@ -758,6 +858,40 @@ function buildBanner(
       subtitle: leader ? `${leader.name} leads the economy` : 'Dead-even economy',
     };
   }
+  if (type === 'MAP_EFFECT') {
+    const e = MAP_EFFECTS[opts.data?.effect as MapEffect];
+    return { id, type, at, side: null, title: (e?.label ?? 'Battlefield').toUpperCase(), subtitle: `Battlefield effect · ${e?.short ?? ''}` };
+  }
+  if (type === 'INVADE') {
+    const enemy = side ? sideTeam(live, side === 'blue' ? 'red' : 'blue') : null;
+    const buff = opts.data?.target === 'buff';
+    return {
+      id,
+      type,
+      at,
+      side,
+      title: buff ? 'BUFF INVADE!' : 'INVADE!',
+      subtitle: `${team?.name ?? 'A team'} is invading ${enemy?.name ?? 'the enemy'}'s jungle${buff ? ' — eyeing the buff' : ''}`,
+      teamName: team?.name ?? null,
+      teamLogo: team?.logoUrl ?? null,
+    };
+  }
+  if (type === 'TURRET') {
+    const tier = String(opts.data?.tier ?? '');
+    const golden = Boolean(opts.data?.golden);
+    return {
+      id,
+      type,
+      at,
+      side,
+      title: golden ? 'GOLDEN TURRET' : 'TURRET DESTROYED',
+      subtitle: [tier ? `${tier} turret` : null, team?.name, golden ? 'bonus gold for the whole team' : null].filter(Boolean).join(' — '),
+      teamName: team?.name ?? null,
+      teamLogo: team?.logoUrl ?? null,
+    };
+  }
+  // Level 15 has its own pop-up on the HUD (new best time, old record slashed).
+  if (type === 'LEVEL_MAX') return null;
   if (type === 'OBJECTIVE_CONTEST') {
     const objective = String(opts.data?.objective ?? 'Lord');
     return {
@@ -774,7 +908,7 @@ function buildBanner(
   if (!def.banner) return null;
   const isObjective = type === 'LORD' || type === 'TURTLE' || type === 'BUFF';
   const buff = opts.data?.buff as BuffColor | undefined;
-  const objectiveName = type === 'LORD' ? 'LORD' : type === 'TURTLE' ? 'TURTLE' : buff ? `${buff.toUpperCase()} BUFF` : 'BUFF';
+  const objectiveName = type === 'LORD' ? 'LORD' : type === 'TURTLE' ? (opts.data?.healing ? 'HEALING TURTLE' : 'TURTLE') : buff ? `${buff.toUpperCase()} BUFF` : 'BUFF';
   const playerLabel = player ? `${player.ign}${player.hero ? ` · ${player.hero}` : ''}` : null;
   return {
     id,
@@ -820,7 +954,9 @@ export async function endGame(live: LiveState, winnerSide: Side, durationSec?: n
     teamId: p.teamId,
     ign: p.ign,
     hero: p.hero,
-    spell: p.spell,
+    spell: p.spell ?? null,
+    level: p.level ?? 1,
+    maxLevelSec: p.maxLevelSec ?? null,
     k: p.k,
     d: p.d,
     a: p.a,
@@ -848,8 +984,15 @@ export async function endGame(live: LiveState, winnerSide: Side, durationSec?: n
     blue: { kills: kills(live.blue), turtles: live.blue.turtles, lords: live.blue.lords, bans: live.draft.blueBans, picks: live.draft.bluePicks },
     red: { kills: kills(live.red), turtles: live.red.turtles, lords: live.red.lords, bans: live.draft.redBans, picks: live.draft.redPicks },
     players: [...live.blue.players, ...live.red.players].map(statOf),
+    mapEffect: live.mapEffect ?? null,
     createdAt: now,
   });
+  // Fastest Level 15 of this game → the tournament record (only now, once the winner is declared).
+  if (live.levelBest && live.tournamentId) {
+    const tSnap = await getDoc(doc(db, COL.tournaments, live.tournamentId));
+    const current = (tSnap.exists() ? (tSnap.data().levelRecord as LevelRecord | null | undefined) : null) ?? null;
+    if (tSnap.exists() && (!current || live.levelBest.sec < current.sec)) batch.update(tSnap.ref, { levelRecord: live.levelBest });
+  }
 
   let isChampionship = false;
   if (seriesOver) {

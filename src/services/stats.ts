@@ -216,3 +216,138 @@ export type LeaderboardKey = keyof Pick<
 export function rankBy(rows: PlayerAggregate[], key: LeaderboardKey, dir: 'desc' | 'asc' = 'desc'): PlayerAggregate[] {
   return [...rows].sort((a, b) => (dir === 'desc' ? b[key] - a[key] : a[key] - b[key]) || b.kda - a.kda);
 }
+
+// ── Hero statistics (Leaderboard → Heroes) ──────────────────────────────────
+
+export interface HeroAggregate {
+  hero: string;
+  picks: number;
+  bans: number;
+  wins: number;
+  losses: number;
+  /** Percentages of all games (0–100). */
+  pickRate: number;
+  banRate: number;
+  /** Picked or banned, % of games. */
+  contention: number;
+  /** null until the hero has finished a game. */
+  winRate: number | null;
+  /** Average kills / deaths / assists per game on this hero. */
+  avgK: number;
+  avgD: number;
+  avgA: number;
+  kda: number;
+  /** Player with the most games on it. */
+  topPlayer: { playerId: string; ign: string; games: number } | null;
+}
+
+export type HeroKey = 'picks' | 'bans' | 'contention' | 'pickRate' | 'banRate' | 'winRate' | 'wins' | 'losses' | 'kda';
+
+/** Pick / ban / win numbers per hero across the given games. */
+export function computeHeroStats(games: GameRecord[]): HeroAggregate[] {
+  const total = games.length;
+  const map = new Map<string, { hero: string; picks: number; bans: number; wins: number; k: number; d: number; a: number; n: number; players: Record<string, { ign: string; games: number }> }>();
+  const row = (name: string) => {
+    const hero = name.trim();
+    const key = hero.toLowerCase();
+    let r = map.get(key);
+    if (!r) map.set(key, (r = { hero, picks: 0, bans: 0, wins: 0, k: 0, d: 0, a: 0, n: 0, players: {} }));
+    return r;
+  };
+  const real = (h: string | undefined) => Boolean(h && h.trim() && h.trim().toLowerCase() !== 'none');
+  for (const g of games) {
+    for (const side of ['blue', 'red'] as const) {
+      for (const h of g[side]?.picks ?? []) {
+        if (!real(h)) continue;
+        const r = row(h);
+        r.picks++;
+        if (g.winnerSide === side) r.wins++;
+      }
+      for (const h of g[side]?.bans ?? []) if (real(h)) row(h).bans++;
+    }
+    for (const p of g.players ?? []) {
+      if (!real(p.hero)) continue;
+      const r = row(p.hero);
+      r.k += p.k;
+      r.d += p.d;
+      r.a += p.a;
+      r.n++;
+      if (p.playerId) {
+        const pl = (r.players[p.playerId] ??= { ign: p.ign, games: 0 });
+        pl.games++;
+      }
+    }
+  }
+  const pct = (n: number) => (total ? Math.round((n / total) * 100) : 0);
+  return [...map.values()]
+    .filter((r) => r.picks || r.bans)
+    .map((r) => {
+      const top = Object.entries(r.players).sort((x, y) => y[1].games - x[1].games)[0];
+      return {
+        hero: r.hero,
+        picks: r.picks,
+        bans: r.bans,
+        wins: r.wins,
+        losses: r.picks - r.wins,
+        pickRate: pct(r.picks),
+        banRate: pct(r.bans),
+        contention: Math.min(100, pct(r.picks + r.bans)),
+        winRate: r.picks ? Math.round((r.wins / r.picks) * 100) : null,
+        avgK: r.n ? +(r.k / r.n).toFixed(1) : 0,
+        avgD: r.n ? +(r.d / r.n).toFixed(1) : 0,
+        avgA: r.n ? +(r.a / r.n).toFixed(1) : 0,
+        kda: r.n ? kdaRatio(r.k, r.d, r.a) : 0,
+        topPlayer: top ? { playerId: top[0], ign: top[1].ign, games: top[1].games } : null,
+      };
+    });
+}
+
+export function rankHeroes(rows: HeroAggregate[], key: HeroKey, dir: 'desc' | 'asc' = 'desc'): HeroAggregate[] {
+  const v = (r: HeroAggregate) => (key === 'winRate' ? (r.winRate ?? -1) : r[key]);
+  return [...rows].sort((a, b) => (dir === 'desc' ? v(b) - v(a) : v(a) - v(b)) || b.contention - a.contention || a.hero.localeCompare(b.hero));
+}
+
+// ── Final placements (Teams section) ────────────────────────────────────────
+
+export type PlacementLabel = 'Champion' | '1st runner-up' | '2nd runner-up' | '3rd runner-up';
+export interface Placement {
+  place: 1 | 2 | 3 | 4;
+  label: PlacementLabel;
+}
+
+const LABELS: Record<number, PlacementLabel> = { 1: 'Champion', 2: '1st runner-up', 3: '2nd runner-up', 4: '3rd runner-up' };
+
+/**
+ * Champion and runner-ups once the tournament has a champion.
+ * Double elimination: Grand Final loser = 1st runner-up, Lower Final loser = 2nd,
+ * the loser of the lower round before it = 3rd. Single elimination: Final loser = 1st;
+ * the two semifinal losers are ranked by the games they won in their semifinal.
+ */
+export function computePlacements(t: Tournament | null, matches: Match[]): Record<string, Placement> {
+  if (!t?.championTeamId) return {};
+  const out: Record<string, Placement> = {};
+  const put = (teamId: string | null | undefined, place: 1 | 2 | 3 | 4) => {
+    if (teamId && !out[teamId]) out[teamId] = { place, label: LABELS[place] };
+  };
+  put(t.championTeamId, 1);
+  const done = matches.filter((m) => m.status === 'completed' && m.winnerId && m.bracket !== 'SEED');
+  const loserOf = (m: Match) => m.loserId ?? (m.winnerId === m.teamAId ? m.teamBId : m.teamAId);
+  const loserGames = (m: Match) => (m.winnerId === m.teamAId ? m.scoreB : m.scoreA);
+  const final = [...done].filter((m) => m.isFinal || m.bracket === 'GF').sort((a, b) => b.updatedAt - a.updatedAt)[0];
+  if (final) put(loserOf(final), 2);
+  if (t.type === 'double') {
+    const lbRounds = matches.filter((m) => m.bracket === 'LB').map((m) => m.round);
+    const lastLb = lbRounds.length ? Math.max(...lbRounds) : 0;
+    const lbFinal = done.find((m) => m.bracket === 'LB' && m.round === lastLb);
+    if (lbFinal) put(loserOf(lbFinal), 3);
+    const before = done.filter((m) => m.bracket === 'LB' && m.round === lastLb - 1).sort((a, b) => loserGames(b) - loserGames(a));
+    if (before[0]) put(loserOf(before[0]), 4);
+  } else {
+    const ubRounds = matches.filter((m) => m.bracket === 'UB').map((m) => m.round);
+    const lastUb = ubRounds.length ? Math.max(...ubRounds) : 0;
+    const semis = done.filter((m) => m.bracket === 'UB' && m.round === lastUb - 1).sort((a, b) => loserGames(b) - loserGames(a));
+    if (semis[0]) put(loserOf(semis[0]), 3);
+    if (semis[1]) put(loserOf(semis[1]), 4);
+  }
+  return out;
+}

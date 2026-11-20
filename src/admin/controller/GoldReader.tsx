@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
-import { Camera, Crosshair, ScanText, Settings2 } from 'lucide-react';
+import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
+import { Camera, Coins, Crosshair, ScanText, Settings2 } from 'lucide-react';
 import type { LiveState } from '@/types';
 import { obsBridge, getObsSettings } from '@/services/obs';
-import { setGoldDiff } from '@/services/live';
+import { setGoldDiff, triggerEvent } from '@/services/live';
+import { sideTeam } from '@/services/facts';
 import {
-  GoldFilter,
   goldReaderReady,
   loadGoldReader,
   loadImage,
@@ -15,7 +15,7 @@ import {
   type GoldReading,
   type Rect,
 } from '@/services/goldReader';
-import { Button, Field, Modal, Select, Switch } from '@/components/ui';
+import { Button, Card, Field, Modal, Select, Switch } from '@/components/ui';
 import { useToast } from '@/components/Toast';
 import { cn, formatGold, timeAgo } from '@/lib/utils';
 
@@ -23,70 +23,100 @@ interface GoldStatus {
   at: number;
   reading?: GoldReading;
   error?: string;
+  announced?: boolean;
+}
+
+// ── Shared gold-reader state (settings saved on this computer + last status) ──
+
+/** Read & announce every N seconds (default 3 minutes). Older "every 5 s" saves move to 3 minutes. */
+const normalize = (s: GoldReaderSettings): GoldReaderSettings => ({ ...s, intervalSec: s.intervalSec >= 60 ? s.intervalSec : 180 });
+let goldSettings = normalize(loadGoldReader());
+let goldStatus: GoldStatus | null = null;
+const goldListeners = new Set<() => void>();
+const notify = () => goldListeners.forEach((l) => l());
+const subscribe = (fn: () => void) => {
+  goldListeners.add(fn);
+  return () => void goldListeners.delete(fn);
+};
+export function updateGoldReader(patch: Partial<GoldReaderSettings>) {
+  goldSettings = normalize({ ...goldSettings, ...patch });
+  saveGoldReader(goldSettings);
+  notify();
+}
+const setGoldStatus = (s: GoldStatus) => {
+  goldStatus = s;
+  notify();
+};
+export function useGoldReader() {
+  const settings = useSyncExternalStore(subscribe, () => goldSettings);
+  const status = useSyncExternalStore(subscribe, () => goldStatus);
+  return { settings, update: updateGoldReader, status };
+}
+
+/** A few quick reads in a row; keep the value at least two of them agree on. */
+async function readSteady(settings: GoldReaderSettings): Promise<GoldReading> {
+  const reads: GoldReading[] = [];
+  let lastError: Error | null = null;
+  for (let i = 0; i < 3; i++) {
+    try {
+      const frame = await obsBridge.screenshot(settings.source, 1280);
+      reads.push(await readGold(frame, settings));
+    } catch (e) {
+      lastError = e as Error;
+    }
+    if (i < 2) await new Promise((r) => setTimeout(r, 1200));
+  }
+  for (const a of reads) {
+    const agree = reads.filter((b) => Math.abs(b.diff - a.diff) <= 400);
+    if (agree.length >= 2) return agree.sort((x, y) => x.diff - y.diff)[Math.floor(agree.length / 2)];
+  }
+  throw lastError ?? new Error('The gold numbers were not clear — trying again next time');
 }
 
 /**
- * Keeps the gold difference in sync with the game: every few seconds it reads
- * the gold from the OBS game feed and updates the HUD — you only press
- * "Announce gold update".
+ * Mounted once in the admin layout: while a game is being played (not paused),
+ * reads the gold from the OBS game feed every 3 minutes, updates the HUD and
+ * has the casters on the mic announce it.
  */
-export function useAutoGold(live: LiveState) {
-  const [settings, setSettings] = useState<GoldReaderSettings>(loadGoldReader);
-  const [status, setStatus] = useState<GoldStatus | null>(null);
+export function GoldKeeper({ live }: { live: LiveState }) {
+  const { settings } = useGoldReader();
   const liveRef = useRef(live);
   liveRef.current = live;
-  const filter = useRef(new GoldFilter());
-
   useEffect(() => {
     if (!settings.enabled || !goldReaderReady(settings)) return;
-    let stopped = false;
     let busy = false;
     const tick = async () => {
       const L = liveRef.current;
-      if (busy || L.phase !== 'ingame' || !obsBridge.connected) {
-        if (!obsBridge.connected && !stopped) setStatus({ at: Date.now(), error: 'Connect OBS (Live Controller → OBS) to read the gold' });
-        return;
-      }
+      if (busy || L.phase !== 'ingame' || !L.gameStartedAt || L.clockPausedAt) return;
+      if (!obsBridge.connected) return setGoldStatus({ at: Date.now(), error: 'Connect OBS (Settings → OBS) to read the gold' });
       busy = true;
       try {
-        const frame = await obsBridge.screenshot(settings.source, 1280);
-        const reading = await readGold(frame, settings);
-        if (stopped) return;
-        if (filter.current.accept(reading.diff)) {
-          if (Math.abs(reading.diff - L.goldDiff) >= 100) await setGoldDiff(reading.diff);
-          setStatus({ at: Date.now(), reading });
-        } else {
-          setStatus({ at: Date.now(), reading, error: 'Big jump — checking it on the next read' });
-        }
+        const reading = await readSteady(settings);
+        const now = liveRef.current;
+        if (now.phase !== 'ingame') return;
+        if (Math.abs(reading.diff - now.goldDiff) >= 100) await setGoldDiff(reading.diff);
+        // The seated casters call it (whoever is on the mic this game).
+        await triggerEvent({ ...now, goldDiff: reading.diff }, 'GOLD_UPDATE', { side: null });
+        setGoldStatus({ at: Date.now(), reading, announced: true });
       } catch (e) {
-        if (!stopped) setStatus({ at: Date.now(), error: (e as Error).message });
+        setGoldStatus({ at: Date.now(), error: (e as Error).message });
       } finally {
         busy = false;
       }
     };
-    void tick();
-    const t = window.setInterval(() => void tick(), Math.max(2, settings.intervalSec) * 1000);
-    return () => {
-      stopped = true;
-      clearInterval(t);
-    };
+    const t = window.setInterval(() => void tick(), settings.intervalSec * 1000);
+    return () => clearInterval(t);
   }, [settings]);
-
-  const update = (patch: Partial<GoldReaderSettings>) => {
-    const next = { ...settings, ...patch };
-    saveGoldReader(next);
-    setSettings(next);
-    filter.current.reset();
-  };
-  return { settings, update, status };
+  return null;
 }
 
-/** Switch + status line shown in the Gold difference card. */
-export function AutoGoldBar({ auto, live }: { auto: ReturnType<typeof useAutoGold>; live: LiveState }) {
+/** Switch + status line (Settings → Gold difference). */
+export function AutoGoldBar({ live }: { live: LiveState }) {
   const [setupOpen, setSetupOpen] = useState(false);
-  const { settings, update, status } = auto;
+  const { settings, update, status } = useGoldReader();
   const ready = goldReaderReady(settings);
   useNowTick(5000);
+  const every = Math.round(settings.intervalSec / 60);
   return (
     <div className="mb-3 rounded-xl border border-line bg-surface2 p-3">
       <div className="flex flex-wrap items-center justify-between gap-2">
@@ -94,7 +124,7 @@ export function AutoGoldBar({ auto, live }: { auto: ReturnType<typeof useAutoGol
           checked={settings.enabled && ready}
           disabled={!ready}
           onChange={(enabled) => update({ enabled })}
-          label={<span className="text-sm font-semibold">Auto — read the gold from the game</span>}
+          label={<span className="text-sm font-semibold">Auto — read the gold and announce it every {every} min</span>}
         />
         <Button size="xs" variant="ghost" icon={<Settings2 className="h-3.5 w-3.5" />} onClick={() => setSetupOpen(true)}>
           {ready ? 'Gold reader setup' : 'Set up (1 min)'}
@@ -102,17 +132,64 @@ export function AutoGoldBar({ auto, live }: { auto: ReturnType<typeof useAutoGol
       </div>
       <p className={cn('mt-1 text-xs', status?.error ? 'text-amber-600 dark:text-amber-400' : 'text-muted')}>
         {!ready
-          ? 'Mark where the game shows the gold once — then the difference updates by itself and you just press Announce.'
+          ? 'Mark where the game shows the gold once — then it is read from the game feed and the casters on the mic announce it by themselves.'
           : !settings.enabled
-            ? 'Off — the slider below is manual.'
+            ? 'Off — set the gold by hand below.'
             : status?.reading && !status.error
-              ? `Read ${status.reading.blue !== undefined ? `${formatGold(status.reading.blue)} vs ${formatGold(status.reading.red ?? 0)} → ` : ''}${status.reading.diff === 0 ? 'even' : `${status.reading.diff > 0 ? 'blue' : 'red'} +${formatGold(status.reading.diff)}`} · ${timeAgo(status.at)}`
+              ? `Read ${status.reading.blue !== undefined ? `${formatGold(status.reading.blue)} vs ${formatGold(status.reading.red ?? 0)} → ` : ''}${status.reading.diff === 0 ? 'even' : `${status.reading.diff > 0 ? 'blue' : 'red'} +${formatGold(status.reading.diff)}`} · announced ${timeAgo(status.at)}`
               : status?.error
                 ? `${status.error} · ${timeAgo(status.at)}`
-                : `Reading every ${settings.intervalSec}s while in-game…`}
+                : `Reads every ${every} min while a game is on (not during pauses); the casters on the mic announce it.`}
       </p>
       <GoldReaderSetup open={setupOpen} onClose={() => setSetupOpen(false)} settings={settings} onSave={(s) => update(s)} live={live} />
     </div>
+  );
+}
+
+/** Settings → Gold difference: the auto reader + manual override + announce now. */
+export function GoldCard({ live }: { live: LiveState }) {
+  const toast = useToast();
+  const [goldInput, setGoldInput] = useState('');
+  const onAir = Boolean(live.matchId);
+  const blue = sideTeam(live, 'blue');
+  const red = sideTeam(live, 'red');
+  const set = (v: number) => toast.run(() => setGoldDiff(v));
+  return (
+    <Card title="Gold difference" subtitle={onAir ? (live.goldDiff === 0 ? 'Even' : `${(live.goldDiff > 0 ? blue : red)?.name} +${formatGold(live.goldDiff)}`) : 'No series on air — the reader works once a game is live.'}>
+      <AutoGoldBar live={live} />
+      <div className={cn(!onAir && 'pointer-events-none opacity-50')}>
+        <div className="mb-3 flex items-center justify-between font-cond text-xs font-semibold uppercase tracking-wider">
+          <span className="text-sky-500">{blue?.tag ?? 'Blue'} ahead ←</span>
+          <span className="font-display text-3xl leading-none tabular">
+            {live.goldDiff > 0 ? '+' : ''}
+            {live.goldDiff.toLocaleString()}
+          </span>
+          <span className="text-brand">→ {red?.tag ?? 'Red'} ahead</span>
+        </div>
+        <input type="range" min={-20000} max={20000} step={100} value={-live.goldDiff} onChange={(e) => void setGoldDiff(-Number(e.target.value))} className="w-full accent-[rgb(var(--brand))]" aria-label="Gold difference" />
+        <div className="mt-3 grid grid-cols-3 gap-1.5 sm:grid-cols-6">
+          {[2000, 1000, 500].map((v) => (
+            <Button key={`b${v}`} size="xs" variant="secondary" onClick={() => void set(live.goldDiff + v)}>
+              +{v / 1000}k {blue?.tag}
+            </Button>
+          ))}
+          {[500, 1000, 2000].map((v) => (
+            <Button key={`r${v}`} size="xs" variant="secondary" onClick={() => void set(live.goldDiff - v)}>
+              +{v / 1000}k {red?.tag}
+            </Button>
+          ))}
+        </div>
+        <div className="mt-3 flex gap-2">
+          <input className="input" placeholder="Exact (+ = blue ahead)" value={goldInput} onChange={(e) => setGoldInput(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && goldInput && void setGoldDiff(Number(goldInput)).then(() => setGoldInput(''))} />
+          <Button variant="secondary" onClick={() => void set(0)}>
+            Even
+          </Button>
+        </div>
+        <Button className="mt-3 w-full" variant="outline" icon={<Coins className="h-4 w-4" />} onClick={() => toast.run(() => triggerEvent(live, 'GOLD_UPDATE', { side: null }), 'The casters on the mic will call the gold')}>
+          Announce gold update now (casters on the mic)
+        </Button>
+      </div>
+    </Card>
   );
 }
 
@@ -214,11 +291,11 @@ function GoldReaderSetup({ open, onClose, settings, onSave, live }: { open: bool
             <option value="diff">The gold difference (one number, team colour)</option>
           </Select>
         </Field>
-        <Field label="Read every">
-          <Select value={draft.intervalSec} onChange={(e) => setDraft({ ...draft, intervalSec: Number(e.target.value) })}>
-            {[3, 5, 10, 15].map((n) => (
+        <Field label="Read & announce every">
+          <Select value={draft.intervalSec >= 60 ? draft.intervalSec : 180} onChange={(e) => setDraft({ ...draft, intervalSec: Number(e.target.value) })}>
+            {[120, 180, 300].map((n) => (
               <option key={n} value={n}>
-                {n} seconds
+                {n / 60} minutes
               </option>
             ))}
           </Select>
@@ -235,7 +312,7 @@ function GoldReaderSetup({ open, onClose, settings, onSave, live }: { open: bool
         ))}
         <Switch checked={draft.flip} onChange={(flip) => setDraft({ ...draft, flip })} label={<span className="text-xs">Swap sides (game shows red on the left)</span>} />
       </div>
-      {!obsBridge.connected && <p className="mt-2 text-xs text-amber-600 dark:text-amber-400">Connect OBS first (Live Controller → OBS card).</p>}
+      {!obsBridge.connected && <p className="mt-2 text-xs text-amber-600 dark:text-amber-400">Connect OBS first (Settings → OBS).</p>}
 
       {frame && (
         <div

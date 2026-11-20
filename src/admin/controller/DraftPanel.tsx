@@ -1,14 +1,16 @@
 import { useState } from 'react';
 import { ArrowUpDown, Ban, Lock, Pause, Play, RotateCcw, Timer, Undo2, UserRound, Users, X, Zap } from 'lucide-react';
-import type { LiveState, Player, Side, Team } from '@/types';
-import { DRAFT_SEQUENCE, POSITION_LABEL, isNoBan, isPairSecond, isPairStart, picksComplete } from '@/lib/constants';
+import type { BattleSpell, LiveState, Player, Side, Team } from '@/types';
+import { BATTLE_SPELLS, DRAFT_SEQUENCE, POSITION_LABEL, isNoBan, isPairSecond, isPairStart, picksComplete } from '@/lib/constants';
 import { allHeroes, canonicalHero } from '@/lib/heroData';
-import { applyLineups, draftLock, draftReset, draftSetSlot, draftSwapPicks, draftUndo, lineupsOf, startGame, timerPause, timerReset, timerSetDuration, timerStart } from '@/services/live';
+import { applyLineups, draftLock, draftReset, draftSetSlot, draftSwapPicks, draftUndo, lineupsOf, startGame, timerPause, timerReset, timerSetDuration, timerStart, updatePlayer } from '@/services/live';
 import { sideTeam } from '@/services/facts';
 import { useNow } from '@/hooks/useFirestore';
-import { HeroCombo } from '@/components/game';
+import { HeroCombo, SpellBadge } from '@/components/game';
 import { Button, Card, Input, Modal } from '@/components/ui';
 import { useToast } from '@/components/Toast';
+import { MapEffectPicker } from './BattlefieldControls';
+import { useConfirm } from '@/components/Confirm';
 import { cn } from '@/lib/utils';
 import { LineupDialog } from './LineupDialog';
 
@@ -19,6 +21,7 @@ export const nextPickSlot = (picks: string[]) => picks.findIndex((h) => !h);
 
 export function DraftPanel({ live, players, teams }: { live: LiveState; players: Player[]; teams: Team[] }) {
   const toast = useToast();
+  const ask = useConfirm();
   const now = useNow(250);
   const [hero, setHero] = useState('');
   const [editing, setEditing] = useState<{ key: SlotKey; index: number; value: string } | null>(null);
@@ -55,6 +58,9 @@ export function DraftPanel({ live, players, teams }: { live: LiveState; players:
   /** The game can start only when all 10 picks are in (bans may be "none"). */
   const ready = picksComplete(d);
   const missingPicks = [...d.bluePicks, ...d.redPicks].filter((h) => !h).length;
+  /** Players whose battle spell isn't picked yet (shown in the game's draft screen). */
+  const noSpell = [...live.blue.players, ...live.red.players].filter((p) => !p.spell);
+  const setSpell = (side: Side, index: number, spell: BattleSpell | null) => void toast.run(() => updatePlayer(live, side, index, { spell, spellReadyAt: null, spellUsedAt: null }));
 
   /** Click ⇅ on one player, then ⇅ on a teammate: their heroes are traded. */
   const swap = (side: Side, index: number) => {
@@ -86,7 +92,7 @@ export function DraftPanel({ live, players, teams }: { live: LiveState; players:
             <Slot key={i} hero={h} active={activeKey === bansKey && step?.index === i} ban onClick={() => setEditing({ key: bansKey, index: i, value: h })} />
           ))}
         </div>
-        <p className="label">Picks · position · player</p>
+        <p className="label">Picks · position · player · battle spell</p>
         <div className="space-y-1.5">
           {d[picksKey].map((h, i) => {
             const player = live[side].players[i];
@@ -111,6 +117,24 @@ export function DraftPanel({ live, players, teams }: { live: LiveState; players:
                 >
                   <ArrowUpDown className="h-4 w-4" />
                 </button>
+                <label className={cn('relative flex h-10 w-[118px] shrink-0 items-center gap-1.5 rounded-lg border pl-1.5 pr-1 text-xs', player?.spell ? 'border-line' : 'border-dashed border-amber-500/60')} title={player ? `${player.ign}'s battle spell this game` : undefined}>
+                  <SpellBadge spell={player?.spell ?? null} now={0} size={26} />
+                  <select
+                    className={cn('h-full min-w-0 flex-1 cursor-pointer appearance-none bg-transparent font-semibold outline-none [&>option]:bg-surface [&>option]:text-fg', !player?.spell && 'text-muted')}
+                    value={player?.spell ?? ''}
+                    disabled={!player}
+                    onChange={(e) => setSpell(side, i, (e.target.value || null) as BattleSpell | null)}
+                    aria-label={`Battle spell — ${player?.ign ?? 'player'}`}
+                    data-testid={`draft-spell-${side}-${i}`}
+                  >
+                    <option value="">Spell…</option>
+                    {BATTLE_SPELLS.map((sp) => (
+                      <option key={sp} value={sp}>
+                        {sp}
+                      </option>
+                    ))}
+                  </select>
+                </label>
               </div>
             );
           })}
@@ -135,7 +159,7 @@ export function DraftPanel({ live, players, teams }: { live: LiveState; players:
             size="sm"
             variant="ghost"
             onClick={() => {
-              if (confirm('Clear the whole draft?')) void toast.run(() => draftReset(live));
+              void ask({ title: 'Reset the draft?', message: 'Clears every ban and pick for this game.', confirmLabel: 'Reset draft', danger: true }).then((ok) => { if (ok) void toast.run(() => draftReset(live)); });
             }}
           >
             Reset
@@ -214,12 +238,20 @@ export function DraftPanel({ live, players, teams }: { live: LiveState; players:
               Start Game unlocks when all 10 heroes are picked ({missingPicks} pick{missingPicks === 1 ? '' : 's'} left). Bans can be &ldquo;none&rdquo;.
             </p>
           )}
+          {noSpell.length > 0 && (ready || done) && (
+            <p className="rounded-lg border border-amber-500/40 bg-amber-500/10 px-3 py-2 text-center text-xs text-amber-700 dark:text-amber-300" data-testid="spells-missing">
+              Battle spells not set yet: {noSpell.map((p) => p.ign).join(', ')} — pick them next to each player (you can still start; set them later in In-game).
+            </p>
+          )}
           <p className="text-center text-xs text-muted">
             Step {Math.min(d.step + 1, DRAFT_SEQUENCE.length)} / {DRAFT_SEQUENCE.length} · the casters call every ban &amp; pick, talk about what may come next, and break down the final draft.
           </p>
         </div>
 
         {column('red')}
+      </div>
+      <div className="mt-4">
+        <MapEffectPicker live={live} />
       </div>
 
       <Modal open={!!editing} onClose={() => setEditing(null)} title="Edit slot">

@@ -2,6 +2,7 @@ import type { EventType } from '@/types';
 import type { CasterId } from './casters';
 import { CASTER_BY_ID } from './casters';
 import { callGeminiProxy, GeminiError } from './gemini';
+import { pronunciationGuide } from './delivery';
 import { STORAGE_KEYS } from '@/lib/constants';
 import { safeLocalGet, safeLocalSet } from '@/lib/utils';
 
@@ -78,6 +79,10 @@ const INTENSITY: Partial<Record<EventType, string>> = {
   FIRST_BLOOD: 'Sharp, excited call to open the game.',
   DOUBLE_KILL: 'Excited and quick.',
   OBJECTIVE_CONTEST: 'Tense suspense — hushed, then rising as the fight starts.',
+  MAP_EFFECT: 'Big, clear announcement, then an easy explanation like teaching the crowd.',
+  TURRET: 'Quick, confident call — louder when it is a Golden Turret.',
+  WISP_REVEAL: 'Sharp, surprised "gotcha" energy.',
+  INVADE: 'Sneaky suspense that rises — like whispering a secret plan, then excited.',
   INSTANT_REPLAY: 'Open by inviting everyone to watch the instant replay, then re-live the play with fresh excitement, like seeing it again in slow motion.',
   SERIES_VICTORY: 'Emotional, celebratory, goosebumps — like the final moment of a grand final.',
   GAME_RESULT: 'Excited, celebratory, then reflective.',
@@ -94,7 +99,7 @@ const INTENSITY: Partial<Record<EventType, string>> = {
   IDLE_BANTER: 'Relaxed, natural desk conversation between friends.',
 };
 
-export function buildDirection(pair: string[], type: EventType): string {
+export function buildDirection(pair: string[], type: EventType, lines: string[] = []): string {
   const who = pair
     .map((id) => {
       const p = TTS_PROFILE[id as CasterId];
@@ -106,6 +111,9 @@ export function buildDirection(pair: string[], type: EventType): string {
     'You are performing LIVE commentary for a Filipino pro-league Mobile Legends: Bang Bang esports broadcast. This is not a narration — it is two real casters talking on a live mic in front of a cheering crowd.',
     'Speak natural Taglish exactly like Filipino shoutcasters: Tagalog words with natural Filipino pronunciation and rhythm, English game terms in a natural Filipino-English accent. Player names and team names are said confidently.',
     'Sound human: natural breaths, emphasis, quick reactions, overlapping energy (but each line still finishes before the next speaker starts). Never read punctuation, symbols or speaker tags aloud.',
+    'You are NOT a narrator, newsreader or AI assistant. Never read evenly: speed up and get louder on the action, slow down and lower your voice to tell the story or explain, let sentences run together the way people talk on a hot mic. Smile through the friendly lines, react with real surprise to big plays.',
+    'ALL-CAPS words are shouted calls (say them as words, never spell them out); stretched words like "GRABEEE" are held out. Numbers like "2.5k" are said "two point five K", scores like "2-1" are said "two-one", "Bo5" is "best of five", "ka-TCC" is "ka T-C-C".',
+    pronunciationGuide(lines),
     `Moment: ${INTENSITY[type] ?? 'Natural live energy.'}`,
     'Speakers:',
     who,
@@ -154,7 +162,7 @@ export async function synthesizeExchange(
       mode: 'tts',
       lines: lines.map((l) => ({ speaker: TTS_PROFILE[l.casterId as CasterId].speaker, text: l.text })),
       voices,
-      direction: buildDirection(pair, type),
+      direction: buildDirection(pair, type, lines.map((l) => l.text)),
     },
     timeoutMs,
   );

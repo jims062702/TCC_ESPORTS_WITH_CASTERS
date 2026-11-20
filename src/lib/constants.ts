@@ -1,4 +1,4 @@
-import type { BattleSpell, EventType, Role, SeriesFormat, Side } from '@/types';
+import type { BattleSpell, EventType, Role, SeriesFormat, Side, MapEffect, TurretTier } from '@/types';
 
 export const SERIES_FORMATS: SeriesFormat[] = ['BO1', 'BO3', 'BO5', 'BO7'];
 
@@ -37,15 +37,15 @@ export const BATTLE_SPELLS: BattleSpell[] = [
   'Vengeance',
 ];
 
-/** Approximate base cooldowns (seconds). Tweak to match the current MLBB patch. */
+/** Base cooldowns (seconds), current MLBB patch. The spell reader syncs the real end from the game feed. */
 export const SPELL_COOLDOWN: Record<BattleSpell, number> = {
   Execute: 90,
   Retribution: 35,
   Inspire: 75,
   Sprint: 100,
-  Revitalize: 100,
+  Revitalize: 75,
   Aegis: 75,
-  Petrify: 90,
+  Petrify: 75,
   Purify: 90,
   Flameshot: 50,
   Flicker: 120,
@@ -156,7 +156,38 @@ export interface EventDef {
   banner: string | null;
 }
 
+/** 2026 annual map battlefield effects (patch 2.2.16) — one per game, chosen at random by the game. */
+export const MAP_EFFECTS: Record<MapEffect, { label: string; short: string; detail: string; color: string }> = {
+  revealingWisps: {
+    label: 'Revealing Wisps',
+    color: '#3ef0d8',
+    short: 'Wisps reveal hidden enemies',
+    detail: 'Vision wisps spawn around the map. A picked-up wisp circles the hero for a few seconds and flies to any hidden enemy in range, revealing them.',
+  },
+  healingTurtle: {
+    label: 'Healing Turtle',
+    color: '#34d399',
+    short: 'Turtle joins the push & heals',
+    detail: "No Turtle shield — an allied Turtle spawns in the enemy's strongest lane, heals nearby allies fast and brings Turtle companions that push turrets.",
+  },
+  goldenTurret: {
+    label: 'Golden Turret',
+    color: '#fbbf24',
+    short: 'Turrets pay the whole team',
+    detail: 'Destroying any turret gives the whole team a big gold bonus; inner and base turrets have more HP.',
+  },
+  flyingCloud: { label: 'Flying Cloud', color: '#93c5fd', short: 'Classic map, new clouds', detail: 'A visual update only — objectives, gold and vision are unchanged.' },
+};
+export const MAP_EFFECT_IDS = Object.keys(MAP_EFFECTS) as MapEffect[];
+export const TURRET_TIERS: TurretTier[] = ['Outer', 'Inner', 'Base'];
+
 export const EVENT_DEFS: Record<EventType, EventDef> = {
+  // 2026 map: battlefield effect announcement, turrets (Golden Turret pays the team) and wisp reveals.
+  MAP_EFFECT: { label: 'Battlefield Effect', short: 'Map', tier: 'major', needsSide: false, needsPlayer: false, banner: 'BATTLEFIELD EFFECT' },
+  TURRET: { label: 'Turret Destroyed', short: 'Turret', tier: 'minor', needsSide: true, needsPlayer: false, banner: 'TURRET DESTROYED' },
+  // A team going into the enemy jungle for their creeps or buffs.
+  INVADE: { label: 'Invade', short: 'Invade', tier: 'minor', needsSide: true, needsPlayer: false, banner: 'INVADE!' },
+  WISP_REVEAL: { label: 'Wisp Reveal', short: 'Wisp', tier: 'minor', needsSide: true, needsPlayer: false, banner: 'WISP REVEAL' },
   // Automatic phase announcements (Go live / next game → draft, Start game, Go to break).
   DRAFT_START: { label: 'Draft Phase Welcome', short: 'Draft', tier: 'major', needsSide: false, needsPlayer: false, banner: null },
   GAME_START: { label: 'Game Start', short: 'Start', tier: 'major', needsSide: false, needsPlayer: false, banner: null },
@@ -180,6 +211,8 @@ export const EVENT_DEFS: Record<EventType, EventDef> = {
   OBJECTIVE_CONTEST: { label: 'Objective Contest', short: 'Contest', tier: 'minor', needsSide: false, needsPlayer: false, banner: null },
   GOLD_UPDATE: { label: 'Gold Update', short: 'Gold', tier: 'minor', needsSide: false, needsPlayer: false, banner: null },
   SPELL_USED: { label: 'Battle Spell', short: 'Spell', tier: 'minor', needsSide: true, needsPlayer: true, banner: null },
+  // + Level reached the max (15): best-time pop-up on the HUD + casters.
+  LEVEL_MAX: { label: 'Level 15', short: 'Lv 15', tier: 'major', needsSide: true, needsPlayer: true, banner: null },
   INSTANT_REPLAY: { label: 'Instant Replay', short: 'Replay', tier: 'major', needsSide: false, needsPlayer: false, banner: null },
   GAME_RESULT: { label: 'Game Result', short: 'Result', tier: 'major', needsSide: true, needsPlayer: false, banner: 'VICTORY' },
   SERIES_VICTORY: { label: 'Series Victory', short: 'Series', tier: 'major', needsSide: false, needsPlayer: false, banner: 'SERIES WIN' },

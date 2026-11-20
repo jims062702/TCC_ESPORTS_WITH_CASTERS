@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpen, Facebook, GitBranch, MessageCircle, Users } from 'lucide-react';
+import { Crown, Facebook, GitBranch, Medal, MessageCircle, Users } from 'lucide-react';
 import type { Match } from '@/types';
 import { useGames, useHighlights, useIndex, useMatches, usePlayers, useSettings, useTeams, useTournaments } from '@/hooks/useFirestore';
-import { computeLeaderboard, computeStandings } from '@/services/stats';
+import { computeLeaderboard, computePlacements, computeStandings } from '@/services/stats';
 import { featuredHeadline } from '@/services/featured';
 import { isFirebaseConfigured } from '@/services/firebase';
 import { BracketView } from '@/components/Bracket';
@@ -17,6 +17,8 @@ import { Leaderboard } from './Leaderboard';
 import { FullSection, useActiveSection, useSmoothScrolling } from './sections';
 import { BUILTIN_SLIDES, CarouselArrow, CarouselBackground, CarouselDots, useCarousel, useSwipe } from './HeroCarousel';
 import { HighlightsSection } from './Highlights';
+import { SeasonSwitcher } from './SeasonSwitcher';
+import { cn } from '@/lib/utils';
 
 export default function LandingPage() {
   useSmoothScrolling();
@@ -50,6 +52,7 @@ export default function LandingPage() {
   const [selected, setSelected] = useState<Match | null>(null);
 
   const standings = useMemo(() => computeStandings(tournament, matches.data), [tournament, matches.data]);
+  const placements = useMemo(() => computePlacements(tournament, matches.data), [tournament, matches.data]);
   const leaderboard = useMemo(() => computeLeaderboard(games.data), [games.data]);
   const liveMatch = matches.data.find((m) => m.status === 'live') ?? null;
   const tournamentTeams = tournament ? tournament.teamIds.map((id) => teamIndex[id]).filter(Boolean) : teams.data;
@@ -141,7 +144,7 @@ export default function LandingPage() {
 
       {/* ── Highlights ─────────────────────────────────────────────────── */}
       <FullSection id="highlights" eyebrow="Best plays" title="Highlights" alt>
-        {highlights.loading ? loadingState : <HighlightsSection highlights={publicHighlights} />}
+        {highlights.loading ? loadingState : <HighlightsSection highlights={publicHighlights} players={playerIndex} teams={teamIndex} />}
       </FullSection>
 
       {/* ── Matches ────────────────────────────────────────────────────── */}
@@ -168,8 +171,8 @@ export default function LandingPage() {
       </FullSection>
 
       {/* ── Leaderboard ────────────────────────────────────────────────── */}
-      <FullSection id="leaderboard" eyebrow="Player stats" title="Leaderboard" alt>
-        {loading ? loadingState : <Leaderboard rows={leaderboard} players={playerIndex} teams={teamIndex} />}
+      <FullSection id="leaderboard" eyebrow="Player & hero stats" title="Leaderboard" alt>
+        {loading ? loadingState : <Leaderboard rows={leaderboard} games={games.data} players={playerIndex} teams={teamIndex} finalsMvpId={tournament?.championTeamId ? (tournament.finalsMvp?.playerId ?? null) : null} tournamentId={tournament?.id ?? null} />}
       </FullSection>
 
       {/* ── Teams (+ footer) ───────────────────────────────────────────── */}
@@ -198,12 +201,6 @@ export default function LandingPage() {
                     <MessageCircle className="h-5 w-5" />
                   </a>
                 )}
-                <Link to="/guide" className="inline-flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-muted hover:text-fg">
-                  <BookOpen className="h-4 w-4" /> Setup guide
-                </Link>
-                <Link to="/admin" className="rounded-lg px-3 py-2 text-sm text-muted hover:text-fg">
-                  Organizer login
-                </Link>
               </div>
               <p className="text-center text-xs text-muted">© {new Date().getFullYear()} TCC Esports. Mobile Legends: Bang Bang is a trademark of Moonton.</p>
             </div>
@@ -214,19 +211,43 @@ export default function LandingPage() {
           loadingState
         ) : tournamentTeams.length ? (
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {tournamentTeams.map((t) => {
+            {[...tournamentTeams]
+              // Champion and runner-ups first, then teams still alive, then eliminated teams.
+              .sort((a, b) => {
+                const rank = (id: string) => placements[id]?.place ?? (standings.find((s) => s.teamId === id)?.status === 'eliminated' ? 9 : 5);
+                return rank(a.id) - rank(b.id);
+              })
+              .map((t) => {
               const roster = players.data.filter((p) => p.teamId === t.id).sort((a, b) => Number(b.isStarter) - Number(a.isStarter) || a.order - b.order);
               const st = standings.find((s) => s.teamId === t.id);
+              const placed = placements[t.id];
+              const eliminated = !placed && st?.status === 'eliminated';
               return (
-                <article key={t.id} className="card card-hover overflow-hidden">
+                <article key={t.id} className={cn('card card-hover overflow-hidden', placed?.place === 1 && 'border-amber-500/70 shadow-[0_0_30px_rgba(245,158,11,0.18)]', eliminated && 'opacity-80')} data-testid={`team-${t.id}`}>
                   <div className="stripe-bg flex items-center gap-3 border-b border-line p-4">
                     <TeamLogo url={t.logoUrl} name={t.name} size={52} />
-                    <div className="min-w-0">
+                    <div className="min-w-0 flex-1">
                       <h3 className="truncate font-display text-2xl uppercase leading-none">{t.name}</h3>
                       <p className="font-cond text-xs uppercase tracking-wider text-muted">
                         {t.tag}
                         {st && ` · ${st.seriesW}W-${st.seriesL}L`}
                       </p>
+                      {(placed || eliminated) && (
+                        <span
+                          className={cn(
+                            'mt-1.5 inline-flex items-center gap-1 rounded-md px-2 py-0.5 font-cond text-[11px] font-bold uppercase tracking-wider',
+                            placed?.place === 1 && 'bg-amber-500 text-ink-950',
+                            placed?.place === 2 && 'bg-slate-300 text-ink-950',
+                            placed?.place === 3 && 'bg-orange-700 text-white',
+                            placed?.place === 4 && 'bg-surface2 text-fg ring-1 ring-line',
+                            eliminated && 'bg-red-600/15 text-red-600 dark:text-red-400',
+                          )}
+                          data-testid="team-placement"
+                        >
+                          {placed?.place === 1 ? <Crown className="h-3.5 w-3.5" /> : placed ? <Medal className="h-3.5 w-3.5" /> : null}
+                          {placed ? placed.label : 'Eliminated'}
+                        </span>
+                      )}
                     </div>
                   </div>
                   <ul className="divide-y divide-line/70">
@@ -247,6 +268,9 @@ export default function LandingPage() {
           <EmptyState icon={<Users className="h-8 w-8" />} title="No teams yet" />
         )}
       </FullSection>
+
+      {/* Season picker (bottom right, hide / show) */}
+      <SeasonSwitcher tournaments={tournaments.data} currentId={tournament?.id ?? null} onPick={setPicked} />
 
       <MatchModal match={selected ? (matches.data.find((m) => m.id === selected.id) ?? selected) : null} onClose={() => setSelected(null)} teams={teamIndex} games={games.data} facebookUrl={settings.data.facebookUrl} />
     </div>

@@ -4,7 +4,7 @@ import { useOverlayLive } from './demo';
 import { sideTeam } from '@/services/facts';
 import { Logo, TeamLogo } from '@/components/Brand';
 import { CasterStrip, Glass, OverlayStage, SIDE_COLOR, flag, useQuery } from './OverlayKit';
-import { REPLAY_PIP } from './layout';
+import { REPLAY_PIP, REPLAY_ZOOM } from './layout';
 
 /**
  * Frame for the live In-game HUD while the replay plays. Everything is drawn
@@ -56,9 +56,12 @@ export default function ReplayOverlay() {
   const q = useQuery();
   const r = live.replay;
   const always = flag(q, 'always', false) || demo;
-  const active = (r.active && now < r.endsAt) || always;
-  const total = Math.max(1, r.endsAt - r.startedAt);
-  const progress = always ? 0.4 : Math.min(1, Math.max(0, (now - r.startedAt) / total));
+  // With OBS the frame appears when the clip really plays and leaves as the live game zooms back in.
+  const start = r.obs ? (r.playingAt ?? null) : r.startedAt;
+  const hideAt = r.endsAt - (r.obs ? REPLAY_ZOOM.outMs : 0);
+  const active = (r.active && start !== null && now >= start && now < hideAt) || always;
+  const total = Math.max(1, r.endsAt - (start ?? r.startedAt));
+  const progress = always ? 0.4 : Math.min(1, Math.max(0, (now - (start ?? r.startedAt)) / total));
   const color = r.side ? SIDE_COLOR[r.side] : '#f8312f';
   const team = r.side ? sideTeam(live, r.side) : null;
 

@@ -3,7 +3,7 @@ import OBSWebSocket from 'obs-websocket-js';
 import type { LivePhase } from '@/types';
 import { STORAGE_KEYS } from '@/lib/constants';
 import { safeLocalGet, safeLocalSet } from '@/lib/utils';
-import { REPLAY_PIP } from '@/overlay/layout';
+import { REPLAY_PIP, REPLAY_ZOOM } from '@/overlay/layout';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Optional OBS Studio bridge (obs-websocket v5, built into OBS 28+).
@@ -35,8 +35,10 @@ export interface ObsSettings {
   gameFeedScene: string;
   /** Switch OBS scenes automatically when the controller changes phase. */
   autoScenes: boolean;
-  /** Reconnect to OBS automatically when the controller opens. */
+  /** Reconnect to OBS automatically (any admin page, after a refresh, when OBS restarts). */
   autoConnect: boolean;
+  /** Zoom transitions: the replay grows out of a small window, the live game zooms back in at the end. */
+  replayZoom: boolean;
 }
 
 export const DEFAULT_OBS_SETTINGS: ObsSettings = {
@@ -53,6 +55,7 @@ export const DEFAULT_OBS_SETTINGS: ObsSettings = {
   gameFeedScene: 'Game Feed',
   autoScenes: true,
   autoConnect: false,
+  replayZoom: true,
 };
 
 export const loadObsSettings = (): ObsSettings => {
@@ -60,7 +63,7 @@ export const loadObsSettings = (): ObsSettings => {
   // Older versions stored a "return to scene" — it becomes the In-game HUD scene.
   const { returnScene, ...rest } = s;
   if (returnScene && !localStorageHas('hudScene')) rest.hudScene = returnScene;
-  return rest;
+  return { ...DEFAULT_OBS_SETTINGS, ...rest };
 };
 function localStorageHas(field: string) {
   try {
@@ -174,16 +177,85 @@ export function buildSceneCollection(s: ObsSettings, base: string, name = 'TCC E
 export const saveObsSettings = (s: ObsSettings) => safeLocalSet(STORAGE_KEYS.obs, s);
 
 type Listener = (connected: boolean, error?: string) => void;
+export type ObsStatus = 'connected' | 'connecting' | 'retrying' | 'offline';
+
+interface Rect {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
+const easeOut = (k: number) => 1 - Math.pow(1 - k, 3);
+const easeInOut = (k: number) => (k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2);
+const lerpRect = (a: Rect, b: Rect, t: number): Rect => ({ x: a.x + (b.x - a.x) * t, y: a.y + (b.y - a.y) * t, w: a.w + (b.w - a.w) * t, h: a.h + (b.h - a.h) * t });
+/** Scene-item transform that fits a source into a rectangle (any source size). */
+const rectTransform = (r: Rect) => ({
+  positionX: r.x,
+  positionY: r.y,
+  alignment: 5, // top-left
+  boundsType: 'OBS_BOUNDS_SCALE_INNER',
+  boundsWidth: Math.max(2, r.w),
+  boundsHeight: Math.max(2, r.h),
+  boundsAlignment: 0,
+  rotation: 0,
+  cropLeft: 0,
+  cropRight: 0,
+  cropTop: 0,
+  cropBottom: 0,
+});
+
+/** When the replay clip actually plays in OBS — so the overlay, sounds and casters line up with it. */
+export interface ReplayTiming {
+  playingAt: number;
+  endsAt: number;
+}
 
 class ObsBridge {
   private obs = new OBSWebSocket();
   private listeners = new Set<Listener>();
-  /** Pending "cut back to the In-game HUD" after a replay (timer + media-ended listener). */
-  private pendingReturn: { timer: ReturnType<typeof setTimeout>; off: () => void; scene: string } | null = null;
+  /** Pending "zoom back to the In-game HUD" after a replay (timer + media-ended listener). */
+  private pendingReturn: { timer: ReturnType<typeof setTimeout>; off: () => void; scene: string; settings: ObsSettings; pipId: number | null } | null = null;
+  private connecting: Promise<void> | null = null;
+  private retryTimer: ReturnType<typeof setTimeout> | null = null;
+  private retryDelay = 1500;
+  private keeperOn = false;
+  private closingOnPurpose = false;
   connected = false;
+  status: ObsStatus = 'offline';
+  lastError: string | null = null;
 
   constructor() {
-    this.obs.on('ConnectionClosed', () => this.setConnected(false));
+    this.obs.on('ConnectionClosed', (e: { code?: number }) => {
+      const was = this.connected;
+      this.connected = false;
+      if (this.closingOnPurpose) return this.emit();
+      // OBS closed, restarted or the network blipped → keep trying in the background.
+      if (was) this.lastError = 'OBS connection lost — reconnecting…';
+      if (e?.code !== 4009) this.scheduleRetry();
+      this.emit();
+    });
+  }
+
+  /**
+   * Every OBS request with a time limit — a request OBS never answers (busy,
+   * half-closed socket) can't freeze the controller (e.g. the replay button).
+   */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  private call(method: string, params?: Record<string, unknown>, ms = 6000): Promise<any> {
+    return new Promise((resolve, reject) => {
+      const timer = setTimeout(() => reject(new Error(`OBS did not answer (${method})`)), ms);
+      (this.obs.call(method as never, params as never) as Promise<unknown>).then(
+        (v) => {
+          clearTimeout(timer);
+          resolve(v);
+        },
+        (e) => {
+          clearTimeout(timer);
+          reject(e);
+        },
+      );
+    });
   }
 
   onChange(fn: Listener) {
@@ -191,38 +263,133 @@ class ObsBridge {
     return () => void this.listeners.delete(fn);
   }
 
-  private setConnected(v: boolean, error?: string) {
-    this.connected = v;
-    this.listeners.forEach((l) => l(v, error));
+  private emit() {
+    if (this.connected) this.status = 'connected';
+    else if (this.connecting) this.status = 'connecting';
+    else if (this.retryTimer) this.status = 'retrying';
+    else this.status = 'offline';
+    this.listeners.forEach((l) => l(this.connected, this.connected ? undefined : (this.lastError ?? undefined)));
   }
 
-  async connect(s: ObsSettings) {
+  /** Connect once (calls made while connecting share the same attempt). */
+  connect(s: ObsSettings = getObsSettings()): Promise<void> {
+    if (this.connected) return Promise.resolve();
+    if (this.connecting) return this.connecting;
+    this.clearRetry();
+    this.connecting = (async () => {
+      try {
+        await this.obs.connect(s.url, s.password || undefined);
+        this.connected = true;
+        this.lastError = null;
+        this.retryDelay = 1500;
+        void this.recover(s);
+      } catch (e) {
+        const err = e as Error & { code?: number };
+        this.connected = false;
+        this.lastError = err.code === 4009 ? 'Wrong OBS WebSocket password' : err.message || 'Could not reach OBS';
+        if (err.code !== 4009) queueMicrotask(() => this.scheduleRetry());
+        throw e;
+      } finally {
+        this.connecting = null;
+        this.emit();
+      }
+    })();
+    this.emit();
+    return this.connecting;
+  }
+
+  /**
+   * Keep OBS connected for the whole admin session: connects on page load (so a
+   * refresh reconnects by itself), retries while OBS is closed, and reconnects
+   * when OBS restarts or the tab wakes up. Started once by the admin layout.
+   */
+  startKeeper() {
+    if (this.keeperOn) return;
+    this.keeperOn = true;
+    if (getObsSettings().autoConnect && !this.connected) this.connect().catch(() => {});
+    window.addEventListener('online', this.wake);
+    document.addEventListener('visibilitychange', this.wake);
+  }
+
+  stopKeeper() {
+    this.keeperOn = false;
+    this.clearRetry();
+    window.removeEventListener('online', this.wake);
+    document.removeEventListener('visibilitychange', this.wake);
+  }
+
+  private wake = () => {
+    if (this.connected || this.connecting || !this.keeperOn || !getObsSettings().autoConnect || document.visibilityState !== 'visible') return;
+    this.clearRetry();
+    this.retryDelay = 1500;
+    this.connect().catch(() => {});
+  };
+
+  private scheduleRetry() {
+    if (this.retryTimer || this.connected || this.connecting || !this.keeperOn || this.closingOnPurpose || !getObsSettings().autoConnect) return;
+    const delay = this.retryDelay;
+    this.retryDelay = Math.min(15_000, Math.round(this.retryDelay * 1.6));
+    this.retryTimer = setTimeout(() => {
+      this.retryTimer = null;
+      this.connect().catch(() => {});
+    }, delay);
+    this.emit();
+  }
+
+  private clearRetry() {
+    if (this.retryTimer) clearTimeout(this.retryTimer);
+    this.retryTimer = null;
+  }
+
+  /** The operator pressed Disconnect: close and stop reconnecting. */
+  async disconnect() {
+    updateObsSettings({ autoConnect: false });
+    this.clearRetry();
+    await this.close();
+  }
+
+  /** Close the socket but remember auto-connect (hot reload, page unload). */
+  async close() {
+    this.closingOnPurpose = true;
     try {
-      await this.obs.connect(s.url, s.password || undefined);
-      this.setConnected(true);
-    } catch (e) {
-      this.setConnected(false, (e as Error).message || 'Could not reach OBS');
-      throw e;
+      await this.obs.disconnect();
+    } catch {
+      /* already closed */
+    } finally {
+      this.closingOnPurpose = false;
+      this.connected = false;
+      this.emit();
     }
   }
 
-  async disconnect() {
-    await this.obs.disconnect();
-    this.setConnected(false);
+  /**
+   * After a (re)connect: a refresh in the middle of a replay loses the timer
+   * that cuts back to the game — if OBS is still on the replay scene, go back to
+   * the In-game HUD and put the replay scene's layout back.
+   */
+  private async recover(s: ObsSettings) {
+    try {
+      if (this.pendingReturn) return;
+      await this.resetReplayLayout(s).catch(() => {});
+      const { currentProgramSceneName } = await this.call('GetCurrentProgramScene');
+      if (s.autoSwitch && s.hudScene && currentProgramSceneName === s.replayScene) await this.switchScene(s.hudScene).catch(() => {});
+    } catch {
+      /* ignore */
+    }
   }
 
   async listScenes(): Promise<string[]> {
-    const res = await this.obs.call('GetSceneList');
+    const res = await this.call('GetSceneList');
     return (res.scenes as { sceneName: string }[]).map((s) => s.sceneName).reverse();
   }
 
   /** Cut OBS to a scene (no-op if it doesn't exist or is already on air). */
   async switchScene(sceneName: string): Promise<boolean> {
     if (!this.connected || !sceneName) return false;
-    const { currentProgramSceneName } = await this.obs.call('GetCurrentProgramScene');
+    const { currentProgramSceneName } = await this.call('GetCurrentProgramScene');
     if (currentProgramSceneName === sceneName) return true;
     if (!(await this.listScenes()).includes(sceneName)) throw new Error(`OBS has no scene named "${sceneName}"`);
-    await this.obs.call('SetCurrentProgramScene', { sceneName });
+    await this.call('SetCurrentProgramScene', { sceneName });
     return true;
   }
 
@@ -237,23 +404,23 @@ class ObsBridge {
     const scenes = new Set(await this.listScenes());
     const inputs = new Set(await this.listInputs());
     type Item = { sceneItemId: number; sourceName: string };
-    const items = async (sceneName: string) => (await this.obs.call('GetSceneItemList', { sceneName })).sceneItems as unknown as Item[];
+    const items = async (sceneName: string) => (await this.call('GetSceneItemList', { sceneName })).sceneItems as unknown as Item[];
     const ensureScene = async (sceneName: string) => {
       if (scenes.has(sceneName)) return;
-      await this.obs.call('CreateScene', { sceneName });
+      await this.call('CreateScene', { sceneName });
       scenes.add(sceneName);
       report.push(`Created scene "${sceneName}"`);
     };
     const ensureSource = async (sceneName: string, inputName: string, inputKind: string, inputSettings: Record<string, unknown>) => {
       if (!inputs.has(inputName)) {
-        await this.obs.call('CreateInput', { sceneName, inputName, inputKind, inputSettings: inputSettings as never, sceneItemEnabled: true });
+        await this.call('CreateInput', { sceneName, inputName, inputKind, inputSettings: inputSettings as never, sceneItemEnabled: true });
         inputs.add(inputName);
         report.push(`Added "${inputName}" to "${sceneName}"`);
         return;
       }
-      if (inputKind === 'browser_source') await this.obs.call('SetInputSettings', { inputName, inputSettings: inputSettings as never, overlay: true });
+      if (inputKind === 'browser_source') await this.call('SetInputSettings', { inputName, inputSettings: inputSettings as never, overlay: true });
       if (!(await items(sceneName)).some((i) => i.sourceName === inputName)) {
-        await this.obs.call('CreateSceneItem', { sceneName, sourceName: inputName, sceneItemEnabled: true });
+        await this.call('CreateSceneItem', { sceneName, sourceName: inputName, sceneItemEnabled: true });
         report.push(`Added "${inputName}" to "${sceneName}"`);
       }
     };
@@ -261,11 +428,11 @@ class ObsBridge {
     const ensureNestedAtBottom = async (sceneName: string, sourceName: string) => {
       let it = (await items(sceneName)).find((i) => i.sourceName === sourceName);
       if (!it) {
-        const { sceneItemId } = await this.obs.call('CreateSceneItem', { sceneName, sourceName, sceneItemEnabled: true });
+        const { sceneItemId } = await this.call('CreateSceneItem', { sceneName, sourceName, sceneItemEnabled: true });
         it = { sceneItemId, sourceName };
         report.push(`Put "${sourceName}" in "${sceneName}"`);
       }
-      await this.obs.call('SetSceneItemIndex', { sceneName, sceneItemId: it.sceneItemId, sceneItemIndex: 0 });
+      await this.call('SetSceneItemIndex', { sceneName, sceneItemId: it.sceneItemId, sceneItemIndex: 0 });
     };
     const url = (path: string) => browserSettings(base + path);
 
@@ -283,7 +450,7 @@ class ObsBridge {
     // Replay video at the bottom, live In-game HUD window above it, replay frame on top.
     const media = (await items(s.replayScene)).find((i) => i.sourceName === s.replaySource);
     if (media) {
-      await this.obs.call('SetSceneItemIndex', { sceneName: s.replayScene, sceneItemId: media.sceneItemId, sceneItemIndex: 0 });
+      await this.call('SetSceneItemIndex', { sceneName: s.replayScene, sceneItemId: media.sceneItemId, sceneItemIndex: 0 });
       await this.fitToCanvas(s.replayScene, s.replaySource);
     }
     report.push(await this.setupReplayPip({ ...s, pipSource: '' }));
@@ -300,9 +467,9 @@ class ObsBridge {
    * records at 1280×720 while the canvas is 1920×1080).
    */
   async fitToCanvas(sceneName: string, sourceName: string) {
-    const { sceneItemId } = await this.obs.call('GetSceneItemId', { sceneName, sourceName });
-    const video = await this.obs.call('GetVideoSettings');
-    await this.obs.call('SetSceneItemTransform', {
+    const { sceneItemId } = await this.call('GetSceneItemId', { sceneName, sourceName });
+    const video = await this.call('GetVideoSettings');
+    await this.call('SetSceneItemTransform', {
       sceneName,
       sceneItemId,
       sceneItemTransform: {
@@ -325,12 +492,18 @@ class ObsBridge {
   /** A still frame of an OBS source/scene (PNG data URL) — used by the gold reader. */
   async screenshot(sourceName: string, width = 1280): Promise<string> {
     if (!this.connected) throw new Error('OBS is not connected');
-    const res = await this.obs.call('GetSourceScreenshot', { sourceName, imageFormat: 'png', imageWidth: width });
+    const res = await this.call('GetSourceScreenshot', { sourceName, imageFormat: 'png', imageWidth: width });
     return String(res.imageData);
   }
 
+  /** The folder OBS saves recordings and replays to. */
+  async recordDirectory(): Promise<string> {
+    const res = await this.call('GetRecordDirectory');
+    return String(res.recordDirectory ?? '');
+  }
+
   async listInputs(): Promise<string[]> {
-    const res = await this.obs.call('GetInputList');
+    const res = await this.call('GetInputList');
     return (res.inputs as { inputName: string }[]).map((i) => i.inputName);
   }
 
@@ -350,23 +523,23 @@ class ObsBridge {
     if (!scenes.includes(sceneName)) throw new Error(`OBS has no scene named "${sceneName}" — create it or pick the right Replay scene`);
     if (!scenes.includes(source) && !inputs.includes(source)) throw new Error(`OBS has no scene or source named "${source}" — check the In-game HUD scene name`);
     type Item = { sceneItemId: number; sourceName: string; sceneItemIndex: number; inputKind?: string | null };
-    const listItems = async () => ((await this.obs.call('GetSceneItemList', { sceneName })).sceneItems as unknown as Item[]);
+    const listItems = async () => ((await this.call('GetSceneItemList', { sceneName })).sceneItems as unknown as Item[]);
 
     let items = await listItems();
     let pip = items.find((i) => i.sourceName === source);
     if (!pip) {
-      const { sceneItemId } = await this.obs.call('CreateSceneItem', { sceneName, sourceName: source, sceneItemEnabled: true });
+      const { sceneItemId } = await this.call('CreateSceneItem', { sceneName, sourceName: source, sceneItemEnabled: true });
       items = await listItems();
       pip = items.find((i) => i.sceneItemId === sceneItemId)!;
     } else {
-      await this.obs.call('SetSceneItemEnabled', { sceneName, sceneItemId: pip.sceneItemId, sceneItemEnabled: true });
+      await this.call('SetSceneItemEnabled', { sceneName, sceneItemId: pip.sceneItemId, sceneItemEnabled: true });
     }
 
     // Fit into the PiP window, scaled from the 1920×1080 overlay stage to the OBS canvas.
-    const video = await this.obs.call('GetVideoSettings');
+    const video = await this.call('GetVideoSettings');
     const sx = Number(video.baseWidth) / 1920;
     const sy = Number(video.baseHeight) / 1080;
-    await this.obs.call('SetSceneItemTransform', {
+    await this.call('SetSceneItemTransform', {
       sceneName,
       sceneItemId: pip.sceneItemId,
       sceneItemTransform: {
@@ -389,14 +562,14 @@ class ObsBridge {
     let overlay: Item | undefined;
     for (const it of items) {
       if (it.inputKind !== 'browser_source') continue;
-      const { inputSettings } = await this.obs.call('GetInputSettings', { inputName: it.sourceName });
+      const { inputSettings } = await this.call('GetInputSettings', { inputName: it.sourceName });
       if (String((inputSettings as { url?: string }).url ?? '').includes('/overlay/replay')) overlay = it;
     }
     const media = items.find((i) => i.sourceName === s.replaySource);
     let layering = 'placed on top (no /overlay/replay browser source found in this scene — add it above the PiP)';
     if (overlay) {
       const target = pip.sceneItemIndex > overlay.sceneItemIndex ? overlay.sceneItemIndex : pip.sceneItemIndex;
-      if (target !== pip.sceneItemIndex) await this.obs.call('SetSceneItemIndex', { sceneName, sceneItemId: pip.sceneItemId, sceneItemIndex: target });
+      if (target !== pip.sceneItemIndex) await this.call('SetSceneItemIndex', { sceneName, sceneItemId: pip.sceneItemId, sceneItemIndex: target });
       layering = 'below the replay overlay';
     }
     if (media) {
@@ -404,7 +577,7 @@ class ObsBridge {
       const p = now.find((i) => i.sceneItemId === pip!.sceneItemId)!;
       const m = now.find((i) => i.sceneItemId === media.sceneItemId)!;
       if (p.sceneItemIndex < m.sceneItemIndex) {
-        await this.obs.call('SetSceneItemIndex', { sceneName, sceneItemId: pip.sceneItemId, sceneItemIndex: m.sceneItemIndex });
+        await this.call('SetSceneItemIndex', { sceneName, sceneItemId: pip.sceneItemId, sceneItemIndex: m.sceneItemIndex });
       }
       layering += ' and above the replay video';
     }
@@ -412,16 +585,100 @@ class ObsBridge {
   }
 
   async ensureReplayBuffer() {
-    const { outputActive } = await this.obs.call('GetReplayBufferStatus');
-    if (!outputActive) await this.obs.call('StartReplayBuffer');
+    const { outputActive } = await this.call('GetReplayBufferStatus');
+    if (!outputActive) await this.call('StartReplayBuffer');
   }
 
-  /** Cut back to the In-game HUD now (e.g. the operator hid the replay early). */
-  async endReplay() {
+  // ── zoom transitions ──────────────────────────────────────────────────────
+
+  private async canvas() {
+    const v = await this.call('GetVideoSettings');
+    return { W: Number(v.baseWidth), H: Number(v.baseHeight) };
+  }
+
+  /** The live window during replays, scaled from the 1920×1080 overlay stage to the OBS canvas. */
+  private pipRect(W: number, H: number): Rect {
+    const sx = W / 1920;
+    const sy = H / 1080;
+    return { x: REPLAY_PIP.x * sx, y: REPLAY_PIP.y * sy, w: REPLAY_PIP.w * sx, h: REPLAY_PIP.h * sy };
+  }
+
+  private async itemId(sceneName: string, sourceName: string): Promise<number | null> {
+    if (!sourceName) return null;
+    try {
+      return (await this.call('GetSceneItemId', { sceneName, sourceName })).sceneItemId;
+    } catch {
+      return null;
+    }
+  }
+
+  private setRect(sceneName: string, sceneItemId: number, r: Rect) {
+    return this.call('SetSceneItemTransform', { sceneName, sceneItemId, sceneItemTransform: rectTransform(r) as never });
+  }
+
+  /** Smoothly move/resize a scene item (~60 updates a second over the websocket). */
+  private async animateRect(sceneName: string, sceneItemId: number, from: Rect, to: Rect, ms: number, ease: (k: number) => number) {
+    const t0 = performance.now();
+    for (;;) {
+      const k = Math.min(1, (performance.now() - t0) / ms);
+      await this.setRect(sceneName, sceneItemId, lerpRect(from, to, ease(k)));
+      if (k >= 1) return;
+      await wait(14);
+    }
+  }
+
+  /** Replay video full screen, live window back in its box — the resting layout of the replay scene. */
+  async resetReplayLayout(s: ObsSettings) {
+    const { W, H } = await this.canvas();
+    const media = await this.itemId(s.replayScene, s.replaySource);
+    if (media !== null) await this.setRect(s.replayScene, media, { x: 0, y: 0, w: W, h: H });
+    const pip = await this.itemId(s.replayScene, pipSourceOf(s));
+    if (pip !== null) await this.setRect(s.replayScene, pip, this.pipRect(W, H));
+  }
+
+  /**
+   * When the replay ends (epoch ms): the clip's real end from OBS, but never
+   * later than the replay length after it started playing.
+   */
+  private async clipEnd(s: ObsSettings, playingAt: number): Promise<number> {
+    const capEnd = playingAt + s.replaySeconds * 1000;
+    for (let i = 0; i < 6; i++) {
+      await wait(120);
+      try {
+        const st = (await this.call('GetMediaInputStatus', { inputName: s.replaySource })) as { mediaState?: string; mediaDuration?: number | null; mediaCursor?: number | null };
+        if (st.mediaState === 'OBS_MEDIA_STATE_PLAYING' && st.mediaDuration && st.mediaDuration > 0) {
+          return Math.min(capEnd, Date.now() + Math.max(1500, st.mediaDuration - (st.mediaCursor ?? 0)));
+        }
+        if (!st.mediaState) break; // this OBS doesn't report media status
+      } catch {
+        break;
+      }
+    }
+    return capEnd;
+  }
+
+  /**
+   * Back to the In-game HUD now (clip ending, or the operator ended it early):
+   * the small live window zooms up to full screen, then OBS cuts to the HUD
+   * scene — which looks identical, so the hand-off is seamless.
+   */
+  async endReplay(fast = false) {
     const pending = this.pendingReturn;
     if (!pending) return;
     this.clearPendingReturn();
-    if (this.connected) await this.obs.call('SetCurrentProgramScene', { sceneName: pending.scene }).catch(() => {});
+    if (!this.connected) return;
+    const s = pending.settings;
+    try {
+      if (s.replayZoom && pending.pipId !== null) {
+        const { W, H } = await this.canvas();
+        await this.animateRect(s.replayScene, pending.pipId, this.pipRect(W, H), { x: 0, y: 0, w: W, h: H }, fast ? REPLAY_ZOOM.outMs * 0.6 : REPLAY_ZOOM.outMs, easeInOut);
+      }
+    } catch {
+      /* zoom is cosmetic — still cut back */
+    }
+    await this.call('SetCurrentProgramScene', { sceneName: pending.scene }).catch(() => {});
+    // Restore the replay scene once it's off air (after the scene transition).
+    setTimeout(() => void this.resetReplayLayout(s).catch(() => {}), 1200);
   }
 
   private clearPendingReturn() {
@@ -432,29 +689,37 @@ class ObsBridge {
   }
 
   /**
-   * Cut back to `scene` when the replay clip finishes playing, or after
-   * `seconds` at the latest — whichever comes first.
+   * Zoom back to `scene` so the zoom finishes as the clip ends (or right away
+   * if the clip ends early).
    */
-  private scheduleReturn(s: ObsSettings, scene: string, seconds: number) {
+  private scheduleReturn(s: ObsSettings, scene: string, endsAt: number, pipId: number | null) {
     this.clearPendingReturn();
     const startedAt = Date.now();
+    const lead = s.replayZoom && pipId !== null ? REPLAY_ZOOM.outMs : 0;
     const onEnded = (e: { inputName: string }) => {
       // Ignore a stray "ended" from the previous clip while the new one restarts.
-      if (e.inputName === s.replaySource && Date.now() - startedAt > 1500) void this.endReplay();
+      if (e.inputName === s.replaySource && Date.now() - startedAt > 1500) void this.endReplay(true);
     };
     this.obs.on('MediaInputPlaybackEnded', onEnded);
     this.pendingReturn = {
       scene,
+      settings: s,
+      pipId,
       off: () => this.obs.off('MediaInputPlaybackEnded', onEnded),
-      timer: setTimeout(() => void this.endReplay(), seconds * 1000 + 400),
+      timer: setTimeout(() => void this.endReplay(), Math.max(0, endsAt - lead - Date.now())),
     };
   }
 
-  /** Save the last N seconds and play them back. Resolves with the saved file path. */
-  async playInstantReplay(s: ObsSettings): Promise<string> {
+  /**
+   * Save the last N seconds and play them back: the clip zooms out of a small
+   * window (the size of the live window) to full screen, and near the end the
+   * live game zooms back in. `onPlaying` reports when the clip really plays.
+   * Resolves with the saved file path.
+   */
+  async playInstantReplay(s: ObsSettings, onPlaying?: (t: ReplayTiming) => void, onSaved?: (path: string) => void): Promise<string> {
     if (!this.connected) throw new Error('OBS is not connected');
     await this.ensureReplayBuffer();
-    const { currentProgramSceneName } = await this.obs.call('GetCurrentProgramScene');
+    const { currentProgramSceneName } = await this.call('GetCurrentProgramScene');
 
     const saved = new Promise<string>((resolve, reject) => {
       const timer = setTimeout(() => {
@@ -468,30 +733,60 @@ class ObsBridge {
       };
       this.obs.on('ReplayBufferSaved', handler);
     });
-    await this.obs.call('SaveReplayBuffer');
+    await this.call('SaveReplayBuffer');
     const path = await saved;
+    // The clip exists now — record it (highlights / break loop) even if a later step fails.
+    try {
+      onSaved?.(path);
+    } catch {
+      /* never block the replay */
+    }
 
-    await this.obs.call('SetInputSettings', {
+    await this.call('SetInputSettings', {
       inputName: s.replaySource,
       inputSettings: { local_file: path, is_local_file: true, restart_on_activate: true, close_when_inactive: true },
       overlay: true,
     });
 
     if (s.autoSwitch) {
-      // Full-screen replay, whatever size the clip was recorded at.
-      await this.fitToCanvas(s.replayScene, s.replaySource).catch(() => {});
-      await this.obs.call('SetCurrentProgramScene', { sceneName: s.replayScene });
+      const previousBack = this.pendingReturn?.scene;
+      this.clearPendingReturn();
+      const { W, H } = await this.canvas();
+      const full = { x: 0, y: 0, w: W, h: H };
+      const live = this.pipRect(W, H);
+      // Start the clip as a small window in the middle, the same size as the live window.
+      const small = { x: (W - live.w) / 2, y: (H - live.h) / 2, w: live.w, h: live.h };
+      const mediaId = await this.itemId(s.replayScene, s.replaySource);
+      const pipId = await this.itemId(s.replayScene, pipSourceOf(s));
+      const zoom = s.replayZoom && mediaId !== null;
+      if (mediaId !== null) await this.setRect(s.replayScene, mediaId, zoom ? small : full).catch(() => {});
+      if (pipId !== null) await this.setRect(s.replayScene, pipId, live).catch(() => {});
+      await this.call('SetCurrentProgramScene', { sceneName: s.replayScene });
       await this.obs
         .call('TriggerMediaInputAction', { inputName: s.replaySource, mediaAction: 'OBS_WEBSOCKET_MEDIA_INPUT_ACTION_RESTART' })
         .catch(() => {});
+      const playingAt = Date.now();
+      if (zoom) void this.animateRect(s.replayScene, mediaId!, small, full, REPLAY_ZOOM.inMs, easeOut).catch(() => {});
       // Back to the live game: the In-game HUD scene (or wherever we came from if it isn't set).
       const scenes = await this.listScenes().catch(() => [] as string[]);
       const hud = s.hudScene && scenes.includes(s.hudScene) ? s.hudScene : '';
-      const back = hud || (currentProgramSceneName !== s.replayScene ? currentProgramSceneName : this.pendingReturn?.scene ?? currentProgramSceneName);
-      this.scheduleReturn(s, back, s.replaySeconds);
+      const back = hud || (currentProgramSceneName !== s.replayScene ? currentProgramSceneName : previousBack ?? currentProgramSceneName);
+      const endsAt = await this.clipEnd(s, playingAt);
+      onPlaying?.({ playingAt, endsAt });
+      this.scheduleReturn(s, back, endsAt, pipId);
+    } else {
+      onPlaying?.({ playingAt: Date.now(), endsAt: Date.now() + s.replaySeconds * 1000 });
     }
     return path;
   }
 }
 
 export const obsBridge = new ObsBridge();
+
+// Hot reload (dev): close the old connection so only one bridge talks to OBS.
+if (import.meta.hot) {
+  import.meta.hot.dispose(() => {
+    obsBridge.stopKeeper();
+    void obsBridge.close();
+  });
+}

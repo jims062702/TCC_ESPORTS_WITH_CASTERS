@@ -47,6 +47,27 @@ export async function deleteTeam(id: string) {
   await commitInChunks(refs.map((r) => (b) => b.delete(r)));
 }
 
+/**
+ * Copy teams and their rosters into another season. The copies get new ids,
+ * so the old season's records (brackets, stats, MVPs) stay untouched.
+ */
+export async function copyTeamsToSeason(teams: Team[], players: Player[], season: string): Promise<number> {
+  const now = Date.now();
+  const ops: Array<(b: ReturnType<typeof writeBatch>) => void> = [];
+  for (const t of teams) {
+    const { id: _id, createdAt: _c, ...team } = t;
+    const ref = doc(collection(db, COL.teams));
+    ops.push((b) => b.set(ref, { ...team, season, createdAt: now }));
+    for (const p of players.filter((x) => x.teamId === t.id)) {
+      const { id: _pid, createdAt: _pc, ...player } = p;
+      const pref = doc(collection(db, COL.players));
+      ops.push((b) => b.set(pref, { ...player, teamId: ref.id, createdAt: now }));
+    }
+  }
+  await commitInChunks(ops);
+  return teams.length;
+}
+
 export const createPlayer = (data: Omit<Player, 'id' | 'createdAt'>) =>
   addDoc(collection(db, COL.players), { ...data, createdAt: Date.now() });
 

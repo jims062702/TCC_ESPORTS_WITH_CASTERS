@@ -1,36 +1,37 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeftRight, Coffee, Gamepad2, ListChecks, Lock, Power, Radio, Swords, Trophy } from 'lucide-react';
+import { ArrowLeftRight, Coffee, Gamepad2, ListChecks, Power, Radio, Swords, Trophy } from 'lucide-react';
 import type { LivePhase, Match, Tournament } from '@/types';
 import { Facebook } from 'lucide-react';
-import { useBooth, useCollectionData, useDocData, useIndex, useLive, useMatches, useNow, usePlayers, useSettings, useTeams, useTournaments } from '@/hooks/useFirestore';
+import { useCollectionData, useDocData, useIndex, useLive, useMatches, useNow, usePlayers, useSettings, useTeams, useTournaments } from '@/hooks/useFirestore';
 import { COL, whereEq } from '@/services/firebase';
-import { clockPause, endBreak, endBroadcast, goLive, setBreak, setPhase, startGame, swapSides } from '@/services/live';
+import { clockPause, endBreak, endBroadcast, goLive, patchLive, pauseToBreak, setBreak, setPhase, startGame, swapSides } from '@/services/live';
 import { updateMatch } from '@/services/db';
 import { picksComplete } from '@/lib/constants';
-import { CASTER_BY_ID, pickCasterPair } from '@/services/casters';
+import { pickCasterPair } from '@/services/casters';
 import { sideTeam } from '@/services/facts';
 import { FORMAT_LABEL } from '@/lib/constants';
 import type { GameEvent } from '@/types';
-import { CasterAvatar, TeamLogo } from '@/components/Brand';
+import { TeamLogo } from '@/components/Brand';
 import { SeriesPips } from '@/components/game';
 import { Badge, Button, Card, EmptyState, LiveDot, Select, Tabs } from '@/components/ui';
 import { useToast } from '@/components/Toast';
+import { useConfirm } from '@/components/Confirm';
 import { cn, formatDateTime, timeAgo } from '@/lib/utils';
 import { DraftPanel } from './DraftPanel';
 import { GamePanel } from './GamePanel';
 import { SeriesPanel } from './SeriesPanel';
 import { LineupDialog } from './LineupDialog';
-import { ObsPanel, useObsAutomation } from './ObsPanel';
+import { useObsAutomation } from './ObsPanel';
+import { HeaderClock, breakMessages, isPaused } from './BreakControls';
 
 export default function Controller() {
   const live = useLive();
   const teams = useTeams();
   const players = usePlayers();
   const settings = useSettings();
-  const booth = useBooth();
-  const now = useNow(5000);
   const toast = useToast();
+  const ask = useConfirm();
   const L = live.data;
   // OBS follows the controller: Draft → In-game HUD → Break (no clicking in OBS).
   useObsAutomation(L.phase, Boolean(L.matchId));
@@ -43,26 +44,35 @@ export default function Controller() {
   /** Draft / In-game / Break tabs (a finished game stays under In-game). */
   const changePhase = (p: LivePhase) => {
     const gameDone = L.scoreA + L.scoreB >= L.gameNumber;
-    const shown = L.phase === 'postgame' ? 'ingame' : L.phase;
+    const paused = isPaused(L);
+    const shown = L.phase === 'postgame' || paused ? 'ingame' : L.phase;
     if (p === shown) return;
+    // Paused game → Break tab: it becomes a normal break (no auto-resume).
+    if (paused && p === 'break') return void toast.run(() => pauseToBreak(), 'Now a full break — end it from the Break tab');
     if (p === 'ingame') {
       if (L.phase === 'break') return void toast.run(() => (gameDone ? setPhase('postgame') : L.gameStartedAt ? endBreak(L, players.data) : setPhase('draft')));
       if (!picksComplete(L.draft)) return void toast.error('Pick all 10 heroes first — bans can be "none".');
       return void toast.run(() => startGame(L), 'Game started — HUD is live');
     }
-    if (p === 'break') return void toast.run(() => setBreak(L, 5, ''), 'Break loop on air');
+    if (p === 'break') {
+      if (L.phase === 'ingame' || paused) return void toast.error('During a game use "Pause the game" (right column).');
+      const message = breakMessages(L, 'break')[0];
+      return void ask({ title: 'Go to break?', message: `The break screen goes on air with a 5:00 countdown and "${message}". You can change the message and add time on the Break tab.`, confirmLabel: 'Go to break' }).then((ok) => {
+        if (ok) void toast.run(() => setBreak(L, 5, message), 'Break on air — 5:00 countdown');
+      });
+    }
     if (gameDone) return void toast.error('This game is finished — use "Start Game ' + (L.scoreA + L.scoreB + 1) + ' draft" below.');
-    if (L.phase === 'ingame' && !confirm('Go back to the draft? The game clock pauses.')) return;
-    void toast.run(async () => {
-      if (L.phase === 'ingame') await clockPause(L);
-      await setPhase('draft');
-    });
+    void (async () => {
+      if (L.phase === 'ingame' && !(await ask({ title: 'Back to the draft?', message: 'The game clock pauses until you switch back to In-game.', confirmLabel: 'Back to draft' }))) return;
+      await toast.run(async () => {
+        if (L.phase === 'ingame') await clockPause(L);
+        await patchLive({ phase: 'draft', breakPause: false });
+      });
+    })();
   };
 
   const blue = sideTeam(L, 'blue');
   const red = sideTeam(L, 'red');
-  const boothOnline = Boolean(booth.data?.online && now - (booth.data?.lastBeat ?? 0) < 40_000);
-  const profiles = settings.data.casterProfiles;
 
   return (
     <div className="space-y-5">
@@ -87,17 +97,18 @@ export default function Controller() {
             <p className="mt-1 font-cond text-[11px] uppercase tracking-wider text-muted">
               {L.teamA?.tag} vs {L.teamB?.tag}
             </p>
+            {(L.phase !== 'draft' || L.gameStartedAt) && <HeaderClock live={L} />}
           </div>
           <TeamBlock name={red?.name} logo={red?.logoUrl} side="red" wins={red?.id === L.teamA?.id ? L.scoreA : L.scoreB} format={L.format} right />
         </div>
         <div className="flex flex-wrap items-center gap-2 border-t border-line px-4 py-3">
           <Tabs<LivePhase>
-            value={L.phase === 'postgame' ? 'ingame' : L.phase}
+            value={L.phase === 'postgame' || isPaused(L) ? 'ingame' : L.phase}
             onChange={changePhase}
             items={[
               { value: 'draft', label: 'Draft' },
               { value: 'ingame', label: 'In-game' },
-              { value: 'break', label: 'Break' },
+              { value: 'break', label: 'Break', disabled: L.phase === 'ingame' || isPaused(L), title: L.phase === 'ingame' || isPaused(L) ? 'During a game use "Pause the game" (right column)' : undefined },
             ]}
           />
           <div className="ml-auto flex flex-wrap items-center gap-2">
@@ -123,7 +134,7 @@ export default function Controller() {
               variant="danger"
               icon={<Power className="h-4 w-4" />}
               onClick={() => {
-                if (confirm('Take this series off air? (Results already recorded are kept.)')) void toast.run(() => endBroadcast(L), 'Off air');
+                void ask({ title: 'End the broadcast?', message: L.phase === 'draft' || (L.phase === 'ingame' && L.scoreA + L.scoreB < L.gameNumber) ? `Takes this series off air. Game ${L.gameNumber} has no winner yet, so its picks, bans, K/D/A and Level 15 time are NOT saved — the pick / ban % stay as they were. Results already recorded are kept.` : 'Takes this series off air. Results already recorded are kept.', confirmLabel: 'End broadcast', danger: true }).then((ok) => { if (ok) void toast.run(() => endBroadcast(L), 'Off air'); });
               }}
             >
               End broadcast
@@ -132,41 +143,9 @@ export default function Controller() {
         </div>
       </div>
 
-      <ObsPanel phase={L.phase} />
-
-      {/* ── Casting crew (picked by the system, locked for the game) ───── */}
-      <Card
-        title="On the mic"
-        subtitle={
-          boothOnline
-            ? `Casters online · ${booth.data?.aiCallsToday ?? 0} AI calls today · queue ${booth.data?.queue ?? 0}`
-            : 'Casters are off — press Start in the bottom-right corner (same tab, no extra window needed).'
-        }
-        actions={
-          <Badge tone="muted">
-            <Lock className="mr-1 inline h-3 w-3" /> Locked for Game {L.gameNumber}
-          </Badge>
-        }
-      >
-        <div className="flex flex-wrap gap-2">
-          {L.casters.map((id) => (
-            <div key={id} className="flex items-center gap-2.5 rounded-xl border border-brand bg-brand/10 px-3 py-2">
-              <CasterAvatar casterId={id} url={profiles[id]?.avatarUrl} size={34} />
-              <span>
-                <span className="block text-sm font-semibold">{profiles[id]?.displayName || CASTER_BY_ID[id]?.name}</span>
-                <span className="block text-xs text-muted">{CASTER_BY_ID[id]?.role}</span>
-              </span>
-            </div>
-          ))}
-          <p className="self-center text-xs text-muted">
-            The system seats a new random pair for every game. <Link to="/admin/booth" className="text-brand underline">Voices &amp; settings</Link>
-          </p>
-        </div>
-      </Card>
-
       {/* ── Phase panels ─────────────────────────────────────────────── */}
       {L.phase === 'draft' && <DraftPanel live={L} players={players.data} teams={teams.data} />}
-      {L.phase === 'ingame' && <GamePanel live={L} players={players.data} />}
+      {(L.phase === 'ingame' || isPaused(L)) && <GamePanel live={L} players={players.data} />}
       <SeriesPanel live={L} players={players.data} teams={teams.data} />
       <EventLog matchId={L.matchId} />
     </div>
@@ -209,7 +188,6 @@ function SeriesPicker({ previousCasters }: { previousCasters: string[] }) {
         <p className="eyebrow">Observer panel</p>
         <h1 className="section-title">Live Controller</h1>
       </header>
-      <ObsPanel phase="idle" />
       {pending && (
         <LineupDialog
           open
@@ -253,13 +231,14 @@ function SeriesPicker({ previousCasters }: { previousCasters: string[] }) {
         ) : (
           <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
             {ready.map((m) => (
-              <div key={m.id} className="rounded-2xl border border-line bg-surface2 p-4">
-                <div className="mb-3 flex items-center justify-between font-cond text-xs font-semibold uppercase tracking-wider text-muted">
-                  <span>{m.label}</span>
+              // Every card has the same rows (label · schedule · teams · button) so they line up.
+              <div key={m.id} className="flex h-full flex-col rounded-2xl border border-line bg-surface2 p-4">
+                <div className="flex items-center justify-between gap-2 font-cond text-xs font-semibold uppercase tracking-wider text-muted">
+                  <span className="min-w-0 truncate" title={m.label}>{m.label}</span>
                   <Badge tone="brand">{m.format}</Badge>
                 </div>
-                {m.scheduledAt && <p className="-mt-2 mb-2 text-xs text-muted">Scheduled {formatDateTime(m.scheduledAt)}</p>}
-                <div className="flex items-center justify-between gap-2">
+                <p className="mb-3 mt-1 truncate text-xs text-muted">{m.scheduledAt ? `Scheduled ${formatDateTime(m.scheduledAt)}` : 'Schedule TBA'}</p>
+                <div className="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2">
                   <div className="flex min-w-0 items-center gap-2">
                     <TeamLogo url={teamIndex[m.teamAId!]?.logoUrl} name={teamIndex[m.teamAId!]?.name} size={34} />
                     <span className="truncate font-semibold">{teamIndex[m.teamAId!]?.tag}</span>
@@ -267,13 +246,14 @@ function SeriesPicker({ previousCasters }: { previousCasters: string[] }) {
                   <span className="font-display text-2xl">
                     {m.scoreA}-{m.scoreB}
                   </span>
-                  <div className="flex min-w-0 items-center gap-2">
+                  <div className="flex min-w-0 items-center justify-end gap-2">
                     <span className="truncate font-semibold">{teamIndex[m.teamBId!]?.tag}</span>
                     <TeamLogo url={teamIndex[m.teamBId!]?.logoUrl} name={teamIndex[m.teamBId!]?.name} size={34} />
                   </div>
                 </div>
+                <div className="min-h-4 flex-1" />
                 <Button
-                  className="mt-4 w-full"
+                  className="mt-auto w-full"
                   icon={<Radio className="h-4 w-4" />}
                   onClick={() => setPending({ match: m, tournament, casters: pickCasterPair(previousCasters) })}
                 >

@@ -39,6 +39,86 @@ function devApi(): Plugin {
   };
 }
 
+/**
+ * Instant-replay files on THIS computer (local `npm run dev` only): OBS saves
+ * each replay to its recording folder; the controller and the break overlay
+ * read it from here — no browser folder permission needed. Only video files,
+ * only for requests from this computer.
+ */
+function localReplayFiles(): Plugin {
+  const TYPES: Record<string, string> = { '.mp4': 'video/mp4', '.m4v': 'video/mp4', '.mov': 'video/quicktime', '.webm': 'video/webm', '.mkv': 'video/x-matroska', '.flv': 'video/x-flv', '.ts': 'video/mp2t' };
+  return {
+    name: 'tcc-local-replays',
+    apply: 'serve',
+    configureServer(server) {
+      server.middlewares.use('/__replay-file', async (req, res) => {
+        const { default: fs } = await import('node:fs');
+        const { default: path } = await import('node:path');
+        const remote = req.socket.remoteAddress ?? '';
+        if (!['127.0.0.1', '::1', '::ffff:127.0.0.1'].includes(remote)) {
+          res.statusCode = 403;
+          return res.end('Local replays are only served to this computer');
+        }
+        const raw = new URL(req.url ?? '', 'http://local').searchParams.get('path') ?? '';
+        const file = path.normalize(raw);
+        const type = TYPES[path.extname(file).toLowerCase()];
+        if (!raw || !path.isAbsolute(file) || !type || !fs.existsSync(file) || !fs.statSync(file).isFile()) {
+          res.statusCode = 404;
+          return res.end('Replay not found');
+        }
+        const size = fs.statSync(file).size;
+        res.setHeader('Content-Type', type);
+        res.setHeader('Accept-Ranges', 'bytes');
+        res.setHeader('Cache-Control', 'no-cache');
+        if (req.method === 'HEAD') {
+          res.setHeader('Content-Length', String(size));
+          return res.end();
+        }
+        // Range requests so the <video> on the break screen can stream/seek.
+        const m = /bytes=(\d*)-(\d*)/.exec(String(req.headers.range ?? ''));
+        if (m) {
+          const start = m[1] ? Number(m[1]) : Math.max(0, size - Number(m[2]));
+          const end = m[1] && m[2] ? Math.min(size - 1, Number(m[2])) : size - 1;
+          res.statusCode = 206;
+          res.setHeader('Content-Range', `bytes ${start}-${end}/${size}`);
+          res.setHeader('Content-Length', String(end - start + 1));
+          return fs.createReadStream(file, { start, end }).pipe(res);
+        }
+        res.setHeader('Content-Length', String(size));
+        fs.createReadStream(file).pipe(res);
+      });
+      // Replays already saved in OBS's recording folder (newest first).
+      server.middlewares.use('/__replay-list', async (req, res) => {
+        const { default: fs } = await import('node:fs');
+        const { default: path } = await import('node:path');
+        const remote = req.socket.remoteAddress ?? '';
+        res.setHeader('Content-Type', 'application/json');
+        if (!['127.0.0.1', '::1', '::ffff:127.0.0.1'].includes(remote)) {
+          res.statusCode = 403;
+          return res.end('[]');
+        }
+        const dir = path.normalize(new URL(req.url ?? '', 'http://local').searchParams.get('dir') ?? '');
+        if (!dir || !path.isAbsolute(dir) || !fs.existsSync(dir) || !fs.statSync(dir).isDirectory()) {
+          res.statusCode = 404;
+          return res.end('[]');
+        }
+        const files = fs
+          .readdirSync(dir)
+          .filter((n) => TYPES[path.extname(n).toLowerCase()])
+          .map((n) => {
+            const full = path.join(dir, n);
+            const st = fs.statSync(full);
+            return { path: full, name: n, mtime: st.mtimeMs, size: st.size };
+          })
+          .filter((f) => f.size > 0)
+          .sort((a, b) => b.mtime - a.mtime)
+          .slice(0, 30);
+        res.end(JSON.stringify(files));
+      });
+    },
+  };
+}
+
 export default defineConfig(({ mode }) => {
   // Expose server-only secrets (GEMINI_*) to the dev API middleware via process.env.
   const env = loadEnv(mode, process.cwd(), '');
@@ -53,7 +133,7 @@ export default defineConfig(({ mode }) => {
     // strictPort: fail loudly instead of drifting to another port.
     server: { host: '127.0.0.1', port: 5180, strictPort: true },
     preview: { host: '127.0.0.1', port: 5181, strictPort: true },
-    plugins: [react(), devApi()],
+    plugins: [react(), devApi(), localReplayFiles()],
     resolve: {
       alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
     },

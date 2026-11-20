@@ -9,8 +9,11 @@ import { SpellBadge, SeriesPips } from '@/components/game';
 import { TeamLogo } from '@/components/Brand';
 import { cn, formatGold, initials } from '@/lib/utils';
 import { formatClock, gameElapsedMs } from '@/lib/clock';
+import { MAP_EFFECTS } from '@/lib/constants';
 import { CasterStrip, EventBanner, Glass, OverlayStage, SIDE_COLOR, flag, useQuery } from './OverlayKit';
 import { soundOptions, useBannerStinger, useReplayStingers } from './useBroadcastSound';
+import { MapEffectChip } from './MapEffectReveal';
+import { LevelPopCard } from './LevelPop';
 
 /**
  * OBS Browser Source: /overlay/hud (1920×1080, transparent).
@@ -40,6 +43,7 @@ export default function HudOverlay() {
               </>
             )}
             <EventBanner banner={live.banner} top={170} />
+            <LevelPopCard pop={live.levelPop} now={now} sound={snd.on} vol={snd.vol} />
             {flag(q, 'casters') && (
               <div className="absolute inset-x-0 bottom-3 flex justify-center">
                 <CasterStrip casters={live.casters} captions={flag(q, 'captions')} />
@@ -120,6 +124,12 @@ function ScoreBar({ live, now }: { live: LiveState; now: number }) {
           {team('red')}
         </div>
       </Glass>
+      {/* This game's battlefield effect (2026 map) */}
+      {live.mapEffect && MAP_EFFECTS[live.mapEffect] && (
+        <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} className="mt-1 flex justify-center">
+          <MapEffectChip effect={live.mapEffect} size="sm" />
+        </motion.div>
+      )}
     </motion.div>
     </div>
   );
@@ -154,7 +164,14 @@ function PlayerCard({ p, right, color, now }: { p: LivePlayer; right: boolean; c
       )}
       <div className={cn('min-w-0 flex-1 leading-none', right && 'text-right')}>
         <p className="truncate font-display text-[28px] uppercase leading-[0.9]">{p.ign}</p>
-        <p className="truncate font-cond text-sm font-semibold uppercase tracking-wider text-white/60">{p.hero || p.role}</p>
+        <p className="flex items-center gap-1.5 truncate font-cond text-sm font-semibold uppercase tracking-wider text-white/60" style={right ? { justifyContent: 'flex-end' } : undefined}>
+          <span className="truncate">{p.hero || p.role}</span>
+          {(p.level ?? 1) > 1 && (
+            <span className={cn('shrink-0 rounded px-1 text-[11px] leading-[16px]', (p.level ?? 1) >= 15 ? 'bg-amber-400 text-ink-950' : 'bg-white/15 text-white')} data-testid="hud-level">
+              Lv {p.level}
+            </span>
+          )}
+        </p>
         <p className="mt-1 font-display text-2xl leading-none tabular">
           <span className="text-white">{p.k}</span>
           <span className="text-white/40"> / </span>
@@ -163,7 +180,7 @@ function PlayerCard({ p, right, color, now }: { p: LivePlayer; right: boolean; c
           <span className="text-white/80">{p.a}</span>
         </p>
       </div>
-      <SpellBadge spell={p.spell} readyAt={p.spellReadyAt} now={now} size={36} />
+      {p.spell && <SpellBadge spell={p.spell} readyAt={p.spellReadyAt} usedAt={p.spellUsedAt} now={now} size={36} />}
     </Glass>
   );
 }

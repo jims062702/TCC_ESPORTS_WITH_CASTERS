@@ -65,10 +65,22 @@ export const shuffle = <T,>(arr: readonly T[]): T[] => {
 
 export const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
+const isPlainObject = (v: unknown): v is Record<string, unknown> => v !== null && typeof v === 'object' && !Array.isArray(v);
+
+/**
+ * Read a saved value. Objects are merged over the defaults (new settings keep
+ * their default); arrays, numbers, strings and booleans come back as saved —
+ * a value of the wrong shape falls back to the default.
+ */
 export const safeLocalGet = <T,>(key: string, fallback: T): T => {
   try {
     const raw = localStorage.getItem(key);
-    return raw ? ({ ...fallback, ...JSON.parse(raw) } as T) : fallback;
+    if (!raw) return fallback;
+    const parsed: unknown = JSON.parse(raw);
+    if (isPlainObject(fallback)) return (isPlainObject(parsed) ? { ...fallback, ...parsed } : fallback) as T;
+    if (Array.isArray(fallback)) return (Array.isArray(parsed) ? parsed : fallback) as T;
+    if (fallback === null || fallback === undefined) return parsed as T;
+    return (typeof parsed === typeof fallback ? parsed : fallback) as T;
   } catch {
     return fallback;
   }

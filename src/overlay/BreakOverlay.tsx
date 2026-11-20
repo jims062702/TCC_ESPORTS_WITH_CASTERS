@@ -26,9 +26,21 @@ export default function BreakOverlay() {
   const sound = flag(q, 'sound', false);
   const vol = Math.min(1, Math.max(0, Number(q.get('vol') ?? 0.8) || 0));
   useBreakMusic(flag(q, 'music', !demo) && vol > 0 && Boolean(live.matchId || flag(q, 'always', false)) && (live.phase === 'break' || flag(q, 'always', false)), vol);
-  const playlist = useMemo(() => highlights.data.filter((h) => h.inPlaylist), [highlights.data]);
+  const playlist = useMemo(() => {
+    const all = highlights.data.filter((h) => h.inPlaylist);
+    // Replays from the series on air play first (newest first), then the rest of the highlights.
+    const isReplay = (h: (typeof all)[number]) => Boolean(live.matchId) && h.matchId === live.matchId;
+    const replays = all.filter(isReplay).sort((a, b) => b.createdAt - a.createdAt);
+    return [...replays, ...all.filter((h) => !isReplay(h))];
+  }, [highlights.data, live.matchId]);
   const [index, setIndex] = useState(0);
   const clip = playlist.length ? playlist[index % playlist.length] : null;
+  const clipIsReplay = Boolean(clip && live.matchId && clip.matchId === live.matchId);
+  // Every new break / pause starts from the newest replay.
+  const onBreak = live.phase === 'break';
+  useEffect(() => {
+    if (onBreak) setIndex(0);
+  }, [onBreak]);
 
   useEffect(() => {
     if (index >= playlist.length && playlist.length) setIndex(0);
@@ -76,11 +88,11 @@ export default function BreakOverlay() {
         <div className="absolute left-20 top-20 max-w-[860px]">
           <Logo size={170} className="drop-shadow-[0_0_30px_rgba(248,49,47,0.55)]" />
           <p className="mt-6 font-cond text-2xl font-semibold uppercase tracking-[0.4em] text-crimson-400">{live.tournamentName || 'TCC Esports'}</p>
-          <h1 className="font-display text-[150px] uppercase leading-[0.82]">{live.breakMessage || "We'll be right back"}</h1>
+          <h1 className="font-display text-[150px] uppercase leading-[0.82]">{live.breakMessage || (live.breakPause ? 'Game paused' : "We'll be right back")}</h1>
           <p className="neon mt-4 font-display text-4xl uppercase tracking-[0.35em]">Let the game begin</p>
           {left !== null && (
             <Glass className="mt-8 inline-flex items-center gap-4 rounded-2xl px-6 py-3">
-              <span className="font-cond text-xl font-semibold uppercase tracking-[0.3em] text-white/60">Back in</span>
+              <span className="font-cond text-xl font-semibold uppercase tracking-[0.3em] text-white/60">{live.breakPause ? 'Resuming in' : 'Back in'}</span>
               <span className="font-display text-7xl leading-none tabular">{formatDuration(left)}</span>
             </Glass>
           )}
@@ -92,7 +104,7 @@ export default function BreakOverlay() {
             <div className="text-center">
               <p className="font-cond text-lg font-semibold uppercase tracking-[0.3em] text-white/60">{live.matchLabel}</p>
               <p className="font-display text-4xl uppercase leading-none">
-                {Math.max(live.scoreA, live.scoreB) >= winsNeeded(live.format) ? 'Final' : `Up next · Game ${nextGame}`}
+                {Math.max(live.scoreA, live.scoreB) >= winsNeeded(live.format) ? 'Final' : live.breakPause ? `Paused · Game ${live.gameNumber}` : `Up next · Game ${nextGame}`}
               </p>
               <p className="font-cond text-sm uppercase tracking-[0.3em] text-white/50">{FORMAT_LABEL[live.format]}</p>
             </div>
@@ -121,7 +133,10 @@ export default function BreakOverlay() {
             <Film className="h-6 w-6 text-crimson-400" />
             <div>
               <p className="font-cond text-sm font-semibold uppercase tracking-[0.3em] text-white/50">Now playing · {(index % playlist.length) + 1}/{playlist.length}</p>
-              <p className="max-w-[560px] truncate font-display text-3xl uppercase leading-none">{clip.title}</p>
+              <p className="max-w-[560px] truncate font-display text-3xl uppercase leading-none">
+                {clipIsReplay && <span className="mr-2 rounded bg-crimson-600 px-1.5 py-0.5 align-middle font-cond text-base tracking-widest">Replay</span>}
+                {clip.title}
+              </p>
             </div>
           </div>
         )}

@@ -81,10 +81,22 @@ export function useActiveSection(): SectionId {
     // anchor jump, so jump there ourselves. 'instant' bypasses CSS smooth
     // scrolling so the observer below sees the right section immediately.
     const initial = window.location.hash.slice(1);
+    const timers: number[] = [];
+    let touched = false;
+    const stop = () => (touched = true);
     if (SECTIONS.some((s) => s.id === initial)) {
-      const el = document.getElementById(initial);
-      if (el) window.scrollTo({ top: el.offsetTop, behavior: 'instant' });
+      const jump = () => {
+        const el = document.getElementById(initial);
+        if (el && !touched) window.scrollTo({ top: el.offsetTop, behavior: 'instant' });
+      };
+      jump();
       setActive(initial as SectionId);
+      // Sections above load their data a moment later and grow — keep the target in place
+      // (e.g. "Back to leaderboard") until the visitor scrolls on their own.
+      for (const ms of [300, 800, 1500, 2600]) timers.push(window.setTimeout(jump, ms));
+      window.addEventListener('wheel', stop, { passive: true, once: true });
+      window.addEventListener('touchstart', stop, { passive: true, once: true });
+      window.addEventListener('keydown', stop, { once: true });
     }
     const els = SECTIONS.map((s) => document.getElementById(s.id)).filter(Boolean) as HTMLElement[];
     const observer = new IntersectionObserver(
@@ -100,7 +112,13 @@ export function useActiveSection(): SectionId {
       { rootMargin: '-45% 0px -50% 0px', threshold: 0 },
     );
     els.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      timers.forEach(clearTimeout);
+      window.removeEventListener('wheel', stop);
+      window.removeEventListener('touchstart', stop);
+      window.removeEventListener('keydown', stop);
+    };
   }, []);
   return active;
 }

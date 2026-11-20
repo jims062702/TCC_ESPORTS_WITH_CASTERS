@@ -480,7 +480,7 @@ export default function GuidePage() {
       </header>
 
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-8 sm:px-6 lg:grid-cols-[240px_1fr]">
-        <aside className="lg:sticky lg:top-24 lg:h-fit">
+        <aside className="min-w-0 lg:sticky lg:top-24 lg:h-fit">
           <Link to="/" className="mb-4 inline-flex items-center gap-1 text-sm text-muted hover:text-fg">
             <ArrowLeft className="h-4 w-4" /> Back to site
           </Link>

@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import type { Banner, EventType, ReplayState } from '@/types';
 import { breakMusic, playStinger, type Stinger } from './sound';
 import { flag } from './query';
+import { REPLAY_ZOOM } from './layout';
 
 /** Overlay sound settings from the URL: ?sound=0 mutes, ?vol=0.5 sets the level (0–1). */
 export function soundOptions(q: URLSearchParams, demo: boolean) {
@@ -26,17 +27,23 @@ export function useBannerStinger(banner: Banner | null, type: EventType, kind: S
   }, [key, kind, on, vol, delayMs]);
 }
 
-/** Whoosh into the instant replay and back to the live game (played by the HUD, which stays on air in both). */
+/**
+ * Whoosh into the instant replay and back to the live game (played by the HUD,
+ * which stays on air in both). With OBS they land on the zooms: "in" as the
+ * clip grows to full screen, "out" as the live game zooms back in.
+ */
 export function useReplayStingers(replay: ReplayState, now: number, on: boolean, vol: number) {
-  const playing = replay.active && now < replay.endsAt && now - replay.startedAt < 60_000;
+  const start = replay.obs ? (replay.playingAt ?? null) : replay.startedAt;
+  const hideAt = replay.endsAt - (replay.obs ? REPLAY_ZOOM.outMs : 0);
+  const playing = replay.active && start !== null && now >= start && now < hideAt && now - start < 60_000;
   const was = useRef(playing);
   useEffect(() => {
     if (playing === was.current) return;
     was.current = playing;
     if (!on) return;
-    if (playing && Date.now() - replay.startedAt < 5000) playStinger('replayIn', vol);
+    if (playing && start !== null && Date.now() - start < 5000) playStinger('replayIn', vol);
     if (!playing) playStinger('replayOut', vol);
-  }, [playing, on, vol, replay.startedAt]);
+  }, [playing, on, vol, start]);
 }
 
 /** Intense break music (5:00 track, loops) while `active`. */

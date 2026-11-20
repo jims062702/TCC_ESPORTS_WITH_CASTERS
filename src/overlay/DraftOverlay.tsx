@@ -1,10 +1,14 @@
+import { useMemo } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Ban } from 'lucide-react';
 import type { LiveState, Side } from '@/types';
-import { useHeroPortraits, useNow } from '@/hooks/useFirestore';
-import { useOverlayLive } from './demo';
+import { useGames, useHeroPortraits, useNow } from '@/hooks/useFirestore';
+import { demoGames, useOverlayLive } from './demo';
+import { heroDraftStats, playerHeroRecord, predictDraft } from '@/services/draftPredictor';
+import { InsightStyles, LockStatCard, PredictorStrip, useLockCards } from './DraftInsights';
 import { sideTeam } from '@/services/facts';
-import { DRAFT_SEQUENCE, FORMAT_LABEL, POSITION_LABEL } from '@/lib/constants';
+import { DRAFT_SEQUENCE, FORMAT_LABEL, MAP_EFFECTS, POSITION_LABEL } from '@/lib/constants';
+import { MapEffectChip, MapEffectRevealCard, useMapEffectReveal } from './MapEffectReveal';
 import { HeroArt, SeriesPips } from '@/components/game';
 import { TeamLogo } from '@/components/Brand';
 import { cn } from '@/lib/utils';
@@ -19,12 +23,35 @@ export default function DraftOverlay() {
   const q = useQuery();
   const snd = soundOptions(q, demo);
   useBannerStinger(live.banner, 'DRAFT_START', 'draft', snd.on, snd.vol);
+  const revealing = useMapEffectReveal(live.mapEffect, snd);
   const d = live.draft;
   const step = DRAFT_SEQUENCE[d.step];
   const done = d.step >= DRAFT_SEQUENCE.length;
   const left = d.timerEndsAt ? Math.max(0, Math.ceil((d.timerEndsAt - now) / 1000)) : (d.timerPausedLeft ?? d.timerDuration);
   const visible = demo || (live.matchId && (live.phase === 'draft' || flag(q, 'always', false)));
   const stepColor = step ? SIDE_COLOR[step.side] : '#3ef0d8';
+
+  // AI Draft Predictor + lock cards, from this tournament's recorded games (?predictor=0 / ?stats=0 to hide).
+  const realGames = useGames(demo ? null : live.tournamentId);
+  const games = useMemo(() => (demo ? demoGames() : realGames.data), [demo, realGames.data]);
+  const showPredictor = flag(q, 'predictor', true);
+  const showStats = flag(q, 'stats', true);
+  const cards = useLockCards(d);
+  const onClock = !done && step ? step : null;
+  const predictions = useMemo(
+    () => (onClock && showPredictor ? predictDraft(live, games, onClock.side, onClock.kind) : []),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [onClock?.side, onClock?.kind, d.step, d.bluePicks.join(), d.redPicks.join(), d.blueBans.join(), d.redBans.join(), games, showPredictor, live.blue.players, live.red.players],
+  );
+  const cardStats = (side: 'blue' | 'red') => {
+    const c = cards[side];
+    if (!c || !showStats) return null;
+    const player = c.kind === 'pick' ? (live[side].players[c.slot] ?? null) : null;
+    return { card: c, stats: heroDraftStats(c.hero, games, live), player, playerRecord: playerHeroRecord(player, c.hero) };
+  };
+  const blueCard = cardStats('blue');
+  const redCard = cardStats('red');
+  const insightsOn = Boolean(predictions.length || blueCard || redCard);
 
   return (
     <OverlayStage>
@@ -39,16 +66,39 @@ export default function DraftOverlay() {
                 <p className="font-display text-5xl uppercase leading-none">
                   {live.matchLabel} · Game {live.gameNumber}
                 </p>
-                <p className="font-cond text-base uppercase tracking-[0.3em] text-white/60">{FORMAT_LABEL[live.format]}</p>
+                <div className="flex items-center justify-center gap-3">
+                  <p className="font-cond text-base uppercase tracking-[0.3em] text-white/60">{FORMAT_LABEL[live.format]}</p>
+                  <AnimatePresence>{live.mapEffect && MAP_EFFECTS[live.mapEffect] && !revealing && <MapEffectChip effect={live.mapEffect} />}</AnimatePresence>
+                </div>
               </Glass>
               {flag(q, 'casters') ? <CasterStrip casters={live.casters} captions={false} size="sm" /> : <div className="w-[300px]" />}
             </motion.div>
 
             <EventBanner banner={live.banner} allow={['DRAFT_START', 'GAME_INTRO', 'DRAFT_COMPLETE']} top={260} />
+            {/* Battlefield effect picked → big reveal, then it flies up next to "Best of" */}
+            <MapEffectRevealCard effect={revealing} />
+
+            {/* AI Draft Predictor — only the side on the clock; hidden on a side while its lock card shows */}
+            <InsightStyles />
+            <AnimatePresence>
+              {!revealing && onClock && predictions.length > 0 && !cards[onClock.side] && (
+                <PredictorStrip
+                  key={`pred-${onClock.side}-${onClock.kind}`}
+                  side={onClock.side}
+                  kind={onClock.kind}
+                  teamName={sideTeam(live, onClock.side)?.tag || sideTeam(live, onClock.side)?.name || onClock.side}
+                  predictions={predictions}
+                  portraits={portraits.map}
+                />
+              )}
+            </AnimatePresence>
+            {/* Lock cards: Pick · Contention rate · Win rate / BAN 5x */}
+            <AnimatePresence mode="wait">{!revealing && blueCard && <LockStatCard key={blueCard.card.id} {...blueCard} portraits={portraits.map} />}</AnimatePresence>
+            <AnimatePresence mode="wait">{!revealing && redCard && <LockStatCard key={redCard.card.id} {...redCard} portraits={portraits.map} />}</AnimatePresence>
 
             {/* Captions while drafting */}
-            {flag(q, 'captions') && (
-              <div className="absolute inset-x-0 top-[560px] flex justify-center">
+            {flag(q, 'captions') && !revealing && (
+              <div className={cn('absolute inset-x-0 flex justify-center', insightsOn ? 'top-[372px]' : 'top-[560px]')}>
                 <CasterStrip casters={live.casters} captionOnly />
               </div>
             )}

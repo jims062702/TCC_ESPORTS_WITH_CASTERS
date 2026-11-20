@@ -4,6 +4,7 @@ import { COL, LIVE_DOC, db, subscribeCollection, subscribeDoc, whereEq } from '.
 import { CASTER_BY_ID, isCasterId, resolvePairVoices, speak, stopSpeaking, waitUntilQuiet } from './casters';
 import { playClip, stopClip, synthesizeExchange, ttsUsageToday, unlockAudio } from './tts';
 import { buildFacts, summarizeEvent } from './facts';
+import { intensityOf } from './delivery';
 import { REPLAY_LEAD, SCRIPT_KEYS, SCRIPT_PLACEHOLDERS, builtinExamples, templateLines, unknownPlaceholders } from './templates';
 import { GeminiError, buildCommentaryPrompt, requestCommentary, requestLibrary } from './gemini';
 import { normalizeLive } from './live';
@@ -11,7 +12,8 @@ import { EVENT_DEFS, STORAGE_KEYS } from '@/lib/constants';
 import { safeLocalGet, safeLocalSet, sleep, uid } from '@/lib/utils';
 
 /** Pause between speakers so each caster finishes before the next one starts. */
-const HANDOFF_MS = 450;
+/** Breath between two casters (the next one answers right away). */
+const HANDOFF_MS = 120;
 
 /** "Instant response": how long a live AI line / realistic voice may take before the instant library line / voice is used. */
 const AI_FAST_MS = 1600;
@@ -43,8 +45,10 @@ export interface EngineSettings {
   aiEnabled: boolean;
   /** Use live Gemini only for replays (with a description), series wins and draft breakdowns. */
   aiOnlyPriority: boolean;
-  /** 'gemini' = realistic live-caster voices (Gemini TTS); 'browser' = free basic voices. */
+  /** 'browser' = free natural voices (default); 'gemini' = optional Gemini TTS voices (needs a key, small free quota). */
   voiceEngine: 'gemini' | 'browser';
+  /** Settings version (2 = free by default — Gemini only when switched on). */
+  v?: number;
   /** Max realistic-voice clips per day on this computer (then browser voices take over). */
   ttsDailyCap: number;
   aiMinorEvents: boolean;
@@ -65,7 +69,7 @@ export interface EngineSettings {
 }
 
 export const DEFAULT_ENGINE_SETTINGS: EngineSettings = {
-  aiEnabled: true,
+  aiEnabled: false,
   aiOnlyPriority: true,
   aiMinorEvents: false,
   aiBanter: false,
@@ -73,14 +77,29 @@ export const DEFAULT_ENGINE_SETTINGS: EngineSettings = {
   dailyCap: 200,
   idleBanter: true,
   idleSec: 55,
-  talkGapSec: 3,
+  talkGapSec: 0.5,
   instant: true,
   volume: 1,
   rate: 1,
   maxQueue: 4,
-  voiceEngine: 'gemini',
+  voiceEngine: 'browser',
   ttsDailyCap: 300,
+  v: 3,
 };
+
+/** This computer's booth settings. Older saves move to the free setup once (Gemini becomes opt-in). */
+export function loadEngineSettings(): EngineSettings {
+  const saved = safeLocalGet<Partial<EngineSettings>>(STORAGE_KEYS.boothSettings, {});
+  const merged: EngineSettings = { ...DEFAULT_ENGINE_SETTINGS, ...saved };
+  if ((saved.v ?? 1) < 2) {
+    merged.voiceEngine = 'browser';
+    merged.aiEnabled = false;
+  }
+  // v3: continuous talk — the old 3 s pause between exchanges becomes half a second.
+  if ((saved.v ?? 1) < 3) merged.talkGapSec = Math.min(merged.talkGapSec ?? 0.5, 0.5);
+  merged.v = 3;
+  return merged;
+}
 
 export interface EngineLogEntry {
   id: string;
@@ -278,7 +297,7 @@ export class CommentaryEngine {
     this.beat();
     this.timers.push(
       window.setInterval(() => this.beat(), 15_000),
-      window.setInterval(() => this.idleCheck(), 1_000),
+      window.setInterval(() => this.idleCheck(), 250),
       window.setInterval(() => this.emit(), 1_000),
     );
     this.emit();
@@ -480,7 +499,13 @@ export class CommentaryEngine {
     }
     if (!lines.length) {
       // Pre-shoutcast library (built-in + pre-generated), avoiding recent repeats.
-      const pick = templateLines(ev, facts, pair, this.library, new Set(this.usedScripts), this.casterNames);
+      // Filler talk continues the conversation: the caster who did NOT just speak opens, picking up from the partner.
+      const filler = this.localIds.has(ev.id) && (ev.type === 'IDLE_BANTER' || ev.type === 'DRAFT_TALK');
+      const lastLine = this.recent[this.recent.length - 1];
+      const lastSpeaker = lastLine?.casterId;
+      const recentlySpoke = Boolean(lastLine && Date.now() - lastLine.at < 15_000);
+      const flow = filler && lastSpeaker && pair.includes(lastSpeaker) ? { lead: pair.find((p) => p !== lastSpeaker), bridge: recentlySpoke } : {};
+      const pick = templateLines(ev, facts, pair, this.library, new Set(this.usedScripts), this.casterNames, flow);
       lines = pick.lines;
       this.usedScripts = [...this.usedScripts, ...pick.ids].slice(-160);
     }
@@ -515,7 +540,7 @@ export class CommentaryEngine {
       await this.quietOrCut(epoch);
       if (i > 0) await this.pauseOrCut(HANDOFF_MS, epoch);
       if (epoch !== this.epoch) break;
-      await this.say(line, source);
+      await this.say(line, source, intensityOf(ev.type, Boolean(ev.data?.steal)));
     }
     this.lastSpokeAt = Date.now();
     window.setTimeout(() => {
@@ -598,7 +623,7 @@ export class CommentaryEngine {
     }
   }
 
-  private async say(line: { casterId: string; text: string }, source: 'ai' | 'template') {
+  private async say(line: { casterId: string; text: string }, source: 'ai' | 'template', intensity = 0.3) {
     const persona = CASTER_BY_ID[line.casterId];
     // Seated pair never shares a voice (resolved per exchange).
     const seated = this.pair.includes(line.casterId) ? this.pair : [line.casterId];
@@ -614,6 +639,7 @@ export class CommentaryEngine {
       pitch: persona?.voice.pitch ?? 1,
       rate: (persona?.voice.rate ?? 1) * this.settings.rate,
       volume: this.settings.volume,
+      intensity,
     });
     this.speaking = null;
     this.emit();
@@ -628,11 +654,12 @@ export class CommentaryEngine {
     const s = this.settings;
     const live = this.live;
     if (!s.idleBanter || !live?.matchId || this.busy || this.queue.length || live.phase === 'idle') return;
-    const base = Math.max(1, s.talkGapSec ?? 3);
+    const base = Math.max(0.3, s.talkGapSec ?? 1);
     const gapSec = live.phase === 'break' ? 45 : live.phase === 'postgame' ? base + 5 : base;
     // After a long run of filler without clicks the gap widens a little (never silent for long).
-    const fatigue = Math.min(3, Math.floor(this.fillerStreak / 8));
-    if (Date.now() - this.lastSpokeAt < (gapSec + fatigue * 4) * 1000) return;
+    // Continuous desk talk in the draft and in-game; only a long run without any click slows it a little.
+    const fatigue = live.phase === 'break' ? 0 : Math.min(2, Math.floor(this.fillerStreak / 20));
+    if (Date.now() - this.lastSpokeAt < (gapSec + fatigue) * 1000) return;
     const draftDone = live.draft.step >= 20;
     // One speculation per draft step (then plain draft talk), so they don't loop on the same pick.
     if (live.phase === 'draft' && !draftDone && this.lastTalkStep === live.draft.step && this.fillerStreak > 2 && Math.random() < 0.5) return;

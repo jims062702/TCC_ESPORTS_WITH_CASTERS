@@ -1,6 +1,6 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ClipboardList, Crown, Droplet, Flame, Gamepad2, HelpCircle, Leaf, Shell, Skull, Swords, Trophy } from 'lucide-react';
+import { Castle, ClipboardList, Footprints, Crown, Droplet, Eye, Flame, Gamepad2, HelpCircle, Leaf, Map as MapIcon, Shell, Skull, Swords, Trophy } from 'lucide-react';
 import type { Banner, EventType } from '@/types';
 import { useSettings } from '@/hooks/useFirestore';
 import { useOverlayCaption } from './demo';
@@ -80,6 +80,10 @@ const BANNER_ICON: Partial<Record<EventType, typeof Swords>> = {
   SERIES_VICTORY: Trophy,
   DRAFT_START: ClipboardList,
   GAME_START: Gamepad2,
+  TURRET: Castle,
+  INVADE: Footprints,
+  WISP_REVEAL: Eye,
+  MAP_EFFECT: MapIcon,
 };
 
 const BANNER_MS: Partial<Record<EventType, number>> = { SAVAGE: 6500, MANIAC: 5500, SERIES_VICTORY: 9000, GAME_RESULT: 7000, GAME_INTRO: 7000, OBJECTIVE_CONTEST: 6000, DRAFT_START: 6500, GAME_START: 6500 };

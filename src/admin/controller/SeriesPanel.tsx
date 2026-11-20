@@ -1,17 +1,21 @@
 import { useState } from 'react';
-import { Coffee, Crown, Megaphone, Play, SkipForward, Trophy, X } from 'lucide-react';
+import { Coffee, Play, Plus, SkipForward } from 'lucide-react';
 import type { LiveState, Player, Team } from '@/types';
-import { FORMAT_LABEL, winsNeeded } from '@/lib/constants';
-import { endBreak, lineupsOf, nextGame, patchLive, setBreak, triggerEvent, type GameSetup } from '@/services/live';
+import { winsNeeded } from '@/lib/constants';
+import { endBreak, extendBreak, lineupsOf, nextGame, patchLive, setBreak, type GameSetup } from '@/services/live';
+import { useNow } from '@/hooks/useFirestore';
+import { AnnouncementsCard, MessagePicker, TimeLeft, breakMessages, breakMinutes, isPaused } from './BreakControls';
 import { pickCasterPair } from '@/services/casters';
 import { LineupDialog } from './LineupDialog';
 import { PostGameStats } from './PostGameStats';
 import { Button, Card, Field, Input } from '@/components/ui';
 import { useToast } from '@/components/Toast';
+import { useConfirm } from '@/components/Confirm';
 
 /** Series-level announcements, post-game flow and break mode. */
 export function SeriesPanel({ live, players, teams }: { live: LiveState; players: Player[]; teams: Team[] }) {
   const toast = useToast();
+  const ask = useConfirm();
   /** Lineup dialog before the next game's draft (from "Start Game N draft" or "End break"). */
   const [nextSetup, setNextSetup] = useState<{ via: 'next' | 'break'; casters: string[] } | null>(null);
   const [busy, setBusy] = useState(false);
@@ -28,52 +32,20 @@ export function SeriesPanel({ live, players, teams }: { live: LiveState; players
   };
   const [breakMin, setBreakMin] = useState(5);
   const [breakMsg, setBreakMsg] = useState('');
+  const now = useNow(500);
   const need = winsNeeded(live.format);
   const seriesOver = Math.max(live.scoreA, live.scoreB) >= need;
-  const leaderIsA = live.scoreA > live.scoreB;
-  const leader = leaderIsA ? live.teamA : live.teamB;
+  const leader = live.scoreA > live.scoreB ? live.teamA : live.teamB;
   /** The last game has a result, so ending the break starts the next draft. */
   const gameDone = live.scoreA + live.scoreB >= live.gameNumber;
   const nextDraft = !seriesOver && gameDone;
 
+  // In-game (and during a "Pause the game") the In-game screen has its own Announcements / Pause cards.
+  if (live.phase === 'ingame' || isPaused(live)) return null;
+
   return (
     <div className="grid gap-5 xl:grid-cols-2">
-      <Card title="Announcements" subtitle="Quick triggers — each queues a call for the casters and a graphic on the overlays.">
-        <div className="grid gap-2 sm:grid-cols-2">
-          <Button
-            variant="secondary"
-            icon={<Megaphone className="h-4 w-4" />}
-            onClick={() => toast.run(() => triggerEvent(live, 'GAME_INTRO'), 'Game intro queued')}
-          >
-            Game intro — Game {live.gameNumber} of {FORMAT_LABEL[live.format]}
-          </Button>
-          <Button
-            variant="secondary"
-            disabled={!seriesOver}
-            title={seriesOver ? '' : 'Available once a team has won the series'}
-            icon={live.isFinal ? <Crown className="h-4 w-4" /> : <Trophy className="h-4 w-4" />}
-            onClick={() =>
-              toast.run(
-                () =>
-                  triggerEvent(live, 'SERIES_VICTORY', {
-                    side: null,
-                    data: { winnerIsA: leaderIsA, seriesOver: true, isChampionship: live.isFinal },
-                  }),
-                'Victory announcement queued',
-              )
-            }
-          >
-            {live.isFinal ? 'Champion announcement' : 'Series victory announcement'}
-            {seriesOver && leader ? ` — ${leader.tag} ${Math.max(live.scoreA, live.scoreB)}-${Math.min(live.scoreA, live.scoreB)}` : ''}
-          </Button>
-          {live.banner && (
-            <Button variant="ghost" icon={<X className="h-4 w-4" />} onClick={() => toast.run(() => patchLive({ banner: null }))}>
-              Clear on-screen banner
-            </Button>
-          )}
-        </div>
-      </Card>
-
+      <AnnouncementsCard live={live} />
       {/* No break / next-draft controls during the draft — only in-game and on break. */}
       {live.phase !== 'draft' && (
       <Card
@@ -90,14 +62,19 @@ export function SeriesPanel({ live, players, teams }: { live: LiveState; players
               Start Game {upcoming} draft
             </Button>
           ) : null}
-          <div className="grid gap-2 sm:grid-cols-[110px_1fr_auto] sm:items-end">
-            <Field label="Break (min)">
-              <Input type="number" min={0} max={60} value={breakMin} onChange={(e) => setBreakMin(Number(e.target.value))} />
-            </Field>
-            <Field label="Break message">
-              <Input value={breakMsg} onChange={(e) => setBreakMsg(e.target.value)} placeholder="Game 2 starts soon!" />
-            </Field>
-            {live.phase === 'break' ? (
+          {live.phase === 'break' && (
+            <div className="grid grid-cols-[1fr_auto] items-center gap-2">
+              <TimeLeft endsAt={live.breakEndsAt} now={now} label="Break ends in" />
+              <Button variant="secondary" icon={<Plus className="h-4 w-4" />} onClick={() => toast.run(() => extendBreak(live, 60), '+1 minute')}>
+                1 min
+              </Button>
+            </div>
+          )}
+          {live.phase === 'break' ? (
+            <div className="grid gap-2 sm:grid-cols-[1fr_auto] sm:items-end">
+              <Field label="Message on the break screen (changes it right away)">
+                <MessagePicker live={live} kind="break" value={live.breakMessage} onChange={(breakMessage) => void patchLive({ breakMessage })} />
+              </Field>
               <Button
                 variant="secondary"
                 icon={<Play className="h-4 w-4" />}
@@ -105,12 +82,29 @@ export function SeriesPanel({ live, players, teams }: { live: LiveState; players
               >
                 {nextDraft ? `End break → Game ${live.scoreA + live.scoreB + 1} draft` : 'End break'}
               </Button>
-            ) : (
-              <Button variant="secondary" icon={<Coffee className="h-4 w-4" />} onClick={() => toast.run(() => setBreak(live, breakMin || null, breakMsg), 'Break loop on air — casters are sending the show to break')}>
-                Go to break
-              </Button>
-            )}
+            </div>
+          ) : (
+          <div className="grid gap-2 sm:grid-cols-[110px_1fr_auto] sm:items-end">
+            <Field label="Break (min)">
+              <Input type="number" min={1} max={60} value={breakMin} onChange={(e) => setBreakMin(Number(e.target.value))} />
+            </Field>
+            <Field label="Break message">
+              <MessagePicker live={live} kind="break" value={breakMsg || breakMessages(live, 'break')[0]} onChange={setBreakMsg} />
+            </Field>
+            <Button
+              variant="secondary"
+              icon={<Coffee className="h-4 w-4" />}
+              onClick={() => {
+                const message = breakMsg || breakMessages(live, 'break')[0];
+                void ask({ title: 'Go to break?', message: `The break screen goes on air with "${message}" and a ${breakMinutes(breakMin)}:00 countdown.`, confirmLabel: 'Go to break' }).then((ok) => {
+                  if (ok) void toast.run(() => setBreak(live, breakMinutes(breakMin), message), `Break on air — ${breakMinutes(breakMin)}:00 countdown`);
+                });
+              }}
+            >
+              Go to break
+            </Button>
           </div>
+          )}
           <p className="text-xs text-muted">The break overlay loops your highlight playlist (Media page) with a countdown, the series score and the break music.</p>
         </div>
       </Card>

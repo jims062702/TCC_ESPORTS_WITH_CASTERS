@@ -31,6 +31,10 @@ export class GeminiError extends Error {
 }
 
 const EVENT_DIRECTIONS: Partial<Record<EventType, string>> = {
+  MAP_EFFECT: 'Announce this game\'s battlefield effect (FACTS.mapEffect) and explain in plain Taglish how it changes the game and what teams should prioritise. Exciting but clear.',
+  TURRET: 'A turret fell (FACTS.turret: tier, golden = Golden Turret bonus gold for the whole team). Call it, then say what it opens up on the map.',
+  WISP_REVEAL: 'A Revealing Wisp exposed a hidden enemy for this team. React quickly to the vision win and what it prevents (ambush/flank).',
+  INVADE: 'This team (FACTS.actorTeam) is invading the enemy jungle (FACTS.invade: jungle creeps or a buff). Build suspense: the plan, the risk of getting caught, what the enemy jungler loses.',
   DRAFT_START:
     'The drafting phase is starting. The first caster opens with "Welcome sa drafting phase natin, partner <other caster name>!" and the partner thanks them by name, then both set up the draft: game number, series score, what to watch in the bans. No hero names — the draft has not happened yet.',
   GAME_START:
@@ -51,9 +55,10 @@ const EVENT_DIRECTIONS: Partial<Record<EventType, string>> = {
   LORD: 'Call "Lord slain by <actor IGN>" (if an actor is given) and what the push means. If steal=true it was a Lord steal — scream it. Do NOT mention Retribution or any battle spell for objectives.',
   BUFF: 'Call "Buff slain by <actor IGN>" (if an actor is given). If steal=true it was stolen from the enemy jungle. Do NOT mention Retribution or any battle spell.',
   OBJECTIVE_CONTEST:
-    'Both teams are gathering at the objective in FACTS.objective. Build suspense and ask "Sino kaya ang makakakuha ng <objective>?" Do not say who gets it.',
+    'Both teams are gathering at the objective in FACTS.objective. Build suspense and ask "Sino kaya ang makakakuha ng <objective>?" Do not say who gets it. Use FACTS.retri: if both junglers have Retribution ready, ask who wins the retribution battle; if one jungler has Retribution on cooldown, say that jungler and team have no retri yet and the seconds left — a big edge for the other team.',
   GOLD_UPDATE: 'Read the gold situation and kills, explain who controls the tempo. Quote numbers exactly as given.',
-  SPELL_USED: 'The actor just used their battle spell. Comment on it and the cooldown window it opens for the enemy.',
+  SPELL_USED: 'The actor just used their battle spell (FACTS.spellUse: spell name, cooldown seconds). Say the spell by name. If escape=true (Flicker / Purify) warn that the player is in danger — no escape for the cooldown. If retri=true say the jungler of the actor team has no Retribution for that many seconds and what the enemy can take (creeps, buffs, Turtle, Lord).',
+  LEVEL_MAX: 'A player just reached Level 15 (max level) — FACTS.level.time is the game time. If FACTS.level.best is true it is a NEW BEST TIME for the tournament: hype it, and if prevTime/prevPlayer are given say the old record they beat. If best is false, say the standing record (prevTime by prevPlayer) was not beaten.',
   INSTANT_REPLAY:
     'The broadcast is showing a 10-second INSTANT REPLAY right now. The FIRST line must begin with "Tingnan muna natin ang instant replay". Then narrate it play-by-play like it is happening again on screen, using ONLY the replay title/description and the actor. Keep it under ~10 seconds of speech total.',
   GAME_RESULT: 'Announce the game winner and the updated series score exactly. Mention how many wins are still needed if the series continues.',
@@ -79,6 +84,7 @@ export function buildCommentaryPrompt(
     '',
     'LANGUAGE: natural Filipino Taglish, the way Filipino pro-league (MPL-style) MLBB casters talk — Tagalog sentence glue with English game terms. Energetic, punchy and conversational. Each line 6–24 words, at most 2 short sentences.',
     'BROADCAST STYLE: the play-by-play voice builds energy with short bursts on the action ("ITO NA!", "PATAY!", "ANG LAKAS!"); the color/analyst voice answers with the WHY (positioning, rotation, timing, stats, story). Casters react to each other naturally ("Tama ka diyan…", "Exactly!") without repeating each other.',
+    'SOUND LIKE REAL PEOPLE, NOT AI: write for the ear — short phrases, natural breath breaks (commas), contractions and everyday Filipino ("yan", "dito", "grabe", "ayun", "sige", "lagot", "sakto"). Tell the story: connect the play to what happened before (FACTS.story, earlier games, a player\'s pool, the score) and to what it means next (objective, momentum, series point). Build tension, then pay it off. Avoid stiff or textbook Tagalog ("kamangha-mangha", "nakakamangha talaga"), avoid generic filler ("What a play!", "Truly amazing", "It is clear that"), and never describe yourselves as AI.',
     '',
     'CASTERS ON THE DESK (only these two speak, and they react to each other):',
     casterBlock,
@@ -90,7 +96,9 @@ export function buildCommentaryPrompt(
     '4. Series scores, game numbers and results must match FACTS exactly (e.g. "3-0" in a "Best of 5").',
     '5. Gold numbers: say them like casters do ("2.5k gold") but only from FACTS.gold.',
     '6. No emojis, hashtags, stage directions, asterisks, quotes or speaker labels inside "text".',
-    '7. Objective steals (Turtle, Lord, Buff) can be done by any hero — never credit Retribution; say "slain by <IGN>".',
+    '7. Objective steals (Turtle, Lord, Buff) can be done by any hero — never credit Retribution; say "slain by <IGN>". Retribution readiness (FACTS.retri) is only for objective fights, invades and spell calls.',
+    '9. Hero skills: when you mention a skill, use its real name from FACTS.actor.skills (passive, skills, ult) — never "first skill", "second skill", "S1", "skill 2" or "ultimate" without the name. If no skill names are given, do not mention specific skills.',
+    '10. K/D/A: write it as kills/deaths/assists like 5/1/3 (it is read aloud as "5 kills, 1 death, 3 assists").',
     '8. ONE SPEAKER AT A TIME: every line is a complete thought, and the next caster only responds after the previous one has finished. No cut-off sentences, no interruptions, never two casters in one line.',
     '',
     'OUTPUT: JSON only: {"lines":[{"caster":"<caster id>","text":"<spoken line>"}]} with 2 to 4 lines, alternating speakers. The first speaker should be the caster whose specialty fits the event best.',

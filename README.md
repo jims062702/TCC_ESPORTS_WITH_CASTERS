@@ -96,11 +96,64 @@ Alternative: `npx vercel` from this folder, then `npx vercel --prod`.
 
 ### Fastest: connect OBS and let the controller do it
 1. OBS 28+ → **Tools → WebSocket Server Settings** → enable (port 4455) → **Show Connect Info** → copy the password.
-2. **Admin → Live Controller → OBS** card → paste → **Connect** (auto-reconnects next time).
+2. **Admin → Settings → OBS** card → paste → **Connect**. From then on every admin page keeps OBS connected: a page refresh reconnects within a second or two, and if OBS is closed or restarted it keeps retrying in the background (sidebar: *OBS connected / reconnecting…*). **Disconnect** stops it. (The link lives in the browser page, so a refresh always closes it for a moment — that's why it reconnects by itself. A refresh in the middle of a replay cuts OBS back to the In-game HUD.)
 3. **Create all scenes in OBS** — builds *Game Feed*, *Draft*, *In-game HUD*, *Instant Replay* (with the live HUD window), *Break* and *Casters* with every overlay inside. Or **Download scene file** and in OBS use **Scene Collection → Import**.
-4. Put your game capture in **Game Feed** once (Draft and In-game HUD nest it).
+4. Put your game capture in **Game Feed** once (Draft and In-game HUD nest it). Using an Android phone? See *Android phone as the game feed* below.
+
+**What Game Feed is for:** it holds the clean game capture only (no overlays). It is nested at the bottom of **Draft** and **In-game HUD**, so you add the capture once and both scenes show it. The **gold reader** and the **spell reader** also grab their frames from it (nothing covers the gold or the spell icons there). It is never put on air by itself — the controller switches between Draft, In-game HUD, Instant Replay and Break.
 
 After that OBS follows the controller: Go live / next draft → **Draft**, Start game → **In-game HUD**, Instant replay → **Instant Replay** → back to **In-game HUD**, Go to break → **Break**.
+
+### Android phone as the game feed (free, with scrcpy)
+**scrcpy** (free, open source) mirrors the phone screen to the PC over a USB cable; OBS captures that window. To show the **whole game** (both teams, gold, battle spells), this phone must be the **spectator / observer** in the custom room — not a player's phone.
+
+**A. Prepare the phone**
+1. **Developer options:** Settings → **About phone** → tap **Build number** 7 times (some phones: Software information → Build number) until it says *You are now a developer*.
+2. **USB debugging:** Settings → System (or Additional settings) → **Developer options** → turn on **USB debugging**. Also turn on **Stay awake** (screen stays on while charging).
+3. Turn on **Do Not Disturb**, so notifications and calls never show on stream.
+4. In MLBB, set **Graphics** and **Frame rate** high for a sharp picture.
+
+**B. Set up scrcpy on the PC**
+1. Go to **github.com/Genymobile/scrcpy** → **Releases** → download the latest **scrcpy-win64-…zip**.
+2. Extract it to a folder, e.g. `C:\scrcpy`.
+3. Plug the phone into the PC with a **data USB cable** (not a charge-only cable).
+4. On the phone: **Allow USB debugging?** → tick **Always allow** → **OK**.
+5. In `C:\scrcpy`, create a file **`MLBB-Feed.bat`** (Notepad → Save as → `MLBB-Feed.bat`) containing:
+   ```
+   scrcpy --window-title "MLBB Feed" --max-size 1920 --video-bit-rate 16M --max-fps 60 --stay-awake
+   ```
+6. Double-click **MLBB-Feed.bat**. A window named **MLBB Feed** shows the phone screen (it turns landscape with the game).
+7. **Don't minimize** that window — OBS can't capture a minimized window. Leave it open behind OBS or on a second monitor.
+
+**C. Put it in OBS (Game Feed)**
+1. If not done yet: **Admin → Settings → OBS → Create all scenes in OBS**.
+2. In OBS, click the **Game Feed** scene.
+3. **Sources → + → Window Capture** → name it e.g. *Android*.
+4. **Window:** `[scrcpy.exe]: MLBB Feed` · **Capture Method:** *Windows 10 (1903 and up)* · untick **Capture Cursor** → **OK**.
+5. Right-click the source → **Transform → Fit to screen** (Ctrl+F). Thin black bars at the top and bottom are normal (phone screens are wider than 16:9) — better than cropping the sides, where the player panels and spells are.
+6. Check the **Draft** and **In-game HUD** scenes — the game now shows under the overlays by itself.
+
+**D. See the whole game (spectator)**
+1. Log in on this phone with a **separate observer account**.
+2. When the match's **custom room** is made, join a **Spectator / Observer slot** (not a player slot).
+3. Once the game starts the observer sees the **whole map, both teams, gold, items and battle spells**, and can move the camera or follow a player.
+4. This spectator screen is what the **gold reader** and **spell reader** read.
+
+**E. Test**
+1. **Admin → Settings → Gold difference → Gold reader setup** → choose **Game Feed** → **Grab a frame from OBS**. If the game appears, the feed is right.
+2. Same in **Battle spell cooldowns → Spell reader setup**.
+
+**Troubleshooting**
+
+| Problem | Fix |
+|---|---|
+| Nothing shows / "unauthorized" | Unplug and plug the cable back in, press **Allow** on the phone. Still nothing: Developer options → **Revoke USB debugging authorizations**, then repeat. |
+| Window Capture is black in OBS | Set Capture Method to **Windows 10 (1903 and up)** and make sure scrcpy isn't minimized. |
+| Lag / stutter | In the `.bat` use `--max-size 1280 --video-bit-rate 8M`; use a USB 3 port and a good cable. |
+| The phone screen sleeps | Keep it charging with **Stay awake** on (Developer options). |
+| Don't want game sound on stream | Add `--no-audio` to the `.bat` (sound only works on Android 11+). With sound, lower **Desktop Audio** in OBS so the casters stay clear. |
+
+Wireless (no cable) also works with scrcpy over Wi-Fi, but USB is steadier with less lag for a live match.
 
 ### Sound effects & break music
 The overlays generate their own audio (original, royalty-free): stingers on draft start, game start, into the replay and back to the game, and an intense 140 BPM, exactly 5-minute break track that loops on long breaks. Keep **Control audio via OBS** on the browser sources (automatic setup does it). `?sound=0` mutes an overlay, `?music=0` turns off break music, `?vol=0.5` sets the level. Preview them in **Live Controller → OBS → Sound check**.
@@ -110,15 +163,20 @@ Copy the URLs from **Admin → Dashboard** (they use your deployed domain).
 
 | URL | Scene | Notes |
 |---|---|---|
-| `/overlay/draft` | Draft | Team names, logos, 10-ban draft (bans, picks, hero portraits), live timer ring, series score, caster names + captions, Game Intro banner |
+| `/overlay/draft` | Draft | Team names, logos, 10-ban draft (bans, picks, hero portraits), live timer ring, series score, caster names + captions, Game Intro banner, **AI Draft Predictor** and **pick/ban stat cards** (see below) |
 | `/overlay/hud` | In-game HUD | Top scoreboard (kills, Turtles, Lords, gold-diff bar, series pips), player columns (photo, hero, K/D/A, battle-spell cooldown ring), event banners **with the player's photo**, caster strip + live subtitles |
 | `/overlay/replay` | Instant Replay (above the live PiP and the replay Media Source) | Transparent until a replay is triggered → INSTANT REPLAY frame, headline/description, progress bar, captions, and a **LIVE game window on the right** (picture-in-picture) |
 | `/overlay/break` | Break | Full-screen `<video autoplay muted loop>` highlight playlist, countdown, series card, "now playing" |
 | `/overlay/casters` | Desk / caster cam | Active caster pair + live subtitles only |
 
 Tips:
-- Tick **"Refresh browser when scene becomes active"**. Overlays need no login.
-- Query flags: `?demo=1` (sample data for positioning — remove before the show), `?preview=1` (checkerboard background), `?always=1` (show outside its phase), HUD: `?players=0`, `?casters=0`, `?captions=0`, `?top=0`; break: `?sound=1` (play clip audio).
+- Tick **"Refresh browser when scene becomes active"**. Overlays need no login.- Query flags: `?demo=1` (sample data for positioning — remove before the show), `?preview=1` (checkerboard background), `?always=1` (show outside its phase), HUD: `?players=0`, `?casters=0`, `?captions=0`, `?top=0`; break: `?sound=1` (play clip audio).
+
+### AI Draft Predictor & stat cards (draft overlay)
+- **AI Draft Predictor** — while a side is on the clock, a strip of hero cards with a % appears on that side only: blue scrolls endlessly to the right, red to the left. Ban turns predict what the team will take away from the *enemy* (the enemy players' hero pools, what the enemy won with earlier in the series, the tournament's most banned / contested heroes); pick turns predict what the team will take for *itself* (its own players' pools for the positions still open, lane fit, pick and win rates). That's why the ban % and the pick % differ. It's free and offline: it reads the tournament's recorded games plus a small built-in meta list (edit `META_PRIOR` in `src/services/draftPredictor.ts` when the meta shifts).
+- **Pick card** — a few seconds after each pick: **Pick** (times picked this tournament, this game included), **Contention rate** ((picks + bans) ÷ games), **Win rate** (wins ÷ finished games on that hero; “—” if it has none yet), plus the player's own record on the hero.
+- **Ban card** — after each ban: **BAN** with the count below (e.g. **5x**, this ban included). “None” bans show no card. Both cards animate in and out; Undo removes the card at once.
+- Stats come from the players' recorded games (saved when a game ends), so they grow over the tournament. `?predictor=0` hides the predictor; `?stats=0` hides the cards. `?demo=1` plays the last draft steps on a loop so you can see both.
 
 ### Caster voices → stream audio
 Open the admin in **Microsoft Edge** on the streaming PC and press **Start** in the casters pill (bottom-right of every admin page) or in **Caster Booth**. One tab is enough — the casting engine keeps running while you use the Live Controller. Edge ships free natural Philippine voices (en-PH *James/Rosa*, fil-PH *Angelo/Blessica*) that the booth assigns automatically. In OBS add **Application Audio Capture** → the Edge window (or use Desktop Audio). Keep only one booth open; a Firestore transaction prevents two booths from voicing the same event anyway.
@@ -126,12 +184,14 @@ Open the admin in **Microsoft Edge** on the streaming PC and press **Start** in 
 ### Instant replay (10 seconds)
 The saved clip is stretched over the whole canvas automatically (OBS often records it at 1280×720 while the canvas is 1920×1080). Tip: replays show what went out on stream, so avoid triggering a second replay within 10 seconds of the first.
 
+**Zoom transitions** (on by default, *Settings → OBS → Instant replay → Zoom transitions*): the replay starts as a small window in the middle — the same size as the LIVE window — and zooms to full screen with a whoosh; near the end of the clip the LIVE In-game HUD window zooms up to full screen with a second whoosh and OBS cuts to the In-game HUD (seamless, same picture). The INSTANT REPLAY frame, progress bar and sounds follow the clip's real start and end in OBS.
+
 1. OBS → **Settings → Output → Replay Buffer**: enable, **Maximum Replay Time 10 s**. Start the Replay Buffer.
 2. Create a scene **Instant Replay** with a **Media Source** named **Replay Media**, and put the `/overlay/replay` browser source above it.
-3. Option A (automatic): OBS 28+ → **Tools → WebSocket Server Settings** → enable (note the password). In **Live Controller → Instant replay → OBS**, connect. One click then saves the buffer, loads the clip, cuts to the replay scene, plays it and cuts back to your **In-game HUD** scene as soon as the clip ends (or after the replay length, whichever comes first). **End replay → In-game HUD** cuts back early.
+3. Option A (automatic): OBS 28+ → **Tools → WebSocket Server Settings** → enable (note the password). Connect once in **Settings → OBS** (all replay settings are there too). The **Instant replay** button in **Event triggers** then saves the buffer, loads the clip, cuts to the replay scene, plays it and cuts back to your **In-game HUD** scene as soon as the clip ends (or after the replay length, whichever comes first). **End** (next to the button while it plays) zooms back early. The arrow next to the button opens optional details (headline, what the replay shows, team) so the narration matches the footage.
    Option B (manual): press your Replay Buffer hotkey and switch scenes yourself — the overlay and casters still run from the controller.
-4. **Live In-game HUD picture-in-picture:** in **Live Controller → Instant replay → OBS**, pick your *In-game HUD scene* (game capture + `/overlay/hud`) and press **Set up live PiP in OBS**. It nests that scene in the replay scene, fits it into the overlay's LIVE window (right side, 576×324 on a 1080p canvas, scaled automatically for other canvas sizes) and layers it under the replay overlay — so the live game *with its HUD* stays visible during the replay. Manual alternative: in the replay scene **+ → Scene → In-game HUD** → *Edit Transform* → position 1288, 220 → bounding box *Scale to inner bounds* 576×324; order top → bottom: `/overlay/replay`, In-game HUD, replay media. `?pip=0` hides the frame.
-5. Upload good replays in **Media & Replays** (folder "replays") to add them to the break loop.
+4. **Live In-game HUD picture-in-picture:** in **Settings → OBS → Instant replay**, pick your *In-game HUD scene* (game capture + `/overlay/hud`) and press **Set up live PiP in OBS**. It nests that scene in the replay scene, fits it into the overlay's LIVE window (right side, 576×324 on a 1080p canvas, scaled automatically for other canvas sizes) and layers it under the replay overlay — so the live game *with its HUD* stays visible during the replay. Manual alternative: in the replay scene **+ → Scene → In-game HUD** → *Edit Transform* → position 1288, 220 → bounding box *Scale to inner bounds* 576×324; order top → bottom: `/overlay/replay`, In-game HUD, replay media. `?pip=0` hides the frame.
+5. **Replays → Highlights & break loop** (Settings → OBS → Instant replay): click **Connect OBS replay folder** once and pick the folder OBS saves replays to (OBS → Settings → Output → *Recording Path*; Edge/Chrome remember it). Every replay you play is listed — **Save as highlight** uploads it to Cloudinary, shows it in the website's Highlights and (with *Also add to the break loop*) plays it on the break screen. *Auto-save every replay* does it in the background (uses upload bandwidth while streaming). **Upload a clip** picks any file by hand. Make sure your Cloudinary upload preset allows video formats such as `mkv` and `mp4`.
 
 ---
 
@@ -144,14 +204,16 @@ The saved clip is stretched over the whole canvas automatically (OBS often recor
 
 ## 8. Match-day workflow
 
-1. **Teams & Rosters** — logos, an optional **coach** (shown on the draft overlay), up to **7 players** (photo, IGN, role, battle spell, default starter, optional signature heroes). *Dashboard → Load sample data* creates 8 demo teams and a double-elimination bracket.
+1. **Teams & Rosters** — logos, an optional **coach** (shown on the draft overlay), up to **7 players** (photo, IGN, role, default starter, optional signature heroes). *Role* starts empty in **Add player** and must be picked before saving. There is no battle spell here — spells are picked per game in the Drafting phase. On a desktop the whole player form fits on one screen (phones scroll). **Form drafts**: what you type in Add/Edit player, New team or New tournament is kept in this browser, so closing the modal by accident (click outside, Esc, ×) loses nothing — reopen it and the draft is back (**Discard draft** to start over); saving clears it. *Dashboard → Load sample data* creates 8 demo teams and a double-elimination bracket.
+   - **Each season has its own teams & rosters.** Pick the season at the top of the page (newest first). **+ New season…** starts a new one (e.g. "Season 2") with no teams; tick returning teams to bring them along. **Copy teams** brings teams from another season into the one on screen. Copies are new teams with their own players, so you can edit or remove players freely and the old season keeps its teams, stats and results. Teams made before seasons existed count as **Season 1**. To move a team to another season instead of copying it, change its *Season* in Team details. A new season with no teams yet is remembered only in this browser until you add a team (or **Remove this empty season**).
+   - In **Tournaments**, set *Season* to the same name (e.g. "Season 2"). The team picker then shows only that season's teams (tick **All seasons** to see the rest). Seeded teams from another season get an amber season tag.
 2. **Tournaments** — create, add teams, choose single/double elimination and formats (default Bo3, final Bo5). Either **Generate bracket** from your seed order (byes go to top seeds) or play a **Seeding round first**: teams are drawn into one-game (Bo1) matches — every team plays once — and **Generate bracket from seeding** puts the winners on the top seeds (ties: kill difference, then the quicker win). Seeding losses never eliminate anyone. After the seeding round, **seeding winners pick their opponent** (any team except themselves — winners or losers): the first-round matchups swap automatically, and a matchup locks once its draft starts. The bracket ends in a **CHAMPION** slot with the **Finals MVP**; match cards show their scheduled date & time; **Print bracket** prints it in high contrast, fitted to the page width (long brackets continue on the next page). Click any match to schedule it, change its format, report a result, or **Go live**.
 3. **Live Controller**
    - *Go live / Start Game N draft* — a lineup dialog: pick each team's **5 players + positions** for that game and the **coach** (or "No coach"). The system-picked caster pair is shown and **locked** for the game.
    - *Phases*: only **Draft → In-game → Break** (a finished game stays under In-game with its post-game stats).
    - *View on Facebook*: the switch in the controller header turns the website's **View on Facebook** button on/off for the match on air only (it opens the Facebook link from Settings). Every match card and match pop-up on the website shows its scheduled date & time ("TBA" until set). Bracket printing is in the admin only.
    - *Draft*: type a few letters + Enter — the hero search locks the top match and the box empties for the next one (↑/↓ choose another). A team that skips a ban: type **none** or press **No ban**. Two picks by the same side share one timer. Picks go to the player of that hero's position (or whose signature hero it is); **⇅** on two teammates trades their heroes. Positions and coaches show on the draft overlay. **Start Game** unlocks only when all 10 heroes are picked (bans can be none). **Edit lineup**, timer, undo, click a slot to fix it. The casters call every ban (with the reason — e.g. Freya "para hindi mahirapan ang backline nila"), hype signature picks ("NAKUHA NI … ANG Ling! Hindi ito binan!"), speculate about the next ban/pick from each player's hero pool and the tournament meta, and tell the story of earlier games.
-   - *In-game*: the **game clock** counts the battle (pause, ±seconds, set mm:ss; it pauses on a mid-game break and the duration is saved). **+1 Kill** → pick the killer, then who died (+1 kill / +1 death). **First Blood / Double / Triple / Maniac / Savage** → pick the player, then who died — up to 1 / 2 / 3 / 4 / 5 players, only the ones not counted yet (pressed +1 Kill and it became a Double Kill? pick just the new victim). One kill per victim, one death each; banner with the killer's photo. **First Blood** locks once recorded. **Savage** pre-selects all five and opens a **10-second continuation**: another Savage in that window adds only the extra victims (+1, +2…) — each continuation restarts the 10 s. **Turtle / Lord / Purple Buff / Orange Buff** per side → pick who took it ("slain by"), tick **steal** in the same window — steals are never credited to a battle spell. Keys 1–5 / 6–0 pick players fast. **Gold difference**: turn on **Auto** after a one-minute setup (grab a frame from OBS, drag a box around the gold number, test read) — it reads the gold from the game every few seconds with free in-browser OCR, so you only press **Announce gold update**. Upload the real **battle spell icons** in Settings. **Fight** buttons make the casters ask *"Sino kaya ang makakakuha ng…?"*. **Battle spells: one click on the spell icon** starts the countdown and the casters call it (they don't read out cooldown seconds — the HUD shows the timer). Also: K/D/A ±, gold slider/presets, **Announce gold update**, **Instant replay**.
+   - *In-game*: the **game clock** counts the battle (pause, ±seconds, set mm:ss; it pauses on a mid-game break and the duration is saved). **+1 Kill** → pick the killer, then who died (+1 kill / +1 death). **First Blood / Double / Triple / Maniac / Savage** → pick the player, then who died — up to 1 / 2 / 3 / 4 / 5 players, only the ones not counted yet (pressed +1 Kill and it became a Double Kill? pick just the new victim). One kill per victim, one death each; banner with the killer's photo. **+1 Kill at 0 - 0 counts as First Blood** (the first kill of the game), and the **First Blood** button locks as soon as any kill is on the scoreboard. **Savage** pre-selects all five and opens a **10-second continuation**: another Savage in that window adds only the extra victims (+1, +2…) — each continuation restarts the 10 s. **Turtle / Lord / Purple Buff / Orange Buff** per side → pick who took it ("slain by"), tick **steal** in the same window — steals are never credited to a battle spell. Keys 1–5 / 6–0 pick players fast. **Gold difference**: turn on **Auto** after a one-minute setup (grab a frame from OBS, drag a box around the gold number, test read) — it reads the gold from the game every few seconds with free in-browser OCR, so you only press **Announce gold update**. Upload the real **battle spell icons** in Settings. **Fight** buttons make the casters ask *"Sino kaya ang makakakuha ng…?"*. **Battle spells** are picked per player in the **Drafting phase** (next to each pick; editable in-game too). With the **spell reader** on (Settings → Battle spell cooldowns) used spells start their cooldown by themselves; otherwise **one click on the spell icon** starts it. The casters name the spell and its cooldown seconds. **Level**: **+** (asks first) / **−** per player; reaching **Level 15** shows the game time on the HUD (see *Level 15 best time*). Also: K/D/A ±, gold slider/presets, **Announce gold update**, **Instant replay**.
    - *End game* — records stats for the leaderboard, updates the series, and when the series is won advances the bracket (winner → next round, loser → lower bracket) and queues the **series victory / champion** call. Then **Post-game stats**: KDA ratio and Lord/Turtle secures are automatic — type each player's **TP%** (teamfight participation) from the result screen → Save. The post-match **MVP** is the best rating on the winning team; in the Grand Final the **Finals MVP** (most game MVPs, tie → best total rating) is computed automatically and shown on the bracket. The leaderboard adds **TP%** and **MVP** columns.
    - *Between games* — **Start Game N draft** (seats a new random caster pair), **Game intro**, **Break** with countdown + message (after a finished game, **End break → Game N draft** starts the next draft), **End broadcast**.
    - *Automatic caster announcements* (no buttons, no AI quota — hand-written Taglish lines, {partner} = the other caster's name from Settings → Casters):
@@ -181,12 +243,15 @@ They are original characters written in the style of Filipino pro-league (MPL-st
 
 ### Realistic voices (live-caster delivery)
 In **Caster Booth → Voice engine** choose:
-- **Realistic** (default): each exchange is voiced in one Gemini text-to-speech clip with both seated casters taking turns. Every caster has an *original* Gemini voice (e.g. Direk Ken = Fenrir "excitable", Ate Lyka = Kore "firm", Tito Jun = Algenib "gravelly") and is directed to perform like a live Filipino pro-league caster — Taglish pronunciation, hype and shouting on big moments, calm analysis, natural breaths. Change any caster's **Live** voice in the booth and press **Test live voice**. Captions switch as each caster's line begins.
-- **Basic**: free, unlimited browser voices (robotic).
+- **Natural voices — free** (default): Microsoft's natural Filipino voices that come free with **Microsoft Edge** (Angelo for the male caster, Blessica for the female — the desk is always one man + one woman so both speak Filipino properly). No API key, no cost, unlimited. Every line is *performed* instead of read flat: hype calls faster and higher, analysis and storytelling slower and warmer, questions lift at the end, small human variation; ALL-CAPS hype is shouted as words, stretched words ("GRABEEE") are said normally, hero names use broadcast pronunciation (Gusion → "Gusyon", Chou → "Chow", X.Borg → "Ex Borg"…), acronyms are spelled (T-C-C, M-V-P), gold and scores read naturally. The booth shows which natural voices this computer has.
+- **Gemini voices — optional**: each exchange voiced in one Gemini text-to-speech clip (original voices, e.g. Direk Ken = Fenrir "excitable", Ate Lyka = Kore "firm"), even more expressive. Needs `GEMINI_API_KEY` and the free tier allows only a few clips a day. Live Gemini *lines* (AI-written commentary) are optional too — off by default; the casters use the free built-in line library.
 
 The free Gemini tier allows only a few voice requests per day, so set a **Daily cap** and enable billing for a full broadcast. When the cap or quota is reached (or anything fails) the casters continue with browser voices automatically — they never go silent.
 
 > The voices are original and do **not** imitate any real caster. Cloning a real person's voice requires that person's permission; if you want a real caster's voice, work with a caster who agrees to record lines for you.
+
+### Continuous desk talk
+The casters talk like a real desk: the partner answers about 0.1 s after a line ends, the next exchange starts about half a second later (Caster Booth → *Keep talking* gap), and new topics are picked up from the partner (“Tama ka diyan, Mika. …”, “Dagdag ko lang diyan…”). The reply is usually the line written for that exact call, so it stays on topic.
 
 ### One voice at a time — a click takes over after the current line
 Casters take turns — never two voices at once — with a short handoff gap between them. **Every click in the Live Controller takes over as soon as the current line is finished** (nobody is cut mid-sentence; the rest of that exchange is dropped and e.g. "Turtle slain by …" comes next). Events from the same click, like the last pick + draft breakdown, play in order. Only one booth talks at a time: starting the casters in one tab stops them in any other tab (the pill shows "on air in another tab" with **Stop them / Move here**). With **Instant response** on (default), a slow live AI line or realistic voice is replaced by the library line / instant voice so the desk never waits. Between clicks they **keep talking** about what's on screen — draft speculation and storytelling, in-game banter (player spotlights, lane matchups, game time, gold, objectives), post-game recap/MVP, and an occasional word during breaks. The two seated casters are always given different voices.
@@ -202,6 +267,64 @@ Every line — AI or pre-written — is built only from a verified **fact sheet*
 - **Firestore reads:** the landing page never listens to the high-frequency `live/current` document — only overlays and the control room do.
 
 ---
+
+### Pause the game vs Break
+- **Pause the game** (In-game screen, right column under Gold difference): a technical pause. The game clock stops, the break screen goes on air, and you **stay on the In-game screen** with a countdown, **+1 min** and **End pause → resume game**. From **10 seconds left** a reminder beeps on the operator's computer and keeps ringing until you click it; when the time is up the game resumes by itself (clock running again). Works on any admin page.
+- **Break tab**: a normal break — the controller moves to the Break tab and stays there until **End break** (countdown + **+1 min** shown there too). Clicking Break while a game is paused turns the pause into a full break.
+- The game clock sits in the scoreboard at the top of the Live Controller (pause, ±1 s / ±10 s, set mm:ss).
+
+### Gold difference (Settings)
+**Settings → Gold difference**: set up the gold reader once (mark where the game shows the gold). With **Auto** on, every **3 minutes** of play (never during a pause) it reads the gold from the OBS game feed a few times, keeps the value the reads agree on, updates the HUD, and the **casters on the mic for that game** announce it. Manual override and *Announce now* are on the same card. It runs on every admin page.
+
+### Break & pause messages
+Pick the message from a list instead of typing — e.g. *“{Team} technical pause”*, *“Pause requested by {Team}”*, *“Player reconnecting”*, *“Game 2 starts soon!”*, *“{Team A} vs {Team B} — Game 2 up next”* (real team names filled in). *Custom message…* is still there if you need it. A paused game shows **Paused · Game N** and *Resuming in* on the break screen (not “Up next”).
+
+### On the mic
+The two casters seated for the game sit in the **bottom-right corner** above the casters pill on every admin page — **Hide** shrinks it to a small chip, click it to show again.
+
+### Confirmations, invades and stage names
+- **Ask-first buttons**: the contest pre-calls (Turtle / Lord / Purple / Orange fight), turrets (Outer / Inner / Base), **Invade**, Pause the game, Go to break and the announcements open a quick confirm (Enter = yes).
+- **Break tab** can't be clicked during a game (use *Pause the game*). From the draft or after a game, Break asks once, then the break screen goes on air with a **5:00 countdown** and a ready-made message; change the message on the Break tab and the break screen updates right away.
+- **Invade jungle / Invade buff** (per side, next to Turtle / Lord / buffs): an INVADE! banner and the casters call it (“May planong pag-invade ang Bicol Volcanoes — mukhang kukunin ang jungle creeps ng Manila!”). The casters also bring up possible invades in their banter.
+- **Stage names**: the casters say the round like a broadcast — “Game 1 ng Upper Bracket Semifinals”, “Lower Bracket Round 2”, “Grand Final” (never “Upper Round 1 · M2”). In elimination series (lower bracket, single elimination, grand final) they stress that the loser goes home.
+- **Instant replays → break screen**: OBS keeps every replay in its recording folder. Upload the good ones in **Media & Replays** (drop the file, or *Show OBS replays* → *Upload* when the site runs on this computer) and add a **title, short description, keywords and the player (with squad)**. Clips with *Play on the break / pause screen* on play one after another on the break screen, then loop.
+
+### Website: highlights search, Finals MVP, player pages, phone menu
+- **Highlights** can be searched and filtered: type a player, squad or keyword (e.g. *gold lane*, *savage*, *lord steal*) and/or pick a squad and a position — e.g. the gold laner of a squad shows that player's clips.
+- **Leaderboard**: once a champion is crowned the **Finals MVP** gets a gold badge (and a banner), whatever their rank. Click a player (or **Details**) to open their page.
+- **Player page** (`/players/<id>`): breadcrumbs, the player's photo (the same portrait the overlays use), full name, age, sex, role, favourite hero (or none), course, short description, squad, tournament stats and their highlights. **Back to leaderboard** returns to the Leaderboard section. Fill the profile in **Teams & Rosters → Edit player**.
+- **Phones**: the website and the admin use a **burger menu** that slides out a side menu.
+
+### Website: placements, seasons, phones
+- **Teams** section: once a champion is crowned the cards show **Champion**, **1st runner-up**, **2nd runner-up** and **3rd runner-up** (double elimination: Grand Final loser, Lower Final loser, the loser before it; single elimination: Final loser, then the semifinal losers ranked by games won) and **Eliminated** teams — champion and runner-ups listed first.
+- **Seasons**: a season picker sits in the bottom-right corner (hide / show). Picking a season shows that season's matches, bracket, standings, leaderboard and teams. Set each tournament's *Season* (e.g. "Season 2") in Tournaments. Each season has its own teams & rosters (see *Teams & Rosters* above), so the Teams section shows that season's squads.
+- **Phones**: the home carousel shows every slide; the Live Controller lists each player as a block (hero, spell, big − / + for K / D / A) instead of a wide table; admin pages and the setup guide fit the screen.
+
+### Battlefield effects (2026 map)
+Each MLBB game now rolls one battlefield effect. Pick it **during the draft** (Live Controller → Drafting phase → *Battlefield*, also in the In-game event triggers): the draft overlay plays a big reveal with a sound, then the effect settles next to **Best of N** in the top bar. Choose the one the game shows: **Revealing Wisps**, **Healing Turtle**, **Golden Turret** or **Flying Cloud**. A banner shows it, the HUD keeps a small label under the scoreboard (the draft overlay shows it too) and the casters explain what it changes. Then:
+- **Turret** buttons (Outer / Inner / Base) per side — "TURRET DESTROYED", or **GOLDEN TURRET** with bonus gold for the whole team when that effect is on.
+- **Turtle** with Healing Turtle on → **HEALING TURTLE** banner and lines about the allied Turtle pushing and healing.
+- **Wisp reveal** (Revealing Wisps) — the casters call the vision win.
+It resets for every new game and is saved with the game record.
+
+### Battle spells, Retribution and skill names
+- **Cooldowns** (current patch): Flicker 120 s, Execute 90, Purify 90, Sprint 100, Retribution 35, Inspire 75, Revitalize 75, Aegis 75, Petrify 75, Arrival 75, Vengeance 75, Flameshot 50.
+- **Spell reader** (Settings → *Battle spell cooldowns*, like the gold reader): grab a frame from OBS, drag a box around each player's battle spell icon (mark slots 1–2 of a side, **Fill 3–5**), **Calibrate** while every spell is ready, **Test**, **Save & turn on**. About once a second it checks each icon: when an icon goes dark (cooldown) the overlay timer starts and the casters call it; when it lights up again the timer ends right there, so the overlay follows the game's real cooldown. Two readings in a row are needed, and a frame where almost every icon goes dark at once (a scene cut) is ignored. **Screen order this game**: the game lists players in lobby order — match each slot to the right player once per game. Needs OBS connected; the click-the-icon fallback always works.
+- **Casters**: escape spells — *"Ginamit na ni X ang Flicker! Delikado siya ngayon — 120 seconds…"* (Flicker, Purify). Retribution — *"Wala nang retri si X! 35 seconds yan…"*. At **Turtle / Lord / Buff fights** and **invades** they check both junglers: both ready → *"Retri versus retri — sino ang mananalo sa retribution battle?"*; one on cooldown → *"Walang retri si X ng Team — 20 seconds pa! Malaking advantage sa…"*. Steals are still never credited to Retribution.
+- **Skill names**: the casters (and Gemini) say a hero's real skill names — e.g. Ling's *Tempest of Blades* or *Defiant Sword* — never "1st skill / ultimate". The names for all 133 heroes are in `src/lib/heroSkills.ts` (from the MLBB-API dataset of official names; edit when heroes change).
+- **K/D/A** is said as *"5 kills, 1 death, 3 assists"* (singular / plural), and game times as *"8 minutes 13 seconds"*.
+
+### Level 15 best time
+**+ Level** in the In-game player table (asks first) — at **Level 15** the HUD shows a **LEVEL 15** card with the game time. Faster than the tournament's fastest Level 15 → **NEW BEST TIME**, and the previous record under it gets **slashed**; otherwise the standing record is shown. The casters call it (*"BAGONG RECORD! … tinalo ang dating 9:00 ni …"*). The record is saved to the tournament only when the game's **winner is declared**.
+
+### End broadcast before a winner
+Ending the broadcast in the **Drafting phase**, or **in-game before the winner is declared**, saves nothing for that game: no picks / bans (the pick % and ban % stay as they were), no K/D/A, no Level 15 record. Only games with a declared winner count.
+
+### Leaderboard: Players and Heroes
+The website leaderboard has two tabs. **Players**: K/D/A, KDA, TP%, MVPs, streaks and objectives per player (no hero names). **Heroes**: picks, bans, pick + ban (contention), pick %, ban %, win %, wins / losses, KDA and average K/D/A on the hero, and who played it most — plus spotlights for most picked, most banned, most contested, best win rate and best KDA. Every column is sortable.
+
+### Reset data
+**Settings → Reset data** starts fresh (e.g. after test games). Choose what to remove — **Stats** (hero picks/bans, player stats, leaderboard, MVPs), **Brackets & match results**, **Tournaments, teams & players**, **AI caster line library** — then type **RESET**. Images are never deleted: hero portraits, caster photos, battle-spell icons, carousel images and highlight clips stay. End the broadcast first if a series is on air.
 
 ## 10. Project structure
 
@@ -239,7 +362,8 @@ src/
 - **"Not an organizer yet"** — create `admins/{yourUid}` in Firestore (section 2.6).
 - **Uploads disabled** — set both Cloudinary env vars and use an *unsigned* preset.
 - **Casters silent** — press *Start* in the booth (browsers require a click before audio), use Edge, check the voice dropdowns and the *Test* buttons, and capture the Edge window audio in OBS.
-- **Casters sound robotic** — the booth is on *Basic* voices, or the realistic-voice quota/cap was reached (the booth shows a yellow note). Set `GEMINI_API_KEY`, choose *Realistic*, and check the daily cap / billing.
+- **Casters sound robotic** — the booth is on *Basic* voices, or the realistic-voice quota/cap was reached (the booth shows a yellow note). Set `GEMINI_API_KEY`, choose *Realistic*, and check the daily cap / billing. With Basic voices, use Edge and pick the Filipino voices (Angelo / Blessica) in the booth.
+- **OBS disconnects after a refresh** — it reconnects automatically within a few seconds (sidebar shows *OBS reconnecting…*). If it stays on *not connected*, OBS isn't running, the WebSocket server is off, or the password is wrong — press **Connect** once in the OBS card.
 - **AI lines say "AI fallback"** — check `GEMINI_API_KEY` / `GEMINI_MODEL` on Vercel, the daily cap, or a 429 rate limit. The casters keep talking from the library either way.
 - **OBS browser source is black** — (1) normal when no series is on air: overlays only appear in their phase; add `?demo=1` to see sample data while positioning. (2) Keep `npm run dev` running and use `http://127.0.0.1:5180/overlay/...` exactly — on Windows another Vite project on port 5173 can make OBS load the wrong app, which is why this project uses its own fixed port 5180. (3) Source → Properties → *Refresh cache of current page*.
 - **Draft timer looks off on another PC** — sync the clocks (Windows: Settings → Time → Sync now); timers are computed from timestamps.

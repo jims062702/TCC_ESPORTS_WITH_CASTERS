@@ -23,13 +23,26 @@ export const SPELL_ICON: Record<BattleSpell, LucideIcon> = {
 };
 
 /** Battle spell icon with a radial cooldown sweep and seconds remaining. */
-export function SpellBadge({ spell, readyAt, now, size = 28, className }: { spell: BattleSpell; readyAt?: number | null; now: number; size?: number; className?: string }) {
+export function SpellBadge({ spell, readyAt, usedAt, now, size = 28, className }: { spell: BattleSpell | null; readyAt?: number | null; usedAt?: number | null; now: number; size?: number; className?: string }) {
+  if (!spell) {
+    // Not picked yet (Drafting phase).
+    return (
+      <span title="Battle spell not set — pick it in the Drafting phase" className={cn('relative inline-flex shrink-0 items-center justify-center rounded-full border border-dashed border-line font-cond font-bold text-muted', className)} style={{ width: size, height: size, fontSize: size * 0.4 }}>
+        ?
+      </span>
+    );
+  }
+  return <SpellIcon spell={spell} readyAt={readyAt} usedAt={usedAt} now={now} size={size} className={className} />;
+}
+
+function SpellIcon({ spell, readyAt, usedAt, now, size, className }: { spell: BattleSpell; readyAt?: number | null; usedAt?: number | null; now: number; size: number; className?: string }) {
   const Icon = SPELL_ICON[spell] ?? Sparkles;
   // Uploaded icon (Settings → Battle spell icons) replaces the generic symbol.
   const iconUrl = useSpellIcons()[spell];
   const [broken, setBroken] = useState(false);
   useEffect(() => setBroken(false), [iconUrl]);
-  const total = (SPELL_COOLDOWN[spell] ?? 90) * 1000;
+  // Real cooldown length when known (used → ready), else the spell's base cooldown.
+  const total = usedAt && readyAt && readyAt > usedAt ? readyAt - usedAt : (SPELL_COOLDOWN[spell] ?? 90) * 1000;
   const left = readyAt ? Math.max(0, readyAt - now) : 0;
   const onCd = left > 0;
   const pct = onCd ? (left / total) * 100 : 0;

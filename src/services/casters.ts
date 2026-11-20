@@ -1,5 +1,6 @@
 import type { EventType } from '@/types';
 import { shuffle, sleep } from '@/lib/utils';
+import { performLine, spokenForm } from './delivery';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // The TCC caster desk: eight original AI shoutcaster personas (4 male, 4 female)
@@ -143,14 +144,21 @@ export const CASTER_BY_ID: Record<string, CasterPersona> = Object.fromEntries(CA
 export const isCasterId = (id: unknown): id is CasterId => typeof id === 'string' && id in CASTER_BY_ID;
 
 /** Randomly seat 2 distinct casters, avoiding an exact repeat of the previous pair. */
+/**
+ * Seat two casters at random — always one male and one female, so each gets
+ * one of the two free natural Filipino voices (Angelo / Blessica) and the
+ * Tagalog is pronounced properly. Never the same pair twice in a row.
+ */
 export function pickCasterPair(previous: string[] = []): [CasterId, CasterId] {
   const prevKey = [...previous].sort().join('+');
+  const males = CASTERS.filter((c) => c.gender === 'male').map((c) => c.id);
+  const females = CASTERS.filter((c) => c.gender === 'female').map((c) => c.id);
+  const draw = () => shuffle([shuffle(males)[0], shuffle(females)[0]]) as [CasterId, CasterId];
   for (let attempt = 0; attempt < 12; attempt++) {
-    const [a, b] = shuffle(CASTERS.map((c) => c.id));
-    if ([a, b].sort().join('+') !== prevKey) return [a, b];
+    const pair = draw();
+    if ([...pair].sort().join('+') !== prevKey) return pair;
   }
-  const [a, b] = shuffle(CASTERS.map((c) => c.id));
-  return [a, b];
+  return draw();
 }
 
 /** Which of the two seated casters should open the call for an event. */
@@ -193,10 +201,12 @@ export const guessGender = (v: SpeechSynthesisVoice): 'male' | 'female' | null =
   return null;
 };
 
-/** 0 = Philippine voice, 1 = natural/online English, 2 = other English, 3 = other. */
+/** 0 = Filipino voice, 0.5 = Philippine English, 1 = natural/online English, 2 = other English, 3 = other. */
 const voiceRank = (v: SpeechSynthesisVoice) => {
   const lang = v.lang.toLowerCase();
-  if (lang === 'fil-ph' || lang === 'en-ph' || lang === 'tl-ph') return 0;
+  // Filipino voices read Tagalog naturally (and Taglish English well) — first choice for Taglish casting.
+  if (lang === 'fil-ph' || lang === 'tl-ph') return 0;
+  if (lang === 'en-ph') return 0.5;
   if (lang.startsWith('en')) return v.name.toLowerCase().includes('natural') || v.name.toLowerCase().includes('online') ? 1 : 2;
   return 3;
 };
@@ -212,7 +222,16 @@ export function autoAssignVoices(voices: SpeechSynthesisVoice[]): Record<CasterI
   const sorted = [...voices].sort((a, b) => voiceRank(a) - voiceRank(b));
   const used = new Set<string>();
   const result = {} as Record<CasterId, string | null>;
+  // Free natural Filipino voices first (Edge: Angelo = male, Blessica = female): every caster of
+  // that gender uses it — the desk is always one man + one woman, and each persona has its own pitch/pace.
+  const filipino = (g: 'male' | 'female') =>
+    sorted.find((v) => voiceRank(v) === 0 && guessGender(v) === g && /natural|online/i.test(v.name)) ?? sorted.find((v) => voiceRank(v) === 0 && guessGender(v) === g);
   for (const c of CASTERS) {
+    const fil = filipino(c.gender);
+    if (fil) {
+      result[c.id] = fil.voiceURI;
+      continue;
+    }
     const byPref = (filter: (v: SpeechSynthesisVoice) => boolean) => {
       for (const token of c.voice.preferred) {
         const hit = sorted.find((v) => matches(v, token) && filter(v));
@@ -221,8 +240,8 @@ export function autoAssignVoices(voices: SpeechSynthesisVoice[]): Record<CasterI
       return undefined;
     };
     const pick =
-      byPref((v) => voiceRank(v) === 0 && !used.has(v.voiceURI)) ??
-      byPref((v) => voiceRank(v) === 0) ??
+      byPref((v) => voiceRank(v) <= 0.5 && !used.has(v.voiceURI)) ??
+      byPref((v) => voiceRank(v) <= 0.5) ??
       byPref((v) => voiceRank(v) <= 2 && !used.has(v.voiceURI)) ??
       sorted.find((v) => !used.has(v.voiceURI) && guessGender(v) === c.gender && voiceRank(v) <= 2) ??
       sorted.find((v) => guessGender(v) === c.gender && voiceRank(v) <= 2) ??
@@ -257,20 +276,28 @@ export function resolvePairVoices(pair: string[], map: Record<string, string | n
   return out;
 }
 
+/** Saved voice choices — older auto-assignments (before the Filipino natural voices were preferred) are dropped once. */
+export function loadSavedVoiceMap(get: <T>(k: string, d: T) => T, set: (k: string, v: unknown) => void, key: string): Record<string, string | null> {
+  if (get<number>(key + '.v', 0) < 2) {
+    set(key + '.v', 2);
+    set(key, {});
+    return {};
+  }
+  return get<Record<string, string | null>>(key, {});
+}
+
 export interface SpeakOptions {
   voice: SpeechSynthesisVoice | null;
   pitch: number;
   rate: number;
   volume: number;
+  /** How big the moment is (0 = desk talk, 1 = Savage) — shapes speed and pitch per phrase. */
+  intensity?: number;
   onStart?: () => void;
 }
 
 /** Speech-only cleanup: "ECHO.KarlTzy" → "ECHO KarlTzy", "X.Borg" → "X Borg", "Bo5" → "Best of 5". Captions keep the original text. */
-export const speechText = (text: string) =>
-  text
-    .replace(/([A-Za-z]+)\.(?=[A-Za-z])/g, '$1 ')
-    .replace(/\bBo(\d)\b/g, 'Best of $1')
-    .replace(/[_|]/g, ' ');
+export const speechText = (text: string) => spokenForm(text);
 
 /**
  * Wait until the speech engine is completely silent, so a caster never
@@ -291,15 +318,24 @@ export async function waitUntilQuiet(maxMs = 20_000) {
 export function speak(text: string, opts: SpeakOptions): Promise<void> {
   if (!speechSupported()) return Promise.resolve();
   const synth = window.speechSynthesis;
+  // Each phrase gets its own speed and pitch (hype calls faster/higher, analysis slower) —
+  // queued back to back so the line still flows as one breath.
+  const phrases = performLine(text, opts.intensity ?? 0.4, { rate: opts.rate, pitch: opts.pitch }).filter((p) => p.text);
   return new Promise((resolve) => {
-    const u = new SpeechSynthesisUtterance(speechText(text));
-    if (opts.voice) {
-      u.voice = opts.voice;
-      u.lang = opts.voice.lang;
-    }
-    u.pitch = opts.pitch;
-    u.rate = opts.rate;
-    u.volume = opts.volume;
+    if (!phrases.length) return resolve();
+    const utterances = phrases.map((p) => {
+      const u = new SpeechSynthesisUtterance(p.text);
+      if (opts.voice) {
+        u.voice = opts.voice;
+        u.lang = opts.voice.lang;
+      }
+      u.pitch = p.pitch;
+      u.rate = p.rate;
+      u.volume = opts.volume;
+      return u;
+    });
+    const first = utterances[0];
+    const u = utterances[utterances.length - 1];
     let settled = false;
     const finish = () => {
       if (settled) return;
@@ -313,10 +349,10 @@ export function speak(text: string, opts: SpeakOptions): Promise<void> {
     const keepAlive = setInterval(() => {
       if (synth.speaking && !synth.paused) synth.resume();
     }, 10000);
-    u.onstart = () => opts.onStart?.();
+    first.onstart = () => opts.onStart?.();
     u.onend = finish;
-    u.onerror = finish;
-    synth.speak(u);
+    for (const x of utterances) x.onerror = finish;
+    for (const x of utterances) synth.speak(x);
   });
 }
 

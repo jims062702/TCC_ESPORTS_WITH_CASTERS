@@ -334,15 +334,36 @@ export function seedingWinners(matches: Match[], seedOrderIds: string[]): string
   return seedOrderIds.filter((id) => won.has(id));
 }
 
-/** Teams a seeding winner may still pick: first-round teams (not itself) whose match hasn't started and that aren't locked by an earlier pick. */
+const firstRound = (matches: Match[]) => matches.filter((m) => m.bracket === 'UB' && m.round === 1 && m.status !== 'void');
+
+/**
+ * First-round problems: a team placed in two matches, and the teams that went
+ * missing because of it (usually from editing a match's teams by hand).
+ */
+export function firstRoundIssues(matches: Match[], teamIds: string[]) {
+  const count: Record<string, number> = {};
+  for (const m of firstRound(matches)) for (const id of [m.teamAId, m.teamBId]) if (id) count[id] = (count[id] ?? 0) + 1;
+  return {
+    duplicates: Object.keys(count).filter((id) => count[id] > 1),
+    missing: teamIds.filter((id) => !count[id]),
+  };
+}
+
+/**
+ * Teams a seeding winner may still pick: first-round teams whose match hasn't
+ * started and that aren't locked by an earlier pick — never the winner itself,
+ * never its current opponent (nothing would change), each team listed once.
+ */
 export function pickableOpponents(matches: Match[], winnerId: string, locked: Set<string>): string[] {
-  const r1 = matches.filter((m) => m.bracket === 'UB' && m.round === 1 && m.status !== 'void');
+  const r1 = firstRound(matches);
   const own = r1.find((m) => m.teamAId === winnerId || m.teamBId === winnerId);
   if (!own || !notStarted(own)) return [];
-  return r1
+  const current = own.teamAId === winnerId ? own.teamBId : own.teamAId;
+  const ids = r1
     .filter(notStarted)
     .flatMap((m) => [m.teamAId, m.teamBId])
-    .filter((id): id is string => Boolean(id) && id !== winnerId && !locked.has(id!));
+    .filter((id): id is string => Boolean(id) && id !== winnerId && id !== current && !locked.has(id!));
+  return [...new Set(ids)];
 }
 
 /**
@@ -352,9 +373,13 @@ export function pickableOpponents(matches: Match[], winnerId: string, locked: Se
  */
 export function pickOpponent(matches: Match[], winnerId: string, pickedId: string): Match[] {
   if (winnerId === pickedId) throw new Error('A team cannot pick itself.');
-  const r1 = matches.filter((m) => m.bracket === 'UB' && m.round === 1 && m.status !== 'void').map((m) => ({ ...m }));
-  const mw = r1.find((m) => m.teamAId === winnerId || m.teamBId === winnerId);
-  const mp = r1.find((m) => m.teamAId === pickedId || m.teamBId === pickedId);
+  const r1 = firstRound(matches).map((m) => ({ ...m }));
+  const has = (m: Match, id: string) => m.teamAId === id || m.teamBId === id;
+  if (r1.filter((m) => has(m, winnerId)).length > 1 || r1.filter((m) => has(m, pickedId)).length > 1) {
+    throw new Error('A team is in two first-round matches — fix the bracket first (see the warning above).');
+  }
+  const mw = r1.find((m) => has(m, winnerId));
+  const mp = r1.find((m) => has(m, pickedId));
   if (!mw || !mp) throw new Error('Both teams must be in the first round of the bracket.');
   if (!notStarted(mw) || !notStarted(mp)) throw new Error('That match has already started its draft — the opponent can no longer change.');
   if (mw.id === mp.id) return [];

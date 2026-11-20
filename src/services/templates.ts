@@ -3,6 +3,7 @@ import type { CommentaryFacts } from './facts';
 import { CASTER_BY_ID, leadCaster, type CasterId } from './casters';
 import { MAJOR_GROUPS, PERSONA_ACK, PERSONA_VOICE, composeLine, groupForKey, libraryStats, type LineGroup } from './personaLines';
 import { formatGold, pickRandom } from '@/lib/utils';
+import { heroSkills } from '@/lib/heroSkills';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Pre-written shoutcast library ("pre-shoutcasts").
@@ -71,6 +72,19 @@ export const SCRIPT_KEYS = [
   'OBJECTIVE_CONTEST',
   'TURTLE',
   'TURTLE_STEAL',
+  'TURTLE_HEALING',
+  'TURRET',
+  'TURRET_GOLDEN',
+  'INVADE',
+  'INVADE_BUFF',
+  'GAME_START_ELIMINATION',
+  'WISP_REVEAL',
+  'MAP_EFFECT',
+  'MAP_EFFECT_WISPS',
+  'MAP_EFFECT_TURTLE',
+  'MAP_EFFECT_TURRET',
+  'MAP_EFFECT_CLOUD',
+  'BANTER_MAP',
   'LORD',
   'LORD_STEAL',
   'BUFF',
@@ -78,6 +92,17 @@ export const SCRIPT_KEYS = [
   'GOLD_UPDATE',
   'GOLD_EVEN',
   'SPELL_USED',
+  'SPELL_USED_ESCAPE',
+  'SPELL_USED_RETRI',
+  'OBJECTIVE_RETRI_BOTH',
+  'OBJECTIVE_RETRI_DOWN',
+  'INVADE_RETRI_DOWN',
+  'BANTER_RETRI',
+  'LEVEL_MAX',
+  'LEVEL_MAX_RECORD',
+  'LEVEL_MAX_FIRST',
+  'MULTIKILL_ULT',
+  'DRAFT_PICK_SKILL',
   'INSTANT_REPLAY',
   'GAME_RESULT',
   'GAME_RESULT_MATCHPOINT',
@@ -98,6 +123,9 @@ export const SCRIPT_PLACEHOLDERS: Record<string, string> = {
   kills: "team's total kills",
   objCount: 'how many of this objective the team has now',
   objective: 'Turtle, Lord or Buff',
+  effect: "this game's battlefield effect (Revealing Wisps, Healing Turtle, Golden Turret, Flying Cloud)",
+  tier: 'turret destroyed: Outer, Inner or Base',
+  turretCount: 'how many turrets that team has destroyed',
   objectiveUpper: 'TURTLE, LORD or BUFF (for all-caps hype calls)',
   spell: 'battle spell name',
   cooldown: 'spell cooldown in seconds',
@@ -130,6 +158,18 @@ export const SCRIPT_PLACEHOLDERS: Record<string, string> = {
   replayTitle: 'replay headline',
   replayDesc: 'what the replay shows',
   spellWatch: 'a spell currently on cooldown',
+  heroUlt: "the hero's ultimate, by its real skill name (e.g. Tempest of Blades)",
+  heroSkill: "one of the hero's regular skills, by its real name (e.g. Defiant Sword)",
+  blueJungler: 'blue side jungler (has Retribution)',
+  redJungler: 'red side jungler (has Retribution)',
+  downJungler: 'the jungler whose Retribution is on cooldown',
+  downTeam: "that jungler's team",
+  upJungler: 'the jungler whose Retribution is ready',
+  upTeam: "the team whose jungler's Retribution is ready",
+  retriSecs: 'seconds until that Retribution is back',
+  levelTime: 'game time the player reached Level 15, like 8:13',
+  prevTime: 'the Level 15 record before this one, like 9:02',
+  prevPlayer: 'who set that record',
   partner: 'the OTHER caster on the desk (the one being spoken to), e.g. "Ate Lyka"',
   me: 'the caster speaking this line',
   breakMins: 'break length in minutes',
@@ -170,6 +210,80 @@ export const SCRIPT_PLACEHOLDERS: Record<string, string> = {
 type Pair = [string, string];
 
 const BUILTIN: Record<ScriptKey, Pair[]> = {
+  // ── Invades: a team goes into the enemy jungle ──
+  INVADE: [
+    ['May planong pag-invade ang {team}!', 'Mukhang papasukin nila ang jungle ng {enemy} — kukunin ata ang mga jungle creeps!'],
+    ['Invade! Pumasok ang {team} sa jungle ng {enemy}!', 'Delikado yan, {partner} — kapag nahuli sila, teamfight agad.'],
+    ['Uy, nasa jungle na ng {enemy} ang {team}!', 'Gutom na gutom — pati creeps ng kalaban, kinukuha na!'],
+    ['Ang tapang ng {team} — counter-jungle!', 'Pinapahirapan nila ang jungler ng {enemy}. Mawawalan yan ng gold at experience.'],
+    ['Invasion, mga ka-TCC! Papasok ang {team}!', 'Kung hindi makakasagot agad ang {enemy}, malaking lamang ito para sa {team}.'],
+    ['Abangan niyo — lumalapit ang {team} sa jungle ng {enemy}.', 'Mukhang may plano silang nakawin ang farm. Babantayan kaya ito ng {enemy}?'],
+  ],
+  INVADE_BUFF: [
+    ['May planong pag-invade ang {team} — mukhang buff ang target!', 'Kapag nakuha nila yan, malaking dagok sa jungler ng {enemy}.'],
+    ['Buff steal attempt! Papasok ang {team}!', 'Sino kaya ang makakakuha ng buff — {team} o {enemy}?'],
+    ['Inaabangan ng {team} ang buff ng {enemy}!', 'Tamang timing lang ang kailangan, {partner} — isang huling hit lang!'],
+    ['Ang lakas ng loob — aagawin ng {team} ang buff ng {enemy}!', 'Pag nakuha yan, babagal ang farm ng kalaban sa mga susunod na minuto.'],
+    ['Nasa buff na ng {enemy} ang {team}!', 'Ito yung klase ng laro na nananalo ng tempo — matapang, pero kalkulado.'],
+  ],
+  // ── Game start in an elimination series (lower bracket, single elimination, grand final) ──
+  GAME_START_ELIMINATION: [
+    ['Simulan na natin ang Game {gameNumber} ng {stage}!', 'Do-or-die ito, mga ka-TCC — ang matatalo sa seryeng ito, uuwi na.'],
+    ['Simula na ang Game {gameNumber} ng {stage} — elimination na ito!', 'Wala nang bukas para sa matatalo, {partner}. Lahat ibubuhos dito.'],
+    ['Ito na, simula na ang Game {gameNumber} ng {stage}!', 'Isang serye na lang ang pagitan ng {teamA} at {teamB} sa pag-uwi. Sino ang mananatili?'],
+    ['Welcome sa Game {gameNumber} ng {stage} — tara na!', 'Sa ganitong serye, isang pagkakamali lang, tapos na ang kampanya.'],
+  ],
+  // ── 2026 map: battlefield effects, turrets, wisps ──
+  MAP_EFFECT: [
+    ['Battlefield effect ngayong game: {effect}!', 'Iba ang takbo ng laro dito — kailangan nilang mag-adjust agad, {partner}.'],
+    ['{effect} ang lumabas sa mapa ngayon!', 'Abangan natin kung sinong team ang mas handa diyan.'],
+  ],
+  MAP_EFFECT_WISPS: [
+    ['Revealing Wisps ang battlefield effect ngayong game!', 'Delikado ang magtago sa bush — isang wisp lang, kita ka na agad.'],
+    ['May Revealing Wisps tayo sa mapa, mga ka-TCC!', 'Kaya yung mga assassin, ingat sa ambush — lalabas at lalabas ang posisyon nila.'],
+    ['Revealing Wisps! Vision ang magiging laban dito.', 'Kung sino ang maagap kumuha ng wisp, sila ang may mata sa mapa, {partner}.'],
+    ['Battlefield effect: Revealing Wisps.', 'Mahirap mag-flank ngayon — hinahabol ng wisp ang mga nagtatago.'],
+  ],
+  MAP_EFFECT_TURTLE: [
+    ['Healing Turtle ang battlefield effect ngayong game!', 'Walang shield ang Turtle dito — pero may kakamping Turtle na tutulak at magpapagaling sa team!'],
+    ['Healing Turtle, mga ka-TCC!', 'Kaya sobrang importante ng Turtle — hindi lang gold, may kasama pang tutulak sa lane ng kalaban.'],
+    ['Ayan, Healing Turtle ang lumabas!', 'Kapag nakuha mo ang Turtle, tuloy ang push — mabilis pa ang heal ng mga kakampi sa paligid, {partner}.'],
+  ],
+  MAP_EFFECT_TURRET: [
+    ['Golden Turret ang battlefield effect ngayong game!', 'Bawat turret na babagsak, malaking gold para sa buong team — kaya bawat tower, ipaglalaban!'],
+    ['Golden Turret, mga ka-TCC!', 'Mas makapal ang inner at base turret, pero sulit na sulit ang gold kapag nabasag.'],
+    ['May Golden Turret tayo ngayon!', 'Abangan ang split push, {partner} — isang tower lang, pwedeng mag-iba ang gold lead.'],
+  ],
+  MAP_EFFECT_CLOUD: [
+    ['Flying Cloud ang mapa ngayong game!', 'Bagong itsura lang ng ulap — walang binago sa objectives, kaya purong galing ang labanan dito.'],
+    ['Flying Cloud ang battlefield ngayon.', 'Classic na laro, {partner} — walang special effect na masasandalan.'],
+  ],
+  TURRET: [
+    ['Bagsak ang {tier} turret! Sa {team} ang tower!', 'Lumalawak ang mapa para sa {team} — mas madali na ang rotation nila.'],
+    ['TURRET DOWN! Wasak ang {tier} turret ng {enemy}!', 'Ganyan ang tamang pag-convert ng advantage, {partner}.'],
+    ['Isa pang tower para sa {team}!', '{turretCount} turret na ang nabasag nila — tuloy ang pressure!'],
+    ['Wasak ang turret! {team} ang may gawa!', 'Kailangan nang dumepensa ng {enemy}, kung hindi, lalaki pa ang lamang.'],
+  ],
+  TURRET_GOLDEN: [
+    ['GOLDEN TURRET! Bagsak ang {tier} turret ng {enemy}!', 'Ang laking gold niyan para sa buong {team}!'],
+    ['Golden Turret para sa {team}!', 'Lahat sila may dagdag na gold — ramdam agad yan sa items!'],
+    ['Wasak ang tower — at golden pa!', 'Ganyan ang laro sa Golden Turret, {partner} — bawat push, may bonus na ginto.'],
+  ],
+  WISP_REVEAL: [
+    ['Nahuli ng wisp! Kita na ang nagtatago!', 'Salamat sa Revealing Wisp — wala nang surprise attack mula sa {enemy}.'],
+    ['Lumipad ang wisp — revealed!', 'Ang galing ng {team}, hawak nila ang vision ngayon.'],
+    ['WISP REVEAL para sa {team}!', 'Ayan ang lumabas sa bush — hindi na sila makakapag-ambush, {partner}.'],
+    ['Kinuha ni {player} ang wisp — at may nakita!', 'Ganyan kahalaga ang vision sa ganitong battlefield.'],
+  ],
+  TURTLE_HEALING: [
+    ['HEALING TURTLE para sa {team}! Slain by {player}!', 'At ngayon, may kasamang Turtle sa push — mabilis pa ang heal ng mga kakampi sa paligid!'],
+    ['Nakuha ng {team} ang Turtle — Healing Turtle!', 'Tutulak ang kakampi nilang Turtle sa lane ng {enemy}. Kailangan nang dumepensa!'],
+    ['Sa {team} ang Healing Turtle!', 'Walang shield, pero may Turtle companion — perfect sa turret push, {partner}.'],
+  ],
+  BANTER_MAP: [
+    ['Tandaan natin, {effect} ang battlefield effect ngayon.', 'Kaya iba ang galaw ng mga team — inaayon nila ang rotation diyan.'],
+    ['Sa {effect}, iba ang priority sa mapa.', 'Kung sino ang mas mabilis mag-adapt, siya ang may lamang, {partner}.'],
+  ],
   // ── Drafting phase welcome (automatic on Go live / next game) ────────────
   // {partner} = the other caster on the desk, so the lead greets them by name
   // and the reply thanks the lead by name.
@@ -209,6 +323,8 @@ const BUILTIN: Record<ScriptKey, Pair[]> = {
 
   // ── Game start (automatic on Start game) — always says the game number ──
   GAME_START: [
+    ['Simulan na natin ang Game {gameNumber} ng {stage}!', '{teamA} laban sa {teamB} — tara na, mga ka-TCC!'],
+    ['Simula na ang Game {gameNumber} ng {stage} — live na!', 'Sino ang unang makakakuha ng momentum, {partner}?'],
     ['At magsisimula na ang laro! Welcome sa Game {gameNumber}, mga ka-TCC!', '{seriesScore} ang serye — tingnan natin kung sino ang aangat dito.'],
     ['Welcome sa Game {gameNumber}! Simula na ang laban, mga ka-TCC!', 'Bagong game, bagong pagkakataon para sa {teamA} at {teamB}.'],
     ['Game {gameNumber}, let the battle begin! Welcome sa laro, mga ka-TCC!', 'Kumpleto na ang draft — oras na para patunayan ito sa Land of Dawn.'],
@@ -571,6 +687,18 @@ const BUILTIN: Record<ScriptKey, Pair[]> = {
     ['Ayan, {spell} na! Napilitang gumamit si {player}.', 'Kung tama ang tracking ng {enemy}, pwede silang mag-engage agad.'],
     ['Spell watch: naka-cooldown ang {spell} ni {player}.', 'Clutch o kapalpakan? Malalaman natin sa susunod na engagement!'],
   ],
+  // Filled from MORE below (spells, Retribution battles, Level 15, skill names).
+  SPELL_USED_ESCAPE: [],
+  SPELL_USED_RETRI: [],
+  OBJECTIVE_RETRI_BOTH: [],
+  OBJECTIVE_RETRI_DOWN: [],
+  INVADE_RETRI_DOWN: [],
+  BANTER_RETRI: [],
+  LEVEL_MAX: [],
+  LEVEL_MAX_RECORD: [],
+  LEVEL_MAX_FIRST: [],
+  MULTIKILL_ULT: [],
+  DRAFT_PICK_SKILL: [],
   INSTANT_REPLAY: [
     ['Tingnan muna natin ang instant replay! {replayTitle}!', 'Panoorin niyo ulit, mga ka-TCC — ganyan kalinis ang execution!'],
     ['Tingnan muna natin ang instant replay, mga ka-TCC! {replayTitle}!', '{replayDesc}'],
@@ -612,6 +740,8 @@ const BUILTIN: Record<ScriptKey, Pair[]> = {
     ['Hindi na mapipigilan! {winner}, CHAMPIONS ng {tournament}!', '{winnerScore}-{loserScore} sa {format}! Let the celebration begin, mga ka-TCC!'],
   ],
   IDLE_BANTER: [
+    ['Abangan natin kung may mag-iinvade — mainit ang jungle ngayon.', 'Isang maling rotation lang, makukuha ng kalaban ang buff mo, {partner}.'],
+    ['Mukhang may nagbabalak mag-invade, mga ka-TCC.', 'Kapag sabay-sabay silang nawala sa mapa, siguradong may papasukin silang jungle.'],
     ['Habang tahimik ang mapa, lamang ang {leader} ng {gold}.', 'Kailangan ng {trailer} ng pick-off para makabawi.'],
     ['Objectives check: {blueTeam}, {blueTurtles} Turtle at {blueLords} Lord.', '{redTeam} naman, {redTurtles} Turtle at {redLords} Lord.'],
     ['Kills ngayon: {blueTeam} {blueKills}, {redTeam} {redKills}.', 'Vision at rotation ang susi sa ganitong phase ng laro.'],
@@ -627,6 +757,65 @@ const BUILTIN: Record<ScriptKey, Pair[]> = {
 
 /** Extra variety for the most frequent calls (merged into BUILTIN below). */
 const MORE: Partial<Record<ScriptKey, Pair[]>> = {
+  SPELL_USED_ESCAPE: [
+    ['Ginamit na ni {player} ang {spell}!', 'Delikado siya ngayon — {cooldown} seconds bago bumalik ang {spell} niya.'],
+    ['Wala nang {spell} si {player}!', 'Kapag nahuli ulit yan sa susunod na {cooldown} seconds, wala na siyang pang-takas.'],
+    ['Nasunog ang {spell} ni {player}!', 'Bantayan niyo yan, {enemy} — {cooldown} seconds siyang walang escape.'],
+    ['{spell} ni {player}, nagamit na para makaligtas!', 'Pero ngayon, exposed siya. {cooldown} seconds bago niya ulit magamit yan.'],
+    ['Ayan, {spell} agad ni {player}!', 'Malaking window yan para sa {enemy} — hanapin niyo siya habang wala pa yan!'],
+  ],
+  SPELL_USED_RETRI: [
+    ['Ginamit na ni {player} ang Retribution!', 'Walang retri ang jungler ng {team} sa susunod na {cooldown} seconds — pagkakataon yan ng {enemy}!'],
+    ['Wala nang retri si {player}!', '{cooldown} seconds yan. Kung may objective na malapit, delikado ang {team}.'],
+    ['Nasunog ang Retribution ni {player}!', 'Bantayan natin — {cooldown} seconds bago bumalik ang retri niya.'],
+    ['Retri ni {player}, nagamit na!', 'Kung matalino ang {enemy}, gagalaw sila sa objective habang wala pa yan.'],
+  ],
+  OBJECTIVE_RETRI_BOTH: [
+    ['Parehong may Retribution ang junglers — {blueJungler} at {redJungler}!', 'Sino kaya ang mananalo sa retribution battle para sa {objective}?'],
+    ['Handa ang retri ni {blueJungler} at ni {redJungler}!', 'Timing ang labanan dito — isang maling pindot lang, mawawala ang {objective}.'],
+    ['Retri versus retri sa {objective}, mga ka-TCC!', '{blueJungler} o {redJungler} — sino ang mas mabilis ang daliri?'],
+    ['Naka-ready ang Retribution nina {blueJungler} at {redJungler}!', 'Abangan natin kung sino ang mananalo sa retri para sa {objective}!'],
+  ],
+  OBJECTIVE_RETRI_DOWN: [
+    ['Walang retri si {downJungler} ng {downTeam} — {retriSecs} seconds pa!', 'Malaking advantage yan sa {upTeam} para sa {objective}!'],
+    ['Naka-cooldown ang Retribution ni {downJungler}!', '{retriSecs} seconds pa — ito ang tamang oras ng {upTeam} para sa {objective}.'],
+    ['May retri si {upJungler}, wala si {downJungler}!', 'Kung ngayon gagalaw ang {upTeam} sa {objective}, halos sigurado na yan.'],
+    ['Delikado ang {downTeam} sa {objective} — wala pang retri si {downJungler}!', '{retriSecs} seconds pa bago bumalik. Kailangan nilang pigilan ang {upTeam}.'],
+  ],
+  INVADE_RETRI_DOWN: [
+    ['Walang retri si {downJungler} ng {downTeam} ngayon — {retriSecs} seconds pa!', 'Sa invade na ito, malaking bagay yan para sa {upTeam}.'],
+    ['Naka-cooldown pa ang Retribution ni {downJungler}!', 'Kaya pala ngayon ang galaw — si {upJungler} lang ang may retri sa jungle.'],
+    ['Invade habang wala pang retri si {downJungler}!', '{retriSecs} seconds pa — hirap ang {downTeam} na ipagtanggol ang jungle nila.'],
+  ],
+  BANTER_RETRI: [
+    ['Spell watch: wala pang retri si {downJungler} ng {downTeam}.', '{retriSecs} seconds pa — bantayan natin ang mga objective.'],
+    ['Naka-cooldown pa ang Retribution ni {downJungler}.', 'Kung ako ang {upTeam}, gagalaw na ako sa jungle ngayon.'],
+    ['Tingnan niyo, wala pang retri si {downJungler}.', 'Sa ganitong window nanakaw ang Turtle at Lord, mga ka-TCC.'],
+  ],
+  LEVEL_MAX: [
+    ['Level 15 na si {player}, {levelTime} sa orasan!', 'Max level na — pero hindi pa natalo ang record na {prevTime} ni {prevPlayer}.'],
+    ['Max level para kay {player} sa {levelTime}!', 'Malapit, pero ang tournament best ay {prevTime} pa rin, gawa ni {prevPlayer}.'],
+    ['Level 15 na ang {hero} ni {player}!', 'Kumpleto na ang skills niya — {levelTime} ang oras.'],
+  ],
+  LEVEL_MAX_RECORD: [
+    ['LEVEL 15 NA SI {player} sa {levelTime}! BAGONG RECORD!', 'Tinalo niya ang dating {prevTime} ni {prevPlayer}! Ang bilis ng farm!'],
+    ['NEW BEST TIME! {player}, Level 15 sa {levelTime}!', 'Wasak ang lumang record na {prevTime} ni {prevPlayer} — grabe ang tempo ng {team}!'],
+    ['Bagong record, mga ka-TCC! {levelTime} lang, Level 15 na si {player}!', 'Dati, {prevTime} ang pinakamabilis — si {prevPlayer} pa yun. Ngayon, kay {player} na!'],
+  ],
+  LEVEL_MAX_FIRST: [
+    ['Si {player} ang unang umabot ng Level 15 sa tournament na ito — {levelTime}!', 'Yan na ang record na kailangang talunin, mga ka-TCC.'],
+    ['Level 15 sa {levelTime}! {player}, max level na!', 'Unang record sa tournament — tingnan natin kung may makakatalo dito.'],
+  ],
+  MULTIKILL_ULT: [
+    ['Ang {heroUlt} ni {player}, walang nakaligtas!', '{kda} na siya ngayon — ganyan maglaro ng {hero}!'],
+    ['Pasok na pasok ang {heroUlt}!', '{player}, sinamantala ang teamfight — {kda}!'],
+    ['{heroUlt}! Sakto ang timing ni {player}!', 'Yan ang dahilan kung bakit kinuha ng {team} ang {hero}.'],
+  ],
+  DRAFT_PICK_SKILL: [
+    ['Nakuha ng {team} ang {hero} para kay {player}!', 'Abangan ang {heroUlt} niyan sa teamfight — delikado sa {enemy}.'],
+    ['{hero} para kay {player}!', 'Pag pumasok ang {heroUlt}, gulo agad sa backline ng {enemy}.'],
+    ['Lock in: {hero} para sa {team}!', 'Bantayan ang {heroSkill} at ang {heroUlt} niyan — kailangang maging maingat ang {enemy}.'],
+  ],
   GAME_INTRO: [
     ['Game {gameNumber}! Handa na ba kayo, mga ka-TCC?', '{teamA} laban sa {teamB}, {seriesScore} ang serye — let the game begin!'],
     ['Bagong laro, bagong kuwento! Game {gameNumber} ng {stage}!', 'Sino kaya ang mas nakapag-adjust mula sa nakaraang game?'],
@@ -755,6 +944,9 @@ export function scriptVars(f: CommentaryFacts): ScriptVars {
     enemy: f.enemyTeam,
     objective: f.objective,
     objectiveUpper: f.objective?.toUpperCase(),
+    effect: f.mapEffect?.label,
+    tier: f.turret?.tier,
+    turretCount: f.turret ? String(f.turret.count) : undefined,
     spellWatch: f.spellCooldowns?.[0],
   };
   if (f.gold.leader) {
@@ -766,7 +958,7 @@ export function scriptVars(f: CommentaryFacts): ScriptVars {
     v.player = f.actor.ign;
     v.hero = f.actor.hero ?? undefined;
     v.kda = `${f.actor.kills}/${f.actor.deaths}/${f.actor.assists}`;
-    v.spell = f.actor.spell;
+    v.spell = f.actor.spell ?? undefined;
     v.kills = String(f.actor.side === 'blue' ? f.kills.blue : f.kills.red);
   }
   const side = f.actor?.side ?? (f.actorTeam === f.blueTeam ? 'blue' : f.actorTeam === f.redTeam ? 'red' : null);
@@ -840,6 +1032,32 @@ export function scriptVars(f: CommentaryFacts): ScriptVars {
     v.breakMessage = f.breakInfo.message || undefined;
     if (f.breakInfo.nextGame) v.nextGame = String(f.breakInfo.nextGame);
   }
+  // Real skill names of the hero in the line (never "1st skill / ultimate").
+  const sk = heroSkills(v.hero);
+  if (sk) {
+    v.heroUlt = sk.ult || undefined;
+    v.heroSkill = sk.skills.length ? pickRandom(sk.skills) : undefined;
+  }
+  if (f.spellUse) v.cooldown = String(f.spellUse.cooldown);
+  if (f.retri) {
+    const { blue, red } = f.retri;
+    if (blue) v.blueJungler = blue.player;
+    if (red) v.redJungler = red.player;
+    const down = blue && !blue.ready ? blue : red && !red.ready ? red : null;
+    const up = down === blue ? red : blue;
+    if (down && up && up.ready) {
+      v.downJungler = down.player;
+      v.downTeam = down.team;
+      v.retriSecs = String(down.secs);
+      v.upJungler = up.player;
+      v.upTeam = up.team;
+    }
+  }
+  if (f.level) {
+    v.levelTime = f.level.time;
+    v.prevTime = f.level.prevTime;
+    v.prevPlayer = f.level.prevPlayer;
+  }
   // Match point team (for intros).
   const need = f.winsNeeded;
   if (f.scoreA === need - 1 && f.scoreB < need - 1) v.mpTeam = f.teamA;
@@ -888,16 +1106,23 @@ export function scriptKeysFor(event: GameEvent, f: CommentaryFacts): { primary: 
     case 'GAME_START': {
       const moment = seriesMoment(f);
       const base = event.type;
-      return moment ? { primary: [`${base}_${moment}` as ScriptKey], fallback: [base] } : { primary: [base], fallback: [] };
+      if (moment === 'MATCHPOINT' || moment === 'DECIDER') return { primary: [`${base}_${moment}` as ScriptKey], fallback: [base] };
+      // Lower bracket / single elimination / grand final: the loser goes home — say so most of the time.
+      if (base === 'GAME_START' && f.elimination && Math.random() < 0.7) return { primary: ['GAME_START_ELIMINATION'], fallback: ['GAME_START'] };
+      if (moment) return { primary: [`${base}_${moment}` as ScriptKey], fallback: [base] };
+      return { primary: [base], fallback: [] };
     }
-    case 'FIRST_BLOOD':
-    case 'DOUBLE_KILL':
     case 'TRIPLE_KILL':
     case 'MANIAC':
+    case 'SAVAGE':
+      // Now and then the call names the hero's ultimate (its real name).
+      if (f.actor?.skills?.ult && !f.continuation && Math.random() < 0.3) return { primary: ['MULTIKILL_ULT'], fallback: [event.type as ScriptKey] };
+      if (event.type === 'SAVAGE') return f.continuation ? { primary: ['SAVAGE_MORE'], fallback: ['SAVAGE'] } : { primary: ['SAVAGE'], fallback: [] };
+      return (f.victims?.length || f.victim) && Math.random() < 0.6 ? { primary: [(event.type + '_VICTIMS') as ScriptKey], fallback: [event.type as ScriptKey] } : { primary: [event.type as ScriptKey], fallback: ['IDLE_BANTER'] };
+    case 'FIRST_BLOOD':
+    case 'DOUBLE_KILL':
       // Name the players who died most of the time when the operator picked them.
       return (f.victims?.length || f.victim) && Math.random() < 0.6 ? { primary: [(event.type + '_VICTIMS') as ScriptKey], fallback: [event.type as ScriptKey] } : { primary: [event.type as ScriptKey], fallback: ['IDLE_BANTER'] };
-    case 'SAVAGE':
-      return f.continuation ? { primary: ['SAVAGE_MORE'], fallback: ['SAVAGE'] } : { primary: ['SAVAGE'], fallback: [] };
     case 'DRAFT_BAN': {
       if (event.data?.none) return { primary: ['DRAFT_BAN_NONE'], fallback: [] };
       const c = f.draftCall;
@@ -907,7 +1132,24 @@ export function scriptKeysFor(event: GameEvent, f: CommentaryFacts): { primary: 
       return keys.length ? { primary: keys, fallback: ['DRAFT_BAN'] } : { primary: ['DRAFT_BAN'], fallback: [] };
     }
     case 'DRAFT_PICK':
-      return f.draftCall?.signature ? { primary: ['DRAFT_PICK_SIGNATURE'], fallback: ['DRAFT_PICK'] } : { primary: ['DRAFT_PICK'], fallback: [] };
+      if (f.draftCall?.signature) return { primary: ['DRAFT_PICK_SIGNATURE'], fallback: ['DRAFT_PICK'] };
+      // Sometimes: what the hero's skills (by name) bring to the team.
+      return heroSkills(f.draftCall?.hero)?.ult && Math.random() < 0.3 ? { primary: ['DRAFT_PICK_SKILL'], fallback: ['DRAFT_PICK'] } : { primary: ['DRAFT_PICK'], fallback: [] };
+    case 'SPELL_USED':
+      if (f.spellUse?.retri) return { primary: ['SPELL_USED_RETRI'], fallback: ['SPELL_USED'] };
+      if (f.spellUse?.escape && Math.random() < 0.8) return { primary: ['SPELL_USED_ESCAPE'], fallback: ['SPELL_USED'] };
+      return { primary: ['SPELL_USED'], fallback: [] };
+    case 'OBJECTIVE_CONTEST': {
+      // Who wins the Retribution battle? Or: one jungler has no retri.
+      const r = f.retri;
+      const down = r && ((r.blue && !r.blue.ready && r.red?.ready) || (r.red && !r.red.ready && r.blue?.ready));
+      if (down) return { primary: ['OBJECTIVE_RETRI_DOWN'], fallback: ['OBJECTIVE_CONTEST'] };
+      if (r?.blue?.ready && r.red?.ready && Math.random() < 0.75) return { primary: ['OBJECTIVE_RETRI_BOTH'], fallback: ['OBJECTIVE_CONTEST'] };
+      return { primary: ['OBJECTIVE_CONTEST'], fallback: [] };
+    }
+    case 'LEVEL_MAX':
+      if (f.level?.best) return f.level.prevTime ? { primary: ['LEVEL_MAX_RECORD'], fallback: ['LEVEL_MAX_FIRST'] } : { primary: ['LEVEL_MAX_FIRST'], fallback: [] };
+      return { primary: ['LEVEL_MAX'], fallback: [] };
     case 'DRAFT_TALK': {
       // Prefer something specific (speculation, meta, story, matchup); plain draft talk now and then.
       const t = f.draftTalk;
@@ -929,6 +1171,9 @@ export function scriptKeysFor(event: GameEvent, f: CommentaryFacts): { primary: 
       if (f.spotlight) options.push('BANTER_PLAYER', 'BANTER_PLAYER');
       if (f.matchup) options.push('BANTER_MATCHUP');
       if (f.gameMinute) options.push('BANTER_TIME');
+      if (f.mapEffect && f.mapEffect.id !== 'flyingCloud') options.push('BANTER_MAP');
+      const r = f.retri;
+      if (r && ((r.blue && !r.blue.ready && r.red?.ready) || (r.red && !r.red.ready && r.blue?.ready))) options.push('BANTER_RETRI', 'BANTER_RETRI');
       return { primary: [pickRandom(options)], fallback: ['IDLE_BANTER'] };
     }
     case 'BREAK_START':
@@ -942,7 +1187,23 @@ export function scriptKeysFor(event: GameEvent, f: CommentaryFacts): { primary: 
       return { primary: ['GAME_INTRO'], fallback: [] };
     }
     case 'TURTLE':
-      return f.steal ? { primary: ['TURTLE_STEAL'], fallback: ['TURTLE'] } : { primary: ['TURTLE'], fallback: [] };
+      if (f.steal) return { primary: ['TURTLE_STEAL'], fallback: ['TURTLE'] };
+      return f.healingTurtle ? { primary: ['TURTLE_HEALING'], fallback: ['TURTLE'] } : { primary: ['TURTLE'], fallback: [] };
+    case 'TURRET':
+      return f.turret?.golden ? { primary: ['TURRET_GOLDEN'], fallback: ['TURRET'] } : { primary: ['TURRET'], fallback: [] };
+    case 'WISP_REVEAL':
+      return { primary: ['WISP_REVEAL'], fallback: [] };
+    case 'INVADE': {
+      const r = f.retri;
+      const down = r && ((r.blue && !r.blue.ready && r.red?.ready) || (r.red && !r.red.ready && r.blue?.ready));
+      if (down && Math.random() < 0.7) return { primary: ['INVADE_RETRI_DOWN'], fallback: [f.invade === 'buff' ? 'INVADE_BUFF' : 'INVADE'] };
+      return f.invade === 'buff' ? { primary: ['INVADE_BUFF'], fallback: ['INVADE'] } : { primary: ['INVADE'], fallback: [] };
+    }
+    case 'MAP_EFFECT': {
+      const id = f.mapEffect?.id;
+      const key: ScriptKey = id === 'revealingWisps' ? 'MAP_EFFECT_WISPS' : id === 'healingTurtle' ? 'MAP_EFFECT_TURTLE' : id === 'goldenTurret' ? 'MAP_EFFECT_TURRET' : id === 'flyingCloud' ? 'MAP_EFFECT_CLOUD' : 'MAP_EFFECT';
+      return { primary: [key], fallback: ['MAP_EFFECT'] };
+    }
     case 'LORD':
       return f.steal ? { primary: ['LORD_STEAL'], fallback: ['LORD'] } : { primary: ['LORD'], fallback: [] };
     case 'BUFF':
@@ -968,7 +1229,7 @@ export interface TemplateLine {
 }
 
 /** Keys whose follow-up line holds the point of the call — never replaced by a persona reply. */
-const KEEP_FOLLOW = /^(DRAFT_TALK_|DRAFT_BAN_TARGET|DRAFT_BAN_HISTORY|DRAFT_PICK_SIGNATURE|POSTGAME_TALK|BANTER_|BREAK_TALK)/;
+const KEEP_FOLLOW = /^(SPELL_USED_|OBJECTIVE_RETRI_|INVADE_RETRI|LEVEL_MAX|MULTIKILL_ULT|DRAFT_PICK_SKILL|DRAFT_TALK_|DRAFT_BAN_TARGET|DRAFT_BAN_HISTORY|DRAFT_PICK_SIGNATURE|POSTGAME_TALK|BANTER_|BREAK_TALK|MAP_EFFECT|TURRET|WISP_REVEAL|TURTLE_HEALING|INVADE|GAME_START_ELIMINATION)/;
 
 /** Every instant replay opens with this call (templates, library and AI lines). */
 export const REPLAY_LEAD = /tingnan muna natin ang instant replay/i;
@@ -1019,10 +1280,12 @@ export function templateLines(
   extra: ScriptEntry[] = [],
   recentlyUsed: Set<string> = new Set(),
   names: Record<string, string> = {},
+  flow: { lead?: string; bridge?: boolean } = {},
 ): { lines: TemplateLine[]; ids: string[] } {
   const base = scriptVars(facts);
   const { primary, fallback } = scriptKeysFor(event, facts);
-  const [first, second] = leadCaster(pair, event.type);
+  // Keep the conversation going: the caster who didn't speak last opens the next topic.
+  const [first, second] = flow.lead && pair.includes(flow.lead) && pair.length > 1 ? [flow.lead, pair.find((p) => p !== flow.lead)!] : leadCaster(pair, event.type);
   // {partner} is always the OTHER caster: the lead talks to the second caster, the reply talks back to the lead.
   const leadVars: ScriptVars = { ...base, me: casterName(first, names), partner: casterName(second, names) };
   const followVars: ScriptVars = { ...base, me: casterName(second, names), partner: casterName(first, names) };
@@ -1057,15 +1320,19 @@ export function templateLines(
   //    If the lead spoke to them by name, they answer by name first ("Salamat, Direk Ken!").
   let follow = choice.follow;
   const addressed = choice.lead.includes(casterName(second, names));
-  const reply = !keepFollow && Math.random() < 0.7 ? personaLine(second, group, followVars, recentlyUsed, said, addressed) : null;
+  // The paired follow-up was written for this call, so it answers it directly — use it most of
+  // the time; an in-character reply now and then (always acknowledging the partner first).
+  const reply = !keepFollow && Math.random() < 0.3 ? personaLine(second, group, followVars, recentlyUsed, said, addressed) : null;
   if (reply) {
-    const ack = addressed ? acknowledgement(second, group, followVars, reply.text) : '';
+    const ack = addressed || Math.random() < 0.7 ? acknowledgement(second, group, followVars, reply.text) : '';
     follow = ack ? `${ack} ${reply.text}` : reply.text;
     ids.push(reply.id);
   }
   said.add(follow);
+  // Picking up from what the partner just said ("Tama ka diyan, Mika. …") so viewers can follow the conversation.
+  const bridge = flow.bridge ? fillTemplate(pickRandom(BRIDGES), leadVars) : null;
   const lines: TemplateLine[] = [
-    { casterId: first, text: choice.lead },
+    { casterId: first, text: bridge ? `${bridge} ${choice.lead}` : choice.lead },
     { casterId: second, text: follow },
   ];
 
@@ -1079,6 +1346,20 @@ export function templateLines(
   }
   return { lines, ids };
 }
+
+/** How the next caster picks up from the partner before a new topic. */
+const BRIDGES = [
+  'Tama ka diyan, {partner}.',
+  'Oo nga, {partner}.',
+  'Dagdag ko lang diyan, {partner}.',
+  'Sang-ayon ako diyan.',
+  'Ito pa, {partner}.',
+  'At habang pinag-uusapan natin yan…',
+  'Uy, may napansin pa ako.',
+  'Speaking of which…',
+  'Kaya nga, {partner}.',
+  'Exactly, {partner}.',
+];
 
 /** Event call pairs written by hand. */
 export const eventPairCount = () => Object.values(BUILTIN).reduce((n, arr) => n + arr.length, 0);

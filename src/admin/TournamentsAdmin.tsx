@@ -1,17 +1,21 @@
 import { useEffect, useMemo, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ArrowDown, ArrowUp, GitBranch, Plus, Radio, RotateCcw, Save, Shuffle, Trash2, Trophy, X } from 'lucide-react';
 import type { Match, SeriesFormat, Tournament, TournamentStatus, TournamentType } from '@/types';
 import { useGames, useIndex, useMatches, usePlayers, useTeams, useTournaments, useLive } from '@/hooks/useFirestore';
 import { createTournament, deleteTournament, generateTournamentBracket, pickSeedingOpponent, reportSeries, revertSeries, startSeedingRound, updateMatch, updateTournament } from '@/services/db';
-import { pickableOpponents, seedingWinners, seedsFromSeeding } from '@/services/bracket';
+import { firstRoundIssues, pickableOpponents, seedingWinners, seedsFromSeeding } from '@/services/bracket';
 import { goLive, refreshFinalsMvp } from '@/services/live';
 import { FORMAT_LABEL, SERIES_FORMATS, winsNeeded } from '@/lib/constants';
 import { BracketView, PrintBracketButton } from '@/components/Bracket';
 import { TeamLogo } from '@/components/Brand';
 import { Badge, Button, Card, EmptyState, Field, Input, Modal, Select } from '@/components/ui';
 import { useToast } from '@/components/Toast';
+import { useConfirm } from '@/components/Confirm';
+import { DraftNotice } from '@/components/DraftNotice';
+import { clearFormDraft, loadFormDraft, useFormDraft } from '@/hooks/useFormDraft';
 import { cn, shuffle } from '@/lib/utils';
+import { knownSeasons, sameSeason, teamSeason, tournamentSeason } from '@/lib/seasons';
 
 type TDraft = Omit<Tournament, 'id' | 'createdAt'>;
 
@@ -33,16 +37,23 @@ const blank: TDraft = {
 
 export default function TournamentsAdmin() {
   const tournaments = useTournaments();
+  const allTeams = useTeams();
+  const { seasons } = useMemo(() => knownSeasons(tournaments.data, allTeams.data), [tournaments.data, allTeams.data]);
   const toast = useToast();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [creating, setCreating] = useState(false);
   const [draft, setDraft] = useState<TDraft>(blank);
+  // What you type in "New tournament" survives closing the modal by accident.
+  const [draftBase, setDraftBase] = useState<TDraft>(blank);
+  const [restored, setRestored] = useState(false);
+  useFormDraft(creating ? 'tournament:new' : null, draft, draftBase);
   const selected = tournaments.data.find((t) => t.id === selectedId) ?? tournaments.data[0] ?? null;
 
   const create = async () => {
     if (!draft.name.trim()) return toast.error('Name is required');
     const ref = await toast.run(() => createTournament({ ...draft, name: draft.name.trim() }), 'Tournament created');
     if (ref) {
+      clearFormDraft('tournament:new');
       setSelectedId(ref.id);
       setCreating(false);
       setDraft(blank);
@@ -66,7 +77,17 @@ export default function TournamentsAdmin() {
               ))}
             </Select>
           )}
-          <Button icon={<Plus className="h-4 w-4" />} onClick={() => setCreating(true)}>
+          <Button
+            icon={<Plus className="h-4 w-4" />}
+            onClick={() => {
+              const base = { ...blank, season: seasons[seasons.length - 1] ?? '' };
+              const saved = loadFormDraft<TDraft>('tournament:new');
+              setDraftBase(base);
+              setDraft(saved ? { ...base, ...saved } : base);
+              setRestored(Boolean(saved));
+              setCreating(true);
+            }}
+          >
             New tournament
           </Button>
         </div>
@@ -82,7 +103,16 @@ export default function TournamentsAdmin() {
 
       <Modal open={creating} onClose={() => setCreating(false)} title="New tournament">
         <div className="space-y-4">
-          <SettingsFields draft={draft} setDraft={setDraft} />
+          {restored && (
+            <DraftNotice
+              onDiscard={() => {
+                clearFormDraft('tournament:new');
+                setDraft(draftBase);
+                setRestored(false);
+              }}
+            />
+          )}
+          <SettingsFields draft={draft} setDraft={setDraft} seasons={seasons} />
           <Button className="w-full" onClick={create} icon={<Save className="h-4 w-4" />}>
             Create
           </Button>
@@ -92,14 +122,19 @@ export default function TournamentsAdmin() {
   );
 }
 
-function SettingsFields({ draft, setDraft }: { draft: TDraft; setDraft: (d: TDraft) => void }) {
+function SettingsFields({ draft, setDraft, seasons = [] }: { draft: TDraft; setDraft: (d: TDraft) => void; seasons?: string[] }) {
   return (
     <div className="grid gap-4 sm:grid-cols-2">
       <Field label="Name" className="sm:col-span-2">
         <Input value={draft.name} onChange={(e) => setDraft({ ...draft, name: e.target.value })} placeholder="TCC Invitational" />
       </Field>
-      <Field label="Season / edition">
-        <Input value={draft.season ?? ''} onChange={(e) => setDraft({ ...draft, season: e.target.value })} placeholder="Season 1" />
+      <Field label="Season / edition" hint="Teams come from Teams & Rosters of this season">
+        <Input value={draft.season ?? ''} list="tournament-season-options" onChange={(e) => setDraft({ ...draft, season: e.target.value })} placeholder="Season 1" data-testid="tournament-season" />
+        <datalist id="tournament-season-options">
+          {[...seasons].reverse().map((x) => (
+            <option key={x} value={x} />
+          ))}
+        </datalist>
       </Field>
       <Field label="Bracket type">
         <Select value={draft.type} onChange={(e) => setDraft({ ...draft, type: e.target.value as TournamentType })}>
@@ -144,6 +179,7 @@ function SettingsFields({ draft, setDraft }: { draft: TDraft; setDraft: (d: TDra
 
 function TournamentEditor({ t }: { t: Tournament }) {
   const toast = useToast();
+  const ask = useConfirm();
   const navigate = useNavigate();
   const teams = useTeams();
   const players = usePlayers();
@@ -157,10 +193,20 @@ function TournamentEditor({ t }: { t: Tournament }) {
   const [seeds, setSeeds] = useState<string[]>(t.teamIds);
   const [open, setOpen] = useState<Match | null>(null);
   const [busy, setBusy] = useState(false);
+  const [allSeasons, setAllSeasons] = useState(false);
 
   useEffect(() => setSeeds(t.teamIds), [t.teamIds]);
 
-  const available = teams.data.filter((x) => !seeds.includes(x.id));
+  // Each season has its own teams & rosters: pick from this tournament's season.
+  const allTournaments = useTournaments();
+  const { seasons, legacy } = useMemo(() => knownSeasons(allTournaments.data, teams.data), [allTournaments.data, teams.data]);
+  const season = tournamentSeason(draft, legacy);
+  const ofSeason = (id: string) => {
+    const x = teamIndex[id];
+    return !x || sameSeason(teamSeason(x, legacy), season);
+  };
+  const available = teams.data.filter((x) => !seeds.includes(x.id) && (allSeasons || sameSeason(teamSeason(x, legacy), season)));
+  const seasonTeamCount = teams.data.filter((x) => sameSeason(teamSeason(x, legacy), season)).length;
   const seedsChanged = seeds.join() !== t.teamIds.join();
   const settingsChanged = SETTING_FIELDS.some((f) => (draft[f] ?? '') !== (t[f] ?? ''));
 
@@ -174,7 +220,7 @@ function TournamentEditor({ t }: { t: Tournament }) {
 
   const generate = async () => {
     if (seeds.length < 2) return toast.error('Add at least 2 teams');
-    if (t.bracketGenerated && !confirm('Regenerating will erase all existing matches and game stats for this tournament. Continue?')) return;
+    if (t.bracketGenerated && !(await ask({ title: 'Regenerate the bracket?', message: 'This erases all existing matches and game stats for this tournament.', confirmLabel: 'Regenerate', danger: true }))) return;
     setBusy(true);
     const count = await toast.run(() => generateTournamentBracket({ ...t, ...draft, id: t.id, createdAt: t.createdAt }, seeds));
     setBusy(false);
@@ -191,7 +237,7 @@ function TournamentEditor({ t }: { t: Tournament }) {
 
   const startSeeding = async () => {
     if (seeds.length < 2) return toast.error('Add at least 2 teams');
-    if ((t.bracketGenerated || matches.data.length) && !confirm('Starting a seeding round erases the current bracket, matches and game stats for this tournament. Continue?')) return;
+    if ((t.bracketGenerated || matches.data.length) && !(await ask({ title: 'Start a seeding round?', message: 'This erases the current bracket, matches and game stats for this tournament.', confirmLabel: 'Start seeding', danger: true }))) return;
     setBusy(true);
     const count = await toast.run(() => startSeedingRound({ ...t, ...draft, id: t.id, createdAt: t.createdAt }, seeds));
     setBusy(false);
@@ -219,7 +265,7 @@ function TournamentEditor({ t }: { t: Tournament }) {
                 variant="danger"
                 icon={<Trash2 className="h-4 w-4" />}
                 onClick={() => {
-                  if (confirm(`Delete ${t.name}, its matches and game stats?`)) void toast.run(() => deleteTournament(t.id), 'Tournament deleted');
+                  void ask({ title: `Delete ${t.name}?`, message: 'The tournament, its matches and game stats are deleted. This can\'t be undone.', confirmLabel: 'Delete tournament', danger: true }).then((ok) => { if (ok) void toast.run(() => deleteTournament(t.id), 'Tournament deleted'); });
                 }}
               >
                 Delete
@@ -235,13 +281,13 @@ function TournamentEditor({ t }: { t: Tournament }) {
             </>
           }
         >
-          <SettingsFields draft={draft} setDraft={setDraft} />
+          <SettingsFields draft={draft} setDraft={setDraft} seasons={seasons} />
           {t.bracketGenerated && <p className="mt-3 text-xs text-muted">Type & format changes apply the next time you generate the bracket. Per-match formats can be edited below.</p>}
         </Card>
 
         <Card
           title="Teams & seeding"
-          subtitle="Seed #1 at the top. Byes go to the top seeds automatically."
+          subtitle={`${season} teams · Seed #1 at the top. Byes go to the top seeds automatically.`}
           actions={
             <>
               <Button size="sm" variant="secondary" icon={<Shuffle className="h-4 w-4" />} onClick={() => setSeeds(shuffle(seeds))}>
@@ -264,6 +310,11 @@ function TournamentEditor({ t }: { t: Tournament }) {
                     <span className="w-6 text-center font-display text-lg leading-none text-brand">{i + 1}</span>
                     <TeamLogo url={teamIndex[id]?.logoUrl} name={teamIndex[id]?.name} size={22} />
                     <span className="min-w-0 flex-1 truncate text-sm">{teamIndex[id]?.name ?? 'Deleted team'}</span>
+                    {!ofSeason(id) && (
+                      <span className="shrink-0 rounded bg-amber-500/15 px-1.5 py-0.5 text-[10px] font-semibold text-amber-600 dark:text-amber-400" title={`This team is from ${teamSeason(teamIndex[id], legacy)}, not ${season}`}>
+                        {teamSeason(teamIndex[id], legacy)}
+                      </span>
+                    )}
                     <button onClick={() => move(i, -1)} className="text-muted hover:text-fg" aria-label="Up">
                       <ArrowUp className="h-4 w-4" />
                     </button>
@@ -277,20 +328,50 @@ function TournamentEditor({ t }: { t: Tournament }) {
                 ))}
                 {!seeds.length && <li className="text-sm text-muted">Add teams from the right.</li>}
               </ol>
+              {seeds.some((id) => !ofSeason(id)) && (
+                <p className="mt-2 text-xs text-amber-600 dark:text-amber-400" data-testid="other-season-note">
+                  {seeds.filter((id) => !ofSeason(id)).length} seeded team(s) are from another season. For a fresh {season} roster, create or copy the teams in{' '}
+                  <Link to="/admin/teams" className="underline">
+                    Teams &amp; Rosters
+                  </Link>
+                  , then swap them here{t.bracketGenerated || matches.data.length ? ' and regenerate the bracket (this erases its matches)' : ''}.
+                </p>
+              )}
             </div>
             <div>
-              <p className="label">Available</p>
-              <ul className="scrollbar-thin max-h-80 space-y-1 overflow-y-auto">
+              <div className="flex items-center justify-between gap-2">
+                <p className="label">Available · {allSeasons ? 'all seasons' : season}</p>
+                <label className="mb-1.5 flex cursor-pointer items-center gap-1.5 text-xs text-muted">
+                  <input type="checkbox" className="h-3.5 w-3.5 accent-brand" checked={allSeasons} onChange={(e) => setAllSeasons(e.target.checked)} data-testid="all-seasons" />
+                  All seasons
+                </label>
+              </div>
+              <ul className="scrollbar-thin max-h-80 space-y-1 overflow-y-auto" data-testid="available-teams">
                 {available.map((x) => (
                   <li key={x.id}>
                     <button onClick={() => setSeeds([...seeds, x.id])} className="flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left text-sm hover:bg-surface2">
-                      <Plus className="h-4 w-4 text-brand" />
+                      <Plus className="h-4 w-4 shrink-0 text-brand" />
                       <TeamLogo url={x.logoUrl} name={x.name} size={22} />
-                      <span className="truncate">{x.name}</span>
+                      <span className="min-w-0 flex-1 truncate">{x.name}</span>
+                      {allSeasons && <span className="shrink-0 text-[10px] text-muted">{teamSeason(x, legacy)}</span>}
                     </button>
                   </li>
                 ))}
-                {!available.length && <li className="text-sm text-muted">All teams added.</li>}
+                {!available.length && (
+                  <li className="text-sm text-muted">
+                    {seasonTeamCount || allSeasons ? (
+                      'All teams added.'
+                    ) : (
+                      <>
+                        No {season} teams yet —{' '}
+                        <Link to="/admin/teams" className="text-brand underline">
+                          create them in Teams &amp; Rosters
+                        </Link>
+                        .
+                      </>
+                    )}
+                  </li>
+                )}
               </ul>
             </div>
           </div>
@@ -389,9 +470,10 @@ function TournamentEditor({ t }: { t: Tournament }) {
         match={open ? (matches.data.find((m) => m.id === open.id) ?? open) : null}
         onClose={() => setOpen(null)}
         teams={teams.data}
+        siblings={matches.data}
         onGoLive={async (m) => {
           if (live.data.matchId === m.id) return navigate('/admin/controller');
-          if (live.data.matchId && !confirm('Another series is on air. Replace it?')) return;
+          if (live.data.matchId && !(await ask({ title: 'Replace the series on air?', message: 'Another series is on air right now. Going live takes it off air.', confirmLabel: 'Go live' }))) return;
           const ok = await toast.run(async () => {
             await goLive({ match: m, tournament: t, teams: teams.data, players: players.data, previousCasters: live.data.casters });
             return true;
@@ -403,8 +485,9 @@ function TournamentEditor({ t }: { t: Tournament }) {
   );
 }
 
-function MatchEditor({ match, onClose, teams, onGoLive }: { match: Match | null; onClose: () => void; teams: { id: string; name: string }[]; onGoLive: (m: Match) => void }) {
+function MatchEditor({ match, onClose, teams, onGoLive, siblings = [] }: { match: Match | null; onClose: () => void; teams: { id: string; name: string }[]; onGoLive: (m: Match) => void; siblings?: Match[] }) {
   const toast = useToast();
+  const ask = useConfirm();
   const [scoreA, setScoreA] = useState(0);
   const [scoreB, setScoreB] = useState(0);
   const [when, setWhen] = useState('');
@@ -420,6 +503,9 @@ function MatchEditor({ match, onClose, teams, onGoLive }: { match: Match | null;
   const need = winsNeeded(match.format);
   const teamName = (id: string | null) => teams.find((t) => t.id === id)?.name ?? 'TBD';
   const canReport = match.teamAId && match.teamBId && match.status !== 'completed';
+  // Teams already playing in another match of the same round can't be added here (no duplicates).
+  const busy = new Set(siblings.filter((m) => m.id !== match.id && m.bracket === match.bracket && m.round === match.round && m.status !== 'void').flatMap((m) => [m.teamAId, m.teamBId]).filter(Boolean) as string[]);
+  const choices = (current: string | null, other: string | null) => teams.filter((t) => t.id === current || (!busy.has(t.id) && t.id !== other));
   const validScore = (scoreA === need && scoreB < need) || (scoreB === need && scoreA < need);
 
   return (
@@ -429,7 +515,7 @@ function MatchEditor({ match, onClose, teams, onGoLive }: { match: Match | null;
           <Field label="Team A">
             <Select value={match.teamAId ?? ''} disabled={match.status === 'completed'} onChange={(e) => toast.run(() => updateMatch(match.id, { teamAId: e.target.value || null, status: e.target.value && match.teamBId ? 'ready' : 'pending' }))}>
               <option value="">TBD</option>
-              {teams.map((t) => (
+              {choices(match.teamAId, match.teamBId).map((t) => (
                 <option key={t.id} value={t.id}>
                   {t.name}
                 </option>
@@ -439,7 +525,7 @@ function MatchEditor({ match, onClose, teams, onGoLive }: { match: Match | null;
           <Field label="Team B">
             <Select value={match.teamBId ?? ''} disabled={match.status === 'completed'} onChange={(e) => toast.run(() => updateMatch(match.id, { teamBId: e.target.value || null, status: e.target.value && match.teamAId ? 'ready' : 'pending' }))}>
               <option value="">TBD</option>
-              {teams.map((t) => (
+              {choices(match.teamBId, match.teamAId).map((t) => (
                 <option key={t.id} value={t.id}>
                   {t.name}
                 </option>
@@ -478,7 +564,7 @@ function MatchEditor({ match, onClose, teams, onGoLive }: { match: Match | null;
                 variant="danger"
                 icon={<RotateCcw className="h-4 w-4" />}
                 onClick={() => {
-                  if (confirm('Revert this result? Teams will be removed from the next matches.')) void toast.run(() => revertSeries(match), 'Result reverted');
+                  void ask({ title: 'Revert this result?', message: 'The teams are removed from the next matches.', confirmLabel: 'Revert result', danger: true }).then((ok) => { if (ok) void toast.run(() => revertSeries(match), 'Result reverted'); });
                 }}
               >
                 Revert result
@@ -540,8 +626,39 @@ function OpponentPicks({ t, matches, teamIndex }: { t: Tournament; matches: Matc
   };
   if (!winners.length) return null;
   const name = (id: string | null) => (id ? teamIndex[id]?.name ?? id : 'BYE');
+  const issues = firstRoundIssues(matches, t.teamIds);
   return (
-    <Card title="Seeding winners pick their opponent" subtitle="Only teams that won their seeding game choose. Pick any team except yourself (seeding winners or losers) — the bracket swaps automatically. Once a match's draft starts, it can't change.">
+    <Card title="Seeding winners pick their opponent" subtitle="Only teams that won their seeding game choose. Pick any team except yourself and your current opponent (seeding winners or losers) — the bracket swaps automatically. Once a match's draft starts, it can't change.">
+      {issues.duplicates.length > 0 && (
+        <div className="mb-3 rounded-xl border border-amber-500/50 bg-amber-500/10 p-3 text-sm">
+          <p className="font-semibold">
+            {issues.duplicates.map(name).join(', ')} {issues.duplicates.length === 1 ? 'is' : 'are'} in two first-round matches
+            {issues.missing.length ? ` and ${issues.missing.map(name).join(', ')} ${issues.missing.length === 1 ? 'is' : 'are'} missing` : ''} — probably from editing a match by hand. Fix it before picking:
+          </p>
+          <ul className="mt-2 space-y-1.5">
+            {r1
+              .filter((m) => issues.duplicates.some((d) => m.teamAId === d || m.teamBId === d))
+              .map((m) => {
+                const dup = issues.duplicates.find((d) => m.teamAId === d || m.teamBId === d)!;
+                const slot = m.teamAId === dup ? 'teamAId' : 'teamBId';
+                const open = m.status === 'ready' || m.status === 'pending';
+                return (
+                  <li key={m.id} className="flex flex-wrap items-center gap-2">
+                    <span className="text-muted">
+                      {m.label}: {name(m.teamAId)} vs {name(m.teamBId)}
+                    </span>
+                    {open &&
+                      issues.missing.map((missing) => (
+                        <Button key={missing} size="xs" variant="secondary" onClick={() => toast.run(() => updateMatch(m.id, { [slot]: missing, status: 'ready' }), `${name(missing)} is back in the bracket`)}>
+                          Put {name(missing)} here instead of {name(dup)}
+                        </Button>
+                      ))}
+                  </li>
+                );
+              })}
+          </ul>
+        </div>
+      )}
       <ul className="divide-y divide-line">
         {winners.map((w) => {
           const options = pickableOpponents(matches, w, locked);

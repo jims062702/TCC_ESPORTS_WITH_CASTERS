@@ -5,6 +5,7 @@ import LandingPage from './landing/LandingPage';
 
 // Admin & overlay bundles are code-split so the public landing page stays light.
 const GuidePage = lazy(() => import('./guide/GuidePage'));
+const PlayerPage = lazy(() => import('./landing/PlayerPage'));
 const AdminLayout = lazy(() => import('./admin/AdminLayout'));
 const Login = lazy(() => import('./admin/Login'));
 const Dashboard = lazy(() => import('./admin/Dashboard'));
@@ -37,6 +38,7 @@ export default function App() {
       <Route path="/" element={<LandingPage />} />
 
       <Route path="/guide" element={<S><GuidePage /></S>} />
+      <Route path="/players/:id" element={<S><PlayerPage /></S>} />
       <Route path="/admin/login" element={<S><Login /></S>} />
       <Route path="/admin" element={<S><AdminLayout /></S>}>
         <Route index element={<S><Dashboard /></S>} />

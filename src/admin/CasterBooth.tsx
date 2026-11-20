@@ -4,18 +4,8 @@ import { BookOpen, Bot, Lock, Mic2, Power, Sparkles, Trash2, Volume2, Wand2 } fr
 import type { ScriptLibrary } from '@/types';
 import { useDocData, useLive, useSettings } from '@/hooks/useFirestore';
 import { COL } from '@/services/firebase';
-import {
-  DEFAULT_ENGINE_SETTINGS,
-  boothEngine,
-  SCRIPT_DOC,
-  aiUsageToday,
-  clearLibrary,
-  pregenerateLibrary,
-  type EngineLogEntry,
-  type EngineSettings,
-  type EngineStatus,
-} from '@/services/commentary';
-import { CASTERS, CASTER_BY_ID, autoAssignVoices, loadVoices, speechSupported, type CasterId } from '@/services/casters';
+import { boothEngine, SCRIPT_DOC, aiUsageToday, clearLibrary, pregenerateLibrary, type EngineLogEntry, type EngineSettings, type EngineStatus, loadEngineSettings } from '@/services/commentary';
+import { CASTERS, CASTER_BY_ID, autoAssignVoices, loadVoices, speechSupported, type CasterId, loadSavedVoiceMap } from '@/services/casters';
 import { GEMINI_VOICES, TTS_PROFILE, loadGeminiVoices, saveGeminiVoices, ttsUsageToday } from '@/services/tts';
 import { SCRIPT_KEYS, builtinCount, eventPairCount } from '@/services/templates';
 import { LineLibrary } from './LineLibrary';
@@ -24,20 +14,26 @@ import { cn, safeLocalGet, safeLocalSet } from '@/lib/utils';
 import { CasterAvatar } from '@/components/Brand';
 import { Badge, Button, Card, Field, Input, Notice, Select, Switch } from '@/components/ui';
 import { useToast } from '@/components/Toast';
+import { useConfirm } from '@/components/Confirm';
 
 const VOICE_ENGINES = [
-  { v: 'gemini', title: 'Realistic', desc: 'Original Gemini voices performing like live casters (emotion, hype, Taglish). Uses Gemini quota.' },
-  { v: 'browser', title: 'Basic', desc: 'Free, unlimited browser voices. Sounds robotic.' },
+  {
+    v: 'browser',
+    title: 'Natural voices — free',
+    desc: 'Microsoft Natural Filipino voices in Edge: free, unlimited, no API key. Every line is performed — hype calls faster and higher, analysis and stories slower — with broadcast pronunciation.',
+  },
+  { v: 'gemini', title: 'Gemini voices — optional', desc: 'Even more expressive, but needs GEMINI_API_KEY and has a small free daily limit (more needs billing).' },
 ] as const;
 
 export default function CasterBooth() {
   const toast = useToast();
+  const ask = useConfirm();
   const live = useLive();
   const settingsDoc = useSettings();
   const library = useDocData<ScriptLibrary>(COL.scripts, SCRIPT_DOC);
-  const [settings, setSettings] = useState<EngineSettings>(() => safeLocalGet(STORAGE_KEYS.boothSettings, DEFAULT_ENGINE_SETTINGS));
+  const [settings, setSettings] = useState<EngineSettings>(loadEngineSettings);
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
-  const [voiceMap, setVoiceMap] = useState<Record<string, string | null>>(() => safeLocalGet(STORAGE_KEYS.boothVoices, {} as Record<string, string | null>));
+  const [voiceMap, setVoiceMap] = useState<Record<string, string | null>>(() => loadSavedVoiceMap(safeLocalGet, safeLocalSet, STORAGE_KEYS.boothVoices));
   const [geminiVoices, setGeminiVoices] = useState<Record<string, string>>(loadGeminiVoices);
   const [status, setStatus] = useState<EngineStatus | null>(null);
   const [log, setLog] = useState<EngineLogEntry[]>([]);
@@ -100,7 +96,7 @@ export default function CasterBooth() {
 
   const generate = async () => {
     const calls = Math.ceil(SCRIPT_KEYS.length / 5);
-    if (!confirm(`Pre-generate ~${perKey * SCRIPT_KEYS.length} shoutcast lines with ${calls} Gemini calls? They are saved and reused for the whole tournament.`)) return;
+    if (!(await ask({ title: 'Pre-generate lines?', message: `About ${perKey * SCRIPT_KEYS.length} shoutcast lines with ${calls} Gemini calls. They are saved and reused for the whole tournament.`, confirmLabel: 'Generate' }))) return;
     setGenProgress({ done: 0, total: calls });
     const added = await toast.run(() => pregenerateLibrary(perKey, (done, total) => setGenProgress({ done, total })));
     setGenProgress(null);
@@ -263,9 +259,10 @@ export default function CasterBooth() {
                   </Field>
                 </div>
               )}
+              {!realistic && <NaturalVoiceStatus voices={voices} />}
               {status?.voiceNote && <p className="mt-2 text-xs text-amber-500">{status.voiceNote}</p>}
             </div>
-            <Switch checked={settings.aiEnabled} onChange={(v) => set('aiEnabled', v)} label={<span>Live Gemini calls {settings.aiEnabled ? 'on' : 'off (library only, zero quota)'}</span>} />
+            <Switch checked={settings.aiEnabled} onChange={(v) => set('aiEnabled', v)} label={<span>Live Gemini lines (optional) {settings.aiEnabled ? 'on' : 'off — free built-in line library'}</span>} />
             <Switch
               checked={settings.aiOnlyPriority}
               disabled={!settings.aiEnabled}
@@ -289,9 +286,9 @@ export default function CasterBooth() {
               onChange={(v) => set('instant', v)}
               label={<span><strong>Instant response</strong> — a click cuts in at once; if live AI or the realistic voice is slow, the library line / instant voice is used</span>}
             />
-            <div className="grid grid-cols-[auto_1fr] items-center gap-3">
+            <div className="grid grid-cols-[1fr_76px] items-center gap-3">
               <Switch checked={settings.idleBanter} onChange={(v) => set('idleBanter', v)} label="Keep talking between clicks (draft talk, banter, recap)" />
-              <Input type="number" min={1} max={30} value={settings.talkGapSec ?? 3} onChange={(e) => set('talkGapSec', Math.min(30, Math.max(1, Number(e.target.value) || 3)))} title="Seconds of silence before they keep talking" />
+              <Input type="number" min={0.3} max={30} step={0.1} value={settings.talkGapSec ?? 0.5} onChange={(e) => set('talkGapSec', Math.min(30, Math.max(0.3, Number(e.target.value) || 0.5)))} title="Seconds of silence before they keep talking (0.5 = continuous)" />
             </div>
             <Switch checked={settings.aiBanter} disabled={!settings.aiEnabled || settings.aiOnlyPriority} onChange={(v) => set('aiBanter', v)} label="Use AI for banter (uses more quota)" />
             <div className="grid grid-cols-2 gap-3">
@@ -327,7 +324,7 @@ export default function CasterBooth() {
                 variant="ghost"
                 icon={<Trash2 className="h-4 w-4" />}
                 onClick={() => {
-                  if (confirm('Delete all Gemini pre-generated lines? (Built-in lines stay.)')) void toast.run(clearLibrary, 'AI library cleared');
+                  void ask({ title: 'Clear the AI library?', message: 'Deletes all Gemini pre-generated lines. Built-in lines stay.', confirmLabel: 'Delete lines', danger: true }).then((ok) => { if (ok) void toast.run(clearLibrary, 'AI library cleared'); });
                 }}
               />
             )}
@@ -402,5 +399,26 @@ function Stat({ label, value }: { label: string; value: string | number }) {
       <dt className="font-cond text-[11px] font-semibold uppercase tracking-wider text-muted">{label}</dt>
       <dd className="font-display text-2xl leading-none">{value}</dd>
     </div>
+  );
+}
+
+/** Which free natural voices this computer has (Edge on Windows ships the Philippine ones). */
+function NaturalVoiceStatus({ voices }: { voices: SpeechSynthesisVoice[] }) {
+  if (!voices.length) return null;
+  const ph = voices.filter((v) => /-(PH)$/i.test(v.lang));
+  const natural = ph.filter((v) => /natural|online/i.test(v.name));
+  const name = (v: SpeechSynthesisVoice) => v.name.replace(/^Microsoft\s+/i, '').replace(/\s+Online.*$/i, '').replace(/\s+-.*$/, '');
+  if (!natural.length)
+    return (
+      <p className="mt-3 rounded-lg border border-amber-500/40 bg-amber-500/10 p-2 text-xs">
+        No free natural Philippine voices in this browser. Open the admin in <strong>Microsoft Edge</strong> (Windows) — it includes Angelo and Blessica (Filipino) and James and Rosa
+        (English-PH) for free.
+      </p>
+    );
+  return (
+    <p className="mt-3 text-xs text-muted">
+      Free natural voices ready: <strong className="text-fg">{natural.map((v) => `${name(v)} (${/^fil|^tl/i.test(v.lang) ? 'Filipino' : 'English-PH'})`).join(', ')}</strong>. The desk is
+      always one man + one woman so both speak with a Filipino voice.
+    </p>
   );
 }
