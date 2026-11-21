@@ -5,7 +5,7 @@ import { SPELL_COOLDOWN, winsNeeded } from '@/lib/constants';
 import { allHeroes, canonicalHero, heroInfo, searchHeroes } from '@/lib/heroData';
 import { useSpellIcons } from '@/hooks/useFirestore';
 import { cld } from '@/services/cloudinary';
-import { cn } from '@/lib/utils';
+import { cn, resolveImageUrl } from '@/lib/utils';
 
 export const SPELL_ICON: Record<BattleSpell, LucideIcon> = {
   Execute: Skull,
@@ -53,7 +53,7 @@ function SpellIcon({ spell, readyAt, usedAt, now, size, className }: { spell: Ba
       style={{ width: size, height: size }}
     >
       {iconUrl && !broken ? (
-        <img src={cld(iconUrl, { w: size * 2, h: size * 2 })} alt={spell} onError={() => setBroken(true)} className="absolute inset-0 h-full w-full object-cover" draggable={false} />
+        <img src={cld(iconUrl, { w: size * 2, h: size * 2 })} alt={spell} referrerPolicy="no-referrer" onError={() => setBroken(true)} className="absolute inset-0 h-full w-full object-cover" draggable={false} />
       ) : (
         <Icon style={{ width: size * 0.55, height: size * 0.55 }} />
       )}
@@ -71,11 +71,12 @@ function SpellIcon({ spell, readyAt, usedAt, now, size, className }: { spell: Ba
 
 /** Hero portrait (uploaded in Admin → Media) or a stylised name card. */
 export function HeroArt({ name, portraits, className, dim }: { name: string; portraits: Record<string, string>; className?: string; dim?: boolean }) {
-  const url = name ? portraits[name.toLowerCase()] : '';
+  const rawUrl = name ? portraits[name.toLowerCase()] : '';
+  const url = rawUrl ? resolveImageUrl(rawUrl) : '';
   return (
     <div className={cn('relative overflow-hidden bg-ink-900', className)}>
       {url ? (
-        <img src={cld(url, { w: 300, h: 400 })} alt={name} className={cn('h-full w-full object-cover', dim && 'grayscale')} />
+        <img src={cld(url, { w: 300, h: 400 })} alt={name} referrerPolicy="no-referrer" className={cn('h-full w-full object-cover', dim && 'grayscale')} />
       ) : (
         <div className="flex h-full w-full items-center justify-center bg-[radial-gradient(circle_at_50%_30%,rgba(248,49,47,0.35),transparent_70%)]">
           <span className={cn('px-1 text-center font-display uppercase leading-[0.85] text-white', dim && 'text-ink-400')} style={{ fontSize: 'clamp(14px, 1.4em, 40px)' }}>

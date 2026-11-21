@@ -13,7 +13,17 @@ import { useToast } from '@/components/Toast';
 import { useConfirm } from '@/components/Confirm';
 
 /** Series-level announcements, post-game flow and break mode. */
-export function SeriesPanel({ live, players, teams }: { live: LiveState; players: Player[]; teams: Team[] }) {
+export function SeriesPanel({
+  live,
+  players,
+  teams,
+  onEndBroadcast,
+}: {
+  live: LiveState;
+  players: Player[];
+  teams: Team[];
+  onEndBroadcast?: () => void;
+}) {
   const toast = useToast();
   const ask = useConfirm();
   /** Lineup dialog before the next game's draft (from "Start Game N draft" or "End break"). */
@@ -54,9 +64,21 @@ export function SeriesPanel({ live, players, teams }: { live: LiveState; players
       >
         <div className="space-y-3">
           {seriesOver ? (
-            <p className="rounded-xl border border-brand/40 bg-brand/10 px-3 py-2 text-sm">
-              Series complete — the bracket has advanced. Use <strong>End broadcast</strong> above when you&apos;re done, or play the break loop.
-            </p>
+            <div className="space-y-3">
+              <p className="rounded-xl border border-brand/40 bg-brand/10 px-3 py-2 text-sm">
+                Series complete — the bracket has advanced. Use <strong>End broadcast</strong> above when you&apos;re done, or start the inter-series break below.
+              </p>
+              {onEndBroadcast && (
+                <Button
+                  className="w-full"
+                  variant="primary"
+                  icon={<Coffee className="h-4 w-4" />}
+                  onClick={onEndBroadcast}
+                >
+                  End series &amp; start break
+                </Button>
+              )}
+            </div>
           ) : gameDone && live.phase !== 'break' ? (
             <Button className="w-full" icon={<SkipForward className="h-4 w-4" />} onClick={() => setNextSetup({ via: 'next', casters: pickCasterPair(live.casters) })}>
               Start Game {upcoming} draft

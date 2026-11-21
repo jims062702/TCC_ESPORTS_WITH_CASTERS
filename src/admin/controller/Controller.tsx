@@ -1,11 +1,11 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeftRight, Coffee, Gamepad2, ListChecks, Power, Radio, Swords, Trophy } from 'lucide-react';
-import type { LivePhase, Match, Tournament } from '@/types';
+import type { LivePhase, LiveState, Match, Tournament } from '@/types';
 import { Facebook } from 'lucide-react';
 import { useCollectionData, useDocData, useIndex, useLive, useMatches, useNow, usePlayers, useSettings, useTeams, useTournaments } from '@/hooks/useFirestore';
 import { COL, whereEq } from '@/services/firebase';
-import { clockPause, endBreak, endBroadcast, goLive, patchLive, pauseToBreak, setBreak, setPhase, startGame, swapSides } from '@/services/live';
+import { cancelPreSeriesBreak, clockPause, endBreak, endBroadcast, endBroadcastWithBreak, goLive, patchLive, pauseToBreak, setBreak, setPhase, setPreSeriesBreak, startGame, swapSides } from '@/services/live';
 import { updateMatch } from '@/services/db';
 import { picksComplete } from '@/lib/constants';
 import { pickCasterPair } from '@/services/casters';
@@ -17,11 +17,13 @@ import { SeriesPips } from '@/components/game';
 import { Badge, Button, Card, EmptyState, LiveDot, Select, Tabs } from '@/components/ui';
 import { useToast } from '@/components/Toast';
 import { useConfirm } from '@/components/Confirm';
-import { cn, formatDateTime, timeAgo } from '@/lib/utils';
+import { cn, formatDateTime, formatDuration, timeAgo } from '@/lib/utils';
 import { DraftPanel } from './DraftPanel';
 import { GamePanel } from './GamePanel';
 import { SeriesPanel } from './SeriesPanel';
 import { LineupDialog } from './LineupDialog';
+import { PreSeriesBreakDialog } from './PreSeriesBreakDialog';
+import { EndBroadcastDialog } from './EndBroadcastDialog';
 import { useObsAutomation } from './ObsPanel';
 import { HeaderClock, breakMessages, isPaused } from './BreakControls';
 
@@ -33,13 +35,17 @@ export default function Controller() {
   const toast = useToast();
   const ask = useConfirm();
   const L = live.data;
+  const tournaments = useTournaments();
+  const currentTournament = tournaments.data.find((t) => t.id === L.tournamentId) ?? null;
+  const currentMatches = useMatches(L.tournamentId);
+  const [endBroadcastOpen, setEndBroadcastOpen] = useState(false);
   // OBS follows the controller: Draft → In-game HUD → Break (no clicking in OBS).
-  useObsAutomation(L.phase, Boolean(L.matchId));
+  useObsAutomation(L.phase, Boolean(L.matchId || L.phase === 'break'));
   // The on-air match (for its "View on Facebook" switch).
   const currentMatch = useDocData<Match>(COL.matches, L.matchId);
 
   if (live.loading) return null;
-  if (!L.matchId) return <SeriesPicker previousCasters={L.casters} />;
+  if (!L.matchId) return <SeriesPicker live={L} previousCasters={L.casters} />;
 
   /** Draft / In-game / Break tabs (a finished game stays under In-game). */
   const changePhase = (p: LivePhase) => {
@@ -133,9 +139,7 @@ export default function Controller() {
               size="sm"
               variant="danger"
               icon={<Power className="h-4 w-4" />}
-              onClick={() => {
-                void ask({ title: 'End the broadcast?', message: L.phase === 'draft' || (L.phase === 'ingame' && L.scoreA + L.scoreB < L.gameNumber) ? `Takes this series off air. Game ${L.gameNumber} has no winner yet, so its picks, bans, K/D/A and Level 15 time are NOT saved — the pick / ban % stay as they were. Results already recorded are kept.` : 'Takes this series off air. Results already recorded are kept.', confirmLabel: 'End broadcast', danger: true }).then((ok) => { if (ok) void toast.run(() => endBroadcast(L), 'Off air'); });
-              }}
+              onClick={() => setEndBroadcastOpen(true)}
             >
               End broadcast
             </Button>
@@ -146,8 +150,33 @@ export default function Controller() {
       {/* ── Phase panels ─────────────────────────────────────────────── */}
       {L.phase === 'draft' && <DraftPanel live={L} players={players.data} teams={teams.data} />}
       {(L.phase === 'ingame' || isPaused(L)) && <GamePanel live={L} players={players.data} />}
-      <SeriesPanel live={L} players={players.data} teams={teams.data} />
+      <SeriesPanel live={L} players={players.data} teams={teams.data} onEndBroadcast={() => setEndBroadcastOpen(true)} />
       <EventLog matchId={L.matchId} />
+      <EndBroadcastDialog
+        open={endBroadcastOpen}
+        onClose={() => setEndBroadcastOpen(false)}
+        live={L}
+        tournament={currentTournament}
+        matches={currentMatches.data}
+        teams={teams.data}
+        onConfirmBreak={async (opts) => {
+          await toast.run(
+            () =>
+              endBroadcastWithBreak(L, {
+                minutes: opts.minutes,
+                message: opts.message,
+                nextMatch: opts.nextMatch,
+                nextTeamA: opts.nextTeamA,
+                nextTeamB: opts.nextTeamB,
+                tournament: currentTournament,
+              }),
+            opts.minutes > 0 ? `Break on air (${opts.minutes}:00) — select next series` : 'Broadcast ended',
+          );
+        }}
+        onDirectEnd={async () => {
+          await toast.run(() => endBroadcast(L), 'Off air');
+        }}
+      />
     </div>
   );
 }
@@ -169,11 +198,12 @@ function TeamBlock({ name, logo, side, wins, format, right }: { name?: string; l
   );
 }
 
-function SeriesPicker({ previousCasters }: { previousCasters: string[] }) {
+function SeriesPicker({ live, previousCasters }: { live: LiveState; previousCasters: string[] }) {
   const tournaments = useTournaments();
   const teams = useTeams();
   const players = usePlayers();
   const toast = useToast();
+  const now = useNow(1000);
   const [tid, setTid] = useState<string | null>(null);
   const tournament = tournaments.data.find((t) => t.id === tid) ?? tournaments.data.find((t) => t.status === 'ongoing') ?? tournaments.data[0] ?? null;
   const matches = useMatches(tournament?.id ?? null);
@@ -181,6 +211,11 @@ function SeriesPicker({ previousCasters }: { previousCasters: string[] }) {
   const ready = matches.data.filter((m) => m.teamAId && m.teamBId && (m.status === 'ready' || m.status === 'live' || m.status === 'pending'));
   const [pending, setPending] = useState<{ match: Match; tournament: Tournament | null; casters: string[] } | null>(null);
   const [busy, setBusy] = useState(false);
+  const [breakOpen, setBreakOpen] = useState(false);
+
+  const isBreakActive = live.phase === 'break';
+  const leftSec = live.breakEndsAt ? Math.max(0, Math.round((live.breakEndsAt - now) / 1000)) : null;
+  const timeLeftFormatted = leftSec !== null ? formatDuration(leftSec) : '';
 
   return (
     <div className="space-y-6">
@@ -209,21 +244,106 @@ function SeriesPicker({ previousCasters }: { previousCasters: string[] }) {
           }}
         />
       )}
+      <PreSeriesBreakDialog
+        open={breakOpen}
+        onClose={() => setBreakOpen(false)}
+        tournament={tournament}
+        matches={matches.data}
+        teams={teams.data}
+        live={live}
+        onStartBreak={async (opts) => {
+          await toast.run(
+            () =>
+              setPreSeriesBreak({
+                tournament,
+                match: opts.match,
+                teamA: opts.teamA,
+                teamB: opts.teamB,
+                minutes: opts.minutes,
+                message: opts.message,
+              }),
+            `Break on air — ${opts.minutes}:00 countdown`,
+          );
+        }}
+        onStopBreak={async () => {
+          await toast.run(() => cancelPreSeriesBreak(), 'Break stopped');
+        }}
+      />
       <Card
         title="Put a series on air"
         subtitle="Picks two random casters, loads both rosters and opens the draft."
         actions={
-          tournaments.data.length > 1 && (
-            <Select value={tournament?.id ?? ''} onChange={(e) => setTid(e.target.value)} className="w-60">
-              {tournaments.data.map((t) => (
-                <option key={t.id} value={t.id}>
-                  {t.name}
-                </option>
-              ))}
-            </Select>
-          )
+          <div className="flex flex-wrap items-center gap-2">
+            <Button
+              size="sm"
+              variant={isBreakActive ? 'danger' : 'secondary'}
+              icon={<Coffee className="h-4 w-4" />}
+              onClick={() => setBreakOpen(true)}
+            >
+              {isBreakActive ? (
+                <span className="flex items-center gap-1.5">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-red-500" />
+                  </span>
+                  Break ON AIR {timeLeftFormatted ? `(${timeLeftFormatted})` : ''}
+                </span>
+              ) : (
+                'Break'
+              )}
+            </Button>
+            {tournaments.data.length > 0 && (
+              <Select value={tournament?.id ?? ''} onChange={(e) => setTid(e.target.value)} className="w-60">
+                {tournaments.data.map((t) => (
+                  <option key={t.id} value={t.id}>
+                    {t.name}
+                  </option>
+                ))}
+              </Select>
+            )}
+          </div>
         }
       >
+        {isBreakActive && (
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-red-500/40 bg-red-500/10 p-4">
+            <div className="flex items-center gap-3">
+              <span className="relative flex h-3 w-3">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
+                <span className="relative inline-flex h-3 w-3 rounded-full bg-red-500" />
+              </span>
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="font-cond font-bold uppercase tracking-wider text-red-500">Break screen is ON AIR</span>
+                  {leftSec !== null && (
+                    <Badge tone="brand" className="font-mono font-bold">
+                      {timeLeftFormatted}
+                    </Badge>
+                  )}
+                </div>
+                <p className="mt-0.5 text-xs text-muted">
+                  {live.breakMessage || 'Break'}
+                  {live.teamA && live.teamB ? ` · Up next: ${live.teamA.name} vs ${live.teamB.name}` : ''}
+                  <span className="ml-1 text-ink-300 dark:text-ink-400">
+                    — Clicking &quot;Go live&quot; on any match below will end the break and switch to Draft.
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <Button size="sm" variant="secondary" onClick={() => setBreakOpen(true)}>
+                Adjust Break
+              </Button>
+              <Button
+                size="sm"
+                variant="ghost"
+                className="text-red-500 hover:bg-red-500/10"
+                onClick={() => void toast.run(() => cancelPreSeriesBreak(), 'Break stopped')}
+              >
+                Stop Break
+              </Button>
+            </div>
+          </div>
+        )}
         {!ready.length ? (
           <EmptyState icon={<Gamepad2 className="h-8 w-8" />} title="No series ready">
             Generate a bracket in <Link to="/admin/tournaments" className="text-brand underline">Tournaments</Link> — series appear here once both teams are known.

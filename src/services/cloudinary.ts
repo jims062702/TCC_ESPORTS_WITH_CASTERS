@@ -34,13 +34,14 @@ export interface UploadOptions {
 const MAX_IMAGE_MB = 10;
 const MAX_VIDEO_MB = 100; // Cloudinary free plan limit for a single video upload
 
-export function uploadToCloudinary(file: File, opts: UploadOptions): Promise<UploadResult> {
+export function uploadToCloudinary(file: File | string, opts: UploadOptions): Promise<UploadResult> {
   if (!isCloudinaryConfigured) {
     return Promise.reject(new Error('Cloudinary is not configured. Set VITE_CLOUDINARY_CLOUD_NAME and VITE_CLOUDINARY_UPLOAD_PRESET.'));
   }
-  const resourceType = opts.resourceType ?? (file.type.startsWith('video/') ? 'video' : 'image');
+  const isUrl = typeof file === 'string';
+  const resourceType = opts.resourceType ?? (!isUrl && file.type.startsWith('video/') ? 'video' : 'image');
   const limit = resourceType === 'video' ? MAX_VIDEO_MB : MAX_IMAGE_MB;
-  if (file.size > limit * 1024 * 1024) {
+  if (!isUrl && file.size > limit * 1024 * 1024) {
     return Promise.reject(new Error(`File is larger than ${limit} MB.`));
   }
 

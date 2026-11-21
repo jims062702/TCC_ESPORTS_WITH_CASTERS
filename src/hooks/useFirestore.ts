@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { registerExtraHeroes } from '@/lib/heroData';
+import { resolveImageUrl } from '@/lib/utils';
 import { orderBy, type QueryConstraint } from 'firebase/firestore';
 import type {
   BoothState,
@@ -113,7 +114,7 @@ export const useHeroPortraits = () => {
   const s = useCollectionData<HeroPortrait>(COL.heroes);
   const map = useMemo(() => {
     const m: Record<string, string> = {};
-    for (const h of s.data) m[h.name.toLowerCase()] = h.imageUrl;
+    for (const h of s.data) m[h.name.toLowerCase()] = resolveImageUrl(h.imageUrl);
     return m;
   }, [s.data]);
   return { ...s, map };

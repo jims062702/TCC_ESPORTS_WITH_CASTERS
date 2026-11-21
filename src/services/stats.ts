@@ -186,10 +186,21 @@ export function computeLeaderboard(games: GameRecord[]): PlayerAggregate[] {
       row.d += p.d;
       row.a += p.a;
       row.fb += p.fb;
-      row.dk += p.dk;
-      row.tk += p.tk;
-      row.maniac += p.maniac;
-      row.savage += p.savage;
+
+      // Multikill progression: In competitive esports / MLBB, achieving a higher
+      // multikill streak inherently includes all lower milestones in that sequence:
+      // - Savage (5 kills) automatically counts as a Double Kill (2K), Triple Kill (3K), and Maniac
+      // - Maniac (4 kills) includes a Double Kill and Triple Kill
+      // - Triple Kill (3 kills) includes a Double Kill
+      const savageCount = p.savage ?? 0;
+      const maniacCount = (p.maniac ?? 0) + savageCount;
+      const tkCount = (p.tk ?? 0) + (p.maniac ?? 0) + savageCount;
+      const dkCount = (p.dk ?? 0) + (p.tk ?? 0) + (p.maniac ?? 0) + savageCount;
+
+      row.dk += dkCount;
+      row.tk += tkCount;
+      row.maniac += maniacCount;
+      row.savage += savageCount;
       row.lords += p.lords;
       row.turtles += p.turtles;
       if (typeof p.tp === 'number') {

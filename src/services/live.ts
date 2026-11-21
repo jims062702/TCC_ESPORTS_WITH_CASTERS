@@ -363,6 +363,70 @@ export async function endBroadcast(live: LiveState) {
   await batch.commit();
 }
 
+/**
+ * Conclude the current series and transition smoothly into a break screen,
+ * setting the live phase to 'break', clearing matchId so the controller returns
+ * to the "Put a series on air" screen, and setting up the countdown timer and break message.
+ */
+export async function endBroadcastWithBreak(
+  live: LiveState,
+  opts: {
+    minutes: number;
+    message: string;
+    nextMatch?: Match | null;
+    nextTeamA?: Team | null;
+    nextTeamB?: Team | null;
+    tournament?: Tournament | null;
+  },
+) {
+  const batch = writeBatch(db);
+  const now = Date.now();
+  if (live.matchId) {
+    const snap = await getDoc(doc(db, COL.matches, live.matchId));
+    if (snap.exists() && snap.data().status === 'live') {
+      const isComplete = Math.max(live.scoreA, live.scoreB) >= winsNeeded(live.format);
+      batch.update(snap.ref, { status: isComplete ? 'completed' : 'ready', updatedAt: now });
+    }
+  }
+  const patch: Record<string, unknown> = {
+    ...defaultLive(),
+    phase: 'break',
+    tournamentId: opts.tournament?.id ?? live.tournamentId,
+    tournamentName: opts.tournament?.name ?? live.tournamentName,
+    matchId: null,
+    matchLabel: opts.nextMatch?.label ?? 'Up Next',
+    format: opts.nextMatch?.format ?? 'BO3',
+    scoreA: opts.nextMatch?.scoreA ?? 0,
+    scoreB: opts.nextMatch?.scoreB ?? 0,
+    gameNumber: opts.nextMatch ? opts.nextMatch.scoreA + opts.nextMatch.scoreB + 1 : 1,
+    teamA: toLiveTeam(opts.nextTeamA ?? undefined),
+    teamB: toLiveTeam(opts.nextTeamB ?? undefined),
+    blueIsA: true,
+    breakEndsAt: opts.minutes > 0 ? now + opts.minutes * 60_000 : null,
+    breakPause: false,
+    breakMessage: opts.message.trim(),
+    casters: live.casters,
+    updatedAt: now,
+  };
+  batch.update(liveRef(), patch as UpdateData<DocumentData>);
+  const eventId = uid('ev_');
+  batch.set(doc(db, COL.events, eventId), {
+    id: eventId,
+    type: 'BREAK_START',
+    data: {
+      minutes: opts.minutes,
+      message: opts.message.trim(),
+      nextGame: opts.nextMatch ? opts.nextMatch.scoreA + opts.nextMatch.scoreB + 1 : 1,
+      midGame: false,
+      seriesOver: true,
+    },
+    status: 'pending',
+    claimedBy: null,
+    createdAt: now,
+  });
+  await batch.commit();
+}
+
 /** Swap which team plays on blue side (also swaps lineups, draft and objective counters). */
 export const swapSides = (live: LiveState) =>
   write({
@@ -637,6 +701,70 @@ export const extendBreak = (live: LiveState, seconds: number) => write({ breakEn
 
 /** Turn a "Pause the game" into a full break (the controller moves to the Break tab; no auto-resume). */
 export const pauseToBreak = () => write({ breakPause: false });
+
+/**
+ * Put the break screen on air before any series is started (or between series),
+ * with an optional "Up next" match and teams preview.
+ */
+export async function setPreSeriesBreak(opts: {
+  tournament: Tournament | null;
+  match?: Match | null;
+  teamA?: Team | null;
+  teamB?: Team | null;
+  minutes: number;
+  message: string;
+}) {
+  const now = Date.now();
+  const batch = writeBatch(db);
+  const patch: Record<string, unknown> = {
+    phase: 'break',
+    tournamentId: opts.tournament?.id ?? null,
+    tournamentName: opts.tournament?.name ?? '',
+    matchId: null,
+    matchLabel: opts.match?.label ?? 'Up Next',
+    format: opts.match?.format ?? 'BO3',
+    scoreA: opts.match?.scoreA ?? 0,
+    scoreB: opts.match?.scoreB ?? 0,
+    gameNumber: opts.match ? opts.match.scoreA + opts.match.scoreB + 1 : 1,
+    teamA: toLiveTeam(opts.teamA ?? undefined),
+    teamB: toLiveTeam(opts.teamB ?? undefined),
+    blueIsA: true,
+    breakEndsAt: opts.minutes > 0 ? now + opts.minutes * 60_000 : null,
+    breakPause: false,
+    breakMessage: opts.message.trim(),
+    updatedAt: now,
+  };
+  batch.update(liveRef(), patch as UpdateData<DocumentData>);
+  const eventId = uid('ev_');
+  batch.set(doc(db, COL.events, eventId), {
+    id: eventId,
+    type: 'BREAK_START',
+    data: {
+      minutes: opts.minutes,
+      message: opts.message.trim(),
+      nextGame: opts.match ? opts.match.scoreA + opts.match.scoreB + 1 : 1,
+      midGame: false,
+      seriesOver: false,
+    },
+    status: 'pending',
+    claimedBy: null,
+    createdAt: now,
+  });
+  await batch.commit();
+}
+
+/** Stop an active pre-series break and return to idle. */
+export async function cancelPreSeriesBreak() {
+  await write({
+    phase: 'idle',
+    teamA: null,
+    teamB: null,
+    breakEndsAt: null,
+    breakPause: false,
+    breakMessage: '',
+    updatedAt: Date.now(),
+  });
+}
 
 // ── Game clock ──────────────────────────────────────────────────────────────
 

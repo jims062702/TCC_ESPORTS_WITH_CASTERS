@@ -25,7 +25,7 @@ export default function BreakOverlay() {
   const q = useQuery();
   const sound = flag(q, 'sound', false);
   const vol = Math.min(1, Math.max(0, Number(q.get('vol') ?? 0.8) || 0));
-  useBreakMusic(flag(q, 'music', !demo) && vol > 0 && Boolean(live.matchId || flag(q, 'always', false)) && (live.phase === 'break' || flag(q, 'always', false)), vol);
+  useBreakMusic(flag(q, 'music', !demo) && vol > 0 && (live.phase === 'break' || flag(q, 'always', false)), vol);
   const playlist = useMemo(() => {
     const all = highlights.data.filter((h) => h.inPlaylist);
     // Replays from the series on air play first (newest first), then the rest of the highlights.
@@ -99,7 +99,7 @@ export default function BreakOverlay() {
         </div>
 
         {/* Series card */}
-        {live.matchId && (
+        {(live.matchId || (live.teamA && live.teamB)) && (
           <Glass className="absolute bottom-24 left-20 flex items-center gap-8 rounded-2xl px-8 py-5">
             <div className="text-center">
               <p className="font-cond text-lg font-semibold uppercase tracking-[0.3em] text-white/60">{live.matchLabel}</p>
